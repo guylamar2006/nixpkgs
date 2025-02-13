@@ -5,7 +5,7 @@
   fetchpatch,
   cmake,
   enableShared ? !stdenv.hostPlatform.isStatic,
-
+  nix-update-script,
   # tests
   mpd,
   openimageio,
@@ -53,6 +53,8 @@ let
           ;
       };
 
+      passthru.updateScript = nix-update-script { };
+
       meta = with lib; {
         description = "Small, safe and fast formatting library";
         longDescription = ''
@@ -82,8 +84,8 @@ in
   };
 
   fmt_10 = generic {
-    version = "10.2.1";
-    hash = "sha256-pEltGLAHLZ3xypD/Ur4dWPWJ9BGVXwqQyKcDWVmC3co=";
+    version = "11.1.3";
+    hash = "sha256-6r9D/csVSgS+T/H0J8cSR+YszxnH/h2V2odi2s6VYN8=";
   };
 
   fmt_11 = generic {
