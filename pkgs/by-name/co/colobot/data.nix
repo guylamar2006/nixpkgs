@@ -12,13 +12,13 @@
 
 stdenv.mkDerivation rec {
   pname = "colobot-data";
-  version = "0.2.0-alpha";
+  version = "0.2.2-alpha";
 
   src = fetchFromGitHub {
     owner = "colobot";
     repo = "colobot-data";
     rev = "colobot-gold-${version}";
-    sha256 = "sha256-yzIbAzrGsDe6hO0GHF9gjnj7IE8B7+5LDbvjZi4Wtms=";
+    sha256 = "sha256-Voxfc5iCFT7gyahaai5wLPi6fe7dWryYLjfNjfXpwWs=";
   };
 
   nativeBuildInputs = [
