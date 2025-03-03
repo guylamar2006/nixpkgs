@@ -6,6 +6,7 @@
   fetchFromGitHub,
   IOKit,
   pkg-config,
+  python3Packages,
 }:
 
 stdenv.mkDerivation rec {
@@ -23,17 +24,22 @@ stdenv.mkDerivation rec {
     [
       cmake
       pkg-config
-    ]
-    ++ lib.optionals stdenv.hostPlatform.isDarwin [
-      cctools
+    ] ++ lib.optionals stdenv.hostPlatform.isDarwin [ cctools ] ++ [
+      python3Packages.setuptools
+      python3Packages.wheel
+      python3Packages.versioningit
     ];
 
-  buildInputs = lib.optionals stdenv.hostPlatform.isDarwin [ IOKit ];
+  buildInputs = lib.optionals stdenv.hostPlatform.isDarwin [ IOKit ] ++ [
+    python3Packages.pybind11
+    ];
 
   # Ensure the linker is using atomic when compiling for RISC-V, otherwise fails
   NIX_LDFLAGS = lib.optionalString stdenv.hostPlatform.isRiscV "-latomic";
 
-  cmakeFlags = lib.optionals (stdenv.hostPlatform.isDarwin && stdenv.hostPlatform.isAarch64) [
+  cmakeFlags = [
+    "-DPYTHON_BINDINGS=ON"
+  ] ++ lib.optionals (stdenv.hostPlatform.isDarwin && stdenv.hostPlatform.isAarch64) [
     # Some x86 tests are interrupted by signal 10
     "-DCMAKE_CTEST_ARGUMENTS=--exclude-regex;test_x86"
   ];
