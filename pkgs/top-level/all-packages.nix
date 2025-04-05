@@ -8752,8 +8752,6 @@ with pkgs;
   sbt-with-scala-native = callPackage ../development/tools/build-managers/sbt/scala-native.nix { };
   simpleBuildTool = sbt;
 
-  scss-lint = callPackage ../development/tools/scss-lint { };
-
   shadowenv = callPackage ../tools/misc/shadowenv {
     inherit (darwin.apple_sdk.frameworks) Security;
   };
