@@ -2,7 +2,7 @@
   lib,
   autoreconfHook,
   fetchFromGitHub,
-  fltk,
+  fltk13,
   giflib,
   libXcursor,
   libXi,
@@ -43,12 +43,12 @@ stdenv.mkDerivation (finalAttrs: {
   nativeBuildInputs = [
     autoreconfHook
     pkg-config
-    fltk
+    fltk13
     which
   ];
 
   buildInputs = [
-    fltk
+    fltk13
     giflib
     libXcursor
     libXi
