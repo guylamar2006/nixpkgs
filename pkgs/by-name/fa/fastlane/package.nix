@@ -3,6 +3,7 @@
   bundlerApp,
   bundlerUpdateScript,
   makeBinaryWrapper,
+  libyaml,
 }:
 
 bundlerApp {
@@ -10,10 +11,13 @@ bundlerApp {
   gemdir = ./.;
   exes = [ "fastlane" ];
 
-  buildInputs = [ makeBinaryWrapper ];
+  buildInputs = [ makeBinaryWrapper libyaml ];
 
   postBuild = ''
-    wrapProgram $out/bin/fastlane --set FASTLANE_SKIP_UPDATE_CHECK 1
+    mkdir -p /tmp/null
+    wrapProgram $out/bin/fastlane --set FASTLANE_SKIP_UPDATE_CHECK 1 \
+                                  --unset GEM_HOME --unset GEM_PATH \
+                                  --set HOME /tmp/null
   '';
 
   passthru.updateScript = bundlerUpdateScript "fastlane";
