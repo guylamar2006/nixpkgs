@@ -29,11 +29,11 @@ rustPlatform.buildRustPackage rec {
     installShellCompletion completions/taskwarrior-tui.{bash,fish} --zsh completions/_taskwarrior-tui
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Terminal user interface for taskwarrior";
     homepage = "https://github.com/kdheepak/taskwarrior-tui";
     license = with licenses; [ mit ];
-    maintainers = with maintainers; [ matthiasbeyer ];
+    maintainers = with lib.maintainers; [ matthiasbeyer ];
     mainProgram = "taskwarrior-tui";
   };
 }

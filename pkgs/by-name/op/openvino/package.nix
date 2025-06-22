@@ -179,7 +179,7 @@ stdenv.mkDerivation rec {
     done
   '';
 
-  meta = with lib; {
+  meta = {
     changelog = "https://github.com/openvinotoolkit/openvino/releases/tag/${src.tag}";
     description = "OpenVINO™ Toolkit repository";
     longDescription = ''
@@ -191,8 +191,8 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://docs.openvinotoolkit.org/";
     license = with licenses; [ asl20 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     broken = stdenv.hostPlatform.isDarwin; # Cannot find macos sdk
-    maintainers = with maintainers; [ tfmoraes ];
+    maintainers = with lib.maintainers; [ tfmoraes ];
   };
 }

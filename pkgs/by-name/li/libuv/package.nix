@@ -197,13 +197,13 @@ stdenv.mkDerivation (finalAttrs: {
     pkg-config = testers.testMetaPkgConfig finalAttrs.finalPackage;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Multi-platform support library with a focus on asynchronous I/O";
     homepage = "https://libuv.org/";
     changelog = "https://github.com/libuv/libuv/blob/v${finalAttrs.version}/ChangeLog";
     pkgConfigModules = [ "libuv" ];
     maintainers = [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = with licenses; [
       mit
       isc

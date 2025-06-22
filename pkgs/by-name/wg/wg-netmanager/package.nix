@@ -25,7 +25,7 @@ rustPlatform.buildRustPackage rec {
     "device"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Wireguard network manager";
     longDescription = ''
       Wireguard network manager, written in rust, simplifies the setup of wireguard nodes,
@@ -40,8 +40,8 @@ rustPlatform.buildRustPackage rec {
       bsd3
       mpl20
     ];
-    maintainers = with maintainers; [ gin66 ];
-    platforms = platforms.linux;
+    maintainers = with lib.maintainers; [ gin66 ];
+    platforms = lib.platforms.linux;
     mainProgram = "wg_netmanager";
   };
 }

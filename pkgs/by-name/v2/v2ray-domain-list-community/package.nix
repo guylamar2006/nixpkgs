@@ -17,11 +17,11 @@ let
       hash = "sha256-pGd8HBKtyum5+CE1WsjdDj5QxjbCA8sQ85LPEDCubiI=";
     };
     vendorHash = "sha256-NLh14rXRci4hgDkBJVJDIDvobndB7KYRKAX7UjyqSsg=";
-    meta = with lib; {
+    meta = {
       description = "community managed domain list";
       homepage = "https://github.com/v2fly/domain-list-community";
-      license = licenses.mit;
-      maintainers = with maintainers; [ nickcao ];
+      license = lib.licenses.mit;
+      maintainers = with lib.maintainers; [ nickcao ];
     };
   };
 in

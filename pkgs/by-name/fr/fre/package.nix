@@ -22,7 +22,7 @@ rustPlatform.buildRustPackage rec {
     description = "CLI tool for tracking your most-used directories and files";
     homepage = "https://github.com/camdencheek/fre";
     changelog = "https://github.com/camdencheek/fre/blob/${version}/CHANGELOG.md";
-    license = with lib.licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ gaykitty ];
     mainProgram = "fre";
   };

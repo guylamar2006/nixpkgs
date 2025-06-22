@@ -23,7 +23,7 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://github.com/kpcyrd/apt-swarm";
     changelog = "https://github.com/kpcyrd/apt-swarm/releases/tag/v${version}";
     mainProgram = "apt-swarm";
-    license = with lib.licenses; [ gpl3Plus ];
+    license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ kpcyrd ];
     platforms = lib.platforms.all;
   };

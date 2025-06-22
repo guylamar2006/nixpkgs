@@ -25,11 +25,11 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Based on Linux Mint theme with dark menus and more intensive green";
     homepage = "https://github.com/madmaxms/theme-jade-1";
     license = with licenses; [ gpl3Only ];
-    platforms = platforms.linux;
-    maintainers = [ maintainers.romildo ];
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ romildo ];
   };
 }

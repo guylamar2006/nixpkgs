@@ -32,7 +32,7 @@ buildGoModule rec {
     "-w"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "gif effects CLI. single binary, no dependencies. linux, osx, windows. #1 workplace productivity booster. #yeetgif #eggplant #golang";
     homepage = "https://github.com/sgreben/yeetgif";
     license = with licenses; [
@@ -40,7 +40,7 @@ buildGoModule rec {
       asl20
       cc-by-nc-sa-40
     ];
-    maintainers = with maintainers; [ ajs124 ];
+    maintainers = with lib.maintainers; [ ajs124 ];
     mainProgram = "gif";
   };
 }

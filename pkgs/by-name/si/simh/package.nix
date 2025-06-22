@@ -61,7 +61,7 @@ stdenv.mkDerivation rec {
     (cd $out/bin; for i in *; do ln -s $i simh-$i; done)
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "http://simh.trailing-edge.com/";
     description = "Collection of simulators of historic hardware";
     longDescription = ''
@@ -72,7 +72,7 @@ stdenv.mkDerivation rec {
       available copies of significant or representative software.
     '';
     license = with licenses; mit;
-    maintainers = with maintainers; [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = with platforms; unix;
   };
 }

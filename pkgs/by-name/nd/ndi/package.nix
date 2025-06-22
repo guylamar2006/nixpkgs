@@ -69,7 +69,7 @@ stdenv.mkDerivation rec {
   };
   passthru.updateScript = ./update.py;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://ndi.video/ndi-sdk/";
     description = "NDI Software Developer Kit";
     platforms = [
@@ -80,6 +80,6 @@ stdenv.mkDerivation rec {
     ];
     hydraPlatforms = [ ];
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.unfree;
+    license = lib.licenses.unfree;
   };
 }

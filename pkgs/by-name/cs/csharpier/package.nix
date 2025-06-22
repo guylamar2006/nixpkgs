@@ -7,12 +7,12 @@ buildDotnetGlobalTool {
 
   nugetHash = "sha256-FPcdTWhdIhl0MgOsWcCzgzLyHFyz0szLYQUBUFoe3Cs=";
 
-  meta = with lib; {
+  meta = {
     description = "Opinionated code formatter for C#";
     homepage = "https://csharpier.com/";
     changelog = "https://github.com/belav/csharpier/blob/main/CHANGELOG.md";
-    license = licenses.mit;
-    maintainers = with maintainers; [ zoriya ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ zoriya ];
     mainProgram = "csharpier";
   };
 }

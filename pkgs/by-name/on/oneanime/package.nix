@@ -54,7 +54,7 @@ let
 
     meta = {
       homepage = "https://github.com/Predidit/open_chinese_convert_bridge";
-      license = with lib.licenses; [ gpl3Plus ];
+      license = lib.licenses.gpl3Plus;
     };
   };
 in
@@ -187,7 +187,7 @@ flutter329.buildFlutterApplication rec {
     description = "Anime1 third-party client with bullet screen";
     homepage = "https://github.com/Predidit/oneAnime";
     mainProgram = "oneanime";
-    license = with lib.licenses; [ gpl3Plus ];
+    license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
   };

@@ -23,7 +23,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   nativeBuildInputs = [ autoreconfHook ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.hadrons.org/software/libmd/";
     changelog = "https://archive.hadrons.org/software/libmd/libmd-${finalAttrs.version}.announce";
     # Git: https://git.hadrons.org/cgit/libmd.git
@@ -35,7 +35,7 @@ stdenv.mkDerivation (finalAttrs: {
       beerware
       publicDomain
     ];
-    maintainers = with maintainers; [ primeos ];
-    platforms = platforms.unix;
+    maintainers = with lib.maintainers; [ primeos ];
+    platforms = lib.platforms.unix;
   };
 })

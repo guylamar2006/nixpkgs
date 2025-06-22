@@ -68,7 +68,7 @@ stdenv.mkDerivation (finalAttrs: {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Spectral warping wavetable synth";
     homepage = "https://vital.audio/";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
@@ -77,7 +77,7 @@ stdenv.mkDerivation (finalAttrs: {
       gpl3Plus
     ];
     platforms = [ "x86_64-linux" ];
-    maintainers = with maintainers; [ PowerUser64 ];
+    maintainers = with lib.maintainers; [ PowerUser64 ];
     mainProgram = "Vital";
   };
 })

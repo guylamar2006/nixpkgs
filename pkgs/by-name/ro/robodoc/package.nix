@@ -25,7 +25,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   hardeningDisable = [ "format" ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/gumpu/ROBODoc";
     description = "Documentation Extraction Tool";
     longDescription = ''
@@ -48,7 +48,7 @@ stdenv.mkDerivation (finalAttrs: {
       Java -- basically any program in which you can use remarks/comments.
     '';
     license = with licenses; gpl3Plus;
-    maintainers = with maintainers; [ ];
-    platforms = platforms.all;
+    maintainers = with lib.maintainers; [ ];
+    platforms = lib.platforms.all;
   };
 })

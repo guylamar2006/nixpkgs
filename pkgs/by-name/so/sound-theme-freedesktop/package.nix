@@ -16,7 +16,7 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [ intltool ];
 
-  meta = with lib; {
+  meta = {
     description = "Freedesktop reference sound theme";
     homepage = "http://freedesktop.org/wiki/Specifications/sound-theme-spec";
     # See http://cgit.freedesktop.org/sound-theme-freedesktop/tree/CREDITS:

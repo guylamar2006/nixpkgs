@@ -161,10 +161,10 @@ stdenv.mkDerivation rec {
     rev-prefix = "elfutils-";
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://sourceware.org/elfutils/";
     description = "Set of utilities to handle ELF objects";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     # https://lists.fedorahosted.org/pipermail/elfutils-devel/2014-November/004223.html
     badPlatforms = [ lib.systems.inspect.platformPatterns.isStatic ];
     # licenses are GPL2 or LGPL3+ for libraries, GPL3+ for bins,
@@ -174,6 +174,6 @@ stdenv.mkDerivation rec {
       lgpl3Plus
       gpl3Plus
     ];
-    maintainers = with maintainers; [ r-burns ];
+    maintainers = with lib.maintainers; [ r-burns ];
   };
 }

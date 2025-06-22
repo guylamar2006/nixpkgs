@@ -50,7 +50,7 @@ stdenv.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = ''Open-source modernization of the 1993 classic "Master of Orion", written in Java'';
     homepage = "https://www.remnantsoftheprecursors.com/";
 
@@ -91,7 +91,7 @@ stdenv.mkDerivation {
       cc-by-nc-nd-40
     ];
 
-    maintainers = with maintainers; [ jtrees ];
+    maintainers = with lib.maintainers; [ jtrees ];
     platforms = [ "x86_64-linux" ];
   };
 }

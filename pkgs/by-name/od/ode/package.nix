@@ -18,7 +18,7 @@ stdenv.mkDerivation (finalAttrs: {
     "-Wno-error=c++11-narrowing"
   ]);
 
-  meta = with lib; {
+  meta = {
     description = "Open Dynamics Engine";
     mainProgram = "ode-config";
     homepage = "https://www.ode.org";
@@ -28,7 +28,7 @@ stdenv.mkDerivation (finalAttrs: {
       lgpl3Only
       zlib
     ];
-    maintainers = with maintainers; [ wegank ];
-    platforms = platforms.unix;
+    maintainers = with lib.maintainers; [ wegank ];
+    platforms = lib.platforms.unix;
   };
 })

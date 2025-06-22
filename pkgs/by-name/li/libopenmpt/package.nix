@@ -62,7 +62,7 @@ stdenv.mkDerivation rec {
 
   passthru.updateScript = ./update.sh;
 
-  meta = with lib; {
+  meta = {
     description = "Cross-platform C++ and C library to decode tracked music files into a raw PCM audio stream";
     mainProgram = "openmpt123";
     longDescription = ''
@@ -71,8 +71,8 @@ stdenv.mkDerivation rec {
       libopenmpt is based on the player code of the OpenMPT project.
     '';
     homepage = "https://lib.openmpt.org/libopenmpt/";
-    license = licenses.bsd3;
-    maintainers = with maintainers; [ OPNA2608 ];
-    platforms = platforms.unix;
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ OPNA2608 ];
+    platforms = lib.platforms.unix;
   };
 }

@@ -66,7 +66,7 @@ stdenv.mkDerivation (finalAttrs: {
     qt6-qtmultimedia = qt6.qtmultimedia;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Oil Runtime Compiler";
     homepage = "https://gstreamer.freedesktop.org/projects/orc.html";
     changelog = "https://gitlab.freedesktop.org/gstreamer/orc/-/blob/${finalAttrs.version}/RELEASE";
@@ -76,7 +76,7 @@ stdenv.mkDerivation (finalAttrs: {
       bsd3
       bsd2
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = [ ];
   };
 })

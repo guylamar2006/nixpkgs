@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage rec {
 
   cargoBuildFlags = [ "--features=cli" ];
 
-  meta = with lib; {
+  meta = {
     description = "Represent numbers in French language";
     homepage = "https://github.com/evenfurther/french-numbers";
     license = with licenses; [
@@ -26,6 +26,6 @@ rustPlatform.buildRustPackage rec {
       mit
     ];
     mainProgram = "french-numbers";
-    maintainers = with maintainers; [ samueltardieu ];
+    maintainers = with lib.maintainers; [ samueltardieu ];
   };
 }

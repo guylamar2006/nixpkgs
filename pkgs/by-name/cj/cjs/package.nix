@@ -68,7 +68,7 @@ stdenv.mkDerivation rec {
     patchShebangs --build build/choose-tests-locale.sh
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/linuxmint/cjs";
     description = "JavaScript bindings for Cinnamon";
 
@@ -83,7 +83,7 @@ stdenv.mkDerivation rec {
       mpl11
     ];
 
-    platforms = platforms.linux;
-    teams = [ teams.cinnamon ];
+    platforms = lib.platforms.linux;
+    teams = with lib.teams; [ cinnamon ];
   };
 }

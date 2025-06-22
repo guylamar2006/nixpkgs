@@ -102,7 +102,7 @@ stdenv.mkDerivation rec {
     )
   '';
 
-  meta = with lib; {
+  meta = {
     description = "GPS data editor and analyzer";
     mainProgram = "viking";
     longDescription = ''
@@ -113,8 +113,8 @@ stdenv.mkDerivation rec {
       position, etc.
     '';
     homepage = "https://sourceforge.net/projects/viking/";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [
       pSub
       sikmir
     ];

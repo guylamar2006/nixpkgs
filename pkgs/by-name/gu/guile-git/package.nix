@@ -52,11 +52,11 @@ stdenv.mkDerivation rec {
 
   __darwinAllowLocalNetworking = true;
 
-  meta = with lib; {
+  meta = {
     description = "Bindings to Libgit2 for GNU Guile";
     homepage = "https://gitlab.com/guile-git/guile-git";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ ethancedwards8 ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ ethancedwards8 ];
     platforms = guile.meta.platforms;
   };
 }

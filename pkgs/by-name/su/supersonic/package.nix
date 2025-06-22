@@ -93,13 +93,13 @@ buildGoModule rec {
     })
   ];
 
-  meta = with lib; {
+  meta = {
     mainProgram = "supersonic" + lib.optionalString waylandSupport "-wayland";
     description = "Lightweight cross-platform desktop client for Subsonic music servers";
     homepage = "https://github.com/dweymouth/supersonic";
-    platforms = platforms.linux ++ platforms.darwin;
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [
+    platforms = lib.platforms.linux ++ platforms.darwin;
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [
       zane
       sochotnicky
     ];

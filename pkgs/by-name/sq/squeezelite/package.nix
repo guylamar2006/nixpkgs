@@ -106,12 +106,12 @@ stdenv.mkDerivation {
     updateScript = ./update.sh;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Lightweight headless squeezebox client emulator";
     homepage = "https://github.com/ralph-irving/squeezelite";
     license = with licenses; [ gpl3Plus ] ++ optional dsdSupport bsd2;
     mainProgram = binName;
-    maintainers = with maintainers; [ adamcstephens ];
+    maintainers = with lib.maintainers; [ adamcstephens ];
     platforms =
       if (audioBackend == "pulse") then platforms.linux else platforms.linux ++ platforms.darwin;
   };

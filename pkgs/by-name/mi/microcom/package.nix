@@ -20,12 +20,12 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [ autoreconfHook ];
   buildInputs = [ readline ];
 
-  meta = with lib; {
+  meta = {
     description = "Minimalistic terminal program for communicating
     with devices over a serial connection";
     inherit (src.meta) homepage;
-    license = licenses.gpl2;
-    maintainers = with maintainers; [ emantor ];
+    license = lib.licenses.gpl2;
+    maintainers = with lib.maintainers; [ emantor ];
     platforms = with platforms; linux;
     mainProgram = "microcom";
   };

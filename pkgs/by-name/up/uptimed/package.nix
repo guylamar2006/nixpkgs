@@ -24,7 +24,7 @@ stdenv.mkDerivation rec {
       --replace /var/spool /var/lib
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Uptime record daemon";
     longDescription = ''
       An uptime record daemon keeping track of the highest uptimes a computer
@@ -38,6 +38,6 @@ stdenv.mkDerivation rec {
       lgpl21Plus
     ];
     maintainers = [ ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

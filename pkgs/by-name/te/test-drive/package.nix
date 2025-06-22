@@ -31,14 +31,14 @@ stdenv.mkDerivation rec {
 
   mesonAutoFeatures = "auto";
 
-  meta = with lib; {
+  meta = {
     description = "Procedural Fortran testing framework";
     homepage = "https://github.com/fortran-lang/test-drive";
     license = with licenses; [
       asl20
       mit
     ];
-    platforms = platforms.linux;
-    maintainers = [ maintainers.sheepforce ];
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ sheepforce ];
   };
 }

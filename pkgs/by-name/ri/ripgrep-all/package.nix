@@ -52,7 +52,7 @@ rustPlatform.buildRustPackage rec {
     done
   '';
 
-  meta = with lib; {
+  meta = {
     changelog = "https://github.com/phiresky/ripgrep-all/blob/${src.rev}/CHANGELOG.md";
     description = "Ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, and more";
     longDescription = ''
@@ -64,7 +64,7 @@ rustPlatform.buildRustPackage rec {
     '';
     homepage = "https://github.com/phiresky/ripgrep-all";
     license = with licenses; [ agpl3Plus ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       zaninime
       ma27
     ];

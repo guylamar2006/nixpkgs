@@ -53,7 +53,7 @@ rustPlatform.buildRustPackage rec {
     rm $out/bin/daktilo-{completions,mangen}
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Turn your keyboard into a typewriter";
     homepage = "https://github.com/orhun/daktilo";
     changelog = "https://github.com/orhun/daktilo/blob/${src.rev}/CHANGELOG.md";
@@ -61,7 +61,7 @@ rustPlatform.buildRustPackage rec {
       asl20
       mit
     ];
-    maintainers = with maintainers; [ orhun ];
+    maintainers = with lib.maintainers; [ orhun ];
     mainProgram = "daktilo";
   };
 }

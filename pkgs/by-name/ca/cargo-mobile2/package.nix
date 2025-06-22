@@ -48,13 +48,13 @@ rustPlatform.buildRustPackage {
     done
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Rust on mobile made easy!";
     homepage = "https://tauri.app/";
     license = with licenses; [
       asl20 # or
       mit
     ];
-    maintainers = with maintainers; [ happysalada ];
+    maintainers = with lib.maintainers; [ happysalada ];
   };
 }

@@ -24,7 +24,7 @@ buildGoModule rec {
     "-w"
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/bronze1man/yaml2json";
     description = "Convert yaml to json";
     mainProgram = "yaml2json";

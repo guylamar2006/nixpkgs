@@ -103,7 +103,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Wallpaper Engine backgrounds for Linux";
     homepage = "https://github.com/Almamu/linux-wallpaperengine";
-    license = with lib.licenses; [ gpl3Plus ];
+    license = lib.licenses.gpl3Plus;
     mainProgram = "linux-wallpaperengine";
     maintainers = with lib.maintainers; [ ];
     platforms = [

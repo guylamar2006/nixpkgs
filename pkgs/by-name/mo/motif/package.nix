@@ -138,12 +138,12 @@ stdenv.mkDerivation rec {
     cp config/util/makestrs tools/wml/{wml,wmluiltok,.libs/wmldbcreate} "$out/lib/internals"
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://motif.ics.com";
     description = "Unix standard widget-toolkit and window-manager";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = with licenses; [ lgpl21Plus ];
-    maintainers = with maintainers; [ qyliss ];
+    maintainers = with lib.maintainers; [ qyliss ];
     broken = demoSupport && stdenv.cc.isClang && lib.versionAtLeast stdenv.cc.version "16";
   };
 }

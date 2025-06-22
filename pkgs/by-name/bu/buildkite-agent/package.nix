@@ -64,7 +64,7 @@ buildGoModule rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Build runner for buildkite.com";
     longDescription = ''
       The buildkite-agent is a small, reliable, and cross-platform build runner
@@ -74,8 +74,8 @@ buildGoModule rec {
       and uploading the job's artifacts.
     '';
     homepage = "https://buildkite.com/docs/agent";
-    license = licenses.mit;
-    maintainers = with maintainers; [
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [
       pawelpacana
       zimbatm
       jsoo1

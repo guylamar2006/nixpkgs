@@ -39,12 +39,12 @@ stdenv.mkDerivation (finalAttrs: {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     description = "Network tester for access and routing protocols";
     homepage = "https://github.com/rtbrick/bngblaster/";
     changelog = "https://github.com/rtbrick/bngblaster/releases/tag/${finalAttrs.version}";
-    license = licenses.bsd3;
-    teams = [ teams.wdz ];
+    license = lib.licenses.bsd3;
+    teams = with lib.teams; [ wdz ];
     badPlatforms = platforms.darwin;
   };
 })

@@ -35,7 +35,7 @@ python3.pkgs.buildPythonApplication rec {
     mainProgram = "ntlmrecon";
     homepage = "https://github.com/pwnfoo/NTLMRecon";
     changelog = "https://github.com/pwnfoo/NTLMRecon/releases/tag/v-${version}";
-    license = with lib.licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ fab ];
   };
 }

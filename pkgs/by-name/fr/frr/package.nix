@@ -224,7 +224,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://frrouting.org/";
     description = "FRR BGP/OSPF/ISIS/RIP/RIPNG routing daemon suite";
     longDescription = ''
@@ -253,7 +253,7 @@ stdenv.mkDerivation (finalAttrs: {
       gpl2Plus
       lgpl21Plus
     ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       woffs
       thillux
     ];

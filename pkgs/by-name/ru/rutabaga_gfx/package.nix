@@ -87,12 +87,12 @@ stdenv.mkDerivation (finalAttrs: {
     "OUT=target/${stdenv.hostPlatform.rust.cargoShortTarget}/release"
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://crosvm.dev/book/appendix/rutabaga_gfx.html";
     description = "cross-platform abstraction for GPU and display virtualization";
-    license = licenses.bsd3;
-    maintainers = with maintainers; [ qyliss ];
-    platforms = platforms.darwin ++ platforms.linux;
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ qyliss ];
+    platforms = lib.platforms.darwin ++ platforms.linux;
     # error[E0432]: unresolved import `self::consts`
     badPlatforms = [ "loongarch64-linux" ];
   };

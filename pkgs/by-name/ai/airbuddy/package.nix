@@ -34,7 +34,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Take Control of Your Wireless Devices on macOS";
     longDescription = ''
       Open your AirPods case next to your Mac to see the status right away, just like it works on your iPhone or iPad.
@@ -44,7 +44,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     changelog = "https://support.airbuddy.app/articles/airbuddy-2-changelog";
     license = with licenses; [ unfree ];
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    maintainers = with maintainers; [ stepbrobd ];
+    maintainers = with lib.maintainers; [ stepbrobd ];
     platforms = [
       "aarch64-darwin"
       "x86_64-darwin"

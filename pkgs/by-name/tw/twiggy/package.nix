@@ -16,7 +16,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-FaoEqCdMb3h93zGvc+EZ8LfYgMPY3dT/fScpRgGVeAo=";
 
-  meta = with lib; {
+  meta = {
     homepage = "https://rustwasm.github.io/twiggy/";
     description = "Code size profiler for Wasm";
     mainProgram = "twiggy";
@@ -24,6 +24,6 @@ rustPlatform.buildRustPackage rec {
       asl20
       mit
     ];
-    maintainers = with maintainers; [ lucperkins ];
+    maintainers = with lib.maintainers; [ lucperkins ];
   };
 }

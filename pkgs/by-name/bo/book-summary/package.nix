@@ -16,11 +16,11 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-8waVWCyjulMrXRc1nXZsiP4tMg70VZJ4wbgCQUgpX4A=";
 
-  meta = with lib; {
+  meta = {
     description = "Book auto-summary for gitbook and mdBook";
     mainProgram = "book-summary";
     homepage = "https://github.com/dvogt23/book-summary";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     teams = with teams; [ iog ];
   };
 }

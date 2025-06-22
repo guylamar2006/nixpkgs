@@ -57,11 +57,11 @@ stdenv.mkDerivation rec {
     ++ lib.optional withLibui "USE_LIBUI=yes"
     ++ lib.optional withUdisks "USE_UDISKS2=yes";
 
-  meta = with lib; {
+  meta = {
     description = "Very minimal GUI app that can write compressed disk images to USB drives";
     homepage = "https://gitlab.com/bztsrc/usbimager";
-    license = licenses.mit;
-    maintainers = with maintainers; [ vdot0x23 ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ vdot0x23 ];
     # windows and darwin could work, but untested
     # feel free add them if you have a machine to test
     platforms = with platforms; linux;

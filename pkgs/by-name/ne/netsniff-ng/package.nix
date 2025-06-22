@@ -80,7 +80,7 @@ stdenv.mkDerivation rec {
     rm -v $out/etc/netsniff-ng/geoip.conf # updating databases after installation is impossible
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Swiss army knife for daily Linux network plumbing";
     longDescription = ''
       netsniff-ng is a free Linux networking toolkit. Its gain of performance
@@ -91,6 +91,6 @@ stdenv.mkDerivation rec {
     '';
     homepage = "http://netsniff-ng.org/";
     license = with licenses; [ gpl2Only ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

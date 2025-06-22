@@ -81,7 +81,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://imagej.net/software/fiji/";
     description = "batteries-included distribution of ImageJ2, bundling a lot of plugins which facilitate scientific image analysis";
     mainProgram = "fiji";
@@ -96,6 +96,6 @@ stdenv.mkDerivation rec {
       bsd2
       publicDomain
     ];
-    maintainers = with maintainers; [ davisrichard437 ];
+    maintainers = with lib.maintainers; [ davisrichard437 ];
   };
 }

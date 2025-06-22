@@ -70,15 +70,15 @@ perlPackages.buildPerlPackage rec {
       installShellCompletion --zsh completions/zsh/_feedgnuplot
     '';
 
-  meta = with lib; {
+  meta = {
     description = "General purpose pipe-oriented plotting tool";
     homepage = "https://github.com/dkogan/feedgnuplot/";
     license = with licenses; [
       artistic1
       gpl1Plus
     ];
-    platforms = platforms.unix;
-    maintainers = with maintainers; [ mnacamura ];
+    platforms = lib.platforms.unix;
+    maintainers = with lib.maintainers; [ mnacamura ];
     mainProgram = "feedgnuplot";
   };
 }

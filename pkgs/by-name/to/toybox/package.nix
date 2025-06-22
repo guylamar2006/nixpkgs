@@ -77,12 +77,12 @@ stdenv.mkDerivation rec {
 
   env.NIX_CFLAGS_COMPILE = "-Wno-error";
 
-  meta = with lib; {
+  meta = {
     description = "Lightweight implementation of some Unix command line utilities";
     homepage = "https://landley.net/toybox/";
-    license = licenses.bsd0;
+    license = lib.licenses.bsd0;
     platforms = with platforms; linux ++ darwin ++ freebsd;
-    maintainers = with maintainers; [ hhm ];
+    maintainers = with lib.maintainers; [ hhm ];
     priority = 10;
   };
 }

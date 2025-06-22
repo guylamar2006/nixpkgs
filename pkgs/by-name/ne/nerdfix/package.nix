@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-8EchpubKnixlvAyM2iSf4fE5wowJHT6/mDHIvLPnEok=";
 
-  meta = with lib; {
+  meta = {
     description = "Nerdfix helps you to find/fix obsolete nerd font icons in your project";
     mainProgram = "nerdfix";
     homepage = "https://github.com/loichyan/nerdfix";
@@ -27,6 +27,6 @@ rustPlatform.buildRustPackage rec {
       asl20
       mit
     ];
-    maintainers = with maintainers; [ figsoda ];
+    maintainers = with lib.maintainers; [ figsoda ];
   };
 }

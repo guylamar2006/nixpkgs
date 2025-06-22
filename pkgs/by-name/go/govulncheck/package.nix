@@ -64,7 +64,7 @@ buildGo124Module rec {
       example, a dependency with a Windows-specific vulnerability will not be
       reported for a Linux build.
     '';
-    license = with lib.licenses; [ bsd3 ];
+    license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [
       jk
       SuperSandro2000

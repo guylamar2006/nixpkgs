@@ -18,11 +18,11 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-82jG4tHqc5FQFGp4NANk2oJjiHc0+ekVdbdWlqjzaj8=";
 
-  meta = with lib; {
+  meta = {
     description = "X11 XTEST reimplementation primarily for Steam Controller on Wayland";
     homepage = "https://github.com/Supreeeme/extest";
-    platforms = platforms.linux;
-    license = licenses.mit;
-    maintainers = [ maintainers.puffnfresh ];
+    platforms = lib.platforms.linux;
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ puffnfresh ];
   };
 }

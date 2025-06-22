@@ -16,7 +16,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-pMkvyMGfvLdj406xH/1+ZHE33iZDcmUUBjeSiIro0xY=";
 
-  meta = with lib; {
+  meta = {
     description = "Converts Specr lang code to Rust";
     mainProgram = "specr-transpile";
     homepage = "https://github.com/RalfJung/minirust-tooling";
@@ -24,6 +24,6 @@ rustPlatform.buildRustPackage rec {
       asl20
       mit
     ];
-    maintainers = with maintainers; [ figsoda ];
+    maintainers = with lib.maintainers; [ figsoda ];
   };
 }

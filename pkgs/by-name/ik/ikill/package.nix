@@ -18,12 +18,12 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-Xbl9cQKWxtwNQqWW41mQrVAsvMLUkTb0irDLD/XstMI=";
 
-  meta = with lib; {
+  meta = {
     description = "Interactively kill running processes";
     homepage = "https://github.com/pjmp/ikill";
-    maintainers = with maintainers; [ zendo ];
+    maintainers = with lib.maintainers; [ zendo ];
     license = [ licenses.mit ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "ikill";
   };
 }

@@ -17,14 +17,14 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-HirLjKkfZfc9UmUcUF5WW7xAJuCu7ftJDH8+zTSYlxs=";
 
-  meta = with lib; {
+  meta = {
     description = "Analyze and collect metrics on source code";
     homepage = "https://github.com/mozilla/rust-code-analysis";
     license = with licenses; [
       mit # grammars
       mpl20 # code
     ];
-    maintainers = with maintainers; [ figsoda ];
+    maintainers = with lib.maintainers; [ figsoda ];
     mainProgram = "rust-code-analysis-cli";
   };
 }

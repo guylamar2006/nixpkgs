@@ -69,7 +69,7 @@ lib.throwIf (buildOcamlBindings && !lib.versionAtLeast ocamlPackages.ocaml.versi
       substituteAllInPlace $LIBNBD_PYTHON_METADATA
     '';
 
-    meta = with lib; {
+    meta = {
       homepage = "https://gitlab.com/nbdkit/libnbd";
       description = "Network Block Device client library in userspace";
       longDescription = ''
@@ -88,7 +88,7 @@ lib.throwIf (buildOcamlBindings && !lib.versionAtLeast ocamlPackages.ocaml.versi
         - Shell (nbdsh) for command line and scripting.
       '';
       license = with licenses; lgpl21Plus;
-      maintainers = with maintainers; [
+      maintainers = with lib.maintainers; [
         humancalico
       ];
       platforms = with platforms; linux;

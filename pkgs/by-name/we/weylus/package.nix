@@ -100,11 +100,11 @@ rustPlatform.buildRustPackage {
     ];
   };
 
-  meta = with lib; {
+  meta = {
     description = "Use your tablet as graphic tablet/touch screen on your computer";
     mainProgram = "weylus";
     homepage = "https://github.com/H-M-H/Weylus";
     license = with licenses; [ agpl3Only ];
-    maintainers = with maintainers; [ lom ];
+    maintainers = with lib.maintainers; [ lom ];
   };
 }

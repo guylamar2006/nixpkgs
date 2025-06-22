@@ -18,12 +18,12 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-lB7+2dQGfbn7IhmCAN0jvFTGjJDBpw57VHi3qIwwOZ4=";
 
-  meta = with lib; {
+  meta = {
     description = "Health checks for your Nix flakes";
     homepage = "https://github.com/${src.owner}/${src.repo}";
     changelog = "https://github.com/${src.owner}/${src.repo}/releases/tag/${src.rev}";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ lucperkins ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ lucperkins ];
     mainProgram = "flake-checker";
   };
 }

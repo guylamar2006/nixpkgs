@@ -19,7 +19,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-m9426zuxp9GfbYoljW49BVgetLTqqcqGHCb7I+Yw+bc=";
 
-  meta = with lib; {
+  meta = {
     description = "Formatter for the leptos view! macro";
     mainProgram = "leptosfmt";
     homepage = "https://github.com/bram209/leptosfmt";
@@ -28,6 +28,6 @@ rustPlatform.buildRustPackage rec {
       asl20
       mit
     ];
-    maintainers = with maintainers; [ figsoda ];
+    maintainers = with lib.maintainers; [ figsoda ];
   };
 }

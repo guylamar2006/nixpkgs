@@ -39,7 +39,7 @@ stdenv.mkDerivation {
     done
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Assets for Space Nerds In Space, a multi-player spaceship bridge simulator";
     homepage = "https://smcameron.github.io/space-nerds-in-space/";
     license = [
@@ -48,8 +48,8 @@ stdenv.mkDerivation {
       licenses.cc0
       licenses.publicDomain
     ];
-    maintainers = with maintainers; [ pentane ];
-    platforms = platforms.linux;
+    maintainers = with lib.maintainers; [ pentane ];
+    platforms = lib.platforms.linux;
     hydraPlatforms = [ ];
   };
 }

@@ -18,13 +18,13 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-dfHcyGQYkjEAhrNRlD5BTbMwaZaO/E0KwqZJ8TjelGw=";
 
-  meta = with lib; {
+  meta = {
     description = "Command line tool to write random bytes to stdout";
     homepage = "https://github.com/Wulfsta/psw";
     license = with licenses; [
       asl20 # or
       mit
     ];
-    maintainers = with maintainers; [ wulfsta ];
+    maintainers = with lib.maintainers; [ wulfsta ];
   };
 }

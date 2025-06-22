@@ -18,11 +18,11 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-vAhHCNsViYyNSKeSGUL2oIp8bp5UCm8HReyDuoFvfqs=";
 
-  meta = with lib; {
+  meta = {
     description = "Easily add emojis to your git commit messages";
     homepage = "https://github.com/zeenix/gimoji";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     mainProgram = "gimoji";
-    maintainers = with maintainers; [ a-kenji ];
+    maintainers = with lib.maintainers; [ a-kenji ];
   };
 }

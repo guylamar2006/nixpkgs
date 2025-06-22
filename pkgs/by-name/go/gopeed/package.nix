@@ -20,7 +20,7 @@ let
   metaCommon = {
     description = "Modern download manager that supports all platforms";
     homepage = "https://github.com/GopeedLab/gopeed";
-    license = with lib.licenses; [ gpl3Plus ];
+    license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
   };

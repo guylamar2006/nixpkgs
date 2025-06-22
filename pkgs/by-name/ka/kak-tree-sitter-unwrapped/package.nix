@@ -30,7 +30,7 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://git.sr.ht/~hadronized/kak-tree-sitter";
     description = "Server that interfaces tree-sitter with kakoune";
     mainProgram = "kak-tree-sitter";
-    license = with lib.licenses; [ bsd3 ];
+    license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ lelgenio ];
   };
 }

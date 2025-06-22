@@ -161,7 +161,7 @@ stdenv.mkDerivation rec {
     install -D build/resources/0ad.desktop $out/share/applications/0ad.desktop
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Free, open-source game of ancient warfare";
     homepage = "https://play0ad.com/";
     license = with licenses; [
@@ -171,7 +171,7 @@ stdenv.mkDerivation rec {
       cc-by-sa-30
       licenses.zlib # otherwise masked by pkgs.zlib
     ];
-    maintainers = with maintainers; [ chvp ];
+    maintainers = with lib.maintainers; [ chvp ];
     platforms = subtractLists platforms.i686 platforms.linux;
     mainProgram = "0ad";
   };

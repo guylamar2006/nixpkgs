@@ -93,7 +93,7 @@ stdenv.mkDerivation rec {
     install -Dm644 TwitterColorEmoji.ttf $out/share/fonts/truetype/TwitterColorEmoji.ttf
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Color emoji font with a flat visual style, designed and used by Twitter";
     longDescription = ''
       A bitmap color emoji font built from Twitter's Twemoji emoji set
@@ -118,6 +118,6 @@ stdenv.mkDerivation rec {
       cc-by-40
       mit
     ];
-    maintainers = with maintainers; [ emily ];
+    maintainers = with lib.maintainers; [ emily ];
   };
 }

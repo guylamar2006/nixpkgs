@@ -18,13 +18,13 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-CkFJHW7yrIJi/KMGJgyhnLTMkrxnDwO3X4M1aml9cuM=";
 
-  meta = with lib; {
+  meta = {
     description = "Creates a bootable disk image from a Rust OS kernel";
     homepage = "https://github.com/rust-osdev/bootimage";
     license = with licenses; [
       asl20
       mit
     ];
-    maintainers = with maintainers; [ dbeckwith ];
+    maintainers = with lib.maintainers; [ dbeckwith ];
   };
 }

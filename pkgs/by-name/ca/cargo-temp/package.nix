@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-rHTEWc3JAnsz5z+NmTb84VSXHSR6nNlb5C+n9VxvnUQ=";
 
-  meta = with lib; {
+  meta = {
     description = "CLI tool that allow you to create a temporary new Rust project using cargo with already installed dependencies";
     mainProgram = "cargo-temp";
     homepage = "https://github.com/yozhgoor/cargo-temp";
@@ -27,7 +27,7 @@ rustPlatform.buildRustPackage rec {
       mit # or
       asl20
     ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       figsoda
       matthiasbeyer
     ];

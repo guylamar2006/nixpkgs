@@ -116,7 +116,7 @@ stdenv.mkDerivation (finalAttrs: {
     run-voxedit = nixosTests.vengi-tools;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Tools from the vengi voxel engine, including a thumbnailer, a converter, and the VoxEdit voxel editor";
     longDescription = ''
       Tools from the vengi C++ voxel game engine. It includes a voxel editor
@@ -131,7 +131,7 @@ stdenv.mkDerivation (finalAttrs: {
       licenses.mit
       licenses.cc-by-sa-30
     ];
-    maintainers = with maintainers; [ fgaz ];
-    platforms = platforms.all;
+    maintainers = with lib.maintainers; [ fgaz ];
+    platforms = lib.platforms.all;
   };
 })

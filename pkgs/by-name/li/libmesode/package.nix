@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     description = "Fork of libstrophe (https://github.com/strophe/libstrophe) for use with Profanity XMPP Client";
     longDescription = ''
       Reasons for forking:
@@ -54,8 +54,8 @@ stdenv.mkDerivation rec {
       gpl3Only
       mit
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin;
-    maintainers = with maintainers; [ devhell ];
+    maintainers = with lib.maintainers; [ devhell ];
   };
 }

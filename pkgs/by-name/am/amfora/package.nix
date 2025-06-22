@@ -27,7 +27,7 @@ buildGoModule rec {
     description = "Fancy terminal browser for the Gemini protocol";
     mainProgram = "amfora";
     homepage = "https://github.com/makeworld-the-better-one/amfora";
-    license = with lib.licenses; [ gpl3 ];
+    license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ deifactor ];
     changelog = "https://github.com/makeworld-the-better-one/amfora/blob/v${version}/CHANGELOG.md";
   };

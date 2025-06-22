@@ -91,7 +91,7 @@ flutter324.buildFlutterApplication rec {
     description = "Cross platform App for streaming Music";
     homepage = "https://github.com/anandnet/Harmony-Music";
     mainProgram = "harmonymusic";
-    license = with lib.licenses; [ gpl3Plus ];
+    license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
   };

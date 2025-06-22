@@ -39,15 +39,15 @@ rustPlatform.buildRustPackage rec {
     install -Dm644 50-virtiofsd.json "$out/share/qemu/vhost-user/50-virtiofsd.json"
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://gitlab.com/virtio-fs/virtiofsd";
     description = "vhost-user virtio-fs device backend written in Rust";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       qyliss
       astro
     ];
     mainProgram = "virtiofsd";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = with licenses; [
       asl20 # and
       bsd3

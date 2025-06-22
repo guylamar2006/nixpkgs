@@ -136,7 +136,7 @@ flutter332.buildFlutterApplication rec {
     description = "Watch Animes online with danmaku support";
     homepage = "https://github.com/Predidit/Kazumi";
     mainProgram = "kazumi";
-    license = with lib.licenses; [ gpl3Plus ];
+    license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
   };

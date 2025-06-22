@@ -62,7 +62,7 @@ rustPlatform.buildRustPackage rec {
     inherit swim;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Better hardware description language";
     homepage = "https://gitlab.com/spade-lang/spade";
     changelog = "https://gitlab.com/spade-lang/spade/-/blob/${src.rev}/CHANGELOG.md";
@@ -72,7 +72,7 @@ rustPlatform.buildRustPackage rec {
       asl20
       mit
     ];
-    maintainers = with maintainers; [ pbsds ];
+    maintainers = with lib.maintainers; [ pbsds ];
     mainProgram = "spade";
   };
 }

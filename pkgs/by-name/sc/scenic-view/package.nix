@@ -70,7 +70,7 @@ stdenv.mkDerivation rec {
 
   desktopItems = [ desktopItem ];
 
-  meta = with lib; {
+  meta = {
     broken = stdenv.hostPlatform.isDarwin;
     description = "JavaFx application to visualize and modify the scenegraph of running JavaFx applications";
     mainProgram = "scenic-view";
@@ -84,8 +84,8 @@ stdenv.mkDerivation rec {
       fromSource
       binaryBytecode # deps
     ];
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ wirew0rm ];
-    platforms = platforms.all;
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ wirew0rm ];
+    platforms = lib.platforms.all;
   };
 }

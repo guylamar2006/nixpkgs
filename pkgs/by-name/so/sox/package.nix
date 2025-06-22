@@ -87,11 +87,11 @@ stdenv.mkDerivation {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description = "Sample Rate Converter for audio";
     homepage = "https://sox.sourceforge.net/";
-    maintainers = with maintainers; [ marcweber ];
+    maintainers = with lib.maintainers; [ marcweber ];
     license = if enableAMR then licenses.unfree else licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

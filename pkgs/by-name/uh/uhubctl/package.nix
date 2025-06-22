@@ -27,11 +27,11 @@ stdenv.mkDerivation rec {
 
   installFlags = [ "prefix=${placeholder "out"}" ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/mvp/uhubctl";
     description = "Utility to control USB power per-port on smart USB hubs";
-    license = licenses.gpl2Only;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [
       prusnak
       carlossless
     ];

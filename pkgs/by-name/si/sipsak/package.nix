@@ -30,11 +30,11 @@ stdenv.mkDerivation rec {
     hash = "sha256-y9P6t3xjazRNT6lDZAx+CttdyXruC6Q14b8XF9loeU4=";
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/sipwise/sipsak";
     description = "SIP Swiss army knife";
     license = lib.licenses.gpl2Plus;
-    maintainers = with maintainers; [ sheenobu ];
+    maintainers = with lib.maintainers; [ sheenobu ];
     platforms = with platforms; unix;
     mainProgram = "sipsak";
   };

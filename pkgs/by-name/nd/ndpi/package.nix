@@ -33,7 +33,7 @@ stdenv.mkDerivation (finalAttrs: {
     libpcap
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Library for deep-packet inspection";
     longDescription = ''
       nDPI is a library for deep-packet inspection based on OpenDPI.
@@ -44,7 +44,7 @@ stdenv.mkDerivation (finalAttrs: {
       lgpl3Plus
       bsd3
     ];
-    maintainers = with maintainers; [ takikawa ];
+    maintainers = with lib.maintainers; [ takikawa ];
     mainProgram = "ndpiReader";
     platforms = with platforms; unix;
   };

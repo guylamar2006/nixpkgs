@@ -79,7 +79,7 @@ buildNpmPackage {
   meta = {
     description = "Linux Desktop client for Nvidia's GeForce NOW game streaming service";
     homepage = "https://github.com/hmlendea/gfn-electron";
-    license = with lib.licenses; [ gpl3Only ];
+    license = lib.licenses.gpl3Only;
     platforms = lib.intersectLists lib.platforms.linux electron.meta.platforms;
     maintainers = with lib.maintainers; [ pluiedev ];
     mainProgram = "geforcenow-electron";

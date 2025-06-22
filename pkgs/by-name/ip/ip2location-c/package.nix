@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
   # databases are available, downloading them for just 1 test seems excessive):
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Library to look up locations of host names and IP addresses";
     mainProgram = "ip2location";
     longDescription = ''
@@ -41,6 +41,6 @@ stdenv.mkDerivation rec {
       lgpl3Plus
     ];
     maintainers = [ ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

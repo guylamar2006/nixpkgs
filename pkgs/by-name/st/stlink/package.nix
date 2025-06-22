@@ -63,10 +63,10 @@ stdenv.mkDerivation rec {
     "-DSTLINK_UDEV_RULES_DIR=${placeholder "out"}/lib/udev/rules.d"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "In-circuit debug and programming for ST-Link devices";
-    license = licenses.bsd3;
-    platforms = platforms.unix;
+    license = lib.licenses.bsd3;
+    platforms = lib.platforms.unix;
     badPlatforms = platforms.darwin;
     maintainers = [
       maintainers.bjornfor

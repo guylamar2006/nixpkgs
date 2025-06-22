@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-Kt4GLvbGK42RjivLpL5W5z5YBfDP5B83mCulWz6Bisw=";
 
-  meta = with lib; {
+  meta = {
     description = "Cargo extension for building Android NDK projects";
     mainProgram = "cargo-ndk";
     homepage = "https://github.com/bbqsrc/cargo-ndk";
@@ -26,6 +26,6 @@ rustPlatform.buildRustPackage rec {
       asl20 # or
       mit
     ];
-    maintainers = with maintainers; [ mglolenstine ];
+    maintainers = with lib.maintainers; [ mglolenstine ];
   };
 }

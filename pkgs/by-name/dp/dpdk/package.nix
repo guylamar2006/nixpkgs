@@ -102,7 +102,7 @@ stdenv.mkDerivation rec {
     "doc"
   ] ++ lib.optional (withExamples != [ ]) "examples";
 
-  meta = with lib; {
+  meta = {
     description = "Set of libraries and drivers for fast packet processing";
     homepage = "http://dpdk.org/";
     license = with licenses; [
@@ -110,8 +110,8 @@ stdenv.mkDerivation rec {
       gpl2Only
       bsd2
     ];
-    platforms = platforms.linux;
-    maintainers = with maintainers; [
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [
       magenbluten
       orivej
       mic92

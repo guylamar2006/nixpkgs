@@ -51,7 +51,7 @@ python3.pkgs.buildPythonApplication rec {
     mainProgram = "clairvoyance";
     homepage = "https://github.com/nikitastupin/clairvoyance";
     changelog = "https://github.com/nikitastupin/clairvoyance/releases/tag/v${version}";
-    license = with lib.licenses; [ asl20 ];
+    license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ fab ];
   };
 }

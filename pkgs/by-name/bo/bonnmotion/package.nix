@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Mobility scenario generation and analysis tool";
     mainProgram = "bm";
     longDescription = ''
@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
       fromSource
       binaryBytecode # source bundles dependency jars
     ];
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [ oxzi ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ oxzi ];
   };
 }

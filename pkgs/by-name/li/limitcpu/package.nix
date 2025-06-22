@@ -26,12 +26,12 @@ stdenv.mkDerivation rec {
 
   installFlags = [ "PREFIX=$(out)" ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://limitcpu.sourceforge.net/";
     description = "Tool to throttle the CPU usage of programs";
     platforms = with platforms; linux ++ freebsd;
-    license = licenses.gpl2Only;
-    maintainers = [ maintainers.rycee ];
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [ rycee ];
     mainProgram = "cpulimit";
   };
 }

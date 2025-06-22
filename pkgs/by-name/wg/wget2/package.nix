@@ -101,7 +101,7 @@ stdenv.mkDerivation rec {
   versionCheckProgram = "${placeholder "out"}/bin/${meta.mainProgram}";
   versionCheckProgramArg = "--version";
 
-  meta = with lib; {
+  meta = {
     description = "Successor of GNU Wget, a file and recursive website downloader";
     longDescription = ''
       Designed and written from scratch it wraps around libwget, that provides the basic
@@ -116,7 +116,7 @@ stdenv.mkDerivation rec {
       gpl3Plus
       lgpl3Plus
     ];
-    maintainers = with maintainers; [ SuperSandro2000 ];
+    maintainers = with lib.maintainers; [ SuperSandro2000 ];
     mainProgram = "wget2";
   };
 }

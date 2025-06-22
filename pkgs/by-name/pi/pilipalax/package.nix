@@ -63,7 +63,7 @@ flutter324.buildFlutterApplication rec {
     description = "Third-party BiliBili client developed with Flutter";
     homepage = "https://github.com/orz12/PiliPalaX";
     mainProgram = "pilipala";
-    license = with lib.licenses; [ gpl3Plus ];
+    license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
   };

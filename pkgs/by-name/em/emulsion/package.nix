@@ -60,12 +60,12 @@ rustPlatform.buildRustPackage rec {
     patchelf --set-rpath "${lib.makeLibraryPath rpathLibs}" $out/bin/emulsion
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Fast and minimalistic image viewer";
     homepage = "https://arturkovacs.github.io/emulsion-website/";
-    maintainers = [ maintainers.magnetophon ];
-    platforms = platforms.unix;
-    license = licenses.mit;
+    maintainers = with lib.maintainers; [ magnetophon ];
+    platforms = lib.platforms.unix;
+    license = lib.licenses.mit;
     mainProgram = "emulsion";
   };
 }

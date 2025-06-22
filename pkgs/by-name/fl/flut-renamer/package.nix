@@ -29,7 +29,7 @@ flutter324.buildFlutterApplication rec {
     homepage = "https://github.com/sun-jiao/flut-renamer";
     mainProgram = "flut-renamer";
     platforms = lib.platforms.linux;
-    license = with lib.licenses; [ gpl3Plus ];
+    license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ ];
   };
 }

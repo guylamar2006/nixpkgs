@@ -68,13 +68,13 @@ stdenv.mkDerivation (finalAttrs: {
     updateScript = nix-update-script { };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Webfont Kit Generator is a simple utility that allows you to generate woff, woff2 and the necessary CSS boilerplate from non-web font formats (otf & ttf)";
     mainProgram = "webfontkitgenerator";
     homepage = "https://apps.gnome.org/app/com.rafaelmardojai.WebfontKitGenerator";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ benediktbroich ];
-    teams = [ teams.gnome-circle ];
-    platforms = platforms.unix;
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ benediktbroich ];
+    teams = with lib.teams; [ gnome-circle ];
+    platforms = lib.platforms.unix;
   };
 })

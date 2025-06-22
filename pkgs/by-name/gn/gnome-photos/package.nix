@@ -117,12 +117,12 @@ stdenv.mkDerivation rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Access, organize and share your photos";
     mainProgram = "gnome-photos";
     homepage = "https://gitlab.gnome.org/GNOME/gnome-photos";
-    license = licenses.gpl3Plus;
-    teams = [ teams.gnome ];
-    platforms = platforms.linux;
+    license = lib.licenses.gpl3Plus;
+    teams = with lib.teams; [ gnome ];
+    platforms = lib.platforms.linux;
   };
 }

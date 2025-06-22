@@ -48,7 +48,7 @@ stdenv.mkDerivation {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://frrouting.org/";
     description = "FRR routing daemon suite: CLI helper tool clippy";
     longDescription = ''
@@ -60,7 +60,7 @@ stdenv.mkDerivation {
       gpl2Plus
       lgpl21Plus
     ];
-    maintainers = with maintainers; [ thillux ];
-    platforms = platforms.unix;
+    maintainers = with lib.maintainers; [ thillux ];
+    platforms = lib.platforms.unix;
   };
 }

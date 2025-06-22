@@ -18,15 +18,15 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-TUW0DdTVNrFpRaTGWM9XD0kW1CjmSAfWrbZxFGn1jJw=";
 
-  meta = with lib; {
+  meta = {
     description = "Automatically DRY up your Rust dependencies";
     homepage = "https://github.com/mainmatter/cargo-autoinherit";
     license = with licenses; [
       asl20 # OR
       mit
     ];
-    platforms = platforms.unix;
-    maintainers = with maintainers; [ matthiasbeyer ];
+    platforms = lib.platforms.unix;
+    maintainers = with lib.maintainers; [ matthiasbeyer ];
     mainProgram = "cargo-autoinherit";
   };
 }

@@ -81,11 +81,11 @@ stdenv.mkDerivation rec {
     runHook preInstallCheck
   '';
 
-  meta = with lib; {
+  meta = {
     description = "PC/SC driver for USB CCID smart card readers";
     homepage = "https://ccid.apdu.fr/";
-    license = licenses.lgpl21Plus;
-    maintainers = [ maintainers.anthonyroussel ];
-    platforms = platforms.unix;
+    license = lib.licenses.lgpl21Plus;
+    maintainers = with lib.maintainers; [ anthonyroussel ];
+    platforms = lib.platforms.unix;
   };
 }

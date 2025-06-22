@@ -277,7 +277,7 @@ stdenv.mkDerivation rec {
           ${with perlPackages; makePerlPath [ GD ]}
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://salsa.debian.org/signing-party-team/signing-party";
     description = "Collection of several projects relating to OpenPGP";
     longDescription = ''
@@ -307,7 +307,7 @@ stdenv.mkDerivation rec {
       gpl2Plus
       gpl3Plus
     ];
-    maintainers = with maintainers; [ primeos ];
-    platforms = platforms.linux;
+    maintainers = with lib.maintainers; [ primeos ];
+    platforms = lib.platforms.linux;
   };
 }

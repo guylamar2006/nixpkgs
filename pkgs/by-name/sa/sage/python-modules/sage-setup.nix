@@ -22,10 +22,10 @@ buildPythonPackage rec {
 
   doCheck = false; # sagelib depends on sage-setup, but sage-setup's tests depend on sagelib
 
-  meta = with lib; {
+  meta = {
     description = "Build system of the Sage library";
     homepage = "https://www.sagemath.org";
-    license = licenses.gpl2Plus;
-    teams = [ teams.sage ];
+    license = lib.licenses.gpl2Plus;
+    teams = with lib.teams; [ sage ];
   };
 }

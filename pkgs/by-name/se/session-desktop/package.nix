@@ -53,12 +53,12 @@ stdenvNoCC.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Onion routing based messenger";
     mainProgram = "session-desktop";
     homepage = "https://getsession.org/";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [
       alexnortung
       cyewashish
     ];

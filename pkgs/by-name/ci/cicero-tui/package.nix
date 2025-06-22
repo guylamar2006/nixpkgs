@@ -33,12 +33,12 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-D+CcUNVMgn8fiGcr+dYkQJoRHzpo3l5qTacCUKCydOQ=";
 
-  meta = with lib; {
+  meta = {
     description = "Unicode tool with a terminal user interface";
     homepage = "https://github.com/eyeplum/cicero-tui";
     license = with licenses; [ gpl3Plus ];
-    maintainers = with maintainers; [ shamilton ];
-    platforms = platforms.linux;
+    maintainers = with lib.maintainers; [ shamilton ];
+    platforms = lib.platforms.linux;
     mainProgram = "cicero";
   };
 }

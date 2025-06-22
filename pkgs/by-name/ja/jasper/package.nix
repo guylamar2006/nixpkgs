@@ -94,7 +94,7 @@ stdenv.mkDerivation (finalAttrs: {
       was chosen primarily due to the availability of C development environments
       for most computing platforms when JasPer was first developed, circa 1999.
     '';
-    license = with lib.licenses; [ mit ];
+    license = lib.licenses.mit;
     mainProgram = "jasper";
     maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;

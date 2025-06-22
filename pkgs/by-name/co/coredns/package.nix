@@ -124,12 +124,12 @@ buildGoModule rec {
     kubernetes-multi-node = nixosTests.kubernetes.dns-multi-node;
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://coredns.io";
     description = "DNS server that runs middleware";
     mainProgram = "coredns";
-    license = licenses.asl20;
-    maintainers = with maintainers; [
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [
       rushmorem
       rtreffer
       deltaevo

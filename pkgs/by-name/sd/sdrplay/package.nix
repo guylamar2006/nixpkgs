@@ -68,7 +68,7 @@ stdenv.mkDerivation rec {
     cp 66-mirics.rules $out/lib/udev/rules.d/
   '';
 
-  meta = with lib; {
+  meta = {
     description = "SDRplay API";
     longDescription = ''
       Proprietary library and api service for working with SDRplay devices. For documentation and licensing details see
@@ -76,12 +76,12 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://www.sdrplay.com/downloads/";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.unfree;
-    maintainers = with maintainers; [
+    license = lib.licenses.unfree;
+    maintainers = with lib.maintainers; [
       pmenke
       zaninime
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "sdrplay_apiService";
   };
 }

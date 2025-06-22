@@ -69,7 +69,7 @@ maven.buildMavenPackage rec {
       --prefix LD_LIBRARY_PATH : "${lib.getLib pcsclite}/lib"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Command-line utility for managing applets and keys on Java Cards";
     longDescription = ''
       This command-line utility can be used to manage applets and keys
@@ -84,7 +84,7 @@ maven.buildMavenPackage rec {
       binaryBytecode # deps
     ];
     license = with licenses; [ lgpl3 ];
-    maintainers = with maintainers; [ ekleog ];
+    maintainers = with lib.maintainers; [ ekleog ];
     mainProgram = "gp";
   };
 }

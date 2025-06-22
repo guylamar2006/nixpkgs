@@ -26,7 +26,7 @@ stdenvNoCC.mkDerivation {
   meta = {
     homepage = "https://github.com/swisskyrepo/PayloadsAllTheThings";
     description = "List of useful payloads and bypass for Web Application Security and Pentest/CTF";
-    license = with lib.licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ shard7 ];
     platforms = lib.platforms.all;
     sourceProvenance = with lib.sourceTypes; [ fromSource ];

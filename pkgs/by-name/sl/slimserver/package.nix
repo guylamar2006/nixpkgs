@@ -168,7 +168,7 @@ perlPackages.buildPerlPackage rec {
     updateScript = ./update.nu;
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://lyrion.org/";
     changelog = "https://lyrion.org/getting-started/changelog-lms${lib.versions.major version}";
     description = "Lyrion Music Server (formerly Logitech Media Server) is open-source server software which controls a wide range of Squeezebox audio players";
@@ -176,11 +176,11 @@ perlPackages.buildPerlPackage rec {
     # https://github.com/LMS-Community/slimserver/blob/public/8.3/License.txt
     license = if enableUnfreeFirmware then licenses.unfree else licenses.gpl2Only;
     mainProgram = "slimserver";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       adamcstephens
       jecaro
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin;
   };
 }

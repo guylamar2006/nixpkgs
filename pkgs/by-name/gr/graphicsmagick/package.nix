@@ -108,7 +108,7 @@ stdenv.mkDerivation (finalAttrs: {
       including important formats like DPX, GIF, JPEG, JPEG-2000, JXL, PNG, PDF,
       PNM, TIFF, and WebP.
     '';
-    license = with lib.licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "gm";
     platforms = lib.platforms.all;

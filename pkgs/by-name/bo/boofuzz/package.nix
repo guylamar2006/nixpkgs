@@ -62,7 +62,7 @@ python3.pkgs.buildPythonApplication rec {
     mainProgram = "boo";
     homepage = "https://github.com/jtpereyda/boofuzz";
     changelog = "https://github.com/jtpereyda/boofuzz/blob/v${version}/CHANGELOG.rst";
-    license = with lib.licenses; [ gpl2Plus ];
+    license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ fab ];
   };
 }

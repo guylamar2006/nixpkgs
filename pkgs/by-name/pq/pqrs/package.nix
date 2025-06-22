@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-P3yTmECj0K0mjWUiWlQCwuQVbnbVR1xFV5cE8Uo3U90=";
 
-  meta = with lib; {
+  meta = {
     description = "CLI tool to inspect Parquet files";
     mainProgram = "pqrs";
     homepage = "https://github.com/manojkarthick/pqrs";
@@ -26,6 +26,6 @@ rustPlatform.buildRustPackage rec {
       mit # or
       asl20
     ];
-    maintainers = [ maintainers.manojkarthick ];
+    maintainers = with lib.maintainers; [ manojkarthick ];
   };
 }

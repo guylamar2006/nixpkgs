@@ -26,11 +26,11 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description = "Scaling, colorspace conversion and dithering library";
     homepage = "https://github.com/sekrit-twc/zimg";
-    license = licenses.wtfpl;
+    license = lib.licenses.wtfpl;
     platforms = with platforms; unix ++ windows;
-    maintainers = with maintainers; [ rnhmjoj ];
+    maintainers = with lib.maintainers; [ rnhmjoj ];
   };
 }

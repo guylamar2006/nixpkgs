@@ -26,13 +26,13 @@ stdenv.mkDerivation rec {
   ];
   buildInputs = [ ncurses ];
 
-  meta = with lib; {
+  meta = {
     description = "Ncurses based sudoku game";
     mainProgram = "nudoku";
     homepage = "https://jubalh.github.io/nudoku";
-    license = licenses.gpl3Only;
+    license = lib.licenses.gpl3Only;
     sourceProvenance = with sourceTypes; [ fromSource ];
-    platforms = platforms.all;
-    maintainers = with maintainers; [ weathercold ];
+    platforms = lib.platforms.all;
+    maintainers = with lib.maintainers; [ weathercold ];
   };
 }

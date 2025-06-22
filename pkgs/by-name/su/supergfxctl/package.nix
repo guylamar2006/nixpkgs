@@ -43,11 +43,11 @@ rustPlatform.buildRustPackage rec {
     install -Dm444 -t $out/lib/systemd/system/ data/supergfxd.service
   '';
 
-  meta = with lib; {
+  meta = {
     description = "GPU switching utility, mostly for ASUS laptops";
     homepage = "https://gitlab.com/asus-linux/supergfxctl";
-    license = licenses.mpl20;
+    license = lib.licenses.mpl20;
     platforms = [ "x86_64-linux" ];
-    maintainers = [ maintainers.k900 ];
+    maintainers = with lib.maintainers; [ k900 ];
   };
 }

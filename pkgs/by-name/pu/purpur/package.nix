@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     tests = { inherit (nixosTests) minecraft-server; };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Drop-in replacement for Minecraft Paper servers";
     longDescription = ''
       Purpur is a drop-in replacement for Minecraft Paper servers designed for configurability, new fun and exciting
@@ -44,8 +44,8 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://purpurmc.org/";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
-    license = licenses.mit;
-    platforms = platforms.unix;
+    license = lib.licenses.mit;
+    platforms = lib.platforms.unix;
     maintainers = [ ];
     mainProgram = "minecraft-server";
   };

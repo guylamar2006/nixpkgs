@@ -102,7 +102,7 @@ stdenv.mkDerivation (finalAttrs: {
     hash = "sha256-dmpx0Wud0IhdFvvTJuW/w1Uq6vFYaNal9n27LAqV1Qc=";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Simulation environment for empirically-based simulations of neurons and networks of neurons";
     longDescription = ''
       NEURON is a simulation environment for developing and exercising models of
@@ -112,12 +112,12 @@ stdenv.mkDerivation (finalAttrs: {
       involving many ion-specific channels, ion accumulation, and second messengers
     '';
     sourceProvenance = with sourceTypes; [ fromSource ];
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     homepage = "http://www.neuron.yale.edu/neuron";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       adev
       davidcromp
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

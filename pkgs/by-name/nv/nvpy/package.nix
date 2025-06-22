@@ -39,8 +39,8 @@ pythonPackages.buildPythonApplication rec {
   meta = with pkgs.lib; {
     description = "Simplenote-syncing note-taking tool inspired by Notational Velocity";
     homepage = "https://github.com/cpbotha/nvpy";
-    platforms = platforms.linux;
-    license = licenses.bsd3;
+    platforms = lib.platforms.linux;
+    license = lib.licenses.bsd3;
     mainProgram = "nvpy";
   };
 }

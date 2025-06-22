@@ -30,11 +30,11 @@ rustPlatform.buildRustPackage rec {
     updateScript = nix-update-script { };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Fuzzing and property testing front-end framework for Rust";
     mainProgram = "cargo-bolero";
     homepage = "https://github.com/camshaft/bolero";
     license = with licenses; [ mit ];
-    maintainers = with maintainers; [ ekleog ];
+    maintainers = with lib.maintainers; [ ekleog ];
   };
 }

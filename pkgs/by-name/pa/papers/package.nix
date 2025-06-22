@@ -126,7 +126,7 @@ stdenv.mkDerivation (finalAttrs: {
     moveToOutput "share/doc" "$devdoc"
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://wiki.gnome.org/Apps/papers";
     changelog = "https://gitlab.gnome.org/GNOME/Incubator/papers/-/blob/${finalAttrs.version}/NEWS?ref_type=tags";
     description = "GNOME's document viewer";
@@ -138,9 +138,9 @@ stdenv.mkDerivation (finalAttrs: {
       on the GNOME Desktop with a more modern interface.
     '';
 
-    license = licenses.gpl2Plus;
-    platforms = platforms.unix;
+    license = lib.licenses.gpl2Plus;
+    platforms = lib.platforms.unix;
     mainProgram = "papers";
-    teams = [ teams.gnome ];
+    teams = with lib.teams; [ gnome ];
   };
 })

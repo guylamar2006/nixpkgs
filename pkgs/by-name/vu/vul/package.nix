@@ -19,10 +19,10 @@ stdenv.mkDerivation {
     "PREFIX=${placeholder "out"}"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Latin Vulgate Bible on the Command Line";
     homepage = "https://github.com/LukeSmithxyz/vul";
-    license = licenses.publicDomain;
+    license = lib.licenses.publicDomain;
     maintainers = [
       maintainers.j0hax
       maintainers.cafkafk

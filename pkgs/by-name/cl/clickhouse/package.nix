@@ -150,11 +150,11 @@ llvmPackages_19.stdenv.mkDerivation (finalAttrs: {
 
   passthru.tests.clickhouse = nixosTests.clickhouse;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://clickhouse.com";
     description = "Column-oriented database management system";
-    license = licenses.asl20;
-    maintainers = with maintainers; [
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [
       orivej
       mbalatsko
       thevar1able

@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-Lk/vbYxBcK676qusl6mWO38RAkCuiyHwZLcJpcHrdO4=";
 
-  meta = with lib; {
+  meta = {
     description = "Tool to auto-generate documentation for Rhai source code";
     homepage = "https://github.com/rhaiscript/rhai-doc";
     changelog = "https://github.com/rhaiscript/rhai-doc/releases/tag/${src.rev}";
@@ -26,7 +26,7 @@ rustPlatform.buildRustPackage rec {
       asl20
       mit
     ];
-    maintainers = with maintainers; [ figsoda ];
+    maintainers = with lib.maintainers; [ figsoda ];
     mainProgram = "rhai-doc";
   };
 }

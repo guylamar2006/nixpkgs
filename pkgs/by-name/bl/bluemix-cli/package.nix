@@ -31,12 +31,12 @@ stdenv.mkDerivation rec {
     install -D -t "$out/share/zsh/site-functions" bx/zsh_autocomplete
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Administration CLI for IBM BlueMix";
     homepage = "https://console.bluemix.net/docs/cli/index.html";
     downloadPage = "https://console.bluemix.net/docs/cli/reference/bluemix_cli/download_cli.html#download_install";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.unfree;
+    license = lib.licenses.unfree;
     maintainers = [
       maintainers.tazjin
       maintainers.jensbin

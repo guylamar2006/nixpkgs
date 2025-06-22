@@ -22,7 +22,7 @@ rustPlatform.buildRustPackage rec {
     description = "Print images inline in kitty";
     homepage = "https://git.sr.ht/~zethra/kitty-img";
     changelog = "https://git.sr.ht/~zethra/kitty-img/refs/${version}";
-    license = with lib.licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ gaykitty ];
     mainProgram = "kitty-img";
   };

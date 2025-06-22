@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     ${lib.getExe python3} -c "import omniidl_be.cxx"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Robust high performance CORBA ORB for C++ and Python";
     longDescription = ''
       omniORB is a robust high performance CORBA ORB for C++ and Python.
@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
       gpl2Plus
       lgpl21Plus
     ];
-    maintainers = with maintainers; [ smironov ];
-    platforms = platforms.unix;
+    maintainers = with lib.maintainers; [ smironov ];
+    platforms = lib.platforms.unix;
   };
 }

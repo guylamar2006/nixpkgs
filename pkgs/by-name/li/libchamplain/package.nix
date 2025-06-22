@@ -74,9 +74,9 @@ stdenv.mkDerivation rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://gitlab.gnome.org/GNOME/libchamplain";
-    license = licenses.lgpl2Plus;
+    license = lib.licenses.lgpl2Plus;
 
     description = "C library providing a ClutterActor to display maps";
 
@@ -92,6 +92,6 @@ stdenv.mkDerivation rec {
       teams.gnome
       teams.pantheon
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -64,7 +64,7 @@ stdenv.mkDerivation (finalAttrs: {
   # Nixpkgs! :)
   TCL_CONFIG = "${tcl}/lib/";
 
-  meta = with lib; {
+  meta = {
     homepage = "https://openmsx.org";
     description = "MSX emulator that aims for perfection";
     longDescription = ''
@@ -76,8 +76,8 @@ stdenv.mkDerivation (finalAttrs: {
       boost
       gpl2Plus
     ];
-    maintainers = with maintainers; [ ];
-    platforms = platforms.unix;
+    maintainers = with lib.maintainers; [ ];
+    platforms = lib.platforms.unix;
     mainProgram = "openmsx";
   };
 })

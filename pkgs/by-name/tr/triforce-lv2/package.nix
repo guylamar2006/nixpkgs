@@ -26,11 +26,11 @@ rustPlatform.buildRustPackage rec {
     make install
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/chadmed/triforce";
     description = "Minimum Variance Distortionless Response adaptive beamformer for the microphone array found in some Apple Silicon laptops";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [ yuka ];
-    platforms = platforms.linux;
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ yuka ];
+    platforms = lib.platforms.linux;
   };
 }

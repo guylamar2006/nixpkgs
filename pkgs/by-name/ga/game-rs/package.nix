@@ -27,7 +27,7 @@ rustPlatform.buildRustPackage rec {
     description = "Minimal CLI game launcher for linux";
     homepage = "https://github.com/amanse/game-rs";
     changelog = "https://github.com/Amanse/game-rs/releases/tag/v${version}";
-    license = with lib.licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ amanse ];
     platforms = lib.platforms.linux;
   };

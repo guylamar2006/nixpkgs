@@ -25,7 +25,7 @@ buildGoModule rec {
     mainProgram = "pretender";
     homepage = "https://github.com/RedTeamPentesting/pretender";
     changelog = "https://github.com/RedTeamPentesting/pretender/releases/tag/v${version}";
-    license = with lib.licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ fab ];
   };
 }

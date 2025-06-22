@@ -32,7 +32,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
   meta = {
     description = "Unofficial CLI for speed.cloudflare.com";
     homepage = "https://github.com/code-inflation/cfspeedtest";
-    license = with lib.licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [
       colemickens
       stepbrobd

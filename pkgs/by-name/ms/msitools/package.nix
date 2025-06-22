@@ -58,7 +58,7 @@ stdenv.mkDerivation rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Set of programs to inspect and build Windows Installer (.MSI) files";
     homepage = "https://gitlab.gnome.org/GNOME/msitools";
     license = with licenses; [
@@ -67,7 +67,7 @@ stdenv.mkDerivation rec {
       # Tools
       gpl2Plus
     ];
-    maintainers = with maintainers; [ PlushBeaver ];
-    platforms = platforms.unix;
+    maintainers = with lib.maintainers; [ PlushBeaver ];
+    platforms = lib.platforms.unix;
   };
 }

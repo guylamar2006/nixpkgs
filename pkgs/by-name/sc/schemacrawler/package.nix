@@ -32,7 +32,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   preferLocalBuild = true;
 
-  meta = with lib; {
+  meta = {
     description = "Database schema discovery and comprehension tool";
     mainProgram = "schemacrawler";
     homepage = "https://www.schemacrawler.com/";
@@ -42,7 +42,7 @@ stdenv.mkDerivation (finalAttrs: {
       gpl3Only
       lgpl3Only
     ];
-    platforms = platforms.unix;
-    maintainers = with maintainers; [ elohmeier ];
+    platforms = lib.platforms.unix;
+    maintainers = with lib.maintainers; [ elohmeier ];
   };
 })

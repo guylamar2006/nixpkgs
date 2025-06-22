@@ -64,7 +64,7 @@ stdenv.mkDerivation (finalAttrs: {
       --set UCM_WEB_UI "$out/ui"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Modern, statically-typed purely functional language";
     homepage = "https://unisonweb.org/";
     license = with licenses; [
@@ -72,7 +72,7 @@ stdenv.mkDerivation (finalAttrs: {
       bsd3
     ];
     mainProgram = "ucm";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       ceedubs
       sellout
       virusdave

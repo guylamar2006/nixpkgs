@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
   # Using unofficial CMake build script to install CMake module files.
   cmakeDir = "../cmake_unofficial";
 
-  meta = with lib; {
+  meta = {
     description = "Extremely fast hash algorithm";
     longDescription = ''
       xxHash is an Extremely fast Hash algorithm, running at RAM speed limits.
@@ -38,8 +38,8 @@ stdenv.mkDerivation rec {
       gpl2
     ];
     mainProgram = "xxhsum";
-    maintainers = with maintainers; [ orivej ];
-    platforms = platforms.all;
+    maintainers = with lib.maintainers; [ orivej ];
+    platforms = lib.platforms.all;
     pkgConfigModules = [
       "libxxhash"
     ];

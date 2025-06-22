@@ -113,12 +113,12 @@ stdenv.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Aeron Messaging C++ Library";
     homepage = "https://aeron.io/";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     mainProgram = "aeronmd";
-    maintainers = [ maintainers.vaci ];
+    maintainers = with lib.maintainers; [ vaci ];
     sourceProvenance = [
       sourceTypes.fromSource
       sourceTypes.binaryBytecode

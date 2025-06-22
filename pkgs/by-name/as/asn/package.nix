@@ -57,7 +57,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/nitefood/asn";
     changelog = "https://github.com/nitefood/asn/releases/tag/v${version}";
-    license = with lib.licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ devhell ];
     mainProgram = "asn";
   };

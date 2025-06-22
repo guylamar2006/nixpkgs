@@ -74,12 +74,12 @@ stdenv.mkDerivation (finalAttrs: {
     command = "storm version";
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://storm.apache.org/";
     description = "Distributed realtime computation system";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
-    license = licenses.asl20;
-    maintainers = with maintainers; [
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [
       edwtjo
       vizanto
     ];

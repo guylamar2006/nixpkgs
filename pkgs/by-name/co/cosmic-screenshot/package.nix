@@ -48,12 +48,12 @@ rustPlatform.buildRustPackage (finalAttrs: {
       ;
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/pop-os/cosmic-screenshot";
     description = "Screenshot tool for the COSMIC Desktop Environment";
-    license = licenses.gpl3Only;
-    teams = [ teams.cosmic ];
-    platforms = platforms.linux;
+    license = lib.licenses.gpl3Only;
+    teams = with lib.teams; [ cosmic ];
+    platforms = lib.platforms.linux;
     mainProgram = "cosmic-screenshot";
   };
 })

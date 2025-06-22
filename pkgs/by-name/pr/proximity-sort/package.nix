@@ -18,14 +18,14 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-rlxNvIYtVdWth5ZEdbmxOf3GKXIBpHnGDcSO883Ldjg=";
 
-  meta = with lib; {
+  meta = {
     description = "Simple command-line utility for sorting inputs by proximity to a path argument";
     homepage = "https://github.com/jonhoo/proximity-sort";
     license = with licenses; [
       mit # or
       asl20
     ];
-    maintainers = with maintainers; [ figsoda ];
+    maintainers = with lib.maintainers; [ figsoda ];
     mainProgram = "proximity-sort";
   };
 }

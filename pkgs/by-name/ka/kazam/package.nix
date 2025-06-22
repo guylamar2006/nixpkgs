@@ -63,11 +63,11 @@ python3Packages.buildPythonApplication {
   # no tests
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Screencasting program created with design in mind";
     homepage = "https://github.com/niknah/kazam";
-    license = licenses.lgpl3;
-    platforms = platforms.linux;
+    license = lib.licenses.lgpl3;
+    platforms = lib.platforms.linux;
     maintainers = [ ];
     mainProgram = "kazam";
   };

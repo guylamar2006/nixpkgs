@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
 
   postPatch = "patchShebangs .";
 
-  meta = with lib; {
+  meta = {
     description = "Ubuntu community theme 'yaru' - default Ubuntu theme since 18.10";
     homepage = "https://github.com/ubuntu/yaru";
     license = with licenses; [
@@ -57,7 +57,7 @@ stdenv.mkDerivation rec {
       lgpl21Only
       lgpl3Only
     ];
-    platforms = platforms.linux;
-    maintainers = with maintainers; [ moni ];
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ moni ];
   };
 }

@@ -24,10 +24,10 @@ stdenvNoCC.mkDerivation {
       $out/lib/firmware/rtl_bt/rtl8761b_config.bin
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Firmware for Realtek RTL8761b";
-    license = licenses.unfreeRedistributableFirmware;
-    maintainers = with maintainers; [ milibopp ];
+    license = lib.licenses.unfreeRedistributableFirmware;
+    maintainers = with lib.maintainers; [ milibopp ];
     platforms = with platforms; linux;
   };
 }

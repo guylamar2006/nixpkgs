@@ -29,7 +29,7 @@ buildGoModule rec {
     export PATH=$TMPDIR/usr/bin:$PATH
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Leak git repositories from misconfigured websites";
     mainProgram = "gitjacker";
     longDescription = ''
@@ -40,6 +40,6 @@ buildGoModule rec {
     '';
     homepage = "https://github.com/liamg/gitjacker";
     license = with licenses; [ unlicense ];
-    maintainers = with maintainers; [ fab ];
+    maintainers = with lib.maintainers; [ fab ];
   };
 }

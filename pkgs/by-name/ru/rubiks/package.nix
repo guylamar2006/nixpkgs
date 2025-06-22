@@ -78,7 +78,7 @@ stdenv.mkDerivation rec {
     })
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://wiki.sagemath.org/spkg/rubiks";
     description = "Several programs for working with Rubik's cubes";
     # The individual websites are no longer available
@@ -108,7 +108,7 @@ stdenv.mkDerivation rec {
       gpl2 # Michael Reid's and Eric Dietz software
       mit # Dik T. Winter's software
     ];
-    teams = [ teams.sage ];
-    platforms = platforms.unix;
+    teams = with lib.teams; [ sage ];
+    platforms = lib.platforms.unix;
   };
 }

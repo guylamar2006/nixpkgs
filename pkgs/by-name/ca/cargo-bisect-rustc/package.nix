@@ -51,7 +51,7 @@ rustPlatform.buildRustPackage rec {
     "--skip test_github" # requires internet
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Bisects rustc, either nightlies or CI artifacts";
     mainProgram = "cargo-bisect-rustc";
     homepage = "https://github.com/rust-lang/cargo-bisect-rustc";

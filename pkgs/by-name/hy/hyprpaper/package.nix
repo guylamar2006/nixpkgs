@@ -84,10 +84,10 @@ gcc14Stdenv.mkDerivation (finalAttrs: {
     hyprgraphics
   ];
 
-  meta = with lib; {
+  meta = {
     inherit (finalAttrs.src.meta) homepage;
     description = "Blazing fast wayland wallpaper utility";
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     teams = [ lib.teams.hyprland ];
     inherit (wayland.meta) platforms;
     broken = gcc14Stdenv.hostPlatform.isDarwin;

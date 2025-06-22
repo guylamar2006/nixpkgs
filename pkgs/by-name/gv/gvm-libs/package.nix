@@ -72,7 +72,7 @@ stdenv.mkDerivation rec {
     description = "Libraries module for the Greenbone Vulnerability Management Solution";
     homepage = "https://github.com/greenbone/gvm-libs";
     changelog = "https://github.com/greenbone/gvm-libs/releases/tag/v${version}";
-    license = with lib.licenses; [ gpl2Plus ];
+    license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ fab ];
     platforms = lib.platforms.linux;
   };

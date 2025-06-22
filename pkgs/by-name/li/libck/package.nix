@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
 
   dontDisableStatic = true;
 
-  meta = with lib; {
+  meta = {
     description = "High-performance concurrency research library";
     longDescription = ''
       Concurrency primitives, safe memory reclamation mechanisms and non-blocking data structures for the research, design and implementation of high performance concurrent systems.
@@ -37,8 +37,8 @@ stdenv.mkDerivation rec {
       bsd2
     ];
     homepage = "https://concurrencykit.org/";
-    platforms = platforms.unix;
-    maintainers = with maintainers; [
+    platforms = lib.platforms.unix;
+    maintainers = with lib.maintainers; [
       chessai
       thoughtpolice
     ];

@@ -179,13 +179,13 @@ stdenv.mkDerivation (finalAttrs: {
     };
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://tracker.gnome.org/";
     description = "Desktop-neutral user information store, search tool and indexer";
     mainProgram = "tinysparql";
-    teams = [ teams.gnome ];
-    license = licenses.gpl2Plus;
-    platforms = platforms.unix;
+    teams = with lib.teams; [ gnome ];
+    license = lib.licenses.gpl2Plus;
+    platforms = lib.platforms.unix;
     pkgConfigModules = [
       "tracker-sparql-3.0"
       "tinysparql-3.0"

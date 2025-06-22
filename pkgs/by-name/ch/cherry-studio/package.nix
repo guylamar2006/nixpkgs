@@ -114,6 +114,6 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "cherry-studio";
     platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ ];
-    license = with lib.licenses; [ agpl3Only ];
+    license = lib.licenses.agpl3Only;
   };
 })

@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   buildInputs = [ openssl ];
   makeFlags = [ "prefix=$(out)" ];
 
-  meta = with lib; {
+  meta = {
     description = "ECN-aware version of traceroute";
     longDescription = ''
       An enhanced version of Dmitry Butskoy's traceroute, developed by Catchpoint.
@@ -38,8 +38,8 @@ stdenv.mkDerivation rec {
       lgpl21Only
     ];
     mainProgram = "traceroute";
-    maintainers = with maintainers; [ nicoo ];
-    platforms = platforms.all;
+    maintainers = with lib.maintainers; [ nicoo ];
+    platforms = lib.platforms.all;
     broken = stdenv.hostPlatform.isDarwin;
   };
 }

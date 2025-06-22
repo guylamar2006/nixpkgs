@@ -23,11 +23,11 @@ rustPlatform.buildRustPackage rec {
     $out/bin/beancount-language-server --help > /dev/null
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Language Server Protocol (LSP) for beancount files";
     mainProgram = "beancount-language-server";
     homepage = "https://github.com/polarmutex/beancount-language-server";
     license = with licenses; [ mit ];
-    maintainers = with maintainers; [ polarmutex ];
+    maintainers = with lib.maintainers; [ polarmutex ];
   };
 }

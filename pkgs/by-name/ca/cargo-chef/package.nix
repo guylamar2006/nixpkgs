@@ -16,11 +16,11 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-/VqFs5wzKbnfZRfKERUGjuCj/H+o1iI/ioMPq/FugDo=";
 
-  meta = with lib; {
+  meta = {
     description = "Cargo-subcommand to speed up Rust Docker builds using Docker layer caching";
     mainProgram = "cargo-chef";
     homepage = "https://github.com/LukeMathWalker/cargo-chef";
-    license = licenses.mit;
-    maintainers = with maintainers; [ kkharji ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ kkharji ];
   };
 }

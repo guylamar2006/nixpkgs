@@ -62,7 +62,7 @@ stdenv.mkDerivation rec {
     else
       "";
 
-  meta = with lib; {
+  meta = {
     description = "Photoelectronic microtonal/spectral musical instrument";
     longDescription = ''
       Virtual ANS is a software simulator of the unique Russian synthesizer ANS
@@ -91,13 +91,13 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://warmplace.ru/soft/ans/";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.unfreeRedistributable;
+    license = lib.licenses.unfreeRedistributable;
     # I cannot test the Darwin version, so I'll leave it disabled
     platforms = [
       "x86_64-linux"
       "i686-linux"
     ];
-    maintainers = with maintainers; [ jacg ];
+    maintainers = with lib.maintainers; [ jacg ];
   };
 
 }

@@ -27,7 +27,7 @@ stdenv.mkDerivation {
 
   doCheck = false; # fails with "../build-scripts/test-driver: line 107: -Mstrict: command not found"
 
-  meta = with lib; {
+  meta = {
     description = "MP2 encoder";
     mainProgram = "twolame";
     longDescription = ''
@@ -38,6 +38,6 @@ stdenv.mkDerivation {
     homepage = "https://www.twolame.org/";
     license = with licenses; [ lgpl2Plus ];
     platforms = with platforms; unix;
-    maintainers = with maintainers; [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

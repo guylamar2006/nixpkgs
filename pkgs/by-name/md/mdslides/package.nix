@@ -17,11 +17,11 @@ python3Packages.buildPythonApplication {
 
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     longDescription = "Using markdown, write simple but beautiful presentations with math, animations and media, which can be visualized in a web browser or exported to PDF.";
     homepage = "https://github.com/dadoomer/markdown-slides";
-    license = licenses.mit;
-    maintainers = [ maintainers.qjoly ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ qjoly ];
     mainProgram = "mdslides";
   };
 }

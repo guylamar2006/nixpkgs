@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-lmRo6Q67hJ3hv0jQt6epiNOckRv0rA0a0DNEKIdDoUE=";
 
-  meta = with lib; {
+  meta = {
     description = "Rust API search engine which allows you to search functions by names and type signatures";
     mainProgram = "roogle";
     homepage = "https://github.com/hkmatsumoto/roogle";
@@ -26,6 +26,6 @@ rustPlatform.buildRustPackage rec {
       mit # or
       asl20
     ];
-    maintainers = with maintainers; [ figsoda ];
+    maintainers = with lib.maintainers; [ figsoda ];
   };
 }

@@ -25,7 +25,7 @@ buildGoModule rec {
     description = "Container penetration toolkit";
     homepage = "https://github.com/cdk-team/CDK";
     changelog = "https://github.com/cdk-team/CDK/releases/tag/v${version}";
-    license = with lib.licenses; [ gpl2Only ];
+    license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ fab ];
     mainProgram = "cdk";
     broken = stdenv.hostPlatform.isDarwin; # needs to update gopsutil to at least v3.21.3 to include https://github.com/shirou/gopsutil/pull/1042

@@ -13,10 +13,10 @@ stdenv.mkDerivation rec {
     sha256 = "sha256-1itsPPIDkPpzVwRDkAhBZtJfHZMqETXEULaf5cKD13M=";
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://sg.danny.cz/sg/";
     description = "Utilities that send SCSI commands to devices";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = with licenses; [
       bsd2
       gpl2Plus

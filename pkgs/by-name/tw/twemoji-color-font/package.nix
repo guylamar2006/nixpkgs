@@ -22,7 +22,7 @@ stdenv.mkDerivation (finalAttrs: {
     install -Dm644 fontconfig/46-twemoji-color.conf $out/etc/fonts/conf.d/46-twemoji-color.conf
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Color emoji SVGinOT font using Twitter Unicode 10 emoji with diversity and country flags";
     longDescription = ''
       A color and B&W emoji SVGinOT font built from the Twitter Emoji for
@@ -41,6 +41,6 @@ stdenv.mkDerivation (finalAttrs: {
       cc-by-40
       mit
     ];
-    maintainers = [ maintainers.fgaz ];
+    maintainers = with lib.maintainers; [ fgaz ];
   };
 })

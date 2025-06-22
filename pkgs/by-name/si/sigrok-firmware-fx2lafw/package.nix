@@ -23,7 +23,7 @@ stdenv.mkDerivation {
     sdcc
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Firmware for FX2 logic analyzers";
     homepage = "https://sigrok.org/";
 
@@ -35,8 +35,8 @@ stdenv.mkDerivation {
     ];
 
     sourceProvenance = with sourceTypes; [ fromSource ];
-    platforms = platforms.all;
-    maintainers = with maintainers; [
+    platforms = lib.platforms.all;
+    maintainers = with lib.maintainers; [
       panicgh
       vifino
     ];

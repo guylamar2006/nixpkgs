@@ -48,15 +48,15 @@ stdenv.mkDerivation rec {
     rev-prefix = "v";
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://strace.io/";
     description = "System call tracer for Linux";
     license = with licenses; [
       lgpl21Plus
       gpl2Plus
     ]; # gpl2Plus is for the test suite
-    platforms = platforms.linux;
-    maintainers = with maintainers; [
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [
       globin
       ma27
       qyliss

@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [ cmake ];
   buildInputs = [ fuse ];
 
-  meta = with lib; {
+  meta = {
     inherit (src.meta) homepage;
     description = "Transparent encryption filesystem";
     longDescription = ''
@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
       bsd2
       mit
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "securefs";
   };
 }

@@ -96,7 +96,7 @@ stdenv.mkDerivation (finalAttrs: {
       Tmux terminal multiplexer, and works on most Linux, BSD, and Mac
       distributions.
     '';
-    license = with lib.licenses; [ gpl3Plus ];
+    license = lib.licenses.gpl3Plus;
     mainProgram = "byobu";
     maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;

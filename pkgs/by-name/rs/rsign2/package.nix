@@ -16,11 +16,11 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-dCZcxtaqcRHhAmgGigBjN0jDfh1VjoosqTDTkqwlXp0=";
 
-  meta = with lib; {
+  meta = {
     description = "Command-line tool to sign files and verify signatures";
     homepage = "https://github.com/jedisct1/rsign2";
-    license = licenses.mit;
-    maintainers = with maintainers; [ figsoda ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ figsoda ];
     mainProgram = "rsign";
   };
 }

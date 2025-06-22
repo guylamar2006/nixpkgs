@@ -37,7 +37,7 @@ stdenv.mkDerivation (finalAttrs: {
   # parallel: https://github.com/doxygen/doxygen/issues/6293
   enableParallelBuilding = false;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://editorconfig.org/";
     description = "EditorConfig core library written in C";
     longDescription = ''
@@ -53,8 +53,8 @@ stdenv.mkDerivation (finalAttrs: {
       bsd2
       bsd3
     ];
-    maintainers = with maintainers; [ dochang ];
-    platforms = platforms.unix;
+    maintainers = with lib.maintainers; [ dochang ];
+    platforms = lib.platforms.unix;
     mainProgram = "editorconfig";
   };
 })

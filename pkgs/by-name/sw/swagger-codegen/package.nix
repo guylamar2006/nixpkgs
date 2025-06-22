@@ -30,12 +30,12 @@ stdenv.mkDerivation rec {
       --add-flags "-jar $out/share/java/${jarfilename}"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Allows generation of API client libraries (SDK generation), server stubs and documentation automatically given an OpenAPI Spec";
     homepage = "https://github.com/swagger-api/swagger-codegen";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
-    license = licenses.asl20;
-    maintainers = [ maintainers.jraygauthier ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ jraygauthier ];
     mainProgram = "swagger-codegen";
   };
 }

@@ -18,14 +18,14 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-V3ks6AWEpPHUkarbgRfCs1G26UKJC5EtEZGVDCHu5V0=";
 
-  meta = with lib; {
+  meta = {
     description = "Ninja-compatible build system for high-level programming languages written in Rust";
     homepage = "https://github.com/raviqqe/turtle-build";
     license = with licenses; [
       asl20
       mit
     ];
-    maintainers = with maintainers; [ figsoda ];
+    maintainers = with lib.maintainers; [ figsoda ];
     mainProgram = "turtle";
   };
 }

@@ -17,11 +17,11 @@ rustPlatform.buildRustPackage {
   useFetchCargoVendor = true;
   cargoHash = "sha256-TikWh0U56x3HKca5Dj68Z59mOgedv+K5r+y7/CcpWa8=";
 
-  meta = with lib; {
+  meta = {
     description = "boring data tool. A CLI tool to query parquet, json and avro files";
     homepage = "https://github.com/datafusion-contrib/bdt";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     mainProgram = "bdt";
-    maintainers = with maintainers; [ matthiasq ];
+    maintainers = with lib.maintainers; [ matthiasq ];
   };
 }

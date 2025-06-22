@@ -82,7 +82,7 @@ flutter324.buildFlutterApplication rec {
     description = "Cross-platform manga app made for e-hentai & exhentai by Flutter";
     homepage = "https://github.com/jiangtian616/JHenTai";
     mainProgram = "jhentai";
-    license = with lib.licenses; [ asl20 ];
+    license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
   };

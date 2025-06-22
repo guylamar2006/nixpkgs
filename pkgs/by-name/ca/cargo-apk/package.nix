@@ -16,7 +16,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-8qjj5rcaqXBIte8+r0llj33Saat85SqNljGRaS1E3q0=";
 
-  meta = with lib; {
+  meta = {
     description = "Tool for creating Android packages";
     mainProgram = "cargo-apk";
     homepage = "https://github.com/rust-windowing/android-ndk-rs";
@@ -24,6 +24,6 @@ rustPlatform.buildRustPackage rec {
       mit
       asl20
     ];
-    maintainers = with maintainers; [ nickcao ];
+    maintainers = with lib.maintainers; [ nickcao ];
   };
 }

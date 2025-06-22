@@ -21,11 +21,11 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "DejaVu fonts with additional symbols used by VDR";
     homepage = "http://andreas.vdr-developer.org/fonts/";
-    platforms = platforms.all;
-    maintainers = with maintainers; [ ck3d ];
+    platforms = lib.platforms.all;
+    maintainers = with lib.maintainers; [ ck3d ];
 
     # Copyright (c) 2003 by Bitstream, Inc. All Rights Reserved.
     # Copyright (c) 2006 by Tavmjong Bah. All Rights Reserved.

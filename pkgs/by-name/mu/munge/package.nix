@@ -62,7 +62,7 @@ stdenv.mkDerivation (finalAttrs: {
     rmdir "$out"/{var{/{lib,log}{/munge,},},etc/munge}
   '';
 
-  meta = with lib; {
+  meta = {
     description = ''
       An authentication service for creating and validating credentials
     '';
@@ -72,7 +72,7 @@ stdenv.mkDerivation (finalAttrs: {
       # libmunge
       licenses.lgpl3Plus
     ];
-    platforms = platforms.unix;
-    maintainers = [ maintainers.rickynils ];
+    platforms = lib.platforms.unix;
+    maintainers = with lib.maintainers; [ rickynils ];
   };
 })

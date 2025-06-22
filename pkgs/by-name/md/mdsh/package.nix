@@ -18,11 +18,11 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-JhrELBMGVtxJjyfPGcM6v8h1XJjdD+vOsYNfZ86Ras0=";
 
-  meta = with lib; {
+  meta = {
     description = "Markdown shell pre-processor";
     homepage = "https://github.com/zimbatm/mdsh";
     license = with licenses; [ mit ];
-    maintainers = with maintainers; [ zimbatm ];
+    maintainers = with lib.maintainers; [ zimbatm ];
     mainProgram = "mdsh";
   };
 }

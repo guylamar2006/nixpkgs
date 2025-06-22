@@ -53,7 +53,7 @@ rustPlatform.buildRustPackage rec {
     description = "JSON Schema to Rust type converter";
     mainProgram = "cargo-typify";
     homepage = "https://github.com/oxidecomputer/typify";
-    license = with lib.licenses; [ asl20 ];
+    license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ david-r-cox ];
   };
 }

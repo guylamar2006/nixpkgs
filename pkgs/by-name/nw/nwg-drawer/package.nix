@@ -59,11 +59,11 @@ buildGoModule {
     )
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Application drawer for sway Wayland compositor";
     homepage = "https://github.com/nwg-piotr/nwg-drawer";
     changelog = "https://github.com/nwg-piotr/nwg-drawer/releases/tag/${src.rev}";
-    license = with lib.licenses; [ agpl3Plus ];
+    license = lib.licenses.agpl3Plus;
     mainProgram = "nwg-drawer";
     maintainers = with lib.maintainers; [ ];
     platforms = with lib.platforms; linux;

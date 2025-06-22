@@ -43,14 +43,14 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/linuxmint/mint-artwork";
     description = "Artwork for the cinnamon desktop";
     license = with licenses; [
       gpl3Plus
       cc-by-40
     ]; # from debian/copyright
-    platforms = platforms.linux;
-    teams = [ teams.cinnamon ];
+    platforms = lib.platforms.linux;
+    teams = with lib.teams; [ cinnamon ];
   };
 }

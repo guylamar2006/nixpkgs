@@ -99,10 +99,10 @@ stdenv.mkDerivation rec {
       # libg719_decode omitted because it doesn't have a free software license
     ];
 
-  meta = with lib; {
+  meta = {
     description = "Library for playback of various streamed audio formats used in video games";
     homepage = "https://vgmstream.org";
-    maintainers = with maintainers; [ zane ];
+    maintainers = with lib.maintainers; [ zane ];
     license =
       with licenses;
       [

@@ -41,7 +41,7 @@ stdenv.mkDerivation {
     libxkbcommon
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Displays keys being pressed on a Wayland session";
     longDescription = ''
       Displays keypresses on screen on supported Wayland compositors (requires
@@ -57,8 +57,8 @@ stdenv.mkDerivation {
     ];
     # Some portions of the code are taken from Sway which is MIT licensed.
     # TODO: gpl3Only or gpl3Plus (ask upstream)?
-    platforms = platforms.linux;
-    maintainers = with maintainers; [
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [
       primeos
       berbiche
     ];

@@ -29,16 +29,16 @@ stdenv.mkDerivation rec {
 
   passthru.updateScript = bundlerUpdateScript "jsduck";
 
-  meta = with lib; {
+  meta = {
     description = "Simple JavaScript Duckumentation generator";
     mainProgram = "jsduck";
     homepage = "https://github.com/senchalabs/jsduck";
     license = with licenses; gpl3;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       periklis
       nicknovitski
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     # rdiscount fails to compile with:
     # mktags.c:44:1: error: return type defaults to ‘int’ [-Wimplicit-int]
     broken = true;

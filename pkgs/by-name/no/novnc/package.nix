@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "VNC client web application";
     homepage = "https://novnc.com";
     license = with licenses; [
@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
       bsd2
       mit
     ];
-    maintainers = with maintainers; [ neverbehave ];
+    maintainers = with lib.maintainers; [ neverbehave ];
     mainProgram = "novnc";
   };
 }

@@ -88,7 +88,7 @@ stdenv.mkDerivation rec {
       done
     '';
 
-  meta = with lib; {
+  meta = {
     description = "Pre-built GNU toolchain from ARM Cortex-M & Cortex-R processors";
     homepage = "https://developer.arm.com/open-source/gnu-toolchain/gnu-rm";
     license = with licenses; [
@@ -99,7 +99,7 @@ stdenv.mkDerivation rec {
       lgpl3
       mit
     ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       prusnak
       prtzl
     ];

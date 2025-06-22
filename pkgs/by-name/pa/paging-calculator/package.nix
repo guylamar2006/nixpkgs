@@ -28,7 +28,7 @@ rustPlatform.buildRustPackage rec {
     '';
     homepage = "https://github.com/phip1611/paging-calculator";
     changelog = "https://github.com/phip1611/paging-calculator/blob/v${version}/CHANGELOG.md";
-    license = with lib.licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ phip1611 ];
   };
 }

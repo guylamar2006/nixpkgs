@@ -93,7 +93,7 @@ stdenv.mkDerivation rec {
   dontBuild = true;
   dontStrip = true;
 
-  meta = with lib; {
+  meta = {
     description = "NoMachine remote desktop client (nxplayer)";
     homepage = "https://www.nomachine.com/";
     mainProgram = "nxplayer";
@@ -103,7 +103,7 @@ stdenv.mkDerivation rec {
       url = "https://www.nomachine.com/licensing-7";
       free = false;
     };
-    maintainers = with maintainers; [ talyz ];
+    maintainers = with lib.maintainers; [ talyz ];
     platforms = [
       "x86_64-linux"
       "i686-linux"

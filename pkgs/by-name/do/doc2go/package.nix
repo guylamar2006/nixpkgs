@@ -36,7 +36,7 @@ buildGoModule rec {
     unset subPackages
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/abhinav/doc2go";
     changelog = "https://github.com/abhinav/doc2go/blob/${src.rev}/CHANGELOG.md";
     description = "Your Go project's documentation, to-go";
@@ -52,6 +52,6 @@ buildGoModule rec {
       # internal/godoc/synopsis*.go adapted from golang source
       bsd3
     ];
-    maintainers = with maintainers; [ jk ];
+    maintainers = with lib.maintainers; [ jk ];
   };
 }

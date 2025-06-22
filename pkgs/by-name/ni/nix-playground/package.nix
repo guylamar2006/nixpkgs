@@ -47,7 +47,7 @@ python3.pkgs.buildPythonApplication rec {
     mainProgram = "np";
     homepage = "https://github.com/LaunchPlatform/nix-playground";
     changelog = "https://github.com/LaunchPlatform/nix-playground/releases/tag/${src.tag}";
-    license = with lib.licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ fangpen ];
   };
 }

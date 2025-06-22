@@ -29,7 +29,7 @@ rustPlatform.buildRustPackage rec {
     rm $out/bin/{luajit,luau}_translate
   '';
 
-  meta = with lib; {
+  meta = {
     description = "WebAssembly translation tools for various languages";
     longDescription = ''
       Wasynth provides the following WebAssembly translation tools:
@@ -38,6 +38,6 @@ rustPlatform.buildRustPackage rec {
     '';
     homepage = "https://github.com/Rerumu/Wasynth";
     license = with licenses; [ gpl3Only ];
-    maintainers = with maintainers; [ wackbyte ];
+    maintainers = with lib.maintainers; [ wackbyte ];
   };
 }

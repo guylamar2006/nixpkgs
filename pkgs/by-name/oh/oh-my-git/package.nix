@@ -125,12 +125,12 @@ stdenv.mkDerivation rec {
     udev
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://ohmygit.org/";
     description = "Interactive Git learning game";
     mainProgram = "oh-my-git";
     license = with licenses; [ blueOak100 ];
     platforms = [ "x86_64-linux" ];
-    maintainers = with maintainers; [ jojosch ];
+    maintainers = with lib.maintainers; [ jojosch ];
   };
 }

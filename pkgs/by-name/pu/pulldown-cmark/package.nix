@@ -19,7 +19,7 @@ rustPlatform.buildRustPackage rec {
   meta = {
     description = "Pull parser for CommonMark written in Rust";
     homepage = "https://github.com/raphlinus/pulldown-cmark";
-    license = with lib.licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ CobaltCause ];
     mainProgram = "pulldown-cmark";
   };

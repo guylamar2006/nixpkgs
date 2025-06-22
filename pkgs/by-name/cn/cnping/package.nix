@@ -33,7 +33,7 @@ stdenv.mkDerivation {
     cp cnping.1 $out/share/man/man1/cnping.1
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Minimal Graphical IPV4 Ping Tool";
     homepage = "https://github.com/cntools/cnping";
     license = with licenses; [
@@ -41,7 +41,7 @@ stdenv.mkDerivation {
       bsd3
     ]; # dual licensed, MIT-x11 & BSD-3-Clause
     maintainers = [ ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "cnping";
   };
 }

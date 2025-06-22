@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
 
   passthru.tests = { inherit (nixosTests) ucarp; };
 
-  meta = with lib; {
+  meta = {
     description = "Userspace implementation of CARP";
     longDescription = ''
       UCARP allows a couple of hosts to share common virtual IP addresses in
@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
       bsd2
       gpl2Plus
     ];
-    maintainers = with maintainers; [ oxzi ];
+    maintainers = with lib.maintainers; [ oxzi ];
     mainProgram = "ucarp";
   };
 }

@@ -70,7 +70,7 @@ flutter327.buildFlutterApplication {
     description = "Designed to simplify the use of the desktop version of alist";
     homepage = "https://github.com/Xmarmalade/alisthelper";
     mainProgram = "alisthelper";
-    license = with lib.licenses; [ gpl3Plus ];
+    license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ emaryn ];
     platforms = lib.platforms.linux;
   };

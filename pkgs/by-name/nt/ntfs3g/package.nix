@@ -82,10 +82,10 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/tuxera/ntfs-3g";
     description = "FUSE-based NTFS driver with full write support";
-    maintainers = with maintainers; [ dezgeg ];
+    maintainers = with lib.maintainers; [ dezgeg ];
     platforms = with platforms; darwin ++ linux;
     license = with licenses; [
       gpl2Plus # ntfs-3g itself

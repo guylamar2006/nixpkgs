@@ -54,7 +54,7 @@ let
         computer users working with the command-line, such as developers or
         system administrators.
       '';
-      license = with lib.licenses; [ gpl3Plus ];
+      license = lib.licenses.gpl3Plus;
       mainProgram = "asciinema";
       maintainers = with lib.maintainers; [
         jiriks74

@@ -49,7 +49,7 @@ stdenv.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Fascinating electronics logic puzzles, game where you'll learn how to build clocks, diodes, and logic gates";
     mainProgram = "Wireworld";
     license = with licenses; [

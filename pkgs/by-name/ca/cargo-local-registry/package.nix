@@ -38,7 +38,7 @@ rustPlatform.buildRustPackage rec {
   # tests require internet access
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Cargo subcommand to manage local registries";
     mainProgram = "cargo-local-registry";
     homepage = "https://github.com/dhovart/cargo-local-registry";
@@ -47,6 +47,6 @@ rustPlatform.buildRustPackage rec {
       asl20
       mit
     ];
-    maintainers = with maintainers; [ figsoda ];
+    maintainers = with lib.maintainers; [ figsoda ];
   };
 }

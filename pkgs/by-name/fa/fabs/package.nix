@@ -55,7 +55,7 @@ python3.pkgs.buildPythonApplication rec {
     sqlite
   ];
 
-  meta = with lib; {
+  meta = {
     outputsToInstall = [
       "out"
       "man"
@@ -64,7 +64,7 @@ python3.pkgs.buildPythonApplication rec {
     description = "Flexible AFS Backup System for the OpenAFS distributed file system";
     homepage = "https://github.com/openafs-contrib/fabs";
     license = with licenses; [ isc ];
-    maintainers = with maintainers; [ spacefrogg ];
+    maintainers = with lib.maintainers; [ spacefrogg ];
     broken = lib.versionAtLeast python3.pkgs.sqlalchemy.version "2.0";
     badPlatforms = [
       "x86_64-darwin"

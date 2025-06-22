@@ -47,10 +47,10 @@ stdenv.mkDerivation (finalAttrs: {
     done
   '';
 
-  meta = with lib; {
+  meta = {
     description = "IPU firmware and proprietary image processing libraries";
     homepage = "https://github.com/intel/ipu6-camera-bins";
-    license = licenses.issl;
+    license = lib.licenses.issl;
     sourceProvenance = with sourceTypes; [
       binaryFirmware
     ];

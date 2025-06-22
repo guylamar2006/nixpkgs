@@ -43,11 +43,11 @@ stdenv.mkDerivation rec {
     timidity
   ];
 
-  meta = with lib; {
+  meta = {
     description = "SDL2 sound library";
     mainProgram = "playsound";
-    platforms = platforms.unix;
-    license = licenses.zlib;
+    platforms = lib.platforms.unix;
+    license = lib.licenses.zlib;
     teams = [ lib.teams.sdl ];
     homepage = "https://www.icculus.org/SDL_sound/";
   };

@@ -97,7 +97,7 @@ buildGoModule rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://aquasecurity.github.io/tracee/latest/";
     changelog = "https://github.com/aquasecurity/tracee/releases/tag/v${version}";
     description = "Linux Runtime Security and Forensics using eBPF";
@@ -115,7 +115,7 @@ buildGoModule rec {
       # pkg/ebpf/c/*
       gpl2Plus
     ];
-    maintainers = with maintainers; [ jk ];
+    maintainers = with lib.maintainers; [ jk ];
     platforms = [
       "x86_64-linux"
       "aarch64-linux"

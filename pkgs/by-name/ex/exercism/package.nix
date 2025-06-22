@@ -34,10 +34,10 @@ buildGoModule rec {
       --zsh shell/exercism_completion.zsh
   '';
 
-  meta = with lib; {
+  meta = {
     inherit (src.meta) homepage;
     description = "Go based command line tool for exercism.io";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = [
       maintainers.rbasso
       maintainers.nobbz

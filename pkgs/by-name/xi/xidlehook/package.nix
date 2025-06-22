@@ -46,12 +46,12 @@ rustPlatform.buildRustPackage rec {
     patchelf --set-rpath "$RPATH:${libpulseaudio}/lib" $out/bin/xidlehook
   '';
 
-  meta = with lib; {
+  meta = {
     description = "xautolock rewrite in Rust, with a few extra features";
     homepage = "https://github.com/jD91mZM2/xidlehook";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     badPlatforms = platforms.darwin;
     mainProgram = "xidlehook";
   };

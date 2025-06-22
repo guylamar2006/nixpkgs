@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
   # tests get stuck on aarch64-linux
   doCheck = stdenv.hostPlatform.isx86_64 && stdenv.hostPlatform.isLinux;
 
-  meta = with lib; {
+  meta = {
     broken = stdenv.hostPlatform.isDarwin;
     description = "Tool to crack steganography";
     longDescription = ''
@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/RickdeJager/stegseek";
     license = with licenses; [ gpl2Only ];
-    maintainers = with maintainers; [ fab ];
+    maintainers = with lib.maintainers; [ fab ];
     mainProgram = "stegseek";
   };
 }

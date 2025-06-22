@@ -18,11 +18,11 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-5LDhxciLpDYd4isUQNx8LF3y7m6cfcuIF2atHj/kayg=";
 
-  meta = with lib; {
+  meta = {
     description = "Dependency-light, highly-customizable, XDG desktop notification generator for MPRIS status changes";
     homepage = "https://github.com/l1na-forever/mpris-notifier";
-    license = licenses.mit;
-    maintainers = with maintainers; [ leixb ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ leixb ];
     mainProgram = "mpris-notifier";
   };
 }

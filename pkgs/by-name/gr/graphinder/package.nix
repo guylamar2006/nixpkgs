@@ -52,7 +52,7 @@ python3.pkgs.buildPythonApplication rec {
     mainProgram = "graphinder";
     homepage = "https://github.com/Escape-Technologies/graphinder";
     changelog = "https://github.com/Escape-Technologies/graphinder/releases/tag/v${version}";
-    license = with lib.licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ fab ];
   };
 }

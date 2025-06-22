@@ -24,12 +24,12 @@ buildGoModule rec {
     mv $out/bin/SNOWCRASH $out/bin/${pname}
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Polyglot payload generator";
     homepage = "https://github.com/redcode-labs/SNOWCRASH";
     license = with licenses; [ mit ];
-    maintainers = with maintainers; [ fab ];
-    teams = [ teams.redcodelabs ];
+    maintainers = with lib.maintainers; [ fab ];
+    teams = with lib.teams; [ redcodelabs ];
     mainProgram = "SNOWCRASH";
   };
 }

@@ -15,13 +15,13 @@ xmrig.overrideAttrs (oldAttrs: rec {
     hash = "sha256-9ne2qpN6F6FJyD/Havb7fhY1oB4AxFrB17gI7QtoE1E=";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Fork of the XMRig CPU miner with support for algorithm switching";
     homepage = "https://github.com/MoneroOcean/xmrig";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     mainProgram = "xmrig";
-    platforms = platforms.unix;
-    maintainers = with maintainers; [
+    platforms = lib.platforms.unix;
+    maintainers = with lib.maintainers; [
       j0hax
       redhawk
     ];

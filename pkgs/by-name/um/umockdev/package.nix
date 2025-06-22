@@ -115,12 +115,12 @@ stdenv.mkDerivation (finalAttrs: {
     };
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/martinpitt/umockdev";
     changelog = "https://github.com/martinpitt/umockdev/releases/tag/${finalAttrs.version}";
     description = "Mock hardware devices for creating unit tests";
-    license = licenses.lgpl21Plus;
-    maintainers = with maintainers; [ flokli ];
+    license = lib.licenses.lgpl21Plus;
+    maintainers = with lib.maintainers; [ flokli ];
     platforms = with platforms; linux;
   };
 })

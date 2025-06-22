@@ -57,7 +57,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Betaflight flight control system configuration tool";
     mainProgram = "betaflight-configurator";
     longDescription = ''
@@ -67,8 +67,8 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/betaflight/betaflight/wiki";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.gpl3;
-    maintainers = with maintainers; [ wucke13 ];
-    platforms = platforms.linux;
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ wucke13 ];
+    platforms = lib.platforms.linux;
   };
 }

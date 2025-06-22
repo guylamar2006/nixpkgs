@@ -70,7 +70,7 @@ stdenv.mkDerivation rec {
 
   inherit doCheck;
 
-  meta = with lib; {
+  meta = {
     description = "Fast multi-dimensional array library for C++";
     homepage = "https://sourceforge.net/projects/blitz/";
     license = with licenses; [
@@ -78,8 +78,8 @@ stdenv.mkDerivation rec {
       bsd3 # or
       lgpl3Plus
     ];
-    platforms = platforms.unix;
-    maintainers = with maintainers; [ ToxicFrog ];
+    platforms = lib.platforms.unix;
+    maintainers = with lib.maintainers; [ ToxicFrog ];
     longDescription = ''
       Blitz++ is a C++ class library for scientific computing which provides
       performance on par with Fortran 77/90. It uses template techniques to

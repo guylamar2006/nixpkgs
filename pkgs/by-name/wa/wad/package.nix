@@ -29,7 +29,7 @@ python3.pkgs.buildPythonApplication rec {
     "wad"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Tool for detecting technologies used by web applications";
     mainProgram = "wad";
     longDescription = ''
@@ -44,6 +44,6 @@ python3.pkgs.buildPythonApplication rec {
       gpl3Plus
       mit
     ];
-    maintainers = with maintainers; [ fab ];
+    maintainers = with lib.maintainers; [ fab ];
   };
 }

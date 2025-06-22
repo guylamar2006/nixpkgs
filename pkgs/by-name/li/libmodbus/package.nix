@@ -28,11 +28,11 @@ stdenv.mkDerivation rec {
     "ac_cv_func_realloc_0_nonnull=yes"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Library to send/receive data according to the Modbus protocol";
     homepage = "https://libmodbus.org/";
-    license = licenses.lgpl21Plus;
+    license = lib.licenses.lgpl21Plus;
     platforms = with platforms; unix ++ windows;
-    maintainers = [ maintainers.bjornfor ];
+    maintainers = with lib.maintainers; [ bjornfor ];
   };
 }

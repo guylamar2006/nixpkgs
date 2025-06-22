@@ -11,8 +11,8 @@ let
   metaCommon = with lib; {
     description = "Swiss army knife of lossless video/audio editing";
     homepage = "https://mifi.no/losslesscut/";
-    license = licenses.gpl2Only;
-    maintainers = with maintainers; [ ShamrockLee ];
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [ ShamrockLee ];
     mainProgram = "losslesscut";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
   };

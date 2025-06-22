@@ -47,7 +47,7 @@ rustPlatform.buildRustPackage rec {
       OPENSSL_CONF = "";
     };
 
-  meta = with lib; {
+  meta = {
     description = "Generate beautiful landing pages for your developer tools";
     homepage = "https://github.com/axodotdev/oranda";
     changelog = "https://github.com/axodotdev/oranda/blob/${src.rev}/CHANGELOG.md";
@@ -55,7 +55,7 @@ rustPlatform.buildRustPackage rec {
       asl20
       mit
     ];
-    maintainers = with maintainers; [ figsoda ];
+    maintainers = with lib.maintainers; [ figsoda ];
     mainProgram = "oranda";
   };
 }
