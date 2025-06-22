@@ -34,7 +34,7 @@ let
   metaCommon = {
     description = "Cross-platform launcher that simply works";
     homepage = "https://github.com/Wox-launcher/Wox";
-    license = with lib.licenses; [ gpl3Plus ];
+    license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ emaryn ];
   };
 

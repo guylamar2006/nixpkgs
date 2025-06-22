@@ -39,7 +39,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = {
     homepage = "https://soplex.zib.de/";
     description = "Sequential object-oriented simPlex";
-    license = with lib.licenses; [ asl20 ];
+    license = lib.licenses.asl20;
     mainProgram = "soplex";
     maintainers = with lib.maintainers; [ david-r-cox ];
     changelog = "https://scipopt.org/doc-${finalAttrs.scipVersion}/html/RN${lib.versions.major finalAttrs.scipVersion}.php";

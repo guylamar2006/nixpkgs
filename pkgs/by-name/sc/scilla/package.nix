@@ -32,7 +32,7 @@ buildGoModule rec {
     mainProgram = "scilla";
     homepage = "https://github.com/edoardottt/scilla";
     changelog = "https://github.com/edoardottt/scilla/releases/tag/v${version}";
-    license = with lib.licenses; [ gpl3Plus ];
+    license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ fab ];
   };
 }

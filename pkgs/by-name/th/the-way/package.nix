@@ -38,7 +38,7 @@ rustPlatform.buildRustPackage rec {
     mainProgram = "the-way";
     homepage = "https://github.com/out-of-cheese-error/the-way";
     changelog = "https://github.com/out-of-cheese-error/the-way/blob/v${version}/CHANGELOG.md";
-    license = with lib.licenses; [ mit ];
+    license = lib.licenses.mit;
     platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       figsoda

@@ -47,7 +47,7 @@ python3.pkgs.buildPythonApplication rec {
     '';
     homepage = "https://github.com/orf/xcat";
     changelog = "https://github.com/orf/xcat/releases/tag/v${version}";
-    license = with lib.licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ fab ];
   };
 }

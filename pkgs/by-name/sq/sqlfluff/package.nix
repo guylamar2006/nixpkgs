@@ -72,7 +72,7 @@ python3.pkgs.buildPythonApplication rec {
     description = "SQL linter and auto-formatter";
     homepage = "https://www.sqlfluff.com/";
     changelog = "https://github.com/sqlfluff/sqlfluff/blob/${version}/CHANGELOG.md";
-    license = with lib.licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ fab ];
     mainProgram = "sqlfluff";
   };

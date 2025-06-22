@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Amateur radio logbook software";
     mainProgram = "qlog";
-    license = with lib.licenses; [ gpl3Only ];
+    license = lib.licenses.gpl3Only;
     homepage = "https://github.com/foldynl/QLog";
     maintainers = with lib.maintainers; [
       oliver-koss

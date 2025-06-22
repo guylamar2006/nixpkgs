@@ -86,7 +86,7 @@ python.pkgs.buildPythonApplication rec {
       Fabric Controller'';
     homepage = "https://github.com/Azure/WALinuxAgent";
     maintainers = with lib.maintainers; [ codgician ];
-    license = with lib.licenses; [ asl20 ];
+    license = lib.licenses.asl20;
     platforms = lib.platforms.linux;
   };
 }

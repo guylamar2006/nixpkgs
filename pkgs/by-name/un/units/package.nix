@@ -70,7 +70,7 @@ stdenv.mkDerivation (finalAttrs: {
       file to suit your needs. You can also use your own data file to supplement
       the standard data file.
     '';
-    license = with lib.licenses; [ gpl3Plus ];
+    license = lib.licenses.gpl3Plus;
     mainProgram = "units";
     maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.all;

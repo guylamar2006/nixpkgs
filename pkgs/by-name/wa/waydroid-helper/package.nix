@@ -95,7 +95,7 @@ python3Packages.buildPythonApplication rec {
     changelog = "https://github.com/ayasa520/waydroid-helper/releases/tag/${src.tag}";
     mainProgram = "waydroid-helper";
     platforms = lib.platforms.linux;
-    license = with lib.licenses; [ gpl3Plus ];
+    license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ ];
   };
 }

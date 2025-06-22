@@ -75,7 +75,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "SDL port of Rise of the Triad";
     mainProgram = "rott";
     homepage = "https://icculus.org/rott/";
-    license = with lib.licenses; [ gpl2Plus ] ++ lib.optional withSharewareData unfreeRedistributable;
+    license = lib.licenses.gpl2Plus; ++ lib.optional withSharewareData unfreeRedistributable;
     maintainers = with lib.maintainers; [ sander ];
     platforms = lib.platforms.all;
   };

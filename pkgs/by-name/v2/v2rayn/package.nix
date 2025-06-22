@@ -21,13 +21,13 @@
 
 buildDotnetModule rec {
   pname = "v2rayn";
-  version = "7.12.7";
+  version = "7.12.5";
 
   src = fetchFromGitHub {
     owner = "2dust";
     repo = "v2rayN";
     tag = version;
-    hash = "sha256-pYkUbctdN3qaGxI5DbreoOGmXyIVrpHqYlN3BFRCcZ8=";
+    hash = "sha256-gXVriD9g4Coc0B0yN5AlfNre9C9l8V5wv4q3KgKRsF0=";
     fetchSubmodules = true;
   };
 
@@ -109,7 +109,7 @@ buildDotnetModule rec {
     description = "GUI client for Windows and Linux, support Xray core and sing-box-core and others";
     homepage = "https://github.com/2dust/v2rayN";
     mainProgram = "v2rayN";
-    license = with lib.licenses; [ gpl3Plus ];
+    license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ ];
     platforms = [
       "x86_64-linux"

@@ -81,7 +81,7 @@ python3.pkgs.buildPythonApplication {
       that can be accessed from other cells. These objects can represent
       anything including lists or matrices.
     '';
-    license = with lib.licenses; [ gpl3Plus ];
+    license = lib.licenses.gpl3Plus;
     mainProgram = "pyspread";
     maintainers = with lib.maintainers; [ ];
   };

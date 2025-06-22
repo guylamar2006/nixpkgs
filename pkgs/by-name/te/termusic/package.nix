@@ -52,7 +52,7 @@ rustPlatform.buildRustPackage rec {
   meta = {
     description = "Terminal Music Player TUI written in Rust";
     homepage = "https://github.com/tramhao/termusic";
-    license = with lib.licenses; [ gpl3Only ];
+    license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ devhell ];
     mainProgram = "termusic";
   };

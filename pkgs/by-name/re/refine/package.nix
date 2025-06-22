@@ -81,7 +81,7 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://gitlab.gnome.org/TheEvilSkeleton/Refine";
     mainProgram = "refine";
     platforms = lib.platforms.linux;
-    license = with lib.licenses; [ gpl3Plus ];
+    license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ getchoo ];
   };
 }

@@ -44,7 +44,7 @@ python3.pkgs.buildPythonApplication rec {
     description = "Set of tools to audit SIP based VoIP systems";
     homepage = "https://github.com/EnableSecurity/sipvicious";
     changelog = "https://github.com/EnableSecurity/sipvicious/releases/tag/v${version}";
-    license = with lib.licenses; [ gpl3Plus ];
+    license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ fab ];
   };
 }

@@ -14,13 +14,13 @@
 
 flutter332.buildFlutterApplication rec {
   pname = "venera";
-  version = "1.4.5";
+  version = "1.4.4";
 
   src = fetchFromGitHub {
     owner = "venera-app";
     repo = "venera";
     tag = "v${version}";
-    hash = "sha256-yg7VwR1IGswyqkyuvTZnVVLI4YKnfcea+VemWLOUXto=";
+    hash = "sha256-ZJ5TMoBamXHU/pU790/6HHJwNqVsXpZ1OttPR/JSydY=";
   };
 
   pubspecLock = lib.importJSON ./pubspec.lock.json;
@@ -98,7 +98,7 @@ flutter332.buildFlutterApplication rec {
     description = "Comic reader that support reading local and network comics";
     homepage = "https://github.com/venera-app/venera";
     mainProgram = "venera";
-    license = with lib.licenses; [ gpl3Plus ];
+    license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
   };

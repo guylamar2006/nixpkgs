@@ -122,7 +122,7 @@ stdenv.mkDerivation (finalPackages: {
       arcan-shmif to map Xlib/Xcb/X clients to a running arcan instance. It
       allows running an X session as a window under Arcan.
     '';
-    license = with lib.licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
   };

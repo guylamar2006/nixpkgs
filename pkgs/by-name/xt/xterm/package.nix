@@ -112,7 +112,7 @@ stdenv.mkDerivation rec {
 
   meta = {
     homepage = "https://invisible-island.net/xterm";
-    license = with lib.licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ nequissimus ];
     platforms = with lib.platforms; linux ++ darwin;
     changelog = "https://invisible-island.net/xterm/xterm.log.html";

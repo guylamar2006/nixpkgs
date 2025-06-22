@@ -47,7 +47,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = {
     description = "Filter for VapourSynth";
     homepage = "https://github.com/dubhater/vapoursynth-nnedi3";
-    license = with lib.licenses; [ gpl2Plus ];
+    license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ snaki ];
     platforms = with lib.platforms; x86_64 ++ aarch64;
   };

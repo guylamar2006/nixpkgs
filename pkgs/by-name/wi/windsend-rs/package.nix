@@ -67,7 +67,7 @@ rustPlatform.buildRustPackage rec {
     description = "Quickly and securely sync clipboard, transfer files and directories between devices";
     homepage = "https://github.com/doraemonkeys/WindSend";
     mainProgram = "wind_send";
-    license = with lib.licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
   };
