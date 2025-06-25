@@ -25,7 +25,7 @@ stdenvNoCC.mkDerivation rec {
   meta = {
     homepage = "https://damieng.com/blog/tag/envy-code-r";
     description = "Free scalable coding font by DamienG";
-    license =license = lib.licenses.unfree;
+    license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ ];
   };
 }

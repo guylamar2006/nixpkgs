@@ -169,7 +169,7 @@ let
     meta = {
       description = "Messaging app";
       homepage = "https://weixin.qq.com/";
-      license =license = lib.licenses.unfree;
+      license = lib.licenses.unfree;
       platforms = [
         "x86_64-linux"
         "aarch64-linux"

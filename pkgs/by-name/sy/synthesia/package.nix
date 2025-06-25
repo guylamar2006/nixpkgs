@@ -73,7 +73,7 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://synthesiagame.com/";
     downloadPage = "https://synthesiagame.com/download";
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
-    license =license = lib.licenses.unfree;
+    license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ ners ];
     platforms = wineWowPackages.stable.meta.platforms;
   };

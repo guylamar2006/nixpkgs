@@ -43,7 +43,7 @@ appimageTools.wrapAppImage {
     homepage = "https://todoist.com";
     description = "Official Todoist electron app";
     platforms = [ "x86_64-linux" ];
-    license =license = lib.licenses.unfree;
+    license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [
       kylesferrazza
       pokon548

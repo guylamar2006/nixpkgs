@@ -33,7 +33,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
   meta = {
     description = "Windows 10 icon theme";
     homepage = "http://b00merang.weebly.com/windows-10.html";
-    license =license = lib.licenses.unfree;
+    license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ mib ];
     platforms = lib.platforms.linux;
   };

@@ -39,7 +39,7 @@ let
     description = "Simple and Convenient Messaging App for VK";
     homepage = "https://vk.com/messenger";
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
-    license =license = lib.licenses.unfree;
+    license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ ];
     platforms = [
       "i686-linux"

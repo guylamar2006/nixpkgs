@@ -68,7 +68,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     homepage = "https://tideways.com/";
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     mainProgram = "tideways-daemon";
-    license =license = lib.licenses.unfree;
+    license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ shyim ];
     platforms = lib.attrNames finalAttrs.passthru.sources;
   };

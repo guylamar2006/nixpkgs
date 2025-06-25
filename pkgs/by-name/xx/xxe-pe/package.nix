@@ -80,7 +80,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Strictly validating, near WYSIWYG, XML editor with DocBook support";
     homepage = "https://www.xmlmind.com/xmleditor/";
-    license =license = lib.licenses.unfree;
+    license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ ];
     platforms = [ "x86_64-linux" ];
   };

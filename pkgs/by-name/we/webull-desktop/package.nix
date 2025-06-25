@@ -83,7 +83,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Webull desktop trading application";
     homepage = "https://www.webull.com/trading-platforms/desktop-app";
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
-    license =license = lib.licenses.unfree;
+    license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ fauxmight ];
     platforms = [ "x86_64-linux" ];
     mainProgram = "webull-desktop";

@@ -33,7 +33,7 @@ stdenv.mkDerivation {
       this package's homepage) for possible workarounds.
     '';
     platforms = lib.platforms.linux;
-    license =license = lib.licenses.unfree; # No license specified.
+    license = lib.licenses.unfree; # No license specified.
     maintainers = with lib.maintainers; [ aidalgol ];
   };
 }

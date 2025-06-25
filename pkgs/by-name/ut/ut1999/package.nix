@@ -196,7 +196,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   meta = {
     description = "Unreal Tournament GOTY (1999) with the OldUnreal patch";
-    license =license = lib.licenses.unfree;
+    license = lib.licenses.unfree;
     platforms = attrNames srcs;
     maintainers = with lib.maintainers; [ eliandoran ];
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];

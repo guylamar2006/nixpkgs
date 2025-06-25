@@ -83,7 +83,7 @@ stdenv.mkDerivation rec {
       game, or that they are extremely delicious.
     '';
     homepage = "https://worldofgoo.com";
-    license =license = lib.licenses.unfree;
+    license = lib.licenses.unfree;
     platforms = [
       "i686-linux"
       "x86_64-linux"

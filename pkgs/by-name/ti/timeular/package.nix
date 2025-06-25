@@ -37,7 +37,7 @@ appimageTools.wrapType2 rec {
       The desktop app tell you where every minute of your day is spent.
     '';
     homepage = "https://timeular.com";
-    license =license = lib.licenses.unfree;
+    license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ ktor ];
     platforms = [ "x86_64-linux" ];
     mainProgram = "timeular";

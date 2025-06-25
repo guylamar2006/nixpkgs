@@ -80,7 +80,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = {
     description = "Powerful to-do & task management app with seamless cloud synchronization across all your devices";
     homepage = "https://ticktick.com/home/";
-    license =license = lib.licenses.unfree;
+    license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [
       hbjydev
       jonocodes

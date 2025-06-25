@@ -31,7 +31,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = {
     description = "Database management made easy";
     homepage = "https://tableplus.com";
-    license =license = lib.licenses.unfree;
+    license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ yamashitax ];
     platforms = lib.platforms.darwin;
   };

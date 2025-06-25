@@ -58,7 +58,7 @@ stdenv.mkDerivation {
 
   meta = {
     inherit description;
-    license =license = lib.licenses.unfree;
+    license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ cizra ];
     platforms = lib.platforms.all;
     homepage = "https://github.com/tome2/tome2";

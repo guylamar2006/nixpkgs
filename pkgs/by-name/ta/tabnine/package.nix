@@ -46,7 +46,7 @@ stdenv.mkDerivation {
   meta = {
     homepage = "https://tabnine.com";
     description = "Smart Compose for code that uses deep learning to help you write code faster";
-    license =license = lib.licenses.unfree;
+    license = lib.licenses.unfree;
     platforms = attrNames sources.platforms;
     maintainers = with lib.maintainers; [ lovesegfault ];
   };

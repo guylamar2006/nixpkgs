@@ -111,7 +111,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.seventhstring.com/xscribe/";
     changelog = "https://www.seventhstring.com/xscribe/history.html";
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
-    license =license = lib.licenses.unfree;
+    license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ iwanb ];
     platforms = lib.platforms.linux;
     mainProgram = "transcribe";

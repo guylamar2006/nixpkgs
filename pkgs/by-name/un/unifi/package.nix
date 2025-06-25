@@ -42,7 +42,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     homepage = "https://www.ui.com";
     description = "Controller for Ubiquiti UniFi access points";
     sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
-    license =license = lib.licenses.unfree;
+    license = lib.licenses.unfree;
     platforms = [
       "x86_64-linux"
       "aarch64-linux"

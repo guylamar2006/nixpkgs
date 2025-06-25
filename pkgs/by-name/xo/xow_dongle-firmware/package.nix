@@ -46,7 +46,7 @@ stdenvNoCC.mkDerivation rec {
   meta = {
     description = "Xbox One wireless dongle firmware";
     homepage = "https://www.xbox.com/en-NZ/accessories/adapters/wireless-adapter-windows";
-    license =license = lib.licenses.unfree;
+    license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [
       rhysmdnz
       fazzi

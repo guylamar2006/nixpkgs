@@ -42,7 +42,7 @@ qt5.mkDerivation rec {
     description = "Desktop tool to decrypt data encrypted by Cloud Sync";
     homepage = "https://kb.synology.com/en-global/DSM/help/SynologyCloudSyncDecryptionTool/synologycloudsyncdecryptiontool";
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
-    license =license = lib.licenses.unfree;
+    license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ kalbasit ];
     platforms = [ "x86_64-linux" ];
     mainProgram = "SynologyCloudSyncDecryptionTool";

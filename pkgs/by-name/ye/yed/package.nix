@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
   dontWrapGApps = true;
 
   meta = {
-    license =license = lib.licenses.unfree;
+    license = lib.licenses.unfree;
     sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     homepage = "https://www.yworks.com/products/yed";
     description = "Powerful desktop application that can be used to quickly and effectively generate high-quality diagrams";

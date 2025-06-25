@@ -46,6 +46,6 @@ gccStdenv.mkDerivation {
     # non-commercial purposes. MicroEMACS 3.9 can only be incorporated
     # into commercial software with the permission of the current author
     # [Daniel M. Lawrence].
-    license =license = lib.licenses.unfree;
+    license = lib.licenses.unfree;
   };
 }

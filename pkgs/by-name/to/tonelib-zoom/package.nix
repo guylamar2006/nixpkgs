@@ -58,7 +58,7 @@ stdenv.mkDerivation rec {
     description = "ToneLib Zoom – change and save all the settings in your Zoom(r) guitar pedal";
     homepage = "https://tonelib.net/";
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
-    license =license = lib.licenses.unfree;
+    license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ dan4ik605743 ];
     platforms = [ "x86_64-linux" ];
     mainProgram = "ToneLib-Zoom";

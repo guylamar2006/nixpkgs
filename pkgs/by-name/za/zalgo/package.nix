@@ -22,7 +22,7 @@ stdenv.mkDerivation {
   meta = {
     description = "Read stdin and corrupt it with combining diacritics";
     homepage = "https://github.com/lunasorcery/zalgo";
-    license =license = lib.licenses.unfree;
+    license = lib.licenses.unfree;
     platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ djanatyn ];
     mainProgram = "zalgo";

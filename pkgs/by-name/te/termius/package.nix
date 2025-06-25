@@ -112,7 +112,7 @@ stdenv.mkDerivation rec {
     homepage = "https://termius.com/";
     downloadPage = "https://termius.com/linux/";
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
-    license =license = lib.licenses.unfree;
+    license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [
       Br1ght0ne
       th0rgal

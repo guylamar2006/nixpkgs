@@ -44,7 +44,7 @@ stdenv.mkDerivation {
     mainProgram = "vgmplay";
     homepage = "https://github.com/ValleyBell/vgmplay-libvgm";
     description = "New VGMPlay, based on libvgm";
-    license =license = lib.licenses.unfree; # no licensing text anywhere yet
+    license = lib.licenses.unfree; # no licensing text anywhere yet
     maintainers = with lib.maintainers; [ OPNA2608 ];
     platforms = lib.platforms.all;
   };
