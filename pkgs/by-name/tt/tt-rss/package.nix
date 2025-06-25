@@ -44,6 +44,6 @@ stdenv.mkDerivation rec {
       globin
       zohl
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

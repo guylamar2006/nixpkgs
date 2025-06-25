@@ -34,6 +34,6 @@ stdenv.mkDerivation rec {
     homepage = "https://quantomatic.github.io/";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     maintainers = with lib.maintainers; [ nickhu ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

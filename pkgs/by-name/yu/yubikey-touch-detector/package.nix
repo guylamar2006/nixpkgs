@@ -53,7 +53,7 @@ buildGoModule rec {
     homepage = "https://github.com/maximbaz/yubikey-touch-detector";
     maintainers = with maintainers; [ sumnerevans ];
     license = licenses.isc;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "yubikey-touch-detector";
   };
 }

@@ -40,6 +40,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.boost;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "stxxl_tool";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

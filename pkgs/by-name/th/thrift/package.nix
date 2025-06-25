@@ -150,7 +150,7 @@ stdenv.mkDerivation rec {
     mainProgram = "thrift";
     homepage = "https://thrift.apache.org/";
     license = licenses.asl20;
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
     maintainers = with maintainers; [ bjornfor ];
   };
 }

@@ -25,6 +25,6 @@ stdenv.mkDerivation rec {
     license = licenses.mit;
     maintainers = with maintainers; [ k900 ];
     mainProgram = "xdg-utils-cxx";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

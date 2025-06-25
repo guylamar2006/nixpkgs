@@ -54,7 +54,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/rfrail3/tuptime";
     changelog = "https://github.com/rfrail3/tuptime/blob/master/CHANGELOG";
     license = licenses.gpl2Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ evils ];
     mainProgram = "tuptime";
   };

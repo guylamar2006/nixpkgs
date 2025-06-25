@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
     homepage = "http://www.cityinthesky.co.uk/opensource/pdf2svg";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ianwookim ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "pdf2svg";
   };
 }

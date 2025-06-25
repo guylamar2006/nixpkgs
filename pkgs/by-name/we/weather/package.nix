@@ -50,6 +50,6 @@ stdenv.mkDerivation rec {
     mainProgram = "weather";
     license = licenses.isc;
     maintainers = with lib.maintainers; [ matthiasbeyer ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

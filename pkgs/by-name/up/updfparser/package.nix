@@ -35,6 +35,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://forge.soutade.fr/soutade/updfparser";
     license = licenses.lgpl3Plus;
     maintainers = with maintainers; [ autumnal ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

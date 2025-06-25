@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "REXX interpreter";
     maintainers = with lib.maintainers; [ raskin ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.lgpl2;
   };
 }

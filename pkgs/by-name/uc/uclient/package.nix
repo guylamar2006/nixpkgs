@@ -35,7 +35,7 @@ stdenv.mkDerivation {
     license = licenses.isc;
     maintainers = with maintainers; [ mkg20001 ];
     mainProgram = "uclient-fetch";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     broken = stdenv.hostPlatform.isDarwin;
   };
 }

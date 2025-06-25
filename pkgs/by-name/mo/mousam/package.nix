@@ -54,6 +54,6 @@ python3Packages.buildPythonApplication rec {
     license = with licenses; [ gpl3Plus ];
     mainProgram = "mousam";
     maintainers = with lib.maintainers; [ aleksana ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

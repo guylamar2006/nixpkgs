@@ -59,6 +59,6 @@ python3.pkgs.buildPythonApplication rec {
     mainProgram = "tuna";
     homepage = "https://git.kernel.org/pub/scm/utils/tuna/tuna.git";
     license = licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     mainProgram = "paxctl";
     homepage = "https://pax.grsecurity.net";
     license = lib.licenses.gpl2Only;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ thoughtpolice ];
   };
 }

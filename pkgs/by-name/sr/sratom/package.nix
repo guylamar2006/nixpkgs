@@ -67,6 +67,6 @@ stdenv.mkDerivation rec {
     description = "Library for serialising LV2 atoms to/from RDF";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

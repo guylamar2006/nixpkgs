@@ -84,6 +84,6 @@ stdenv.mkDerivation rec {
       orivej
       tomodachi94
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

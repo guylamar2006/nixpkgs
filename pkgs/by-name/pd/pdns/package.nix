@@ -102,7 +102,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "Authoritative DNS server";
     homepage = "https://www.powerdns.com";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin;
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [

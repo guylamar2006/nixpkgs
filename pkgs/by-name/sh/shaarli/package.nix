@@ -63,6 +63,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl3Plus;
     homepage = "https://github.com/shaarli/Shaarli";
     maintainers = with lib.maintainers; [ schneefux ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     homepage = "http://wily.sourceforge.net";
     license = licenses.artistic1;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "wily";
   };
 }

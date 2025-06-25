@@ -42,7 +42,7 @@ stdenvNoCC.mkDerivation {
     description = "Rosé Pine icon theme for GTK";
     homepage = "https://github.com/rose-pine/gtk";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [
       romildo
       the-argus

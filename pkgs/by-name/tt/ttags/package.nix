@@ -49,6 +49,6 @@ rustPlatform.buildRustPackage {
     homepage = "https://github.com/npezza93/ttags";
     license = licenses.mit;
     maintainers = with maintainers; [ mrcjkb ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.lgpl21Plus;
     maintainers = with lib.maintainers; [ orivej ];
     mainProgram = "soundstretch";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

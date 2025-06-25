@@ -30,7 +30,7 @@ stdenv.mkDerivation {
     mainProgram = "uci";
     homepage = "https://git.openwrt.org/?p=project/uci.git;a=summary";
     license = licenses.lgpl21Only;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ mkg20001 ];
   };
 }

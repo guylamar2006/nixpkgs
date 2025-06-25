@@ -49,7 +49,7 @@ stdenv.mkDerivation {
     homepage = "https://gitlab.freedesktop.org/tartan/tartan";
     changelog = "https://gitlab.freedesktop.org/tartan/tartan/-/blob/main/NEWS";
     license = licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ jtojnar ];
   };
 }

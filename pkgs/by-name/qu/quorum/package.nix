@@ -35,6 +35,6 @@ buildGoModule rec {
     homepage = "https://consensys.net/quorum/";
     license = lib.licenses.lgpl3;
     maintainers = with lib.maintainers; [ mmahut ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

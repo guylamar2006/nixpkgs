@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     homepage = "https://50hz.ws/mpdas/";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ taketwo ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "mpdas";
   };
 }

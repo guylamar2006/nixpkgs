@@ -34,7 +34,7 @@ stdenv.mkDerivation {
     description = "Classic cursor theme with a flying style";
     license = licenses.gpl2;
     maintainers = with maintainers; [ jordanisaacs ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin && stdenv.hostPlatform.isAarch64; # build timeout
   };
 }

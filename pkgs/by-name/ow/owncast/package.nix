@@ -55,7 +55,7 @@ buildGoModule {
     description = "self-hosted video live streaming solution";
     homepage = "https://owncast.online";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       flexiondotorg
       MayNiklas

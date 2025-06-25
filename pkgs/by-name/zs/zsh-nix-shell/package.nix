@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
     description = "zsh plugin that lets you use zsh in nix-shell shell";
     homepage = src.meta.homepage;
     license = licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ aw ];
   };
 }

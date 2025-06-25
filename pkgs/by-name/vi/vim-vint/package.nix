@@ -46,6 +46,6 @@ buildPythonApplication rec {
     license = licenses.mit;
     mainProgram = "vint";
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

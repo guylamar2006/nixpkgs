@@ -40,6 +40,6 @@ stdenv.mkDerivation rec {
     downloadPage = "https://pstreams.sourceforge.net/download/";
     maintainers = with lib.maintainers; [ arthur ];
     license = lib.licenses.boost;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

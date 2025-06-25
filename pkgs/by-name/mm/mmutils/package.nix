@@ -24,6 +24,6 @@ stdenv.mkDerivation rec {
     description = "Set of utilities for querying xrandr monitor information";
     homepage = "https://github.com/pockata/mmutils";
     license = lib.licenses.isc;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

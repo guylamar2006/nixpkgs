@@ -29,6 +29,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://software.sil.org/padauk";
     license = lib.licenses.ofl;
     maintainers = with lib.maintainers; [ serge ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

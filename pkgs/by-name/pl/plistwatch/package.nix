@@ -27,6 +27,6 @@ buildGoModule {
     homepage = "https://github.com/catilac/plistwatch";
     maintainers = with lib.maintainers; [ gdinh ];
     license = lib.licenses.mit;
-    platforms = platforms.darwin;
+    platforms = lib.platforms.darwin;
   };
 }

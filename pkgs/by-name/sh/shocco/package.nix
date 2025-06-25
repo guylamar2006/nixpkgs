@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     mainProgram = "shocco";
     homepage = "https://rtomayko.github.io/shocco/";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ dotlambda ];
   };
 }

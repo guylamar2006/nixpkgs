@@ -64,6 +64,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     mainProgram = "git-forgit";
     license = licenses.mit;
     maintainers = with maintainers; [ deejayem ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

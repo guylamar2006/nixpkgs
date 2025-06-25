@@ -39,7 +39,7 @@ stdenv.mkDerivation {
     description = "SoapySDR plugin for remote access to SDRs";
     license = lib.licenses.boost;
     maintainers = with lib.maintainers; [ markuskowa ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "SoapySDRServer";
   };
 }

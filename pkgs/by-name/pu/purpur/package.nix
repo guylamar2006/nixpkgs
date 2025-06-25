@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
     homepage = "https://purpurmc.org/";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "minecraft-server";
   };

@@ -52,6 +52,6 @@ stdenv.mkDerivation rec {
     description = "Platform independent library for MIDI I/O";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ emilytrau ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

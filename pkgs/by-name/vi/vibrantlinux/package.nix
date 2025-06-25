@@ -43,7 +43,7 @@ stdenv.mkDerivation (finalAttrs: {
       Scrumplex
       unclamped
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "vibrantLinux";
   };
 })

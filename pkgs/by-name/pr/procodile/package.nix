@@ -19,7 +19,7 @@ bundlerApp {
       manveru
       nicknovitski
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "procodile";
   };
 }

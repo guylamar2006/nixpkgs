@@ -57,7 +57,7 @@ stdenv.mkDerivation rec {
       of your screen. Similar command-line interface to scrot but is overall
       more flexible and less buggy.
     '';
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = licenses.gpl3Plus;
     maintainers = with maintainers; [ neonfuz ];
     mainProgram = "yaxg";

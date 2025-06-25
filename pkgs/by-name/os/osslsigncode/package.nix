@@ -40,6 +40,6 @@ stdenv.mkDerivation rec {
       mmahut
       prusnak
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

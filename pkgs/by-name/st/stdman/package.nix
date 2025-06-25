@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
       formatting for easy readability.";
     homepage = "https://github.com/jeaye/stdman";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ twey ];
   };
 }

@@ -44,6 +44,6 @@ stdenv.mkDerivation (finalAttrs: {
       hjones2199
       returntoreality
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

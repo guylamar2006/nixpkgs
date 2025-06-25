@@ -25,6 +25,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/wmutils/opt";
     license = licenses.isc;
     maintainers = with maintainers; [ vifino ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

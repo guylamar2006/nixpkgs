@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
     mainProgram = "regpg";
     homepage = "https://dotat.at/prog/regpg";
     license = lib.licenses.gpl3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ _0xC45 ];
   };
 }

@@ -31,6 +31,6 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://github.com/ElKowar/pipr";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ elkowar ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -48,7 +48,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/nuke-dash/pokemon-colorscripts-mac";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ wesleyjrz ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "pokemon-colorscripts";
   };
 }

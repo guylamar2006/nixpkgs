@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
     mainProgram = "zuo";
     homepage = "https://github.com/racket/zuo";
     license = licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
   };
 }

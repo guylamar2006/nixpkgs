@@ -36,6 +36,6 @@ stdenv.mkDerivation rec {
     homepage = "http://www.pogo.org.uk/~mark/trx/";
     license = licenses.gpl2Only;
     maintainers = with lib.maintainers; [ hansjoergschurr ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
     description = "Remote mount utility which parses a json file";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ qubasa ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "rmount";
   };
 }

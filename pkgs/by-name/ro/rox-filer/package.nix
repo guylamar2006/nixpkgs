@@ -102,7 +102,7 @@ stdenv.mkDerivation rec {
       gpl2
       lgpl2
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ eleanor ];
   };
 }

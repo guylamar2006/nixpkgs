@@ -89,7 +89,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Take pictures and videos on your computer, tablet, or phone";
     teams = with lib.teams; [ gnome ];
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "snapshot";
   };
 })

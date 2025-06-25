@@ -35,6 +35,6 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Utility for creating signature strings needed for thinklmi certificate based authentication";
     mainProgram = "tlmi-auth";
     license = licenses.gpl2;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 })

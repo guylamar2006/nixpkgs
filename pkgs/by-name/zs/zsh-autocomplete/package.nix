@@ -26,7 +26,7 @@ stdenvNoCC.mkDerivation rec {
     description = "Real-time type-ahead completion for Zsh. Asynchronous find-as-you-type autocompletion";
     homepage = "https://github.com/marlonrichert/zsh-autocomplete/";
     license = licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ leona ];
   };
 }

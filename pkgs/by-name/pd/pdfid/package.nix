@@ -36,6 +36,6 @@ python3Packages.buildPythonApplication rec {
     license = with licenses; [ free ];
     mainProgram = "pdfid";
     maintainers = with lib.maintainers; [ d3vil0p3r ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

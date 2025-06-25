@@ -67,6 +67,6 @@ stdenv.mkDerivation {
     mainProgram = "vpnc-script";
     license = licenses.gpl2Only;
     maintainers = with maintainers; [ jerith666 ];
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
   };
 }

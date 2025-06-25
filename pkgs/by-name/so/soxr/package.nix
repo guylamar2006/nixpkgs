@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     description = "Audio resampling library";
     homepage = "https://soxr.sourceforge.net";
     license = lib.licenses.lgpl21Plus;
-    platforms = platforms.unix ++ platforms.windows;
+    platforms = lib.platforms.unix ++ platforms.windows;
     maintainers = with lib.maintainers; [ ];
   };
 }

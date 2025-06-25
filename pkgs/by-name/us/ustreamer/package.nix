@@ -88,7 +88,7 @@ stdenv.mkDerivation rec {
       tfc
       matthewcroughan
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "ustreamer";
   };
 }

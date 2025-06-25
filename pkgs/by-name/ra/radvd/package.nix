@@ -50,7 +50,7 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/radvd-project/radvd/blob/${finalAttrs.src.rev}/CHANGES";
     description = "IPv6 Router Advertisement Daemon";
     downloadPage = "https://github.com/radvd-project/radvd";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = lib.licenses.bsdOriginal;
     maintainers = with lib.maintainers; [ fpletz ];
   };

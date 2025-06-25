@@ -46,6 +46,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ _8-bit-fox ];
     mainProgram = "please";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

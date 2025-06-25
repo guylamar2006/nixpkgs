@@ -118,6 +118,6 @@ stdenv.mkDerivation (finalAttrs: {
       adev
       davidcromp
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

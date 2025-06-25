@@ -81,6 +81,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/martanne/vis";
     license = licenses.isc;
     maintainers = with maintainers; [ ramkromberg ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

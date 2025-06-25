@@ -30,6 +30,6 @@ stdenv.mkDerivation rec {
     license = licenses.mit; # or GPL2+, optionally
     maintainers = with maintainers; [ amiloradovsky ];
     mainProgram = "magnify";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

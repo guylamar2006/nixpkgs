@@ -39,6 +39,6 @@ stdenv.mkDerivation rec {
       arianvp
       flokli
     ];
-    platforms = platforms.darwin ++ platforms.linux;
+    platforms = lib.platforms.darwin ++ platforms.linux;
   };
 }

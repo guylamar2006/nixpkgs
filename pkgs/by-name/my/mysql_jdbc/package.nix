@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     homepage = "https://dev.mysql.com/doc/connector-j/en/";
     changelog = "https://dev.mysql.com/doc/relnotes/connector-j/en/";
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.gpl2Only;
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
   };

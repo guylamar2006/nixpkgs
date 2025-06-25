@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     description = "tmux-based terminal divider";
     homepage = "https://github.com/greymd/tmux-xpanes";
     license = licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ monsieurp ];
   };
 }

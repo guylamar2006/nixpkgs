@@ -42,6 +42,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/sagemath/sagetex";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ alexnortung ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

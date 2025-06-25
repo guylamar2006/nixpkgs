@@ -33,7 +33,7 @@ stdenv.mkDerivation {
     description = "HTTP server for purely static content";
     homepage = "http://linux.bytesex.org/misc/webfs.html";
     license = licenses.gpl2Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ zimbatm ];
     mainProgram = "webfsd";
   };

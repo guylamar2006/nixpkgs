@@ -67,6 +67,6 @@ buildGoModule rec {
     mainProgram = "pomerium-cli";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ lukegb ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

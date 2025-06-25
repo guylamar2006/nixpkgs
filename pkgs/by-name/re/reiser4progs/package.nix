@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     homepage = "https://sourceforge.net/projects/reiser4/";
     description = "Reiser4 utilities";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
 
     # error: initialization of
     # 'int (*)(uint64_t *, uint64_t,  uint32_t,  int,  int)' {aka 'int (*)(long unsigned int *, long unsigned int,  unsigned int,  int,  int)'}

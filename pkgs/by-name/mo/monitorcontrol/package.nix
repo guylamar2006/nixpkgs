@@ -41,6 +41,6 @@ stdenv.mkDerivation rec {
       cbleslie
       cottand
     ];
-    platforms = platforms.darwin;
+    platforms = lib.platforms.darwin;
   };
 }

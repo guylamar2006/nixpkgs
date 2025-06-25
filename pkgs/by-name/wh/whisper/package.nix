@@ -47,6 +47,6 @@ stdenv.mkDerivation rec {
     license = licenses.gpl3;
     homepage = "https://github.com/refresh-bio/whisper";
     maintainers = with maintainers; [ jbedo ];
-    platforms = platforms.x86_64;
+    platforms = lib.platforms.x86_64;
   };
 }

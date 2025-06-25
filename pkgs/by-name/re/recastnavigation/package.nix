@@ -54,6 +54,6 @@ stdenv.mkDerivation {
     mainProgram = "RecastDemo";
     license = lib.licenses.zlib;
     maintainers = with lib.maintainers; [ marius851000 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

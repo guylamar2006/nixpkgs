@@ -103,6 +103,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "slsh";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

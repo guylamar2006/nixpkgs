@@ -50,6 +50,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = licenses.gpl3Only;
     mainProgram = "telegraph";
     maintainers = with maintainers; [ michaelgrahamevans ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 })

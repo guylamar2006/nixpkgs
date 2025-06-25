@@ -44,6 +44,6 @@ stdenv.mkDerivation rec {
     description = "Portable SCTP userland stack";
     maintainers = with maintainers; [ misuzu ];
     license = licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -35,7 +35,7 @@ stdenvNoCC.mkDerivation {
     # must rename on modification
     # http://www.paratype.ru/public/pt_openlicense.asp
 
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ raskin ];
   };
 }

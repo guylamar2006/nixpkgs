@@ -43,6 +43,6 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "teensy-loader-cli";
     homepage = "https://www.pjrc.com/teensy/";
     license = licenses.gpl3Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

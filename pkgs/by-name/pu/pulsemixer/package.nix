@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/GeorgeFilipkin/pulsemixer";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ woffs ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "pulsemixer";
   };
 }

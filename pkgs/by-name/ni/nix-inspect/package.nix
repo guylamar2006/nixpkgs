@@ -71,7 +71,7 @@ rustPlatform.buildRustPackage {
     homepage = "https://github.com/bluskript/nix-inspect";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ blusk ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "nix-inspect";
   };
 }

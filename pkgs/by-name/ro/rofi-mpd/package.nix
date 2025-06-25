@@ -31,6 +31,6 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://github.com/JakeStanger/Rofi_MPD";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ jakestanger ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -31,6 +31,6 @@ buildNpmPackage (finalAttrs: {
     license = licenses.mit;
     mainProgram = "task-master-ai";
     maintainers = with lib.maintainers; [ repparw ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

@@ -29,6 +29,6 @@ rustPlatform.buildRustPackage rec {
     license = lib.licenses.mit;
     mainProgram = "shadow-tls";
     maintainers = with lib.maintainers; [ oluceps ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

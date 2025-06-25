@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/tevador/RandomX";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ rnhmjoj ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 
 }

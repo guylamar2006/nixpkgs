@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
     description = "Recursively searches through specified directories and removes files which have not been accessed in a specified period of time";
     license = licenses.gpl2Plus;
     maintainers = with maintainers; [ vlstill ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "tmpwatch";
   };
 }

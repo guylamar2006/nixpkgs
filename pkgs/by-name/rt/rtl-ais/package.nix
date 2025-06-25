@@ -31,6 +31,6 @@ stdenv.mkDerivation {
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ mgdm ];
     mainProgram = "rtl_ais";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -36,7 +36,7 @@ stdenv.mkDerivation {
     description = "Image processing plug-in standard";
     homepage = "https://openeffects.org/";
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ guibou ];
   };
 }

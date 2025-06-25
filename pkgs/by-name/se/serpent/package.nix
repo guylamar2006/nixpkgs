@@ -43,6 +43,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/ethereum/wiki/wiki/Serpent";
     license = with licenses; [ wtfpl ];
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

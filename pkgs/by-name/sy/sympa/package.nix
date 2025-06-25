@@ -125,6 +125,6 @@ stdenv.mkDerivation rec {
     maintainers = with maintainers; [
       sorki
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

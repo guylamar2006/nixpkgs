@@ -63,7 +63,7 @@ stdenv.mkDerivation rec {
     description = "Asynchronous C implementation of the Raft consensus protocol";
     homepage = "https://github.com/cowsql/raft";
     license = lib.licenses.lgpl3Only;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     teams = with lib.teams; [ lxc ];
   };
 }

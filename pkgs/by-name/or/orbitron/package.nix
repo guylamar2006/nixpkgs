@@ -46,7 +46,7 @@ stdenvNoCC.mkDerivation {
       portraying this inevitable future.
     '';
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       leenaars
       minijackson

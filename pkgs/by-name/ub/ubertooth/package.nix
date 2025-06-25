@@ -48,6 +48,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/greatscottgadgets/ubertooth";
     license = licenses.gpl2;
     maintainers = with maintainers; [ oxzi ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

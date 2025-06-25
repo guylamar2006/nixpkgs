@@ -167,7 +167,7 @@ stdenv.mkDerivation rec {
     description = "Domain specific library for electronic structure calculations";
     homepage = "https://github.com/electronic-structure/SIRIUS";
     license = lib.licenses.bsd2;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ sheepforce ];
   };
 }

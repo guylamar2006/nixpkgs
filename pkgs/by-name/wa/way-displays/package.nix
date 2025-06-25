@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
     description = "Auto Manage Your Wayland Displays";
     license = licenses.mit;
     maintainers = with maintainers; [ simoneruffini ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "way-displays";
   };
 }

@@ -43,6 +43,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/WebAssembly/wabt";
     license = licenses.asl20;
     maintainers = with maintainers; [ ekleog ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

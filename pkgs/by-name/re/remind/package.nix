@@ -64,6 +64,6 @@ tcl.mkTclDerivation rec {
       kovirobi
     ];
     mainProgram = "remind";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

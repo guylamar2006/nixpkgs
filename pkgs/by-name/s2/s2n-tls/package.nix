@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
     description = "C99 implementation of the TLS/SSL protocols";
     homepage = "https://github.com/aws/s2n-tls";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ orivej ];
   };
 }

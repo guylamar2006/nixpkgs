@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
     mainProgram = "xavs";
     homepage = "https://xavs.sourceforge.net/";
     license = licenses.lgpl2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ codyopel ];
   };
 }

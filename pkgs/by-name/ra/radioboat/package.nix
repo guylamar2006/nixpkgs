@@ -58,7 +58,7 @@ buildGoModule rec {
     mainProgram = "radioboat";
     homepage = "https://github.com/slashformotion/radioboat";
     license = lib.licenses.asl20;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ zendo ];
   };
 }

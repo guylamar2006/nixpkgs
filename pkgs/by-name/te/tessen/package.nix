@@ -58,7 +58,7 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://sr.ht/~ayushnix/tessen";
     description = "Interactive menu to autotype and copy Pass and GoPass data";
     license = licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ monaaraj ];
     mainProgram = "tessen";
   };

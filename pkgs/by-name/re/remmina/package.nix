@@ -155,6 +155,6 @@ stdenv.mkDerivation (finalAttrs: {
       melsigl
       ryantm
     ];
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
   };
 })

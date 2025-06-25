@@ -109,7 +109,7 @@ stdenv.mkDerivation (finalAttrs: {
       raskin
       gfrascadorio
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     sourceProvenance = with sourceTypes; [
       fromSource
       binaryBytecode # dependencies

@@ -75,6 +75,6 @@ stdenvNoCC.mkDerivation (self: {
     homepage = "https://en-word.net/";
     license = lib.licenses.cc-by-40;
     maintainers = with lib.maintainers; [ nicoo ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

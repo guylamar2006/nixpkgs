@@ -44,7 +44,7 @@ stdenv.mkDerivation rec {
     description = "Gtk theme based on windows 10 style";
     homepage = "https://www.pling.com/p/1386774/";
     license = licenses.gpl3Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ romildo ];
   };
 }

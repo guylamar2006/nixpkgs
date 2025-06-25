@@ -66,7 +66,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/plougher/squashfs-tools";
     description = "Tool for creating and unpacking squashfs filesystems";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.gpl2Plus;
     maintainers = with maintainers; [ ruuda ];
     mainProgram = "mksquashfs";

@@ -43,6 +43,6 @@ stdenv.mkDerivation rec {
     mainProgram = "pigz";
     maintainers = with lib.maintainers; [ ];
     license = lib.licenses.zlib;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

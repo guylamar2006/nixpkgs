@@ -39,6 +39,6 @@ stdenv.mkDerivation rec {
     description = "Unicode Han Database";
     homepage = "https://www.unicode.org/";
     license = licenses.unicode-dfs-2016;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

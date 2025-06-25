@@ -58,7 +58,7 @@ stdenv.mkDerivation rec {
     description = "Lightweight and user-friendly e-mail client";
     mainProgram = "sylpheed";
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
     license = licenses.gpl2;
   };
 }

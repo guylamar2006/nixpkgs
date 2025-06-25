@@ -51,6 +51,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://json.nlohmann.me";
     changelog = "https://github.com/nlohmann/json/blob/develop/ChangeLog.md";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

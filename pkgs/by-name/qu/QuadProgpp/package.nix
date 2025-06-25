@@ -29,6 +29,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/liuq/QuadProgpp";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ wegank ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

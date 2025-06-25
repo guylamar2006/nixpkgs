@@ -43,6 +43,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/sorin-ionescu/prezto";
     license = licenses.mit;
     maintainers = with maintainers; [ holymonson ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

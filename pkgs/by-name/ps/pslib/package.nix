@@ -65,6 +65,6 @@ stdenv.mkDerivation rec {
     changelog = "https://sourceforge.net/p/pslib/git/ci/master/tree/pslib/ChangeLog";
     license = lib.licenses.gpl2;
     maintainers = with lib.maintainers; [ ShamrockLee ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

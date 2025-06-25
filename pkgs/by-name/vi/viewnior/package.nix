@@ -89,7 +89,7 @@ stdenv.mkDerivation {
       smironov
       artturin
     ];
-    platforms = platforms.gnu ++ platforms.linux;
+    platforms = lib.platforms.gnu ++ platforms.linux;
     mainProgram = "viewnior";
   };
 }

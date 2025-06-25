@@ -46,6 +46,6 @@ stdenv.mkDerivation rec {
       orivej
     ];
     license = licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

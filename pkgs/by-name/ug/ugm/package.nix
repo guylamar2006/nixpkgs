@@ -35,7 +35,7 @@ buildGoModule rec {
     changelog = "https://github.com/ariasmn/ugm/releases/tag/${src.rev}";
     license = licenses.mit;
     mainProgram = "ugm";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ oosquare ];
   };
 }

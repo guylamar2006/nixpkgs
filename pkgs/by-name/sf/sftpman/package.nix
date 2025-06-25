@@ -23,7 +23,7 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://github.com/spantaleev/sftpman";
     description = "Application that handles sshfs/sftp file systems mounting";
     license = lib.licenses.gpl3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ contrun ];
     mainProgram = "sftpman";
   };

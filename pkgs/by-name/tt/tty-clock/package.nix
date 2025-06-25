@@ -39,7 +39,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/xorg62/tty-clock";
     license = licenses.bsd3;
     description = "Digital clock in ncurses";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ koral ];
     mainProgram = "tty-clock";
   };

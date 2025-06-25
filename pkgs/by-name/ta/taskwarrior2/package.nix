@@ -65,6 +65,6 @@ stdenv.mkDerivation rec {
       oxalica
     ];
     mainProgram = "task";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

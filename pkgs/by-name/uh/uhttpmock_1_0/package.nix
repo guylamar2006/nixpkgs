@@ -58,6 +58,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://gitlab.freedesktop.org/pwithnall/uhttpmock/";
     license = licenses.lgpl21Plus;
     teams = with lib.teams; [ gnome ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 })

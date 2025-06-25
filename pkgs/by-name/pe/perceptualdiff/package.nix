@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/myint/perceptualdiff";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ uri-canva ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "perceptualdiff";
   };
 }

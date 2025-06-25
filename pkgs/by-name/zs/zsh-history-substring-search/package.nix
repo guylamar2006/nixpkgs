@@ -26,6 +26,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/zsh-users/zsh-history-substring-search";
     license = licenses.bsd3;
     maintainers = with maintainers; [ qyliss ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

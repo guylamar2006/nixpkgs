@@ -80,7 +80,7 @@ buildPythonApplication rec {
     description = "Protect your eyes from eye strain using this simple and beautiful, yet extensible break reminder. A Free and Open Source Linux alternative to EyeLeo";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ srghma ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "safeeyes";
   };
 }

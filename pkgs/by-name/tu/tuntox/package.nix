@@ -95,6 +95,6 @@ stdenv.mkDerivation rec {
     maintainers = with maintainers; [
       willcohen
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -24,6 +24,6 @@ buildGoModule {
     mainProgram = "sqlboiler-crdb";
     homepage = "https://github.com/glerchundi/sqlboiler-crdb/";
     maintainers = with maintainers; [ dgollings ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

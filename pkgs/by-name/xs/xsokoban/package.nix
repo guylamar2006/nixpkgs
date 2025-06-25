@@ -65,6 +65,6 @@ stdenv.mkDerivation rec {
     mainProgram = "xsokoban";
     license = licenses.publicDomain;
     maintainers = with lib.maintainers; [ raskin ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

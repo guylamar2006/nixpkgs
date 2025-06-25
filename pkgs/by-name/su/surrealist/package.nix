@@ -121,6 +121,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = licenses.mit;
     mainProgram = "surrealist";
     maintainers = with maintainers; [ frankp ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 })

@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     description = "Listen to SomaFM in your terminal via pure bash";
     homepage = "https://github.com/rockymadden/somafm-cli";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ SuperSandro2000 ];
     mainProgram = "somafm";
   };

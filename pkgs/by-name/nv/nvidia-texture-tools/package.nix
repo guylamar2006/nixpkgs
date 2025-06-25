@@ -52,6 +52,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/castano/nvidia-texture-tools";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ wegank ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

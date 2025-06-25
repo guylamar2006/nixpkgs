@@ -50,7 +50,7 @@ buildGoModule {
   meta = with lib; {
     description = "Future Internet architecture utilizing path-aware networking";
     homepage = "https://scion-architecture.net/";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [
       sarcasticadmin

@@ -114,7 +114,7 @@ clangStdenv.mkDerivation rec {
       lgpl21Only
     ];
     homepage = "https://sogo.nu/";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ jceb ];
   };
 }

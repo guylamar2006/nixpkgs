@@ -40,6 +40,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/fcitx/xcb-imdkit";
     license = licenses.lgpl21Plus;
     maintainers = with maintainers; [ poscat ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

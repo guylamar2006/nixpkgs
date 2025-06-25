@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     description = "Shamir Secret Sharing Scheme";
     homepage = "http://point-at-infinity.org/ssss/";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ];
   };
 }

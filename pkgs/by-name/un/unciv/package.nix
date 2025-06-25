@@ -74,6 +74,6 @@ stdenv.mkDerivation rec {
     maintainers = with maintainers; [ tex ];
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = licenses.mpl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -36,6 +36,6 @@ stdenv.mkDerivation rec {
     description = "Personal media streamer";
     license = lib.licenses.unfree;
     maintainers = with maintainers; [ telotortium ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

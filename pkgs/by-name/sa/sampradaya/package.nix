@@ -28,6 +28,6 @@ stdenvNoCC.mkDerivation rec {
     description = "Unicode-compliant Grantha font";
     maintainers = with lib.maintainers; [ mathnerd314 ];
     license = lib.licenses.ofl; # See font metadata
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

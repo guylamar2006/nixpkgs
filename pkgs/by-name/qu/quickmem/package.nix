@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     description = "Memory pooling for ARPA2 projects";
     homepage = "https://gitlab.com/arpa2/Quick-MEM/";
     license = lib.licenses.bsd2;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ leungbk ];
   };
 }

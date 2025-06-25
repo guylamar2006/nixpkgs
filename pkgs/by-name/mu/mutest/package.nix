@@ -39,6 +39,6 @@ stdenv.mkDerivation {
     description = "BDD testing framework for C, inspired by Mocha";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ jtojnar ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

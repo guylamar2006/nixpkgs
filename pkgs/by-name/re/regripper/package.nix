@@ -50,7 +50,7 @@ stdenv.mkDerivation {
     mainProgram = "regripper";
     homepage = "https://github.com/keydet89/RegRipper3.0";
     maintainers = with lib.maintainers; [ d3vil0p3r ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.mit;
   };
 }

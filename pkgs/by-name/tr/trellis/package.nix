@@ -83,6 +83,6 @@ stdenv.mkDerivation {
       thoughtpolice
       rowanG077
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -33,6 +33,6 @@ stdenv.mkDerivation rec {
     description = "C++ Reflection Library";
     homepage = "https://www.rttr.org";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

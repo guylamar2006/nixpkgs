@@ -39,6 +39,6 @@ stdenv.mkDerivation {
     description = "SoapySDR plugin for HackRF devices";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ markuskowa ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

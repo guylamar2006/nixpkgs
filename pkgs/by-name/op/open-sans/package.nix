@@ -33,7 +33,7 @@ stdenvNoCC.mkDerivation {
     '';
     homepage = "https://www.opensans.com";
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     teams = with lib.teams; [ pantheon ];
   };
 }

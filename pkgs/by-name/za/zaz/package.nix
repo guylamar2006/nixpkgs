@@ -57,7 +57,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://zaz.sourceforge.net/";
     license = licenses.gpl3;
     maintainers = with maintainers; [ fgaz ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "zaz";
   };
 })

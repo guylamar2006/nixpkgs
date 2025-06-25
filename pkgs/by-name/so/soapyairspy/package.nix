@@ -31,6 +31,6 @@ stdenv.mkDerivation rec {
     description = "SoapySDR plugin for Airspy devices";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ markuskowa ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

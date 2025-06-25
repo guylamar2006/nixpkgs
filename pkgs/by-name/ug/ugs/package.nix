@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
     maintainers = with maintainers; [ matthewcroughan ];
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = licenses.gpl3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "ugs";
   };
 }

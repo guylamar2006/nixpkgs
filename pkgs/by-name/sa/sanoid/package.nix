@@ -99,6 +99,6 @@ stdenv.mkDerivation rec {
       lopsided98
       Frostman
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

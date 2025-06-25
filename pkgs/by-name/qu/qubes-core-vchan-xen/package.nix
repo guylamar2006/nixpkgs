@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     homepage = "https://qubes-os.org";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     broken = true;
   };
 

@@ -40,7 +40,7 @@ stdenv.mkDerivation {
     description = "Simple host availability monitor";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ebzzry ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "pell";
   };
 

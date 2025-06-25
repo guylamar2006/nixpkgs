@@ -38,6 +38,6 @@ stdenv.mkDerivation rec {
     homepage = "https://nanomsg.org/";
     license = lib.licenses.mit;
     mainProgram = "nanocat";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

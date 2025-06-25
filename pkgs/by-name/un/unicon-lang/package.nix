@@ -59,7 +59,7 @@ stdenv.mkDerivation {
     broken = (stdenv.hostPlatform.isLinux && stdenv.hostPlatform.isAarch64);
     description = "Very high level, goal-directed, object-oriented, general purpose applications language";
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = licenses.gpl2;
     homepage = "http://unicon.org";
   };

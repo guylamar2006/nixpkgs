@@ -82,6 +82,6 @@ python3.pkgs.buildPythonApplication rec {
     homepage = "https://github.com/gnome-terminator/terminator";
     license = licenses.gpl2;
     maintainers = with maintainers; [ bjornfor ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

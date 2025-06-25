@@ -106,6 +106,6 @@ stdenv.mkDerivation (finalAttrs: {
       RossComputerGuy
       numinit
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 })

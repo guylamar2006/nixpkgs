@@ -81,6 +81,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
       das_j
       Luflosi
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 })

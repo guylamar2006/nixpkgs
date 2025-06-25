@@ -88,7 +88,7 @@ lib.checkListOfEnum "${pname}: theme variants" [ "default" "manjaro" "ubuntu" "a
       description = "Flat Design theme for GTK based desktop environments";
       homepage = "https://github.com/vinceliuice/Qogir-theme";
       license = lib.licenses.gpl3Only;
-      platforms = platforms.unix;
+      platforms = lib.platforms.unix;
       maintainers = with lib.maintainers; [ romildo ];
     };
   }

@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/wasm3/wasm3";
     description = "Fastest WebAssembly interpreter, and the most universal runtime";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ malbarbo ];
     license = licenses.mit;
     knownVulnerabilities = [

@@ -67,6 +67,6 @@ stdenv.mkDerivation {
     homepage = "https://professor.hepforge.org/";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ veprbl ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -53,6 +53,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/raboof/realtimeconfigquickscan";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ magnetophon ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

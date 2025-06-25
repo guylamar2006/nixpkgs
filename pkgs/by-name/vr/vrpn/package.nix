@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/vrpn/vrpn";
     license = licenses.boost; # see https://github.com/vrpn/vrpn/wiki/License
-    platforms = platforms.darwin ++ platforms.linux;
+    platforms = lib.platforms.darwin ++ platforms.linux;
     maintainers = with maintainers; [ ludo ];
   };
 }

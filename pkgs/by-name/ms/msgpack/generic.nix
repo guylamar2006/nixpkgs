@@ -25,6 +25,6 @@ stdenv.mkDerivation {
     homepage = "https://msgpack.org";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ redbaron ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

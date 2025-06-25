@@ -37,6 +37,6 @@ stdenv.mkDerivation rec {
       dawidsowa
       mynacol
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

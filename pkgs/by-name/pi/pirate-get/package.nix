@@ -27,6 +27,6 @@ buildPythonApplication rec {
     homepage = "https://github.com/vikstrous/pirate-get";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ rnhmjoj ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

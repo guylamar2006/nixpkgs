@@ -75,6 +75,6 @@ stdenv.mkDerivation (finalAttrs: {
     ];
     maintainers = with maintainers; [ Madouura ];
     mainProgram = "SvtAv1EncApp";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

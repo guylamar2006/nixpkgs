@@ -71,7 +71,7 @@ stdenv.mkDerivation rec {
     description = "Graphical user interface for SpatiaLite";
     homepage = "https://www.gaia-gis.it/fossil/spatialite_gui";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     teams = with lib.teams; [ geospatial ];
     mainProgram = "spatialite_gui";
   };

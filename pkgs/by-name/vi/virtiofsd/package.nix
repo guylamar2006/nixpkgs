@@ -47,7 +47,7 @@ rustPlatform.buildRustPackage rec {
       astro
     ];
     mainProgram = "virtiofsd";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = with licenses; [
       asl20 # and
       bsd3

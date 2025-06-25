@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/markqvist/tncattach";
     license = licenses.mit;
     maintainers = with maintainers; [ sarcasticadmin ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "tncattach";
   };
 }

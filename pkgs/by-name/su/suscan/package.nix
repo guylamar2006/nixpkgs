@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
     description = "Channel scanner based on sigutils library";
     homepage = "https://github.com/BatchDrake/suscan";
     license = licenses.gpl3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [
       polygon
       oxapentane

@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     mainProgram = "sollya";
     homepage = "https://www.sollya.org/";
     license = lib.licenses.cecill-c;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ wegank ];
   };
 }

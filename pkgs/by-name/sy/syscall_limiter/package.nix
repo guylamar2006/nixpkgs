@@ -34,6 +34,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/vi/syscall_limiter";
     license = licenses.mit;
     maintainers = with maintainers; [ obadz ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

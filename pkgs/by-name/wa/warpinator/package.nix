@@ -94,7 +94,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/linuxmint/warpinator";
     description = "Share files across the LAN";
     license = licenses.gpl3Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     teams = with lib.teams; [ cinnamon ];
   };
 }

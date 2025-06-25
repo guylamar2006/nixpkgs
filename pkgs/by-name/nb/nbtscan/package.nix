@@ -23,7 +23,7 @@ stdenv.mkDerivation {
     mainProgram = "nbtscan";
     homepage = "https://github.com/resurrecting-open-source-projects/nbtscan";
     maintainers = with lib.maintainers; [ d3vil0p3r ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.gpl2Plus;
   };
 }

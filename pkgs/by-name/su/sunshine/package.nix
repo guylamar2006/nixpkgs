@@ -246,6 +246,6 @@ stdenv'.mkDerivation rec {
     license = licenses.gpl3Only;
     mainProgram = "sunshine";
     maintainers = with maintainers; [ devusb ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

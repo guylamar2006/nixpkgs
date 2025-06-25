@@ -53,7 +53,7 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "remontoire";
     homepage = "https://github.com/regolith-linux/remontoire";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ aacebedo ];
   };
 })

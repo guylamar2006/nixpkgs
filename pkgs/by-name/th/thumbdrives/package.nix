@@ -61,6 +61,6 @@ python3.pkgs.buildPythonApplication rec {
       chuangzhu
       Luflosi
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

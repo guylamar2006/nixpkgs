@@ -26,6 +26,6 @@ stdenv.mkDerivation rec {
     description = "New test TCP program";
     license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ emilytrau ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -59,7 +59,7 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "rifiuti";
     homepage = "https://sourceforge.net/projects/odessa/files/Rifiuti";
     maintainers = with lib.maintainers; [ d3vil0p3r ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.bsd3;
   };
 })

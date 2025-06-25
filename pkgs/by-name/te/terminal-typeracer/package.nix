@@ -45,6 +45,6 @@ rustPlatform.buildRustPackage rec {
     license = licenses.gpl3Plus;
     maintainers = with maintainers; [ yoctocell ];
     mainProgram = "typeracer";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

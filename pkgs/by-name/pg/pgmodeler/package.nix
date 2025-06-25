@@ -86,6 +86,6 @@ stdenv.mkDerivation rec {
     homepage = "https://pgmodeler.io/";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ esclear ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

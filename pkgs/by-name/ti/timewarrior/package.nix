@@ -43,6 +43,6 @@ stdenv.mkDerivation rec {
       mrVanDalo
     ];
     mainProgram = "timew";
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
   };
 }

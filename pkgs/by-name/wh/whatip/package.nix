@@ -59,7 +59,7 @@ python3.pkgs.buildPythonApplication rec {
     mainProgram = "whatip";
     homepage = "https://gitlab.gnome.org/GabMus/whatip";
     license = licenses.gpl3Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ zendo ];
   };
 }

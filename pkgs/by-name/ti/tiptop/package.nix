@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
     description = "Performance monitoring tool for Linux";
     homepage = "http://tiptop.gforge.inria.fr";
     license = licenses.gpl2Only;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ ];
   };
 }

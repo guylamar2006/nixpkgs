@@ -112,7 +112,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://www.vectorcamp.gr/vectorscan/";
     changelog = "https://github.com/VectorCamp/vectorscan/blob/${src.rev}/CHANGELOG-vectorscan.md";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = with licenses; [
       bsd3 # and
       bsd2 # and

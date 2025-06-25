@@ -39,6 +39,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.mit;
     homepage = "https://github.com/Edward-Wu/srt-live-server";
     maintainers = with maintainers; [ shamilton ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

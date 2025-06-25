@@ -55,6 +55,6 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.freedesktop.org/tomstdenis/umr";
     license = licenses.mit;
     maintainers = with maintainers; [ Flakebi ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

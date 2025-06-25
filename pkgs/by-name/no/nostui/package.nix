@@ -30,7 +30,7 @@ rustPlatform.buildRustPackage rec {
     description = "TUI client for Nostr";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ heywoodlh ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "nostui";
   };
 }

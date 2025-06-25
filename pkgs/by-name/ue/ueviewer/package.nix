@@ -99,6 +99,6 @@ gccStdenv.mkDerivation (finalAttrs: {
     mainProgram = "umodel";
     maintainers = with maintainers; [ OPNA2608 ];
     # Hardcoded usage of SSE2
-    platforms = platforms.x86;
+    platforms = lib.platforms.x86;
   };
 })

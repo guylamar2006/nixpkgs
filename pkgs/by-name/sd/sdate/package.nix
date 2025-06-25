@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
     description = "Eternal september version of the date program";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ edef ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "sdate";
   };
 }

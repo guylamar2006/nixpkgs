@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     homepage = "https://nyancat.dakko.us";
     license = lib.licenses.ncsa;
     maintainers = with lib.maintainers; [ midchildan ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "nyancat";
   };
 }

@@ -27,7 +27,7 @@ buildGoModule {
     description = "Implementation of the BitTorrent protocol that is optimised for streaming media";
     mainProgram = "storrent";
     license = lib.licenses.mit;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ ];
   };
 }

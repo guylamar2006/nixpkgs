@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
     homepage = "https://vamp-plugins.org/";
     license = licenses.bsd3;
     maintainers = with lib.maintainers; [ marcweber ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

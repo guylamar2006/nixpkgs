@@ -69,7 +69,7 @@ let
       arianvp
       toonn
     ];
-    platforms = platforms.darwin ++ [
+    platforms = lib.platforms.darwin ++ [
       "x86_64-linux"
     ];
     hydraPlatforms = [ ];

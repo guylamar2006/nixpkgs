@@ -28,6 +28,6 @@ stdenv.mkDerivation rec {
     description = "Minesweeper for X11 with various grid sizes and shapes";
     mainProgram = "xbomb";
     license = licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

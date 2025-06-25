@@ -39,6 +39,6 @@ stdenvNoCC.mkDerivation rec {
       jtojnar
       regnat
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

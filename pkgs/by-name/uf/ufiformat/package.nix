@@ -24,7 +24,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/tedigh/ufiformat";
     description = "Low-level disk formatting utility for USB floppy drives";
     maintainers = with lib.maintainers; [ amarshall ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = licenses.gpl2Plus;
     mainProgram = "ufiformat";
   };

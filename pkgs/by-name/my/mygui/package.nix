@@ -67,6 +67,6 @@ stdenv.mkDerivation rec {
     homepage = "http://mygui.info/";
     description = "Library for creating GUIs for games and 3D applications";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

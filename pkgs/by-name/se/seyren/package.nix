@@ -32,6 +32,6 @@ stdenv.mkDerivation rec {
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ offline ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

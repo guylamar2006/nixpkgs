@@ -88,7 +88,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://smcameron.github.io/space-nerds-in-space/";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ pentane ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "snis_launcher";
   };
 })

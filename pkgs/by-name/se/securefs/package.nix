@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
       bsd2
       mit
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "securefs";
   };
 }

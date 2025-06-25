@@ -26,6 +26,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/ncopa/su-exec";
     license = lib.licenses.mit;
     maintainers = with maintainers; [ zimbatm ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

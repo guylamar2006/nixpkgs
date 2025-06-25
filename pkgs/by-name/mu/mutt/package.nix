@@ -134,7 +134,7 @@ stdenv.mkDerivation rec {
     homepage = "http://www.mutt.org";
     mainProgram = "mutt";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ rnhmjoj ];
   };
 }

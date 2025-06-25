@@ -65,7 +65,7 @@ stdenv.mkDerivation rec {
     inherit (src.meta) homepage;
     mainProgram = "swaylock";
     license = licenses.mit;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ primeos ];
   };
 }

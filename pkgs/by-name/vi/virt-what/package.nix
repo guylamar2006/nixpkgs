@@ -18,7 +18,7 @@ stdenv.mkDerivation rec {
     homepage = "https://people.redhat.com/~rjones/virt-what/";
     maintainers = with maintainers; [ fpletz ];
     license = licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "virt-what";
   };
 }

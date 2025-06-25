@@ -45,7 +45,7 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "ONC RPC portmapper";
     license = lib.licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     homepage = "https://linux-nfs.org/";
     maintainers = with lib.maintainers; [ abbradar ];
     longDescription = ''

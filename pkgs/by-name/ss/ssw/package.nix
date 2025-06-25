@@ -22,6 +22,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.gnu.org/software/ssw/";
     license = lib.licenses.gpl3;
     description = "GNU Spread Sheet Widget";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

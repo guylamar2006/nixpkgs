@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/archiecobbs/s3backer";
     description = "FUSE-based single file backing store via Amazon S3";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "s3backer";
   };
 }

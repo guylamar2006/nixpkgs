@@ -23,6 +23,6 @@ stdenv.mkDerivation rec {
     description = "MIDI synthesizer library";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ orivej ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

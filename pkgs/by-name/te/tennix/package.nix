@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     description = "Classic Championship Tour 2011";
     mainProgram = "tennix";
     license = licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ pSub ];
   };
 }

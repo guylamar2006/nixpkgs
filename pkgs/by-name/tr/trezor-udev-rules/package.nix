@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     description = "Udev rules for Trezor";
     license = licenses.gpl3;
     maintainers = with maintainers; [ prusnak ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     homepage = "https://github.com/trezor/trezor-firmware/tree/master/common/udev";
   };
 }

@@ -31,7 +31,7 @@ buildGoModule rec {
     homepage = "https://github.com/someone1/zfsbackup-go";
     license = licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "zfsbackup-go";
   };
 }

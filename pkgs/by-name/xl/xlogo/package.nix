@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
     description = "X Window System logo display demo";
     homepage = "https://gitlab.freedesktop.org/xorg/app/xlogo";
     maintainers = with maintainers; [ raboof ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = licenses.mit;
     mainProgram = "xlogo";
   };

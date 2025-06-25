@@ -154,6 +154,6 @@ stdenv.mkDerivation rec {
       tfmoraes
       fliegendewurst
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
       asl20
       mit
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ sheepforce ];
   };
 }

@@ -212,7 +212,7 @@ let
         chvp
         lucasew
       ];
-      platforms = platforms.linux;
+      platforms = lib.platforms.linux;
     };
   };
 in

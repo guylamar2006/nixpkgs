@@ -164,7 +164,7 @@ stdenv.mkDerivation (finalAttrs: {
       "vips"
       "vips-cpp"
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "vips";
   };
 })

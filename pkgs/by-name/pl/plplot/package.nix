@@ -54,7 +54,7 @@ stdenv.mkDerivation rec {
     mainProgram = "pltek";
     homepage = "https://plplot.org";
     maintainers = with lib.maintainers; [ bcdarwin ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.lgpl2;
   };
 }

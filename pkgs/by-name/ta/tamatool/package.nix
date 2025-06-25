@@ -75,7 +75,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/jcrona/tamatool";
     license = licenses.gpl2Only;
     maintainers = with maintainers; [ fgaz ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "tamatool";
   };
 })

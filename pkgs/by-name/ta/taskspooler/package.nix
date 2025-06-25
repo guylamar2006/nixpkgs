@@ -33,6 +33,6 @@ stdenv.mkDerivation {
     license = licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ sheepforce ];
     mainProgram = "ts";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

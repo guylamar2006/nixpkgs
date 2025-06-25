@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
     mainProgram = "tapview";
     homepage = "https://gitlab.com/esr/tapview";
     license = licenses.bsd2;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ pamplemousse ];
   };
 }

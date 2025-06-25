@@ -84,7 +84,7 @@ stdenv.mkDerivation rec {
       raskin
       pSub
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = licenses.gpl2Plus;
   };
 }

@@ -32,7 +32,7 @@ stdenv.mkDerivation {
     description = "State-of-the-art MaxSAT and Pseudo-Boolean solver";
     mainProgram = "open-wbo";
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.mit;
     homepage = "http://sat.inesc-id.pt/open-wbo/";
   };

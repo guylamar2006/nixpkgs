@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
       sane-airscan: Linux support of Apple AirScan (eSCL) compatible document scanners.
     '';
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ zaninime ];
   };
 }

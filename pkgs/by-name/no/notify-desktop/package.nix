@@ -34,7 +34,7 @@ stdenv.mkDerivation {
     '';
     homepage = "https://github.com/nowrep/notify-desktop";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ylwghst ];
     mainProgram = "notify-desktop";
   };

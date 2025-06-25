@@ -73,7 +73,7 @@ stdenvNoCC.mkDerivation rec {
     description = "Print pokemon in the CLI! An adaptation of the classic cowsay";
     homepage = "https://github.com/HRKings/pokemonsay-newgenerations";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ pbsds ];
   };
 }

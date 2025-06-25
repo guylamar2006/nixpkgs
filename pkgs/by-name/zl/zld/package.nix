@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/michaeleisel/zld";
     license = licenses.mit;
     maintainers = with lib.maintainers; [ rgnns ];
-    platforms = platforms.darwin;
+    platforms = lib.platforms.darwin;
     hydraPlatforms = [ ];
   };
 }

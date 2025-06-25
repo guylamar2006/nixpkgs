@@ -70,7 +70,7 @@ buildGoModule rec {
     description = " a CLI for Apache Pulsar written in Go";
     homepage = "https://github.com/streamnative/pulsarctl";
     license = with licenses; [ asl20 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ gaelreyrol ];
     mainProgram = "pulsarctl";
   };

@@ -50,7 +50,7 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://github.com/epinna/weevely3";
     mainProgram = "weevely";
     license = licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ d3vil0p3r ];
   };
 }

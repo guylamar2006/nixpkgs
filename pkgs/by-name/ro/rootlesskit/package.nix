@@ -29,6 +29,6 @@ buildGoModule rec {
     description = ''Kind of Linux-native "fake root" utility, made for mainly running Docker and Kubernetes as an unprivileged user'';
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ offline ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

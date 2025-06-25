@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
     homepage = "https://sr.ht/~leon_plickat/river-tag-overlay";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ edrex ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "river-tag-overlay";
   };
 }

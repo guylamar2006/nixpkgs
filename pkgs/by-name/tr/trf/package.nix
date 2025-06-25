@@ -20,6 +20,6 @@ stdenv.mkDerivation rec {
     homepage = "https://tandem.bu.edu/trf/trf.html";
     license = licenses.agpl3Plus;
     maintainers = with maintainers; [ natsukium ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

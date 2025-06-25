@@ -64,6 +64,6 @@ stdenv.mkDerivation rec {
     description = "Ncurses spreadsheet program for terminal";
     license = lib.licenses.bsdOriginal;
     maintainers = with lib.maintainers; [ dotlambda ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

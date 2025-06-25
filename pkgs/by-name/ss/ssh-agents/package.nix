@@ -39,7 +39,7 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://github.com/kalbasit/ssh-agents";
     license = lib.licenses.mit;
     maintainers = with maintainers; [ kalbasit ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "ssh-agents";
   };
 }

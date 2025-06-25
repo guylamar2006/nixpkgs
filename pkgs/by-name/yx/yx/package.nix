@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
     description = "YAML Data Extraction Tool";
     homepage = "https://gitlab.com/tomalok/yx";
     license = licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ twz123 ];
     mainProgram = "yx";
   };

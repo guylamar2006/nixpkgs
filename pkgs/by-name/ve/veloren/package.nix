@@ -105,7 +105,7 @@ rustPlatform.buildRustPackage {
     homepage = "https://www.veloren.net";
     license = licenses.gpl3;
     mainProgram = "veloren-voxygen";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [
       rnhmjoj
       tomodachi94

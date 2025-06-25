@@ -52,6 +52,6 @@ stdenv.mkDerivation rec {
       robberer
       griffi-gh
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

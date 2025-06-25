@@ -32,6 +32,6 @@ stdenv.mkDerivation rec {
     description = "Set of powerful extensions to the Zsh command line editor";
     license = licenses.mit;
     maintainers = with maintainers; [ deejayem ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

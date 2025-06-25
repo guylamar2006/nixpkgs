@@ -44,7 +44,7 @@ stdenv.mkDerivation rec {
     mainProgram = "wxmacmolplt";
     homepage = "https://brettbode.github.io/wxmacmolplt/";
     license = licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [
       sheepforce
       markuskowa

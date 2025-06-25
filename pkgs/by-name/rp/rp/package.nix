@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/0vercl0k/rp";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ sportshead ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "rp";
   };
 }

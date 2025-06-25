@@ -57,7 +57,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://texstudio.org";
     changelog = "https://github.com/texstudio-org/texstudio/blob/${finalAttrs.version}/utilities/manual/source/CHANGELOG.md";
     license = licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [
       ajs124
       cfouche

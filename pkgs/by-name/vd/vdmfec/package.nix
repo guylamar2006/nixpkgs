@@ -21,6 +21,6 @@ stdenv.mkDerivation rec {
       gpl2 # for vdmfec
       bsd2 # for fec
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

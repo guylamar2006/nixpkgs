@@ -67,7 +67,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     homepage = "https://www.redmine.org/";
     changelog = "https://www.redmine.org/projects/redmine/wiki/changelog";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [
       aanderse
       felixsinger

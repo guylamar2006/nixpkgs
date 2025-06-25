@@ -55,6 +55,6 @@ python3.pkgs.buildPythonApplication rec {
     homepage = "https://github.com/karlch/vimiv-qt";
     maintainers = with maintainers; [ dschrempf ];
     mainProgram = "vimiv";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

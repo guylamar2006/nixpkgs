@@ -84,7 +84,7 @@ stdenv.mkDerivation rec {
       fromSource
     ];
     license = licenses.gpl3Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "tvbrowser";
     maintainers = with maintainers; [ yarny ];
     longDescription = ''

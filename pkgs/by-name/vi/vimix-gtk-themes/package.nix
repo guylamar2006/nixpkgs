@@ -92,7 +92,7 @@ lib.checkListOfEnum "${pname}: theme variants"
       description = "Flat Material Design theme for GTK based desktop environments";
       homepage = "https://github.com/vinceliuice/vimix-gtk-themes";
       license = licenses.gpl3Only;
-      platforms = platforms.unix;
+      platforms = lib.platforms.unix;
       maintainers = with lib.maintainers; [ romildo ];
     };
   }

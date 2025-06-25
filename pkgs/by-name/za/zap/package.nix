@@ -71,7 +71,7 @@ stdenv.mkDerivation rec {
       mog
       rafael
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = licenses.asl20;
     mainProgram = "zap";
   };

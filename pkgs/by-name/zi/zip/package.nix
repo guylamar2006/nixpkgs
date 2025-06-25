@@ -84,7 +84,7 @@ stdenv.mkDerivation rec {
     description = "Compressor/archiver for creating and modifying zipfiles";
     homepage = "http://www.info-zip.org";
     license = licenses.bsdOriginal;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ RossComputerGuy ];
     mainProgram = "zip";
   };

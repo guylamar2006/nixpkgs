@@ -31,6 +31,6 @@ stdenv.mkDerivation {
     mainProgram = "pcalc";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ftrvxmtrx ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

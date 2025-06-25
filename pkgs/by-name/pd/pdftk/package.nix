@@ -68,7 +68,7 @@ stdenv.mkDerivation rec {
       raskin
       averelld
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "pdftk";
   };
 }

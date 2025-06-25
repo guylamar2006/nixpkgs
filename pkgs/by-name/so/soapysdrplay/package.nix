@@ -38,6 +38,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/pothosware/SoapySDRPlay3";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ pmenke ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

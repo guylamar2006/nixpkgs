@@ -27,6 +27,6 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Readline and libedit replacement that supports UTF-8, syntax highlighting, hints and Windows and is BSD licensed";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

@@ -63,7 +63,7 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl3Only;
     mainProgram = "nulloy";
     maintainers = with lib.maintainers; [ aleksana ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     broken = stdenv.hostPlatform.isDarwin;
   };
 }

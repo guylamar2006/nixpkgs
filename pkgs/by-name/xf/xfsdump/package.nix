@@ -55,6 +55,6 @@ stdenv.mkDerivation rec {
     homepage = "https://git.kernel.org/pub/scm/fs/xfs/xfsdump-dev.git/tree/doc/CHANGES";
     license = licenses.gpl2Only;
     maintainers = with lib.maintainers; [ lunik1 ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

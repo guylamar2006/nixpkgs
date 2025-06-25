@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/google/sentencepiece";
     description = "Unsupervised text tokenizer for Neural Network-based text generation";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ pashashocky ];
   };
 }

@@ -62,7 +62,7 @@ stdenv.mkDerivation rec {
       gpl3 # or
       mpl20
     ];
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
     maintainers = with lib.maintainers; [ kamillaova ];
     mainProgram = "rvvm";
   };

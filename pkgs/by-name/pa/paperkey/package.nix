@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://www.jabberwocky.com/software/paperkey/";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       peterhoeg
     ];

@@ -59,6 +59,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/roc-streaming/openfec";
     license = lib.licenses.cecill-c;
     maintainers = with lib.maintainers; [ bgamari ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -72,7 +72,7 @@ stdenv.mkDerivation {
     '';
     license = licenses.asl20;
     maintainers = with maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "with";
   };
 }

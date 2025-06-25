@@ -33,6 +33,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     maintainers = with lib.maintainers; [ ByteSudoer ];
     license = lib.licenses.mit;
     mainProgram = "nerdfetch";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

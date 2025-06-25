@@ -36,6 +36,6 @@ rustPlatform.buildRustPackage {
     license = with licenses; [ bsd3 ];
     mainProgram = "uefisettings";
     maintainers = with maintainers; [ surfaceflinger ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

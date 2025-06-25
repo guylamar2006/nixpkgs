@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.openntpd.org/";
     license = lib.licenses.bsd3;
     description = "OpenBSD NTP daemon (Debian port)";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ thoughtpolice ];
   };
 }

@@ -109,7 +109,7 @@ stdenv.mkDerivation {
     '';
     homepage = "https://github.com/nesbox/TIC-80";
     license = licenses.mit;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "tic80";
     maintainers = with maintainers; [ blinry ];
   };

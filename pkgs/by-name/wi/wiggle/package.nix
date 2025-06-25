@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
       already been applied, and will ignore them.
     '';
     license = licenses.gpl2Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
   };
 }

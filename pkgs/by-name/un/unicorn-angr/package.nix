@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.unicorn-engine.org";
     license = licenses.gpl2Only;
     maintainers = with maintainers; [ fab ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin;
   };
 }

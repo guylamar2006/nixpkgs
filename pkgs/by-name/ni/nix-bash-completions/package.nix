@@ -56,7 +56,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/hedning/nix-bash-completions";
     description = "Bash completions for Nix, NixOS, and NixOps";
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       hedning
       ncfavier

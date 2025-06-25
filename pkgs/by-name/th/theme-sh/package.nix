@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
     description = "Script which lets you set your $terminal theme";
     homepage = "https://github.com/lemnos/theme.sh";
     license = licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ figsoda ];
     mainProgram = "theme.sh";
   };

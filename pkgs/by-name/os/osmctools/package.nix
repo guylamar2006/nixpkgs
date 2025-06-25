@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
       "https://wiki.openstreetmap.org/wiki/osmupdate"
     ];
     maintainers = with lib.maintainers; [ sikmir ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.agpl3Only;
   };
 }

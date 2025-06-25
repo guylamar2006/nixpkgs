@@ -81,6 +81,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/morganstanley/modern-cpp-kafka";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ ditsuke ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

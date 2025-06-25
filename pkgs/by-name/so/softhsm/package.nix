@@ -52,6 +52,6 @@ stdenv.mkDerivation rec {
     ";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ leenaars ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

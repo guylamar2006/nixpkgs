@@ -27,6 +27,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/sickill/stderred";
     license = lib.licenses.mit;
     maintainers = with maintainers; [ vojta001 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

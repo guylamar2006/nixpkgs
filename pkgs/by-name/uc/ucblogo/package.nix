@@ -40,6 +40,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = licenses.gpl3Only;
     maintainers = with maintainers; [ matthewcroughan ];
     mainProgram = "ucblogo-code";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

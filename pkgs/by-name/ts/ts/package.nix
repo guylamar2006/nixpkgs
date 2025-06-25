@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     description = "Task spooler - batch queue";
     license = licenses.gpl2Only;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "ts";
   };
 }

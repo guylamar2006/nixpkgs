@@ -45,7 +45,7 @@ buildGoModule rec {
       dotemup
       sarcasticadmin
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "pat";
   };
 }

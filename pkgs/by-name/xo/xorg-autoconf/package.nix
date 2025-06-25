@@ -25,6 +25,6 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.freedesktop.org/xorg/util/macros";
     maintainers = with maintainers; [ raboof ];
     license = licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

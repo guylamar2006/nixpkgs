@@ -75,6 +75,6 @@ stdenv.mkDerivation rec {
     homepage = "https://particl.io/";
     maintainers = with lib.maintainers; [ demyanrogozhin ];
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

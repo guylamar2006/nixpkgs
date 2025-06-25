@@ -61,7 +61,7 @@ stdenv.mkDerivation {
     description = "This is an swaylock bash script that takes a screenshot of the desktop, blurs the background and adds a lock icon and text";
     homepage = "https://github.com/Big-B/swaylock-fancy";
     license = licenses.mit;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ frogamic ];
     inherit mainProgram;
   };

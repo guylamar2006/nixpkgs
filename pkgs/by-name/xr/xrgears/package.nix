@@ -63,7 +63,7 @@ stdenv.mkDerivation {
     homepage = "https://gitlab.freedesktop.org/monado/demos/xrgears";
     description = "OpenXR example using Vulkan for rendering";
     mainProgram = "xrgears";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = licenses.mit;
     maintainers = with maintainers; [ Scrumplex ];
   };

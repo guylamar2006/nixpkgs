@@ -79,7 +79,7 @@ stdenv.mkDerivation rec {
     changelog = "https://www.shoup.net/ntl/doc/tour-changes.html";
     teams = with lib.teams; [ sage ];
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     # Does not cross compile
     # https://github.com/libntl/ntl/issues/8
     broken = !(stdenv.buildPlatform.canExecute stdenv.hostPlatform);

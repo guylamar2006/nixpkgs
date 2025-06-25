@@ -36,7 +36,7 @@ rustPlatform.buildRustPackage rec {
     description = "PostgreSQL pooler with sharding, load balancing and failover support";
     changelog = "https://github.com/postgresml/pgcat/releases";
     license = with licenses; [ mit ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ cathalmullan ];
     mainProgram = "pgcat";
   };

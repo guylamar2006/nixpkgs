@@ -42,6 +42,6 @@ stdenv.mkDerivation rec {
       hl3
     ];
     maintainers = with maintainers; [ icy-thought ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

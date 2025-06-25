@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "http://www.mew.org/~kazu/proj/pgpdump/en/";
     license = lib.licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ primeos ];
   };
 }

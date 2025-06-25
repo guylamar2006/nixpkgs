@@ -50,6 +50,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/g0tmi1k/msfpc";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ emilytrau ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

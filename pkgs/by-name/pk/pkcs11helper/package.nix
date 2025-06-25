@@ -33,6 +33,6 @@ stdenv.mkDerivation rec {
       gpl2Only
     ];
     description = "Library that simplifies the interaction with PKCS#11 providers";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

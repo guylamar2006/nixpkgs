@@ -108,7 +108,7 @@ stdenv.mkDerivation rec {
       lgpl21
       gpl3Plus
     ]; # see https://git.kernel.org/pub/scm/fs/xfs/xfsprogs-dev.git/tree/debian/copyright
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [
       dezgeg
       ajs124

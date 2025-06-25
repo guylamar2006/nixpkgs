@@ -47,6 +47,6 @@ stdenv.mkDerivation {
     homepage = "http://sc68.atari.org/project.html";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ OPNA2608 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     description = "Optimized OpenType builder and inspector";
     homepage = "https://github.com/caryll/otfcc";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ttuegel ];
     # Build fails on all platforms with
     #        > configure flags: gmake

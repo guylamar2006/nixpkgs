@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/mist64/xhyve";
     maintainers = with lib.maintainers; [ lnl7 ];
     license = licenses.bsd2;
-    platforms = platforms.darwin;
+    platforms = lib.platforms.darwin;
     # never built on aarch64-darwin since first introduction in nixpkgs
     broken = stdenv.hostPlatform.isDarwin && stdenv.hostPlatform.isAarch64;
   };

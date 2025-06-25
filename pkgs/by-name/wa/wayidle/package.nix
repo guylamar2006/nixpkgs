@@ -24,6 +24,6 @@ rustPlatform.buildRustPackage rec {
     license = licenses.isc;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "wayidle";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

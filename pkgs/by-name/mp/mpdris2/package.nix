@@ -50,7 +50,7 @@ python3.pkgs.buildPythonApplication rec {
     homepage = "https://github.com/eonpatapon/mpDris2/";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "mpDris2";
   };
 }

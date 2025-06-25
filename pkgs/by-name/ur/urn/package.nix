@@ -67,7 +67,7 @@ stdenv.mkDerivation {
     mainProgram = "urn";
     license = licenses.bsd3;
     maintainers = with maintainers; [ CrazedProgrammer ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 
   passthru = {

@@ -115,6 +115,6 @@ stdenv.mkDerivation (finalAttrs: {
       edmundmiller
     ];
     mainProgram = "nextflow";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

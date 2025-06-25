@@ -79,7 +79,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Suite of nonlinear differential/algebraic equation solvers";
     homepage = "https://computing.llnl.gov/projects/sundials";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ idontgetoutmuch ];
     license = licenses.bsd3;
   };

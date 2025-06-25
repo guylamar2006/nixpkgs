@@ -52,6 +52,6 @@ python3.pkgs.buildPythonApplication rec {
     homepage = "https://github.com/adamewing/tebreak";
     license = licenses.mit;
     maintainers = with maintainers; [ jbedo ];
-    platforms = platforms.x86_64;
+    platforms = lib.platforms.x86_64;
   };
 }

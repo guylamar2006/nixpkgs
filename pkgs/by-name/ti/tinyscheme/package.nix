@@ -80,6 +80,6 @@ stdenv.mkDerivation rec {
     license = licenses.bsdOriginal;
     mainProgram = "tinyscheme";
     maintainers = with lib.maintainers; [ ebzzry ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

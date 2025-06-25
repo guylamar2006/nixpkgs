@@ -82,6 +82,6 @@ stdenv.mkDerivation rec {
     homepage = "https://gittup.org/tup/";
     license = licenses.gpl2;
     maintainers = with maintainers; [ ehmry ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

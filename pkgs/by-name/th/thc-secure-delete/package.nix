@@ -42,6 +42,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = licenses.gpl2Only;
     maintainers = with maintainers; [ tochiaha ];
     mainProgram = "srm";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

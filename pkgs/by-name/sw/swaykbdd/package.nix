@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/artemsen/swaykbdd";
     license = licenses.mit;
     maintainers = with maintainers; [ ivankovnatsky ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "swaykbdd";
   };
 }

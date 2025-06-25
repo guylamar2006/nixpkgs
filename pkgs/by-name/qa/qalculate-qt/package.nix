@@ -52,6 +52,6 @@ stdenv.mkDerivation (finalAttrs: {
     maintainers = with lib.maintainers; [ _4825764518 ];
     license = lib.licenses.gpl2Plus;
     mainProgram = "qalculate-qt";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

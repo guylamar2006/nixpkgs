@@ -58,7 +58,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
       redistributable = true;
     };
     maintainers = with maintainers; [ emilytrau ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "stegsolve";
   };
 })

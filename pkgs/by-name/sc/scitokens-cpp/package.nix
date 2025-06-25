@@ -36,7 +36,7 @@ stdenv.mkDerivation {
   meta = with lib; {
     homepage = "https://github.com/scitokens/scitokens-cpp/";
     description = "C++ implementation of the SciTokens library with a C library interface";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ evey ];
   };

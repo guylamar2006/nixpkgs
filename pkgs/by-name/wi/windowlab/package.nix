@@ -43,7 +43,7 @@ stdenv.mkDerivation {
     homepage = "http://nickgravgaard.com/windowlab/";
     license = licenses.gpl2;
     maintainers = with maintainers; [ ehmry ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "windowlab";
   };
 }

@@ -27,6 +27,6 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ thpham ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

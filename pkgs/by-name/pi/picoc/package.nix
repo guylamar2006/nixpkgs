@@ -60,6 +60,6 @@ stdenv.mkDerivation {
     homepage = "https://gitlab.com/zsaleeba/picoc";
     downloadPage = "https://code.google.com/p/picoc/downloads/list";
     license = lib.licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

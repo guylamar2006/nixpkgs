@@ -38,6 +38,6 @@ stdenv.mkDerivation (finalAttrs: {
       ragge
       luizribeiro
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

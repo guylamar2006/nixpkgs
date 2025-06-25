@@ -55,6 +55,6 @@ rustPlatform.buildRustPackage rec {
       michaeladler
       archer-65
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -98,7 +98,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
     changelog = "https://github.com/NiceneNerd/ukmm/blob/${finalAttrs.src.rev}/CHANGELOG.md";
     license = licenses.gpl3Plus;
     maintainers = with maintainers; [ kira-bruneau ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     broken = stdenv.hostPlatform.isLinux && stdenv.hostPlatform.isAarch64;
     mainProgram = "ukmm";
   };

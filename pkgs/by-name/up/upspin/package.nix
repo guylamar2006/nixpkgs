@@ -25,6 +25,6 @@ buildGoModule {
     homepage = "https://upspin.io";
     license = licenses.bsd3;
     maintainers = with maintainers; [ orthros ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

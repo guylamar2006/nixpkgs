@@ -67,7 +67,7 @@ stdenv.mkDerivation rec {
       cc-by-sa-30
     ];
     maintainers = with lib.maintainers; [ lambda-11235 ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     hydraPlatforms = [ ];
   };
 }

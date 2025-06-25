@@ -89,7 +89,7 @@ lib.checkListOfEnum "${pname}: color variants"
       description = "Colorful Design Rectangle icon theme";
       homepage = "https://github.com/yeyushengfan258/Reversal-icon-theme";
       license = lib.licenses.gpl3Plus;
-      platforms = platforms.all;
+      platforms = lib.platforms.all;
       maintainers = with lib.maintainers; [ romildo ];
     };
   }

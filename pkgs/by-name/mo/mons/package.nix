@@ -94,7 +94,7 @@ resholve.mkDerivation {
     homepage = "https://github.com/Ventto/mons.git";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ thiagokokada ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "mons";
   };
 }

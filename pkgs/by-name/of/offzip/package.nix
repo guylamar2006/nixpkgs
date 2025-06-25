@@ -28,7 +28,7 @@ stdenv.mkDerivation {
     homepage = "https://aluigi.altervista.org/mytoolz.htm#offzip";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ r-burns ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "offzip";
   };
 }

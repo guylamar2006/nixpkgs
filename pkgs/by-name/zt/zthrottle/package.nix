@@ -27,7 +27,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/anko/zthrottle";
     license = licenses.unlicense;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "zthrottle";
   };
 }

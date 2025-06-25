@@ -38,6 +38,6 @@ stdenvNoCC.mkDerivation rec {
     '';
     license = licenses.ofl;
     maintainers = with maintainers; [ caugner ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

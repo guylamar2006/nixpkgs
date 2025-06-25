@@ -69,6 +69,6 @@ buildGoModule rec {
     license = licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ McSinyx ];
     mainProgram = "transito";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

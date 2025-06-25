@@ -91,6 +91,6 @@ stdenv.mkDerivation rec {
     ];
     maintainers = with lib.maintainers; [ zane ];
     mainProgram = "openrussian";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

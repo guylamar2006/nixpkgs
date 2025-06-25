@@ -69,6 +69,6 @@ python3Packages.buildPythonApplication rec {
     '';
     maintainers = with maintainers; [ ALEX11BR ];
     license = licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

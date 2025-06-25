@@ -48,6 +48,6 @@ stdenv.mkDerivation rec {
     homepage = "http://slackware.com/config/packages.php";
     license = lib.licenses.bsd1;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

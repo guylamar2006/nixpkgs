@@ -49,7 +49,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/alols/xcape";
     license = licenses.gpl3;
     maintainers = with maintainers; [ raskin ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "xcape";
   };
 }

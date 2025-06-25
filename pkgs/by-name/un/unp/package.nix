@@ -51,6 +51,6 @@ stdenv.mkDerivation {
     homepage = "https://packages.qa.debian.org/u/unp.html";
     license = with licenses; [ gpl2Only ];
     maintainers = with lib.maintainers; [ timor ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -147,7 +147,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://pdal.io";
     license = lib.licenses.bsd3;
     teams = with lib.teams; [ geospatial ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     pkgConfigModules = [ "pdal" ];
   };
 })

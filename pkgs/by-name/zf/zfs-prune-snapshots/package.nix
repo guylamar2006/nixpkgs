@@ -31,6 +31,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/bahamas10/zfs-prune-snapshots";
     license = licenses.mit;
     maintainers = with lib.maintainers; [ ymarkus ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -43,6 +43,6 @@ stdenv.mkDerivation rec {
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ peterhoeg ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

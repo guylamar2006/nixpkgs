@@ -88,7 +88,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "Kart racing video game based on Sonic Robo Blast 2 (SRB2), itself based on a modified version of Doom Legacy";
     homepage = "https://kartkrew.org";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [
       donovanglover

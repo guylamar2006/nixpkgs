@@ -27,7 +27,7 @@ stdenvNoCC.mkDerivation rec {
     homepage = "http://www.impallari.com/quattrocentosans/";
     description = "Classic, elegant and sober sans-serif typeface";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ rycee ];
   };
 }

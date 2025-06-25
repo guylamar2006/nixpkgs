@@ -38,6 +38,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/cernekee/ocproxy";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ joko ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

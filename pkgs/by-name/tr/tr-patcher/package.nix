@@ -40,6 +40,6 @@ stdenv.mkDerivation {
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = licenses.gpl3;
     maintainers = with lib.maintainers; [ marius851000 ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

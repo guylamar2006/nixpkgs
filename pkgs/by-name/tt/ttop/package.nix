@@ -33,7 +33,7 @@ buildNimPackage (finalAttrs: {
     homepage = "https://github.com/inv2004/ttop";
     changelog = "https://github.com/inv2004/ttop/releases/tag/${finalAttrs.src.rev}";
     license = licenses.mit;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [
       figsoda
       sikmir

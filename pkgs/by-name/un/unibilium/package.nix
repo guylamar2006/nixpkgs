@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/neovim/unibilium";
     description = "Very basic terminfo library";
     license = licenses.lgpl3Plus;
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
     maintainers = with maintainers; [ pSub ];
   };
 }

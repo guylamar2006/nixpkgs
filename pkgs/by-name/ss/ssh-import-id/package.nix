@@ -58,6 +58,6 @@ python3Packages.buildPythonApplication rec {
       viraptor
     ];
     mainProgram = "ssh-import-id";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

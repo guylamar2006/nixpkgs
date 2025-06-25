@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
     description = "Program that can validate your HTML, as well as modify it to be more clean and standard";
     mainProgram = "tidyp";
     homepage = "http://tidyp.com/";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ pSub ];
     license = licenses.bsd3;
   };

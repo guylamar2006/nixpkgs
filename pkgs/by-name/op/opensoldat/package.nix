@@ -42,7 +42,7 @@ let
     meta = with lib; {
       description = "Opensoldat's base game content";
       license = lib.licenses.cc-by-40;
-      platforms = platforms.all;
+      platforms = lib.platforms.all;
       inherit (src.meta) homepage;
     };
   };

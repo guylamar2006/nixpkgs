@@ -45,6 +45,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/shpedoikal/tpm-luks/";
     maintainers = with lib.maintainers; [ ];
     license = with licenses; [ gpl2Only ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

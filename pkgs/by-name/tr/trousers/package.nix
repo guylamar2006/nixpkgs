@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
     homepage = "https://trousers.sourceforge.net/";
     license = licenses.bsd3;
     maintainers = with lib.maintainers; [ ak ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

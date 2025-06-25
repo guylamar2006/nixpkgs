@@ -34,7 +34,7 @@ stdenv.mkDerivation {
     description = "Plugin that output time: xx after long commands";
     homepage = "https://github.com/popstas/zsh-command-time";
     license = licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ lassulus ];
   };
 }

@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
     description = "APC SPDU control utility";
     license = licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "zs-apc-spdu-ctl";
   };
 }

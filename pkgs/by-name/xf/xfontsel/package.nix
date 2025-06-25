@@ -52,6 +52,6 @@ stdenv.mkDerivation rec {
       mit
     ];
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

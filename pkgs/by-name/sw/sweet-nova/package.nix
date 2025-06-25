@@ -47,6 +47,6 @@ stdenvNoCC.mkDerivation {
     homepage = "https://github.com/EliverLara/Sweet";
     license = licenses.gpl3Only;
     maintainers = with lib.maintainers; [ dr460nf1r3 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

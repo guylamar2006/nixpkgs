@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "User mode programs to enable VLANs on Ethernet devices";
     homepage = "https://www.candelatech.com/~greear/vlan.html";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = licenses.gpl2Plus;
     mainProgram = "vconfig";
   };

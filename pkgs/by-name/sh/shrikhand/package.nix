@@ -27,7 +27,7 @@ stdenvNoCC.mkDerivation {
     homepage = "https://jonpinhorn.github.io/shrikhand/";
     description = "Vibrant and playful typeface for both Latin and Gujarati writing systems";
     maintainers = with lib.maintainers; [ sternenseemann ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.ofl;
   };
 }

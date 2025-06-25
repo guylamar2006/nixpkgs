@@ -90,6 +90,6 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "pgloader";
     maintainers = with lib.maintainers; [ mguentner ];
     license = lib.licenses.postgresql;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

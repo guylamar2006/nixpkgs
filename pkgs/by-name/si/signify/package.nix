@@ -38,6 +38,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.tedunangst.com/flak/post/signify";
     license = lib.licenses.isc;
     maintainers = with lib.maintainers; [ rlupton20 ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

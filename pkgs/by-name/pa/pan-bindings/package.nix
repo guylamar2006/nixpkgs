@@ -59,6 +59,6 @@ stdenv.mkDerivation {
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ matthewcroughan ];
     mainProgram = "pan-bindings";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

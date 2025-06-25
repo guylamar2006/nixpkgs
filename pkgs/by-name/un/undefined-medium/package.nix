@@ -30,6 +30,6 @@ stdenvNoCC.mkDerivation {
       whatever else you can think of … it’s pretty undefined.
     '';
     license = licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

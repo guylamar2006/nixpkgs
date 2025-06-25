@@ -70,7 +70,7 @@ stdenv.mkDerivation (finalAttrs: {
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     mainProgram = "spring";
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ moaxcp ];
   };
 })

@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://github.com/cjd/mtpfs";
     description = "FUSE Filesystem providing access to MTP devices";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ qknight ];
     broken = stdenv.hostPlatform.isDarwin; # never built on Hydra https://hydra.nixos.org/job/nixpkgs/trunk/mtpfs.x86_64-darwin

@@ -42,6 +42,6 @@ python3.pkgs.buildPythonApplication {
     homepage = "https://github.com/snovvcrash/usbrip";
     license = with licenses; [ gpl3Plus ];
     maintainers = with maintainers; [ fab ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

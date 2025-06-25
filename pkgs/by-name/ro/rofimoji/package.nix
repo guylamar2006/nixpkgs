@@ -61,7 +61,7 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://github.com/fdw/rofimoji";
     changelog = "https://github.com/fdw/rofimoji/blob/${src.rev}/CHANGELOG.md";
     license = lib.licenses.mit;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ justinlovinger ];
   };
 }

@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/kenyapcomau/p910nd";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ peterhoeg ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "p910nd";
   };
 }

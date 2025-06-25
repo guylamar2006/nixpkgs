@@ -34,6 +34,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/kubo/snzip";
     maintainers = with lib.maintainers; [ doronbehar ];
     license = lib.licenses.bsd2;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 })

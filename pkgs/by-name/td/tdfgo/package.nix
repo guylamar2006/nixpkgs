@@ -22,7 +22,7 @@ buildGoModule {
     longDescription = "Supports more fonts than `tdfiglet`, and packs more features.";
     homepage = "https://github.com/digitallyserviced/tdfgo";
     license = licenses.cc0;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ crinklywrappr ];
     mainProgram = "tdfgo";
   };

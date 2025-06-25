@@ -37,7 +37,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Small compiler backend written in C";
     maintainers = with lib.maintainers; [ fgaz ];
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "qbe";
   };
 })

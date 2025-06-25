@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     homepage = "https://web.archive.org/web/20160515005047/http://dan.egnor.name:80/xml2";
     description = "Tools for command line processing of XML, HTML, and CSV";
     license = licenses.gpl2Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ rycee ];
   };
 }

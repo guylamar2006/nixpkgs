@@ -36,6 +36,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     homepage = "https://gitlab.freedesktop.org/monado/utilities/xr-hardware";
     license = licenses.boost;
     maintainers = with maintainers; [ Scrumplex ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 })

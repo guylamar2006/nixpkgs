@@ -47,6 +47,6 @@ stdenv.mkDerivation {
     downloadPage = "https://github.com/nickjj/rolespec";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ dochang ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

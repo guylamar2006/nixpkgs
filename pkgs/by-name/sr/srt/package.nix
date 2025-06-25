@@ -49,6 +49,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/Haivision/srt";
     license = lib.licenses.mpl20;
     maintainers = with maintainers; [ nh2 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -66,7 +66,7 @@ stdenv.mkDerivation {
     maintainers = with lib.maintainers; [
       maintainers.minion3665
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "pridefetch";
   };
 }

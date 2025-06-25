@@ -60,6 +60,6 @@ stdenv.mkDerivation rec {
     ]; # see LICENSE
     maintainers = with lib.maintainers; [ dtzWill ];
     mainProgram = "samu";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

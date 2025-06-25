@@ -161,7 +161,7 @@ stdenv.mkDerivation {
       pSub
       jagajaga
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "mocp";
   };
 }

@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Additional taglib plugins";
     mainProgram = "taglib-extras-config";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = licenses.lgpl2;
   };
 }

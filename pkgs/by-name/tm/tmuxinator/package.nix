@@ -59,7 +59,7 @@ buildRubyGem rec {
     maintainers = with maintainers; [
       auntie
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "tmuxinator";
   };
 }

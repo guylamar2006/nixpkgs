@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
     license = lib.licenses.zlib;
     maintainers = with lib.maintainers; [ sarcasticadmin ];
     mainProgram = "pterm";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin;
   };
 }

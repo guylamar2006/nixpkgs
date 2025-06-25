@@ -66,6 +66,6 @@ stdenv.mkDerivation {
     description = "Unicode bitmap fonts";
     license = licenses.publicDomain;
     maintainers = with lib.maintainers; [ raskin ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

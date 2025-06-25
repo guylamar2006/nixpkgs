@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://www.nasm.us/";
     description = "80x86 and x86-64 assembler designed for portability and modularity";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       pSub
     ];

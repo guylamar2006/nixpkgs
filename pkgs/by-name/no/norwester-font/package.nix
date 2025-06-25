@@ -28,6 +28,6 @@ stdenvNoCC.mkDerivation rec {
     description = "Condensed geometric sans serif by Jamie Wilson";
     maintainers = with lib.maintainers; [ leenaars ];
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -66,7 +66,7 @@ stdenv.mkDerivation rec {
     changelog = "https://github.com/rvaiya/warpd/blob/${src.rev}/CHANGELOG.md";
     maintainers = with maintainers; [ hhydraa ];
     license = licenses.mit;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "warpd";
   };
 }

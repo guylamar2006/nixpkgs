@@ -54,6 +54,6 @@ buildGoModule rec {
       philandstuff
       rawkode
     ];
-    platforms = platforms.darwin ++ platforms.linux;
+    platforms = lib.platforms.darwin ++ platforms.linux;
   };
 }

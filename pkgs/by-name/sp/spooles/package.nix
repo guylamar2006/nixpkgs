@@ -56,6 +56,6 @@ stdenv.mkDerivation rec {
     description = "Library for solving sparse real and complex linear systems of equations";
     license = lib.licenses.publicDomain;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

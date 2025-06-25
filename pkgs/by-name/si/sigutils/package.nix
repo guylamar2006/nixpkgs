@@ -35,7 +35,7 @@ stdenv.mkDerivation {
     description = "Small signal processing utility library";
     homepage = "https://github.com/BatchDrake/sigutils";
     license = lib.licenses.gpl3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       polygon
       oxapentane

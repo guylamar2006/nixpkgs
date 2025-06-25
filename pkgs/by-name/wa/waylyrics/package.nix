@@ -76,6 +76,6 @@ rustPlatform.buildRustPackage rec {
       shadowrz
       aleksana
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

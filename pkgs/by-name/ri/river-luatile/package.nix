@@ -32,7 +32,7 @@ rustPlatform.buildRustPackage rec {
     description = "Write your own river layout generator in lua";
     homepage = "https://github.com/MaxVerevkin/river-luatile";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ pinpox ];
     mainProgram = "river-luatile";
   };

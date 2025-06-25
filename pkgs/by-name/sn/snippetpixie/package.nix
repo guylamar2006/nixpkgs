@@ -85,7 +85,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.snippetpixie.com";
     license = lib.licenses.gpl2Plus;
     teams = with lib.teams; [ pantheon ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "com.github.bytepixie.snippetpixie";
   };
 }

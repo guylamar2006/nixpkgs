@@ -47,6 +47,6 @@ buildGoModule rec {
     description = "Translates systemd-system lock/sleep signals into systemd-user target activations";
     license = licenses.isc;
     maintainers = with maintainers; [ liff ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

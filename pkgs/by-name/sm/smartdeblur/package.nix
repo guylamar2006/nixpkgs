@@ -42,6 +42,6 @@ stdenv.mkDerivation rec {
     mainProgram = "SmartDeblur";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

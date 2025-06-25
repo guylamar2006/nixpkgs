@@ -257,7 +257,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "D-Bus service for power management";
     mainProgram = "upower";
     teams = with lib.teams; [ freedesktop ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = licenses.gpl2Plus;
   };
 })

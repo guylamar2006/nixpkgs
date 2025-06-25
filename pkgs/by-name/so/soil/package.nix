@@ -39,7 +39,7 @@ stdenv.mkDerivation {
     '';
     homepage = "https://www.lonesock.net/soil.html";
     license = lib.licenses.publicDomain;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ r-burns ];
   };
 }

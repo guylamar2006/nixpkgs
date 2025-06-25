@@ -141,6 +141,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://shrubbery.net/rancid/";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ peterhoeg ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 })

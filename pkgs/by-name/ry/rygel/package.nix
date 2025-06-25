@@ -128,6 +128,6 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://gitlab.gnome.org/GNOME/rygel/-/blob/rygel-${finalAttrs.version}/NEWS?ref_type=tags";
     license = lib.licenses.lgpl21Plus;
     teams = with lib.teams; [ gnome ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 })

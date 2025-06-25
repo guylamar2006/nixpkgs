@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
     description = "Graphical user interface for VIPS image processing system";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ kovirobi ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "nip2";
   };
 }

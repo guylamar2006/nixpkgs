@@ -44,6 +44,6 @@ stdenv.mkDerivation rec {
     description = "C++ implementation of Raft core logic as a replication library";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ wheelsandmetal ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

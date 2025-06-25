@@ -31,6 +31,6 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://rote.sourceforge.net/";
     license = lib.licenses.lgpl21;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

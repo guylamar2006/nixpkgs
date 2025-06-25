@@ -57,6 +57,6 @@ python3.pkgs.buildPythonApplication rec {
     changelog = "https://github.com/zigpy/zigpy-cli/releases/tag/${src.tag}";
     license = licenses.gpl3Plus;
     maintainers = with maintainers; [ SuperSandro2000 ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

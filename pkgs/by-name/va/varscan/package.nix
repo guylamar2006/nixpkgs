@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/dkoboldt/varscan";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     maintainers = with maintainers; [ jbedo ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 
 }

@@ -40,6 +40,6 @@ stdenv.mkDerivation {
     mainProgram = "padBuster.pl";
     maintainers = with lib.maintainers; [ emilytrau ];
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

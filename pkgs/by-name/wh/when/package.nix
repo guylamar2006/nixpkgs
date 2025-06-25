@@ -40,6 +40,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     license = licenses.gpl2Only;
     mainProgram = "when";
     maintainers = with maintainers; [ vonixxx ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

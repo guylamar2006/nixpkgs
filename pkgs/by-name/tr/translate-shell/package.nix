@@ -48,6 +48,6 @@ stdenv.mkDerivation rec {
     license = licenses.unlicense;
     maintainers = with maintainers; [ ebzzry ];
     mainProgram = "trans";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

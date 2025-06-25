@@ -57,6 +57,6 @@ stdenvNoCC.mkDerivation rec {
     '';
     downloadPage = "https://software.sil.org/scheherazade/download/";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

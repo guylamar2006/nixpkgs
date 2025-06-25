@@ -86,6 +86,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ fab ];
     mainProgram = "openvas-scanner";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

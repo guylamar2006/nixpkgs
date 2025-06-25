@@ -77,6 +77,6 @@ stdenv.mkDerivation rec {
     license = licenses.gpl2Only;
     maintainers = with maintainers; [ peterhoeg ];
     # should work fine on Windows
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

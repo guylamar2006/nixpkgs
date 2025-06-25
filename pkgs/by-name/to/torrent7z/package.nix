@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/BubblesInTheTub/torrent7z";
     description = "Fork of torrent7z, viz a derivative of 7zip that produces invariant .7z archives for torrenting";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ cirno-999 ];
     mainProgram = "t7z";
     # RAR code is under non-free UnRAR license, but we remove it

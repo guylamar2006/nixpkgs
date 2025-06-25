@@ -23,7 +23,7 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://github.com/stepchowfun/tagref";
     license = licenses.mit;
     maintainers = with lib.maintainers; [ yusdacra ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "tagref";
   };
 }

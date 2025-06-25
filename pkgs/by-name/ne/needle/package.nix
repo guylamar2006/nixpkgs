@@ -44,6 +44,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.asl20;
     mainProgram = "needle";
     maintainers = with lib.maintainers; [ matteopacini ];
-    platforms = platforms.darwin;
+    platforms = lib.platforms.darwin;
   };
 }

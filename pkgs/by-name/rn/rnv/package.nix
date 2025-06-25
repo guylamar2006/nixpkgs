@@ -20,6 +20,6 @@ stdenv.mkDerivation rec {
     description = "Relax NG Compact Syntax validator";
     homepage = "http://www.davidashen.net/rnv.html";
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

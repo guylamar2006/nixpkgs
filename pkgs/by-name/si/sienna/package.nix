@@ -57,7 +57,7 @@ stdenv.mkDerivation rec {
     mainProgram = "sienna";
     homepage = "https://tangramgames.dk/games/sienna";
     maintainers = with lib.maintainers; [ leenaars ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = lib.licenses.free;
   };
 

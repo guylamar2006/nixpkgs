@@ -82,6 +82,6 @@ stdenv.mkDerivation rec {
     homepage = "https://zeitgeist.freedesktop.org/";
     teams = with lib.teams; [ freedesktop ];
     license = licenses.lgpl21Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

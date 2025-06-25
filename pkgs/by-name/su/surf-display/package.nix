@@ -64,6 +64,6 @@ stdenv.mkDerivation rec {
     homepage = "https://code.it-zukunft-schule.de/cgit/surf-display/";
     maintainers = with lib.maintainers; [ ];
     license = licenses.gpl2;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

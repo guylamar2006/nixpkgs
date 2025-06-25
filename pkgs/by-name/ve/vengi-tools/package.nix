@@ -132,6 +132,6 @@ stdenv.mkDerivation (finalAttrs: {
       licenses.cc-by-sa-30
     ];
     maintainers = with maintainers; [ fgaz ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

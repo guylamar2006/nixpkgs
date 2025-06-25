@@ -28,6 +28,6 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     mainProgram = "u2ps";
     maintainers = with lib.maintainers; [ athas ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

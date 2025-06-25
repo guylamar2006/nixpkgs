@@ -19,7 +19,7 @@ bundlerApp {
       zimbatm
     ];
     license = licenses.gpl3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "vpsfreectl";
   };
 }

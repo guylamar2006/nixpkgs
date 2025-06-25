@@ -86,7 +86,7 @@ stdenv.mkDerivation rec {
     mainProgram = "unnethack";
     homepage = "https://unnethack.wordpress.com/";
     license = "nethack";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ abbradar ];
   };
 }

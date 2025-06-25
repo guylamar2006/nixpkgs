@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
     mainProgram = "uARMSolver";
     homepage = "https://github.com/firefly-cpp/uARMSolver";
     license = licenses.mit;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ firefly-cpp ];
   };
 }

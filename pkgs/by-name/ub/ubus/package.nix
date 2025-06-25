@@ -34,7 +34,7 @@ stdenv.mkDerivation {
     description = "OpenWrt system message/RPC bus";
     homepage = "https://git.openwrt.org/?p=project/ubus.git;a=summary";
     license = licenses.lgpl21Only;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ mkg20001 ];
   };
 }

@@ -308,6 +308,6 @@ stdenv.mkDerivation rec {
       gpl3Plus
     ];
     maintainers = with lib.maintainers; [ primeos ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

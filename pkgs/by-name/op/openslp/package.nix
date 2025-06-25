@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     description = "Open-source implementation of the IETF Service Location Protocol";
     maintainers = with lib.maintainers; [ ttuegel ];
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     # never built on aarch64-darwin since first introduction in nixpkgs
     broken = stdenv.hostPlatform.isDarwin && stdenv.hostPlatform.isAarch64;
     knownVulnerabilities = [

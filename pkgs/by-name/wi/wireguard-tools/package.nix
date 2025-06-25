@@ -95,6 +95,6 @@ stdenv.mkDerivation rec {
       d-xo
     ];
     mainProgram = "wg";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

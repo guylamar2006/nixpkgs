@@ -51,7 +51,7 @@ buildGoModule rec {
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ McSinyx ];
     mainProgram = "mobroute";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin;
   };
 }

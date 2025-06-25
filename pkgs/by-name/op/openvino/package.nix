@@ -191,7 +191,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://docs.openvinotoolkit.org/";
     license = with licenses; [ asl20 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     broken = stdenv.hostPlatform.isDarwin; # Cannot find macos sdk
     maintainers = with lib.maintainers; [ tfmoraes ];
   };

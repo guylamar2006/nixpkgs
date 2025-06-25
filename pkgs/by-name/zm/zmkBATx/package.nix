@@ -46,7 +46,7 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/mh4x0f/zmkBATx/releases/tag/${finalAttrs.src.rev}";
     license = licenses.mit;
     mainProgram = "zmkbatx";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ aciceri ];
   };
 })

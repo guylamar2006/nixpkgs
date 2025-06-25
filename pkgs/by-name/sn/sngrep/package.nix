@@ -53,7 +53,7 @@ stdenv.mkDerivation rec {
     mainProgram = "sngrep";
     homepage = "https://github.com/irontec/sngrep";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ jorise ];
   };
 }

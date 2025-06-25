@@ -33,6 +33,6 @@ stdenv.mkDerivation rec {
     license = licenses.mit;
     homepage = "https://github.com/levito/tt-rss-feedly-theme";
     maintainers = with maintainers; [ das_j ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

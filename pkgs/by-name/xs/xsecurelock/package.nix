@@ -69,7 +69,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/google/xsecurelock";
     license = licenses.asl20;
     maintainers = with maintainers; [ fpletz ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "xsecurelock";
   };
 }

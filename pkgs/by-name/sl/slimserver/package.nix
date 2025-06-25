@@ -180,7 +180,7 @@ perlPackages.buildPerlPackage rec {
       adamcstephens
       jecaro
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin;
   };
 }

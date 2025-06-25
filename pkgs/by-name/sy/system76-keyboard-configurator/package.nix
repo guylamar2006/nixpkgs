@@ -53,6 +53,6 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://github.com/pop-os/keyboard-configurator";
     license = with licenses; [ gpl3Only ];
     maintainers = with maintainers; [ mirrexagon ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

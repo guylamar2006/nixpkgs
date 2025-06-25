@@ -24,6 +24,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://github.com/yuru7/udev-gothic";
     license = licenses.ofl;
     maintainers = with maintainers; [ haruki7049 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

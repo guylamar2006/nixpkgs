@@ -26,6 +26,6 @@ stdenv.mkDerivation rec {
     mainProgram = "sregex-cli";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

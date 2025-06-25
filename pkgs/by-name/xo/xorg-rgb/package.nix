@@ -23,7 +23,7 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "showrgb";
     license = licenses.mit;
     maintainers = with maintainers; [ raskin ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     homepage = "https://xorg.freedesktop.org/";
   };
 })

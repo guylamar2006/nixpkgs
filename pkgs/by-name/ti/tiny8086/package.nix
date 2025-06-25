@@ -63,7 +63,7 @@ stdenv.mkDerivation {
     '';
     license = licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "8086tiny";
   };
 }

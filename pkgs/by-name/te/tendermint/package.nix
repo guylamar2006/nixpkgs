@@ -30,7 +30,7 @@ buildGoModule rec {
     homepage = "https://tendermint.com/";
     license = licenses.asl20;
     maintainers = with maintainers; [ alexfmpe ];
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
     mainProgram = "tendermint";
   };
 }

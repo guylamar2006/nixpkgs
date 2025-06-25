@@ -34,6 +34,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/nickmqb/muon";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ Br1ght0ne ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

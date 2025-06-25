@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.freedesktop.org/xorg/app/xedit";
     license = with licenses; [ mit ];
     maintainers = with maintainers; [ shamilton ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     # never built on aarch64-darwin, x86_64-darwin since first introduction in nixpkgs
     broken = stdenv.hostPlatform.isDarwin;
     mainProgram = "xedit";

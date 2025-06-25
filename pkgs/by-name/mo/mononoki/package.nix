@@ -27,6 +27,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://github.com/madmalik/mononoki";
     description = "Font for programming and code review";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

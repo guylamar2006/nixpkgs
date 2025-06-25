@@ -176,7 +176,7 @@ stdenv.mkDerivation rec {
     description = "Cross-Platform SDR Software";
     homepage = "https://github.com/AlexandreRouma/SDRPlusPlus";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ sikmir ];
     mainProgram = "sdrpp";
   };

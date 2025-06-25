@@ -57,7 +57,7 @@ stdenv.mkDerivation rec {
     # No sense in letting Hydra build it.
     # Also, it is unclear what is covered by "verbatim" - we will edit configs
     hydraPlatforms = [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
     license = licenses.unfreeRedistributable;
   };

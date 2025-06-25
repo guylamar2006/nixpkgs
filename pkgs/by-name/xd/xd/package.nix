@@ -29,6 +29,6 @@ buildGoModule rec {
     homepage = "https://xd-torrent.github.io";
     maintainers = with maintainers; [ nixbitcoin ];
     license = licenses.mit;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

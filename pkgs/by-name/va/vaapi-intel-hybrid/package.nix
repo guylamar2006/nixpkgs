@@ -70,6 +70,6 @@ stdenv.mkDerivation rec {
     description = "Intel driver for the VAAPI library with partial HW acceleration";
     license = licenses.mit;
     maintainers = with maintainers; [ tadfisher ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

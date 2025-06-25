@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     changelog = "https://github.com/tpm2-software/tpm2-totp/blob/${src.rev}/CHANGELOG.md";
     license = licenses.bsd3;
     mainProgram = "tpm2-totp";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ raitobezarius ];
   };
 }

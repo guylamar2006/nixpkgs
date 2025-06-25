@@ -43,6 +43,6 @@ perlPackages.buildPerlPackage {
     homepage = "http://ninka.turingmachine.org/";
     license = lib.licenses.gpl2;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

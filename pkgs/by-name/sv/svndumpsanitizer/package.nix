@@ -31,6 +31,6 @@ stdenv.mkDerivation {
     license = licenses.gpl3Plus;
     maintainers = with maintainers; [ lafrenierejm ];
     mainProgram = "svndumpsanitizer";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

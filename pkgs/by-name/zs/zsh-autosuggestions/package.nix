@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
     description = "Fish shell autosuggestions for Zsh";
     homepage = "https://github.com/zsh-users/zsh-autosuggestions";
     license = licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ loskutov ];
   };
 }

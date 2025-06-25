@@ -48,6 +48,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.bsd3;
     mainProgram = "ptunnel";
     maintainers = with lib.maintainers; [ d3vil0p3r ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

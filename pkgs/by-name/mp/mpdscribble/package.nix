@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.musicpd.org/clients/mpdscribble/";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ sohalt ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "mpdscribble";
   };
 }

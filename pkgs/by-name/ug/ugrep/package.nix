@@ -61,7 +61,7 @@ stdenv.mkDerivation (finalAttrs: {
       mikaelfangel
     ];
     license = licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "ug";
   };
 })

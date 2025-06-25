@@ -51,6 +51,6 @@ writeShellApplication {
     license = licenses.mit;
     maintainers = with maintainers; [ happysalada ];
     mainProgram = "tusc";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

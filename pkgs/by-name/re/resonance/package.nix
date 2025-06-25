@@ -90,6 +90,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.gpl3Plus;
     mainProgram = "resonance";
     maintainers = with lib.maintainers; [ Guanran928 ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 })

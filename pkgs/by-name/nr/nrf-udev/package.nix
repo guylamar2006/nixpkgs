@@ -35,7 +35,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     homepage = "https://github.com/NordicSemiconductor/nrf-udev";
     changelog = "https://github.com/NordicSemiconductor/nrf-udev/releases/tag/${finalAttrs.src.rev}";
     license = lib.licenses.unfree;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ h7x4 ];
   };
 })

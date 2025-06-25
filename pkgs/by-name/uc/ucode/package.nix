@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     description = "JavaScript-like language with optional templating";
     homepage = "https://github.com/jow-/ucode";
     license = licenses.isc;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ mkg20001 ];
   };
 }

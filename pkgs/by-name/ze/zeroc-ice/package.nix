@@ -103,7 +103,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.zeroc.com/ice.html";
     description = "Internet communications engine";
     license = licenses.gpl2Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ abbradar ];
     broken = stdenv.hostPlatform.isDarwin;
   };

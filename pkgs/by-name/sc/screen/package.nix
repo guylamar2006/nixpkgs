@@ -65,7 +65,7 @@ stdenv.mkDerivation rec {
       terminal.
     '';
 
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ];
   };
 }

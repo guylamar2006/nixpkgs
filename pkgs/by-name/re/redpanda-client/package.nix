@@ -45,7 +45,7 @@ buildGoModule rec {
       avakhrenev
       happysalada
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "rpk";
   };
 }

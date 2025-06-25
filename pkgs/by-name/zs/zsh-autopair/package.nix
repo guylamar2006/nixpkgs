@@ -27,6 +27,6 @@ stdenv.mkDerivation rec {
       _0qq
       DataHearth
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -56,6 +56,6 @@ stdenv.mkDerivation rec {
       commandodev
       ztzg
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

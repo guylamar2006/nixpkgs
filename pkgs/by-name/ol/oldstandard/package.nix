@@ -28,6 +28,6 @@ stdenvNoCC.mkDerivation rec {
     description = "Attempt to revive a specific type of Modern style of serif typefaces";
     maintainers = with lib.maintainers; [ raskin ];
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

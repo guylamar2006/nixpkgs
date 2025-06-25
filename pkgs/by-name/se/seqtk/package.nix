@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     mainProgram = "seqtk";
     license = lib.licenses.mit;
     homepage = "https://github.com/lh3/seqtk";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ bwlang ];
   };
 }

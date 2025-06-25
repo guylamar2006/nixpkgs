@@ -46,6 +46,6 @@ buildGoModule rec {
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ McSinyx ];
     mainProgram = "mobsql";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

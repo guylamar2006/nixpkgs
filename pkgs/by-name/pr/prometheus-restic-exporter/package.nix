@@ -45,6 +45,6 @@ stdenvNoCC.mkDerivation rec {
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ minersebas ];
     mainProgram = "restic-exporter.py";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

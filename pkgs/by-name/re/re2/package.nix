@@ -74,6 +74,6 @@ stdenv.mkDerivation (finalAttrs: {
       azahi
       networkexception
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

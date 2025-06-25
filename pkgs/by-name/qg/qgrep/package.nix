@@ -46,6 +46,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/zeux/qgrep";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ yrashk ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

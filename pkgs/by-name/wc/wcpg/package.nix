@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     description = "Worst-Case Peak-Gain library";
     homepage = "https://github.com/fixif/WCPG";
     license = licenses.cecill-b;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ wegank ];
   };
 }

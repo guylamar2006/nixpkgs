@@ -84,6 +84,6 @@ stdenv.mkDerivation {
       tfc
       anthonyroussel
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

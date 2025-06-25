@@ -64,6 +64,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/trailofbits/twa";
     license = licenses.mit;
     maintainers = with maintainers; [ avaq ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

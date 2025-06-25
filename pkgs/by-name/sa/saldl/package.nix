@@ -65,7 +65,7 @@ stdenv.mkDerivation rec {
     homepage = "https://saldl.github.io";
     license = lib.licenses.agpl3Only;
     maintainers = with lib.maintainers; [ zowoq ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "saldl";
   };
 }

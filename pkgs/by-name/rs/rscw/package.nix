@@ -36,6 +36,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.pa3fwm.nl/software/rscw/";
     license = lib.licenses.gpl2;
     maintainers = with lib.maintainers; [ earldouglas ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

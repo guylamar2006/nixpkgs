@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     mainProgram = "ptxinfo";
     homepage = "http://ptex.us/";
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ guibou ];
   };
 }

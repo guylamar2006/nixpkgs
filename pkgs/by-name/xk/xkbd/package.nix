@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
     description = "onscreen soft keyboard for X11";
     license = licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "xkbd";
   };
 }

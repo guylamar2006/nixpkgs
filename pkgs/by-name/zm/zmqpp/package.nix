@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     inherit (src.meta) homepage;
     description = "C++ wrapper for czmq. Aims to be minimal, simple and consistent";
     license = licenses.lgpl3;
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
     maintainers = with maintainers; [ chris-martin ];
   };
 }

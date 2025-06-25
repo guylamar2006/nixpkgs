@@ -27,7 +27,7 @@ rustPlatform.buildRustPackage rec {
     description = "Server application to run tox node written in pure Rust";
     homepage = "https://github.com/tox-rs/tox";
     license = [ licenses.gpl3Plus ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [
       suhr
       kurnevsky

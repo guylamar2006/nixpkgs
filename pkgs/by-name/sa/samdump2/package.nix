@@ -69,6 +69,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://sourceforge.net/projects/ophcrack/files/samdump2";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ d3vil0p3r ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

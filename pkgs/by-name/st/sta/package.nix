@@ -51,7 +51,7 @@ stdenv.mkDerivation {
     license = lib.licenses.mit;
     homepage = "https://github.com/simonccarter/sta";
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "sta";
   };
 }

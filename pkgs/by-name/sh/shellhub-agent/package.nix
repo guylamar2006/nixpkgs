@@ -59,7 +59,7 @@ buildGoModule rec {
     homepage = "https://shellhub.io/";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ otavio ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "agent";
   };
 }

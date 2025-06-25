@@ -30,6 +30,6 @@ stdenvNoCC.mkDerivation {
     homepage = "https://github.com/schemedoc/manpages";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -98,6 +98,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ minijackson ];
     mainProgram = "ShowMIDI";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 })

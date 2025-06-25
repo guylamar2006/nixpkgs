@@ -57,6 +57,6 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ matthewbauer ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

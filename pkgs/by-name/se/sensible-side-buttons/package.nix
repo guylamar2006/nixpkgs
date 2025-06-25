@@ -33,6 +33,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://sensible-side-buttons.archagon.net";
     license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ yamashitax ];
-    platforms = platforms.darwin;
+    platforms = lib.platforms.darwin;
   };
 })

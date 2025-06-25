@@ -54,6 +54,6 @@ stdenv.mkDerivation rec {
       dywedir
       kashw2
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

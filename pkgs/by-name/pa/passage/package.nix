@@ -71,7 +71,7 @@ stdenv.mkDerivation (finalAttrs: {
       kaction
       ma27
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "passage";
 
     longDescription = ''

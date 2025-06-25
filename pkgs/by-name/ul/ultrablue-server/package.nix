@@ -27,7 +27,7 @@ buildGoModule rec {
     mainProgram = "ultrablue-server";
     homepage = "https://github.com/ANSSI-FR/ultrablue";
     license = licenses.asl20;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ raitobezarius ];
   };
 }

@@ -33,7 +33,7 @@ stdenv.mkDerivation {
     description = "Simple site-to-site synchronization tool";
     license = licenses.mit;
     maintainers = with lib.maintainers; [ ebzzry ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "usync";
   };
 

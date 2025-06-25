@@ -45,6 +45,6 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://github.com/bvaisvil/zenith";
     license = licenses.mit;
     maintainers = with maintainers; [ wegank ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

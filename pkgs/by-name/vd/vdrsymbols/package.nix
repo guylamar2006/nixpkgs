@@ -24,7 +24,7 @@ stdenvNoCC.mkDerivation rec {
   meta = with lib; {
     description = "DejaVu fonts with additional symbols used by VDR";
     homepage = "http://andreas.vdr-developer.org/fonts/";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ ck3d ];
 
     # Copyright (c) 2003 by Bitstream, Inc. All Rights Reserved.

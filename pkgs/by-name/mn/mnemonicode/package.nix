@@ -26,7 +26,7 @@ stdenv.mkDerivation (finalAttrs: {
       back to data on the other side.
     '';
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ kirillrdy ];
     mainProgram = "mnencode";
   };

@@ -42,6 +42,6 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Vector Optimized Library of Kernels";
     license = licenses.gpl3Plus;
     maintainers = with maintainers; [ doronbehar ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

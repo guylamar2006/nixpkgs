@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl2Only;
     homepage = "http://nuttcp.net/";
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "nuttcp";
   };
 }

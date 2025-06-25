@@ -23,7 +23,7 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://github.com/Nemris/ndstrim";
     changelog = "https://github.com/Nemris/ndstrim/blob/${src.rev}/CHANGELOG.md";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ thiagokokada ];
     mainProgram = "ndstrim";
   };

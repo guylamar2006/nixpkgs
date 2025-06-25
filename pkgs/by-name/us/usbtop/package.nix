@@ -30,6 +30,6 @@ stdenv.mkDerivation rec {
     mainProgram = "usbtop";
     maintainers = with lib.maintainers; [ ];
     license = licenses.bsd3;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

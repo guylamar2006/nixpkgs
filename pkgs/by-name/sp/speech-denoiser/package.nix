@@ -61,6 +61,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/lucianodato/speech-denoiser";
     license = lib.licenses.lgpl3;
     maintainers = with lib.maintainers; [ magnetophon ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

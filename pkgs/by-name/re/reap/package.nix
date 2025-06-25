@@ -26,7 +26,7 @@ stdenv.mkDerivation {
     description = "run process until all its spawned processes are dead";
     mainProgram = "reap";
     license = with licenses; [ publicDomain ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ leahneukirchen ];
   };
 }

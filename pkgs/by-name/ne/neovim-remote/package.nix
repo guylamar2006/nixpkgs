@@ -48,7 +48,7 @@ buildPythonApplication rec {
     homepage = "https://github.com/mhinz/neovim-remote/";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ edanaher ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "nvr";
   };
 }

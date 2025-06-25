@@ -34,6 +34,6 @@ stdenv.mkDerivation rec {
     description = "Collection of C++ functions which match the interface and behavior of python's string class methods using std::string";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ rytone ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

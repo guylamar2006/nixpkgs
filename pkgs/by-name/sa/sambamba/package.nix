@@ -50,6 +50,6 @@ stdenv.mkDerivation rec {
     homepage = "https://lomereiter.github.io/sambamba/";
     maintainers = with lib.maintainers; [ jbedo ];
     license = with licenses; gpl2;
-    platforms = platforms.x86_64;
+    platforms = lib.platforms.x86_64;
   };
 }

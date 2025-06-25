@@ -56,6 +56,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/Matty9191/ssl-cert-check";
     license = lib.licenses.gpl2Plus;
     maintainers = with maintainers; [ ryantm ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

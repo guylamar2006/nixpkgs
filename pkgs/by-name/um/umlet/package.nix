@@ -56,7 +56,7 @@ stdenv.mkDerivation {
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = licenses.gpl3;
     maintainers = with maintainers; [ oxzi ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "umlet";
   };
 }

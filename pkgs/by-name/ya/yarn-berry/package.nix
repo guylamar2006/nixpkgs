@@ -72,7 +72,7 @@ stdenv.mkDerivation (finalAttrs: {
       pyrox0
       DimitarNestorov
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "yarn";
   };
 })

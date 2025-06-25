@@ -56,7 +56,7 @@ stdenv.mkDerivation {
     description = "FTP Client that drives you anywhere";
     license = licenses.lgpl3Plus;
     teams = with lib.teams; [ pantheon ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "io.github.ellie_commons.taxi";
   };
 }

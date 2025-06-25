@@ -67,6 +67,6 @@ stdenv.mkDerivation rec {
       orivej
       raskin
     ];
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
   };
 }

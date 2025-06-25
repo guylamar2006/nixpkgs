@@ -52,6 +52,6 @@ stdenv.mkDerivation rec {
     homepage = "http://www.opendkim.org/";
     maintainers = with lib.maintainers; [ abbradar ];
     license = lib.licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -34,6 +34,6 @@ stdenv.mkDerivation rec {
     license = licenses.gpl3Plus;
     maintainers = with maintainers; [ abathur ];
     mainProgram = "tt++";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

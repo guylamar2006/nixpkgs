@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
     description = "Program which will securely wipe the free space";
     homepage = "https://wipefreespace.sourceforge.io";
     license = licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ catap ];
     mainProgram = "wipefreespace";
   };

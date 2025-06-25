@@ -113,6 +113,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://gitlab.gnome.org/GNOME/shotwell";
     license = lib.licenses.lgpl21Plus;
     maintainers = with lib.maintainers; [ bobby285271 ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 })

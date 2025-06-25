@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/alex-courtis/xlayoutdisplay";
     maintainers = with maintainers; [ dtzWill ];
     license = licenses.asl20;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "xlayoutdisplay";
   };
 }

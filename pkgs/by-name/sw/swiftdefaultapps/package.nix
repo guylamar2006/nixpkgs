@@ -27,7 +27,7 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://github.com/Lord-Kamina/SwiftDefaultApps";
     license = licenses.beerware;
     maintainers = with lib.maintainers; [ malo ];
-    platforms = platforms.darwin;
+    platforms = lib.platforms.darwin;
     mainProgram = "swda";
   };
 }

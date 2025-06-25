@@ -120,6 +120,6 @@ crystal.buildCrystalPackage {
     license = lib.licenses.mit;
     mainProgram = "rtfm";
     maintainers = with lib.maintainers; [ sund3RRR ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

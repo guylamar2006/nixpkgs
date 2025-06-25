@@ -34,7 +34,7 @@ buildGoModule rec {
     homepage = "https://github.com/ns1/waitron";
     license = licenses.asl20;
     maintainers = with maintainers; [ guibert ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     broken = true; # vendor isn't reproducible with go > 1.17: nix-build -A $name.goModules --check
   };
 }

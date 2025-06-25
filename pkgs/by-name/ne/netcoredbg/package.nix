@@ -105,7 +105,7 @@ stdenv.mkDerivation {
     description = "Managed code debugger with MI interface for CoreCLR";
     homepage = "https://github.com/Samsung/netcoredbg";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "netcoredbg";
     maintainers = with lib.maintainers; [
       leo60228

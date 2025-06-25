@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
     mainProgram = "xmppc";
     homepage = "https://codeberg.org/Anoxinon_e.V./xmppc";
     license = licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ jugendhacker ];
   };
 }

@@ -25,7 +25,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = " Meta loader for Vulkan API";
     homepage = "https://github.com/zeux/volk";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = licenses.mit;
     maintainers = with maintainers; [ k900 ];
   };

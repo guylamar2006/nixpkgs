@@ -105,6 +105,6 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://tdb.samba.org/";
     license = licenses.lgpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

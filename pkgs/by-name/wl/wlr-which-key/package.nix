@@ -39,7 +39,7 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://github.com/MaxVerevkin/wlr-which-key";
     license = licenses.gpl3Only;
     maintainers = with maintainers; [ xlambein ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "wlr-which-key";
   };
 }

@@ -55,7 +55,7 @@ stdenv.mkDerivation {
     description = "Sundtek MediaTV driver";
     maintainers = with lib.maintainers; [ simonvandel ];
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = licenses.unfree;
     homepage = "https://support.sundtek.com/index.php/topic,1573.0.html";
   };

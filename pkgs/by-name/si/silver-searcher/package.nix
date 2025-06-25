@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
     description = "Code-searching tool similar to ack, but faster";
     maintainers = with lib.maintainers; [ madjar ];
     mainProgram = "ag";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.asl20;
   };
 }

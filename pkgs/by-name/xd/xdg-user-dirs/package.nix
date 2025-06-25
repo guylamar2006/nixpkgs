@@ -46,7 +46,7 @@ stdenv.mkDerivation (finalAttrs: {
       donovanglover
       iFreilicht
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "xdg-user-dirs-update";
   };
 })

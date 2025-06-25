@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Web server log file analysis program";
     homepage = "https://webalizer.net/";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = licenses.gpl2Plus;
   };
 }

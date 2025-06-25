@@ -45,7 +45,7 @@ python3Packages.buildPythonApplication rec {
       services for such background apps.
     '';
     license = licenses.mit;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ nickhu ];
   };
 }

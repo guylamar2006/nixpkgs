@@ -38,6 +38,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = licenses.mit;
     maintainers = with maintainers; [ moody ];
     mainProgram = "tlsclient";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

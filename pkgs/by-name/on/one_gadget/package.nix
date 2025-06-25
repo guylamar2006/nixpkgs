@@ -28,6 +28,6 @@ bundlerApp {
       nicknovitski
     ];
     mainProgram = "one_gadget";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

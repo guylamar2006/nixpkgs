@@ -57,6 +57,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.artistic2;
     homepage = "http://www.smooth-project.org/";
     maintainers = with lib.maintainers; [ shamilton ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

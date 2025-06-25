@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.muppetlabs.com/~breadbox/software/xcd.html";
     maintainers = with lib.maintainers; [ xfnw ];
     license = licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "xcd";
   };
 }

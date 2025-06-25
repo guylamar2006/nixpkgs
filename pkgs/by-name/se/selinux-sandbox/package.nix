@@ -81,7 +81,7 @@ stdenv.mkDerivation rec {
     description = "SELinux sandbox utility";
     license = lib.licenses.gpl2Only;
     homepage = "https://selinuxproject.org";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ RossComputerGuy ];
   };
 }

@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Capture image from USB webcam at a specified interval";
     license = licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ bjornfor ];
     mainProgram = "uvccapture";
   };

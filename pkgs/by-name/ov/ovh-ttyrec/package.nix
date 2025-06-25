@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/ovh/ovh-ttyrec/";
     description = "Terminal interaction recorder and player";
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       chaduffy
       zimbatm

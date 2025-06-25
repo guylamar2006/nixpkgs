@@ -49,7 +49,7 @@ stdenv.mkDerivation {
     homepage = "https://developer.valvesoftware.com/wiki/SteamCMD";
     description = "Steam command-line tools";
     mainProgram = "steamcmd";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = lib.licenses.unfreeRedistributable;
     maintainers = with maintainers; [ tadfisher ];
   };

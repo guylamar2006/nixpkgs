@@ -23,7 +23,7 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Small utility for writing a disk image to a USB drive";
     homepage = "https://github.com/nicholasbishop/writedisk";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = licenses.asl20;
     maintainers = with maintainers; [ devhell ];
   };

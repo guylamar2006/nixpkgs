@@ -106,7 +106,7 @@ stdenv.mkDerivation rec {
     description = "Video processing framework with the future in mind";
     homepage = "http://www.vapoursynth.com/";
     license = licenses.lgpl21;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [
       rnhmjoj
       sbruder

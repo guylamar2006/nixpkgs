@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
     description = "GTK theme with skeuomorphism design";
     homepage = "https://www.pling.com/p/1363834/";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ romildo ];
   };
 }

@@ -58,7 +58,7 @@ stdenv.mkDerivation {
     description = "Wingpanel Namarupa Indicator (Ayatana support)";
     homepage = "https://github.com/lenemter/wingpanel-indicator-namarupa";
     license = licenses.lgpl21Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     teams = with lib.teams; [ pantheon ];
   };
 }

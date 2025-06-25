@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
     description = "git static site generator";
     homepage = "https://git.codemadness.org/stagit/file/README.html";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [
       jb55
       sikmir

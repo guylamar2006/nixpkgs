@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
     description = "Programs for computing automorphism groups of graphs and digraphs";
     license = lib.licenses.asl20;
     teams = with lib.teams; [ sage ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     # I'm not sure if the filename will remain the same for future changelog or
     # if it will track changes to minor releases. Lets see. Better than nothing
     # in any case.

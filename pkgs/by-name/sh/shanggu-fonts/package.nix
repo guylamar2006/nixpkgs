@@ -67,7 +67,7 @@ stdenvNoCC.mkDerivation {
     homepage = "https://github.com/GuiWonder/Shanggu";
     description = "Heritage glyph (old glyph) font based on Siyuan";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ Cryolitia ];
   };
 }

@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
       wesleyjrz
       kashw2
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "tym";
   };
 }

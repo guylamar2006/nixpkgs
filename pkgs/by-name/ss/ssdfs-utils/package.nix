@@ -43,6 +43,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/dubeyko/ssdfs-tools";
     license = lib.licenses.bsd3Clear;
     maintainers = with maintainers; [ ners ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

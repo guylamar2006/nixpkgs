@@ -54,7 +54,7 @@ python3Packages.buildPythonPackage rec {
     homepage = "https://github.com/deter0/xborder";
     license = licenses.unlicense;
     maintainers = with maintainers; [ elnudev ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "xborders";
   };
 }

@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/GarCoSim";
     maintainers = with lib.maintainers; [ cmcdragonkai ];
     license = licenses.gpl2;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 
 }

@@ -40,7 +40,7 @@ buildGoModule rec {
     homepage = "https://docs.gitops.weave.works";
     description = "Weave Gitops CLI";
     license = licenses.mpl20;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "gitops";
   };

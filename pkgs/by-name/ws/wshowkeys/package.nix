@@ -57,7 +57,7 @@ stdenv.mkDerivation {
     ];
     # Some portions of the code are taken from Sway which is MIT licensed.
     # TODO: gpl3Only or gpl3Plus (ask upstream)?
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [
       primeos
       berbiche

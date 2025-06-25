@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
     mainProgram = "smemstat";
     homepage = "https://github.com/ColinIanKing/smemstat";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ womfoo ];
   };
 }

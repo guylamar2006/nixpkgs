@@ -30,6 +30,6 @@ buildGoModule {
     license = lib.licenses.mit;
     mainProgram = "ssl-proxy";
     maintainers = with lib.maintainers; [ konst-aa ];
-    platforms = platforms.linux ++ platforms.darwin ++ platforms.windows;
+    platforms = lib.platforms.linux ++ platforms.darwin ++ platforms.windows;
   };
 }

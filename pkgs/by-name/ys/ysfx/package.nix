@@ -73,6 +73,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/jpcima/ysfx";
     license = licenses.asl20;
     maintainers = with maintainers; [ orivej ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

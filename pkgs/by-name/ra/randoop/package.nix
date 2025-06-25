@@ -29,6 +29,6 @@ stdenv.mkDerivation rec {
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ pSub ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

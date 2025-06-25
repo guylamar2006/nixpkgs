@@ -36,6 +36,6 @@ stdenv.mkDerivation rec {
     description = "LV2 plugin for pitch shifting (with or without formant correction), vocoding, automatic pitch correction and harmonizing of singing voice (harmonizer)";
     license = licenses.gpl2;
     maintainers = with lib.maintainers; [ michalrus ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

@@ -27,7 +27,7 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://adobe-fonts.github.io/source-sans/";
     description = "Sans serif font family for user interface environments";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ttuegel ];
   };
 }

@@ -30,7 +30,7 @@ buildGoModule rec {
     mainProgram = "s5";
     homepage = "https://github.com/mvisonneau/s5";
     license = lib.licenses.asl20;
-    platforms = platforms.unix ++ platforms.darwin;
+    platforms = lib.platforms.unix ++ platforms.darwin;
     maintainers = with lib.maintainers; [ mvisonneau ];
   };
 }

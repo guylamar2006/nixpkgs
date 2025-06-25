@@ -51,6 +51,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://qoiformat.org/";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ hzeller ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

@@ -87,7 +87,7 @@ python3Packages.buildPythonApplication rec {
     description = "Ear training program";
     homepage = "https://www.gnu.org/software/solfege/";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [
       bjornfor
       orivej

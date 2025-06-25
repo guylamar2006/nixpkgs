@@ -89,7 +89,7 @@ stdenv.mkDerivation {
     mainProgram = "wayst";
     homepage = "https://github.com/91861/wayst";
     license = licenses.mit;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ berbiche ];
   };
 }

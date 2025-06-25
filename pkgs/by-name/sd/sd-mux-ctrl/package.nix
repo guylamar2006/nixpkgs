@@ -44,7 +44,7 @@ stdenv.mkDerivation {
       newam
       sarcasticadmin
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "sd-mux-ctrl";
   };
 }

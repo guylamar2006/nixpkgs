@@ -40,6 +40,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/waywardgeek/sonic";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ aske ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

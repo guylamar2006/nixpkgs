@@ -70,6 +70,6 @@ buildGoModule rec {
     license = licenses.asl20;
     maintainers = with maintainers; [ foo-dogsquared ];
     mainProgram = "ymuse";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

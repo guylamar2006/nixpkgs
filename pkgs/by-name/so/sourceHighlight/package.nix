@@ -88,7 +88,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://www.gnu.org/software/src-highlite/";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ SuperSandro2000 ];
   };
 }

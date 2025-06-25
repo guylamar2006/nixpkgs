@@ -47,6 +47,6 @@ stdenv.mkDerivation {
       malyn
       offline
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

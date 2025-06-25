@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
     homepage = "https://salsa.debian.org/debian/netcat-openbsd";
     maintainers = with lib.maintainers; [ artturin ];
     license = lib.licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "nc";
     # never built on aarch64-darwin, x86_64-darwin since first introduction in nixpkgs
     broken = stdenv.hostPlatform.isDarwin;

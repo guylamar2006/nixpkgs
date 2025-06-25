@@ -79,7 +79,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/davidmhewitt/torrential";
     maintainers = with maintainers; [ xiorcale ];
     teams = with lib.teams; [ pantheon ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = licenses.gpl2Plus;
     mainProgram = "com.github.davidmhewitt.torrential";
   };

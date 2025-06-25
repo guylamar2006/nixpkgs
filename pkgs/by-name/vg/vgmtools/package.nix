@@ -42,6 +42,6 @@ stdenv.mkDerivation {
     description = "Collection of tools for the VGM file format";
     license = licenses.gpl2Only; # Not clarified whether Only or Plus
     maintainers = with maintainers; [ OPNA2608 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

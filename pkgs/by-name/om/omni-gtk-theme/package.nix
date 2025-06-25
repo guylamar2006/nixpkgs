@@ -33,7 +33,7 @@ stdenv.mkDerivation {
     description = "Dark theme created by Rocketseat";
     homepage = "https://github.com/getomni/gtk";
     license = lib.licenses.gpl3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ zoedsoupe ];
   };
 }

@@ -17,6 +17,6 @@ bundlerApp {
     license = lib.licenses.mit;
     mainProgram = "neocities";
     maintainers = with lib.maintainers; [ dawoox ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

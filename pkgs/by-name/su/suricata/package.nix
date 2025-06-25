@@ -176,7 +176,7 @@ stdenv.mkDerivation rec {
     description = "Free and open source, mature, fast and robust network threat detection engine";
     homepage = "https://suricata.io";
     license = licenses.gpl2;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ magenbluten ];
   };
 }

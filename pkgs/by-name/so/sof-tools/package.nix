@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     description = "Tools to develop, test and debug SoF (Sund Open Firmware)";
     homepage = "https://thesofproject.github.io";
     license = lib.licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ johnazoidberg ];
     mainProgram = "sof-ctl";
   };

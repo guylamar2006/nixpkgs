@@ -71,7 +71,7 @@ stdenv.mkDerivation rec {
     homepage = "https://pdfchain.sourceforge.io";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ hqurve ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "pdfchain";
   };
 }

@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     ];
     mainProgram = "xxhsum";
     maintainers = with maintainers; [ orivej ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     pkgConfigModules = [
       "libxxhash"
     ];

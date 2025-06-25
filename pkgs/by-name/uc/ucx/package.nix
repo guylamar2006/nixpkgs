@@ -110,7 +110,7 @@ stdenv'.mkDerivation rec {
     description = "Unified Communication X library";
     homepage = "https://www.openucx.org";
     license = licenses.bsd3;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ markuskowa ];
   };
 }

@@ -133,6 +133,6 @@ symlinkJoin {
     homepage = "https://zod.sourceforge.net/";
     maintainers = with maintainers; [ zeri ];
     license = licenses.gpl3Plus; # Says the website
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

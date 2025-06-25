@@ -63,6 +63,6 @@ stdenv.mkDerivation rec {
     homepage = "http://kokkinizita.linuxaudio.org/linuxaudio/";
     license = licenses.gpl2;
     maintainers = with maintainers; [ magnetophon ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

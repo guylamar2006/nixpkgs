@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     mainProgram = "tg";
     homepage = "https://github.com/mackyle/topgit";
     license = licenses.gpl2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ marcweber ];
   };
 }

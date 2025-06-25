@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     homepage = "https://benkibbey.wordpress.com/randtype/";
     maintainers = with lib.maintainers; [ dandellion ];
     license = lib.licenses.gpl2Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin; # never built on Hydra https://hydra.nixos.org/job/nixpkgs/trunk/randtype.x86_64-darwin
   };
 }

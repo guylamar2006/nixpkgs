@@ -49,6 +49,6 @@ stdenv.mkDerivation (finalAttrs: {
       "rapidcheck_doctest"
       "rapidcheck_gtest"
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

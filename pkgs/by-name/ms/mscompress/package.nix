@@ -28,6 +28,6 @@ stdenv.mkDerivation (finalAttrs: {
     description = ''Microsoft "compress.exe/expand.exe" compatible (de)compressor'';
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ peterhoeg ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

@@ -31,6 +31,6 @@ rustPlatform.buildRustPackage rec {
       ereslibre
       shyim
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

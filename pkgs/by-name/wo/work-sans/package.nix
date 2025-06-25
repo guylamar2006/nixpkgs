@@ -26,6 +26,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://weiweihuanghuang.github.io/Work-Sans/";
     license = licenses.ofl;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

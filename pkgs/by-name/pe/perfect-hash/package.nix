@@ -35,6 +35,6 @@ python3.pkgs.buildPythonApplication rec {
     maintainers = with lib.maintainers; [ kaction ];
 
     homepage = "https://github.com/ilanschnell/perfect-hash";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

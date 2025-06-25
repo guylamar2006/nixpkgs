@@ -22,7 +22,7 @@ stdenv.mkDerivation {
 
   meta = with lib; {
     homepage = "https://web.archive.org/web/20160316212948/http://cis.poly.edu/zdelta/";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = licenses.zlib;
   };
 }

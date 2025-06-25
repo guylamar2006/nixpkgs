@@ -42,7 +42,7 @@ stdenvNoCC.mkDerivation {
     description = "Simple bash script that automatically changes your wallpaper depending on if its daytime or nighttime";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ baitinq ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "smart-wallpaper";
   };
 }

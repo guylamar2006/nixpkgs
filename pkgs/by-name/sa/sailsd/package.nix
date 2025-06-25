@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
       robots. It emulates the basic physics of sailing a small single sail
       boat'';
     maintainers = with lib.maintainers; [ kragniz ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "sailsd";
   };
 }

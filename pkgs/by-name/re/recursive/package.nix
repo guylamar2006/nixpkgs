@@ -23,6 +23,6 @@ stdenvNoCC.mkDerivation rec {
     description = "Variable font family for code & UI";
     license = lib.licenses.ofl;
     maintainers = with lib.maintainers; [ eadwu ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

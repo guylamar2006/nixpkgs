@@ -32,7 +32,7 @@ stdenv.mkDerivation {
     description = "Minimal cross-platform standalone C headers";
     homepage = "https://github.com/floooh/sokol";
     license = lib.licenses.zlib;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ jonnybolton ];
   };
 }

@@ -60,7 +60,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/haiwen/seafile";
     description = "Shared components of Seafile: seafile-daemon, libseafile, libseafile python bindings, manuals, and icons";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [
       schmittlauch
     ];

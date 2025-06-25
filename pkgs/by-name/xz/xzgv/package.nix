@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     description = "Picture viewer for X with a thumbnail-based selector";
     license = licenses.gpl2;
     maintainers = with lib.maintainers; [ womfoo ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "xzgv";
   };
 }

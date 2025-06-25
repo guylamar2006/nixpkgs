@@ -66,6 +66,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = licenses.mit;
     maintainers = with maintainers; [ Scrumplex ];
     pkgConfigModules = [ "tomlplusplus" ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

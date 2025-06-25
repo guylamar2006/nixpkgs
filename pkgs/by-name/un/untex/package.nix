@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.ctan.org/pkg/untex";
     license = licenses.gpl1Only;
     maintainers = with maintainers; [ joachifm ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

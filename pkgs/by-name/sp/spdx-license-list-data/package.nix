@@ -58,6 +58,6 @@ stdenvNoCC.mkDerivation rec {
       oxzi
       c0bw3b
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

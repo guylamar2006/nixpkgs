@@ -148,7 +148,7 @@ stdenv.mkDerivation rec {
       mickours
       mpoquet
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     broken = stdenv.hostPlatform.isDarwin;
   };
 }

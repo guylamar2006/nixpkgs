@@ -152,7 +152,7 @@ stdenv.mkDerivation {
     description = "Tool and a library for bi-directional translation between SPIR-V and LLVM IR";
     mainProgram = "llvm-spirv";
     license = lib.licenses.ncsa;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ gloaming ];
   };
 }

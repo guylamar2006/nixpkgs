@@ -46,7 +46,7 @@ stdenv.mkDerivation {
     description = "Very simple, yet secure VPN software";
     homepage = "http://wiki.ucis.nl/QuickTun";
     maintainers = with lib.maintainers; [ h7x4 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.bsd2;
   };
 }

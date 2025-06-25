@@ -46,7 +46,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://mruby.org";
     maintainers = with lib.maintainers; [ nicknovitski ];
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "mruby";
   };
 })

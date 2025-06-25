@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
     description = "Backend implementation for xdg-desktop-portal for Cinnamon, MATE, Xfce";
     homepage = "https://github.com/linuxmint/xdg-desktop-portal-xapp";
     teams = with lib.teams; [ cinnamon ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = licenses.lgpl21Plus;
   };
 }

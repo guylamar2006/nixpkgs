@@ -131,6 +131,6 @@ stdenv.mkDerivation rec {
       nagisa
       paveloom
     ];
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
   };
 }

@@ -53,7 +53,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://gitlab.gnome.org/GNOME/zenity";
     changelog = "https://gitlab.gnome.org/GNOME/zenity/-/blob/${finalAttrs.version}/NEWS?ref_type=tags";
     license = licenses.lgpl21Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     teams = with lib.teams; [ gnome ];
   };
 })

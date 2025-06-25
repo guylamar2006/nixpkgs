@@ -28,7 +28,7 @@ stdenvNoCC.mkDerivation {
     description = "Handwritten sitelen pona font supporting UCSUR";
     homepage = "https://www.kreativekorp.com/software/fonts/sitelenselikiwen/";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ somasis ];
   };
 }

@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     description = "Small cross-platform library for verifying Authenticode digital signatures";
     homepage = "https://github.com/trailofbits/uthenticode";
     license = licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ arturcygan ];
   };
 }

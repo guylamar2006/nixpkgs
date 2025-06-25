@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/cas--/XCreateMouseVoid";
     description = "Creates an undecorated black window and prevents the mouse from entering that window";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = licenses.unfreeRedistributable;
     maintainers = with maintainers; [ eigengrau ];
     mainProgram = "x-create-mouse-void";

@@ -68,7 +68,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Text-to-speech engine";
     maintainers = with lib.maintainers; [ raskin ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.free;
   };
 

@@ -175,7 +175,7 @@ stdenv.mkDerivation rec {
     license = licenses.gpl3;
     # zxtune supports mac and windows, but more work will be needed to
     # integrate with the custom make system (see platformName above)
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ EBADBEEF ];
     mainProgram = if withQt then "zxtune-qt" else "zxtune123";
   };

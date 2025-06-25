@@ -37,6 +37,6 @@ bundlerApp {
       Br1ght0ne
       anthonyroussel
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

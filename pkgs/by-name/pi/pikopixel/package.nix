@@ -43,6 +43,6 @@ clangStdenv.mkDerivation rec {
     downloadPage = "https://twilightedge.com/mac/pikopixel/";
     license = lib.licenses.agpl3Plus;
     maintainers = with lib.maintainers; [ fgaz ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

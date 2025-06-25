@@ -120,7 +120,7 @@ stdenv.mkDerivation rec {
     license = licenses.gpl2Plus;
     description = "Software MIDI renderer";
     maintainers = with lib.maintainers; [ marcweber ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "timidity";
   };
 }

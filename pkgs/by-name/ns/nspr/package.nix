@@ -59,7 +59,7 @@ stdenv.mkDerivation rec {
       ajs124
       hexa
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.mpl20;
   };
 }

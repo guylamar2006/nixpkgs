@@ -61,7 +61,7 @@ stdenv.mkDerivation {
     mainProgram = "xcircuit";
     homepage = "http://opencircuitdesign.com/xcircuit";
     license = licenses.gpl2;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [
       john-shaffer
       spacefrogg

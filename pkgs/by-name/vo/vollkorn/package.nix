@@ -33,7 +33,7 @@ stdenvNoCC.mkDerivation rec {
     homepage = "http://vollkorn-typeface.com/";
     description = "Free and healthy typeface for bread and butter use";
     license = licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ schmittlauch ];
   };
 }

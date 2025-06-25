@@ -29,6 +29,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.pureftpd.org";
     license = lib.licenses.isc; # with some parts covered by BSD3(?)
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

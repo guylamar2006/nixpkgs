@@ -98,6 +98,6 @@ stdenv.mkDerivation rec {
       bjornfor
       prusnak
     ];
-    platforms = platforms.unix ++ platforms.windows;
+    platforms = lib.platforms.unix ++ platforms.windows;
   };
 }

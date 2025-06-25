@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
     license = lib.licenses.unlicense;
     maintainers = with lib.maintainers; [ eownerdead ];
     mainProgram = "pdpmake";
-    platforms = platforms.all;
-    badPlatforms = platforms.darwin; # Requires `uimensat`
+    platforms = lib.platforms.all;
+    badplatforms = lib.platforms.darwin; # Requires `uimensat`
   };
 }

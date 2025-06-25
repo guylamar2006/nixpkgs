@@ -196,7 +196,7 @@ effectiveStdenv.mkDerivation rec {
     broken = cudaSupport && cudaPackages.cudaOlder "11.4";
     license = licenses.asl20;
     mainProgram = "xgboost";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [
       abbradar
       nviets

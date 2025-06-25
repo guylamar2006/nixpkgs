@@ -46,7 +46,7 @@ stdenv.mkDerivation {
     description = "Monospaced font created to be a most readable font for programming";
     maintainers = with lib.maintainers; [ myrl ];
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 
 }

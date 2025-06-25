@@ -28,6 +28,6 @@ stdenvNoCC.mkDerivation {
     description = "Unicode-compliant Mro font";
     maintainers = with lib.maintainers; [ mathnerd314 ];
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

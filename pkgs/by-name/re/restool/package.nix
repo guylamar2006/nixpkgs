@@ -70,7 +70,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/nxp-qoriq/restool";
     license = lib.licenses.bsd3;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ ];
   };
 }

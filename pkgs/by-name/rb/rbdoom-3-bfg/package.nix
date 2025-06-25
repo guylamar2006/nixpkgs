@@ -73,6 +73,6 @@ stdenv.mkDerivation rec {
     mainProgram = "RBDoom3BFG";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ Zaechus ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

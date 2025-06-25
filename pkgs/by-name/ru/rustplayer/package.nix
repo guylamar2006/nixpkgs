@@ -47,6 +47,6 @@ rustPlatform.buildRustPackage {
     description = "Local audio player and network m3u8 radio player using a terminal interface";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ oluceps ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

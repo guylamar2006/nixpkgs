@@ -37,7 +37,7 @@ rustPlatform.buildRustPackage rec {
     description = "Tool intended to prevent the accidental deletion of important files";
     homepage = "https://launchpad.net/safe-rm";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ SuperSandro2000 ];
     mainProgram = "safe-rm";
   };

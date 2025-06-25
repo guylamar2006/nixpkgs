@@ -99,7 +99,7 @@ resholve.mkDerivation rec {
       utdemir
     ];
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "shunit2";
   };
 }

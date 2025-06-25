@@ -94,7 +94,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Translator of declarative Datalog programs into the C++ language";
     homepage = "https://souffle-lang.github.io/";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       thoughtpolice
       wchresta

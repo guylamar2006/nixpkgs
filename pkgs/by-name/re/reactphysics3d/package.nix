@@ -24,6 +24,6 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/DanielChappuis/reactphysics3d/releases/tag/${finalAttrs.src.rev}";
     maintainers = with lib.maintainers; [ rexxDigital ];
     license = lib.licenses.zlib;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

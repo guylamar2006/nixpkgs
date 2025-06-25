@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Sound editor";
     homepage = "https://ccrma.stanford.edu/software/snd/";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.free;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "snd";

@@ -38,6 +38,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/open-iscsi/target-isns";
     maintainers = with lib.maintainers; [ markuskowa ];
     license = licenses.gpl2Only;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

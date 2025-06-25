@@ -27,7 +27,7 @@ stdenv.mkDerivation {
     description = "Deferred execution of zsh commands";
     homepage = "https://github.com/romkatv/zsh-defer";
     license = licenses.gpl3Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ vinnymeller ];
   };
 }

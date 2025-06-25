@@ -63,7 +63,7 @@ stdenv.mkDerivation {
     license = lib.licenses.mit;
     homepage = "https://github.com/raphaelleman/SPiP";
     maintainers = with lib.maintainers; [ apraga ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "spip";
   };
 }

@@ -97,7 +97,7 @@ stdenv.mkDerivation rec {
     homepage = "http://www.netlib.org/scalapack/";
     description = "Library of high-performance linear algebra routines for parallel distributed memory machines";
     license = lib.licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       costrouc
       markuskowa

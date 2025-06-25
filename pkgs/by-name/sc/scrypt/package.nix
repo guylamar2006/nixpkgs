@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
     mainProgram = "scrypt";
     homepage = "https://www.tarsnap.com/scrypt.html";
     license = lib.licenses.bsd2;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ thoughtpolice ];
   };
 }

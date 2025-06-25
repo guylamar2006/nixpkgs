@@ -68,6 +68,6 @@ stdenv.mkDerivation (finalAttrs: {
     # Basically GPL2+ with font exception.
     license = "https://unifoundry.com/LICENSE.txt";
     maintainers = with lib.maintainers; [ rycee ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

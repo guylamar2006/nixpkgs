@@ -51,6 +51,6 @@ stdenv.mkDerivation rec {
     description = "SoapySDR plugin for amateur radio and audio devices";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ numinit ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
     description = "Online and offline brute force attack against WPS";
     homepage = "https://github.com/t6x/reaver-wps-fork-t6x";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ nico202 ];
   };
 }

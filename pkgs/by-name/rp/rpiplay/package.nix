@@ -58,7 +58,7 @@ stdenv.mkDerivation {
     description = "Open-source implementation of an AirPlay mirroring server";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "rpiplay";
   };
 }

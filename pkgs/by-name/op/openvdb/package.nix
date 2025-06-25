@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
     mainProgram = "vdb_print";
     homepage = "https://www.openvdb.org";
     maintainers = with lib.maintainers; [ guibou ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.asl20;
   };
 }

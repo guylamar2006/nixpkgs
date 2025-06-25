@@ -43,6 +43,6 @@ stdenv.mkDerivation rec {
       matthewcroughan
       nixinator
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

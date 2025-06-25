@@ -68,6 +68,6 @@ stdenv.mkDerivation rec {
       gpl2Plus
     ];
     maintainers = with lib.maintainers; [ PlushBeaver ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

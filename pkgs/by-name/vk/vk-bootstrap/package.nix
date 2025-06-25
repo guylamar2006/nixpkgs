@@ -46,6 +46,6 @@ stdenv.mkDerivation rec {
     license = licenses.mit;
     homepage = "https://github.com/charles-lunarg/vk-bootstrap";
     maintainers = with maintainers; [ shamilton ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

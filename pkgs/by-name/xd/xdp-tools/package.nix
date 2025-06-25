@@ -86,6 +86,6 @@ stdenv.mkDerivation rec {
       vcunat
       vifino
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

@@ -30,6 +30,6 @@ stdenvNoCC.mkDerivation rec {
     # Basically GPL2+ with font exception.
     license = "https://unifoundry.com/LICENSE.txt";
     maintainers = with lib.maintainers; [ mathnerd314 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

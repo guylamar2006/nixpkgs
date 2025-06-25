@@ -36,6 +36,6 @@ stdenv.mkDerivation rec {
     homepage = "http://www.vanheusden.com/nasty/";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ davidak ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

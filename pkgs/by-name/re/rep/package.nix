@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
     mainProgram = "rep";
     homepage = "https://github.com/eraserhd/rep";
     license = lib.licenses.epl10;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ eraserhd ];
   };
 }

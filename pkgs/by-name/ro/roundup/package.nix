@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
     homepage = "http://bmizerany.github.io/roundup/";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ dotlambda ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "roundup";
   };
 }

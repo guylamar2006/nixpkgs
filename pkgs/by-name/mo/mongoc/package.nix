@@ -55,6 +55,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.asl20;
     mainProgram = "mongoc-stat";
     maintainers = with lib.maintainers; [ archer-65 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

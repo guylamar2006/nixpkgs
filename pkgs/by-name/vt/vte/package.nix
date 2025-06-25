@@ -168,6 +168,6 @@ stdenv.mkDerivation (finalAttrs: {
       antono
     ];
     teams = with lib.teams; [ gnome ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

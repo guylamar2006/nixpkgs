@@ -39,6 +39,6 @@ stdenv.mkDerivation {
     description = "SoapySDR plugin for BladeRF devices";
     license = lib.licenses.lgpl21Only;
     maintainers = with lib.maintainers; [ markuskowa ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -78,7 +78,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.washington.edu/imap/";
     description = "UW IMAP toolkit - IMAP-supporting software developed by the UW";
     license = licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 
   passthru = {

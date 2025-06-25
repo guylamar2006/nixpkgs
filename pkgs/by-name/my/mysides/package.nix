@@ -40,6 +40,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/mosen/mysides";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ tboerger ];
-    platforms = platforms.darwin;
+    platforms = lib.platforms.darwin;
   };
 }

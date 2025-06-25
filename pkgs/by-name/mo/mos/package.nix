@@ -35,6 +35,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     license = lib.licenses.cc-by-nc-40;
     maintainers = with lib.maintainers; [ xiaoxiangmoe ];
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
-    platforms = platforms.darwin;
+    platforms = lib.platforms.darwin;
   };
 })

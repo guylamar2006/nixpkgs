@@ -58,7 +58,7 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://snarkos.org";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ happysalada ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "snarkos";
   };
 }

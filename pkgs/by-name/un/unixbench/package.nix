@@ -112,6 +112,6 @@ stdenv.mkDerivation rec {
     license = licenses.gpl2Plus;
     mainProgram = "ubench";
     maintainers = with maintainers; [ aleksana ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

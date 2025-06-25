@@ -55,7 +55,7 @@ stdenvNoCC.mkDerivation rec {
   meta = with lib; {
     homepage = "http://jimmac.musichall.cz";
     description = "Style neutral scalable cursor theme";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = licenses.cc-by-sa-30;
     maintainers = with lib.maintainers; [ ];
   };

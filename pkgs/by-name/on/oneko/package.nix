@@ -57,7 +57,7 @@ stdenv.mkDerivation rec {
       xaverdh
       irenes
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "oneko";
   };
 }

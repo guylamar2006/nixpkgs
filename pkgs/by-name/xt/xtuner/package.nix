@@ -56,7 +56,7 @@ stdenv.mkDerivation rec {
     description = "Tuner for Jack Audio Connection Kit";
     license = licenses.gpl2Plus;
     maintainers = with maintainers; [ magnetophon ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "xtuner";
   };
 }

@@ -67,7 +67,7 @@ stdenv.mkDerivation rec {
       xiorcale
     ];
     teams = with lib.teams; [ pantheon ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     # The COPYING file has GPLv3; some files have GPLv2+ and some have GPLv3+
     license = lib.licenses.gpl3Plus;
     mainProgram = "com.github.philip_scott.spice-up";

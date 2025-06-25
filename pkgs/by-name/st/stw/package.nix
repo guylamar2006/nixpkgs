@@ -35,7 +35,7 @@ stdenv.mkDerivation {
     description = "Simple text widget for X resembling the watch(1) command";
     license = lib.licenses.mit;
     maintainers = with maintainers; [ somasis ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin;
     mainProgram = "stw";
   };

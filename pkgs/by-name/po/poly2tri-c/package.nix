@@ -45,6 +45,6 @@ stdenv.mkDerivation rec {
     homepage = "https://code.google.com/archive/p/poly2tri-c/";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ jtojnar ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

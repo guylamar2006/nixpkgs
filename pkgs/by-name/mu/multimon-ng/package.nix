@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/EliasOenal/multimon-ng";
     license = lib.licenses.gpl2Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ markuskowa ];
   };
 }

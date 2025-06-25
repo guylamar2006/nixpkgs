@@ -63,6 +63,6 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "sfxr";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ fgaz ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

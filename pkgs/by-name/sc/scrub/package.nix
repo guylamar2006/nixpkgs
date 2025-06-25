@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     changelog = "https://raw.githubusercontent.com/chaos/scrub/master/NEWS";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ j0hax ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "scrub";
   };
 }

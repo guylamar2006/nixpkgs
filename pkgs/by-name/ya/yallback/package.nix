@@ -34,6 +34,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/abathur/yallback";
     license = licenses.mit;
     maintainers = with maintainers; [ abathur ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

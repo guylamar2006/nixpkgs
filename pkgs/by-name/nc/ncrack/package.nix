@@ -42,6 +42,6 @@ stdenv.mkDerivation rec {
     homepage = "https://nmap.org/ncrack/";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ siraben ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

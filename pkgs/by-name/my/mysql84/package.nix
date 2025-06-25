@@ -121,6 +121,6 @@ stdenv.mkDerivation (finalAttrs: {
       orivej
       shyim
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

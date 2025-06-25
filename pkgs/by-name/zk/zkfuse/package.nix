@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
   '';
 
   meta = with lib; {
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ ztzg ];
     license = licenses.asl20;
     mainProgram = "zkfuse";

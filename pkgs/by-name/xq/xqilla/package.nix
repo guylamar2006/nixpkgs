@@ -38,6 +38,6 @@ stdenv.mkDerivation rec {
     mainProgram = "xqilla";
     license = licenses.asl20;
     maintainers = with maintainers; [ obadz ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

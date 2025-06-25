@@ -60,6 +60,6 @@ stdenv.mkDerivation rec {
     description = "Mount without password";
     license = licenses.gpl3Plus;
     maintainers = with maintainers; [ ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

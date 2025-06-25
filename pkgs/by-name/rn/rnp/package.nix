@@ -73,7 +73,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/rnpgp/rnp";
     description = "High performance C++ OpenPGP library, fully compliant to RFC 4880";
     license = lib.licenses.bsd2;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ribose-jeffreylau ];
   };
 })

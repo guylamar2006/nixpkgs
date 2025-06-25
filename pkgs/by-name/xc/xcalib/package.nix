@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     description = "Tiny monitor calibration loader for X and MS-Windows";
     license = licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "xcalib";
   };
 }

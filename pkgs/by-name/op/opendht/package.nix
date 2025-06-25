@@ -82,6 +82,6 @@ stdenv.mkDerivation rec {
       olynch
       thoughtpolice
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

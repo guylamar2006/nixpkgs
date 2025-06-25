@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
       can be useful for debugging problems with serial ports or modems.
     '';
 
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ rps ];
     mainProgram = "statserial";
   };

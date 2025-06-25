@@ -52,7 +52,7 @@ buildGoModule rec {
     mainProgram = "sq";
     homepage = "https://sq.io/";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ raitobezarius ];
   };
 }

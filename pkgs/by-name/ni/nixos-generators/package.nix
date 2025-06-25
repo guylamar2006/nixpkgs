@@ -41,6 +41,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ lassulus ];
     mainProgram = "nixos-generate";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

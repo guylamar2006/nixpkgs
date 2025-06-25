@@ -34,7 +34,7 @@ stdenv.mkDerivation {
     mainProgram = "sigrok-cli";
     homepage = "https://sigrok.org/";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
     maintainers = with lib.maintainers; [
       bjornfor
       vifino

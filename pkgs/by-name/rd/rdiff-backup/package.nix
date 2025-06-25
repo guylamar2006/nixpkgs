@@ -33,6 +33,6 @@ pypkgs.buildPythonApplication rec {
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ peterhoeg ];
     mainProgram = "rdiff-backup";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -48,6 +48,6 @@ stdenvNoCC.mkDerivation rec {
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ atila ];
     mainProgram = "oil";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

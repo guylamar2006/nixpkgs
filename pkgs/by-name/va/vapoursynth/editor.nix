@@ -69,7 +69,7 @@ let
       homepage = "https://github.com/YomikoR/VapourSynth-Editor";
       license = licenses.mit;
       maintainers = with lib.maintainers; [ ];
-      platforms = platforms.all;
+      platforms = lib.platforms.all;
     };
   };
 

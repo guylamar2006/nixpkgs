@@ -55,7 +55,7 @@ stdenv.mkDerivation {
       licenses.ofl
       licenses.mit
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ romildo ];
   };
 }

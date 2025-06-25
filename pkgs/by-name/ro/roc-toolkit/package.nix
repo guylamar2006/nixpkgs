@@ -89,6 +89,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/roc-streaming/roc-toolkit";
     license = lib.licenses.mpl20;
     maintainers = with lib.maintainers; [ bgamari ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

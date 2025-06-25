@@ -32,7 +32,7 @@ let
       description = "Helper library used by usbmuxd2";
       homepage = "https://github.com/tihmstar/libgeneral";
       license = licenses.lgpl21;
-      platforms = platforms.all;
+      platforms = lib.platforms.all;
     };
   };
 
@@ -87,7 +87,7 @@ clangStdenv.mkDerivation {
     homepage = "https://github.com/tihmstar/usbmuxd2";
     description = "Socket daemon to multiplex connections from and to iOS devices";
     license = licenses.lgpl3;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ onny ];
     mainProgram = "usbmuxd";
   };

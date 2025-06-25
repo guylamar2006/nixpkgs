@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/aestasit/sshoogr";
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ moaxcp ];
   };
 }

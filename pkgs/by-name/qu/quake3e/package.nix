@@ -87,7 +87,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/ec-/Quake3e";
     description = "Improved Quake III Arena engine";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [
       pmiddend
       alx

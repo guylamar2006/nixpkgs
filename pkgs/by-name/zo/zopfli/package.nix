@@ -44,7 +44,7 @@ stdenv.mkDerivation rec {
       This library can only compress, not decompress. Existing zlib or
       deflate libraries can decompress the data.
     '';
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = licenses.asl20;
     mainProgram = "zopfli";
     maintainers = with maintainers; [

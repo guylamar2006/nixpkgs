@@ -97,6 +97,6 @@ stdenv.mkDerivation rec {
     changelog = "https://github.com/TerryCavanagh/VVVVVV/releases/tag/${src.rev}";
     license = licenses.unfree;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

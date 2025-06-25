@@ -101,7 +101,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Caching proxy for the Web supporting HTTP, HTTPS, FTP, and more";
     homepage = "http://www.squid-cache.org";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ raskin ];
     knownVulnerabilities = [
       "Squid has multiple unresolved security vulnerabilities, for more information see https://megamansec.github.io/Squid-Security-Audit/"

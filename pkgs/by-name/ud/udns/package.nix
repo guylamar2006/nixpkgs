@@ -54,7 +54,7 @@ stdenv.mkDerivation rec {
     description = "Async-capable DNS stub resolver library";
     license = licenses.lgpl21Plus;
     maintainers = with lib.maintainers; [ womfoo ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 
 }

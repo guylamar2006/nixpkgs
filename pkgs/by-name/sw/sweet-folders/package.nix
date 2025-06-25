@@ -28,7 +28,7 @@ stdenvNoCC.mkDerivation {
     description = "Folders icons for Sweet GTK theme";
     homepage = "https://github.com/EliverLara/Sweet-folders";
     maintainers = with maintainers; [ d3vil0p3r ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = licenses.gpl3Plus;
   };
 }

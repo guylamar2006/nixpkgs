@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
     description = "Permanent DNS caching";
     homepage = "http://members.home.nl/p.a.rombouts/pdnsd";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ];
   };
 }

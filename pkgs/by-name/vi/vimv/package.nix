@@ -25,7 +25,7 @@ stdenvNoCC.mkDerivation {
     homepage = "https://github.com/thameera/vimv";
     description = "Batch-rename files using Vim";
     license = licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ kmein ];
     mainProgram = "vimv";
   };

@@ -46,7 +46,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/loserMcloser/waylogout";
     license = licenses.mit;
     maintainers = with maintainers; [ dit7ya ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "waylogout";
   };
 }

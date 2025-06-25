@@ -44,7 +44,7 @@ rustPlatform.buildRustPackage rec {
     description = "Open-source Shazam client for Linux, written in Rust";
     homepage = "https://github.com/marin-m/SongRec";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ tcbravo ];
     mainProgram = "songrec";
   };

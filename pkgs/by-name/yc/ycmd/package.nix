@@ -128,6 +128,6 @@ stdenv.mkDerivation {
       lnl7
       mel
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

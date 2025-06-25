@@ -39,7 +39,7 @@ stdenv.mkDerivation {
       Roboto family and the Roboto Condensed family.
     '';
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ romildo ];
   };
 }

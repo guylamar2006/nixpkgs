@@ -29,6 +29,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/pritunl/pritunl-zero-client";
     license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ Thunderbottom ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

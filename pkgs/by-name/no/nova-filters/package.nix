@@ -45,6 +45,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "http://klingt.org/~tim/nova-filters/";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ magnetophon ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

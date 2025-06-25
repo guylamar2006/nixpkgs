@@ -51,6 +51,6 @@ stdenvNoCC.mkDerivation rec {
       rhysmdnz
       fazzi
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

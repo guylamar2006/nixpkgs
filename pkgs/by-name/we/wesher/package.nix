@@ -28,7 +28,7 @@ buildGoModule rec {
     homepage = "https://github.com/costela/wesher";
     license = licenses.gpl3Only;
     maintainers = with maintainers; [ tylerjl ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "wesher";
   };
 }

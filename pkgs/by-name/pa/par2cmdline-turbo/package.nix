@@ -24,7 +24,7 @@ stdenv.mkDerivation rec {
     description = "par2cmdline × ParPar: speed focused par2cmdline fork";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ proglottis ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "par2";
   };
 }

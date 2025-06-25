@@ -79,7 +79,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "Distributed POSIX file system";
     homepage = "https://saunafs.com";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ markuskowa ];
   };

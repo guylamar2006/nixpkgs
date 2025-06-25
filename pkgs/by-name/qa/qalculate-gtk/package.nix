@@ -48,6 +48,6 @@ stdenv.mkDerivation (finalAttrs: {
     ];
     license = lib.licenses.gpl2Plus;
     mainProgram = "qalculate-gtk";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

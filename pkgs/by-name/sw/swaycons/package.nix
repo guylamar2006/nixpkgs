@@ -23,7 +23,7 @@ rustPlatform.buildRustPackage {
     mainProgram = "swaycons";
     homepage = "https://github.com/allie-wake-up/swaycons";
     license = licenses.asl20;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ aacebedo ];
   };
 }

@@ -102,6 +102,6 @@ stdenv.mkDerivation {
       expanded by Cyreal Fonts Team (Alexei Vanyashin and Nikita Kanarev). Existing
       glyphs were improved, and glyph set was expanded to GF Cyrillic Plus.
     '';
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

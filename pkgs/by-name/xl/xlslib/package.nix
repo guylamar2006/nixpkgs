@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
     description = "C++/C library to construct Excel .xls files in code";
     homepage = "https://sourceforge.net/projects/xlslib/";
     license = licenses.bsd2;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ abbradar ];
   };
 }

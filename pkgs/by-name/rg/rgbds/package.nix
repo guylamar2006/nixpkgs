@@ -46,6 +46,6 @@ stdenv.mkDerivation rec {
       matthewbauer
       NieDzejkob
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -99,7 +99,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "SRB2Kart is a classic styled kart racer";
     homepage = "https://mb.srb2.org/threads/srb2kart.25868/";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = lib.licenses.gpl2Plus;
     maintainers = with maintainers; [ donovanglover ];
     mainProgram = "srb2kart";

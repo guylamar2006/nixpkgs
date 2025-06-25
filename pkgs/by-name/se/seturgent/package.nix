@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
   '';
 
   meta = with lib; {
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     description = "Set an application's urgency hint (or not)";
     mainProgram = "seturgent";
     maintainers = with lib.maintainers; [ yarr ];

@@ -58,6 +58,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/knarfS/smuview";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ vifino ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

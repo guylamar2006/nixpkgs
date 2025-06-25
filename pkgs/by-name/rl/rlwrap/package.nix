@@ -32,7 +32,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/hanslub42/rlwrap";
     changelog = "https://github.com/hanslub42/rlwrap/raw/refs/tags/v${finalAttrs.version}/NEWS";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ jlesquembre ];
     mainProgram = "rlwrap";
   };

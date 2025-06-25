@@ -37,6 +37,6 @@ stdenv.mkDerivation rec {
     homepage = "https://interversehq.com/qview/";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ acowley ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

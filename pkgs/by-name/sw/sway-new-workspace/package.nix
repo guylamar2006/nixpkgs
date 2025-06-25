@@ -24,6 +24,6 @@ rustPlatform.buildRustPackage rec {
     license = licenses.mit;
     mainProgram = "sway-new-workspace";
     maintainers = with maintainers; [ bbenno ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

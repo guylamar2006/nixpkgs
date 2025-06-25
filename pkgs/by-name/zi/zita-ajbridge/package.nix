@@ -40,6 +40,6 @@ stdenv.mkDerivation rec {
     homepage = "http://kokkinizita.linuxaudio.org/linuxaudio/index.html";
     license = licenses.gpl3Plus;
     maintainers = with maintainers; [ orivej ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

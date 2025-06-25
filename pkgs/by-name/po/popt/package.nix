@@ -48,6 +48,6 @@ stdenv.mkDerivation rec {
     description = "Command line option parsing library";
     maintainers = with lib.maintainers; [ qyliss ];
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

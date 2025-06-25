@@ -28,7 +28,7 @@ rustPlatform.buildRustPackage rec {
       dit7ya
       id3v1669
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "wayshot";
   };
 }

@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
       mpl11
       ftl
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ CRTified ];
   };
 }

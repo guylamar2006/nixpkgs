@@ -36,6 +36,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/helsinki-systems/plymouth-theme-nixos-bgrt";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

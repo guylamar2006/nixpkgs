@@ -160,7 +160,7 @@ stdenv.mkDerivation rec {
     homepage = "https://git.kernel.org/pub/scm/fs/xfs/xfstests-dev.git/";
     license = licenses.gpl2Only;
     maintainers = with lib.maintainers; [ dezgeg ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "xfstests-check";
   };
 }

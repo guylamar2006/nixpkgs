@@ -70,7 +70,7 @@ stdenv.mkDerivation rec {
     mainProgram = "xviewer";
     homepage = "https://github.com/linuxmint/xviewer";
     license = licenses.gpl2Only;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ tu-maurice ];
     teams = with lib.teams; [ cinnamon ];
   };

@@ -39,7 +39,7 @@ stdenvNoCC.mkDerivation {
 
       It incorporates symbols and ligatures used in the European region.
     '';
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       leenaars
       minijackson

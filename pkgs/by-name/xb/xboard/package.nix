@@ -64,7 +64,7 @@ stdenv.mkDerivation rec {
     mainProgram = "xboard";
     homepage = "https://www.gnu.org/software/xboard/";
     maintainers = with maintainers; [ raskin ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = licenses.gpl3Plus;
   };
 }

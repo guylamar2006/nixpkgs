@@ -83,6 +83,6 @@ stdenv.mkDerivation rec {
       diogotcorreia
       Profpatsch
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

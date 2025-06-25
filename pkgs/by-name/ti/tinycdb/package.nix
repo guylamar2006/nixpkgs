@@ -71,6 +71,6 @@ stdenv.mkDerivation rec {
 
     homepage = "https://www.corpit.ru/mjt/tinycdb.html";
     license = licenses.publicDomain;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

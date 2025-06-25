@@ -94,7 +94,7 @@ stdenv.mkDerivation rec {
       "https://github.com/p11-glue/p11-kit/raw/${version}/NEWS"
       "https://github.com/p11-glue/p11-kit/releases/tag/${version}"
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     badPlatforms = [
       # https://github.com/p11-glue/p11-kit/issues/355#issuecomment-778777141
       lib.systems.inspect.platformPatterns.isStatic

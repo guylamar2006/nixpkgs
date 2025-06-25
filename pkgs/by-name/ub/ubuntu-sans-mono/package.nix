@@ -37,7 +37,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     homepage = "https://design.ubuntu.com/font";
     changelog = "https://github.com/canonical/Ubuntu-Sans-Mono-fonts/blob/${finalAttrs.src.rev}/FONTLOG.txt";
     license = licenses.ufl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ jopejoe1 ];
   };
 })

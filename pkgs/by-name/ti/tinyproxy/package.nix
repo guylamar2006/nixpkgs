@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     homepage = "https://tinyproxy.github.io/";
     description = "Light-weight HTTP/HTTPS proxy daemon for POSIX operating systems";
     license = licenses.gpl2Only;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ carlosdagos ];
     mainProgram = "tinyproxy";
   };

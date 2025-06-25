@@ -68,6 +68,6 @@ stdenv.mkDerivation (finalAttrs: {
       matthuszagh
       wegank
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     homepage = "https://git.sr.ht/~bitfehler/scd2html";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "scd2html";
   };
 }

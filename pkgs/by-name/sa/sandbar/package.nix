@@ -40,8 +40,8 @@ stdenv.mkDerivation (finalAttrs: {
     description = "DWM-like bar for the river wayland compositor";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ fccapria ];
-    platforms = platforms.all;
-    badPlatforms = platforms.darwin;
+    platforms = lib.platforms.all;
+    badplatforms = lib.platforms.darwin;
     mainProgram = "sandbar";
   };
 })

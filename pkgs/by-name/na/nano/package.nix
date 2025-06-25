@@ -109,7 +109,7 @@ stdenv.mkDerivation rec {
       nequissimus
       sigmasquadron
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "nano";
   };
 }

@@ -32,6 +32,6 @@ stdenv.mkDerivation rec {
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = licenses.bsd3;
     maintainers = with maintainers; [ jwiegley ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

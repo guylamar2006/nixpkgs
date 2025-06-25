@@ -34,7 +34,7 @@ stdenvNoCC.mkDerivation {
       with outsized counters in the uppercase and a lowercase
       with a small x-height.
     '';
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       leenaars
       minijackson

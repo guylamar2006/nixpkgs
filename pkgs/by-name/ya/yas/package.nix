@@ -27,6 +27,6 @@ stdenvNoCC.mkDerivation rec {
     description = "Yet Another Serialization";
     license = licenses.boost;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

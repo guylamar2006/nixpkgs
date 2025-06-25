@@ -32,6 +32,6 @@ stdenv.mkDerivation rec {
     description = "Multi-player version of the classical game of Tetris, for the X Window system";
     homepage = "https://web.archive.org/web/20120315061213/http://www.iagora.com/~espel/xtris/xtris.html";
     license = licenses.gpl2Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

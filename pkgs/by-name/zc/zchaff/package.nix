@@ -31,6 +31,6 @@ clangStdenv.mkDerivation rec {
     mainProgram = "zchaff";
     license = licenses.mit;
     maintainers = with maintainers; [ siraben ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

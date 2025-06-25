@@ -66,6 +66,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ iynaix ];
     mainProgram = "realcugan-ncnn-vulkan";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -51,6 +51,6 @@ stdenvNoCC.mkDerivation {
     homepage = "https://github.com/vinceliuice/Vimix-cursors";
     license = licenses.gpl3Only;
     maintainers = with maintainers; [ ambroisie ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

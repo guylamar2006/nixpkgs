@@ -49,7 +49,7 @@ stdenv.mkDerivation {
     description = "STUMPwm Interactive SHell";
     license = lib.licenses.gpl2;
     maintainers = with lib.maintainers; [ ebzzry ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "stumpish";
   };
 }

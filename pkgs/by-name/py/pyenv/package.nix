@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
     changelog = "https://github.com/pyenv/pyenv/blob/${src.rev}/CHANGELOG.md";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ tjni ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "pyenv";
   };
 }

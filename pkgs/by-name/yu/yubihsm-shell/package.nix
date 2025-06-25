@@ -68,6 +68,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/Yubico/yubihsm-shell";
     maintainers = with maintainers; [ matthewcroughan ];
     license = licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

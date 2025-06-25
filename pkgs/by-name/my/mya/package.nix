@@ -65,6 +65,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ pbsds ];
     mainProgram = "mya";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

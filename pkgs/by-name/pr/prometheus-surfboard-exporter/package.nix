@@ -30,6 +30,6 @@ buildGoModule rec {
     homepage = "https://github.com/ipstatic/surfboard_exporter";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ disassembler ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

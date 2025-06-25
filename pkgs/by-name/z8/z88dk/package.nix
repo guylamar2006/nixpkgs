@@ -203,6 +203,6 @@ stdenv.mkDerivation (finalAttrs: {
       siraben
       hzeller
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

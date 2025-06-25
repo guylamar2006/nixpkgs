@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://mujs.com/";
     description = "Lightweight, embeddable Javascript interpreter";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ pSub ];
     license = lib.licenses.isc;
   };

@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
     description = "Minimal loop based midi sequencer";
     homepage = "http://www.filter24.org/seq24";
     license = lib.licenses.gpl2;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "seq24";
   };

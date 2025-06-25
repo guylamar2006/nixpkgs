@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/tsyrogit/zxcvbn-c";
     description = "C/C++ implementation of the zxcvbn password strength estimation";
     license = licenses.mit;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ xurei ];
   };
 }

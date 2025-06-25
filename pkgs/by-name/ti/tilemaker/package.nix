@@ -81,7 +81,7 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/systemed/tilemaker/blob/v${finalAttrs.version}/CHANGELOG.md";
     license = licenses.free; # FTWPL
     maintainers = with maintainers; [ sikmir ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "tilemaker";
   };
 })

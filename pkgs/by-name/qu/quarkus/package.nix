@@ -41,7 +41,7 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/quarkusio/quarkus/releases/tag/${finalAttrs.version}";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ vinetos ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "quarkus";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
   };

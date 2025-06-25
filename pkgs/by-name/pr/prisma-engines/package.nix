@@ -69,7 +69,7 @@ rustPlatform.buildRustPackage rec {
     description = "Collection of engines that power the core stack for Prisma";
     homepage = "https://www.prisma.io/";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "prisma";
     maintainers = with lib.maintainers; [
       pimeys

@@ -69,6 +69,6 @@ stdenv.mkDerivation {
       mrcjkb
       xaverdh
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

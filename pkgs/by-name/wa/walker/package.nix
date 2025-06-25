@@ -43,7 +43,7 @@ buildGoModule rec {
     description = "Wayland-native application runner";
     homepage = "https://github.com/abenz1267/walker";
     license = licenses.mit;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ donovanglover ];
     mainProgram = "walker";
   };

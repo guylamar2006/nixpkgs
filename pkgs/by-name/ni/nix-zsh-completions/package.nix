@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/nix-community/nix-zsh-completions";
     description = "ZSH completions for Nix, NixOS, and NixOps";
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       olejorgenb
       hedning

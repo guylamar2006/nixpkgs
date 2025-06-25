@@ -87,7 +87,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://tkman.sourceforge.net/index.html";
     license = licenses.artistic1;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ fgaz ];
   };
 })

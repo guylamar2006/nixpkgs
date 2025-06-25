@@ -38,6 +38,6 @@ stdenv.mkDerivation {
     homepage = "http://www.redprl.org/";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ acowley ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

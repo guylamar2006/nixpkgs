@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     description = "FTP/TFTP server for Linux that just works™";
     homepage = "https://troglobit.com/projects/uftpd/";
     license = licenses.isc;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ vifino ];
   };
 }

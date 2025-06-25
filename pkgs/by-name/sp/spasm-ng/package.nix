@@ -53,6 +53,6 @@ stdenv.mkDerivation {
     mainProgram = "spasm";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ siraben ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

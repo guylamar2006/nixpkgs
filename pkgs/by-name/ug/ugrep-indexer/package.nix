@@ -36,6 +36,6 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/Genivia/ugrep-indexer/releases/tag/v${finalAttrs.version}";
     maintainers = with maintainers; [ mikaelfangel ];
     license = licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

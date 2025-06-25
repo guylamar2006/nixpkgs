@@ -22,7 +22,7 @@ stdenv.mkDerivation {
     description = "PARI database needed to compute Galois group in degrees 8 through 11";
     homepage = "http://pari.math.u-bordeaux.fr/";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     teams = with lib.teams; [ sage ];
   };
 }

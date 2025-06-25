@@ -119,7 +119,7 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.gnome.org/GNOME/rhythmbox";
     description = "Music playing application for GNOME";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ rasendubi ];
   };
 }

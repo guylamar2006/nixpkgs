@@ -31,6 +31,6 @@ stdenvNoCC.mkDerivation rec {
       to the system configuration.
     '';
     license = licenses.free;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

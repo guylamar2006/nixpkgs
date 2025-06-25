@@ -60,6 +60,6 @@ stdenv.mkDerivation rec {
     homepage = "https://docs.nnpdf.science/";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ veprbl ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

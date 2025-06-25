@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Lightweight volume control that sits in your systray";
     homepage = "https://nullwise.com/pages/volumeicon/volumeicon.html";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ bobvanderlinden ];
     license = licenses.gpl3;
     mainProgram = "volumeicon";

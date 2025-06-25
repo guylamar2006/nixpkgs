@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     description = "Retry a command until the command succeeds";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ gfrascadorio ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "retry";
   };
 }

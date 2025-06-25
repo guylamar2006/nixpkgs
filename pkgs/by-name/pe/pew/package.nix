@@ -33,7 +33,7 @@ buildPythonApplication rec {
     description = "Tools to manage multiple virtualenvs written in pure python";
     mainProgram = "pew";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ berdario ];
   };
 }

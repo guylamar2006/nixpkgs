@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
       gpl3Only
     ];
     maintainers = with maintainers; [ eleanor ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

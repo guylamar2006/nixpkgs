@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     description = "Portable library for reading files that contain x-y data from powder diffraction, spectroscopy and other experimental methods";
     license = licenses.lgpl21;
     homepage = "https://xylib.sourceforge.net/";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ pSub ];
   };
 }

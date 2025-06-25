@@ -40,6 +40,6 @@ stdenv.mkDerivation rec {
     mainProgram = "subunit-diff";
     homepage = "https://launchpad.net/subunit";
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

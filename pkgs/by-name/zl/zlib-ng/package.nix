@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
     description = "zlib data compression library for the next generation systems";
     homepage = "https://github.com/zlib-ng/zlib-ng";
     license = licenses.zlib;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ izorkin ];
   };
 }

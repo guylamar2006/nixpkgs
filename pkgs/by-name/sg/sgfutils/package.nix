@@ -47,6 +47,6 @@ stdenv.mkDerivation {
     '';
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ggpeti ];
-    platforms = platforms.all; # tested on x86_64-linux and aarch64-darwin
+    platforms = lib.platforms.all; # tested on x86_64-linux and aarch64-darwin
   };
 }

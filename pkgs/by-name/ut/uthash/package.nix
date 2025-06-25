@@ -29,6 +29,6 @@ stdenv.mkDerivation rec {
     description = "Hash table for C structures";
     homepage = "http://troydhanson.github.io/uthash";
     license = licenses.bsd2; # it's one-clause, actually, as it's source-only
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

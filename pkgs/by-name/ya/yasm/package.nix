@@ -20,6 +20,6 @@ stdenv.mkDerivation rec {
     homepage = "http://www.tortall.net/projects/yasm/";
     description = "Complete rewrite of the NASM assembler";
     license = licenses.bsd2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

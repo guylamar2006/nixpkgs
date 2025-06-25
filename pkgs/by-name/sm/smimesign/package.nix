@@ -30,7 +30,7 @@ buildGoModule rec {
     description = "S/MIME signing utility for macOS and Windows that is compatible with Git";
     homepage = "https://github.com/github/smimesign";
     license = lib.licenses.mit;
-    platforms = platforms.darwin ++ platforms.windows;
+    platforms = lib.platforms.darwin ++ platforms.windows;
     maintainers = with lib.maintainers; [ enorris ];
   };
 }

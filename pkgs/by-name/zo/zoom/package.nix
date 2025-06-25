@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
       the database market finally brought them low.
     '';
     license = licenses.gpl3;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "zoom";
   };
 }

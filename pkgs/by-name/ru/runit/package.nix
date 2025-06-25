@@ -66,6 +66,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.bsd3;
     homepage = "http://smarden.org/runit";
     maintainers = with lib.maintainers; [ joachifm ];
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
   };
 }

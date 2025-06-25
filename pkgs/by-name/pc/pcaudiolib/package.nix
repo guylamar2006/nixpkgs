@@ -55,6 +55,6 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Provides a C API to different audio devices";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ aske ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

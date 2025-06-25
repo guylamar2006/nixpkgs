@@ -29,6 +29,6 @@ stdenv.mkDerivation {
     license = licenses.asl20;
     homepage = "https://github.com/hydrian/TTRSS-Auth-LDAP";
     maintainers = with maintainers; [ mic92 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

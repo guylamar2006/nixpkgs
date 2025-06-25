@@ -48,6 +48,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/hugokernel/todofi.sh";
     license = licenses.mit;
     maintainers = with maintainers; [ ewok ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

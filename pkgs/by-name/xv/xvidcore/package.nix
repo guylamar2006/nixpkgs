@@ -69,6 +69,6 @@ stdenv.mkDerivation rec {
       codyopel
       lovek323
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

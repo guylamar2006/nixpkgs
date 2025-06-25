@@ -44,6 +44,6 @@ stdenv.mkDerivation {
     mainProgram = "netris";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ patryk27 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

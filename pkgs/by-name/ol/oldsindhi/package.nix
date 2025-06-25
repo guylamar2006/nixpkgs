@@ -30,6 +30,6 @@ stdenvNoCC.mkDerivation rec {
       mit
       ofl
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

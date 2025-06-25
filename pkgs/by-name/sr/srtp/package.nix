@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/cisco/libsrtp";
     description = "Secure RTP (SRTP) Reference Implementation";
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ r-burns ];
   };
 }

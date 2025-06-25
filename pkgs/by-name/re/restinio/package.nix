@@ -110,7 +110,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/Stiffstream/restinio";
     changelog = "https://github.com/Stiffstream/restinio/releases/tag/${finalAttrs.src.rev}";
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ tobim ];
   };
 })

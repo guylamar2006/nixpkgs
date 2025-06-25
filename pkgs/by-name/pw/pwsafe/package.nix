@@ -117,7 +117,7 @@ stdenv.mkDerivation rec {
       c0bw3b
       pjones
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.artistic2;
   };
 }

@@ -68,7 +68,7 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     homepage = "https://telepathy.freedesktop.org";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = with licenses; [
       bsd2
       bsd3

@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
     homepage = "https://kokkinizita.linuxaudio.org/linuxaudio/index.html";
     license = licenses.gpl3Plus;
     maintainers = with maintainers; [ orivej ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "zita-at1";
   };
 }

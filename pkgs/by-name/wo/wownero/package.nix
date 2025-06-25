@@ -100,6 +100,6 @@ stdenv.mkDerivation rec {
     homepage = "https://wownero.org/";
     license = licenses.bsd3;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

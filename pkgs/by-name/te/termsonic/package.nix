@@ -26,7 +26,7 @@ buildGoModule {
     homepage = "https://git.sixfoisneuf.fr/termsonic";
     description = "Subsonic client running in your terminal";
     license = licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "termsonic";
     maintainers = with maintainers; [ mksafavi ];
   };

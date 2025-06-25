@@ -33,6 +33,6 @@ stdenv.mkDerivation {
     description = "Tool for changing the region code setting of DVD players";
     mainProgram = "regionset";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

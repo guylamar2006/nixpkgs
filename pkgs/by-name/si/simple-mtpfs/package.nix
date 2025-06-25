@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
     description = "Simple MTP fuse filesystem driver";
     homepage = "https://github.com/phatina/simple-mtpfs";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ laalsaas ];
     mainProgram = "simple-mtpfs";
   };

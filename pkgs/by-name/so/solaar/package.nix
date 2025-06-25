@@ -99,6 +99,6 @@ python3Packages.buildPythonApplication rec {
       ysndr
       oxalica
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

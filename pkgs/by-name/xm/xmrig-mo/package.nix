@@ -20,7 +20,7 @@ xmrig.overrideAttrs (oldAttrs: rec {
     homepage = "https://github.com/MoneroOcean/xmrig";
     license = licenses.gpl3Plus;
     mainProgram = "xmrig";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [
       j0hax
       redhawk

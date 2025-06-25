@@ -28,6 +28,6 @@ stdenv.mkDerivation {
     homepage = "https://sourceforge.net/projects/sblim/";
     license = lib.licenses.cpl10;
     maintainers = with lib.maintainers; [ deepfire ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

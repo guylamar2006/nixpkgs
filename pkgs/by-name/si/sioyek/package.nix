@@ -90,6 +90,6 @@ stdenv.mkDerivation (finalAttrs: {
       stephen-huan
       xyven1
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

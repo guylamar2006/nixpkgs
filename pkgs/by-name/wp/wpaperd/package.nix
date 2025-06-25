@@ -41,7 +41,7 @@ rustPlatform.buildRustPackage rec {
     '';
     homepage = "https://github.com/danyspin97/wpaperd";
     license = licenses.gpl3Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [
       DPDmancul
       fsnkty

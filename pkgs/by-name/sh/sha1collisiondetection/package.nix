@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
       each file. It is very fast and takes less than twice the amount
       of time as regular SHA-1.
     '';
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ leenaars ];
     license = lib.licenses.mit;
   };

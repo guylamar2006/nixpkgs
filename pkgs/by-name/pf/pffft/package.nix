@@ -23,6 +23,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/marton78/pffft";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ sikmir ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

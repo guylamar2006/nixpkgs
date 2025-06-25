@@ -369,6 +369,6 @@ stdenv.mkDerivation (self: {
     description = "Set of command line tools that assist applications with a variety of desktop integration tasks";
     license = licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

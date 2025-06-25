@@ -103,7 +103,7 @@ stdenv.mkDerivation (finalAttrs: {
       bsd3 # tzcode
       publicDomain # tzdata
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [
       ajs124
       fpletz

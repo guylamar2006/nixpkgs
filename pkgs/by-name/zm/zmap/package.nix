@@ -54,7 +54,7 @@ stdenv.mkDerivation rec {
     license = licenses.asl20;
     description = "Fast single packet network scanner designed for Internet-wide network surveys";
     maintainers = with maintainers; [ ma27 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin;
   };
 }

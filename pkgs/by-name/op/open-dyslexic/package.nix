@@ -30,7 +30,7 @@ stdenvNoCC.mkDerivation {
     homepage = "https://opendyslexic.org/";
     description = "Font created to increase readability for readers with dyslexia";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ rycee ];
   };
 }

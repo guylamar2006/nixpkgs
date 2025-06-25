@@ -28,6 +28,6 @@ stdenv.mkDerivation rec {
     license = licenses.gpl3Only;
     maintainers = with maintainers; [ tochiaha ];
     mainProgram = "torctl";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

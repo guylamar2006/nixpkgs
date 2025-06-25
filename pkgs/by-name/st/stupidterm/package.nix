@@ -49,7 +49,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/esmil/stupidterm";
     license = lib.licenses.lgpl3Plus;
     maintainers = with lib.maintainers; [ etu ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "stupidterm";
   };
 }

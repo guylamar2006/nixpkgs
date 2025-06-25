@@ -44,7 +44,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/ttzhou/setroot";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ vyp ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "setroot";
   };
 }

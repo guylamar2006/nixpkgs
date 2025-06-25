@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
       depth indented listing of files, which is colorized ala dircolors if
       the LS_COLORS environment variable is set and output is to tty.
     '';
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ nickcao ];
     mainProgram = "tree";
   };

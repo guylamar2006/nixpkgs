@@ -23,7 +23,7 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://github.com/kpcyrd/rshijack";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ xrelkd ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "rshijack";
   };
 }

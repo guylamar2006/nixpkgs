@@ -27,7 +27,7 @@ buildNimPackage {
     mainProgram = "native_main";
     homepage = "https://github.com/tridactyl/native_messenger";
     license = licenses.bsd2;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [
       timokau
       dit7ya

@@ -93,6 +93,6 @@ stdenv.mkDerivation rec {
     downloadPage = "https://github.com/rcaelers/workrave/releases";
     license = licenses.gpl3;
     maintainers = with maintainers; [ prikhi ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

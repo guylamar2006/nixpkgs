@@ -98,7 +98,7 @@ stdenv.mkDerivation rec {
     mainProgram = "unitd";
     homepage = "https://unit.nginx.org/";
     license = licenses.asl20;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ izorkin ];
   };
 }

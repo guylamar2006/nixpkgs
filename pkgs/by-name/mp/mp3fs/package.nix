@@ -58,7 +58,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://khenriks.github.io/mp3fs/";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ Luflosi ];
     mainProgram = "mp3fs";
   };

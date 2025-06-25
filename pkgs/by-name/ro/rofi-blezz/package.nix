@@ -39,6 +39,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/davatorium/rofi-blezz";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ johnjohnstone ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

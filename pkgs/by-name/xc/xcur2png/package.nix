@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/eworm-de/xcur2png/releases";
     description = "Convert X cursors to PNG images";
     license = licenses.gpl3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ romildo ];
     mainProgram = "xcur2png";
   };

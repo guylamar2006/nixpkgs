@@ -43,7 +43,7 @@ stdenvNoCC.mkDerivation {
     '';
     homepage = "http://yann.lecun.com/exdb/mnist/index.html";
     license = lib.licenses.cc-by-sa-30;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ cmcdragonkai ];
   };
 }

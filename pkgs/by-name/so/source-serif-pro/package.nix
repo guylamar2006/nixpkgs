@@ -32,7 +32,7 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://adobe-fonts.github.io/source-serif/";
     description = "Typeface for setting text in many sizes, weights, and languages. Designed to complement Source Sans";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ttuegel ];
   };
 }

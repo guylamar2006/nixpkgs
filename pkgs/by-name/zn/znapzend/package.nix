@@ -78,6 +78,6 @@ stdenv.mkDerivation (finalAttrs: {
       otwieracz
       ma27
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

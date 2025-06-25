@@ -36,6 +36,6 @@ stdenv.mkDerivation rec {
     '';
     homepage = "http://www.gnupg.org";
     license = lib.licenses.lgpl3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

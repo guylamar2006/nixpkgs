@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl3Plus;
     homepage = "https://github.com/zoltanp/xrandr-invert-colors";
     maintainers = with lib.maintainers; [ magnetophon ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "xrandr-invert-colors";
   };
 }

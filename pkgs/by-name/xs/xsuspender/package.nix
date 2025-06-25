@@ -48,6 +48,6 @@ stdenv.mkDerivation rec {
     homepage = "https://kernc.github.io/xsuspender/";
     license = licenses.wtfpl;
     maintainers = with maintainers; [ offline ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

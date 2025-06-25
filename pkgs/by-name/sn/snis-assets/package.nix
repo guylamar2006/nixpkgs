@@ -49,7 +49,7 @@ stdenv.mkDerivation {
       licenses.publicDomain
     ];
     maintainers = with lib.maintainers; [ pentane ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     hydraPlatforms = [ ];
   };
 }

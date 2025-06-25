@@ -34,6 +34,6 @@ stdenv.mkDerivation rec {
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     maintainers = with lib.maintainers; [ jbedo ];
     mainProgram = "picard";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

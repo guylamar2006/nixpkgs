@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     mainProgram = "nss_wrapper.pl";
     homepage = "https://git.samba.org/?p=nss_wrapper.git;a=summary;";
     license = lib.licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin;
   };
 }

@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
     description = "Tool and library to extract CAB files from InstallShield installers";
     homepage = "https://github.com/twogood/unshield";
     license = licenses.mit;
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
     mainProgram = "unshield";
   };
 }

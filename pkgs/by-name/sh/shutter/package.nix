@@ -106,7 +106,7 @@ stdenv.mkDerivation rec {
     mainProgram = "shutter";
     homepage = "https://shutter-project.org/";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ bjornfor ];
   };
 }

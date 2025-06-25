@@ -84,6 +84,6 @@ stdenv.mkDerivation rec {
       barab-i
       sergioribera
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

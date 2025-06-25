@@ -93,7 +93,7 @@ stdenv.mkDerivation rec {
     mainProgram = "re.sonny.Tangram";
     homepage = "https://github.com/sonnyp/Tangram";
     license = licenses.gpl3Only;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [
       austinbutler
       chuangzhu

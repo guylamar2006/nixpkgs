@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/virtualsquare/vde-2";
     description = "Virtual Distributed Ethernet, an Ethernet compliant virtual network";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = licenses.gpl2Plus;
   };
 }

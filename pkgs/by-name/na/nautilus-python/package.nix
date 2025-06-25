@@ -66,6 +66,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://gitlab.gnome.org/GNOME/nautilus-python";
     license = lib.licenses.gpl2Plus;
     teams = with lib.teams; [ gnome ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
       womfoo
       raitobezarius
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "sniproxy";
   };
 

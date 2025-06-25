@@ -62,6 +62,6 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/yuxshao/ptcollab/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ OPNA2608 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

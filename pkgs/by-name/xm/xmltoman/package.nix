@@ -50,6 +50,6 @@ stdenvNoCC.mkDerivation rec {
     license = licenses.gpl2Only;
     maintainers = with maintainers; [ tochiaha ];
     mainProgram = "xmltoman";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

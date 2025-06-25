@@ -29,7 +29,7 @@ buildGoModule rec {
     homepage = "https://github.com/SR-G/sleep-on-lan";
     description = "Multi-platform process allowing to sleep on LAN a Linux or Windows computer, through wake-on-lan (reversed) magic packets or through HTTP REST requests";
     license = lib.licenses.asl20;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ devusb ];
     mainProgram = "sleep-on-lan";
   };

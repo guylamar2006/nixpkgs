@@ -94,6 +94,6 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Fast and secure translation on your local machine, powered by marian and Bergamot";
     license = licenses.mit;
     maintainers = with maintainers; [ euxane ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 })

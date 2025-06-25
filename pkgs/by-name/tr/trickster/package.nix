@@ -50,6 +50,6 @@ buildGoModule rec {
     homepage = "https://trickstercache.org/";
     license = licenses.asl20;
     maintainers = with maintainers; [ _1000101 ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

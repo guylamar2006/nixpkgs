@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
       marcweber
       obadz
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "stun";
   };
 }

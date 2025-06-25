@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
       and PSF2 (any width) formats are supported; the default output
       format is PSF2.
     '';
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ kaction ];
   };

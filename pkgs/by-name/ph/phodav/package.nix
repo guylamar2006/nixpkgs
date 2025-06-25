@@ -65,6 +65,6 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.gnome.org/GNOME/phodav";
     license = lib.licenses.lgpl21Plus;
     maintainers = with lib.maintainers; [ wegank ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -67,6 +67,6 @@ stdenv.mkDerivation rec {
     homepage = "https://openal-soft.org/";
     license = lib.licenses.lgpl2;
     maintainers = with lib.maintainers; [ ftrvxmtrx ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

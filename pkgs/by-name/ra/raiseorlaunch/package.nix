@@ -26,6 +26,6 @@ python3Packages.buildPythonApplication rec {
     mainProgram = "raiseorlaunch";
     homepage = "https://github.com/open-dynaMIX/raiseorlaunch";
     license = lib.licenses.mit;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/nonpop/xkblayout-state";
     license = licenses.gpl2;
     maintainers = with lib.maintainers; [ jagajaga ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "xkblayout-state";
   };
 }

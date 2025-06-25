@@ -20,7 +20,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Report when files are changed";
     license = lib.licenses.publicDomain;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ somasis ];
     mainProgram = "rwc";
   };

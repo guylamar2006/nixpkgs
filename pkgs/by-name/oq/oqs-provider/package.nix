@@ -55,6 +55,6 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Open Quantum Safe provider for OpenSSL (3.x)";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ rixxc ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

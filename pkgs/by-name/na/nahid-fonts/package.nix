@@ -27,7 +27,7 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://github.com/rastikerdar/nahid-font";
     description = "Persian (Farsi) Font - قلم (فونت) فارسی ناهید";
     license = lib.licenses.free;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
   };
 }

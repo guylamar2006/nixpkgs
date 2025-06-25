@@ -39,6 +39,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ matthiasbeyer ];
     mainProgram = "pipes.sh";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

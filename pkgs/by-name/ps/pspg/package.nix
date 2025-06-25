@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/okbob/pspg";
     description = "Postgres Pager";
     license = lib.licenses.bsd2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ jlesquembre ];
     mainProgram = "pspg";
   };

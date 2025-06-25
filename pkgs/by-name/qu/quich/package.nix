@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/Usbac/quich";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ xdhampus ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "quich";
   };
 }

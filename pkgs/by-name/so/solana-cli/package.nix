@@ -128,7 +128,7 @@ rustPlatform.buildRustPackage rec {
       happysalada
       aikooo7
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 
   passthru.updateScript = nix-update-script { };

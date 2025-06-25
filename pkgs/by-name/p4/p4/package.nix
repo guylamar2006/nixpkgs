@@ -131,7 +131,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://www.perforce.com";
     license = lib.licenses.bsd2;
     mainProgram = "p4";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       corngood
       impl

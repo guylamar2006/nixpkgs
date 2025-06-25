@@ -46,6 +46,6 @@ stdenv.mkDerivation {
       wtfpl
     ];
     maintainers = with maintainers; [ emilytrau ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

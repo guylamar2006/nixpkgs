@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/pymumu/smartdns";
     maintainers = with lib.maintainers; [ lexuge ];
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "smartdns";
   };
 }

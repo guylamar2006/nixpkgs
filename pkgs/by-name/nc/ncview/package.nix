@@ -42,6 +42,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.gpl3Plus;
     mainProgram = "ncview";
     maintainers = with lib.maintainers; [ jmettes ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

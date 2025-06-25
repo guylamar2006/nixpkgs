@@ -31,6 +31,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://github.com/z-shell/F-Sy-H";
     license = licenses.bsd3;
     maintainers = with maintainers; [ mrfreezeex ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

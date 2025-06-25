@@ -83,6 +83,6 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "tumiki-fighters";
     license = licenses.bsd2;
     maintainers = with maintainers; [ fgaz ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

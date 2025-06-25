@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/brandt/symlinks";
     license = licenses.mit;
     maintainers = with maintainers; [ ckauhaus ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "symlinks";
   };
 }

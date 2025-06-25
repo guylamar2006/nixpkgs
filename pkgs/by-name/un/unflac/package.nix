@@ -28,7 +28,7 @@ buildGoModule rec {
     description = "Command line tool for fast frame accurate audio image + cue sheet splitting";
     homepage = "https://sr.ht/~ft/unflac/";
     license = licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ felipeqq2 ];
     mainProgram = "unflac";
   };

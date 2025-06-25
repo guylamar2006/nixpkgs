@@ -67,6 +67,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://graphics.globalcode.info/v_0/shader-shark.xhtml";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ lucasew ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 })

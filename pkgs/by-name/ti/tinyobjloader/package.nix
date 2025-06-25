@@ -30,6 +30,6 @@ stdenv.mkDerivation rec {
     description = "Tiny but powerful single file wavefront obj loader";
     license = licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

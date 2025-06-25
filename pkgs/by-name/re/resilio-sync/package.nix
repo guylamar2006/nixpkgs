@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.resilio.com/";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unfreeRedistributable;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [
       thoughtpolice
       cwoac

@@ -18,6 +18,6 @@ python3Packages.buildPythonApplication rec {
     description = "Wrapper script to build whole-program LLVM bitcode files";
     license = licenses.mit;
     maintainers = with maintainers; [ mic92 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -50,6 +50,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/sigmavirus24/x11-ssh-askpass";
     description = "Lightweight passphrase dialog for OpenSSH or other open variants of SSH";
     license = licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

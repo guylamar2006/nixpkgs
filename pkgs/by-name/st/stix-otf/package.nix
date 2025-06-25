@@ -26,7 +26,7 @@ stdenvNoCC.mkDerivation rec {
     homepage = "http://www.stixfonts.org/";
     description = "Fonts for Scientific and Technical Information eXchange";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ rycee ];
   };
 }

@@ -60,6 +60,6 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.gpl2;
     homepage = "https://sourceforge.net/projects/sqsh/";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

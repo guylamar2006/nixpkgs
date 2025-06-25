@@ -86,7 +86,7 @@ stdenv.mkDerivation rec {
       ma27
     ];
     license = licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "tig";
   };
 }

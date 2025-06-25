@@ -64,6 +64,6 @@ stdenv.mkDerivation rec {
       primeos
       ryan4yin
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

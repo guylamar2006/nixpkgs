@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/Zebradil/xkb-switch-i3";
     license = licenses.gpl3Plus;
     maintainers = with maintainers; [ ewok ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "xkb-switch";
   };
 }

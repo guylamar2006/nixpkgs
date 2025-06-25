@@ -64,7 +64,7 @@ stdenv.mkDerivation rec {
     mainProgram = "tpm2-abrmd";
     homepage = "https://github.com/tpm2-software/tpm2-tools";
     license = licenses.bsd3;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ matthiasbeyer ];
   };
 }

@@ -50,6 +50,6 @@ stdenv.mkDerivation rec {
     # commercial license available as well, see homepage. You'll get some more optimized routines
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ marcweber ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

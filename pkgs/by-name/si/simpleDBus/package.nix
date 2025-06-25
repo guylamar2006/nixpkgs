@@ -41,7 +41,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "C++ wrapper for libdbus-1";
     homepage = "https://github.com/OpenBluetoothToolbox/SimpleBLE";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ aciceri ];
   };
 })

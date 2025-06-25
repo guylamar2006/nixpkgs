@@ -102,6 +102,6 @@ stdenv.mkDerivation rec {
       aleksana
       wegank
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

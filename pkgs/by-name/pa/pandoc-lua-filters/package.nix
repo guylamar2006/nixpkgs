@@ -30,6 +30,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/pandoc/lua-filters";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ jtojnar ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

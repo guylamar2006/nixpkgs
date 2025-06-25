@@ -33,6 +33,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/bucanero/ps3iso-utils";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ soupglasses ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

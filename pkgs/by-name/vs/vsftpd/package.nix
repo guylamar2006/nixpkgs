@@ -59,6 +59,6 @@ stdenv.mkDerivation rec {
     mainProgram = "vsftpd";
     license = licenses.gpl2Only;
     maintainers = with maintainers; [ peterhoeg ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

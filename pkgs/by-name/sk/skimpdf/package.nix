@@ -32,6 +32,6 @@ stdenv.mkDerivation rec {
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
     mainProgram = "Skim.app";
     maintainers = with lib.maintainers; [ YvesStraten ];
-    platforms = platforms.darwin;
+    platforms = lib.platforms.darwin;
   };
 }

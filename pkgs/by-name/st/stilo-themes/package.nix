@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     description = "Minimalistic GTK, gnome shell and Xfce themes";
     homepage = "https://github.com/lassekongo83/stilo-themes";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ romildo ];
   };
 }

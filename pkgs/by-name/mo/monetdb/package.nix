@@ -54,7 +54,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Open source database system";
     homepage = "https://www.monetdb.org/";
     license = lib.licenses.mpl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ StillerHarpo ];
   };
 })

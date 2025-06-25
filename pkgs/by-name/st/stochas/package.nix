@@ -57,6 +57,6 @@ stdenv.mkDerivation rec {
     homepage = "https://stochas.org/";
     license = lib.licenses.gpl3Plus;
     maintainers = with maintainers; [ magnetophon ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

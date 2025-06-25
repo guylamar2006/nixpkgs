@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
     changelog = "https://github.com/netdiscover-scanner/netdiscover/releases/tag/${src.tag}";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ vdot0x23 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "netdiscover";
   };
 }

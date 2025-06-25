@@ -57,6 +57,6 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.freedesktop.org/pwithnall/uhttpmock/";
     license = licenses.lgpl21Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

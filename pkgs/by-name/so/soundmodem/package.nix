@@ -60,6 +60,6 @@ stdenv.mkDerivation rec {
     downloadPage = "https://archive.org/download/${pname}-${version}/${pname}-${version}.tar.gz";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ ymarkus ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

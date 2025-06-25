@@ -53,6 +53,6 @@ stdenv.mkDerivation rec {
       isc
     ];
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

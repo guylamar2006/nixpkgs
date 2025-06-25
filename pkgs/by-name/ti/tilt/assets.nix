@@ -103,6 +103,6 @@ stdenvNoCC.mkDerivation {
     homepage = "https://tilt.dev/";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ anton-dessiatov ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

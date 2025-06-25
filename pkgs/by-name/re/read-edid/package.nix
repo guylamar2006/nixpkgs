@@ -31,6 +31,6 @@ stdenv.mkDerivation rec {
     homepage = "http://www.polypux.org/projects/read-edid/";
     license = lib.licenses.bsd2; # Quoted: "This is an unofficial license. Let's call it BSD-like."
     maintainers = with lib.maintainers; [ dezgeg ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

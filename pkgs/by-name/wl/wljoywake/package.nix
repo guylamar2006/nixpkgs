@@ -42,7 +42,7 @@ stdenv.mkDerivation {
     description = "Wayland tool for idle inhibit when using joysticks";
     homepage = "https://github.com/nowrep/wljoywake";
     license = licenses.gpl2;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ jtrees ];
     mainProgram = "wljoywake";
   };

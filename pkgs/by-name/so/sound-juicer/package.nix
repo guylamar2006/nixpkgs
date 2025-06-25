@@ -68,6 +68,6 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.gnome.org/GNOME/sound-juicer";
     maintainers = with lib.maintainers; [ bdimcheff ];
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

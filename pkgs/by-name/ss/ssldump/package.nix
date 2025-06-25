@@ -36,7 +36,7 @@ stdenv.mkDerivation {
     homepage = "https://ssldump.sourceforge.net";
     license = "BSD-style";
     maintainers = with maintainers; [ aycanirican ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "ssldump";
   };
 }

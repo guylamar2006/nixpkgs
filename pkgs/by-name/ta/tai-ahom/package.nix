@@ -28,6 +28,6 @@ stdenvNoCC.mkDerivation {
     description = "Unicode-compliant Tai Ahom font";
     maintainers = with maintainers; [ mathnerd314 ];
     license = licenses.ofl; # See font metadata
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

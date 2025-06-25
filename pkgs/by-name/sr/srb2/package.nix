@@ -112,7 +112,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "Sonic Robo Blast 2 is a 3D Sonic the Hedgehog fangame based on a modified version of Doom Legacy";
     homepage = "https://www.srb2.org/";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = lib.licenses.gpl2Plus;
     maintainers = with maintainers; [
       zeratax

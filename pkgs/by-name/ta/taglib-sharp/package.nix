@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Library for reading and writing metadata in media files";
     homepage = "https://github.com/mono/taglib-sharp";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = licenses.lgpl21;
   };
 }

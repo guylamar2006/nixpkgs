@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
   '';
   meta = with lib; {
     description = "Stream parser of Apple's pbzx compression format";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ matthewbauer ];
     mainProgram = "pbzx";

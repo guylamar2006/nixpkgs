@@ -54,7 +54,7 @@ stdenv.mkDerivation {
     homepage = "https://tmate.io/";
     description = "Instant Terminal Sharing";
     license = licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ ck3d ];
     mainProgram = "tmate";
   };

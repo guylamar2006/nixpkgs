@@ -36,6 +36,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/emqx/qmqtt";
     license = lib.licenses.epl10;
     maintainers = with lib.maintainers; [ hexa ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

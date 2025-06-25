@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     inherit (src.meta) homepage;
     description = "PFS (PlayStation File System) shell for POSIX-based systems";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = with licenses; [
       gpl2Only # the pfsshell software itself
       afl20 # APA, PFS, and iomanX libraries which are compiled together with this package

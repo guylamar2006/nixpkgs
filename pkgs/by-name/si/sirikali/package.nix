@@ -76,6 +76,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ linuxissuper ];
     mainProgram = "sirikali";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

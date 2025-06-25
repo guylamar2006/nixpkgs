@@ -28,7 +28,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/kirtan-shah/nowplaying-cli";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ emilytrau ];
-    platforms = platforms.darwin;
+    platforms = lib.platforms.darwin;
     mainProgram = "nowplaying-cli";
   };
 })

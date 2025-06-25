@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     mainProgram = "swaks";
     license = licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 
 }

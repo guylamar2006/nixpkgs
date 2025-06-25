@@ -36,6 +36,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/ros/urdfdom_headers";
     license = licenses.bsd3;
     maintainers = with maintainers; [ lopsided98 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

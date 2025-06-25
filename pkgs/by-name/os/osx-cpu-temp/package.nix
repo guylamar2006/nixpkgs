@@ -26,6 +26,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/lavoiesl/osx-cpu-temp";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ virusdave ];
-    platforms = platforms.darwin;
+    platforms = lib.platforms.darwin;
   };
 }

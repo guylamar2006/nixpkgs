@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
     description = "'top' like tool for monitoring X Client server resource usage";
     homepage = "https://gitlab.freedesktop.org/xorg/app/xrestop";
     maintainers = with maintainers; [ qyliss ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = licenses.gpl2Plus;
     mainProgram = "xrestop";
   };

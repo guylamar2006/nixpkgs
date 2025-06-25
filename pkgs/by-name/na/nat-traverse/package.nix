@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://www.speicherleck.de/iblech/nat-traverse/";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ iblech ];
     mainProgram = "nat-traverse";
   };

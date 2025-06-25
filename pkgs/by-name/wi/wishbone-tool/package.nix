@@ -33,6 +33,6 @@ rustPlatform.buildRustPackage {
     homepage = "https://github.com/litex-hub/wishbone-utils";
     license = licenses.asl20;
     maintainers = with maintainers; [ edef ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

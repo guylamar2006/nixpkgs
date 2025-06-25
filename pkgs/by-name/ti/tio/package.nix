@@ -43,6 +43,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "tio";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

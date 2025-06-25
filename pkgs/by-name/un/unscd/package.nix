@@ -77,7 +77,7 @@ stdenv.mkDerivation rec {
     description = "Less buggy replacement for the glibc name service cache daemon";
     mainProgram = "nscd";
     license = licenses.gpl2Only;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ ];
   };
 }

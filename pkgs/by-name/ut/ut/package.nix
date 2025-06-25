@@ -30,6 +30,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/boost-ext/ut";
     license = licenses.boost;
     maintainers = with maintainers; [ matthewcroughan ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

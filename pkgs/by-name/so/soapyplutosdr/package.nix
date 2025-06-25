@@ -40,6 +40,6 @@ stdenv.mkDerivation (finalAttrs: {
     description = "SoapySDR plugin for Pluto SDR devices";
     license = lib.licenses.lgpl21;
     maintainers = with lib.maintainers; [ wucke13 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

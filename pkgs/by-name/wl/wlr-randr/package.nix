@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.freedesktop.org/emersion/wlr-randr";
     license = licenses.mit;
     maintainers = with maintainers; [ ma27 ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "wlr-randr";
   };
 }

@@ -27,7 +27,7 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://git.sr.ht/~shinyzenith/waylevel";
     license = licenses.bsd2;
     maintainers = with maintainers; [ dit7ya ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "waylevel";
   };
 }

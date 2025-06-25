@@ -68,7 +68,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/lucc/nvimpager";
     license = lib.licenses.bsd2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ lucc ];
     mainProgram = "nvimpager";
   };

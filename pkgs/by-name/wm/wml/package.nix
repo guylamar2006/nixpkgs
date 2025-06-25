@@ -87,6 +87,6 @@ perlPackages.buildPerlPackage {
     homepage = "https://www.shlomifish.org/open-source/projects/website-meta-language/";
     description = "Off-line HTML generation toolkit for Unix";
     license = licenses.gpl2;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

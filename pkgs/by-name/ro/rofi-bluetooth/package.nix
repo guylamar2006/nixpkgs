@@ -43,6 +43,6 @@ stdenv.mkDerivation {
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ MoritzBoehme ];
     mainProgram = "rofi-bluetooth";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

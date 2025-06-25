@@ -53,7 +53,7 @@ stdenv.mkDerivation rec {
     homepage = "https://smc.sourceforge.net/";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = lib.licenses.mpl11;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ bjornfor ];
     mainProgram = "smc";
   };

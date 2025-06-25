@@ -78,6 +78,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.gpl2Plus;
     mainProgram = "Nuked-MD";
     maintainers = with lib.maintainers; [ OPNA2608 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

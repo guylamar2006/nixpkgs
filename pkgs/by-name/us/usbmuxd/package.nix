@@ -53,7 +53,7 @@ stdenv.mkDerivation rec {
       in parallel. The higher-level layers are handled by libimobiledevice.
     '';
     license = licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "usbmuxd";
   };

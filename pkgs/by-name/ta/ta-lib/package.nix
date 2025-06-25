@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
     homepage = "https://ta-lib.org/";
     license = lib.licenses.bsd3;
 
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ rafael ];
   };
 }

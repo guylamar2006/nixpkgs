@@ -72,7 +72,7 @@ stdenv.mkDerivation (finalAttrs: {
       # libmunge
       licenses.lgpl3Plus
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ rickynils ];
   };
 })

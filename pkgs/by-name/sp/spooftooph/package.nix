@@ -31,7 +31,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Automate spoofing or clone Bluetooth device Name, Class, and Address";
     mainProgram = "spooftooph";
     license = lib.licenses.gpl2Only;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ d3vil0p3r ];
   };
 })

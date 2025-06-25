@@ -19,7 +19,7 @@ stdenv.mkDerivation rec {
     homepage = "https://mrob.com/pub/ries/";
     description = "Tool to produce a list of equations that approximately solve to a given number";
     mainProgram = "ries";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ symphorien ];
     license = lib.licenses.gpl3Plus;
   };

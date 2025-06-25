@@ -27,7 +27,7 @@ runCommand "signwriting-1.1.4"
       description = "Typeface for written sign languages";
       maintainers = with lib.maintainers; [ mathnerd314 ];
       license = lib.licenses.ofl;
-      platforms = platforms.all;
+      platforms = lib.platforms.all;
     };
   }
   ''

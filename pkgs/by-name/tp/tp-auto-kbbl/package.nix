@@ -34,7 +34,7 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://github.com/saibotd/tp-auto-kbbl";
     license = licenses.mit;
     maintainers = with maintainers; [ ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "tp-auto-kbbl";
   };
 }

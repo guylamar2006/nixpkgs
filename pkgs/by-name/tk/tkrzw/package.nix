@@ -28,6 +28,6 @@ stdenv.mkDerivation rec {
     homepage = "https://dbmx.net/tkrzw/";
     maintainers = with maintainers; [ ehmry ];
     license = licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

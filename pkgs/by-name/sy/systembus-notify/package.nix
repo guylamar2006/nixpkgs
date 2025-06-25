@@ -62,7 +62,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/rfjakob/systembus-notify";
     license = licenses.mit;
     maintainers = with maintainers; [ peterhoeg ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "systembus-notify";
   };
 }

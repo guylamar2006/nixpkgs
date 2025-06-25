@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     mainProgram = "prodigal";
     homepage = "https://github.com/hyattpd/Prodigal";
     license = lib.licenses.gpl3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ luispedro ];
   };
 }

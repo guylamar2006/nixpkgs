@@ -56,6 +56,6 @@ stdenv.mkDerivation {
       MayNiklas
     ];
     mainProgram = "v4l2ndi";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

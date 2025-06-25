@@ -46,6 +46,6 @@ stdenv.mkDerivation {
     description = "New VGMPlay, based on libvgm";
     license = licenses.unfree; # no licensing text anywhere yet
     maintainers = with maintainers; [ OPNA2608 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

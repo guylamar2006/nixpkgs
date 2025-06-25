@@ -18,7 +18,7 @@ stdenv.mkDerivation rec {
     description = "Non-interactive ssh password auth";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ madjar ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "sshpass";
   };
 }

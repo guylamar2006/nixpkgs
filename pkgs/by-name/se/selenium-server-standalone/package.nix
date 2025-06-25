@@ -47,6 +47,6 @@ stdenv.mkDerivation rec {
       offline
     ];
     mainProgram = "selenium-server";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -130,7 +130,7 @@ stdenv.mkDerivation rec {
       amount of material to be extruded.'';
     homepage = "https://slic3r.org/";
     license = lib.licenses.agpl3Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ bjornfor ];
   };
 }

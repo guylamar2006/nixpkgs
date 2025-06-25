@@ -61,7 +61,7 @@ pypkgs.buildPythonApplication rec {
       ttuegel
       peterhoeg
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "rubber";
   };
 }

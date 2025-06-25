@@ -39,6 +39,6 @@ stdenv.mkDerivation rec {
     homepage = "gopher://bitreich.org/1/scm/sacc";
     license = lib.licenses.isc;
     maintainers = with lib.maintainers; [ sternenseemann ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     maintainers = with lib.maintainers; [ ];
     description = "Easy to buy, deploy, and manage your SSL certs";
     mainProgram = "sslmate";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.mit; # X11
   };
 }

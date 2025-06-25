@@ -72,7 +72,7 @@ stdenv.mkDerivation rec {
     description = "Set of libraries and utilities to access smart cards";
     homepage = "https://github.com/OpenSC/OpenSC/wiki";
     license = lib.licenses.lgpl21Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ michaeladler ];
   };
 }

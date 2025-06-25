@@ -29,6 +29,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/ibara/oed";
     license = with licenses; [ bsd2 ];
     mainProgram = "ed";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

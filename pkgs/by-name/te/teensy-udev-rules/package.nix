@@ -32,7 +32,7 @@ stdenv.mkDerivation {
       devices, which includes the Teensy.  See comments in the .rules file (or
       this package's homepage) for possible workarounds.
     '';
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = licenses.unfree; # No license specified.
     maintainers = with maintainers; [ aidalgol ];
   };

@@ -26,7 +26,7 @@ stdenv.mkDerivation {
   meta = with lib; {
     homepage = "https://help.wooting.io/article/147-configuring-device-access-for-wootility-under-linux-udev-rules";
     description = "udev rules that give NixOS permission to communicate with Wooting keyboards";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = "unknown";
     maintainers = with maintainers; [
       returntoreality

@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     homepage = "http://caca.zoy.org/wiki/toilet";
     license = licenses.wtfpl;
     maintainers = with maintainers; [ pSub ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "toilet";
   };
 }

@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/philj56/tofi";
     license = licenses.mit;
     maintainers = with maintainers; [ fbergroth ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "tofi";
   };
 }

@@ -52,7 +52,7 @@ stdenvNoCC.mkDerivation rec {
       supports Korean hangeul — both contemporary and archaic.
     '';
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       mathnerd314
       emily

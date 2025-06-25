@@ -25,6 +25,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.nongnu.org/numdiff/";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

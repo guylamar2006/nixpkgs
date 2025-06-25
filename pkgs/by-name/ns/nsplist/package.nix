@@ -31,6 +31,6 @@ stdenv.mkDerivation {
     maintainers = with lib.maintainers; [ matthewbauer ];
     description = "Parses .plist files";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

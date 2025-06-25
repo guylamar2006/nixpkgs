@@ -44,6 +44,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/zfsnap/zfsnap";
     license = licenses.bsd3;
     maintainers = with maintainers; [ woffs ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

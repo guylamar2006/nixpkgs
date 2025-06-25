@@ -76,7 +76,7 @@ stdenv.mkDerivation rec {
     description = "Enhanced port of the official DOOM source code";
     # Doom source license, MAME license
     license = licenses.unfreeRedistributable;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ lassulus ];
   };
 }

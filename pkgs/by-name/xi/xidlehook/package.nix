@@ -51,8 +51,8 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://github.com/jD91mZM2/xidlehook";
     license = licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
-    badPlatforms = platforms.darwin;
+    platforms = lib.platforms.unix;
+    badplatforms = lib.platforms.darwin;
     mainProgram = "xidlehook";
   };
 }

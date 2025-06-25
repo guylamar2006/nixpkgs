@@ -38,6 +38,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://github.com/googlefonts/roboto-serif";
     license = lib.licenses.ofl;
     maintainers = with lib.maintainers; [ wegank ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -28,7 +28,7 @@ stdenvNoCC.mkDerivation {
     homepage = "https://pecita.eu/police-en.php";
     description = "Handwritten font with connected glyphs";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ rycee ];
   };
 }

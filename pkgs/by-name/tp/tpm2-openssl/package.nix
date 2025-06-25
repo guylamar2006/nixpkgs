@@ -44,6 +44,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/tpm2-software/tpm2-openssl";
     license = licenses.bsd3;
     maintainers = with maintainers; [ stv0g ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 })

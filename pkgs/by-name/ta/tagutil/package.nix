@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/kaworu/tagutil";
     license = licenses.bsd2;
     maintainers = with maintainers; [ dan4ik605743 ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "tagutil";
   };
 }

@@ -26,6 +26,6 @@ stdenv.mkDerivation rec {
     description = "C++ library for large scale eigenvalue problems, built on top of Eigen";
     license = lib.licenses.mpl20;
     maintainers = with lib.maintainers; [ vonfry ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

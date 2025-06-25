@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     description = "POSIX-shell based file manager";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "shfm";
   };
 }

@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
     broken = stdenv.hostPlatform.isDarwin;
     homepage = "http://tcpcrypt.org/";
     description = "Fast TCP encryption";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = licenses.bsd2;
   };
 }

@@ -82,6 +82,6 @@ python3.pkgs.buildPythonApplication rec {
       schmittlauch
       melvyn2
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

@@ -20,6 +20,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.nongnu.org/normalize/";
     description = "Audio file normalizer";
     license = lib.licenses.gpl2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

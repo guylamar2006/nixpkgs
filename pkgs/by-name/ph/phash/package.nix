@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
     description = "Compute the perceptual hash of an image";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ imalsogreg ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     homepage = "http://www.phash.org";
     downloadPage = "https://github.com/clearscene/pHash";
   };

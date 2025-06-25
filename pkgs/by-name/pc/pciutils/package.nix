@@ -68,7 +68,7 @@ stdenv.mkDerivation rec {
     homepage = "https://mj.ucw.cz/sw/pciutils/";
     description = "Collection of programs for inspecting and manipulating configuration of PCI devices";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ vcunat ]; # not really, but someone should watch it
     mainProgram = "lspci";
   };

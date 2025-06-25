@@ -40,6 +40,6 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     mainProgram = "swaymux";
     maintainers = with maintainers; [ grimmauld ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 })

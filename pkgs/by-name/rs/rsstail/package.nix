@@ -38,6 +38,6 @@ stdenv.mkDerivation (final: {
     homepage = "https://www.vanheusden.com/rsstail/";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ Necior ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

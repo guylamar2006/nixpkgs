@@ -72,7 +72,7 @@ python3.pkgs.buildPythonApplication rec {
     description = "Wikipedia Reader for the GNOME Desktop";
     homepage = "https://github.com/hugolabe/Wike";
     license = licenses.gpl3Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ samalws ];
     teams = with lib.teams; [ gnome-circle ];
     mainProgram = "wike";

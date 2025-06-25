@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
     description = "Meme system info tool for Linux";
     homepage = "https://github.com/TheDarkBug/uwufetch";
     license = licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ bbjubjub ];
     mainProgram = "uwufetch";
   };

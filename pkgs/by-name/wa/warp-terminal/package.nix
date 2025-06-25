@@ -117,7 +117,7 @@ let
       donteatoreo
       johnrtitor
     ];
-    platforms = platforms.darwin ++ [
+    platforms = lib.platforms.darwin ++ [
       "x86_64-linux"
       "aarch64-linux"
     ];

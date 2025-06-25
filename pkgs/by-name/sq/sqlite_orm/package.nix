@@ -31,6 +31,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://sqliteorm.com/";
     license = lib.licenses.agpl3Only; # MIT license is commercial
     maintainers = with maintainers; [ ambroisie ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

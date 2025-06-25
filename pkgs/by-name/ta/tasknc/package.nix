@@ -56,7 +56,7 @@ stdenv.mkDerivation rec {
     description = "Ncurses wrapper around taskwarrior";
     mainProgram = "tasknc";
     maintainers = with maintainers; [ matthiasbeyer ];
-    platforms = platforms.linux; # Cannot test others
+    platforms = lib.platforms.linux; # Cannot test others
     license = licenses.mit;
   };
 }

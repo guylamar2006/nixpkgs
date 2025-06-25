@@ -40,7 +40,7 @@ stdenv.mkDerivation (finalAttrs: {
     maintainers = with maintainers; [
       xzfc
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "xpointerbarrier";
   };
 })

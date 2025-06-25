@@ -158,6 +158,6 @@ mkPackage rec {
     ];
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ jdanek ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

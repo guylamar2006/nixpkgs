@@ -72,6 +72,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/dpjudas/SurrealEngine";
     license = licenses.zlib;
     maintainers = with maintainers; [ hughobrien ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 })

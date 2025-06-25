@@ -52,6 +52,6 @@ stdenv.mkDerivation rec {
     homepage = "https://wargus.github.io/stratagus.html";
     license = licenses.gpl2Only;
     maintainers = with lib.maintainers; [ astro ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     description = "Z80 assembly language cross compiler. It is based on the SjASM source code by Sjoerd Mastijn";
     mainProgram = "sjasmplus";
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ electrified ];
   };
 }

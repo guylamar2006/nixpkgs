@@ -21,6 +21,6 @@ stdenv.mkDerivation rec {
       description = "Dead simple LAN file transfers from the command line";
       license = with licenses; [ mit ];
       maintainers = with maintainers; [ ehmry ];
-      platforms = platforms.unix;
+      platforms = lib.platforms.unix;
     };
 }

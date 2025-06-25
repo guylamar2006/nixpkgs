@@ -79,6 +79,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/eth-cscs/SpFFT";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ sheepforce ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

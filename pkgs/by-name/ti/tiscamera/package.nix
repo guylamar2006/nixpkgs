@@ -139,7 +139,7 @@ stdenv.mkDerivation rec {
     description = "Linux sources and UVC firmwares for The Imaging Source cameras";
     homepage = "https://github.com/TheImagingSource/tiscamera";
     license = with licenses; [ asl20 ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ jraygauthier ];
   };
 }

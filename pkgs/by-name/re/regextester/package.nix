@@ -58,7 +58,7 @@ stdenv.mkDerivation rec {
     mainProgram = "com.github.artemanufrij.regextester";
     homepage = "https://github.com/artemanufrij/regextester";
     maintainers = with lib.maintainers; [ samdroid-apps ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = lib.licenses.gpl2Plus;
   };
 }

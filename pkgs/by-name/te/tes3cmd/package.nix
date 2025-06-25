@@ -29,6 +29,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/john-moonsugar/tes3cmd";
     license = licenses.mit;
     maintainers = with lib.maintainers; [ marius851000 ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

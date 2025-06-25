@@ -34,6 +34,6 @@ stdenv.mkDerivation {
     mainProgram = "pacvim";
     maintainers = with lib.maintainers; [ ];
     license = lib.licenses.lgpl3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
     description = "Parallel compressor/decompressor for xz format";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ raskin ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "pixz";
   };
 }

@@ -87,6 +87,6 @@ python3.pkgs.buildPythonApplication rec {
     homepage = "https://moz-conduit.readthedocs.io/en/latest/phabricator-user.html";
     license = lib.licenses.mpl20;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

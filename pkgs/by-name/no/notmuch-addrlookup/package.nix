@@ -33,7 +33,7 @@ stdenv.mkDerivation {
     description = "Address lookup tool for Notmuch in C";
     homepage = "https://github.com/aperezdc/notmuch-addrlookup-c";
     maintainers = with lib.maintainers; [ mog ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.mit;
     mainProgram = "notmuch-addrlookup";
   };

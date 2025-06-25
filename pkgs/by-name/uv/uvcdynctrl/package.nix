@@ -46,6 +46,6 @@ stdenv.mkDerivation {
     homepage = "https://guvcview.sourceforge.net";
     license = licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ puffnfresh ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

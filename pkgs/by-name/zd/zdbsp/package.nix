@@ -37,6 +37,6 @@ stdenv.mkDerivation rec {
       lassulus
       siraben
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

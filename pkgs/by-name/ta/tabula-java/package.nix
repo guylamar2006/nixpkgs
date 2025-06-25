@@ -45,7 +45,7 @@ maven.buildMavenPackage rec {
     homepage = "https://tabula.technology/";
     license = licenses.mit;
     maintainers = with lib.maintainers; [ jakewaksbaum ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "tabula-java";
   };
 }

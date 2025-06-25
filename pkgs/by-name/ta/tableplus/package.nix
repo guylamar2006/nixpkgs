@@ -33,6 +33,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://tableplus.com";
     license = licenses.unfree;
     maintainers = with maintainers; [ yamashitax ];
-    platforms = platforms.darwin;
+    platforms = lib.platforms.darwin;
   };
 })

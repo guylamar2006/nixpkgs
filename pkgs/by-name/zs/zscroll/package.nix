@@ -28,6 +28,6 @@ python3Packages.buildPythonApplication rec {
     mainProgram = "zscroll";
     homepage = "https://github.com/noctuid/zscroll";
     license = licenses.gpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

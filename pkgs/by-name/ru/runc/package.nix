@@ -70,7 +70,7 @@ buildGoModule rec {
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ offline ];
     teams = with lib.teams; [ podman ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "runc";
   };
 }

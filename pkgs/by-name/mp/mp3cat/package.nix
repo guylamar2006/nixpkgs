@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/tomclegg/mp3cat";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ omnipotententity ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "mp3cat";
   };
 }

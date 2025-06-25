@@ -49,7 +49,7 @@ rustPlatform.buildRustPackage rec {
       mit # or
       asl20
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [
       rvarago
       liff

@@ -53,6 +53,6 @@ rustPlatform.buildRustPackage rec {
       yuka
     ];
     license = lib.licenses.mit;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
     homepage = "https://named-data.net/";
     description = "Named Data Networking (NDN) Essential Tools";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ bertof ];
   };
 }

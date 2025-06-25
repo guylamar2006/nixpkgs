@@ -34,6 +34,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/rtrlib/rtrlib";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ Anillc ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

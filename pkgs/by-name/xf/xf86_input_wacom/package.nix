@@ -64,6 +64,6 @@ stdenv.mkDerivation rec {
     description = "Wacom digitizer driver for X11";
     homepage = "https://linuxwacom.sourceforge.net";
     license = licenses.gpl2Only;
-    platforms = platforms.linux; # Probably, works with other unixes as well
+    platforms = lib.platforms.linux; # Probably, works with other unixes as well
   };
 }

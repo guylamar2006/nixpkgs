@@ -50,6 +50,6 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.gnome.org/chergert/schemes";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ _0xMRTT ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

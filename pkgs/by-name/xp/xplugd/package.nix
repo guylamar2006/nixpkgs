@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/troglobit/xplugd";
     description = "UNIX daemon that executes a script on X input and RandR changes";
     license = licenses.mit;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ akho ];
     mainProgram = "xplugd";
   };

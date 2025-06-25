@@ -44,6 +44,6 @@ stdenv.mkDerivation rec {
     mainProgram = "thinkingrock";
     homepage = "http://www.thinkingrock.com.au/";
     license = licenses.cddl;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

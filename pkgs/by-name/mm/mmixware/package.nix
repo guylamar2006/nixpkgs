@@ -51,7 +51,7 @@ stdenv.mkDerivation {
     description = "MMIX simulator and assembler";
     homepage = "https://www-cs-faculty.stanford.edu/~knuth/mmix-news.html";
     maintainers = with lib.maintainers; [ siraben ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.publicDomain;
   };
 }

@@ -30,6 +30,6 @@ stdenv.mkDerivation rec {
     license = licenses.mit;
     mainProgram = "superhtml";
     maintainers = with maintainers; [ petertriho ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

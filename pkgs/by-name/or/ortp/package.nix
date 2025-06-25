@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     mainProgram = "ortp_tester";
     homepage = "https://linphone.org/technical-corner/ortp";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ jluttine ];
   };
 }

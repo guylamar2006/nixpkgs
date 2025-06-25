@@ -42,6 +42,6 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.com/DamienCassou/rofi-pulse-select";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ DamienCassou ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

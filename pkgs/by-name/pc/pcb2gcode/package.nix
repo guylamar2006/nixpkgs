@@ -50,6 +50,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/pcb2gcode/pcb2gcode";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ kritnich ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -45,7 +45,7 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://github.com/InputUsername/rescrobbled";
     license = lib.licenses.gpl3Plus;
     mainProgram = "rescrobbled";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ negatethis ];
   };
 }

@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
       boost # Boost
       bsd2 # FreeBSD CVS
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ huggy ];
     mainProgram = "mp4fpsmod";
   };

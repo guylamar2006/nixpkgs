@@ -40,6 +40,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = licenses.asl20;
     mainProgram = "iwasm";
     maintainers = with maintainers; [ ereslibre ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

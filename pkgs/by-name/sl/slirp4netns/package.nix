@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ orivej ];
     teams = with lib.teams; [ podman ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "slirp4netns";
   };
 }

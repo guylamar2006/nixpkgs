@@ -62,7 +62,7 @@ stdenv.mkDerivation rec {
     mainProgram = "swaylock";
     inherit (src.meta) homepage;
     license = licenses.mit;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ gnxlxnxx ];
   };
 }

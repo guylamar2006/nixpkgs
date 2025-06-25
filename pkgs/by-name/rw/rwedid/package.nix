@@ -47,7 +47,7 @@ rustPlatform.buildRustPackage rec {
     '';
     homepage = "https://codeberg.org/ral/rwedid";
     license = lib.licenses.mit;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ ];
   };
 }

@@ -22,6 +22,6 @@ stdenv.mkDerivation {
     '';
     license = licenses.mit;
     maintainers = with maintainers; [ bb2020 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

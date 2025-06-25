@@ -62,6 +62,6 @@ stdenv.mkDerivation rec {
     description = "Polynomial arithmetic over Z/nZ";
     license = with licenses; [ gpl3 ];
     teams = with lib.teams; [ sage ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

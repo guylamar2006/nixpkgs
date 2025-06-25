@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
     description = "dwm-like bar for dwl";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ magnouvean ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "somebar";
   };
 }

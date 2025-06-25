@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     description = "Nanomsg next generation";
     license = lib.licenses.mit;
     mainProgram = "nngcat";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ nviets ];
   };
 }

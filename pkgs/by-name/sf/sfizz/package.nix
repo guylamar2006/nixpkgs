@@ -81,7 +81,7 @@ stdenv.mkDerivation rec {
     description = "SFZ jack client and LV2 plugin";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ magnetophon ];
-    platforms = platforms.all;
-    badPlatforms = platforms.darwin;
+    platforms = lib.platforms.all;
+    badplatforms = lib.platforms.darwin;
   };
 }

@@ -38,7 +38,7 @@ stdenvNoCC.mkDerivation {
       free
       ofl
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ malyn ];
   };
 }

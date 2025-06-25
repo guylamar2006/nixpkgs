@@ -85,7 +85,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/WoeUSB/WoeUSB";
     license = licenses.gpl3Plus;
     maintainers = with maintainers; [ bjornfor ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "woeusb";
   };
 }

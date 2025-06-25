@@ -24,7 +24,7 @@ stdenv.mkDerivation rec {
     description = "Command line calculator";
     homepage = "https://w-calc.sourceforge.net";
     license = licenses.gpl2;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "wcalc";
   };
 }

@@ -41,6 +41,6 @@ stdenv.mkDerivation rec {
     description = "LV2 port of Autotalent pitch correction plugin";
     license = licenses.gpl3;
     maintainers = with lib.maintainers; [ michalrus ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

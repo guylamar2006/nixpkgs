@@ -56,6 +56,6 @@ stdenv.mkDerivation rec {
     description = "Middlebox detection tool";
     license = licenses.gpl2Only;
     maintainers = with maintainers; [ ck3d ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

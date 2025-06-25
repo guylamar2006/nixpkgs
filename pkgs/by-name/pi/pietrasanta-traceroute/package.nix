@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     ];
     mainProgram = "traceroute";
     maintainers = with lib.maintainers; [ nicoo ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     broken = stdenv.hostPlatform.isDarwin;
   };
 }

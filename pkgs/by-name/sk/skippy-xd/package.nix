@@ -43,6 +43,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/felixfung/skippy-xd";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ raskin ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

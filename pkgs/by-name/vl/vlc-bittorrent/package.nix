@@ -50,7 +50,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Bittorrent plugin for VLC";
     homepage = "https://github.com/johang/vlc-bittorrent";
     license = licenses.gpl3Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ kintrix ];
   };
 })

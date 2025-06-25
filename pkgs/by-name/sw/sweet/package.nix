@@ -106,6 +106,6 @@ lib.checkListOfEnum "${pname}: color variants" colorVariantList colorVariants
         fuzen
         d3vil0p3r
       ];
-      platforms = platforms.unix;
+      platforms = lib.platforms.unix;
     };
   })

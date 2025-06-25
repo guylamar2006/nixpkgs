@@ -36,6 +36,6 @@ stdenv.mkDerivation {
     license = licenses.gpl2Plus;
     mainProgram = "teavpn2";
     maintainers = with maintainers; [ ludovicopiero ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

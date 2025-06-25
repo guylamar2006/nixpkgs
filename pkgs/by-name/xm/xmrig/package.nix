@@ -60,7 +60,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/xmrig/xmrig";
     license = licenses.gpl3Plus;
     mainProgram = "xmrig";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ kim0 ];
   };
 }

@@ -57,7 +57,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://dssi.sourceforge.net/download.html#Xsynth-DSSI";
     license = licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ ];
   };
 }

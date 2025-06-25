@@ -29,6 +29,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl2Plus;
     mainProgram = "sispmctl";
     maintainers = with lib.maintainers; [ _9R ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

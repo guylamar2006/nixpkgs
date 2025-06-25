@@ -30,6 +30,6 @@ stdenv.mkDerivation rec {
     description = "Set of window manipulation tools";
     homepage = "https://github.com/wmutils/core";
     license = licenses.isc;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

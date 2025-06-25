@@ -18,7 +18,7 @@ stdenv.mkDerivation {
     description = "Japanese handwriting model for the Zinnia engine";
     homepage = "http://tegaki.org/";
     license = licenses.lgpl21;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ];
   };
 

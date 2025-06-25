@@ -67,6 +67,6 @@ python3Packages.buildPythonApplication rec {
     license = licenses.mpl20;
     mainProgram = "varia";
     maintainers = with maintainers; [ aleksana ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

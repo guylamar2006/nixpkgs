@@ -82,6 +82,6 @@ python.pkgs.buildPythonApplication rec {
     maintainers = with lib.maintainers; [
       makefu
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

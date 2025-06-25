@@ -28,7 +28,7 @@ stdenvNoCC.mkDerivation rec {
     description = "F/OSS/Libre font for Latin and Devanagari";
     homepage = "https://github.com/DunwichType/RhodiumLibre";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
   };
 }

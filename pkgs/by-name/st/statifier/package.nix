@@ -26,7 +26,7 @@ multiStdenv.mkDerivation rec {
   meta = with lib; {
     description = "Tool for creating static Linux binaries";
     mainProgram = "statifier";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = lib.licenses.gpl2Only;
   };
 }

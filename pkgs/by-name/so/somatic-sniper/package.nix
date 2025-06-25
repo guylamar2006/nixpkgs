@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     license = lib.licenses.mit;
     homepage = "https://github.com/genome/somatic-sniper";
     maintainers = with lib.maintainers; [ jbedo ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 
 }

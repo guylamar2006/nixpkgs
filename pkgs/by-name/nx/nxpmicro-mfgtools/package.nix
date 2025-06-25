@@ -71,6 +71,6 @@ stdenv.mkDerivation rec {
       jraygauthier
     ];
     mainProgram = "uuu";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

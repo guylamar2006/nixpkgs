@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     description = "Tiny but valid init for containers";
     homepage = "https://github.com/krallin/tini";
     license = licenses.mit;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "tini";
   };
 }

@@ -55,7 +55,7 @@ stdenv.mkDerivation {
     '';
     homepage = "https://github.com/mischw/wl-gammactl";
     license = licenses.mit;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ lodi ];
     mainProgram = "wl-gammactl";
   };

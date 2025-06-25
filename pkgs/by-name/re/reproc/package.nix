@@ -53,6 +53,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/DaanDeMeyer/reproc";
     description = "Cross-platform (C99/C++11) process library";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

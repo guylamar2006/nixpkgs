@@ -41,7 +41,7 @@ rustPlatform.buildRustPackage rec {
       mpl20
     ];
     maintainers = with maintainers; [ gin66 ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "wg_netmanager";
   };
 }

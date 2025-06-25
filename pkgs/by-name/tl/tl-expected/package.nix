@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
     description = "C++11/14/17 std::expected with functional-style extensions";
     homepage = "https://tl.tartanllama.xyz/en/latest/api/expected.html";
     license = licenses.cc0;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
   };
 }

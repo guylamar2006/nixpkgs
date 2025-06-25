@@ -94,7 +94,7 @@ stdenv.mkDerivation rec {
     mainProgram = "openspades";
     homepage = "https://github.com/yvt/openspades/";
     license = lib.licenses.gpl3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       abbradar
       azahi

@@ -27,6 +27,6 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://github.com/hartwork/resolve-march-native";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ lovesegfault ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

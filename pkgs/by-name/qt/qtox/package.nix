@@ -76,6 +76,6 @@ stdenv.mkDerivation rec {
       akaWolf
       peterhoeg
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

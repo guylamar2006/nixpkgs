@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
       rules for use with ModSecurity or compatible web application firewalls.
     '';
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ izorkin ];
   };
 }

@@ -74,7 +74,7 @@ stdenv.mkDerivation rec {
       tilcreator
       iynaix
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "realesrgan-ncnn-vulkan";
   };
 }

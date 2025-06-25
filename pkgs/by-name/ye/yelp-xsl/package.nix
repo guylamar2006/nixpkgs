@@ -57,6 +57,6 @@ stdenv.mkDerivation (finalAttrs: {
       # highlight.js
       bsd3
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

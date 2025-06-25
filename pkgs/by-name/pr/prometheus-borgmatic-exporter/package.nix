@@ -46,6 +46,6 @@ python3Packages.buildPythonApplication rec {
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ flandweber ];
     mainProgram = "borgmatic-exporter";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

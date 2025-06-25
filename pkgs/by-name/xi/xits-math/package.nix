@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/alif-type/xits";
     description = "OpenType implementation of STIX fonts with math support";
     license = licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ abbradar ];
   };
 }

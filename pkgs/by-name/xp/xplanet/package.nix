@@ -57,6 +57,6 @@ stdenv.mkDerivation rec {
       lassulus
       sander
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -25,6 +25,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.mit;
     homepage = "https://github.com/palacaze/sigslot";
     maintainers = with lib.maintainers; [ azahi ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

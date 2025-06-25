@@ -48,7 +48,7 @@ stdenv.mkDerivation {
     '';
     license = licenses.mit;
     maintainers = with maintainers; [ primeos ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "wev";
   };
 }

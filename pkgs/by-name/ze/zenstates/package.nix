@@ -53,6 +53,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/r4m0n/ZenStates-Linux";
     license = licenses.mit;
     maintainers = with maintainers; [ savannidgerinel ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

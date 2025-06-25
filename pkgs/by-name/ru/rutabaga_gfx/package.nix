@@ -92,7 +92,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "cross-platform abstraction for GPU and display virtualization";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ qyliss ];
-    platforms = platforms.darwin ++ platforms.linux;
+    platforms = lib.platforms.darwin ++ platforms.linux;
     # error[E0432]: unresolved import `self::consts`
     badPlatforms = [ "loongarch64-linux" ];
   };

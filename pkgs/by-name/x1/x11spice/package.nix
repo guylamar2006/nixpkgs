@@ -41,7 +41,7 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Enable a running X11 desktop to be available via a Spice server";
     homepage = "https://gitlab.freedesktop.org/spice/x11spice";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = licenses.gpl3;
     maintainers = with maintainers; [ rnhmjoj ];
   };

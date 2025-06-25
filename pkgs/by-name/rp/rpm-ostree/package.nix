@@ -126,7 +126,7 @@ stdenv.mkDerivation rec {
     homepage = "https://coreos.github.io/rpm-ostree/";
     license = lib.licenses.lgpl2Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "rpm-ostree";
   };
 }

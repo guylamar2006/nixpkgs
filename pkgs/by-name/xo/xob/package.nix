@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     '';
     inherit (src.meta) homepage;
     license = licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ florentc ];
     mainProgram = "xob";
   };

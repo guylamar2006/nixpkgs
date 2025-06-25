@@ -65,6 +65,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.sagemath.org";
     license = lib.licenses.gpl2Plus;
     teams = with lib.teams; [ sage ];
-    platforms = platforms.linux ++ [ "aarch64-darwin" ];
+    platforms = lib.platforms.linux ++ [ "aarch64-darwin" ];
   };
 }

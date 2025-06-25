@@ -186,6 +186,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.spice-space.org/";
     license = lib.licenses.lgpl21;
     maintainers = with lib.maintainers; [ xeji ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

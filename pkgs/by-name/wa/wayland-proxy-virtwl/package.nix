@@ -49,6 +49,6 @@ ocamlPackages.buildDunePackage {
       maintainers.qyliss
       maintainers.sternenseemann
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

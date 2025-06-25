@@ -47,6 +47,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/davatorium/rofi-top";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ aacebedo ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

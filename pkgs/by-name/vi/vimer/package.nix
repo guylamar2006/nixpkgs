@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     '';
     license = licenses.mit;
     maintainers = with lib.maintainers; [ matthiasbeyer ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "vimer";
   };
 

@@ -35,7 +35,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/kirei/sha2wordlist";
     maintainers = with lib.maintainers; [ baloo ];
     license = [ licenses.bsd2 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "sha2wordlist";
   };
 }

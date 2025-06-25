@@ -68,7 +68,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/philpennock/sieve-connect";
     license = lib.licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ das_j ];
     mainProgram = "sieve-connect";
   };

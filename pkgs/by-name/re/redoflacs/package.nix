@@ -52,6 +52,6 @@ stdenv.mkDerivation rec {
     homepage = src.meta.homepage;
     license = lib.licenses.gpl2;
     maintainers = with lib.maintainers; [ peterhoeg ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -56,7 +56,7 @@ stdenv.mkDerivation rec {
     description = "Formal verification tool for distributed software systems";
     homepage = "https://spinroot.com/";
     license = lib.licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       pSub
       siraben

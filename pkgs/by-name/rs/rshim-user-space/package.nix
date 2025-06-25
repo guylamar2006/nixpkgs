@@ -75,7 +75,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/Mellanox/rshim-user-space";
     license = lib.licenses.gpl2Only;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [
       thillux
     ];

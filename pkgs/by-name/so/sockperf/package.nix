@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/Mellanox/sockperf";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ emilytrau ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "sockperf";
   };
 }

@@ -185,7 +185,7 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "tinysparql";
     teams = with lib.teams; [ gnome ];
     license = licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     pkgConfigModules = [
       "tracker-sparql-3.0"
       "tinysparql-3.0"

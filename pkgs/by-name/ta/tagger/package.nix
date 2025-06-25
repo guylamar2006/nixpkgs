@@ -59,7 +59,7 @@ buildDotnetModule rec {
     homepage = "https://github.com/NickvisionApps/Tagger";
     mainProgram = "NickvisionTagger.GNOME";
     license = licenses.mit;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [
       zendo
       ratcornu

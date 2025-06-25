@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
     description = "Tool for waiting until a particular time and then running a command";
     maintainers = with lib.maintainers; [ kaction ];
     license = lib.licenses.cc0;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "snooze";
   };
 }

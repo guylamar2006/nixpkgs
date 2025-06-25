@@ -90,7 +90,7 @@ stdenv.mkDerivation rec {
     mainProgram = "swiften-config";
     homepage = "http://swift.im/swiften.html";
     license = licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ twey ];
   };
 }

@@ -35,7 +35,7 @@ stdenv.mkDerivation {
     description = "Rounded desktop theme and window borders for Plasma 5 that follows any color scheme";
     homepage = "https://himdek.com/Utterly-Round-Plasma-Style/";
     license = licenses.gpl2Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ romildo ];
   };
 }

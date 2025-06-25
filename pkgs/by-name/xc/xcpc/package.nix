@@ -44,7 +44,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.xcpc-emulator.net";
     license = licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "xcpc";
   };
 }

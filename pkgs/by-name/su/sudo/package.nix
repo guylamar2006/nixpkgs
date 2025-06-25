@@ -92,7 +92,7 @@ stdenv.mkDerivation (finalAttrs: {
       zlib
     ];
     maintainers = with maintainers; [ rhendric ];
-    platforms = platforms.linux ++ platforms.freebsd ++ platforms.openbsd;
+    platforms = lib.platforms.linux ++ platforms.freebsd ++ platforms.openbsd;
     mainProgram = "sudo";
   };
 })

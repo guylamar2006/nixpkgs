@@ -36,7 +36,7 @@ stdenv.mkDerivation {
     description = "Lossy compression of PNG images";
     homepage = "https://github.com/foobaz/pngloss";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ _2gn ];
     mainProgram = "pngloss";
   };

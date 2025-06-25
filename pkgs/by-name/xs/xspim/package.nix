@@ -65,6 +65,6 @@ stdenv.mkDerivation {
     homepage = "https://spimsimulator.sourceforge.net/";
     license = licenses.bsdOriginal;
     maintainers = with maintainers; [ emilytrau ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

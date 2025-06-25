@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
     description = "Modular and multi processing pass phrase cracking tool";
     homepage = "https://leidecker.info/projects/phrasendrescher/index.shtml";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ bjornfor ];
     mainProgram = "pd";
   };

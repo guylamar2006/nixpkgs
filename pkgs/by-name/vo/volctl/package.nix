@@ -67,7 +67,7 @@ python3Packages.buildPythonApplication rec {
     description = "PulseAudio enabled volume control featuring per-app sliders";
     homepage = "https://buzz.github.io/volctl/";
     license = licenses.gpl2Only;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ romildo ];
     mainProgram = "volctl";
   };

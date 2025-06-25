@@ -33,7 +33,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "http://www.litech.org/tayga";
     license = licenses.gpl2Plus;
     maintainers = with maintainers; [ _0x4A6F ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "tayga";
   };
 })

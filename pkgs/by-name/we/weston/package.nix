@@ -145,7 +145,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://gitlab.freedesktop.org/wayland/weston";
     license = licenses.mit; # Expat version
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "weston";
     maintainers = with maintainers; [
       primeos

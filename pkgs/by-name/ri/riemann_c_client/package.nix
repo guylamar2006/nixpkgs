@@ -59,6 +59,6 @@ stdenv.mkDerivation rec {
     mainProgram = "riemann-client";
     license = lib.licenses.eupl12;
     maintainers = with lib.maintainers; [ pradeepchhetri ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

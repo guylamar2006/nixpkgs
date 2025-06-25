@@ -144,6 +144,6 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://quickwit.io/";
     license = lib.licenses.agpl3Only;
     maintainers = with lib.maintainers; [ happysalada ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

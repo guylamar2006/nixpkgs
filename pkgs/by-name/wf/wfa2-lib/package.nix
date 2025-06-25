@@ -33,6 +33,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/smarco/WFA2-lib";
     license = licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

@@ -80,7 +80,7 @@ stdenv.mkDerivation rec {
     maintainers = with maintainers; [ ];
     homepage = "https://styx-static.github.io/styx-site/";
     downloadPage = "https://github.com/styx-static/styx/";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.mit;
     mainProgram = "styx";
   };

@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     description = "Small ncurses-based file browser";
     homepage = "https://git.2f30.org/noice/";
     license = lib.licenses.bsd2;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ iogamaster ];
     mainProgram = "noice";
   };

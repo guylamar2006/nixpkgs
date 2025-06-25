@@ -27,6 +27,6 @@ stdenv.mkDerivation {
     homepage = "http://tools.suckless.org/quark";
     license = lib.licenses.isc;
     maintainers = with lib.maintainers; [ sikmir ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

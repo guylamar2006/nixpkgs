@@ -75,6 +75,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = licenses.gpl3Plus;
     maintainers = with maintainers; [ benediktbroich ];
     teams = with lib.teams; [ gnome-circle ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

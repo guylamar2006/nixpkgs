@@ -67,7 +67,7 @@ stdenv.mkDerivation rec {
     homepage = "https://packages.qa.debian.org/w/whois.html";
     license = licenses.gpl2Plus;
     maintainers = with maintainers; [ fpletz ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "whois";
   };
 }

@@ -74,7 +74,7 @@ stdenvNoCC.mkDerivation {
     homepage = "https://xenproject.org/developers/teams/windows-pv-drivers/";
     license = licenses.bsd2;
     maintainers = with maintainers; [ anthonyroussel ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
   };
 }

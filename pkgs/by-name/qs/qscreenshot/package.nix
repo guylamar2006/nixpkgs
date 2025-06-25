@@ -32,7 +32,7 @@ stdenv.mkDerivation {
     mainProgram = "qScreenshot";
     homepage = "https://sourceforge.net/projects/qscreenshot/";
     license = lib.licenses.gpl2;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ bjornfor ];
   };
 }

@@ -39,7 +39,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://www.nongnu.org/lzip/tarlz.html";
     description = "Massively parallel combined implementation of the tar archiver and the lzip compressor";
     license = licenses.gpl2Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ ehmry ];
     mainProgram = "tarlz";
   };

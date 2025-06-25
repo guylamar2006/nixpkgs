@@ -29,6 +29,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://ctrlcctrlv.github.io/TT2020";
     license = licenses.ofl;
     maintainers = with maintainers; [ sikmir ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

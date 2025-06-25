@@ -35,6 +35,6 @@ stdenvNoCC.mkDerivation rec {
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ athas ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

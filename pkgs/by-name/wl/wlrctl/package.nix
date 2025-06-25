@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
       puffnfresh
       artturin
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "wlrctl";
   };
 }

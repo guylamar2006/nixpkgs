@@ -58,7 +58,7 @@ stdenv.mkDerivation {
       manveru
       nicknovitski
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 
   passthru = {

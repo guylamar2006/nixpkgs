@@ -69,7 +69,7 @@ stdenv.mkDerivation rec {
       marcweber
       peterhoeg
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "usb_modeswitch";
   };
 }

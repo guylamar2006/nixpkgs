@@ -31,6 +31,6 @@ stdenv.mkDerivation rec {
     mainProgram = "onig-config";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ artturin ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

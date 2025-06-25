@@ -27,6 +27,6 @@ stdenvNoCC.mkDerivation {
     homepage = "https://fontlibrary.org/en/font/quinze";
     license = lib.licenses.ofl;
     maintainers = with lib.maintainers; [ phunehehe ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

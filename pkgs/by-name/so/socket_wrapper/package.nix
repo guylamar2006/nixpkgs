@@ -24,6 +24,6 @@ stdenv.mkDerivation rec {
     description = "Library passing all socket communications through unix sockets";
     homepage = "https://git.samba.org/?p=socket_wrapper.git;a=summary;";
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

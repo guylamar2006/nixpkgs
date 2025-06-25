@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
     mainProgram = "tdrop";
     homepage = "https://github.com/noctuid/tdrop";
     license = licenses.bsd2;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ ];
   };
 }

@@ -151,6 +151,6 @@ stdenv.mkDerivation {
     homepage = "https://www.synfig.org";
     license = licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
   };
 }

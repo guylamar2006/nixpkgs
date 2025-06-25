@@ -48,7 +48,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     inherit (finalAttrs.src.meta) homepage;
     license = licenses.bsd2;
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
     mainProgram = "vpcs";
     maintainers = with maintainers; [ anthonyroussel ];
   };

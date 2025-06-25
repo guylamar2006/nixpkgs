@@ -37,6 +37,6 @@ stdenv.mkDerivation {
     homepage = "http://ratox.2f30.org/";
     license = lib.licenses.isc;
     maintainers = with lib.maintainers; [ ehmry ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

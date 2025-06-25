@@ -38,7 +38,7 @@ stdenv.mkDerivation {
     changelog = "https://github.com/ralight/usb-reset/blob/master/ChangeLog.txt";
     license = licenses.mit;
     maintainers = with lib.maintainers; [ evils ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "usb-reset";
   };
 }

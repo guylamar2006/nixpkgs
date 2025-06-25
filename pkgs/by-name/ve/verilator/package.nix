@@ -97,7 +97,7 @@ stdenv.mkDerivation rec {
       lgpl3Only
       artistic2
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [
       thoughtpolice
       amiloradovsky

@@ -192,7 +192,7 @@ python311Packages.buildPythonApplication {
       pbar
       thoughtpolice
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "sl";
   };
 }

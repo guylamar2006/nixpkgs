@@ -35,6 +35,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     homepage = "http://b00merang.weebly.com/windows-10.html";
     license = licenses.unfree;
     maintainers = with maintainers; [ mib ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 })

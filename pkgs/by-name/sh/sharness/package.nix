@@ -55,6 +55,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/chriscool/sharness";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ spacefrogg ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

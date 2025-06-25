@@ -36,6 +36,6 @@ stdenv.mkDerivation rec {
       codyopel
       pjones
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

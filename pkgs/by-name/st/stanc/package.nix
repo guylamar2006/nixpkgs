@@ -33,6 +33,6 @@ ocamlPackages.buildDunePackage rec {
     description = "Stan compiler and utilities";
     license = lib.licenses.bsd3;
     maintainers = with maintainers; [ wegank ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

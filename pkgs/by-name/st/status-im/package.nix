@@ -45,6 +45,6 @@ appimageTools.wrapType2 {
     description = "Desktop client for the Status Network";
     license = lib.licenses.mpl20;
     maintainers = with maintainers; [ a-kenji ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

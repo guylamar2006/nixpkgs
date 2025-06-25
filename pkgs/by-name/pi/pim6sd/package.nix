@@ -29,7 +29,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/troglobit/pim6sd";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ hexa ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin; # never built on Hydra https://hydra.nixos.org/job/nixpkgs/trunk/pim6sd.x86_64-darwin
   };
 }

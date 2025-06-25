@@ -55,6 +55,6 @@ stdenv.mkDerivation rec {
     homepage = "https://code.soundsoftware.ac.uk/projects/qm-dsp";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

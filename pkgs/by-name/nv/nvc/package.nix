@@ -64,6 +64,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.nickg.me.uk/nvc/";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ wegank ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

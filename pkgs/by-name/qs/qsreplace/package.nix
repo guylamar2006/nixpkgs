@@ -27,7 +27,7 @@ buildGoModule rec {
     description = "Accept URLs on stdin, replace all query string values with a user-supplied value";
     mainProgram = "qsreplace";
     maintainers = with lib.maintainers; [ averagebit ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     sourceProvenance = with sourceTypes; [ fromSource ];
     license = lib.licenses.mit;
   };

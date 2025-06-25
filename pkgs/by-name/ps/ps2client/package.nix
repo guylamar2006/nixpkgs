@@ -28,6 +28,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/ps2dev/ps2client";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

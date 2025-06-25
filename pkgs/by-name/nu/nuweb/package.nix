@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
     homepage = "https://nuweb.sourceforge.net";
     license = lib.licenses.free;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }
 # TODO: nuweb.el Emacs integration

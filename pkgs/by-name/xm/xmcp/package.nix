@@ -29,7 +29,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/blblapco/xmcp";
     license = licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "xmcp";
   };
 }

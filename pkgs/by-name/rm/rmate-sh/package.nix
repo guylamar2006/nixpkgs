@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
       This is a rmate implementation in shell!
     '';
     homepage = "https://github.com/aurora/rmate";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ pbsds ];
     mainProgram = "rmate";

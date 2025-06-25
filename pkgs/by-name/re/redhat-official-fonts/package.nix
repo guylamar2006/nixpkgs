@@ -30,7 +30,7 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://github.com/RedHatOfficial/RedHatFont";
     description = "Red Hat's Open Source Fonts - Red Hat Display and Red Hat Text";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
   };
 }

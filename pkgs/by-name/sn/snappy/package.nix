@@ -65,6 +65,6 @@ stdenv.mkDerivation rec {
     homepage = "https://google.github.io/snappy/";
     license = lib.licenses.bsd3;
     description = "Compression/decompression library for very high speeds";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

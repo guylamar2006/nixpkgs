@@ -39,6 +39,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/cyberang3l/timelapse-deflicker";
     license = licenses.gpl3;
     maintainers = with maintainers; [ valeriangalliat ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

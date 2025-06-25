@@ -51,7 +51,7 @@ stdenv.mkDerivation {
     '';
     license = licenses.gpl3Plus;
     maintainers = with maintainers; [ fgaz ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     # ld: unknown option: --export-dynamic
     broken = stdenv.hostPlatform.isDarwin;
     mainProgram = "yaup";

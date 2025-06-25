@@ -58,7 +58,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/eworm-de/mpd-notification";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ CaitlinDavitt ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "mpd-notification";
   };
 }

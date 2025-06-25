@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     mainProgram = "pn";
     homepage = "https://github.com/Orange-OpenSource/pn";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ McSinyx ];
   };
 }

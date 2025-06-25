@@ -69,6 +69,6 @@ rustPlatform.buildRustPackage rec {
     license = licenses.mit;
     mainProgram = "wleave";
     maintainers = with maintainers; [ ludovicopiero ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

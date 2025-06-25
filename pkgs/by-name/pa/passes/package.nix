@@ -58,7 +58,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/pablo-s/passes";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ fgaz ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     broken = stdenv.hostPlatform.isDarwin; # Crashes
   };
 })

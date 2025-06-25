@@ -30,7 +30,7 @@ stdenvNoCC.mkDerivation rec {
     '';
     homepage = "https://erikflowers.github.io/weather-icons/";
     license = licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ pnelson ];
   };
 }

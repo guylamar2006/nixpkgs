@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Fast symbolic manipulation library";
     homepage = "https://github.com/symengine/symengine";
-    platforms = platforms.unix ++ platforms.windows;
+    platforms = lib.platforms.unix ++ platforms.windows;
     license = licenses.bsd3;
     maintainers = with lib.maintainers; [ costrouc ];
   };

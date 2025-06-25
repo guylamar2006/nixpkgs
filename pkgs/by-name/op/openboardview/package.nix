@@ -76,7 +76,7 @@ stdenv.mkDerivation rec {
     mainProgram = "openboardview";
     homepage = "https://github.com/OpenBoardView/OpenBoardView";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ k3a ];
   };
 }

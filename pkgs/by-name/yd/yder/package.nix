@@ -47,6 +47,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/babelouest/yder";
     license = licenses.lgpl21;
     maintainers = with maintainers; [ johnazoidberg ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

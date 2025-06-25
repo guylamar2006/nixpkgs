@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
     mainProgram = "uncrustify";
     homepage = "https://uncrustify.sourceforge.net/";
     license = licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ bjornfor ];
   };
 }

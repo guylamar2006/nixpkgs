@@ -29,7 +29,7 @@ gccStdenv.mkDerivation rec {
     homepage = "http://www.mamachine.org/mslink/index.en.html";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ mkg20001 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "mslink";
   };
 }

@@ -94,7 +94,7 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.com/nick87720z/tint2";
     description = "Simple panel/taskbar unintrusive and light (memory, cpu, aestetic)";
     license = licenses.gpl2Only;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ romildo ];
   };
 }

@@ -24,6 +24,6 @@ stdenv.mkDerivation rec {
     description = "Header-only C++ library for JSON Schema validation, with support for many popular parsers";
     homepage = "https://github.com/tristanpenman/valijson";
     license = licenses.bsd2;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

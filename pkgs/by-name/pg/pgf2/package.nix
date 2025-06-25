@@ -33,6 +33,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     branch = lib.versions.major version;
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

@@ -33,6 +33,6 @@ stdenv.mkDerivation rec {
     license = licenses.mit;
     maintainers = with lib.maintainers; [ s1341 ];
     mainProgram = "zplug-env";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

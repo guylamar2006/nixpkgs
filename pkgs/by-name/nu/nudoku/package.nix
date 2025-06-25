@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     homepage = "https://jubalh.github.io/nudoku";
     license = lib.licenses.gpl3Only;
     sourceProvenance = with sourceTypes; [ fromSource ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ weathercold ];
   };
 }

@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     description = "Roaring Penguin Point-to-Point over Ethernet tool";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     homepage = "https://github.com/dfskoll/rp-pppoe";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ DictXiong ];

@@ -48,7 +48,7 @@ stdenv.mkDerivation (finalAttrs: {
       free = false;
     };
     maintainers = with lib.maintainers; [ emilytrau ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "pkcrack";
   };
 })

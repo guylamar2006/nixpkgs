@@ -19,7 +19,7 @@ stdenv.mkDerivation rec {
     homepage = "http://mdocml.bsd.lv/";
     description = "converter from Texinfo into mdoc";
     license = licenses.isc;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ ramkromberg ];
     mainProgram = "texi2mdoc";
   };

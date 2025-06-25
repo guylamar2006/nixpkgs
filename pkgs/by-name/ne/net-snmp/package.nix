@@ -103,6 +103,6 @@ stdenv.mkDerivation rec {
     description = "Clients and server for the SNMP network monitoring protocol";
     homepage = "http://www.net-snmp.org/";
     license = lib.licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

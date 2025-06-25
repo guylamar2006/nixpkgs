@@ -30,6 +30,6 @@ stdenv.mkDerivation rec {
     mainProgram = "wdiff";
     license = licenses.gpl3Plus;
     maintainers = with maintainers; [ SuperSandro2000 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

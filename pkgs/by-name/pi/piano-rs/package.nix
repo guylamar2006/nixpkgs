@@ -43,6 +43,6 @@ rustPlatform.buildRustPackage rec {
     license = lib.licenses.mit;
     mainProgram = "piano-rs";
     maintainers = with lib.maintainers; [ ritiek ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

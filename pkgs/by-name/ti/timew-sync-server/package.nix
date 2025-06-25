@@ -22,7 +22,7 @@ buildGoModule rec {
     description = "Server component of timewarrior synchronization application";
     license = licenses.mit;
     maintainers = with lib.maintainers; [ joachimschmidt557 ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "timew-sync-server";
   };
 }

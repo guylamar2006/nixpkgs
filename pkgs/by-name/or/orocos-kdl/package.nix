@@ -29,6 +29,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.orocos.org/kdl.html";
     license = lib.licenses.lgpl21Only;
     maintainers = with lib.maintainers; [ lopsided98 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -59,6 +59,6 @@ python3.pkgs.buildPythonApplication rec {
     maintainers = with maintainers; [ ];
     teams = with lib.teams; [ gnome ];
     license = licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

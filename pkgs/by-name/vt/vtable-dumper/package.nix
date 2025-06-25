@@ -25,6 +25,6 @@ stdenv.mkDerivation rec {
     mainProgram = "vtable-dumper";
     license = licenses.lgpl21;
     maintainers = with lib.maintainers; [ bhipple ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

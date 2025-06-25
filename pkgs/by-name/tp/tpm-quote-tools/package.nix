@@ -36,6 +36,6 @@ stdenv.mkDerivation rec {
     homepage = "http://tpmquotetools.sourceforge.net/";
     license = licenses.bsd3;
     maintainers = with maintainers; [ ak ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

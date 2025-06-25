@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/baskerville/xtitle";
     maintainers = with maintainers; [ meisternu ];
     license = "Custom";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "xtitle";
   };
 }

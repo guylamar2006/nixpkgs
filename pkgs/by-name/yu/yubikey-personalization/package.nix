@@ -59,6 +59,6 @@ stdenv.mkDerivation rec {
     homepage = "https://developers.yubico.com/yubikey-personalization";
     description = "Library and command line tool to personalize YubiKeys";
     license = licenses.bsd2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -74,6 +74,6 @@ stdenv.mkDerivation rec {
     mainProgram = "mpw";
     homepage = "https://masterpasswordapp.com/";
     license = lib.licenses.gpl3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

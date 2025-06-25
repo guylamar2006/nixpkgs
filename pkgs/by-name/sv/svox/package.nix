@@ -29,7 +29,7 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Text-to-speech engine";
     homepage = "https://android.googlesource.com/platform/external/svox";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = licenses.asl20;
     maintainers = with maintainers; [ abbradar ];
     mainProgram = "pico2wave";

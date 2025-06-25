@@ -56,6 +56,6 @@ stdenv.mkDerivation rec {
     license = licenses.mit;
     mainProgram = "tmuxifier";
     maintainers = with maintainers; [ wigust ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

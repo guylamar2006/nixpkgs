@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
     homepage = "https://simdjson.org/";
     description = "Parsing gigabytes of JSON per second";
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ chessai ];
   };
 }

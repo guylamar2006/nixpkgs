@@ -111,7 +111,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://nllgg.nl/Ted/";
     license = licenses.gpl2Only;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     broken = stdenv.hostPlatform.isDarwin;
     maintainers = with maintainers; [ obadz ];
   };

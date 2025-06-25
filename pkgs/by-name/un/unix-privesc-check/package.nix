@@ -82,7 +82,7 @@ resholve.mkDerivation rec {
     mainProgram = "unix-privesc-check";
     homepage = "https://pentestmonkey.net/tools/audit/unix-privesc-check";
     maintainers = with maintainers; [ d3vil0p3r ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = licenses.gpl2Plus;
   };
 }

@@ -250,7 +250,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://uhd.ettus.com/";
     license = licenses.gpl3Plus;
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
     maintainers = with maintainers; [
       bjornfor
       fpletz

@@ -31,7 +31,7 @@ stdenvNoCC.mkDerivation {
   meta = with lib; {
     homepage = "https://publicsuffix.org/";
     description = "Cross-vendor public domain suffix database";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.mpl20;
     maintainers = with lib.maintainers; [ c0bw3b ];
   };

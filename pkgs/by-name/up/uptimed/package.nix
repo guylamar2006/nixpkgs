@@ -38,6 +38,6 @@ stdenv.mkDerivation rec {
       lgpl21Plus
     ];
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

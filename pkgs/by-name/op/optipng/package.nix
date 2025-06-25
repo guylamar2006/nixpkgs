@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
     homepage = "https://optipng.sourceforge.net/";
     description = "PNG optimizer";
     license = lib.licenses.zlib;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "optipng";
   };
 }

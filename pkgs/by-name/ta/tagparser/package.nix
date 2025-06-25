@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
     description = "C++ library for reading and writing MP4/M4A/AAC (iTunes), ID3, Vorbis, Opus, FLAC and Matroska tags";
     license = licenses.gpl2;
     maintainers = with lib.maintainers; [ matthiasbeyer ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

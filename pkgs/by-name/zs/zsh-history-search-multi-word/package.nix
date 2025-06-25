@@ -33,6 +33,6 @@ stdenvNoCC.mkDerivation rec {
       gpl3
       mit
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

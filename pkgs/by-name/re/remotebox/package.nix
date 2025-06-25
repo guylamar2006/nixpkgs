@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
       RemoteBox aims to fill this gap by providing a graphical VirtualBox
       client which is able to manage a VirtualBox server installation.
     '';
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "remotebox";
   };
 }

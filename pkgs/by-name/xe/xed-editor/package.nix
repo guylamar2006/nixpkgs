@@ -64,7 +64,7 @@ stdenv.mkDerivation rec {
     description = "Light weight text editor from Linux Mint";
     homepage = "https://github.com/linuxmint/xed";
     license = licenses.gpl2Only;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [
       tu-maurice
       bobby285271

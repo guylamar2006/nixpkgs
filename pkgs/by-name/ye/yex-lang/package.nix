@@ -24,6 +24,6 @@ rustPlatform.buildRustPackage {
     license = licenses.mit;
     maintainers = with maintainers; [ ];
     mainProgram = "yex";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

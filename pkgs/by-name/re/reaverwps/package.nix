@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
     description = "Brute force attack against Wifi Protected Setup";
     homepage = "https://code.google.com/archive/p/reaver-wps/";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ nico202 ];
   };
 }

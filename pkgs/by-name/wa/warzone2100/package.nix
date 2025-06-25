@@ -144,7 +144,7 @@ stdenv.mkDerivation (finalAttrs: {
       astsmtl
       fgaz
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     # configure_mac.cmake tries to download stuff
     # https://github.com/Warzone2100/warzone2100/blob/master/macosx/README.md
     broken = stdenv.hostPlatform.isDarwin;

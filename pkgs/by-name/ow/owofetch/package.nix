@@ -24,7 +24,7 @@ rustPlatform.buildRustPackage rec {
     description = "Alternative to *fetch, uwuifies all stats";
     homepage = "https://github.com/netthier/owofetch-rs";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.x86_64;
+    platforms = lib.platforms.x86_64;
     maintainers = with lib.maintainers; [ nullishamy ];
     mainProgram = "owofetch";
   };

@@ -18,6 +18,6 @@ bundlerApp {
     mainProgram = "uplot";
     license = licenses.mit;
     maintainers = with maintainers; [ purcell ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

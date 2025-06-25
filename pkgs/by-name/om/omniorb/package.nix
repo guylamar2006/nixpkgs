@@ -51,6 +51,6 @@ stdenv.mkDerivation rec {
       lgpl21Plus
     ];
     maintainers = with lib.maintainers; [ smironov ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

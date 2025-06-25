@@ -109,6 +109,6 @@ stdenv.mkDerivation rec {
       mit # Dik T. Winter's software
     ];
     teams = with lib.teams; [ sage ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

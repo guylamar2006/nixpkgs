@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Traditional (K&R-style) C macro preprocessor";
     mainProgram = "tradcpp";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = licenses.bsd2;
   };
 

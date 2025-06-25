@@ -57,7 +57,7 @@ stdenv.mkDerivation {
     homepage = "https://tmate.io/";
     description = "tmate SSH Server";
     license = licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ ck3d ];
     mainProgram = "tmate-ssh-server";
   };

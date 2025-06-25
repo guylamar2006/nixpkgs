@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
     homepage = "http://cmictig.cs.ucl.ac.uk/research/software/software-nifty/niftyseg";
     description = "Software for medical image segmentation, bias field correction, and cortical thickness calculation";
     maintainers = with lib.maintainers; [ bcdarwin ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.bsd3;
   };
 

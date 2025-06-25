@@ -25,7 +25,7 @@ stdenv.mkDerivation {
     homepage = "http://p9f.org/magic/man2html?man=u9fs&sect=4";
     license = licenses.dtoa;
     maintainers = with lib.maintainers; [ ehmry ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "u9fs";
   };
 }

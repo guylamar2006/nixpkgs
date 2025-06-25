@@ -61,7 +61,7 @@ stdenv.mkDerivation {
       Based on the elementary Code-Style guidelines.
     '';
     license = licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     teams = with lib.teams; [ pantheon ];
     mainProgram = "io.elementary.vala-lint";
   };

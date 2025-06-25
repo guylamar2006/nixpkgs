@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
       with any type of text MUD.
     '';
     license = licenses.gpl2Only;
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
     maintainers = with lib.maintainers; [ KibaFox ];
   };
 }

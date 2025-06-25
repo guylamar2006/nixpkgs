@@ -23,6 +23,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/rollbear/trompeloeil";
     license = licenses.boost;
     maintainers = with lib.maintainers; [ bjornfor ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -43,6 +43,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.agner.org/optimize/";
     license = lib.licenses.gpl2;
     maintainers = with lib.maintainers; [ orivej ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

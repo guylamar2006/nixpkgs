@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
       that comes from a serial device.
     '';
     license = licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "ttylog";
   };
 }

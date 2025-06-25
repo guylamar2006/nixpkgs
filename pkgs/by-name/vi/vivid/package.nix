@@ -26,7 +26,7 @@ rustPlatform.buildRustPackage rec {
       mit
     ];
     maintainers = with lib.maintainers; [ dtzWill ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "vivid";
   };
 }

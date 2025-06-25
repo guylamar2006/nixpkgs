@@ -105,7 +105,7 @@ stdenv.mkDerivation rec {
       The game was originally developed using VMS Pascal before being ported to the C
       language by James E. Wilson in 1988, and released a Umoria.
     '';
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     badPlatforms = [ "aarch64-darwin" ];
     maintainers = with maintainers; [
       aciceri

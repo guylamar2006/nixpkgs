@@ -30,6 +30,6 @@ stdenvNoCC.mkDerivation rec {
     description = "Syntax-highlighting for Zshell";
     homepage = "https://github.com/zdharma-continuum/fast-syntax-highlighting";
     license = licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

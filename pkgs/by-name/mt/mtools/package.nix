@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://www.gnu.org/software/mtools/";
     description = "Utilities to access MS-DOS disks";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.gpl3;
   };
 }

@@ -111,6 +111,6 @@ stdenv.mkDerivation rec {
     mainProgram = "seahorse";
     teams = with lib.teams; [ gnome ];
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

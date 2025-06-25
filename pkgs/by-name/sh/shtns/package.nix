@@ -22,6 +22,6 @@ stdenv.mkDerivation rec {
     homepage = "https://nschaeff.bitbucket.io/shtns/";
     license = lib.licenses.cecill21;
     maintainers = with lib.maintainers; [ bzizou ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

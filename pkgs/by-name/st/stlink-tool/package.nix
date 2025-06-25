@@ -35,7 +35,7 @@ stdenv.mkDerivation {
     description = "libusb tool for flashing chinese ST-Link dongles";
     homepage = "https://github.com/jeanthom/stlink-tool";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ wucke13 ];
     mainProgram = "stlink-tool";
   };

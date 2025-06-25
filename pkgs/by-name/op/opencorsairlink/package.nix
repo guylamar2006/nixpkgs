@@ -40,7 +40,7 @@ stdenv.mkDerivation {
     description = "Linux and Mac OS support for the CorsairLink Devices";
     homepage = "https://github.com/audiohacked/OpenCorsairLink";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "OpenCorsairLink.elf";
   };

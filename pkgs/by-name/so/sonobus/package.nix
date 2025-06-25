@@ -80,7 +80,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://sonobus.net/";
     license = with licenses; [ gpl3Plus ];
     maintainers = with lib.maintainers; [ PowerUser64 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin;
     mainProgram = "sonobus";
   };

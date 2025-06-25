@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
       earldouglas
       markuskowa
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "rtl_433";
   };
 }

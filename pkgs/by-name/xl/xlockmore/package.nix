@@ -56,7 +56,7 @@ stdenv.mkDerivation rec {
     homepage = "http://sillycycle.com/xlockmore.html";
     license = licenses.gpl2Only;
     maintainers = with maintainers; [ pSub ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "xlock";
   };
 }

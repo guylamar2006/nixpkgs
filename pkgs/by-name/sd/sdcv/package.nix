@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
     description = "Console version of StarDict";
     maintainers = with lib.maintainers; [ lovek323 ];
     license = lib.licenses.gpl2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "sdcv";
   };
 }

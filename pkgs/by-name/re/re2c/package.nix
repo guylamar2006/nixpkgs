@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
     description = "Tool for writing very fast and very flexible scanners";
     homepage = "https://re2c.org";
     license = lib.licenses.publicDomain;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ thoughtpolice ];
   };
 }

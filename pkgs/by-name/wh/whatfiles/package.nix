@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/spieglt/whatfiles";
     license = licenses.gpl3Only;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "whatfiles";
   };
 }

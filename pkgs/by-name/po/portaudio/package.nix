@@ -67,7 +67,7 @@ stdenv.mkDerivation rec {
     # Not exactly a bsd license, but alike
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ lovek323 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 
   passthru = {

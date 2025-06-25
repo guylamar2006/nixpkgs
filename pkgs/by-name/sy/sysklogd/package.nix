@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     description = "System logging daemon";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = licenses.gpl2Plus;
   };
 }

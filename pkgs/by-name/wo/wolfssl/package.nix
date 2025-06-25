@@ -112,7 +112,7 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "wolfssl-config";
     homepage = "https://www.wolfssl.com/";
     changelog = "https://github.com/wolfSSL/wolfssl/releases/tag/v${finalAttrs.version}-stable";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = licenses.gpl2Plus;
     maintainers = with maintainers; [
       fab

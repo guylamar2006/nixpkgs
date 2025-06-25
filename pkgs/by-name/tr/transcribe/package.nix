@@ -113,7 +113,7 @@ stdenv.mkDerivation rec {
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
     license = licenses.unfree;
     maintainers = with maintainers; [ iwanb ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "transcribe";
   };
 }

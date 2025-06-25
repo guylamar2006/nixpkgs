@@ -54,7 +54,7 @@ stdenv.mkDerivation rec {
     homepage = "https://wit.wiimm.de";
     description = "Set of command line tools to manipulate Wii and GameCube ISO images and WBFS containers";
     license = licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ nilp0inter ];
   };
 }

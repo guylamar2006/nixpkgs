@@ -65,6 +65,6 @@ stdenv.mkDerivation rec {
       koral
       fpletz
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

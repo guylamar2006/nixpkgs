@@ -36,7 +36,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Trigram database written in C++, suited for malware indexing";
     license = licenses.bsd3;
     maintainers = with maintainers; [ msm ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin;
   };
 })

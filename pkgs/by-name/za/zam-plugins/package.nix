@@ -62,7 +62,7 @@ stdenv.mkDerivation rec {
     description = "Collection of LV2/LADSPA/VST/JACK audio plugins by ZamAudio";
     license = licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ magnetophon ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     # tries to run dpf/utils/lv2_ttl_generator (built for host)
     broken = !stdenv.buildPlatform.canExecute stdenv.hostPlatform;
   };

@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     homepage = "https://zipkin.io/";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ hectorj ];
     mainProgram = "zipkin-server";
   };

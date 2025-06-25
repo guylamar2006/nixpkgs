@@ -58,7 +58,7 @@ stdenv.mkDerivation rec {
     mainProgram = "srain";
     homepage = "https://srain.silverrainz.me";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ rewine ];
   };
 }

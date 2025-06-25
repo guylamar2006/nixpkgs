@@ -25,6 +25,6 @@ stdenv.mkDerivation {
     description = "Simple stupid SVG parser";
     homepage = "https://github.com/memononen/nanosvg";
     license = lib.licenses.zlib;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

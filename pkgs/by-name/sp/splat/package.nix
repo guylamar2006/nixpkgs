@@ -63,7 +63,7 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl2Only;
     homepage = "https://www.qsl.net/kd2bd/splat.html";
     maintainers = with lib.maintainers; [ ehmry ];
-    platforms = platforms.x86_64;
+    platforms = lib.platforms.x86_64;
   };
 
 }

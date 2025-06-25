@@ -81,7 +81,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/mariusor/mpris-scrobbler";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ emantor ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "mpris-scrobbler";
   };
 }

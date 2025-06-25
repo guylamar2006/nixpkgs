@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
     description = "Language for System-level design, modeling and verification";
     homepage = "https://systemc.org/";
     license = licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ amiloradovsky ];
   };
 }

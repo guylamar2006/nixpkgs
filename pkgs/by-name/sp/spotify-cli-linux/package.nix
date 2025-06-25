@@ -37,6 +37,6 @@ python3Packages.buildPythonApplication rec {
     description = "Command line interface to Spotify on Linux";
     mainProgram = "spotifycli";
     license = lib.licenses.gpl3;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

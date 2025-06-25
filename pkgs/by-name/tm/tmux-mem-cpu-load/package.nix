@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/thewtex/tmux-mem-cpu-load";
     license = licenses.asl20;
     maintainers = with maintainers; [ thomasjm ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "tmux-mem-cpu-load";
   };
 }

@@ -30,7 +30,7 @@ buildGoModule rec {
     description = "Utility to export messages, attachments and other data from Signal Desktop";
     mainProgram = "sigtop";
     license = lib.licenses.isc;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ fricklerhandwerk ];
   };
 }

@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     description = "Extended module player";
     homepage = "https://xmp.sourceforge.net/";
     license = licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "xmp";
   };
 }

@@ -102,7 +102,7 @@ stdenvNoCC.mkDerivation (
     };
 
     meta = {
-      platforms = platforms.all;
+      platforms = lib.platforms.all;
 
       description = "Protocol Buffers with small code size";
       homepage = "https://jpa.kapsi.fi/nanopb/";

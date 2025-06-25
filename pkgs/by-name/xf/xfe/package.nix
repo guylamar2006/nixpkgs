@@ -57,6 +57,6 @@ stdenv.mkDerivation rec {
     homepage = "https://sourceforge.net/projects/xfe/";
     license = licenses.gpl2;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

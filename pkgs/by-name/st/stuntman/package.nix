@@ -46,6 +46,6 @@ stdenv.mkDerivation {
     homepage = "https://www.stunprotocol.org/";
     license = lib.licenses.asl20;
     maintainers = with maintainers; [ mattchrist ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

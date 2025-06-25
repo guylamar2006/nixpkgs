@@ -48,6 +48,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/erkin/ponysay";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ bodil ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

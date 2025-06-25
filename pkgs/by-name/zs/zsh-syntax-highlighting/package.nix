@@ -25,7 +25,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Fish shell like syntax highlighting for Zsh";
     homepage = "https://github.com/zsh-users/zsh-syntax-highlighting";
     license = licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [
       gepbird
       loskutov

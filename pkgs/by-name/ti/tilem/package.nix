@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     description = "Emulator and debugger for Texas Instruments Z80-based graphing calculators";
     license = licenses.gpl3Plus;
     maintainers = with maintainers; [ siraben ];
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
     mainProgram = "tilem2";
   };
 }

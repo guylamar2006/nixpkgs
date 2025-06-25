@@ -29,7 +29,7 @@ stdenvNoCC.mkDerivation {
   meta = with lib; {
     homepage = "http://dotcolon.net/font/route159/";
     description = "Weighted sans serif font";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       leenaars
       minijackson

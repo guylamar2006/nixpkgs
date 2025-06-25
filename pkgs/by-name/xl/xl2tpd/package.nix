@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = src.meta.homepage;
     description = "Layer 2 Tunnelling Protocol Daemon (RFC 2661)";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = licenses.gpl2Plus;
     maintainers = with maintainers; [ abbradar ];
   };

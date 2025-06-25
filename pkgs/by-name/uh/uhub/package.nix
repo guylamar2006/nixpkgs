@@ -48,6 +48,6 @@ stdenv.mkDerivation {
     homepage = "https://www.uhub.org/";
     license = licenses.gpl3;
     maintainers = with lib.maintainers; [ ehmry ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

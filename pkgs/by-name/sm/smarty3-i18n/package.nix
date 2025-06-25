@@ -26,6 +26,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.lgpl21;
     homepage = "https://github.com/kikimosha/smarty3-i18n";
     maintainers = with lib.maintainers; [ das_j ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

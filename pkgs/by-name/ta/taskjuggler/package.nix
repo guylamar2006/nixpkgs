@@ -27,7 +27,7 @@ bundlerApp {
     description = "Modern and powerful project management tool";
     homepage = "https://taskjuggler.org/";
     license = licenses.gpl2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [
       manveru
       nicknovitski

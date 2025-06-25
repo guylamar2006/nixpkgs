@@ -51,6 +51,6 @@ stdenv.mkDerivation rec {
     description = "Extremely lightweight but extensible database access library written in C";
     mainProgram = "odbx-sql";
     license = lib.licenses.lgpl21;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

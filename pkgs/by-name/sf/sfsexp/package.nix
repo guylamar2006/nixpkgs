@@ -23,6 +23,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/mjsottile/sfsexp";
     maintainers = with lib.maintainers; [ jb55 ];
     license = lib.licenses.lgpl21Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

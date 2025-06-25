@@ -87,6 +87,6 @@ stdenv.mkDerivation {
     license = [ licenses.asl20 ]; # See https://github.com/vrozenfe/qxl-dod
     maintainers = with lib.maintainers; [ ];
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

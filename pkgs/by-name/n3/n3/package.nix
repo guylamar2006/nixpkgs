@@ -54,7 +54,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/BIC-MNI/N3";
     description = "MRI non-uniformity correction for MINC files";
     maintainers = with lib.maintainers; [ bcdarwin ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.free;
   };
 }

@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
     description = "Web Service Discovery (WSD) host daemon for SMB/Samba";
     maintainers = with maintainers; [ izorkin ];
     license = licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "wsdd";
   };
 }

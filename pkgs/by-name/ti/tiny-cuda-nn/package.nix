@@ -176,7 +176,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/NVlabs/tiny-cuda-nn";
     license = licenses.bsd3;
     maintainers = with maintainers; [ connorbaker ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     badPlatforms = [
       # g++: error: unrecognized command-line option '-mf16c'
       lib.systems.inspect.patterns.isAarch64

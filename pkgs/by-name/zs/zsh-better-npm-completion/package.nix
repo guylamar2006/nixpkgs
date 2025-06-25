@@ -24,7 +24,7 @@ stdenv.mkDerivation {
     description = "Better completion for npm";
     homepage = "https://github.com/lukechilds/zsh-better-npm-completion";
     license = licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ gerschtli ];
   };
 }

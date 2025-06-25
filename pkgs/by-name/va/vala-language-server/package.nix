@@ -56,6 +56,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/vala-lang/vala-language-server";
     license = licenses.lgpl21Plus;
     maintainers = with maintainers; [ andreasfelix ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

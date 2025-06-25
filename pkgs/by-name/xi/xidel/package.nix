@@ -101,7 +101,7 @@ stdenv.mkDerivation {
     mainProgram = "xidel";
     homepage = "https://www.videlibri.de/xidel.html";
     license = licenses.gpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ bjornfor ];
   };
 }

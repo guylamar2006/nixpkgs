@@ -68,6 +68,6 @@ python3Packages.buildPythonApplication rec {
     maintainers = with maintainers; [ arthsmn ];
     teams = with lib.teams; [ gnome-circle ];
     mainProgram = "currencyconverter";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

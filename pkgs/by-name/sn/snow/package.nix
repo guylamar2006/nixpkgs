@@ -27,6 +27,6 @@ stdenv.mkDerivation rec {
     homepage = "http://www.darkside.com.au/snow/";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ siraben ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

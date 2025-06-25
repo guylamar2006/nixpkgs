@@ -60,6 +60,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ ratsclub ];
     mainProgram = "p2pool";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

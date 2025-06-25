@@ -135,6 +135,6 @@ stdenv.mkDerivation (finalAttrs: {
       peterhoeg
       anthonyroussel
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

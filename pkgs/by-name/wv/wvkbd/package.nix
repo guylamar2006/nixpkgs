@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/jjsullivan5196/wvkbd";
     description = "On-screen keyboard for wlroots";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = licenses.gpl3Plus;
     mainProgram = "wvkbd-mobintl";
   };

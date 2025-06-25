@@ -63,7 +63,7 @@ python3Packages.buildPythonApplication rec {
     description = "Client side encrypted pastebin";
     homepage = "https://0bin.net/";
     license = licenses.wtfpl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ julm ];
   };
 }

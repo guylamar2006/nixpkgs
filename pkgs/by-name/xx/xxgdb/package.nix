@@ -62,6 +62,6 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "xxgdb";
     license = licenses.mit;
     maintainers = with maintainers; [ emilytrau ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

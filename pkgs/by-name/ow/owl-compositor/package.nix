@@ -85,7 +85,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/owl-compositor/owl";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ wegank ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "Owl";
   };
 }

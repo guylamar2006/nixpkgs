@@ -127,6 +127,6 @@ stdenv.mkDerivation rec {
     '';
     license = licenses.wxWindows;
     maintainers = with maintainers; [ tfmoraes ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

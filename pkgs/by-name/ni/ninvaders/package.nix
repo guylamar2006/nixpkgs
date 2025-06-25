@@ -26,6 +26,6 @@ stdenv.mkDerivation rec {
     homepage = "https://ninvaders.sourceforge.net/";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ _1000101 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

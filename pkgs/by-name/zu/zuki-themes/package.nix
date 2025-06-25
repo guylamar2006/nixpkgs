@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     description = "Themes for GTK, gnome-shell and Xfce";
     homepage = "https://github.com/lassekongo83/zuki-themes";
     license = licenses.gpl3Only;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ romildo ];
   };
 }

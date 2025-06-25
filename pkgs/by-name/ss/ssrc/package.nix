@@ -40,6 +40,6 @@ stdenv.mkDerivation rec {
     homepage = "https://shibatch.sourceforge.net/";
     license = lib.licenses.gpl2;
     maintainers = with maintainers; [ leenaars ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

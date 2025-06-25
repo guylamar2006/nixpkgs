@@ -54,7 +54,7 @@ stdenv.mkDerivation {
     homepage = "https://pikchr.org";
     license = lib.licenses.bsd0;
     maintainers = with lib.maintainers; [ fgaz ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "pikchr";
   };
 }

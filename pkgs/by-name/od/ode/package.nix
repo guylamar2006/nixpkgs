@@ -29,6 +29,6 @@ stdenv.mkDerivation (finalAttrs: {
       zlib
     ];
     maintainers = with lib.maintainers; [ wegank ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

@@ -83,7 +83,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/Alecaddd/sequeler";
     license = lib.licenses.gpl3;
     teams = with lib.teams; [ pantheon ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "com.github.alecaddd.sequeler";
   };
 }

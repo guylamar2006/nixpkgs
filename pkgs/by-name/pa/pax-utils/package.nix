@@ -60,7 +60,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities";
     license = lib.licenses.gpl2Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       thoughtpolice
       joachifm

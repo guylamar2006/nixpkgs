@@ -58,7 +58,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
       offline
       screendriver
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "yarn";
   };
 })

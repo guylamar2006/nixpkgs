@@ -57,6 +57,6 @@ stdenv.mkDerivation rec {
     homepage = "https://neo4j.com/";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ offline ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

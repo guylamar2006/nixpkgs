@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     description = "libpcap based program for live TCP connection monitoring";
     mainProgram = "tcptrack";
     license = licenses.lgpl21;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ bjornfor ];
   };
 }

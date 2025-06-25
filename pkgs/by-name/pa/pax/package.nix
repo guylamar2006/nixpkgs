@@ -34,6 +34,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.mirbsd.org/pax.htm";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

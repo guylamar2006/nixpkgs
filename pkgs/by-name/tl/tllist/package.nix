@@ -44,6 +44,6 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     license = licenses.mit;
     maintainers = with maintainers; [ fionera ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

@@ -52,6 +52,6 @@ buildPythonApplication rec {
     homepage = "https://github.com/WoeUSB/WoeUSB-ng";
     license = licenses.gpl3Plus;
     maintainers = with maintainers; [ stunkymonkey ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

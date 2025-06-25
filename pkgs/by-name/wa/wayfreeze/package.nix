@@ -35,6 +35,6 @@ rustPlatform.buildRustPackage {
       jappie3 # upstream dev
     ];
     mainProgram = "wayfreeze";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

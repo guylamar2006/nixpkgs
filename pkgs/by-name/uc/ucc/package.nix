@@ -116,6 +116,6 @@ effectiveStdenv.mkDerivation (finalAttrs: {
     mainProgram = "ucc_info";
     license = licenses.bsd3;
     maintainers = with lib.maintainers; [ markuskowa ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 })

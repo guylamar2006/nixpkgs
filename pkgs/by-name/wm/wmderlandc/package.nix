@@ -33,7 +33,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Tiny program to interact with wmderland";
     homepage = "https://github.com/aesophor/wmderland/tree/master/ipc-client";
     license = licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ takagiy ];
     mainProgram = "wmderlandc";
   };

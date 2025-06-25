@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/baskerville/txtw";
     maintainers = with maintainers; [ lihop ];
     license = licenses.unlicense;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "txtw";
   };
 }

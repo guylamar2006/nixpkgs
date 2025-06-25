@@ -42,7 +42,7 @@ stdenvNoCC.mkDerivation rec {
     description = "Utilities to manage schema in .schema and .ldif format";
     homepage = "https://www.fusiondirectory.org/schema2ldif-project-and-components/";
     license = lib.licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ das_j ];
   };
 }

@@ -54,7 +54,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/nix-community/nixos-anywhere";
     mainProgram = "nixos-anywhere";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       maintainers.mic92
       maintainers.lassulus

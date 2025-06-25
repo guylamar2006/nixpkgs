@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/ierton/xkb-switch";
     license = licenses.gpl2Plus;
     maintainers = with maintainers; [ smironov ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "xkb-switch";
   };
 }

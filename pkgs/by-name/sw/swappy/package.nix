@@ -59,6 +59,6 @@ stdenv.mkDerivation rec {
     license = licenses.mit;
     mainProgram = "swappy";
     maintainers = with lib.maintainers; [ matthiasbeyer ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

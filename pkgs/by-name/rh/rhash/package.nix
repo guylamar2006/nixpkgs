@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
     homepage = "https://rhash.sourceforge.net/";
     description = "Console utility and library for computing and verifying hash sums of files";
     license = lib.licenses.bsd0;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ andrewrk ];
   };
 }

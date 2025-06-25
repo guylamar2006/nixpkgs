@@ -96,7 +96,7 @@ stdenv.mkDerivation rec {
 
     homepage = "https://www.netfilter.org/projects/ulogd/index.html";
     license = licenses.gpl2Only;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ p-h ];
   };
 }

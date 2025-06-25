@@ -40,6 +40,6 @@ stdenv.mkDerivation rec {
     description = "XGalaga++ is a classic single screen vertical shoot ’em up. It is inspired by XGalaga and reuses most of its sprites";
     mainProgram = "xgalaga++";
     license = licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

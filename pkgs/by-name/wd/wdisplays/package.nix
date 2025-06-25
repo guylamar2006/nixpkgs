@@ -42,7 +42,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/luispabon/wdisplays";
     maintainers = with maintainers; [ ma27 ];
     license = licenses.gpl3Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "wdisplays";
   };
 })

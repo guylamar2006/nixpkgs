@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     homepage = "https://lvc.github.io/pkgdiff/";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ sweber ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "pkgdiff";
   };
 }

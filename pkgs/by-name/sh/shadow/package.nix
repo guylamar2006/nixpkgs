@@ -119,7 +119,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/shadow-maint/shadow";
     description = "Suite containing authentication-related tools such as passwd and su";
     license = lib.licenses.bsd3;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 
   passthru = {

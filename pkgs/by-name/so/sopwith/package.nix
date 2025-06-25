@@ -37,6 +37,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl2Plus;
     mainProgram = "sopwith";
     maintainers = with lib.maintainers; [ evilbulgarian ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -129,7 +129,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://ohmyz.sh/";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ nequissimus ];
   };
 }

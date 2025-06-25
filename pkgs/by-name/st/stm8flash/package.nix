@@ -41,6 +41,6 @@ stdenv.mkDerivation {
     mainProgram = "stm8flash";
     maintainers = with maintainers; [ pkharvey ];
     license = lib.licenses.gpl2;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

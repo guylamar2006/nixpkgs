@@ -57,7 +57,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Cross-platform file manager";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ jiegec ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "mucommander";
   };
 })

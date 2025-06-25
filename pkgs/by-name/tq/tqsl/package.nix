@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     mainProgram = "tqsl";
     homepage = "https://www.arrl.org/tqsl-download";
     license = licenses.bsd3;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ dpflug ];
   };
 }

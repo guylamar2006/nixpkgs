@@ -70,7 +70,7 @@ stdenv.mkDerivation rec {
     description = "Simulation construction toolkit";
     homepage = "https://wiki.flightgear.org/SimGear";
     maintainers = with lib.maintainers; [ raskin ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = lib.licenses.lgpl2;
   };
 }

@@ -31,6 +31,6 @@ buildGoModule rec {
     '';
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ flokli ];
-    platforms = platforms.darwin ++ platforms.linux;
+    platforms = lib.platforms.darwin ++ platforms.linux;
   };
 }

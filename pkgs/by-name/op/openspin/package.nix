@@ -26,6 +26,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/parallaxinc/OpenSpin";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ redvers ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -80,6 +80,6 @@ stdenv.mkDerivation rec {
     ];
     maintainers = with maintainers; [ mx2uller ];
     mainProgram = "sView";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

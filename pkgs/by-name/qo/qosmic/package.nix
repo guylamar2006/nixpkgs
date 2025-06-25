@@ -79,6 +79,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/bitsed/qosmic";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ raboof ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

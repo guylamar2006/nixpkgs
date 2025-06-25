@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/baskerville/xdo";
     maintainers = with maintainers; [ meisternu ];
     license = licenses.bsd2;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "xdo";
   };
 }

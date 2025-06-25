@@ -34,6 +34,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/socketio/socket.io-client-cpp";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ wegank ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

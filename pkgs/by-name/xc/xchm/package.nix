@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/rzvncj/xCHM";
     license = licenses.gpl2;
     maintainers = with maintainers; [ sikmir ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "xchm";
   };
 }

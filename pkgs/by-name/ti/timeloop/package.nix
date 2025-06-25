@@ -95,7 +95,7 @@ stdenv.mkDerivation rec {
     description = "Chip modeling/mapping benchmarking framework";
     homepage = "https://timeloop.csail.mit.edu";
     license = licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ gdinh ];
   };
 }

@@ -60,7 +60,7 @@ stdenv.mkDerivation {
     inherit description;
     license = licenses.unfree;
     maintainers = with maintainers; [ cizra ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     homepage = "https://github.com/tome2/tome2";
   };
 }

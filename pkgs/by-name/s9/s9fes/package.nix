@@ -46,6 +46,6 @@ stdenv.mkDerivation rec {
     homepage = "http://www.t3x.org/s9fes/index.html";
     license = lib.licenses.publicDomain;
     maintainers = with lib.maintainers; [ siraben ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

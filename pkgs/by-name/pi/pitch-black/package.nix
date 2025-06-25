@@ -28,7 +28,7 @@ stdenvNoCC.mkDerivation {
     description = "Dark plasma theme built with usability in mind";
     homepage = "https://github.com/freefreeno/Pitch-Black";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ pasqui23 ];
   };
 }

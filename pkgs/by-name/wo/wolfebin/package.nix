@@ -29,6 +29,6 @@ stdenv.mkDerivation rec {
     description = "Quick and easy file sharing";
     license = licenses.mit;
     maintainers = with maintainers; [ andrewrk ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

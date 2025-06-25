@@ -29,6 +29,6 @@ buildFHSEnv {
     homepage = "https://github.com/JonathanHelianthicusDoe/shticker_book_unwritten";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ reedrw ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

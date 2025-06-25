@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     mainProgram = "sssnake";
     homepage = "https://github.com/angeljumbo/sssnake";
     license = with licenses; [ mit ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ quantenzitrone ];
   };
 }

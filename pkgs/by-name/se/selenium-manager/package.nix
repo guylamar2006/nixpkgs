@@ -35,6 +35,6 @@ rustPlatform.buildRustPackage rec {
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "selenium-manager";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

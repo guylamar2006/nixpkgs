@@ -26,6 +26,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.openfst.org/twiki/bin/view/GRM/NGramLibrary";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ mic92 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

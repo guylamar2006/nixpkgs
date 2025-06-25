@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     homepage = "https://sjeng.org/vorbisgain.html";
     description = "Utility that corrects the volume of an Ogg Vorbis file to a predefined standardized loudness";
     license = licenses.gpl2Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ pSub ];
     mainProgram = "vorbisgain";
   };

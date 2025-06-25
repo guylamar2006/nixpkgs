@@ -52,6 +52,6 @@ stdenv.mkDerivation rec {
     license = licenses.bsd2;
     homepage = "https://github.com/VMML/vmmlib/";
     maintainers = with lib.maintainers; [ adev ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

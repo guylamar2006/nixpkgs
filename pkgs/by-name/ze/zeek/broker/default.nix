@@ -91,7 +91,7 @@ stdenv.mkDerivation rec {
     mainProgram = "broker-benchmark";
     homepage = "https://github.com/zeek/broker";
     license = licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ tobim ];
   };
 }

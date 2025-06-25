@@ -69,7 +69,7 @@ stdenv.mkDerivation rec {
     description = "WebP GDK Pixbuf Loader library";
     homepage = "https://github.com/aruiz/webp-pixbuf-loader";
     license = licenses.lgpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ cwyc ];
     teams = with lib.teams; [ gnome ];
   };

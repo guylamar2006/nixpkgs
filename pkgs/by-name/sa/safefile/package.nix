@@ -16,7 +16,7 @@ stdenv.mkDerivation rec {
     description = "File open routines to safely open a file when in the presence of an attack";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ raskin ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     homepage = "https://research.cs.wisc.edu/mist/safefile/";
   };
 }

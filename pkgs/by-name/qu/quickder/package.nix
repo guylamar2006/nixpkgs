@@ -76,7 +76,7 @@ stdenv.mkDerivation rec {
     description = "Quick (and Easy) DER, a Library for parsing ASN.1";
     homepage = "https://gitlab.com/arpa2/quick-der/";
     license = lib.licenses.bsd2;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ leenaars ];
   };
 }

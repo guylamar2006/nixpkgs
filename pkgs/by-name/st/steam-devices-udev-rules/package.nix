@@ -40,7 +40,7 @@ stdenvNoCC.mkDerivation {
     description = "Udev rules list for gaming devices";
     homepage = "https://github.com/ValveSoftware/steam-devices";
     license = lib.licenses.mit;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ azuwis ];
   };
 }

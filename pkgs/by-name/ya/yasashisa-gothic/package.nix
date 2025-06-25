@@ -38,7 +38,7 @@ stdenvNoCC.mkDerivation {
       ipa
       mplus
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ h7x4 ];
   };
 }

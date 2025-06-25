@@ -66,7 +66,7 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://github.com/lf-/nix-doc";
     license = lib.licenses.lgpl3Plus;
     maintainers = with lib.maintainers; [ philiptaron ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "nix-doc";
   };
 }

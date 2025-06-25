@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     inherit (src.meta) homepage;
     description = "Theme for GTK 3, GTK 2, Gnome-Shell, and Cinnamon";
     license = licenses.gpl3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ romildo ];
   };
 }

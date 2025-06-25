@@ -25,6 +25,6 @@ stdenv.mkDerivation {
     homepage = "http://puszcza.gnu.org.ua/software/podiff";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

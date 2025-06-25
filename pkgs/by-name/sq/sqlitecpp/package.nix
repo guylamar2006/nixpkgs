@@ -36,7 +36,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://srombauts.github.io/SQLiteCpp/";
     description = "C++ SQLite3 wrapper";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       maintainers.jbedo
       maintainers.doronbehar

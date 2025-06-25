@@ -33,6 +33,6 @@ stdenv.mkDerivation rec {
     license = licenses.lgpl21;
     homepage = "http://vrb.sourceforge.net/";
     maintainers = with lib.maintainers; [ bobvanderlinden ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

@@ -39,7 +39,7 @@ stdenv.mkDerivation {
       schemes
     '';
     homepage = "https://github.com/KarypisLab/ParMETIS";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ costrouc ];
   };

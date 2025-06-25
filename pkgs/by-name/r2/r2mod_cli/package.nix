@@ -43,6 +43,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ reedrw ];
     mainProgram = "r2mod";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

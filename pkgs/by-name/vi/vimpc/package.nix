@@ -54,7 +54,7 @@ stdenv.mkDerivation rec {
     description = "Vi/vim inspired client for the Music Player Daemon (mpd)";
     homepage = "https://github.com/boysetsfrog/vimpc";
     license = licenses.gpl3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ pSub ];
     mainProgram = "vimpc";
   };

@@ -51,6 +51,6 @@ stdenv.mkDerivation rec {
     description = "Wavetable LV2 plugin synth, targeted at the electronic / dubstep genre";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ magnetophon ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

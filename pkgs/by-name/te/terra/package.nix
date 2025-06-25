@@ -114,7 +114,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Low-level counterpart to Lua";
     homepage = "https://terralang.org/";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [
       jb55
       seylerius

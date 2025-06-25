@@ -63,6 +63,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = licenses.gpl3Only;
     maintainers = with maintainers; [ galaxy ];
     mainProgram = "com.github.rajsolai.textsnatcher";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 })

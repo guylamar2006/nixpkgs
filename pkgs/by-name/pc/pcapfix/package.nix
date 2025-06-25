@@ -20,7 +20,7 @@ stdenv.mkDerivation rec {
     description = "Repair your broken pcap and pcapng files";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ ehmry ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "pcapfix";
   };
 }

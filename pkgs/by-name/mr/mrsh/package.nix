@@ -35,7 +35,7 @@ stdenv.mkDerivation {
     homepage = "https://mrsh.sh";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ matthiasbeyer ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 
   passthru = {

@@ -59,6 +59,6 @@ stdenv.mkDerivation (finalAttrs: {
     # See: https://github.com/muesli4/mpd-touch-screen-gui/tree/master/LICENSES
     license = lib.licenses.lgpl3Plus;
     maintainers = with lib.maintainers; [ doronbehar ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

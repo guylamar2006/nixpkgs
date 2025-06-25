@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
     description = "Utility for setting wallpapers in X";
     license = licenses.isc;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "xwallpaper";
   };
 }

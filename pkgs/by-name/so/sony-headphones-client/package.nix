@@ -83,7 +83,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/Plutoberth/SonyHeadphonesClient";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ stunkymonkey ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "SonyHeadphonesClient";
   };
 }

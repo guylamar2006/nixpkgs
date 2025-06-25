@@ -22,7 +22,7 @@ buildGoModule {
     description = "xmonad DBus monitoring solution";
     homepage = "https://github.com/xintron/xmonad-log";
     license = licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ joko ];
     mainProgram = "xmonad-log";
   };

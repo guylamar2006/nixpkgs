@@ -45,7 +45,7 @@ stdenv.mkDerivation {
     '';
     license = licenses.asl20;
     maintainers = with maintainers; [ pSub ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "udunits2";
   };
 }

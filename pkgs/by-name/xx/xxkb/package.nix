@@ -69,7 +69,7 @@ stdenv.mkDerivation rec {
     homepage = "http://xxkb.sourceforge.net/";
     license = licenses.artistic2;
     maintainers = with maintainers; [ rasendubi ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "xxkb";
   };
 }

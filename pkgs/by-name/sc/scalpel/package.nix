@@ -55,7 +55,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Recover files based on their headers, footers and internal data structures, based on Foremost";
     mainProgram = "scalpel";
     maintainers = with lib.maintainers; [ shard7 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = with licenses; [ asl20 ];
   };
 })

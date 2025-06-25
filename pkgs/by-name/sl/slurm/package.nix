@@ -162,7 +162,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "http://www.schedmd.com/";
     description = "Simple Linux Utility for Resource Management";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [
       jagajaga

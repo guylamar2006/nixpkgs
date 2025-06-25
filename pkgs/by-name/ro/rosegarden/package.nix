@@ -94,6 +94,6 @@ stdenv.mkDerivation rec {
     '';
     maintainers = with lib.maintainers; [ lebastr ];
     license = lib.licenses.lgpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

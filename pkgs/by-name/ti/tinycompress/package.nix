@@ -17,7 +17,7 @@ stdenv.mkDerivation rec {
     homepage = "http://www.alsa-project.org/";
     description = "Userspace library for anyone who wants to use the ALSA compressed APIs";
     license = licenses.bsd3;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ k900 ];
   };
 }

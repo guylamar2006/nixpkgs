@@ -26,6 +26,6 @@ stdenv.mkDerivation {
     maintainers = with lib.maintainers; [ fgaz ];
     # https://github.com/kristapsdz/openrsync#portability
     # https://github.com/kristapsdz/oconfigure#readme
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

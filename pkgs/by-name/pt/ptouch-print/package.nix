@@ -53,6 +53,6 @@ stdenv.mkDerivation {
     license = lib.licenses.gpl3Plus;
     mainProgram = "ptouch-print";
     maintainers = with lib.maintainers; [ shamilton ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

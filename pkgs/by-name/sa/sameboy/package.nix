@@ -65,6 +65,6 @@ stdenv.mkDerivation rec {
 
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ NieDzejkob ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

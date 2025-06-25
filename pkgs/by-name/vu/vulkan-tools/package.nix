@@ -94,7 +94,7 @@ stdenv.mkDerivation rec {
       use of the Vulkan API.
     '';
     homepage = "https://github.com/KhronosGroup/Vulkan-Tools";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = licenses.asl20;
     maintainers = with lib.maintainers; [ ralith ];
   };

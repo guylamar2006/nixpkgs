@@ -72,6 +72,6 @@ stdenv.mkDerivation rec {
     homepage = "http://scanbd.sourceforge.net/";
     downloadPage = "https://sourceforge.net/projects/scanbd/";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

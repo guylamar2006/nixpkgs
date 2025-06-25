@@ -63,7 +63,7 @@ buildGoModule rec {
     homepage = "https://restic.net";
     changelog = "https://github.com/restic/restic/blob/${src.rev}/CHANGELOG.md";
     description = "Backup program that is fast, efficient and secure";
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [
       mbrgm

@@ -22,7 +22,7 @@ stdenv.mkDerivation {
 
   meta = with lib; {
     homepage = "https://github.com/RhysU/yeshup";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = licenses.cc-by-sa-30; # From Stackoverflow answer
     maintainers = with maintainers; [ obadz ];
     mainProgram = "yeshup";

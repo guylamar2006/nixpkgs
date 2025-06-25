@@ -60,7 +60,7 @@ stdenv.mkDerivation rec {
       raskin
       obadz
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "tcpflow";
   };
 }

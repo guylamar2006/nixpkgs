@@ -27,6 +27,6 @@ stdenv.mkDerivation rec {
     homepage = "https://bitbucket.org/nygcresearch/treemix/wiki/Home";
     license = licenses.gpl3Only;
     maintainers = with lib.maintainers; [ bzizou ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

@@ -37,7 +37,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Free/open-source library for quantitative finance";
     homepage = "https://quantlib.org";
     changelog = "https://github.com/lballabio/QuantLib/releases/tag/v${finalAttrs.version}";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ kupac ];
   };

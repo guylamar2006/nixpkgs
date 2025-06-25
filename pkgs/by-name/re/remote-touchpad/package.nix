@@ -35,6 +35,6 @@ buildGoModule rec {
     homepage = "https://github.com/unrud/remote-touchpad";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ schnusch ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

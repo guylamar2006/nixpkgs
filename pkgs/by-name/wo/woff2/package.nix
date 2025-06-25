@@ -50,6 +50,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/google/woff2";
     license = licenses.mit;
     maintainers = with lib.maintainers; [ hrdinka ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

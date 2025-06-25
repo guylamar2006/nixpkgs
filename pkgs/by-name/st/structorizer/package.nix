@@ -113,7 +113,7 @@ stdenv.mkDerivation rec {
     description = "Create Nassi-Shneiderman diagrams (NSD)";
     homepage = "https://structorizer.fisch.lu";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ annaaurora ];
     mainProgram = "structorizer";
   };

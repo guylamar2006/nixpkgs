@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     description = "Automatically identify anti-patterns in SQL queries";
     mainProgram = "sqlcheck";
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
   };
 }

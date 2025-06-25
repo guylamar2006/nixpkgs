@@ -43,7 +43,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "xdg-desktop-portal backend for choosing files with your favorite file chooser";
     homepage = "https://github.com/hunkyburrito/xdg-desktop-portal-termfilechooser";
     license = licenses.mit;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [
       body20002
       ltrump

@@ -86,7 +86,7 @@ stdenv.mkDerivation {
       take on the straighter sides from Roboto Condensed.
     '';
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ romildo ];
   };
 }

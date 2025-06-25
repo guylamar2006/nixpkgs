@@ -26,6 +26,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ fab ];
     mainProgram = "pwgen";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

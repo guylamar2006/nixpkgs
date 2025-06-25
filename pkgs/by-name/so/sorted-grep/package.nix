@@ -54,7 +54,7 @@ stdenv.mkDerivation rec {
       key and outputs the matching lines. When searching large files sgrep is much
       faster than traditional Unix grep, but with significant restrictions.
     '';
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ ivan ];
   };

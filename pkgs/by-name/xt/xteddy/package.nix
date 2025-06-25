@@ -56,6 +56,6 @@ stdenv.mkDerivation rec {
     homepage = "https://weber.itn.liu.se/~stegu/xteddy/";
     license = licenses.gpl2;
     maintainers = with lib.maintainers; [ xaverdh ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

@@ -32,6 +32,6 @@ stdenvNoCC.mkDerivation rec {
     '';
     license = licenses.cc-by-nd-30;
     maintainers = with lib.maintainers; [ jiehong ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

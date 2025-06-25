@@ -29,6 +29,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = licenses.asl20;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "wb32-dfu-updater_cli";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

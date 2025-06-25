@@ -34,6 +34,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/dvddarias/rdocker";
     maintainers = with lib.maintainers; [ pneumaticat ];
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

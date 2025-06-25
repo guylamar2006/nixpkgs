@@ -39,7 +39,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/Grumbel/sdl-jstest";
     description = "Simple SDL joystick test application for the console";
     license = lib.licenses.gpl3;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ abbradar ];
   };
 }

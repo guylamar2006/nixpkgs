@@ -59,6 +59,6 @@ symlinkJoin {
     description = "Unicode Emoji Data Files";
     homepage = "https://home.unicode.org/emoji/";
     license = licenses.unicode-dfs-2016;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

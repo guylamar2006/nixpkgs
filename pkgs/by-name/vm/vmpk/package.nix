@@ -41,6 +41,6 @@ stdenv.mkDerivation rec {
     homepage = "http://vmpk.sourceforge.net/";
     license = licenses.gpl3Plus;
     maintainers = with maintainers; [ orivej ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

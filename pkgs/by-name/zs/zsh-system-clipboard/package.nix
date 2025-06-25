@@ -28,6 +28,6 @@ stdenv.mkDerivation rec {
       _0qq
       satoqz
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

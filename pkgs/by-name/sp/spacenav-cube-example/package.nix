@@ -31,7 +31,7 @@ stdenv.mkDerivation {
     homepage = "https://spacenav.sourceforge.net/";
     description = "Example application to test the spacenavd driver";
     license = lib.licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ sohalt ];
     mainProgram = "spacenav-cube-example";
   };

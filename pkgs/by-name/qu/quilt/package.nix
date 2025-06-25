@@ -68,7 +68,7 @@ stdenv.mkDerivation rec {
 
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ smancill ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 
 }

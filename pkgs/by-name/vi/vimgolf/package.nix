@@ -16,6 +16,6 @@ bundlerApp {
     homepage = "https://vimgolf.com";
     license = licenses.mit;
     maintainers = with maintainers; [ leungbk ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

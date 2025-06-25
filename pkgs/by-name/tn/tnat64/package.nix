@@ -29,8 +29,8 @@ stdenv.mkDerivation rec {
       to communicate with the IPv4 world, even if that application does not
       support IPv6 at all.
     '';
-    platforms = platforms.unix;
-    badPlatforms = platforms.darwin;
+    platforms = lib.platforms.unix;
+    badplatforms = lib.platforms.darwin;
     maintainers = with lib.maintainers; [ rnhmjoj ];
   };
 

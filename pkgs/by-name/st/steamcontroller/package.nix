@@ -37,6 +37,6 @@ buildPythonApplication {
     homepage = "https://github.com/ynsta/steamcontroller";
     license = lib.licenses.mit;
     maintainers = with maintainers; [ rnhmjoj ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

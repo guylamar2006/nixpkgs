@@ -36,7 +36,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Utility that queries the X server for the user's idle time and prints it to stdout";
     license = licenses.gpl2Only;
     maintainers = with maintainers; [ fgaz ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "xprintidle";
   };
 })

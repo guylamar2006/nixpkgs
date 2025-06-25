@@ -25,7 +25,7 @@ stdenv.mkDerivation {
     mainProgram = "swarm";
     homepage = "http://spinroot.com/";
     license = licenses.free;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ abbradar ];
   };
 }

@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
     description = "Small command line driven tool for recovering passwords and content from PDF files";
     mainProgram = "pdfcrack";
     license = with licenses; [ gpl2Plus ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ qoelet ];
   };
 }

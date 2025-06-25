@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
     description = "Open files with xdg-open from Windows Subsystem for Linux (WSL) in Windows applications";
     homepage = "https://gitlab.com/4U6U57/wsl-open";
     license = licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ SuperSandro2000 ];
     mainProgram = "wsl-open";
   };

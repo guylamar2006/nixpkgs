@@ -37,7 +37,7 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://github.com/kpcyrd/sniffglue";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ xrelkd ];
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
     mainProgram = "sniffglue";
   };
 }

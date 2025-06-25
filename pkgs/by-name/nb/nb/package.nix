@@ -82,7 +82,7 @@ stdenv.mkDerivation rec {
     homepage = "https://xwmx.github.io/nb/";
     license = lib.licenses.agpl3Plus;
     maintainers = with lib.maintainers; [ toonn ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "nb";
   };
 }

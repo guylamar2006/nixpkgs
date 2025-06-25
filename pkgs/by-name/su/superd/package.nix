@@ -38,7 +38,7 @@ buildGoModule rec {
     description = "Unprivileged user service supervisor";
     homepage = "https://sr.ht/~craftyguy/superd/";
     license = licenses.gpl3Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [
       chuangzhu
       wentam

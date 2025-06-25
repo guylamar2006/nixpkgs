@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
     homepage = "https://xmlrpc-c.sourceforge.net/";
     # <xmlrpc-c>/doc/COPYING also lists "ABYSS Web Server License" and "Python 1.5.2 License"
     license = licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ bjornfor ];
   };
 }

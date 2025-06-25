@@ -32,6 +32,6 @@ stdenv.mkDerivation rec {
     homepage = "https://osqp.org";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ taktoa ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

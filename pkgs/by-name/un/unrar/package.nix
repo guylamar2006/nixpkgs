@@ -60,6 +60,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = licenses.unfreeRedistributable;
     mainProgram = "unrar";
     maintainers = with maintainers; [ wegank ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

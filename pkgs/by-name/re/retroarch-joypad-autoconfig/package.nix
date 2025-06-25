@@ -29,6 +29,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://www.libretro.com/";
     license = lib.licenses.mit;
     teams = with lib.teams; [ libretro ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

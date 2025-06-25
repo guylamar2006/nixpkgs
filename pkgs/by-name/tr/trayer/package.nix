@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/sargon/trayer-srg";
     license = licenses.mit;
     description = "Lightweight GTK2-based systray for UNIX desktop";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ pSub ];
     mainProgram = "trayer";
   };

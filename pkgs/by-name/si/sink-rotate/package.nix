@@ -37,6 +37,6 @@ rustPlatform.buildRustPackage {
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ mightyiam ];
     mainProgram = "sink-rotate";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

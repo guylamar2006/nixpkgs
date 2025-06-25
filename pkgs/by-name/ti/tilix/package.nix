@@ -72,7 +72,7 @@ stdenv.mkDerivation (finalAttrs: {
       midchildan
       jtbx
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "tilix";
   };
 })

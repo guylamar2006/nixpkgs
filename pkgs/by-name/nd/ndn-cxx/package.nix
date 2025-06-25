@@ -68,7 +68,7 @@ stdenv.mkDerivation rec {
       and consuming less resources overall.
     '';
     license = lib.licenses.lgpl3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       sjmackenzie
       bertof

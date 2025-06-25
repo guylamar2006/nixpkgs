@@ -34,7 +34,7 @@ rustPlatform.buildRustPackage {
     homepage = "https://github.com/imLinguin/vulkan-helper-rs";
     license = licenses.mit;
     maintainers = with maintainers; [ aidalgol ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "vulkan-helper";
   };
 }

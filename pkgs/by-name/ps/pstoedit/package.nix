@@ -60,7 +60,7 @@ stdenv.mkDerivation rec {
     homepage = "https://sourceforge.net/projects/pstoedit/";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ marcweber ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "pstoedit";
   };
 }

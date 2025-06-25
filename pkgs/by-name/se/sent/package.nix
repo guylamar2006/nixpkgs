@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     mainProgram = "sent";
     homepage = "https://tools.suckless.org/sent/";
     license = lib.licenses.isc;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ pSub ];
   };
 }

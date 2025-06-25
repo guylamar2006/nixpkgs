@@ -157,6 +157,6 @@ stdenv.mkDerivation rec {
     homepage = "https://tenacityaudio.org/";
     license = licenses.gpl2Plus;
     maintainers = with maintainers; [ irenes ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

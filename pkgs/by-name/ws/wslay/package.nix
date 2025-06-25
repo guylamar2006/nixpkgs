@@ -48,6 +48,6 @@ stdenv.mkDerivation rec {
     description = "WebSocket library in C";
     license = with licenses; [ mit ];
     maintainers = with maintainers; [ pingiun ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

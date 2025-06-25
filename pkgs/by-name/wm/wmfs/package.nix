@@ -54,7 +54,7 @@ stdenv.mkDerivation {
     description = "Window manager from scratch";
     license = licenses.bsd2;
     maintainers = with lib.maintainers; [ balsoft ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "wmfs";
   };
 }

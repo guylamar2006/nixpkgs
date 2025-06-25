@@ -85,7 +85,7 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl3;
     homepage = "https://github.com/KittyKatt/screenFetch";
     maintainers = with lib.maintainers; [ relrod ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "screenfetch";
   };
 }

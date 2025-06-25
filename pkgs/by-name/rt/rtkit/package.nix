@@ -60,6 +60,6 @@ stdenv.mkDerivation {
       gpl3
       bsd0
     ]; # lib is bsd license
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

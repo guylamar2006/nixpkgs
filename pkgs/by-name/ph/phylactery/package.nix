@@ -29,6 +29,6 @@ buildGoModule rec {
     homepage = "https://trong.loang.net/phylactery/about";
     license = lib.licenses.agpl3Plus;
     maintainers = with lib.maintainers; [ McSinyx ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

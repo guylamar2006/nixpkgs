@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     mainProgram = "riemann";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = lib.licenses.epl10;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ crimeminister ];
   };
 }

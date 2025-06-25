@@ -29,7 +29,7 @@ stdenv.mkDerivation {
     description = "Username generator tool for penetration testing";
     license = licenses.mit;
     maintainers = with lib.maintainers; [ akechishiro ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "username-anarchy";
   };
 }

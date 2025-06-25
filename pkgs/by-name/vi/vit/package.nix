@@ -41,7 +41,7 @@ buildPythonApplication rec {
     description = "Visual Interactive Taskwarrior";
     mainProgram = "vit";
     maintainers = with maintainers; [ arcnmx ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = licenses.mit;
   };
 }

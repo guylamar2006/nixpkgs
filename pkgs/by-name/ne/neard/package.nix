@@ -80,6 +80,6 @@ stdenv.mkDerivation {
     homepage = "https://01.org/linux-nfc";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -67,7 +67,7 @@ stdenv.mkDerivation rec {
     homepage = "http://swingsane.com/";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "swingsane";
   };
 }

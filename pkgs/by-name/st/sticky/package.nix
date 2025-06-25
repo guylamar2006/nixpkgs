@@ -72,7 +72,7 @@ stdenv.mkDerivation rec {
     mainProgram = "sticky";
     homepage = "https://github.com/linuxmint/sticky";
     license = lib.licenses.gpl2Only;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [
       linsui
       bobby285271

@@ -38,6 +38,6 @@ stdenv.mkDerivation rec {
     license = [ licenses.bsd3 ];
     maintainers = with maintainers; [ anthonyroussel ];
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

@@ -41,6 +41,6 @@ stdenv.mkDerivation rec {
     }";
     license = lib.licenses.isc;
     maintainers = with lib.maintainers; [ _1000101 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

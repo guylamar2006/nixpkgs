@@ -157,6 +157,6 @@ stdenv.mkDerivation {
       danielfullmer
       mic92 # also can test darwin
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

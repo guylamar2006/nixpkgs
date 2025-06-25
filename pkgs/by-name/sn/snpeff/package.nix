@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     homepage = "https://snpeff.sourceforge.net/";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     maintainers = with lib.maintainers; [ jbedo ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 
 }

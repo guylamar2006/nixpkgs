@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
       shamilton
       h7x4
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "usbview";
   };
 }

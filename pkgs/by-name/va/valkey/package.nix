@@ -101,7 +101,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://valkey.io/";
     description = "High-performance data structure server that primarily serves key/value workloads";
     license = licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ ];
     changelog = "https://github.com/valkey-io/valkey/releases/tag/${finalAttrs.version}";
     mainProgram = "valkey-cli";

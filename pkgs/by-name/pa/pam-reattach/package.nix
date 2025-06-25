@@ -31,6 +31,6 @@ stdenv.mkDerivation rec {
     description = "Reattach to the user's GUI session on macOS during authentication (for Touch ID support in tmux)";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ lockejan ];
-    platforms = platforms.darwin;
+    platforms = lib.platforms.darwin;
   };
 }

@@ -37,6 +37,6 @@ stdenv.mkDerivation rec {
     homepage = "https://oss.oetiker.ch/mrtg/";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ robberer ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

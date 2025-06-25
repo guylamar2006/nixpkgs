@@ -64,6 +64,6 @@ stdenv.mkDerivation rec {
     description = "Help viewer in Gnome";
     teams = with lib.teams; [ gnome ];
     license = licenses.gpl2;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

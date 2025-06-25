@@ -40,6 +40,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.gnu.org/software/unrtf/";
     license = licenses.gpl3Plus;
     maintainers = with maintainers; [ joachifm ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

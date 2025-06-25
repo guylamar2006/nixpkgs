@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/ropery/xrectsel";
     license = licenses.gpl3Plus;
     maintainers = with maintainers; [ sikmir ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "xrectsel";
   };
 }

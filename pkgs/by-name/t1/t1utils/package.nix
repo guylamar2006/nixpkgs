@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
       free = true;
       redistributable = true;
     };
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ bjornfor ];
   };
 }

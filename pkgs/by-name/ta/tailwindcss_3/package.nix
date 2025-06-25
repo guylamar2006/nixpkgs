@@ -62,6 +62,6 @@ stdenv.mkDerivation (finalAttrs: {
     sourceProvenance = [ sourceTypes.binaryNativeCode ];
     maintainers = with lib.maintainers; [ adamcstephens ];
     mainProgram = "tailwindcss";
-    platforms = platforms.darwin ++ platforms.linux;
+    platforms = lib.platforms.darwin ++ platforms.linux;
   };
 })

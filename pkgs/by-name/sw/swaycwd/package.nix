@@ -36,7 +36,7 @@ buildNimPackage (finalAttrs: {
     homepage = "https://gitlab.com/cab404/swaycwd";
     description = "Returns cwd for shell in currently focused sway window, or home directory if cannot find shell";
     maintainers = with maintainers; [ cab404 ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = licenses.gpl3Only;
     mainProgram = "swaycwd";
   };

@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     mainProgram = "yash";
     license = licenses.gpl2Plus;
     maintainers = with maintainers; [ qbit ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 
   passthru.shellPath = "/bin/yash";

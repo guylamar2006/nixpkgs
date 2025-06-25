@@ -38,7 +38,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/zolrath/wemux";
     description = "Multi-user tmux made easy";
     license = licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with maintainers; [ bsima ];
     mainProgram = "wemux";
   };

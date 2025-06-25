@@ -120,7 +120,7 @@ python3Packages.buildPythonApplication rec {
     description = "Fast application launcher for Linux, written in Python, using GTK";
     homepage = "https://ulauncher.io/";
     license = licenses.gpl3;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "ulauncher";
     maintainers = with maintainers; [
       aaronjanse

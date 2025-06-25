@@ -61,6 +61,6 @@ stdenv.mkDerivation rec {
     description = "Simple GObject-based library to parse and save a host of playlist formats";
     teams = with lib.teams; [ gnome ];
     license = licenses.lgpl2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

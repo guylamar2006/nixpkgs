@@ -116,7 +116,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://www.roomeqwizard.com/";
     license = lib.licenses.unfree;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       orivej
       zaninime

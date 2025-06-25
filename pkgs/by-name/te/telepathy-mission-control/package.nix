@@ -61,6 +61,6 @@ stdenv.mkDerivation rec {
     homepage = "https://telepathy.freedesktop.org/components/telepathy-mission-control/";
     license = licenses.lgpl21Only;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

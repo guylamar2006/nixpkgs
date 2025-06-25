@@ -47,6 +47,6 @@ stdenv.mkDerivation rec {
     homepage = "https://doua.prabi.fr/software/seaview";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ iimog ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

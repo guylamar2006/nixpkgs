@@ -69,6 +69,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ emmabastas ];
     mainProgram = "spectre";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

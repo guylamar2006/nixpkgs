@@ -78,6 +78,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = licenses.mit;
     mainProgram = "trigger-control";
     maintainers = with maintainers; [ azuwis ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

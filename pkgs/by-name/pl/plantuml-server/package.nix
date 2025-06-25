@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
     homepage = "https://plantuml.com/";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       truh
       anthonyroussel

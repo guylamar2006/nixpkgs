@@ -62,7 +62,7 @@ stdenv.mkDerivation rec {
     description = "CUPS drivers for SPL (Samsung Printer Language) printers";
     homepage = "http://splix.ap2c.org";
     license = lib.licenses.gpl2Only;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ ];
   };
 }

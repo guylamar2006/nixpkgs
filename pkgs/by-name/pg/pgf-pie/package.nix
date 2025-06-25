@@ -29,6 +29,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     description = "Some LaTeX macros for pie charts using the PGF/TikZ package";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

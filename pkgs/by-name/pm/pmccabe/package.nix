@@ -49,6 +49,6 @@ stdenv.mkDerivation rec {
       than a file name.
     '';
     maintainers = with lib.maintainers; [ peterhoeg ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -53,6 +53,6 @@ stdenv.mkDerivation rec {
     homepage = "https://xschem.sourceforge.io/stefan/";
     license = licenses.gpl2Plus;
     maintainers = with maintainers; [ fbeffa ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

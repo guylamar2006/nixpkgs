@@ -25,6 +25,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/redboltz/mqtt_cpp";
     license = lib.licenses.boost;
     maintainers = with lib.maintainers; [ spalf ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

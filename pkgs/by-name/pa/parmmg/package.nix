@@ -52,7 +52,7 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Distributed parallelization of 3D volume mesh adaptation";
     homepage = "http://www.mmgtools.org/";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.lgpl3Plus;
     maintainers = with lib.maintainers; [ mkez ];
   };

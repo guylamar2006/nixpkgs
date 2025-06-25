@@ -44,7 +44,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/greg7mdp/parallel-hashmap";
     changelog = "https://github.com/greg7mdp/parallel-hashmap/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ natsukium ];
   };
 })

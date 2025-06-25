@@ -89,6 +89,6 @@ stdenv.mkDerivation rec {
     # the right license.
     license = lib.licenses.gpl2;
     teams = with lib.teams; [ sage ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

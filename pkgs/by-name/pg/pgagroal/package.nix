@@ -40,6 +40,6 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/agroal/pgagroal/releases/tag/${finalAttrs.version}";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

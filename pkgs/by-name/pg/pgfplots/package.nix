@@ -29,6 +29,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     description = "TeX package to draw plots directly in TeX in two and three dimensions";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

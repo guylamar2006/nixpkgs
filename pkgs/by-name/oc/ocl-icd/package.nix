@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
     mainProgram = "cllayerinfo";
     homepage = "https://github.com/OCL-dev/ocl-icd";
     license = lib.licenses.bsd2;
-    platforms = platforms.unix ++ platforms.windows;
+    platforms = lib.platforms.unix ++ platforms.windows;
     maintainers = with lib.maintainers; [ r-burns ];
   };
 }

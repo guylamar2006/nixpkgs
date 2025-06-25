@@ -32,6 +32,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ kroell ];
     mainProgram = "ssocr";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

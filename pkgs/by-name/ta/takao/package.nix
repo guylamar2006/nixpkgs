@@ -27,6 +27,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://launchpad.net/takao-fonts";
     license = licenses.ipa;
     maintainers = with lib.maintainers; [ serge ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

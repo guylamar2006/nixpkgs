@@ -52,7 +52,7 @@ stdenv.mkDerivation {
     homepage = "https://icculus.org/smpeg/";
     description = "SDL2 MPEG Player Library";
     license = lib.licenses.lgpl2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ orivej ];
   };
 }

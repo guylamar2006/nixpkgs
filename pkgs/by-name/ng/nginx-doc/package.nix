@@ -42,7 +42,7 @@ stdenv.mkDerivation {
     description = "Reverse proxy and lightweight webserver (documentation)";
     homepage = "https://nginx.org/";
     license = lib.licenses.bsd2;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     priority = 6;
     maintainers = with lib.maintainers; [ kaction ];
   };

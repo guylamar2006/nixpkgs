@@ -42,6 +42,6 @@ stdenv.mkDerivation rec {
     description = "Step7 Open Source Ethernet Communication Suite";
     license = lib.licenses.lgpl3;
     maintainers = with lib.maintainers; [ freezeboy ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

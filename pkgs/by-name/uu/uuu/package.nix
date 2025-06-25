@@ -69,6 +69,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = licenses.bsd3;
     maintainers = with maintainers; [ otavio ];
     mainProgram = "uuu";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

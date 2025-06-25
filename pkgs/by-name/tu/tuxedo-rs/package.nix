@@ -49,7 +49,7 @@ rustPlatform.buildRustPackage rec {
       mrcjkb
       xaverdh
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "tailor";
   };
 }

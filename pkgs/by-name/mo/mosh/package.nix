@@ -86,6 +86,6 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ skeuchel ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

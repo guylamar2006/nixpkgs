@@ -21,7 +21,7 @@ buildGoModule rec {
     description = "Lightweight URL fuzzer and spider: Discover a web server's undisclosed files, directories and VHOSTs";
     mainProgram = "scout";
     homepage = "https://github.com/liamg/scout";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.unlicense;
     maintainers = with lib.maintainers; [ totoroot ];
   };

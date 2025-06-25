@@ -140,7 +140,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Implementation of Meson build system in C99";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin; # typical `ar failure`
     mainProgram = "muon";
   };

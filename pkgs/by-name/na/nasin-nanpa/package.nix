@@ -29,7 +29,7 @@ stdenvNoCC.mkDerivation rec {
       sitelen pi nasin ni li lon nasin UCSUR kin.
     '';
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ somasis ];
   };
 }

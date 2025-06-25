@@ -25,7 +25,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/ssvb/tinymembench";
     description = "Simple benchmark for memory throughput and latency";
     license = licenses.mit;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "tinymembench";
     maintainers = with maintainers; [ lorenz ];
   };

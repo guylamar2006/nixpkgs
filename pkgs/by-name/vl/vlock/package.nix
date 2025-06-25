@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
     description = "Virtual console locking program";
     license = licenses.gpl2Only;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "vlock";
   };
 }

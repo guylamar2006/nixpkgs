@@ -38,7 +38,7 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Console front-end for Pandora.com";
     homepage = "https://6xq.net/pianobar/";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.mit; # expat version
     mainProgram = "pianobar";
   };

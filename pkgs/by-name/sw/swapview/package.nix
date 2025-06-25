@@ -22,7 +22,7 @@ rustPlatform.buildRustPackage {
     description = "Simple program to view processes' swap usage on Linux";
     mainProgram = "swapview";
     homepage = "https://github.com/lilydjwg/swapview";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = with licenses; [ bsd3 ];
     maintainers = with maintainers; [ oxalica ];
   };

@@ -52,6 +52,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/bepaald/signalbackup-tools";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ malo ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

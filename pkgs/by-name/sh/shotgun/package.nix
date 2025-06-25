@@ -26,7 +26,7 @@ rustPlatform.buildRustPackage rec {
       figsoda
       lumi
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "shotgun";
   };
 }

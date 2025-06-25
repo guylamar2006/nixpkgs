@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/jirutka/otf2bdf";
     description = "OpenType to BDF font converter";
     license = lib.licenses.mit0;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ hzeller ];
     mainProgram = "otf2bdf";
   };

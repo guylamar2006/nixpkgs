@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/fsaintjacques/semver-tool";
     description = "semver bash implementation";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ qyliss ];
     mainProgram = "semver";
   };

@@ -22,7 +22,7 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "scrounge-ntfs";
     homepage = "http://thewalter.net/stef/software/scrounge/";
     maintainers = with lib.maintainers; [ d3vil0p3r ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.bsd3;
   };
 })

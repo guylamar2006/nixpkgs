@@ -56,7 +56,7 @@ stdenv.mkDerivation rec {
     description = "Command line tools that provide access to a TPM 2.0 compatible device";
     homepage = "https://github.com/tpm2-software/tpm2-tools";
     license = licenses.bsd3;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ ];
   };
 }

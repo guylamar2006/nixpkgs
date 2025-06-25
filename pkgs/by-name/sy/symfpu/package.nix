@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
     description = "(concrete or symbolic) implementation of IEEE-754 / SMT-LIB floating-point";
     homepage = "https://github.com/martin-cs/symfpu";
     license = licenses.gpl3Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ shadaj ];
   };
 }

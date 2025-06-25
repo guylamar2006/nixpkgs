@@ -22,6 +22,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/figiel/hosts";
     maintainers = with lib.maintainers; [ bobvanderlinden ];
     license = licenses.cc0;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

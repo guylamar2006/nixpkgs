@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
       gpl2Plus
       lgpl21Plus
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

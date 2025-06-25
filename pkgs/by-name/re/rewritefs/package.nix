@@ -36,6 +36,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/sloonz/rewritefs";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ rnhmjoj ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

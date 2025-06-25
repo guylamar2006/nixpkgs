@@ -76,6 +76,6 @@ stdenv.mkDerivation rec {
     description = "Event system based on the talloc memory management library";
     homepage = "https://tevent.samba.org/";
     license = licenses.lgpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

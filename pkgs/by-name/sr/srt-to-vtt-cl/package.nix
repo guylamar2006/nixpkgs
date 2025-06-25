@@ -30,7 +30,7 @@ stdenv.mkDerivation {
     license = lib.licenses.mit;
     maintainers = with maintainers; [ ericdallo ];
     homepage = "https://github.com/nwoltman/srt-to-vtt-cl";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "srt-vtt";
   };
 }

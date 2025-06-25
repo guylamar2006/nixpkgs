@@ -18,6 +18,6 @@ stdenv.mkDerivation rec {
     homepage = "https://sourceforge.net/projects/opencore-amr/";
     license = licenses.asl20;
     maintainers = with lib.maintainers; [ baloo ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

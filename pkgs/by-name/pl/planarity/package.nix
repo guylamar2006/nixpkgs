@@ -30,6 +30,6 @@ stdenv.mkDerivation rec {
     mainProgram = "planarity";
     license = lib.licenses.bsd3;
     teams = with lib.teams; [ sage ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

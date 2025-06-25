@@ -61,7 +61,7 @@ stdenv.mkDerivation rec {
     description = "Audio receiver for the Scream virtual network sound card";
     homepage = "https://github.com/duncanthrax/scream";
     license = lib.licenses.mspl;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "scream";
     maintainers = with lib.maintainers; [ arcnmx ];
   };

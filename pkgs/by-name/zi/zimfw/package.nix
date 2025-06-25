@@ -33,6 +33,6 @@ stdenv.mkDerivation rec {
     homepage = "https://zimfw.sh";
     license = licenses.mit;
     maintainers = with lib.maintainers; [ joedevivo ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

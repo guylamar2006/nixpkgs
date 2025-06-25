@@ -42,6 +42,6 @@ stdenv.mkDerivation rec {
     description = "Game starring a fruit-eating snake";
     homepage = "https://shh.thathost.com/pub-unix/html/snake4.html";
     license = lib.licenses.artistic1;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

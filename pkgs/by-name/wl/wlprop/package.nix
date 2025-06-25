@@ -48,7 +48,7 @@ stdenv.mkDerivation {
     homepage = "https://gist.github.com/crispyricepc/f313386043395ff06570e02af2d9a8e0";
     license = licenses.mit;
     maintainers = with maintainers; [ ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "wlprop";
   };
 }

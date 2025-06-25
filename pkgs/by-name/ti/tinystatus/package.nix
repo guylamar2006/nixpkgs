@@ -66,7 +66,7 @@ stdenvNoCC.mkDerivation rec {
     mainProgram = "tinystatus";
     homepage = "https://github.com/bderenzo/tinystatus";
     license = licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ matthewcroughan ];
   };
 }

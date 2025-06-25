@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     description = "Packet sniffer for 802.15.4 wireless networks";
     mainProgram = "whsniff";
     maintainers = with maintainers; [ snicket2100 ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = licenses.gpl2Only;
   };
 }

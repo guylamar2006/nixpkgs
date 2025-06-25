@@ -60,6 +60,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/tux4kids/t4kcommon";
     license = licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ aanderse ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

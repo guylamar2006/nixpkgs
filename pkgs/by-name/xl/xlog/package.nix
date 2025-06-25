@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.nongnu.org/xlog";
     maintainers = with lib.maintainers; [ mafo ];
     license = licenses.gpl3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "xlog";
   };
 }

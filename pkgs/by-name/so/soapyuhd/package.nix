@@ -41,6 +41,6 @@ stdenv.mkDerivation rec {
     description = "SoapySDR plugin for UHD devices";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ markuskowa ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -124,6 +124,6 @@ stdenv.mkDerivation {
       delta231
     ];
     mainProgram = "v";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

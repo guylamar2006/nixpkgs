@@ -39,6 +39,6 @@ stdenv.mkDerivation rec {
     changelog = "https://salsa.debian.org/debian/sensible-utils/-/tags";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ pbek ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

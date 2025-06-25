@@ -23,6 +23,6 @@ stdenv.mkDerivation {
     description = "PNG manipulation tools";
     maintainers = with lib.maintainers; [ zendo ];
     license = lib.licenses.gpl2Only;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -56,6 +56,6 @@ stdenv.mkDerivation {
     homepage = "https://picolisp.com/";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ nat-418 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

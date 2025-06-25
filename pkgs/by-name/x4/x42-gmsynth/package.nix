@@ -36,6 +36,6 @@ stdenv.mkDerivation rec {
     homepage = "https://x42-plugins.com/x42/x42-gmsynth";
     maintainers = with maintainers; [ orivej ];
     license = licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

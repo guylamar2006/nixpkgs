@@ -94,7 +94,7 @@ stdenv.mkDerivation rec {
       replay, and tests.
     '';
     homepage = "https://github.com/LunarG/VulkanTools";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = licenses.asl20;
     maintainers = with lib.maintainers; [ ];
   };

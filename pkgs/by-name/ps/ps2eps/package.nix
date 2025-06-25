@@ -65,7 +65,7 @@ perlPackages.buildPerlPackage rec {
     inherit (src.meta) homepage;
     description = "Calculate correct bounding boxes for PostScript and PDF files";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ doronbehar ];
   };
 }

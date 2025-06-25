@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
     mainProgram = "quantumminigolf";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ raskin ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     # never built on aarch64-linux since first introduction in nixpkgs
     broken = stdenv.hostPlatform.isLinux && stdenv.hostPlatform.isAarch64;
   };

@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
     homepage = "http://sarrazip.com/dev/verbiste.html";
     description = "French and Italian verb conjugator";
     license = licenses.gpl2Plus;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     maintainers = with maintainers; [ orivej ];
   };
 }

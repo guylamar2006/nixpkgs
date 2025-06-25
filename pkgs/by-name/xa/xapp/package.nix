@@ -100,7 +100,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/linuxmint/xapp";
     description = "Cross-desktop libraries and common resources";
     license = licenses.lgpl3;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     teams = with lib.teams; [ cinnamon ];
   };
 }

@@ -77,7 +77,7 @@ stdenv.mkDerivation rec {
     mainProgram = "virgl_test_server";
     homepage = "https://virgil3d.github.io/";
     license = licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ xeji ];
   };
 }

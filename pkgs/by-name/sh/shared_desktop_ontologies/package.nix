@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
       ontologies such as RDF and RDFS as well as the Nepomuk ontologies which
       are used by projects like KDE or Strigi.
     '';
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ sander ];
   };
 }

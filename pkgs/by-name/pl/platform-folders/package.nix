@@ -30,6 +30,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/sago007/PlatformFolders";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

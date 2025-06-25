@@ -53,6 +53,6 @@ stdenv.mkDerivation {
       obadz
       toonn
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

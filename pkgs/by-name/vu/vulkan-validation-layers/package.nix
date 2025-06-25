@@ -85,7 +85,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Official Khronos Vulkan validation layers";
     homepage = "https://github.com/KhronosGroup/Vulkan-ValidationLayers";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = licenses.asl20;
     maintainers = with lib.maintainers; [ ralith ];
   };

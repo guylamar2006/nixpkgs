@@ -46,6 +46,6 @@ buildNpmPackage rec {
     homepage = "https://github.com/lovasoa/whitebophir";
     mainProgram = "whitebophir";
     maintainers = with maintainers; [ iblech ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

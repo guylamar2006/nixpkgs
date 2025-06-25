@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
       raskin
       fpletz
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "wavemon";
   };
 }

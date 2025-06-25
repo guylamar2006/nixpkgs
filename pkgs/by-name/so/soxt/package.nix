@@ -37,6 +37,6 @@ stdenv.mkDerivation {
     license = lib.licenses.bsd3;
     description = "GUI binding for using Open Inventor with Xt/Motif";
     maintainers = with lib.maintainers; [ tmplt ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

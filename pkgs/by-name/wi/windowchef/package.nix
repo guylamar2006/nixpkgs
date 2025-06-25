@@ -37,6 +37,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/tudurom/windowchef";
     maintainers = with maintainers; [ bhougland ];
     license = licenses.isc;
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

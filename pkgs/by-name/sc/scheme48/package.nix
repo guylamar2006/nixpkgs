@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://s48.org/";
     description = "Scheme 48 interpreter for R5RS";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ siraben ];
   };

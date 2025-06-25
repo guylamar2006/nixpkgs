@@ -28,6 +28,6 @@ stdenvNoCC.mkDerivation rec {
     description = "Arabic script font for a style of writing used in Niger, West Africa";
     license = lib.licenses.ofl;
     maintainers = with lib.maintainers; [ vbgl ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

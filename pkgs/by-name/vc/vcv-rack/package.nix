@@ -273,6 +273,6 @@ stdenv.mkDerivation rec {
       ddelabru
     ];
     mainProgram = "Rack";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

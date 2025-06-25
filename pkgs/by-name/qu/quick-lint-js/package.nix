@@ -69,7 +69,7 @@ stdenv.mkDerivation {
     homepage = "https://quick-lint-js.com";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ ratsclub ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 
   # Expose quick-lint-js-build-tools to nix repl as quick-lint-js.build-tools.

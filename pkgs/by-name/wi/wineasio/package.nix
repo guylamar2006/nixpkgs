@@ -58,6 +58,6 @@ multiStdenv.mkDerivation rec {
       lgpl21
     ];
     maintainers = with maintainers; [ lovesegfault ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

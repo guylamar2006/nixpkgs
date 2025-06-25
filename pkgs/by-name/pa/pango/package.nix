@@ -132,7 +132,7 @@ stdenv.mkDerivation (finalAttrs: {
 
     maintainers = with lib.maintainers; [ raskin ];
     teams = with lib.teams; [ gnome ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
 
     pkgConfigModules = [
       "pango"

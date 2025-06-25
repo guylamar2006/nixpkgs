@@ -81,7 +81,7 @@ stdenv.mkDerivation rec {
       pmenke
       zaninime
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "sdrplay_apiService";
   };
 }

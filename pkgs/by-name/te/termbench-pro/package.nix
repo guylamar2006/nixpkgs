@@ -42,7 +42,7 @@ stdenv.mkDerivation {
     description = "Terminal Benchmarking as CLI and library";
     mainProgram = "tb";
     license = licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with maintainers; [ moni ];
   };
 }

@@ -50,6 +50,6 @@ stdenv.mkDerivation {
     description = ''
       Easy-to-use, minimalistic x86 disassembler library (libudis86)
     '';
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }
