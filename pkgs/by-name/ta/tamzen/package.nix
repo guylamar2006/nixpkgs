@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
       symbols.
     '';
     homepage = "https://github.com/sunaku/tamzen-font";
-    license = lib.licenses.free;;
+    license = lib.licenses.free;
     maintainers = with lib.maintainers; [ wishfort36 ];
   };
 }

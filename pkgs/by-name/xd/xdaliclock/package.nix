@@ -44,7 +44,7 @@ stdenv.mkDerivation rec {
     description = "Clock application that morphs digits when they are changed";
     maintainers = with lib.maintainers; [ raskin ];
     platforms = with lib.platforms; linux ++ freebsd;
-    license = lib.licenses.free;; # TODO BSD on Gentoo, looks like MIT
+    license = lib.licenses.free; # TODO BSD on Gentoo, looks like MIT
     downloadPage = "http://www.jwz.org/xdaliclock/";
     mainProgram = "xdaliclock";
   };

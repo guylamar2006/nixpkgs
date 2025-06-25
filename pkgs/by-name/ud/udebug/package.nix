@@ -36,7 +36,7 @@ stdenv.mkDerivation {
     description = "OpenWrt debugging helper library/service";
     mainProgram = "udebugd";
     homepage = "https://git.openwrt.org/?p=project/udebug.git;a=summary";
-    license = lib.licenses.free;;
+    license = lib.licenses.free;
     platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ mkg20001 ];
   };

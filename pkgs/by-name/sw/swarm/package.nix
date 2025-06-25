@@ -24,7 +24,7 @@ stdenv.mkDerivation {
     description = "Verification script generator for Spin";
     mainProgram = "swarm";
     homepage = "http://spinroot.com/";
-    license = lib.licenses.free;;
+    license = lib.licenses.free;
     platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ abbradar ];
   };
