@@ -133,7 +133,7 @@ stdenv.mkDerivation {
 
   meta = {
     description = "John the Ripper password cracker";
-    license = lib.licenses.gpl2Plus;++ lib.optionals enableUnfree [ lib.licenses.unfreeRedistributable ];
+    license = [ lib.licenses.gpl2Plus ] ++ lib.optionals enableUnfree [ lib.licenses.unfreeRedistributable ];
     homepage = "https://github.com/openwall/john/";
     maintainers = with lib.maintainers; [
       offline
