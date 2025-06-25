@@ -59,7 +59,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "C/C++ WebRTC network library featuring Data Channels, Media Transport, and WebSockets";
     homepage = "https://libdatachannel.org/";
-    license = with licenses; [ mpl20 ];
+    license = lib.licenses.mpl20;
     maintainers = with lib.maintainers; [ erdnaxe ];
     platforms = lib.platforms.linux ++ platforms.darwin;
   };

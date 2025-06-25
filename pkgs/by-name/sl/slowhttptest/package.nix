@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Application Layer DoS attack simulator";
     homepage = "https://github.com/shekyan/slowhttptest";
-    license = with licenses; [ asl20 ];
+    license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ fab ];
     mainProgram = "slowhttptest";
   };

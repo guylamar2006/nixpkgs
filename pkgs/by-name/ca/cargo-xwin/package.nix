@@ -22,7 +22,7 @@ rustPlatform.buildRustPackage rec {
     description = "Cross compile Cargo project to Windows MSVC target with ease";
     mainProgram = "cargo-xwin";
     homepage = "https://github.com/rust-cross/cargo-xwin";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ shivaraj-bh ];
   };
 }

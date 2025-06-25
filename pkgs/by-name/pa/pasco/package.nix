@@ -39,6 +39,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://sourceforge.net/projects/fast/files/Pasco/";
     maintainers = with lib.maintainers; [ d3vil0p3r ];
     platforms = lib.platforms.unix;
-    license = with licenses; [ bsd3 ];
+    license = lib.licenses.bsd3;
   };
 })

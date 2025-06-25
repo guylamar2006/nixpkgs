@@ -39,7 +39,7 @@ buildGoModule rec {
       even where directory listings are disabled.
     '';
     homepage = "https://github.com/liamg/gitjacker";
-    license = with licenses; [ unlicense ];
+    license = lib.licenses.unlicense;
     maintainers = with lib.maintainers; [ fab ];
   };
 }

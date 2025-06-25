@@ -64,7 +64,7 @@ buildGoModule {
   meta = {
     description = "MCAP CLI tool to inspect and fix MCAP files";
     homepage = "https://github.com/foxglove/mcap";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [
       squalus
       therishidesai

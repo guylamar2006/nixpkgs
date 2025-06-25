@@ -49,7 +49,7 @@ rustPlatform.buildRustPackage rec {
     description = "Debugger for asynchronous Rust code";
     homepage = "https://github.com/tokio-rs/console";
     mainProgram = "tokio-console";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with maintainers; [ max-niederman ];
   };
 }

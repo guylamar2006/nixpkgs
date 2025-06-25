@@ -22,7 +22,7 @@ python3.pkgs.buildPythonApplication rec {
     description = "Tool to examines C/C++ source code for security flaws";
     mainProgram = "flawfinder";
     homepage = "https://dwheeler.com/flawfinder/";
-    license = with licenses; [ gpl2Only ];
+    license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ fab ];
     platforms = lib.platforms.all;
   };

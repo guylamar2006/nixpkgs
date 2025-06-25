@@ -32,7 +32,7 @@ rustPlatform.buildRustPackage rec {
     '';
     homepage = "https://github.com/mrcjkb/vimcats";
     changelog = "https://github.com/mrcjkb/vimcats/CHANGELOG.md";
-    license = with licenses; [ gpl2Plus ];
+    license = lib.licenses.gpl2Plus;
     maintainers = with maintainers; [ mrcjkb ];
     mainProgram = "vimcats";
   };

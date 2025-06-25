@@ -69,7 +69,7 @@ lib.checkListOfEnum "${pname}: color variants" [ "standard" "dark" "all" ] color
     meta = with lib; {
       description = "Flat colorful design icon theme";
       homepage = "https://github.com/vinceliuice/Qogir-icon-theme";
-      license = with licenses; [ gpl3Only ];
+      license = lib.licenses.gpl3Only;
       platforms = lib.platforms.linux;
       maintainers = with lib.maintainers; [ romildo ];
     };

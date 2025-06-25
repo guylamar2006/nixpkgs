@@ -25,7 +25,7 @@ buildGoModule rec {
       out on the outside as well as on the inside of a perimeter.
     '';
     homepage = "https://github.com/dsnezhkov/deepsea";
-    license = with licenses; [ asl20 ];
+    license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ fab ];
     broken = true; # vendor isn't reproducible with go > 1.17: nix-build -A $name.goModules --check
   };

@@ -23,7 +23,7 @@ rustPlatform.buildRustPackage rec {
     description = "Cross-platform terminal UI used for modifying file data in hex or ASCII";
     homepage = "https://github.com/ndd7xv/heh";
     changelog = "https://github.com/ndd7xv/heh/releases/tag/${src.rev}";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ piturnah ];
     mainProgram = "heh";
   };

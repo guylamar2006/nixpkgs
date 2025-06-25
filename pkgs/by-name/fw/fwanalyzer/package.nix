@@ -39,7 +39,7 @@ buildGoModule rec {
   meta = {
     description = "Tool to analyze filesystem images";
     homepage = "https://github.com/cruise-automation/fwanalyzer";
-    license = with licenses; [ asl20 ];
+    license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ fab ];
     mainProgram = "fwanalyzer";
   };

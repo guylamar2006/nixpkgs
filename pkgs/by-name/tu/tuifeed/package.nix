@@ -22,7 +22,7 @@ rustPlatform.buildRustPackage rec {
     description = "Terminal feed reader with a fancy UI";
     mainProgram = "tuifeed";
     homepage = "https://github.com/veeso/tuifeed";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with maintainers; [ devhell ];
   };
 }

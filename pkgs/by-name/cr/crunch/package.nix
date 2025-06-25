@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
     mainProgram = "crunch";
     homepage = "https://sourceforge.net/projects/crunch-wordlist/";
     platforms = lib.platforms.unix;
-    license = with licenses; [ gpl2Only ];
+    license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ lnl7 ];
   };
 }

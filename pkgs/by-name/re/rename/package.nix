@@ -21,7 +21,7 @@ perlPackages.buildPerlPackage rec {
       mkg
       cyplo
     ];
-    license = with licenses; [ gpl1Plus ];
+    license = lib.licenses.gpl1Plus;
     mainProgram = "rename";
   };
 }

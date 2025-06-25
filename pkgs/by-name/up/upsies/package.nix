@@ -94,7 +94,7 @@ python3Packages.buildPythonApplication rec {
   meta = with lib; {
     description = "a toolkit for collecting, generating, normalizing and sharing video metadata";
     homepage = "https://upsies.readthedocs.io/";
-    license = with licenses; [ gpl3Plus ];
+    license = lib.licenses.gpl3Plus;
     mainProgram = "upsies";
     maintainers = with maintainers; [ ambroisie ];
   };

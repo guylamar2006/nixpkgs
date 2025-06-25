@@ -26,7 +26,7 @@ rustPlatform.buildRustPackage rec {
     description = "Yet another diff highlighting tool";
     mainProgram = "diffr";
     homepage = "https://github.com/mookid/diffr";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
   };
 }

@@ -30,7 +30,7 @@ rustPlatform.buildRustPackage rec {
     description = "Modern Prolog implementation written mostly in Rust";
     mainProgram = "scryer-prolog";
     homepage = "https://github.com/mthom/scryer-prolog";
-    license = with licenses; [ bsd3 ];
+    license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [
       malbarbo
       wkral

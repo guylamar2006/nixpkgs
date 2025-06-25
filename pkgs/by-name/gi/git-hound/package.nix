@@ -37,7 +37,7 @@ buildGoModule rec {
       and a unique result scoring system.
     '';
     homepage = "https://github.com/tillson/git-hound";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ fab ];
     mainProgram = "git-hound";
   };

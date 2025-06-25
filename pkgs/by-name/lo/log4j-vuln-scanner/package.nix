@@ -25,7 +25,7 @@ buildGoModule rec {
   meta = {
     description = "Local log4j vulnerability scanner";
     homepage = "https://github.com/hillu/local-log4j-vuln-scanner";
-    license = with licenses; [ gpl3Only ];
+    license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ fab ];
   };
 }

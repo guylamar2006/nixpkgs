@@ -23,7 +23,7 @@ buildGoModule rec {
     description = "Thrift improved";
     mainProgram = "frugal";
     homepage = "https://github.com/Workiva/frugal";
-    license = with licenses; [ asl20 ];
+    license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ diogox ];
   };
 }

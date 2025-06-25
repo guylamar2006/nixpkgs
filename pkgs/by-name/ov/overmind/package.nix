@@ -35,7 +35,7 @@ buildGoModule rec {
     homepage = "https://github.com/DarthSim/overmind";
     description = "Process manager for Procfile-based applications and tmux";
     mainProgram = "overmind";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
   };
 }

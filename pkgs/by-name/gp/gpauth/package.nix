@@ -43,7 +43,7 @@ rustPlatform.buildRustPackage rec {
       the same features as the GUI version.
     '';
     homepage = "https://github.com/${src.owner}/${src.repo}";
-    license = with licenses; [ gpl3Only ];
+    license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [
       binary-eater
       m1dugh

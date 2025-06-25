@@ -48,7 +48,7 @@ python3.pkgs.buildPythonApplication rec {
     description = "CircuitPython library updater";
     homepage = "https://github.com/adafruit/circup";
     changelog = "https://github.com/adafruit/circup/releases/tag/${src.tag}";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ fab ];
     mainProgram = "circup";
   };

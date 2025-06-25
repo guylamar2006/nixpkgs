@@ -21,7 +21,7 @@ buildGoModule rec {
     description = "Intelligence tool to crawl the graph of certificate alternate names";
     mainProgram = "certgraph";
     homepage = "https://github.com/lanrat/certgraph";
-    license = with licenses; [ gpl2Only ];
+    license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ fab ];
   };
 }

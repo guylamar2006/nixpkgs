@@ -25,7 +25,7 @@ buildGoModule rec {
       exposed via shortener services such as bit.ly and goo.gl.
     '';
     homepage = "https://github.com/utkusen/urlhunter";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with maintainers; [ fab ];
   };
 }

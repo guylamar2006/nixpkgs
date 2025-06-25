@@ -47,7 +47,7 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Distributed version control system";
     homepage = "https://pijul.org";
-    license = with licenses; [ gpl2Plus ];
+    license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [
       gal_bolle
       dywedir

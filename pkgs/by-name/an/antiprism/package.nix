@@ -32,7 +32,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = {
     homepage = "https://www.antiprism.com";
     description = "Collection of programs for generating, manipulating, transforming and viewing polyhedra";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
   };
 })

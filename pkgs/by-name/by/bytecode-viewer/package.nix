@@ -80,6 +80,6 @@ maven.buildMavenPackage rec {
       fromSource
       binaryBytecode # deps
     ];
-    license = with licenses; [ gpl3Only ];
+    license = lib.licenses.gpl3Only;
   };
 }

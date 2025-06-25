@@ -63,7 +63,7 @@ python3.pkgs.buildPythonApplication rec {
     mainProgram = "fabsys";
     description = "Flexible AFS Backup System for the OpenAFS distributed file system";
     homepage = "https://github.com/openafs-contrib/fabs";
-    license = with licenses; [ isc ];
+    license = lib.licenses.isc;
     maintainers = with lib.maintainers; [ spacefrogg ];
     broken = lib.versionAtLeast python3.pkgs.sqlalchemy.version "2.0";
     badPlatforms = [

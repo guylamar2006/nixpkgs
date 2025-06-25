@@ -29,7 +29,7 @@ rustPlatform.buildRustPackage rec {
   meta = {
     homepage = "https://github.com/ilyagr/diffedit3";
     description = "3-pane diff editor";
-    license = with licenses; [ asl20 ];
+    license = lib.licenses.asl20;
     mainProgram = "diffedit3";
     maintainers = with lib.maintainers; [ thoughtpolice ];
   };

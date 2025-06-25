@@ -38,7 +38,7 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Status command for sway's swaybar implementing the swaybar-protocol";
     homepage = "https://git.sr.ht/~tsdh/swayr#a-idswayrbarswayrbara";
-    license = with licenses; [ gpl3Plus ];
+    license = lib.licenses.gpl3Plus;
     platforms = lib.platforms.linux;
     maintainers = with maintainers; [ ];
     mainProgram = "swayrbar";

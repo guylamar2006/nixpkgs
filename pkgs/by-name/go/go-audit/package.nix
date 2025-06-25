@@ -23,7 +23,7 @@ buildGoModule rec {
   meta = {
     description = "Alternative to the auditd daemon";
     homepage = "https://github.com/slackhq/go-audit";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ fab ];
     platforms = lib.platforms.linux;
     mainProgram = "go-audit";

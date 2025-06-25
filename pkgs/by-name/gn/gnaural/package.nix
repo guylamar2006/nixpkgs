@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
     description = "Programmable auditory binaural-beat synthesizer";
     homepage = "https://gnaural.sourceforge.net/";
     maintainers = with lib.maintainers; [ ehmry ];
-    license = with licenses; [ gpl2Only ];
+    license = lib.licenses.gpl2Only;
     mainProgram = "gnaural";
   };
 }

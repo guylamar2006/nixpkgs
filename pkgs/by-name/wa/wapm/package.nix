@@ -34,7 +34,7 @@ rustPlatform.buildRustPackage rec {
     description = "Package manager for WebAssembly modules";
     mainProgram = "wapm";
     homepage = "https://docs.wasmer.io/ecosystem/wapm";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ lucperkins ];
   };
 }

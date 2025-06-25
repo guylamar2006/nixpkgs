@@ -34,7 +34,7 @@ buildGoModule rec {
       links, images, scripts references work, your alt tags are filled in, etc.
     '';
     homepage = "https://github.com/wjdp/htmltest";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ fab ];
   };
 }

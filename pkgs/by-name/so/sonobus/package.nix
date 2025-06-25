@@ -78,7 +78,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "High-quality network audio streaming";
     homepage = "https://sonobus.net/";
-    license = with licenses; [ gpl3Plus ];
+    license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ PowerUser64 ];
     platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin;

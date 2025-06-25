@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
     description = "Lossless data compression codec with LZMA-like ratios but 1.5x-8x faster decompression speed";
     mainProgram = "lzhamtest";
     homepage = "https://github.com/richgel999/lzham_codec";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     platforms = lib.platforms.linux;
   };
 }

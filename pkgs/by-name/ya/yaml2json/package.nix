@@ -28,7 +28,7 @@ buildGoModule rec {
     homepage = "https://github.com/bronze1man/yaml2json";
     description = "Convert yaml to json";
     mainProgram = "yaml2json";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
   };
 }

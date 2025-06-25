@@ -56,7 +56,7 @@ python3.pkgs.buildPythonApplication rec {
   meta = {
     description = "Tool to search issues in Kubernetes clusters";
     homepage = "https://github.com/aquasecurity/kube-hunter";
-    license = with licenses; [ asl20 ];
+    license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ fab ];
     mainProgram = "kube-hunter";
   };

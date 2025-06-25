@@ -48,7 +48,7 @@ buildGoModule rec {
     description = "Validate and remediate Kubernetes resources to ensure configuration best practices are followed";
     mainProgram = "polaris";
     homepage = "https://www.fairwinds.com/polaris";
-    license = with licenses; [ asl20 ];
+    license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ longer ];
   };
 }

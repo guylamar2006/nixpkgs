@@ -32,7 +32,7 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Terminal user interface for taskwarrior";
     homepage = "https://github.com/kdheepak/taskwarrior-tui";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with maintainers; [ matthiasbeyer ];
     mainProgram = "taskwarrior-tui";
   };

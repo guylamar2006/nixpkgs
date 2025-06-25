@@ -33,7 +33,7 @@ stdenv.mkDerivation {
   meta = {
     description = "EDID decoder and conformance tester";
     homepage = "https://git.linuxtv.org/edid-decode.git";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ Madouura ];
     platforms = lib.platforms.all;
     mainProgram = "edid-decode";

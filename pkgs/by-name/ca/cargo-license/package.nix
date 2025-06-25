@@ -20,7 +20,7 @@ rustPlatform.buildRustPackage rec {
     description = "Cargo subcommand to see license of dependencies";
     mainProgram = "cargo-license";
     homepage = "https://github.com/onur/cargo-license";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [
       basvandijk
       figsoda

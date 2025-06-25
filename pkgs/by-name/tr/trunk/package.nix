@@ -33,6 +33,6 @@ rustPlatform.buildRustPackage rec {
       freezeboy
       ctron
     ];
-    license = with licenses; [ asl20 ];
+    license = lib.licenses.asl20;
   };
 }

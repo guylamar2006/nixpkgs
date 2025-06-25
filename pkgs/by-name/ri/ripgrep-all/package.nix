@@ -63,7 +63,7 @@ rustPlatform.buildRustPackage rec {
       to search in pdf, docx, sqlite, jpg, movie subtitles (mkv, mp4), etc.
     '';
     homepage = "https://github.com/phiresky/ripgrep-all";
-    license = with licenses; [ agpl3Plus ];
+    license = lib.licenses.agpl3Plus;
     maintainers = with lib.maintainers; [
       zaninime
       ma27

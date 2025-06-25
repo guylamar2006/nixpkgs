@@ -62,7 +62,7 @@ stdenv.mkDerivation rec {
       for you to manage your games.
     '';
     maintainers = with lib.maintainers; [ pasqui23 ];
-    license = with licenses; [ gpl3Only ];
+    license = lib.licenses.gpl3Only;
     platforms = lib.platforms.linux;
   };
 }

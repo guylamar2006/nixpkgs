@@ -22,7 +22,7 @@ rustPlatform.buildRustPackage rec {
   meta = {
     description = "Server for FunctionTrace, a graphical Python profiler";
     homepage = "https://functiontrace.com";
-    license = with licenses; [ prosperity30 ];
+    license = lib.licenses.prosperity30;
     maintainers = with lib.maintainers; [ tehmatt ];
   };
 }

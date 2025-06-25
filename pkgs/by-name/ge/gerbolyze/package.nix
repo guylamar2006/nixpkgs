@@ -39,7 +39,7 @@ let
     meta = {
       description = "svg-flatten SVG downconverter";
       homepage = "https://github.com/jaseg/gerbolyze";
-      license = with licenses; [ agpl3Plus ];
+      license = lib.licenses.agpl3Plus;
       maintainers = with lib.maintainers; [ wulfsta ];
       mainProgram = "svg-flatten";
       platforms = lib.platforms.linux;
@@ -95,7 +95,7 @@ python3Packages.buildPythonApplication rec {
   meta = {
     description = "Directly render SVG overlays into Gerber and Excellon files";
     homepage = "https://github.com/jaseg/gerbolyze";
-    license = with licenses; [ agpl3Plus ];
+    license = lib.licenses.agpl3Plus;
     maintainers = with lib.maintainers; [ wulfsta ];
     mainProgram = "gerbolyze";
     platforms = lib.platforms.linux;

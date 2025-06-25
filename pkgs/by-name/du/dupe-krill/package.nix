@@ -21,7 +21,7 @@ rustPlatform.buildRustPackage rec {
   meta = {
     description = "Fast file deduplicator";
     homepage = "https://github.com/kornelski/dupe-krill";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ urbas ];
     mainProgram = "dupe-krill";
   };

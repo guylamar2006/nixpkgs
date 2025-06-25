@@ -33,7 +33,7 @@ python3Packages.buildPythonApplication rec {
   meta = with lib; {
     description = "Scan a file to look for certain PDF keywords";
     homepage = "https://blog.didierstevens.com/programs/pdf-tools/";
-    license = with licenses; [ free ];
+    license = lib.licenses.free;
     mainProgram = "pdfid";
     maintainers = with lib.maintainers; [ d3vil0p3r ];
     platforms = lib.platforms.unix;

@@ -67,7 +67,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "AJA NTV2 Open Source Static Libs and Headers for building applications that only wish to statically link against";
     homepage = "https://github.com/aja-video/libajantv2";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ lukegb ];
     platforms = lib.platforms.linux;
   };

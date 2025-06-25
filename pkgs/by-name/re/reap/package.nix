@@ -25,7 +25,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/leahneukirchen/reap";
     description = "run process until all its spawned processes are dead";
     mainProgram = "reap";
-    license = with licenses; [ publicDomain ];
+    license = lib.licenses.publicDomain;
     platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ leahneukirchen ];
   };

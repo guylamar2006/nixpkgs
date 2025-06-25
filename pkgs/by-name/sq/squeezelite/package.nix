@@ -109,7 +109,7 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Lightweight headless squeezebox client emulator";
     homepage = "https://github.com/ralph-irving/squeezelite";
-    license = with licenses; [ gpl3Plus ] ++ optional dsdSupport bsd2;
+    license = lib.licenses.gpl3Plus;++ optional dsdSupport bsd2;
     mainProgram = binName;
     maintainers = with maintainers; [ adamcstephens ];
     platforms =

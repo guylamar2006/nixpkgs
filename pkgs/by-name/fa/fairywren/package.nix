@@ -43,6 +43,6 @@ lib.checkListOfEnum "${pname}: colorVariants" colorVariantList colorVariants
       homepage = "https://gitlab.com/aiyahm/FairyWren-Icons";
       maintainers = with lib.maintainers; [ d3vil0p3r ];
       platforms = lib.platforms.all;
-      license = with licenses; [ gpl3Plus ];
+      license = lib.licenses.gpl3Plus;
     };
   }

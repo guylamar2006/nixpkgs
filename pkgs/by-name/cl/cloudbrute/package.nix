@@ -26,7 +26,7 @@ buildGoModule rec {
       Alibaba, Vultr, Linode).
     '';
     homepage = "https://github.com/0xsha/CloudBrute";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ fab ];
   };
 }

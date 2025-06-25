@@ -29,7 +29,7 @@ rustPlatform.buildRustPackage rec {
   meta = {
     homepage = "https://github.com/jedisct1/doh-server";
     description = "Fast, mature, secure DoH server proxy written in Rust";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ stephank ];
     mainProgram = "doh-proxy";
   };

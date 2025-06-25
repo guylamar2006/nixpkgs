@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
     description = "Application-focused API for memory management on NUMA & GPU architectures";
     homepage = "https://github.com/LLNL/Umpire";
     maintainers = with maintainers; [ sheepforce ];
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     platforms = [ "x86_64-linux" ];
   };
 }

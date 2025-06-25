@@ -44,7 +44,7 @@ buildGoModule rec {
       in realtime, sniff for credentials and much more.
     '';
     homepage = "https://www.bettercap.org/";
-    license = with licenses; [ gpl3Only ];
+    license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ y0no ];
     mainProgram = "bettercap";
     # Broken on darwin for Go toolchain > 1.22, with error:

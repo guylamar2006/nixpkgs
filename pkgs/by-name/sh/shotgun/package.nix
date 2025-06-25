@@ -21,7 +21,7 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Minimal X screenshot utility";
     homepage = "https://github.com/neXromancers/shotgun";
-    license = with licenses; [ mpl20 ];
+    license = lib.licenses.mpl20;
     maintainers = with lib.maintainers; [
       figsoda
       lumi

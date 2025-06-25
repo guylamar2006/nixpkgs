@@ -25,7 +25,7 @@ rustPlatform.buildRustPackage rec {
   meta = {
     description = "Cargo subcommand for optimizing Rust binaries/libraries with PGO and BOLT";
     homepage = "https://github.com/kobzol/cargo-pgo";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ dannixon ];
   };
 }

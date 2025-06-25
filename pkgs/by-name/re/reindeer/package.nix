@@ -31,7 +31,7 @@ rustPlatform.buildRustPackage rec {
     description = "Reindeer is a tool which takes Rust Cargo dependencies and generates Buck build rules";
     mainProgram = "reindeer";
     homepage = "https://github.com/facebookincubator/reindeer";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ nickgerace ];
   };
 }

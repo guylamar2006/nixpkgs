@@ -54,7 +54,7 @@ python3.pkgs.buildPythonApplication rec {
     description = "Extract credentials and other useful info from network captures";
     mainProgram = "credslayer";
     homepage = "https://github.com/ShellCode33/CredSLayer";
-    license = with licenses; [ gpl3Only ];
+    license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ fab ];
     # broken due to wireshark 4.4 bump
     # see: https://github.com/NixOS/nixpkgs/pull/344914

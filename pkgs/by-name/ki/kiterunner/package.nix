@@ -37,7 +37,7 @@ buildGoModule rec {
       and endpoints in modern applications.
     '';
     homepage = "https://github.com/assetnote/kiterunner";
-    license = with licenses; [ agpl3Only ];
+    license = lib.licenses.agpl3Only;
     maintainers = with lib.maintainers; [ fab ];
   };
 }

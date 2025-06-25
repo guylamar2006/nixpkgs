@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Lightweight, cross-platform & full-featured shader IDE";
     homepage = "https://github.com/dfranx/SHADERed";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ Scriptkiddi ];
     broken = true;
   };

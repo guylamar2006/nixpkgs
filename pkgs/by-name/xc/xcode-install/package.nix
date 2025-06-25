@@ -16,6 +16,6 @@ bundlerApp {
     homepage = "https://github.com/xcpretty/xcode-install";
     platforms = lib.platforms.unix;
     maintainers = with maintainers; [ q3k ];
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
   };
 }

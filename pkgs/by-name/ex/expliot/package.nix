@@ -82,7 +82,7 @@ buildPythonApplication rec {
       purpose of the framework i.e. IoT exploitation.
     '';
     homepage = "https://expliot.readthedocs.io/";
-    license = with licenses; [ agpl3Plus ];
+    license = lib.licenses.agpl3Plus;
     maintainers = with lib.maintainers; [ fab ];
   };
 }

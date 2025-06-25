@@ -38,7 +38,7 @@ rustPlatform.buildRustPackage rec {
   meta = {
     description = "CLI Tool for Codeberg similar to gh and glab";
     homepage = "https://codeberg.org/Aviac/codeberg-cli";
-    license = with licenses; [ agpl3Plus ];
+    license = lib.licenses.agpl3Plus;
     maintainers = with lib.maintainers; [ robwalt ];
     mainProgram = "berg";
   };

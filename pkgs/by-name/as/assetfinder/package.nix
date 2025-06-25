@@ -31,6 +31,6 @@ buildGoModule rec {
       fromSource
       binaryNativeCode
     ];
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
   };
 }

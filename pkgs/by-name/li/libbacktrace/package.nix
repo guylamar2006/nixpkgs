@@ -52,6 +52,6 @@ stdenv.mkDerivation {
     description = "C library that may be linked into a C/C++ program to produce symbolic backtraces";
     homepage = "https://github.com/ianlancetaylor/libbacktrace";
     maintainers = with lib.maintainers; [ twey ];
-    license = with licenses; [ bsd3 ];
+    license = lib.licenses.bsd3;
   };
 }

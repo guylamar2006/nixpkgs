@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
       used to extract hidden data from files.
     '';
     homepage = "https://github.com/RickdeJager/stegseek";
-    license = with licenses; [ gpl2Only ];
+    license = lib.licenses.gpl2Only;
     maintainers = with maintainers; [ fab ];
     mainProgram = "stegseek";
   };

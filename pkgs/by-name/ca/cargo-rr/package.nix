@@ -35,7 +35,7 @@ rustPlatform.buildRustPackage rec {
     description = "Cargo subcommand \"rr\": a light wrapper around rr, the time-travelling debugger";
     mainProgram = "cargo-rr";
     homepage = "https://github.com/danielzfranklin/cargo-rr";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [
       otavio
       matthiasbeyer

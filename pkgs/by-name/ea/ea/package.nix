@@ -44,7 +44,7 @@ rustPlatform.buildRustPackage rec {
   meta = {
     description = "Makes file paths from CLI output actionable";
     homepage = "https://github.com/dduan/ea";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ deejayem ];
   };
 }

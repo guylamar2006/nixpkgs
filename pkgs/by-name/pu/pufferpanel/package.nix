@@ -107,7 +107,7 @@ buildGoModule rec {
   meta = with lib; {
     description = "Free, open source game management panel";
     homepage = "https://www.pufferpanel.com/";
-    license = with licenses; [ asl20 ];
+    license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ tie ];
     mainProgram = "pufferpanel";
   };

@@ -39,7 +39,7 @@ rustPlatform.buildRustPackage rec {
   meta = {
     description = "Find fonts which can show a specified character and preview them in browser";
     homepage = "https://github.com/7sDream/fontfor";
-    license = with licenses; [ gpl3Plus ];
+    license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ shamilton ];
     platforms = lib.platforms.linux;
     mainProgram = "fontfor";

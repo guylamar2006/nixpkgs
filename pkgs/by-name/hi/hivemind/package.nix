@@ -25,7 +25,7 @@ buildGoModule rec {
   meta = {
     homepage = "https://github.com/DarthSim/";
     description = "Process manager for Procfile-based applications";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ sveitser ];
     mainProgram = "hivemind";
   };

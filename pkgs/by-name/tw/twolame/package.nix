@@ -36,7 +36,7 @@ stdenv.mkDerivation {
       code and portions of LAME.
     '';
     homepage = "https://www.twolame.org/";
-    license = with licenses; [ lgpl2Plus ];
+    license = lib.licenses.lgpl2Plus;
     platforms = with platforms; unix;
     maintainers = with maintainers; [ ];
   };

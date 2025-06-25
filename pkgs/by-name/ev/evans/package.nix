@@ -23,7 +23,7 @@ buildGoModule rec {
     description = "More expressive universal gRPC client";
     mainProgram = "evans";
     homepage = "https://evans.syfm.me/";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ diogox ];
   };
 }

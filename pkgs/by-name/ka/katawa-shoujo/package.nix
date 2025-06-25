@@ -200,7 +200,7 @@ stdenv.mkDerivation rec {
     # https://www.katawa-shoujo.com/about.php
     # November 2022: Update, is it still ND?
     # https://ks.renai.us/viewtopic.php?f=13&p=248149#p248149
-    license = with licenses; [ cc-by-nc-nd-30 ];
+    license = lib.licenses.cc-by-nc-nd-30;
     maintainers = with lib.maintainers; [ OPNA2608 ];
     # Building Ren'Py6 from source would allow more, but too much of a hassle
     platforms = lib.platforms.x86;

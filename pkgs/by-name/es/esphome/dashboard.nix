@@ -54,7 +54,7 @@ buildPythonPackage rec {
   meta = {
     description = "ESPHome dashboard";
     homepage = "https://esphome.io/";
-    license = with licenses; [ asl20 ];
+    license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ hexa ];
   };
 }

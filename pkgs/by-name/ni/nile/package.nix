@@ -47,7 +47,7 @@ python3Packages.buildPythonApplication {
     description = "Unofficial Amazon Games client";
     mainProgram = "nile";
     homepage = "https://github.com/imLinguin/nile";
-    license = with licenses; [ gpl3 ];
+    license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ aidalgol ];
   };
 

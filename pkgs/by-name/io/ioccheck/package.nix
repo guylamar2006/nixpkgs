@@ -100,7 +100,7 @@ py.pkgs.buildPythonApplication {
     description = "Tool for researching IOCs";
     mainProgram = "ioccheck";
     homepage = "https://github.com/ranguli/ioccheck";
-    license = with licenses; [ mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ fab ];
   };
 }

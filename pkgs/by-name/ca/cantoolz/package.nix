@@ -65,7 +65,7 @@ python3.pkgs.buildPythonApplication rec {
       implemented with a new module.
     '';
     homepage = "https://github.com/CANToolz/CANToolz";
-    license = with licenses; [ asl20 ];
+    license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ fab ];
   };
 }
