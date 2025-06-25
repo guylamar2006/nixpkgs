@@ -18,11 +18,11 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [ perl ];
   buildInputs = [ ncurses ];
 
-  meta = with lib; {
+  meta = {
     description = "High-tech ttyrec player for Unix";
     homepage = "https://www.chiark.greenend.org.uk/~sgtatham/ipbt/";
-    license = licenses.mit;
-    maintainers = [ maintainers.tckmn ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ tckmn ];
     platforms = platforms.unix;
     mainProgram = "ipbt";
   };

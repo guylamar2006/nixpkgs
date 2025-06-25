@@ -28,12 +28,12 @@ stdenv.mkDerivation rec {
     install -D hactool${stdenv.hostPlatform.extensions.executable} $out/bin/hactool${stdenv.hostPlatform.extensions.executable}
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/SciresM/hactool";
     description = "Tool to manipulate common file formats for the Nintendo Switch";
     longDescription = "A tool to view information about, decrypt, and extract common file formats for the Nintendo Switch, especially Nintendo Content Archives";
-    license = licenses.isc;
-    maintainers = [ ];
+    license = lib.licenses.isc;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
     mainProgram = "hactool";
   };

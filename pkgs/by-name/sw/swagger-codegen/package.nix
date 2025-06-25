@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/swagger-api/swagger-codegen";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = licenses.asl20;
-    maintainers = [ maintainers.jraygauthier ];
+    maintainers = with lib.maintainers; [ jraygauthier ];
     mainProgram = "swagger-codegen";
   };
 }

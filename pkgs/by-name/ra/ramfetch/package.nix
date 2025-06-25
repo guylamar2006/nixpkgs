@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     homepage = "https://codeberg.org/jahway603/ramfetch";
     platforms = lib.platforms.linux;
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.markbeep ];
+    maintainers = with lib.maintainers; [ markbeep ];
     mainProgram = "ramfetch";
   };
 }

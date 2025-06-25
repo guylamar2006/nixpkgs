@@ -30,8 +30,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Quadratic programming solver using operator splitting";
     homepage = "https://osqp.org";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ taktoa ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ taktoa ];
     platforms = platforms.all;
   };
 }

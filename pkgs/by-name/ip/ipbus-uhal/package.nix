@@ -68,7 +68,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     platforms = lib.platforms.linux;
     homepage = "https://ipbus.web.cern.ch/";
-    maintainers = [ lib.maintainers.bashsu ];
+    maintainers = with lib.maintainers; [ bashsu ];
     mainProgram = "ipbus-uhal";
   };
 })

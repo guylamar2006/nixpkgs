@@ -23,6 +23,6 @@ buildGoModule rec {
     homepage = "https://github.com/ameshkov/dnslookup";
     license = lib.licenses.mit;
     mainProgram = "dnslookup";
-    maintainers = [ lib.maintainers.philiptaron ];
+    maintainers = with lib.maintainers; [ philiptaron ];
   };
 }

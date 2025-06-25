@@ -37,6 +37,6 @@ stdenv.mkDerivation {
     mainProgram = "hexgui";
     homepage = "https://github.com/selinger/hexgui";
     license = lib.licenses.gpl3;
-    maintainers = [ lib.maintainers.ursi ];
+    maintainers = with lib.maintainers; [ ursi ];
   };
 }

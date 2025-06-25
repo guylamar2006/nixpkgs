@@ -52,7 +52,7 @@ python3Packages.buildPythonApplication rec {
   meta = with lib; {
     description = "Retrieves an SSH public key and installs it locally";
     homepage = "https://launchpad.net/ssh-import-id";
-    license = licenses.gpl3Only;
+    license = lib.licenses.gpl3Only;
     maintainers = with maintainers; [
       mkg20001
       viraptor

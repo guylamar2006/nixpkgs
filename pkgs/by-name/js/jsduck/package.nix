@@ -29,12 +29,12 @@ stdenv.mkDerivation rec {
 
   passthru.updateScript = bundlerUpdateScript "jsduck";
 
-  meta = with lib; {
+  meta = {
     description = "Simple JavaScript Duckumentation generator";
     mainProgram = "jsduck";
     homepage = "https://github.com/senchalabs/jsduck";
     license = with licenses; gpl3;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       periklis
       nicknovitski
     ];

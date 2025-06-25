@@ -46,7 +46,7 @@ stdenvNoCC.mkDerivation {
     description = "Dark and colorful, blurry theme for the KDE Plasma desktop";
     homepage = "https://github.com/EliverLara/Sweet";
     license = licenses.gpl3Only;
-    maintainers = [ maintainers.dr460nf1r3 ];
+    maintainers = with lib.maintainers; [ dr460nf1r3 ];
     platforms = platforms.all;
   };
 }

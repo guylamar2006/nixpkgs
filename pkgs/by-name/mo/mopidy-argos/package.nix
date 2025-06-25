@@ -53,7 +53,7 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://github.com/orontee/argos";
     description = "Gtk front-end to control a Mopidy server";
     license = lib.licenses.gpl3Plus;
-    maintainers = [ lib.maintainers.hufman ];
+    maintainers = with lib.maintainers; [ hufman ];
     mainProgram = "argos";
   };
 }

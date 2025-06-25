@@ -37,8 +37,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Scheme shell";
     homepage = "http://www.scsh.net/";
-    license = licenses.bsd3;
-    maintainers = with maintainers; [ joachifm ];
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ joachifm ];
     platforms = with platforms; unix;
     mainProgram = "scsh";
   };

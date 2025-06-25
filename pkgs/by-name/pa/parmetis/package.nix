@@ -40,7 +40,7 @@ stdenv.mkDerivation {
     '';
     homepage = "https://github.com/KarypisLab/ParMETIS";
     platforms = platforms.all;
-    license = licenses.unfree;
-    maintainers = [ maintainers.costrouc ];
+    license = lib.licenses.unfree;
+    maintainers = with lib.maintainers; [ costrouc ];
   };
 }

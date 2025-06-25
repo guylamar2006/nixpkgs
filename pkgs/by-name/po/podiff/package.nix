@@ -23,8 +23,8 @@ stdenv.mkDerivation {
     description = "Finds differences in translations between two PO files, or revisions";
     mainProgram = "podiff";
     homepage = "http://puszcza.gnu.org.ua/software/podiff";
-    license = licenses.gpl3Plus;
-    maintainers = [ ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
   };
 }

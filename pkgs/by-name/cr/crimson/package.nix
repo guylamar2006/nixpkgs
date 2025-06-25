@@ -24,11 +24,11 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/skosch/Crimson";
     description = "Font family inspired by beautiful oldstyle typefaces";
-    license = licenses.ofl;
+    license = lib.licenses.ofl;
     platforms = platforms.all;
-    maintainers = [ maintainers.rycee ];
+    maintainers = with lib.maintainers; [ rycee ];
   };
 }

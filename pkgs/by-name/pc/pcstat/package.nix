@@ -20,8 +20,8 @@ buildGoModule rec {
   meta = with lib; {
     description = "Page Cache stat: get page cache stats for files on Linux";
     homepage = "https://github.com/tobert/pcstat";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ aminechikhaoui ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ aminechikhaoui ];
     mainProgram = "pcstat";
   };
 }

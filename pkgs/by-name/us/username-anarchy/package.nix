@@ -28,7 +28,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/urbanadventurer/username-anarchy/";
     description = "Username generator tool for penetration testing";
     license = licenses.mit;
-    maintainers = [ maintainers.akechishiro ];
+    maintainers = with lib.maintainers; [ akechishiro ];
     platforms = platforms.unix;
     mainProgram = "username-anarchy";
   };

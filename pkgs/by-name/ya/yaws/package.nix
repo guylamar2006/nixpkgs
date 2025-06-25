@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/erlyaws/yaws";
     license = licenses.bsd2;
     platforms = platforms.linux;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 
 }

@@ -15,12 +15,12 @@ python3Packages.buildPythonPackage {
     sha256 = "sha256-B5sNEmLO4iIJRDgcPhr9LFKV77dPJws8ITNz4R+FE08=";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Embed LaTeX formulas into HTML documents as SVG images";
     mainProgram = "gladtex";
     homepage = "https://humenda.github.io/GladTeX";
-    license = licenses.lgpl3Plus;
+    license = lib.licenses.lgpl3Plus;
     platforms = platforms.all;
-    maintainers = with maintainers; [ pentane ];
+    maintainers = with lib.maintainers; [ pentane ];
   };
 }

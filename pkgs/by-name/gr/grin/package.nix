@@ -25,6 +25,6 @@ python3Packages.buildPythonApplication {
     homepage = "https://github.com/matthew-brett/grin";
     description = "Grep program configured the way I like it";
     platforms = lib.platforms.all;
-    maintainers = [ lib.maintainers.sjagoe ];
+    maintainers = with lib.maintainers; [ sjagoe ];
   };
 }

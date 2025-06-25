@@ -32,6 +32,6 @@ rustPlatform.buildRustPackage rec {
       lib.licenses.mit
     ];
     mainProgram = "nofi";
-    maintainers = [ lib.maintainers.magnetophon ];
+    maintainers = with lib.maintainers; [ magnetophon ];
   };
 }

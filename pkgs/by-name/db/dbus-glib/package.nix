@@ -61,7 +61,7 @@ stdenv.mkDerivation rec {
     ];
     description = "Obsolete glib bindings for D-Bus lightweight IPC mechanism";
     mainProgram = "dbus-binding-tool";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
   };
 }

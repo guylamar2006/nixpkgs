@@ -36,7 +36,7 @@ buildGoModule rec {
       libnetfilter_queue
     ];
 
-  meta = with lib; {
+  meta = {
     description = "Man in the middle tool";
     longDescription = ''
       BetterCAP is a powerful, flexible and portable tool created to perform various
@@ -45,7 +45,7 @@ buildGoModule rec {
     '';
     homepage = "https://www.bettercap.org/";
     license = with licenses; [ gpl3Only ];
-    maintainers = with maintainers; [ y0no ];
+    maintainers = with lib.maintainers; [ y0no ];
     mainProgram = "bettercap";
     # Broken on darwin for Go toolchain > 1.22, with error:
     # 'link: golang.org/x/net/internal/socket: invalid reference to syscall.recvmsg'

@@ -78,8 +78,8 @@ python.pkgs.buildPythonApplication rec {
   meta = with lib; {
     homepage = "https://github.com/zenhack/simp_le";
     description = "Simple Let's Encrypt client";
-    license = licenses.gpl3;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [
       makefu
     ];
     platforms = platforms.linux;

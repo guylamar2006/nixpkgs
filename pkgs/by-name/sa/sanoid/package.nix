@@ -94,8 +94,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Policy-driven snapshot management tool for ZFS filesystems";
     homepage = "https://github.com/jimsalterjrs/sanoid";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [
       lopsided98
       Frostman
     ];

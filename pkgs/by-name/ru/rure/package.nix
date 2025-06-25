@@ -49,6 +49,6 @@ rustPlatform.buildRustPackage {
       lib.licenses.mit
       lib.licenses.asl20
     ];
-    maintainers = [ lib.maintainers.sternenseemann ];
+    maintainers = with lib.maintainers; [ sternenseemann ];
   };
 }

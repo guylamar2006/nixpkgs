@@ -96,11 +96,11 @@ py.pkgs.buildPythonApplication {
     "ioccheck"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Tool for researching IOCs";
     mainProgram = "ioccheck";
     homepage = "https://github.com/ranguli/ioccheck";
     license = with licenses; [ mit ];
-    maintainers = with maintainers; [ fab ];
+    maintainers = with lib.maintainers; [ fab ];
   };
 }

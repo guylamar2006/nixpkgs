@@ -66,9 +66,9 @@ stdenv.mkDerivation rec {
       that lets you easily and safely customise your desktop's appearance.
     '';
     homepage = "https://github.com/pantheon-tweaks/pantheon-tweaks";
-    license = licenses.gpl3Plus;
-    platforms = platforms.linux;
-    teams = [ teams.pantheon ];
+    license = lib.licenses.gpl3Plus;
+    platforms = lib.platforms.linux;
+    teams = with lib.teams; [ pantheon ];
     mainProgram = "pantheon-tweaks";
   };
 }

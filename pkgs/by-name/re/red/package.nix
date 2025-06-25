@@ -95,12 +95,12 @@ stdenv.mkDerivation rec {
       concurrency and multi-core CPUs
     '';
     mainProgram = "red";
-    maintainers = with maintainers; [ uralbash ];
+    maintainers = with lib.maintainers; [ uralbash ];
     platforms = [
       "i686-linux"
       "x86_64-linux"
     ];
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     homepage = "https://www.red-lang.org/";
   };
 }

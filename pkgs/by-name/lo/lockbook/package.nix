@@ -45,6 +45,6 @@ rustPlatform.buildRustPackage rec {
     license = lib.licenses.unlicense;
     platforms = lib.platforms.all;
     changelog = "https://github.com/lockbook/lockbook/releases";
-    maintainers = [ lib.maintainers.parth ];
+    maintainers = with lib.maintainers; [ parth ];
   };
 }

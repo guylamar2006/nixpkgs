@@ -40,7 +40,7 @@ rustPlatform.buildRustPackage rec {
     description = "Control various aspects of Microsoft Surface devices on Linux from the Command-Line";
     homepage = "https://github.com/linux-surface/surface-control";
     license = lib.licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
     mainProgram = "surface";
   };

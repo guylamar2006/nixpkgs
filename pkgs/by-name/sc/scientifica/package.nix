@@ -28,8 +28,8 @@ stdenvNoCC.mkDerivation rec {
   meta = with lib; {
     description = "Tall and condensed bitmap font for geeks";
     homepage = "https://github.com/NerdyPepper/scientifica";
-    license = licenses.ofl;
+    license = lib.licenses.ofl;
     platforms = platforms.all;
-    maintainers = with maintainers; [ moni ];
+    maintainers = with lib.maintainers; [ moni ];
   };
 }

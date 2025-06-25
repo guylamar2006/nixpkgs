@@ -48,8 +48,8 @@ stdenv.mkDerivation {
       which is no longer maintained.)
     '';
     homepage = "https://github.com/pgManage/pgManage";
-    license = licenses.postgresql;
-    maintainers = [ maintainers.basvandijk ];
+    license = lib.licenses.postgresql;
+    maintainers = with lib.maintainers; [ basvandijk ];
     mainProgram = "pgmanage";
   };
 }

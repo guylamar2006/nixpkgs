@@ -59,7 +59,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://launchpad.net/diodon";
     mainProgram = "diodon";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ lib.maintainers.sfrijters ];
+    maintainers = with lib.maintainers; [ sfrijters ];
     platforms = lib.platforms.unix;
   };
 })

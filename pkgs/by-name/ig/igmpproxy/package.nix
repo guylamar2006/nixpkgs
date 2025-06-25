@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/pali/igmpproxy/";
     changelog = "https://github.com/pali/igmpproxy/releases/tag/${version}";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ lib.maintainers.sdier ];
+    maintainers = with lib.maintainers; [ sdier ];
     # The maintainer is using this on linux, but if you test it on other platforms
     # please add them here!
     platforms = lib.platforms.linux;

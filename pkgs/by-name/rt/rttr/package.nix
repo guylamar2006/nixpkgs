@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     broken = stdenv.hostPlatform.isDarwin;
     description = "C++ Reflection Library";
     homepage = "https://www.rttr.org";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.unix;
   };
 }

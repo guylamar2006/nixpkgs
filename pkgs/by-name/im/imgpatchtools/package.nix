@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
 
   installPhase = "install -Dt $out/bin bin/*";
 
-  meta = with lib; {
+  meta = {
     description = "Tools to manipulate Android OTA archives";
     longDescription = ''
       This package is useful for Android development. In particular, it can be
@@ -36,8 +36,8 @@ stdenv.mkDerivation rec {
       for OTA manipulation.
     '';
     homepage = "https://github.com/erfanoabdi/imgpatchtools";
-    license = licenses.gpl3;
-    maintainers = [ ];
-    platforms = platforms.linux;
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ ];
+    platforms = lib.platforms.linux;
   };
 }

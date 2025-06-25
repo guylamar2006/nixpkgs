@@ -59,6 +59,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     sourceProvenance = [ lib.sourceTypes.binaryBytecode ];
     license = lib.licenses.unfree;
     platforms = openjdk11.meta.platforms;
-    maintainers = [ lib.maintainers.misterio77 ];
+    maintainers = with lib.maintainers; [ misterio77 ];
   };
 })

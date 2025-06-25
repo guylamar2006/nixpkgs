@@ -38,15 +38,15 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Java source formatter by Google";
     longDescription = ''
       A program that reformats Java source code to comply with Google Java Style.
     '';
     homepage = "https://github.com/google/google-java-format";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
-    license = licenses.asl20;
-    maintainers = [ maintainers.emptyflask ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ emptyflask ];
     platforms = platforms.all;
     mainProgram = "google-java-format";
   };

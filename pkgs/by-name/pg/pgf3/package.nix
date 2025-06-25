@@ -31,8 +31,8 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     homepage = "https://github.com/pgf-tikz/pgf";
     description = "Portable Graphic Format for TeX - version ${finalAttrs.version}";
     branch = lib.versions.major version;
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [ ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
   };
 })

@@ -42,6 +42,6 @@ buildGoModule rec {
     description = "Command Line Interface to interact with your OVHcloud KMS services";
     mainProgram = "okms";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.anthonyroussel ];
+    maintainers = with lib.maintainers; [ anthonyroussel ];
   };
 }

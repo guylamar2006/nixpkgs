@@ -39,7 +39,7 @@ rustPlatform.buildRustPackage rec {
     description = "Concentrator HAL daemon for LoRa gateways";
     homepage = "https://www.chirpstack.io/";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.stv0g ];
+    maintainers = with lib.maintainers; [ stv0g ];
     platforms = lib.platforms.linux;
     mainProgram = "chirpstack-concentratord";
   };

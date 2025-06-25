@@ -51,11 +51,11 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description = "High-performance, high-quality video filters for the GPU";
     homepage = "https://movit.sesse.net";
-    license = licenses.gpl2Plus;
-    maintainers = [ ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
   };
 }

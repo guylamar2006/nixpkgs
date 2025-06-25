@@ -33,8 +33,8 @@ stdenv.mkDerivation rec {
     description = "Network monitoring system";
     mainProgram = "riemann";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
-    license = licenses.epl10;
+    license = lib.licenses.epl10;
     platforms = platforms.all;
-    maintainers = with maintainers; [ crimeminister ];
+    maintainers = with lib.maintainers; [ crimeminister ];
   };
 }

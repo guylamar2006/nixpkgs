@@ -34,7 +34,7 @@ buildGoModule (finalAttrs: {
     homepage = "https://github.com/wakatara/harsh";
     changelog = "https://github.com/wakatara/harsh/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "harsh";
   };
 })

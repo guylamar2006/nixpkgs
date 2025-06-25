@@ -58,8 +58,8 @@ stdenv.mkDerivation rec {
     description = "Open-source machine learning framework for global analyses of parton distributions";
     mainProgram = "evolven3fit";
     homepage = "https://docs.nnpdf.science/";
-    license = licenses.gpl3Only;
-    maintainers = [ maintainers.veprbl ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ veprbl ];
     platforms = platforms.unix;
   };
 }

@@ -157,6 +157,6 @@ buildGoModule rec {
     platforms = platforms.linux ++ platforms.darwin;
     license = licenses.asl20;
     sourceProvenance = [ sourceTypes.fromSource ];
-    maintainers = [ maintainers.nrabulinski ];
+    maintainers = with lib.maintainers; [ nrabulinski ];
   };
 }

@@ -24,8 +24,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Fast XML DOM-style parser in C++";
     homepage = "https://rapidxml.sourceforge.net/";
-    license = licenses.boost;
+    license = lib.licenses.boost;
     platforms = platforms.unix;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

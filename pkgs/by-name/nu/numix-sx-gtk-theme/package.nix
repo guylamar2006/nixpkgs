@@ -30,6 +30,6 @@ stdenv.mkDerivation {
     homepage = "https://www.gnome-look.org/p/1117412/";
     license = lib.licenses.gpl3Plus;
     platforms = lib.platforms.all;
-    maintainers = [ lib.maintainers.sauyon ];
+    maintainers = with lib.maintainers; [ sauyon ];
   };
 }

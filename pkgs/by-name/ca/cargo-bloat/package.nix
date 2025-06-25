@@ -18,12 +18,12 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-8Omw8IsmoFYPBB6q1EAAbcBhTjBWfCChV2MhX9ImY8Y=";
 
-  meta = with lib; {
+  meta = {
     description = "Tool and Cargo subcommand that helps you find out what takes most of the space in your executable";
     homepage = "https://github.com/RazrFalcon/cargo-bloat";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.unix;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       xrelkd
       matthiasbeyer
     ];

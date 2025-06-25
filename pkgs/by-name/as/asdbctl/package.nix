@@ -45,8 +45,8 @@ rustPlatform.buildRustPackage (finalAttrs: {
     homepage = "https://github.com/juliuszint/asdbctl";
     changelog = "https://github.com/juliuszint/asdbctl/releases/tag/${finalAttrs.version}";
     license = lib.licenses.mit;
-    maintainers = [
-      lib.maintainers.danieldk
+    maintainers = with lib.maintainers; [
+      danieldk
     ];
   };
 })

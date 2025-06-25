@@ -35,8 +35,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Cute KDE theme inspired by the game Needy Girl Overdose";
     homepage = "https://github.com/Notify-ctrl/Plasma-Overdose";
-    license = licenses.gpl3;
+    license = lib.licenses.gpl3;
     platforms = platforms.all;
-    maintainers = with maintainers; [ takagiy ];
+    maintainers = with lib.maintainers; [ takagiy ];
   };
 }

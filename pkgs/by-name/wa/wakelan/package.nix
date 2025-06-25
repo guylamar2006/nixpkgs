@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
       power on.
     '';
     license = lib.licenses.gpl2Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
     mainProgram = "wakelan";
   };

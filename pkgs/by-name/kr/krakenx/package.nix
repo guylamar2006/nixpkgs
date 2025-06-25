@@ -17,11 +17,11 @@ python3Packages.buildPythonApplication rec {
 
   doCheck = false; # there are no tests
 
-  meta = with lib; {
+  meta = {
     description = "Python script to control NZXT cooler Kraken X52/X62/X72";
     homepage = "https://github.com/KsenijaS/krakenx";
-    license = licenses.gpl2Only;
-    maintainers = [ ];
-    platforms = platforms.linux;
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [ ];
+    platforms = lib.platforms.linux;
   };
 }

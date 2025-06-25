@@ -49,9 +49,9 @@ stdenv.mkDerivation (attrs: {
       packages functionality built-in.
     '';
     # https://learn.microsoft.com/en-us/nuget/resources/nuget-faq#what-is-the-license-for-nuget-exe-
-    license = licenses.mit;
+    license = lib.licenses.mit;
     sourceProvenance = [ sourceTypes.binaryBytecode ];
-    maintainers = [ maintainers.mdarocha ];
+    maintainers = with lib.maintainers; [ mdarocha ];
     inherit (mono.meta) platforms;
   };
 })

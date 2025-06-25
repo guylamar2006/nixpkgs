@@ -38,6 +38,6 @@ buildGoModule rec {
     homepage = "https://github.com/Zebradil/cloudflare-dynamic-dns";
     license = lib.licenses.mit;
     mainProgram = "cloudflare-dynamic-dns";
-    maintainers = [ lib.maintainers.zebradil ];
+    maintainers = with lib.maintainers; [ zebradil ];
   };
 }

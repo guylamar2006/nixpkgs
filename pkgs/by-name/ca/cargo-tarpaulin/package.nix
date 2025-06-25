@@ -33,7 +33,7 @@ rustPlatform.buildRustPackage rec {
 
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Code coverage tool for Rust projects";
     mainProgram = "cargo-tarpaulin";
     homepage = "https://github.com/xd009642/tarpaulin";
@@ -42,7 +42,7 @@ rustPlatform.buildRustPackage rec {
       mit # or
       asl20
     ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       figsoda
       hugoreeves
     ];

@@ -38,8 +38,8 @@ stdenv.mkDerivation {
       This is the Roboto Slab family, which can be used alongside the normal
       Roboto family and the Roboto Condensed family.
     '';
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     platforms = platforms.all;
-    maintainers = [ maintainers.romildo ];
+    maintainers = with lib.maintainers; [ romildo ];
   };
 }

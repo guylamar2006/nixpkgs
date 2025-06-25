@@ -42,7 +42,7 @@ rustPlatform.buildRustPackage rec {
     mainProgram = "pwninit";
     homepage = "https://github.com/io12/pwninit";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.scoder12 ];
+    maintainers = with lib.maintainers; [ scoder12 ];
     platforms = lib.platforms.all;
   };
 }

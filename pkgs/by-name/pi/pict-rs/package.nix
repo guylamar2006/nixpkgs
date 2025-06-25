@@ -51,6 +51,6 @@ rustPlatform.buildRustPackage rec {
     mainProgram = "pict-rs";
     homepage = "https://git.asonix.dog/asonix/pict-rs";
     license = with licenses; [ agpl3Plus ];
-    maintainers = with maintainers; [ happysalada ];
+    maintainers = with lib.maintainers; [ happysalada ];
   };
 }

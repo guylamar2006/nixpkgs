@@ -106,7 +106,7 @@ stdenv.mkDerivation {
   meta = with lib; {
     homepage = "https://github.com/huceke/omxplayer";
     description = "Commandline OMX player for the Raspberry Pi";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.arm;
   };
 }

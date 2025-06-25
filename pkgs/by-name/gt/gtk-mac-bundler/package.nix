@@ -25,11 +25,11 @@ stdenv.mkDerivation rec {
     cp -r bundler $out/share
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Helper script that creates application bundles form GTK executables for macOS";
-    maintainers = [ maintainers.matthewbauer ];
+    maintainers = with lib.maintainers; [ matthewbauer ];
     platforms = platforms.darwin;
     homepage = "https://gitlab.gnome.org/GNOME/gtk-mac-bundler";
-    license = licenses.gpl2;
+    license = lib.licenses.gpl2;
   };
 }

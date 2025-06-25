@@ -29,6 +29,6 @@ stdenv.mkDerivation rec {
     homepage = "http://www.ssdeep.sf.net";
     license = lib.licenses.gpl2Plus;
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.thoughtpolice ];
+    maintainers = with lib.maintainers; [ thoughtpolice ];
   };
 }

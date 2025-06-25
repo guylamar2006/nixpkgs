@@ -56,6 +56,6 @@ buildGoModule rec {
     homepage = "https://github.com/microsoft/go-sqlcmd";
     changelog = "https://github.com/microsoft/go-sqlcmd/releases/tag/v${version}";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.ratsclub ];
+    maintainers = with lib.maintainers; [ ratsclub ];
   };
 }

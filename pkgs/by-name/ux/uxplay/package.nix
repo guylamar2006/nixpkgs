@@ -58,7 +58,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/FDH2/UxPlay";
     license = lib.licenses.gpl3Plus;
     mainProgram = "uxplay";
-    maintainers = [ lib.maintainers.azuwis ];
+    maintainers = with lib.maintainers; [ azuwis ];
     platforms = lib.platforms.unix;
   };
 })

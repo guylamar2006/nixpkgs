@@ -62,7 +62,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://sourceforge.net/projects/industrializer/";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ lib.maintainers.magnetophon ];
+    maintainers = with lib.maintainers; [ magnetophon ];
     platforms = lib.platforms.linux;
     mainProgram = "psindustrializer";
   };

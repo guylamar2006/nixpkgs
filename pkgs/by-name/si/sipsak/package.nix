@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/sipwise/sipsak";
     description = "SIP Swiss army knife";
     license = lib.licenses.gpl2Plus;
-    maintainers = with maintainers; [ sheenobu ];
+    maintainers = with lib.maintainers; [ sheenobu ];
     platforms = with platforms; unix;
     mainProgram = "sipsak";
   };

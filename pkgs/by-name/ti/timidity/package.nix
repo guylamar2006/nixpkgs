@@ -119,7 +119,7 @@ stdenv.mkDerivation rec {
     homepage = "https://sourceforge.net/projects/timidity/";
     license = licenses.gpl2Plus;
     description = "Software MIDI renderer";
-    maintainers = [ maintainers.marcweber ];
+    maintainers = with lib.maintainers; [ marcweber ];
     platforms = platforms.unix;
     mainProgram = "timidity";
   };

@@ -115,7 +115,7 @@ effectiveStdenv.mkDerivation (finalAttrs: {
     homepage = "https://openucx.github.io/ucc/";
     mainProgram = "ucc_info";
     license = licenses.bsd3;
-    maintainers = [ maintainers.markuskowa ];
+    maintainers = with lib.maintainers; [ markuskowa ];
     platforms = platforms.linux;
   };
 })

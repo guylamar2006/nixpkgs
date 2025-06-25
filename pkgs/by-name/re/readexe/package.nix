@@ -25,7 +25,7 @@ stdenv.mkDerivation (finalAttrs: {
       isc
       bsd3
     ];
-    maintainers = with maintainers; [ evils ];
+    maintainers = with lib.maintainers; [ evils ];
     mainProgram = "readexe";
   };
 })

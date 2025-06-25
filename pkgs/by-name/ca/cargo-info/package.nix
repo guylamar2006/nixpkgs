@@ -28,7 +28,7 @@ rustPlatform.buildRustPackage rec {
     openssl
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Cargo subcommand to show crates info from crates.io";
     mainProgram = "cargo-info";
     homepage = "https://gitlab.com/imp/cargo-info";
@@ -37,7 +37,7 @@ rustPlatform.buildRustPackage rec {
       mit
       asl20
     ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       figsoda
       matthiasbeyer
     ];

@@ -26,7 +26,7 @@ python3.pkgs.buildPythonApplication rec {
     make test
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Handwritten kanji recognition";
     mainProgram = "kanjidraw";
     longDescription = ''
@@ -44,6 +44,6 @@ python3.pkgs.buildPythonApplication rec {
       agpl3Plus # code
       cc-by-sa-30 # data.json
     ];
-    maintainers = [ maintainers.obfusk ];
+    maintainers = with lib.maintainers; [ obfusk ];
   };
 }

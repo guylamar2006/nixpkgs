@@ -36,6 +36,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://www.mono-project.com/docs/gui/libgdiplus/";
     platforms = lib.platforms.unix;
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.gador ];
+    maintainers = with lib.maintainers; [ gador ];
   };
 })

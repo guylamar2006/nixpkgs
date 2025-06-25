@@ -125,9 +125,9 @@ buildGoModule rec {
   meta = with lib; {
     homepage = "https://gitlab.com/nvidia/container-toolkit/container-toolkit";
     description = "NVIDIA Container Toolkit";
-    license = licenses.asl20;
-    platforms = platforms.linux;
-    maintainers = with maintainers; [
+    license = lib.licenses.asl20;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [
       cpcloud
       christoph-heiss
     ];

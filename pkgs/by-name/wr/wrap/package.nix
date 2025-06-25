@@ -43,6 +43,6 @@ buildGoModule rec {
     description = "Fountain export tool with some extras";
     homepage = "https://github.com/Wraparound/wrap";
     license = licenses.gpl3Only;
-    maintainers = [ maintainers.austinbutler ];
+    maintainers = with lib.maintainers; [ austinbutler ];
   };
 }

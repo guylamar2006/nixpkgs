@@ -30,8 +30,8 @@ buildGoModule rec {
     mainProgram = "scalingo";
     homepage = "https://doc.scalingo.com/platform/cli/start";
     changelog = "https://github.com/Scalingo/cli/blob/master/CHANGELOG.md";
-    license = licenses.bsdOriginal;
-    maintainers = with maintainers; [ cimm ];
+    license = lib.licenses.bsdOriginal;
+    maintainers = with lib.maintainers; [ cimm ];
     platforms = with lib.platforms; unix;
   };
 }

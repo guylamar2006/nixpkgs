@@ -46,7 +46,7 @@ rustPlatform.buildRustPackage rec {
     wrapProgram $out/bin/cargo-msrv --prefix PATH : ${lib.makeBinPath [ rustup ]};
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Cargo subcommand \"msrv\": assists with finding your minimum supported Rust version (MSRV)";
     mainProgram = "cargo-msrv";
     homepage = "https://github.com/foresterre/cargo-msrv";
@@ -54,7 +54,7 @@ rustPlatform.buildRustPackage rec {
       asl20 # or
       mit
     ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       otavio
       matthiasbeyer
     ];

@@ -41,11 +41,11 @@ stdenv.mkDerivation rec {
 
   passthru.updateScript = gitUpdater { };
 
-  meta = with lib; {
+  meta = {
     description = "Manjaro Style of Marwaita GTK theme";
     homepage = "https://www.pling.com/p/1351213/";
-    license = licenses.gpl3Only;
+    license = lib.licenses.gpl3Only;
     platforms = platforms.unix;
-    maintainers = [ maintainers.romildo ];
+    maintainers = with lib.maintainers; [ romildo ];
   };
 }

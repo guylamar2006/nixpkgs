@@ -47,7 +47,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://bitbucket.com/museoa/qnial";
     license = lib.licenses.artistic1;
     mainProgram = "nial";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
   };
 })

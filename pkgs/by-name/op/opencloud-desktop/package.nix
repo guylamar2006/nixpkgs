@@ -49,6 +49,6 @@ stdenv.mkDerivation (finalAttrs: {
     downloadPage = "https://github.com/opencloud-eu/desktop";
     homepage = "https://opencloud.eu/en";
     license = lib.licenses.gpl2Only;
-    maintainers = [ lib.maintainers.FKouhai ];
+    maintainers = with lib.maintainers; [ FKouhai ];
   };
 })

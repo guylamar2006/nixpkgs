@@ -28,11 +28,11 @@ stdenv.mkDerivation rec {
 
   makeFlags = [ "PREFIX=$(out)" ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/x42/ltc-tools";
     description = "Tools to deal with linear-timecode (LTC)";
-    license = licenses.gpl2;
+    license = lib.licenses.gpl2;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ tg-x ];
+    maintainers = with lib.maintainers; [ tg-x ];
   };
 }

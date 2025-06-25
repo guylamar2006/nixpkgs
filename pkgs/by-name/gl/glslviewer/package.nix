@@ -42,11 +42,11 @@ stdenv.mkDerivation rec {
     ffmpeg
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Live GLSL coding renderer";
     homepage = "https://patriciogonzalezvivo.com/2015/glslViewer/";
-    license = licenses.bsd3;
-    maintainers = [ maintainers.hodapp ];
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ hodapp ];
     platforms = platforms.unix;
     mainProgram = "glslViewer";
     # never built on aarch64-darwin since first introduction in nixpkgs

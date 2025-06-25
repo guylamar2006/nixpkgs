@@ -98,6 +98,6 @@ stdenv.mkDerivation {
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unfree;
     platforms = builtins.map (arch: "${arch}-linux") arches;
-    maintainers = [ lib.maintainers.luftmensch-luftmensch ];
+    maintainers = with lib.maintainers; [ luftmensch-luftmensch ];
   };
 }

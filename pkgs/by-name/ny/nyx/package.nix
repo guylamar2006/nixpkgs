@@ -24,7 +24,7 @@ buildPythonApplication rec {
     description = "Command-line monitor for Tor";
     mainProgram = "nyx";
     homepage = "https://nyx.torproject.org/";
-    license = licenses.gpl3;
-    maintainers = with maintainers; [ offline ];
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ offline ];
   };
 }

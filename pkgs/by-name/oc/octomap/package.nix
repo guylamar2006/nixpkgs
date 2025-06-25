@@ -28,8 +28,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Probabilistic, flexible, and compact 3D mapping library for robotic systems";
     homepage = "https://octomap.github.io/";
-    license = licenses.bsd3;
-    maintainers = with maintainers; [ lopsided98 ];
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ lopsided98 ];
     platforms = platforms.unix;
   };
 }

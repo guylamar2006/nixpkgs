@@ -34,11 +34,11 @@ stdenv.mkDerivation rec {
 
   buildInputs = lib.optionals stdenv.hostPlatform.isDarwin [ openssl ];
 
-  meta = with lib; {
+  meta = {
     description = "General Stream I/O";
     homepage = "https://sourceforge.net/projects/ser2net/";
-    license = licenses.gpl2;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl2;
+    maintainers = with lib.maintainers; [
       emantor
       sarcasticadmin
     ];

@@ -38,6 +38,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/libimobiledevice/libusbmuxd";
     license = lib.licenses.lgpl21Plus;
     platforms = lib.platforms.unix;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

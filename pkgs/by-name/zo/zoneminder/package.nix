@@ -245,7 +245,7 @@ stdenv.mkDerivation rec {
     description = "Video surveillance software system";
     homepage = "https://zoneminder.com";
     license = licenses.gpl3;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
   };
 }

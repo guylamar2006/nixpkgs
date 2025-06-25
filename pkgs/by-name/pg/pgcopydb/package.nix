@@ -71,7 +71,7 @@ clangStdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/dimitri/pgcopydb";
     changelog = "https://github.com/dimitri/pgcopydb/blob/${finalAttrs.src.rev}/CHANGELOG.md";
     license = lib.licenses.postgresql;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "pgcopydb";
     platforms = lib.platforms.all;
   };

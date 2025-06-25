@@ -44,7 +44,7 @@ stdenv.mkDerivation (finalAttrs: {
       lgpl3Plus
       bsd3
     ];
-    maintainers = with maintainers; [ takikawa ];
+    maintainers = with lib.maintainers; [ takikawa ];
     mainProgram = "ndpiReader";
     platforms = with platforms; unix;
   };

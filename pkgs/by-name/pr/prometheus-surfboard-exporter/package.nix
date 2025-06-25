@@ -28,8 +28,8 @@ buildGoModule rec {
     description = "Arris Surfboard signal metrics exporter";
     mainProgram = "surfboard_exporter";
     homepage = "https://github.com/ipstatic/surfboard_exporter";
-    license = licenses.mit;
-    maintainers = with maintainers; [ disassembler ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ disassembler ];
     platforms = platforms.unix;
   };
 }

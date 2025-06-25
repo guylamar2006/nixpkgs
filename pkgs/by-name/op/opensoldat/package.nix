@@ -41,7 +41,7 @@ let
 
     meta = with lib; {
       description = "Opensoldat's base game content";
-      license = licenses.cc-by-40;
+      license = lib.licenses.cc-by-40;
       platforms = platforms.all;
       inherit (src.meta) homepage;
     };
@@ -108,7 +108,7 @@ stdenv.mkDerivation rec {
       base.meta.license
     ];
     inherit (src.meta) homepage;
-    maintainers = [ maintainers.sternenseemann ];
+    maintainers = with lib.maintainers; [ sternenseemann ];
     platforms = [
       "x86_64-linux"
       "i686-linux"

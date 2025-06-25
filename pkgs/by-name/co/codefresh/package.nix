@@ -42,6 +42,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/codefresh-io/cli";
     license = lib.licenses.mit;
     mainProgram = "codefresh";
-    maintainers = [ lib.maintainers.takac ];
+    maintainers = with lib.maintainers; [ takac ];
   };
 })

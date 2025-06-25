@@ -80,6 +80,6 @@ stdenv.mkDerivation rec {
     ];
     hydraPlatforms = [ ];
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.unfree;
+    license = lib.licenses.unfree;
   };
 }

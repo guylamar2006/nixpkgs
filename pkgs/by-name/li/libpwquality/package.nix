@@ -81,7 +81,7 @@ stdenv.mkDerivation rec {
       # leave for now to avoid rebuilds on !enablePython before 24.11 fully lands
       [ "--disable-python-bindings" ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/libpwquality/libpwquality";
     description = "Password quality checking and random password generation library";
     longDescription = ''
@@ -100,7 +100,7 @@ stdenv.mkDerivation rec {
       # or
       gpl2Plus
     ];
-    maintainers = with maintainers; [ jk ];
+    maintainers = with lib.maintainers; [ jk ];
     platforms = platforms.unix;
   };
 }

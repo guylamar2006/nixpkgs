@@ -112,9 +112,9 @@ stdenv.mkDerivation (finalAttrs: {
       involving many ion-specific channels, ion accumulation, and second messengers
     '';
     sourceProvenance = with sourceTypes; [ fromSource ];
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     homepage = "http://www.neuron.yale.edu/neuron";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       adev
       davidcromp
     ];

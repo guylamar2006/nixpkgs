@@ -32,7 +32,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Automatically remove unused imports and globals from Zig files";
     homepage = "https://github.com/tusharsadhwani/zigimports";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.jmbaur ];
+    maintainers = with lib.maintainers; [ jmbaur ];
     mainProgram = "zigimports";
     inherit (zig_0_13.meta) platforms;
   };

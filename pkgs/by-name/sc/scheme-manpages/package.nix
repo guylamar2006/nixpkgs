@@ -28,8 +28,8 @@ stdenvNoCC.mkDerivation {
   meta = with lib; {
     description = "Unix manual pages for R6RS and R7RS";
     homepage = "https://github.com/schemedoc/manpages";
-    license = licenses.mit;
-    maintainers = [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
   };
 }

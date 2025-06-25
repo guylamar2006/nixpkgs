@@ -37,12 +37,12 @@ stdenv.mkDerivation rec {
     libuv
   ];
 
-  meta = with lib; {
+  meta = {
     description = "DPS8M: GE / Honeywell / Bull DPS‑8/M mainframe simulator";
     homepage = "https://gitlab.com/dps8m/dps8m";
     changelog = "https://gitlab.com/dps8m/dps8m/-/wikis/DPS8M-${src.rev}-Release-Notes";
-    license = licenses.icu;
-    maintainers = with maintainers; [
+    license = lib.licenses.icu;
+    maintainers = with lib.maintainers; [
       matthewcroughan
       sarcasticadmin
     ];

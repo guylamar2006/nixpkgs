@@ -42,6 +42,6 @@ stdenv.mkDerivation {
 
     homepage = "https://github.com/n-t-roff/sc";
     license = lib.licenses.unlicense;
-    maintainers = [ lib.maintainers.claes ];
+    maintainers = with lib.maintainers; [ claes ];
   };
 }

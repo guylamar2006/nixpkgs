@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
       bsd2
       mit
     ];
-    maintainers = with maintainers; [ neverbehave ];
+    maintainers = with lib.maintainers; [ neverbehave ];
     mainProgram = "novnc";
   };
 }

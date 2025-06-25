@@ -150,6 +150,6 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Enterprise-class Open Source LDAP server for Linux";
     license = lib.licenses.gpl3Plus;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.ners ];
+    maintainers = with lib.maintainers; [ ners ];
   };
 })

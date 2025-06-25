@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
       ++ lib.platforms.riscv
       ++ lib.platforms.loongarch64
     );
-    maintainers = [ lib.maintainers.bjornfor ];
+    maintainers = with lib.maintainers; [ bjornfor ];
   };
 
 }

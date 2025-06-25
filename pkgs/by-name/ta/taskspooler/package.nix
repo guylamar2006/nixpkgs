@@ -31,7 +31,7 @@ stdenv.mkDerivation {
     description = "Simple single node task scheduler";
     homepage = "https://vicerveza.homeunix.net/~viric/wsgi-bin/hgweb.wsgi/ts";
     license = licenses.gpl2Plus;
-    maintainers = [ maintainers.sheepforce ];
+    maintainers = with lib.maintainers; [ sheepforce ];
     mainProgram = "ts";
     platforms = platforms.unix;
   };

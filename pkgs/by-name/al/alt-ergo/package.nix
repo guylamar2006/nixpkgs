@@ -76,6 +76,6 @@ ocamlPackages.buildDunePackage {
     description = "High-performance theorem prover and SMT solver";
     homepage = "https://alt-ergo.ocamlpro.com/";
     license = lib.licenses.ocamlpro_nc;
-    maintainers = [ lib.maintainers.thoughtpolice ];
+    maintainers = with lib.maintainers; [ thoughtpolice ];
   };
 }

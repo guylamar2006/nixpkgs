@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
     description = "Simple character graphics game where you drive some kind of car across the moon's surface";
     mainProgram = "moon-buggy";
     license = lib.licenses.gpl2Only;
-    maintainers = [ lib.maintainers.rybern ];
+    maintainers = with lib.maintainers; [ rybern ];
     platforms = lib.platforms.linux ++ lib.platforms.darwin;
     homepage = "https://www.seehuhn.de/pages/moon-buggy";
   };

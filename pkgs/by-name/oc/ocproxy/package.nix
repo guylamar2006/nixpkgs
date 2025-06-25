@@ -36,8 +36,8 @@ stdenv.mkDerivation rec {
       based on lwIP.
     '';
     homepage = "https://github.com/cernekee/ocproxy";
-    license = licenses.bsd3;
-    maintainers = [ maintainers.joko ];
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ joko ];
     platforms = platforms.unix;
   };
 }

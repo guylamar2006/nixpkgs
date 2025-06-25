@@ -29,7 +29,7 @@ buildGoModule rec {
       context.
     '';
     homepage = "https://github.com/pseudomuto/protoc-gen-doc";
-    license = licenses.mit;
-    maintainers = with maintainers; [ kalbasit ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ kalbasit ];
   };
 }

@@ -42,10 +42,10 @@ rustPlatform.buildRustPackage rec {
 
   buildInputs = lib.optionals stdenv.hostPlatform.isLinux [ alsa-lib ];
 
-  meta = with lib; {
+  meta = {
     description = "Music theory binary and library for Rust";
     homepage = "https://github.com/twitchax/kord";
-    maintainers = with maintainers; [ kidsan ];
+    maintainers = with lib.maintainers; [ kidsan ];
     license = with licenses; [ mit ];
   };
 }

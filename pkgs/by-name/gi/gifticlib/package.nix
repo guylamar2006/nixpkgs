@@ -40,11 +40,11 @@ stdenv.mkDerivation {
     "NEEDS_DATA"
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.nitrc.org/projects/gifti";
     description = "Medical imaging geometry format C API";
-    maintainers = with maintainers; [ bcdarwin ];
+    maintainers = with lib.maintainers; [ bcdarwin ];
     platforms = platforms.unix;
-    license = licenses.publicDomain;
+    license = lib.licenses.publicDomain;
   };
 }

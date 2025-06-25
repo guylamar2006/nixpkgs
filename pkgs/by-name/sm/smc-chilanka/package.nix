@@ -42,8 +42,8 @@ stdenvNoCC.mkDerivation rec {
   meta = with lib; {
     homepage = "https://smc.org.in/fonts/chilanka";
     description = "Chilanka Malayalam Typeface";
-    license = licenses.ofl;
+    license = lib.licenses.ofl;
     platforms = platforms.all;
-    maintainers = with maintainers; [ adtya ];
+    maintainers = with lib.maintainers; [ adtya ];
   };
 }

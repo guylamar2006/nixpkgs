@@ -69,6 +69,6 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "taco";
     license = lib.licenses.mit;
     homepage = "https://github.com/tensor-compiler/taco";
-    maintainers = [ lib.maintainers.sheepforce ];
+    maintainers = with lib.maintainers; [ sheepforce ];
   };
 })

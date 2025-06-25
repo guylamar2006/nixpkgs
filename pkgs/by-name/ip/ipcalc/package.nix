@@ -56,11 +56,11 @@ stdenv.mkDerivation rec {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     description = "Simple IP network calculator";
     homepage = "https://gitlab.com/ipcalc/ipcalc";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [ peterhoeg ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ peterhoeg ];
     platforms = platforms.unix;
     mainProgram = "ipcalc";
   };

@@ -61,6 +61,6 @@ stdenv.mkDerivation (finalAttrs: {
     ];
     pkgConfigModules = [ "pocketsphinx" ];
     mainProgram = "pocketsphinx";
-    maintainers = with maintainers; [ jopejoe1 ];
+    maintainers = with lib.maintainers; [ jopejoe1 ];
   };
 })

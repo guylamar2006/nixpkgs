@@ -38,8 +38,8 @@ stdenv.mkDerivation rec {
     description = "Simple plaintext presentation tool";
     mainProgram = "sent";
     homepage = "https://tools.suckless.org/sent/";
-    license = licenses.isc;
+    license = lib.licenses.isc;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ pSub ];
+    maintainers = with lib.maintainers; [ pSub ];
   };
 }

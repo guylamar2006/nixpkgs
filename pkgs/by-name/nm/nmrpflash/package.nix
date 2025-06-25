@@ -34,8 +34,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Netgear Unbrick Utility";
     homepage = "https://github.com/jclehner/nmrpflash";
-    license = licenses.gpl3;
-    maintainers = with maintainers; [ dadada ];
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ dadada ];
     mainProgram = "nmrpflash";
     platforms = platforms.unix;
   };

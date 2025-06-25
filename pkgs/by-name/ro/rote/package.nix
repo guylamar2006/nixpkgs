@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
       screen when you need to.
     '';
     homepage = "https://rote.sourceforge.net/";
-    license = licenses.lgpl21;
+    license = lib.licenses.lgpl21;
     platforms = platforms.linux;
   };
 }

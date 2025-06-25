@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
       in an existing instance of GVim or MacVim.
     '';
     license = licenses.mit;
-    maintainers = [ maintainers.matthiasbeyer ];
+    maintainers = with lib.maintainers; [ matthiasbeyer ];
     platforms = platforms.all;
     mainProgram = "vimer";
   };

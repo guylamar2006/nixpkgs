@@ -25,8 +25,8 @@ rustPlatform.buildRustPackage rec {
 
   meta = with lib; {
     description = "Tool to quickly open a markdown document with already filled out frontmatter";
-    license = licenses.lgpl3Only;
+    license = lib.licenses.lgpl3Only;
     platforms = platforms.all;
-    maintainers = with maintainers; [ annaaurora ];
+    maintainers = with lib.maintainers; [ annaaurora ];
   };
 }

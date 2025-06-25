@@ -73,11 +73,11 @@ stdenv.mkDerivation rec {
       runHook postInstall
     '';
 
-  meta = with lib; {
+  meta = {
     description = "Port of Bugdom, a 1999 Macintosh game by Pangea Software, for modern operating systems";
     homepage = "https://github.com/jorio/Bugdom";
     license = with licenses; [ cc-by-sa-40 ];
-    maintainers = with maintainers; [ lux ];
+    maintainers = with lib.maintainers; [ lux ];
     mainProgram = "Bugdom";
     platforms = platforms.unix;
   };

@@ -48,7 +48,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/KeyboardFire/xscast";
     license = licenses.mit;
     description = "Screencasts of windows with list of keystrokes overlayed";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "xscast";
   };
 }

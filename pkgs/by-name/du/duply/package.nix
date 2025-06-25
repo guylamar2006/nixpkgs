@@ -63,7 +63,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://duply.net/";
     license = lib.licenses.gpl2Only;
-    maintainers = [ lib.maintainers.bjornfor ];
+    maintainers = with lib.maintainers; [ bjornfor ];
     platforms = lib.platforms.unix;
   };
 })

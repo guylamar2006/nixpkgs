@@ -29,7 +29,7 @@ stdenv.mkDerivation (
       description = "Process for exposing JMX Beans via HTTP for Prometheus consumption";
       sourceProvenance = [ lib.sourceTypes.binaryBytecode ];
       license = lib.licenses.asl20;
-      maintainers = [ lib.maintainers.srhb ];
+      maintainers = with lib.maintainers; [ srhb ];
       platforms = lib.platforms.unix;
     };
   }

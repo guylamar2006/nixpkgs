@@ -26,7 +26,7 @@ buildGoModule rec {
     mainProgram = "gotemplate";
     changelog = "https://github.com/coveooss/gotemplate/releases/tag/v${version}";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.giorgiga ];
+    maintainers = with lib.maintainers; [ giorgiga ];
   };
 
 }

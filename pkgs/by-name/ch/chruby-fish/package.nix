@@ -22,6 +22,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/JeanMertz/chruby-fish";
     license = lib.licenses.mit;
     platforms = lib.platforms.all;
-    maintainers = [ lib.maintainers.cohei ];
+    maintainers = with lib.maintainers; [ cohei ];
   };
 })

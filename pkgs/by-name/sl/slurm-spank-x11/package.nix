@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     description = "Plugin for SLURM to allow for interactive X11 sessions";
     mainProgram = "slurm-spank-x11";
     platforms = platforms.linux;
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ markuskowa ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ markuskowa ];
   };
 }

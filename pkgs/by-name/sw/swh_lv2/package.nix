@@ -44,7 +44,7 @@ stdenv.mkDerivation rec {
       generators, surround encoders and more.
     '';
     license = licenses.gpl3;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.linux;
   };
 }

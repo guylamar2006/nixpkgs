@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
     description = "Release projects quickly and easily";
     sourceProvenance = [ lib.sourceTypes.binaryBytecode ];
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.i-al-istannen ];
+    maintainers = with lib.maintainers; [ i-al-istannen ];
     mainProgram = "jreleaser-cli";
   };
 }

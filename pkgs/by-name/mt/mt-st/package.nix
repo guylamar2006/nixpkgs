@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/iustin/mt-st";
     license = lib.licenses.gpl2Only;
-    maintainers = [ lib.maintainers.redvers ];
+    maintainers = with lib.maintainers; [ redvers ];
     platforms = lib.platforms.linux;
   };
 }

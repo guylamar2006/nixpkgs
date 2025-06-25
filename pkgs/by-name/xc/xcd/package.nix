@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Colorized hexdump tool";
     homepage = "https://www.muppetlabs.com/~breadbox/software/xcd.html";
-    maintainers = [ maintainers.xfnw ];
+    maintainers = with lib.maintainers; [ xfnw ];
     license = licenses.mit;
     platforms = platforms.unix;
     mainProgram = "xcd";

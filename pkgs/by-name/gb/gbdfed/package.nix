@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "http://sofia.nmsu.edu/~mleisher/Software/gbdfed/";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.linquize ];
+    maintainers = with lib.maintainers; [ linquize ];
     platforms = lib.platforms.all;
     mainProgram = "gbdfed";
   };

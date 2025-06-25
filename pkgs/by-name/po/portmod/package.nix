@@ -124,7 +124,7 @@ python3Packages.buildPythonApplication {
   meta = with lib; {
     description = "mod manager for openMW based on portage";
     homepage = "https://gitlab.com/portmod/portmod";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ marius851000 ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ marius851000 ];
   };
 }

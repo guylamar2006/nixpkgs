@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
     description = "Command-line screen capture utility";
     mainProgram = "scrot";
     platforms = platforms.linux;
-    maintainers = [ ];
-    license = licenses.mitAdvertising;
+    maintainers = with lib.maintainers; [ ];
+    license = lib.licenses.mitAdvertising;
   };
 }

@@ -62,8 +62,8 @@ stdenv.mkDerivation rec {
         * part of the sndtools distribution.
     '';
     homepage = "https://soundlab.cs.princeton.edu/software/sndpeek/";
-    license = licenses.gpl2;
-    maintainers = [ maintainers.laikq ];
+    license = lib.licenses.gpl2;
+    maintainers = with lib.maintainers; [ laikq ];
     mainProgram = "sndpeek";
   };
 }

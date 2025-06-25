@@ -264,7 +264,7 @@ stdenv.mkDerivation rec {
     description = "Quantum chemistry and solid state physics program";
     homepage = "https://www.cp2k.org";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ lib.maintainers.sheepforce ];
+    maintainers = with lib.maintainers; [ sheepforce ];
     platforms = [ "x86_64-linux" ];
   };
 }

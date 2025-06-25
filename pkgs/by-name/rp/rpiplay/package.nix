@@ -56,8 +56,8 @@ stdenv.mkDerivation {
     broken = stdenv.hostPlatform.isDarwin;
     homepage = "https://github.com/FD-/RPiPlay";
     description = "Open-source implementation of an AirPlay mirroring server";
-    license = licenses.gpl3Plus;
-    maintainers = [ ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
     mainProgram = "rpiplay";
   };

@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
       lgpl21Only
       zlib
     ];
-    maintainers = with maintainers; [ smitop ];
+    maintainers = with lib.maintainers; [ smitop ];
     platforms = with platforms; linux;
   };
 }

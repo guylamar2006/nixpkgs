@@ -59,7 +59,7 @@ stdenv.mkDerivation {
     '';
     homepage = "https://gitlab.com/zsaleeba/picoc";
     downloadPage = "https://code.google.com/p/picoc/downloads/list";
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     platforms = platforms.unix;
   };
 }

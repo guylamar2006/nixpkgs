@@ -29,8 +29,8 @@ buildGoModule rec {
     description = "Pulumi ESC (Environments, Secrets, and Configuration) for cloud applications and infrastructure";
     homepage = "https://github.com/pulumi/esc/tree/main";
     changelog = "https://github.com/pulumi/esc/blob/${src.rev}/CHANGELOG.md";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ yomaq ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ yomaq ];
     mainProgram = "esc";
   };
 }

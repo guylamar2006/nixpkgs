@@ -98,7 +98,7 @@ stdenv.mkDerivation rec {
       "x86_64-linux"
       "aarch64-linux"
     ];
-    license = licenses.asl20;
-    maintainers = with maintainers; [ benesim ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ benesim ];
   };
 }

@@ -74,6 +74,6 @@ stdenv.mkDerivation rec {
     homepage = "https://kernel.org/";
     license = lib.licenses.gpl2Only;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.thoughtpolice ];
+    maintainers = with lib.maintainers; [ thoughtpolice ];
   };
 }

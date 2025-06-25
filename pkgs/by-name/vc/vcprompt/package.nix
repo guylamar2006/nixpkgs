@@ -32,7 +32,7 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Program that prints barebones information about the current working directory for various version control systems";
     homepage = "https://github.com/powerman/vcprompt";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = with platforms; linux ++ darwin;
     license = licenses.gpl2Plus;
     mainProgram = "vcprompt";

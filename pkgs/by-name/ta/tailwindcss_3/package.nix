@@ -60,7 +60,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://tailwindcss.com/blog/standalone-cli";
     license = licenses.mit;
     sourceProvenance = [ sourceTypes.binaryNativeCode ];
-    maintainers = [ maintainers.adamcstephens ];
+    maintainers = with lib.maintainers; [ adamcstephens ];
     mainProgram = "tailwindcss";
     platforms = platforms.darwin ++ platforms.linux;
   };

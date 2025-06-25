@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
     homepage = "https://bitbucket.org/hirofuchi/xnbd";
     description = "Yet another NBD (Network Block Device) server program";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
   };
 }

@@ -27,8 +27,8 @@ stdenvNoCC.mkDerivation rec {
   meta = with lib; {
     description = "Joypad autoconfig files";
     homepage = "https://www.libretro.com/";
-    license = licenses.mit;
-    teams = [ teams.libretro ];
+    license = lib.licenses.mit;
+    teams = with lib.teams; [ libretro ];
     platforms = platforms.all;
   };
 }

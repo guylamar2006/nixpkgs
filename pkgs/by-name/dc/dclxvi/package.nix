@@ -33,10 +33,10 @@ stdenv.mkDerivation {
     find . -name \*.so -exec cp {} $out/lib \;
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/agl/dclxvi";
     description = "Naehrig, Niederhagen and Schwabe's pairings code, massaged into a shared library";
     platforms = platforms.x86_64;
-    license = licenses.publicDomain;
+    license = lib.licenses.publicDomain;
   };
 }

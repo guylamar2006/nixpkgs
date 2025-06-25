@@ -37,8 +37,8 @@ stdenv.mkDerivation (finalAttrs: {
       Handles both DST and DSD streams.
     '';
     homepage = "https://github.com/Sound-Linux-More/sacd";
-    license = licenses.gpl3;
-    maintainers = [ maintainers.doronbehar ];
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ doronbehar ];
     platforms = [ "x86_64-linux" ];
     mainProgram = "sacd";
   };

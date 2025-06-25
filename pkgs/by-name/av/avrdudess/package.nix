@@ -64,7 +64,7 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/ZakKemble/AVRDUDESS/blob/v${finalAttrs.version}/Changelog.txt";
     license = lib.licenses.gpl3;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.bjornfor ];
+    maintainers = with lib.maintainers; [ bjornfor ];
     mainProgram = "avrdudess";
   };
 })

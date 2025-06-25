@@ -89,6 +89,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.agpl3Plus;
     platforms = [ "x86_64-linux" ];
     mainProgram = "video2x";
-    maintainers = [ lib.maintainers.matteopacini ];
+    maintainers = with lib.maintainers; [ matteopacini ];
   };
 })

@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/l3ib/nitrogen";
     license = lib.licenses.gpl2Plus;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.auntie ];
+    maintainers = with lib.maintainers; [ auntie ];
     mainProgram = "nitrogen";
   };
 }

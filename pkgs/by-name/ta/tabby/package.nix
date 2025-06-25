@@ -188,7 +188,7 @@ rustPlatform.buildRustPackage {
     description = "Self-hosted AI coding assistant";
     mainProgram = "tabby";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.ghthor ];
+    maintainers = with lib.maintainers; [ ghthor ];
     broken = stdenv.hostPlatform.isDarwin && !stdenv.hostPlatform.isAarch64;
   };
 }

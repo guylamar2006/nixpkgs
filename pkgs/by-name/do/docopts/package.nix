@@ -29,7 +29,7 @@ buildGoModule rec {
     homepage = "https://github.com/docopt/docopts";
     description = "Shell interpreter for docopt, the command-line interface description language";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.confus ];
+    maintainers = with lib.maintainers; [ confus ];
     platforms = lib.platforms.unix;
   };
 }

@@ -67,9 +67,9 @@ stdenv.mkDerivation rec {
       traversing fewer network hops, eliminating redundant requests,
       and consuming less resources overall.
     '';
-    license = licenses.lgpl3;
+    license = lib.licenses.lgpl3;
     platforms = platforms.unix;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       sjmackenzie
       bertof
     ];

@@ -45,8 +45,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Pop-up showing tag status";
     homepage = "https://sr.ht/~leon_plickat/river-tag-overlay";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ edrex ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ edrex ];
     platforms = platforms.linux;
     mainProgram = "river-tag-overlay";
   };

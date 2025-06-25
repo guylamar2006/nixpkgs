@@ -51,8 +51,8 @@ buildNpmPackage rec {
   meta = with lib; {
     description = "Opcua client with blessed (ncurses)";
     homepage = "https://github.com/node-opcua/opcua-commander";
-    license = licenses.mit;
-    maintainers = with maintainers; [ jonboh ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ jonboh ];
     mainProgram = "opcua-commander";
   };
 }

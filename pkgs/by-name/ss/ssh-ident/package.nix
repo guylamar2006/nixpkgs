@@ -30,7 +30,7 @@ stdenvNoCC.mkDerivation {
   meta = with lib; {
     homepage = "https://github.com/ccontavalli/ssh-ident";
     description = "Start and use ssh-agent and load identities as necessary";
-    license = licenses.bsd2;
+    license = lib.licenses.bsd2;
     maintainers = with maintainers; [ telotortium ];
     platforms = with platforms; unix;
     mainProgram = "ssh-ident";

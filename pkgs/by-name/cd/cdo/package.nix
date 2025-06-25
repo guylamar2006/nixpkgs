@@ -51,7 +51,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://code.mpimet.mpg.de/projects/cdo/";
     license = lib.licenses.bsd3;
-    maintainers = [ lib.maintainers.ltavard ];
+    maintainers = with lib.maintainers; [ ltavard ];
     platforms = with lib.platforms; linux ++ darwin;
   };
 })

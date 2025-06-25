@@ -105,8 +105,8 @@ stdenv.mkDerivation rec {
     description = "Screenshot and annotation tool";
     mainProgram = "shutter";
     homepage = "https://shutter-project.org/";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     platforms = platforms.all;
-    maintainers = [ maintainers.bjornfor ];
+    maintainers = with lib.maintainers; [ bjornfor ];
   };
 }

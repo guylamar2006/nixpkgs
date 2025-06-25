@@ -25,8 +25,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Script to extract RPM archives";
     platforms = platforms.all;
-    license = licenses.gpl2Only;
-    maintainers = with maintainers; [ abbradar ];
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [ abbradar ];
     mainProgram = "rpmextract";
   };
 }

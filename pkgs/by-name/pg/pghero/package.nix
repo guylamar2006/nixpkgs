@@ -75,7 +75,7 @@ stdenv.mkDerivation (
       description = "Performance dashboard for Postgres";
       mainProgram = "pghero";
       license = lib.licenses.mit;
-      maintainers = [ lib.maintainers.tie ];
+      maintainers = with lib.maintainers; [ tie ];
     };
   }
 )

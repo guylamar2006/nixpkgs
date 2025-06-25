@@ -78,12 +78,12 @@ stdenv.mkDerivation rec {
     updateScript = nix-update-script { };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Recipe management application for GNOME";
     mainProgram = "gnome-recipes";
     homepage = "https://gitlab.gnome.org/GNOME/recipes";
-    teams = [ teams.gnome ];
-    license = licenses.gpl3Plus;
+    teams = with lib.teams; [ gnome ];
+    license = lib.licenses.gpl3Plus;
     platforms = platforms.unix;
   };
 }

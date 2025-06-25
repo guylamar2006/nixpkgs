@@ -32,7 +32,7 @@ buildGoModule rec {
     description = "Web frontend for git";
     homepage = "https://github.com/icyphox/legit";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.ratsclub ];
+    maintainers = with lib.maintainers; [ ratsclub ];
     mainProgram = "legit";
   };
 }

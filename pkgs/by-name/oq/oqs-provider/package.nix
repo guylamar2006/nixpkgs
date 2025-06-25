@@ -53,8 +53,8 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     homepage = "https://github.com/open-quantum-safe/oqs-provider";
     description = "Open Quantum Safe provider for OpenSSL (3.x)";
-    license = licenses.mit;
-    maintainers = with maintainers; [ rixxc ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ rixxc ];
     platforms = platforms.all;
   };
 })

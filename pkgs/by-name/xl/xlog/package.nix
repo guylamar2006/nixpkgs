@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
       both for short and long path.
     '';
     homepage = "https://www.nongnu.org/xlog";
-    maintainers = [ maintainers.mafo ];
+    maintainers = with lib.maintainers; [ mafo ];
     license = licenses.gpl3;
     platforms = platforms.unix;
     mainProgram = "xlog";

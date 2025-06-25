@@ -63,8 +63,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Printed Circuit Board editor";
     homepage = "https://sourceforge.net/projects/pcb/";
-    maintainers = with maintainers; [ mog ];
-    platforms = platforms.linux;
-    license = licenses.gpl2;
+    maintainers = with lib.maintainers; [ mog ];
+    platforms = lib.platforms.linux;
+    license = lib.licenses.gpl2;
   };
 }

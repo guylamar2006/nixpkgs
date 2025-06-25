@@ -46,8 +46,8 @@ stdenv.mkDerivation {
       Inspired by DT's colorscripts.
     '';
     homepage = "https://github.com/nuke-dash/pokemon-colorscripts-mac";
-    license = licenses.mit;
-    maintainers = [ maintainers.wesleyjrz ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ wesleyjrz ];
     platforms = platforms.unix;
     mainProgram = "pokemon-colorscripts";
   };

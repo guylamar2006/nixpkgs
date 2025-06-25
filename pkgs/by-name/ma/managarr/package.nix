@@ -25,7 +25,7 @@ rustPlatform.buildRustPackage rec {
     description = "TUI and CLI to manage your Servarrs";
     homepage = "https://github.com/Dark-Alex-17/managarr";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.IncredibleLaser ];
+    maintainers = with lib.maintainers; [ IncredibleLaser ];
     mainProgram = "managarr";
   };
 }

@@ -41,7 +41,7 @@ ocamlPackages.buildDunePackage rec {
     homepage = "https://complogic.cs.mcgill.ca/beluga";
     changelog = "https://github.com/Beluga-lang/Beluga/releases/tag/v${version}";
     license = lib.licenses.gpl3Plus;
-    maintainers = [ lib.maintainers.bcdarwin ];
+    maintainers = with lib.maintainers; [ bcdarwin ];
     platforms = lib.platforms.unix;
   };
 }

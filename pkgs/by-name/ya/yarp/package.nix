@@ -33,6 +33,6 @@ stdenv.mkDerivation rec {
     homepage = "http://yarp.it";
     license = lib.licenses.lgpl21;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.nico202 ];
+    maintainers = with lib.maintainers; [ nico202 ];
   };
 }

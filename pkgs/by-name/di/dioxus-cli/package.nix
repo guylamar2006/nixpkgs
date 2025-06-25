@@ -61,7 +61,7 @@ rustPlatform.buildRustPackage rec {
     tests.version = testers.testVersion { package = dioxus-cli; };
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://dioxuslabs.com";
     description = "CLI tool for developing, testing, and publishing Dioxus apps";
     changelog = "https://github.com/DioxusLabs/dioxus/releases";
@@ -69,7 +69,7 @@ rustPlatform.buildRustPackage rec {
       mit
       asl20
     ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       xanderio
       cathalmullan
     ];

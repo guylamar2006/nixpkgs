@@ -20,8 +20,8 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Generate human readable random names";
     homepage = "https://github.com/allenap/rust-petname";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ figsoda ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ figsoda ];
     mainProgram = "petname";
   };
 }

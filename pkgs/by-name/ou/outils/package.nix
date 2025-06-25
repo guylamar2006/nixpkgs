@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
       mit
       publicDomain
     ];
-    platforms = platforms.linux;
-    maintainers = with maintainers; [ somasis ];
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ somasis ];
   };
 }

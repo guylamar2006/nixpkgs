@@ -84,11 +84,11 @@ stdenv.mkDerivation (finalAttrs: {
 
   passthru.tests.pkg-config = testers.testMetaPkgConfig finalAttrs.finalPackage;
 
-  meta = with lib; {
+  meta = {
     description = "Fastest Fourier Transform in the West library";
     homepage = "https://www.fftw.org/";
-    license = licenses.gpl2Plus;
-    maintainers = [ ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ ];
     pkgConfigModules = [
       {
         "single" = "fftw3f";

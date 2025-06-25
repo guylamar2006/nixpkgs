@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     description = "Automatically generate all types of basic memory management operations and write into trace files";
     mainProgram = "TraceFileGen";
     homepage = "https://github.com/GarCoSim";
-    maintainers = [ maintainers.cmcdragonkai ];
+    maintainers = with lib.maintainers; [ cmcdragonkai ];
     license = licenses.gpl2;
     platforms = platforms.linux;
   };

@@ -36,8 +36,8 @@ python3.pkgs.buildPythonApplication rec {
     description = "Command-line utility for taking automated screenshots of websites";
     homepage = "https://github.com/simonw/shot-scraper";
     changelog = "https://github.com/simonw/shot-scraper/releases/tag/${src.tag}";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ techknowlogick ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ techknowlogick ];
     mainProgram = "shot-scraper";
   };
 }

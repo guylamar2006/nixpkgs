@@ -22,7 +22,7 @@ buildGoModule rec {
     mainProgram = "regols";
     homepage = "https://github.com/kitagry/regols";
     changelog = "https://github.com/kitagry/regols/releases/tag/${src.rev}";
-    license = licenses.mit;
-    maintainers = with maintainers; [ alias-dev ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ alias-dev ];
   };
 }

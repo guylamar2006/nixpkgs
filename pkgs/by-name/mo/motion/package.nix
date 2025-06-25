@@ -31,11 +31,11 @@ stdenv.mkDerivation rec {
     libmicrohttpd
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Monitors the video signal from cameras";
     homepage = "https://motion-project.github.io/";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [
       puffnfresh
       veprbl
     ];

@@ -24,7 +24,7 @@ buildGoModule {
   meta = {
     description = "Mimic sendmail with Gmail for git send-email";
     homepage = "https://github.com/google/gmail-oauth2-tools/tree/master/go/sendgmail";
-    maintainers = [ lib.maintainers.samw ];
+    maintainers = with lib.maintainers; [ samw ];
     license = lib.licenses.asl20;
     platforms = lib.platforms.unix;
   };

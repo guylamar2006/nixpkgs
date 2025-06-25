@@ -75,8 +75,8 @@ buildGoModule {
       your local computer.
     '';
     inherit (src.meta) homepage;
-    license = licenses.gpl3Plus;
-    maintainers = [ maintainers.massimogengarelli ];
-    platforms = platforms.linux;
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ massimogengarelli ];
+    platforms = lib.platforms.linux;
   };
 }

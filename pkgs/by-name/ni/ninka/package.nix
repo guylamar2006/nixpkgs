@@ -41,8 +41,8 @@ perlPackages.buildPerlPackage {
     description = "Sentence based license detector";
     mainProgram = "ninka";
     homepage = "http://ninka.turingmachine.org/";
-    license = licenses.gpl2;
-    maintainers = [ ];
+    license = lib.licenses.gpl2;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
   };
 }

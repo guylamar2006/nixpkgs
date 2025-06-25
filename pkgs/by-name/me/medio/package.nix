@@ -26,7 +26,7 @@ stdenvNoCC.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "http://dotcolon.net/font/medio/";
     description = "Serif font designed by Sora Sagano";
     longDescription = ''
@@ -35,10 +35,10 @@ stdenvNoCC.mkDerivation {
       but with hairline serifs in the style of a Didone.
     '';
     platforms = platforms.all;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       leenaars
       minijackson
     ];
-    license = licenses.cc0;
+    license = lib.licenses.cc0;
   };
 }

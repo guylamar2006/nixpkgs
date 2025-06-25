@@ -46,6 +46,6 @@ python3Packages.buildPythonApplication rec {
     description = "Render Eliot logs as an ASCII tree";
     mainProgram = "eliot-tree";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.dpausp ];
+    maintainers = with lib.maintainers; [ dpausp ];
   };
 }

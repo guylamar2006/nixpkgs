@@ -38,7 +38,7 @@ stdenv.mkDerivation (finalAttrs: {
       mit
       hpndSellVariant
     ];
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     pkgConfigModules = [ "xorg-sgml-doctools" ];
     platforms = lib.platforms.unix;
   };

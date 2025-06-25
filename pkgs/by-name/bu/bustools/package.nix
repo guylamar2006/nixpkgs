@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.kallistobus.tools/";
     downloadPage = "https://bustools.github.io/download";
     changelog = "https://github.com/BUStools/bustools/releases/tag/v${version}";
-    maintainers = [ lib.maintainers.dflores ];
+    maintainers = with lib.maintainers; [ dflores ];
     license = lib.licenses.bsd2;
     mainProgram = "bustools";
     platforms = lib.platforms.unix;

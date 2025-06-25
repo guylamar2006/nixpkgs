@@ -54,7 +54,7 @@ stdenv.mkDerivation (self: {
   meta = {
     description = "Simple Rendering Manager";
     homepage = "https://github.com/CuarzoSoftware/SRM";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
   };
 })

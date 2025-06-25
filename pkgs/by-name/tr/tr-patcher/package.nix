@@ -39,7 +39,7 @@ stdenv.mkDerivation {
     homepage = "https://gitlab.com/bmwinger/tr-patcher";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = licenses.gpl3;
-    maintainers = [ maintainers.marius851000 ];
+    maintainers = with lib.maintainers; [ marius851000 ];
     platforms = platforms.linux;
   };
 }

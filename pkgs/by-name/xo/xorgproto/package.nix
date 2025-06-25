@@ -89,7 +89,7 @@ stdenv.mkDerivation (finalAttrs: {
       # upstream issue: https://gitlab.freedesktop.org/xorg/proto/xorgproto/-/issues/53
       #unfree
     ];
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     pkgConfigModules = [
       "applewmproto"
       "bigreqsproto"

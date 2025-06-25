@@ -46,8 +46,8 @@ rustPlatform.buildRustPackage {
       nsncd is a nscd-compatible daemon that proxies lookups, without caching.
     '';
     homepage = "https://github.com/twosigma/nsncd";
-    license = licenses.asl20;
-    maintainers = with maintainers; [
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [
       flokli
       picnoir
     ];

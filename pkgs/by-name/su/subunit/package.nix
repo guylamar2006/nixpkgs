@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     description = "Streaming protocol for test results";
     mainProgram = "subunit-diff";
     homepage = "https://launchpad.net/subunit";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     platforms = platforms.all;
   };
 }

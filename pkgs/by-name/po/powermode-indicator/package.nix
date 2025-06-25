@@ -32,9 +32,9 @@ stdenv.mkDerivation {
   meta = with lib; {
     homepage = "https://github.com/PiyushXCoder/powermode-indicator";
     description = "Tray tool for power profiles management";
-    license = licenses.mit;
-    platforms = platforms.linux;
-    maintainers = [ maintainers.aacebedo ];
+    license = lib.licenses.mit;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ aacebedo ];
     mainProgram = "powermode-indicator";
   };
 }

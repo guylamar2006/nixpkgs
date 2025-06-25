@@ -22,7 +22,7 @@ stdenv.mkDerivation (finalAttrs: {
   ];
 
   meta = {
-    maintainers = [ lib.maintainers.viraptor ];
+    maintainers = with lib.maintainers; [ viraptor ];
     description = "Neural Amp Modeler LV2 plugin implementation";
     homepage = finalAttrs.src.meta.homepage;
     license = [ lib.licenses.gpl3 ];

@@ -88,11 +88,11 @@ stdenv.mkDerivation (finalAttrs: {
       # hostPlatform binaries during the configurePhase.
       (with stdenv; buildPlatform.canExecute hostPlatform);
 
-  meta = with lib; {
+  meta = {
     description = "Device Tree Compiler";
     homepage = "https://git.kernel.org/pub/scm/utils/dtc/dtc.git";
-    license = licenses.gpl2Plus; # dtc itself is GPLv2, libfdt is dual GPL/BSD
-    maintainers = [ maintainers.dezgeg ];
+    license = lib.licenses.gpl2Plus; # dtc itself is GPLv2, libfdt is dual GPL/BSD
+    maintainers = with lib.maintainers; [ dezgeg ];
     platforms = platforms.unix;
     mainProgram = "dtc";
   };

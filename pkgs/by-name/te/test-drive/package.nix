@@ -39,6 +39,6 @@ stdenv.mkDerivation rec {
       mit
     ];
     platforms = platforms.linux;
-    maintainers = [ maintainers.sheepforce ];
+    maintainers = with lib.maintainers; [ sheepforce ];
   };
 }

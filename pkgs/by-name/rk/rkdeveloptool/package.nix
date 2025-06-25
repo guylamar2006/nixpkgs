@@ -31,8 +31,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     homepage = "https://github.com/rockchip-linux/rkdeveloptool";
     description = "Tool from Rockchip to communicate with Rockusb devices";
-    license = licenses.gpl2Only;
-    maintainers = [ maintainers.lopsided98 ];
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [ lopsided98 ];
     mainProgram = "rkdeveloptool";
   };
 }

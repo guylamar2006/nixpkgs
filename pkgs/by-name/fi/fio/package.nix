@@ -58,10 +58,10 @@ stdenv.mkDerivation rec {
     wrapPythonProgramsIn "$out/bin" "$out $pythonPath"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Flexible IO Tester - an IO benchmark tool";
     homepage = "https://git.kernel.dk/cgit/fio/";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.unix;
   };
 }

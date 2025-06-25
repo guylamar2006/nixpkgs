@@ -38,7 +38,7 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://github.com/karatelabs/karate";
     changelog = "https://github.com/karatelabs/karate/releases/tag/v${version}";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.kephasp ];
+    maintainers = with lib.maintainers; [ kephasp ];
     platforms = jre.meta.platforms;
   };
 }

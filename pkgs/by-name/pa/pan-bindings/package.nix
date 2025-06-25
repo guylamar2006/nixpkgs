@@ -56,8 +56,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "SCION PAN Bindings for C, C++, and Python";
     homepage = "https://github.com/lschulz/pan-bindings";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ matthewcroughan ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ matthewcroughan ];
     mainProgram = "pan-bindings";
     platforms = platforms.all;
   };

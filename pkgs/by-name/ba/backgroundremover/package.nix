@@ -105,7 +105,7 @@ let
       homepage = "https://BackgroundRemoverAI.com";
       downloadPage = "https://github.com/nadermx/backgroundremover/releases";
       license = lib.licenses.mit;
-      maintainers = [ lib.maintainers.lucasew ];
+      maintainers = with lib.maintainers; [ lucasew ];
     };
   };
 in

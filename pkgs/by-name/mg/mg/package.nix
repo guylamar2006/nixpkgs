@@ -36,10 +36,10 @@ stdenv.mkDerivation {
 
   buildInputs = [ ncurses ];
 
-  meta = with lib; {
+  meta = {
     description = "Micro GNU/emacs, a portable version of the mg maintained by the OpenBSD team";
     homepage = "https://man.openbsd.org/OpenBSD-current/man1/mg.1";
-    license = licenses.publicDomain;
+    license = lib.licenses.publicDomain;
     mainProgram = "mg";
     platforms = platforms.all;
   };

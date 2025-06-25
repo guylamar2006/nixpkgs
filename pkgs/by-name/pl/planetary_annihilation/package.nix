@@ -106,8 +106,8 @@ stdenv.mkDerivation rec {
     homepage = "http://www.uberent.com/pa/";
     description = "Next-generation RTS that takes the genre to a planetary scale";
     license = lib.licenses.unfree;
-    platforms = platforms.linux;
-    maintainers = [ ];
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ ];
     sourceProvenance = [ lib.sourceTypes.binaryNativeCode ];
   };
 }

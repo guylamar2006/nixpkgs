@@ -64,7 +64,7 @@ stdenv.mkDerivation {
       lgpl21
       cc-by-sa-40
     ];
-    platforms = platforms.linux;
-    maintainers = [ ];
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ ];
   };
 }

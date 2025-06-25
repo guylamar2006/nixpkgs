@@ -56,8 +56,8 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Digital pass manager";
     mainProgram = "passes";
     homepage = "https://github.com/pablo-s/passes";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ fgaz ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ fgaz ];
     platforms = platforms.all;
     broken = stdenv.hostPlatform.isDarwin; # Crashes
   };

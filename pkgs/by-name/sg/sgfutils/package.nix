@@ -45,8 +45,8 @@ stdenv.mkDerivation {
       The package sgfutils is a collection of command line utilities that help working with SGF files,
       especially when they describe go (igo, weiqi, baduk) games.
     '';
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [ ggpeti ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ ggpeti ];
     platforms = platforms.all; # tested on x86_64-linux and aarch64-darwin
   };
 }

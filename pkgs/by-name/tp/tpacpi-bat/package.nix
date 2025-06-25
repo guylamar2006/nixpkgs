@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
   '';
 
   meta = {
-    maintainers = [ lib.maintainers.orbekk ];
+    maintainers = with lib.maintainers; [ orbekk ];
     platforms = lib.platforms.linux;
     description = "Tool to set battery charging thresholds on Lenovo Thinkpad";
     mainProgram = "tpacpi-bat";

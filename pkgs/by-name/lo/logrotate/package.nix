@@ -34,11 +34,11 @@ stdenv.mkDerivation rec {
     nixos-logrotate = nixosTests.logrotate;
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/logrotate/logrotate";
     description = "Rotates and compresses system logs";
-    license = licenses.gpl2Plus;
-    maintainers = [ maintainers.tobim ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ tobim ];
     platforms = platforms.all;
     mainProgram = "logrotate";
   };

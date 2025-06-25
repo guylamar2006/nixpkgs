@@ -50,7 +50,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Gavin Howard's BC calculator implementation";
     changelog = "https://git.gavinhoward.com/gavin/bc/raw/tag/${finalAttrs.version}/NEWS.md";
     license = lib.licenses.bsd2;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin;
   };

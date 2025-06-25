@@ -40,8 +40,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Spliced Transcripts Alignment to a Reference";
     homepage = "https://github.com/alexdobin/STAR";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     platforms = [ "x86_64-linux" ];
-    maintainers = [ maintainers.arcadio ];
+    maintainers = with lib.maintainers; [ arcadio ];
   };
 }

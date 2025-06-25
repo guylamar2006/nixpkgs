@@ -32,8 +32,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://code.causal.agency/june/pounce";
     description = "Simple multi-client TLS-only IRC bouncer";
-    license = licenses.gpl3;
-    platforms = platforms.linux;
-    maintainers = with maintainers; [ edef ];
+    license = lib.licenses.gpl3;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ edef ];
   };
 }

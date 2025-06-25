@@ -39,7 +39,7 @@ rustPlatform.buildRustPackage {
       mit
       asl20
     ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       mightyiam
       quodlibetor
     ];

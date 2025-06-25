@@ -150,11 +150,11 @@ stdenv.mkDerivation (finalAttrs: {
     updateScript = nix-update-script { };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Thin layer of graphic data types";
     homepage = "https://github.com/ebassi/graphene";
-    license = licenses.mit;
-    teams = [ teams.gnome ];
+    license = lib.licenses.mit;
+    teams = with lib.teams; [ gnome ];
     platforms = platforms.unix;
     pkgConfigModules = [
       "graphene-1.0"

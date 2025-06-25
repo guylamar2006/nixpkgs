@@ -18,7 +18,7 @@ fetchurl {
     '';
     homepage = "http://prototypejs.org/";
     downloadPage = "http://prototypejs.org/download/";
-    license = licenses.mit;
-    maintainers = with maintainers; [ das_j ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ das_j ];
   };
 }

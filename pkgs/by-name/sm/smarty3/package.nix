@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
       logic, and is separated from the presentation.
     '';
     homepage = "https://www.smarty.net";
-    license = licenses.lgpl21Plus;
-    maintainers = with maintainers; [ das_j ];
+    license = lib.licenses.lgpl21Plus;
+    maintainers = with lib.maintainers; [ das_j ];
   };
 }

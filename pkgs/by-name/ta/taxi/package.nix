@@ -55,7 +55,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/ellie-commons/taxi";
     description = "FTP Client that drives you anywhere";
     license = licenses.lgpl3Plus;
-    teams = [ teams.pantheon ];
+    teams = with lib.teams; [ pantheon ];
     platforms = platforms.linux;
     mainProgram = "io.github.ellie_commons.taxi";
   };

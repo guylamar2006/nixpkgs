@@ -42,6 +42,6 @@ stdenv.mkDerivation rec {
     description = "Tools for command line processing of XML, HTML, and CSV";
     license = licenses.gpl2Plus;
     platforms = platforms.all;
-    maintainers = [ maintainers.rycee ];
+    maintainers = with lib.maintainers; [ rycee ];
   };
 }

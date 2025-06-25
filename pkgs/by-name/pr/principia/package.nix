@@ -65,8 +65,8 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "principia";
     homepage = "https://principia-web.se/";
     downloadPage = "https://principia-web.se/download";
-    license = licenses.bsd3;
-    maintainers = [ maintainers.fgaz ];
-    platforms = platforms.linux;
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ fgaz ];
+    platforms = lib.platforms.linux;
   };
 })

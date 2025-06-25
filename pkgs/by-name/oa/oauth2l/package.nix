@@ -32,8 +32,8 @@ buildGoModule rec {
   meta = with lib; {
     description = "Simple CLI for interacting with Google API authentication";
     homepage = "https://github.com/google/oauth2l";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ happysalada ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ happysalada ];
     mainProgram = "oauth2l";
   };
 }

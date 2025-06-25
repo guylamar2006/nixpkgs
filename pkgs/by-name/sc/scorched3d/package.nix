@@ -70,8 +70,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "http://scorched3d.co.uk/";
     description = "3D Clone of the classic Scorched Earth";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.linux; # maybe more
-    maintainers = with maintainers; [ abbradar ];
+    maintainers = with lib.maintainers; [ abbradar ];
   };
 }

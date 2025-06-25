@@ -40,8 +40,8 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "C++ abstraction layer for BlueZ over DBus";
     homepage = "https://github.com/OpenBluetoothToolbox/SimpleBLE";
-    license = licenses.gpl3Only;
+    license = lib.licenses.gpl3Only;
     platforms = platforms.linux;
-    maintainers = with maintainers; [ aciceri ];
+    maintainers = with lib.maintainers; [ aciceri ];
   };
 })

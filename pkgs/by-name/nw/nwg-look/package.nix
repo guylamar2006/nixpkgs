@@ -69,9 +69,9 @@ buildGoModule rec {
   meta = with lib; {
     homepage = "https://github.com/nwg-piotr/nwg-look";
     description = "GTK settings editor, designed to work properly in wlroots-based Wayland environment";
-    license = licenses.mit;
-    platforms = platforms.linux;
-    maintainers = with maintainers; [ max-amb ];
+    license = lib.licenses.mit;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ max-amb ];
     mainProgram = "nwg-look";
   };
 }

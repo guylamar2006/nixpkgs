@@ -28,6 +28,6 @@ rustPlatform.buildRustPackage {
     license = lib.licenses.mpl20;
     sourceProvenance = [ lib.sourceTypes.fromSource ];
     mainProgram = "mdbook-yml-header";
-    maintainers = [ lib.maintainers.pinage404 ];
+    maintainers = with lib.maintainers; [ pinage404 ];
   };
 }

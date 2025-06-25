@@ -63,8 +63,8 @@ stdenv.mkDerivation rec {
       fromSource
       binaryBytecode # deps
     ];
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [
       raskin
       averelld
     ];

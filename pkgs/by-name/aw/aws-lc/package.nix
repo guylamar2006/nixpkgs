@@ -82,7 +82,7 @@ stdenv.mkDerivation (finalAttrs: {
       lib.licenses.asl20 # or
       lib.licenses.isc
     ];
-    maintainers = [ lib.maintainers.theoparis ];
+    maintainers = with lib.maintainers; [ theoparis ];
     platforms = lib.platforms.unix;
     mainProgram = "bssl";
   };

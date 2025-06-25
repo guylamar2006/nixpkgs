@@ -23,6 +23,6 @@ stdenv.mkDerivation rec {
     mainProgram = "pdfcrack";
     license = with licenses; [ gpl2Plus ];
     platforms = platforms.all;
-    maintainers = with maintainers; [ qoelet ];
+    maintainers = with lib.maintainers; [ qoelet ];
   };
 }

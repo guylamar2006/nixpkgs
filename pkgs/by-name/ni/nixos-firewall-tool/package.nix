@@ -33,13 +33,13 @@ stdenvNoCC.mkDerivation {
 
   meta = with lib; {
     description = "Tool to temporarily manipulate the NixOS firewall";
-    license = licenses.mit;
-    maintainers = with maintainers; [
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [
       clerie
       rvfg
       garyguo
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     mainProgram = "nixos-firewall-tool";
   };
 }

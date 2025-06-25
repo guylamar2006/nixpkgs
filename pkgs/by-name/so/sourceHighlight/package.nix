@@ -87,9 +87,9 @@ stdenv.mkDerivation rec {
       with syntax highlighting.
     '';
     homepage = "https://www.gnu.org/software/src-highlite/";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ SuperSandro2000 ];
+    maintainers = with lib.maintainers; [ SuperSandro2000 ];
   };
 }
 // lib.optionalAttrs (stdenv.targetPlatform.useLLVM or false) {

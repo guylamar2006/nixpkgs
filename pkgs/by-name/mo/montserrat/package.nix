@@ -29,12 +29,12 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Geometric sans serif font with extended latin support (Regular, Alternates, Subrayada)";
     homepage = "https://www.fontspace.com/julieta-ulanovsky/montserrat";
-    license = licenses.ofl;
+    license = lib.licenses.ofl;
     platforms = platforms.all;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       scolobb
       jk
     ];

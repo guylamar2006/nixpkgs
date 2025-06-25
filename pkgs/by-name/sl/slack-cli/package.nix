@@ -60,7 +60,7 @@ stdenv.mkDerivation rec {
 
   meta = {
     license = lib.licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "slack";
     platforms = lib.platforms.unix;
   };

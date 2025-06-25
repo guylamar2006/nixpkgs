@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
     mainProgram = "maelstrom";
     sourceProvenance = [ lib.sourceTypes.binaryBytecode ];
     license = lib.licenses.epl10;
-    maintainers = [ lib.maintainers.emilioziniades ];
+    maintainers = with lib.maintainers; [ emilioziniades ];
     platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

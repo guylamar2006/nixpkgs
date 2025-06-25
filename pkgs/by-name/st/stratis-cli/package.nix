@@ -49,7 +49,7 @@ python3Packages.buildPythonApplication rec {
   meta = with lib; {
     description = "CLI for the Stratis project";
     homepage = "https://stratis-storage.github.io";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     maintainers = with maintainers; [ nickcao ];
     mainProgram = "stratis";
   };

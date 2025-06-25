@@ -35,11 +35,11 @@ stdenv.mkDerivation rec {
     "dev"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Hiragana text to Kana Kanji mixed text Japanese input method";
     homepage = "https://anthy.osdn.jp/";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [ ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
   };
 

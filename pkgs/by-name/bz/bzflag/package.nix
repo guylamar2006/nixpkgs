@@ -38,6 +38,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://bzflag.org/";
     license = lib.licenses.lgpl21Plus;
     platforms = lib.platforms.unix;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 })

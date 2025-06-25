@@ -35,8 +35,8 @@ rustPlatform.buildRustPackage rec {
     description = "Suite of high-performance tools for JavaScript and TypeScript written in Rust";
     homepage = "https://github.com/web-infra-dev/oxc";
     changelog = "https://github.com/web-infra-dev/oxc/releases/tag/${src.rev}";
-    license = licenses.mit;
-    maintainers = with maintainers; [ figsoda ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ figsoda ];
     mainProgram = "oxlint";
   };
 }

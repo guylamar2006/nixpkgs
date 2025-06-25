@@ -19,9 +19,9 @@ buildGoModule rec {
   meta = with lib; {
     homepage = "https://github.com/guyfedwards/nom";
     description = "RSS reader for the terminal";
-    platforms = platforms.linux ++ platforms.darwin;
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [
+    platforms = lib.platforms.linux ++ platforms.darwin;
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [
       nadir-ishiguro
       matthiasbeyer
     ];

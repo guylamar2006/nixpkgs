@@ -30,8 +30,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://www.remlab.net/ndisc6/";
     description = "Small collection of useful tools for IPv6 networking";
-    maintainers = [ ];
-    platforms = platforms.linux;
-    license = licenses.gpl2Only;
+    maintainers = with lib.maintainers; [ ];
+    platforms = lib.platforms.linux;
+    license = lib.licenses.gpl2Only;
   };
 }

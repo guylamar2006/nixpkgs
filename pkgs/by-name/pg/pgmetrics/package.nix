@@ -28,8 +28,8 @@ buildGoModule rec {
   meta = with lib; {
     homepage = "https://pgmetrics.io/";
     description = "Collect and display information and stats from a running PostgreSQL server";
-    license = licenses.asl20;
-    maintainers = [ ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "pgmetrics";
   };
 }

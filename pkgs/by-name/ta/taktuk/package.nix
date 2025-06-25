@@ -50,7 +50,7 @@ stdenv.mkDerivation {
     homepage = "https://taktuk.gitlabpages.inria.fr/";
     changelog = "https://gitlab.inria.fr/taktuk/taktuk/-/blob/HEAD/ChangeLog";
     license = lib.licenses.gpl2;
-    maintainers = [ lib.maintainers.bzizou ];
+    maintainers = with lib.maintainers; [ bzizou ];
     platforms = lib.platforms.linux;
   };
 }

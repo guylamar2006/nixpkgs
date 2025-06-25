@@ -117,7 +117,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
     description = "Self-hosted media manager";
     license = lib.licenses.agpl3Only;
     mainProgram = "dim";
-    maintainers = [ lib.maintainers.misterio77 ];
+    maintainers = with lib.maintainers; [ misterio77 ];
     platforms = lib.platforms.unix;
   };
 })

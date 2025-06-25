@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
   installTargets = [ "install-lib" ];
   installFlags = [ "LDCONF=true" ];
 
-  meta = with lib; {
+  meta = {
     description = "Free C++ class library of cryptographic schemes";
     homepage = "https://cryptopp.com/";
     changelog = [
@@ -64,6 +64,6 @@ stdenv.mkDerivation rec {
       publicDomain
     ];
     platforms = platforms.all;
-    maintainers = with maintainers; [ c0bw3b ];
+    maintainers = with lib.maintainers; [ c0bw3b ];
   };
 }

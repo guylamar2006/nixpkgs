@@ -54,9 +54,9 @@ buildNpmPackage rec {
   meta = with lib; {
     description = "Pocket Casts webapp, packaged for the Linux Desktop";
     homepage = "https://github.com/felicianotech/pocket-casts-desktop-app";
-    license = licenses.mit;
-    maintainers = with maintainers; [ yayayayaka ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ yayayayaka ];
     mainProgram = "pocket-casts";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

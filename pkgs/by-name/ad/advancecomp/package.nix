@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Set of tools to optimize deflate-compressed files";
     license = lib.licenses.gpl3;
-    maintainers = [ lib.maintainers.raskin ];
+    maintainers = with lib.maintainers; [ raskin ];
     platforms = lib.platforms.linux ++ lib.platforms.darwin;
     homepage = "https://github.com/amadvance/advancecomp";
     changelog = "https://github.com/amadvance/advancecomp/blob/v${version}/HISTORY";

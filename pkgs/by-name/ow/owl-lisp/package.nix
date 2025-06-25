@@ -29,8 +29,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Functional Scheme for world domination";
     homepage = "https://gitlab.com/owl-lisp/owl";
-    license = licenses.mit;
-    maintainers = with maintainers; [ peterhoeg ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ peterhoeg ];
     platforms = platforms.unix;
   };
 }

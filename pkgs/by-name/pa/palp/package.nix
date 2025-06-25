@@ -87,8 +87,8 @@ stdenv.mkDerivation rec {
     # Just a link on the website pointing to gpl -- now gplv3. When the last
     # version was released that pointed to gplv2 however, so thats probably
     # the right license.
-    license = licenses.gpl2;
-    teams = [ teams.sage ];
+    license = lib.licenses.gpl2;
+    teams = with lib.teams; [ sage ];
     platforms = platforms.unix;
   };
 }

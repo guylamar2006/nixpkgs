@@ -29,8 +29,8 @@ stdenv.mkDerivation rec {
     description = "Single-shot nREPL client";
     mainProgram = "rep";
     homepage = "https://github.com/eraserhd/rep";
-    license = licenses.epl10;
+    license = lib.licenses.epl10;
     platforms = platforms.all;
-    maintainers = [ maintainers.eraserhd ];
+    maintainers = with lib.maintainers; [ eraserhd ];
   };
 }

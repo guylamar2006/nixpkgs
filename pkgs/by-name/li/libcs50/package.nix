@@ -30,6 +30,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/cs50/libcs50";
     description = "CS50 Library for C";
     license = lib.licenses.gpl3Only;
-    maintainers = [ lib.maintainers.ethancedwards8 ];
+    maintainers = with lib.maintainers; [ ethancedwards8 ];
   };
 })

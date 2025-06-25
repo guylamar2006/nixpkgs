@@ -39,6 +39,6 @@ buildDartApplication {
     description = "Tool for managing Dart projects with multiple packages. With IntelliJ and Vscode IDE support. Supports automated versioning, changelogs & publishing via Conventional Commits. ";
     mainProgram = "melos";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.eymeric ];
+    maintainers = with lib.maintainers; [ eymeric ];
   };
 }

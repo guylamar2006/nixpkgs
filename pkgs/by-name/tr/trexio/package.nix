@@ -49,6 +49,6 @@ stdenv.mkDerivation rec {
     homepage = "https://trex-coe.github.io/trexio/";
     downloadPage = "https://github.com/TREX-CoE/trexio";
     license = licenses.bsd3;
-    maintainers = [ maintainers.sheepforce ];
+    maintainers = with lib.maintainers; [ sheepforce ];
   };
 }

@@ -55,9 +55,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Terminal mixer for PulseAudio inspired by pavucontrol";
     homepage = "https://github.com/fulhax/ncpamixer";
-    license = licenses.mit;
-    platforms = platforms.linux;
-    teams = [ teams.c3d2 ];
+    license = lib.licenses.mit;
+    platforms = lib.platforms.linux;
+    teams = with lib.teams; [ c3d2 ];
     mainProgram = "ncpamixer";
   };
 }

@@ -62,8 +62,8 @@ stdenv.mkDerivation {
       The flag which is printed is configurable, as well as the width of the output.
     '';
     homepage = "https://github.com/SpyHoodle/pridefetch";
-    license = licenses.mit;
-    maintainers = [
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [
       maintainers.minion3665
     ];
     platforms = platforms.all;

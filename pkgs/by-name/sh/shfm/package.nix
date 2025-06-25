@@ -32,8 +32,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/dylanaraps/shfm";
     description = "POSIX-shell based file manager";
-    license = licenses.mit;
-    maintainers = with maintainers; [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
     mainProgram = "shfm";
   };

@@ -64,8 +64,8 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://github.com/krayon/ratslap";
     changelog = "https://github.com/krayon/ratslap/releases/tag/${finalAttrs.version}";
-    license = licenses.gpl2Only;
-    maintainers = with maintainers; [ zebreus ];
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [ zebreus ];
     platforms = platforms.linux;
   };
 })

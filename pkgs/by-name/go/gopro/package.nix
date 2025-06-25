@@ -37,12 +37,12 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Command line interface for processing media filmed on GoPro HERO 3, 4, 5, 6, and 7 cameras";
     homepage = "https://github.com/KonradIT/gopro-linux";
     platforms = platforms.unix;
-    license = licenses.gpl3;
-    maintainers = [ ];
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "gopro";
   };
 }

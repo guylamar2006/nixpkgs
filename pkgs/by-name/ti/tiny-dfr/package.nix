@@ -62,7 +62,7 @@ rustPlatform.buildRustPackage rec {
       licenses.mit
     ];
     mainProgram = "tiny-dfr";
-    maintainers = [ maintainers.qyliss ];
+    maintainers = with lib.maintainers; [ qyliss ];
     platforms = platforms.linux;
   };
 }

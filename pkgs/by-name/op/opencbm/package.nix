@@ -49,8 +49,8 @@ stdenv.mkDerivation rec {
       and the XUM1541 devices (a.k.a. "ZoomFloppy").
     '';
     homepage = "https://spiro.trikaliotis.net/opencbm";
-    license = licenses.gpl2Plus;
-    platforms = platforms.linux;
-    maintainers = [ maintainers.sander ];
+    license = lib.licenses.gpl2Plus;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ sander ];
   };
 }

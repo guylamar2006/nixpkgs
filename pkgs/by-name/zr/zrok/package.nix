@@ -56,7 +56,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://zrok.io";
     license = lib.licenses.asl20;
     mainProgram = "zrok";
-    maintainers = [ lib.maintainers.bandresen ];
+    maintainers = with lib.maintainers; [ bandresen ];
     platforms = [
       "x86_64-linux"
       "aarch64-linux"

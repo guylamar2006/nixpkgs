@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl2Plus;
     description = "Optimizing Scheme compiler";
 
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = [ "i686-linux" ]; # doesn't want to work on 64-bit platforms
   };
 }

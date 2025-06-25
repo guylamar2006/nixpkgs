@@ -21,7 +21,7 @@ buildGoModule rec {
     description = "Expressive, simple, dynamic programming language";
     mainProgram = "oak";
     homepage = "https://oaklang.org/";
-    license = licenses.mit;
-    maintainers = with maintainers; [ tejasag ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ tejasag ];
   };
 }

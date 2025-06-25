@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     longDescription = "vmtouch is a tool for learning about and controlling the file system cache of unix and unix-like systems.";
     homepage = "https://hoytech.com/vmtouch/";
     license = lib.licenses.bsd3;
-    maintainers = [ lib.maintainers.garrison ];
+    maintainers = with lib.maintainers; [ garrison ];
     platforms = lib.platforms.all;
     mainProgram = "vmtouch";
   };

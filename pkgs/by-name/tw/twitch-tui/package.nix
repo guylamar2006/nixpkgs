@@ -33,7 +33,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
     homepage = "https://github.com/Xithrius/twitch-tui";
     changelog = "https://github.com/Xithrius/twitch-tui/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.lordmzte ];
+    maintainers = with lib.maintainers; [ lordmzte ];
     mainProgram = "twt";
   };
 })

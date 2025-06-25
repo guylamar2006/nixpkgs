@@ -40,10 +40,10 @@ stdenv.mkDerivation rec {
     zlib
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://wiki.documentfoundation.org/DLP/Libraries/libabw";
     description = "Library parsing abiword documents";
     platforms = platforms.unix;
-    license = licenses.mpl20;
+    license = lib.licenses.mpl20;
   };
 }

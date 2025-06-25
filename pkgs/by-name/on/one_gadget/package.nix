@@ -22,8 +22,8 @@ bundlerApp {
   meta = with lib; {
     description = "Best tool for finding one gadget RCE in libc.so.6";
     homepage = "https://github.com/david942j/one_gadget";
-    license = licenses.mit;
-    maintainers = with maintainers; [
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [
       artemist
       nicknovitski
     ];

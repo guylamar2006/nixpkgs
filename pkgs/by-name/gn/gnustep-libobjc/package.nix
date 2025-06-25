@@ -24,11 +24,11 @@ clangStdenv.mkDerivation (finalAttrs: {
 
   cmakeFlags = [ "-DCMAKE_INSTALL_LIBDIR=lib" ];
 
-  meta = with lib; {
+  meta = {
     broken = clangStdenv.hostPlatform.isDarwin;
     description = "Objective-C runtime for use with GNUstep";
     homepage = "https://gnustep.github.io/";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [
       ashalkhakov
       dblsaiko

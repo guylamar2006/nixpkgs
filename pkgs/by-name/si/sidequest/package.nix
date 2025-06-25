@@ -111,8 +111,8 @@ buildFHSEnv {
       homepage = "https://github.com/SideQuestVR/SideQuest";
       downloadPage = "https://github.com/SideQuestVR/SideQuest/releases";
       sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-      license = licenses.mit;
-      maintainers = with maintainers; [
+      license = lib.licenses.mit;
+      maintainers = with lib.maintainers; [
         joepie91
         rvolosatovs
       ];

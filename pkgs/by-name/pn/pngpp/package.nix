@@ -45,8 +45,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://www.nongnu.org/pngpp/";
     description = "C++ wrapper for libpng library";
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     platforms = platforms.unix;
-    maintainers = [ maintainers.ramkromberg ];
+    maintainers = with lib.maintainers; [ ramkromberg ];
   };
 }

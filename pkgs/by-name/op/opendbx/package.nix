@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
     broken = stdenv.hostPlatform.isDarwin;
     description = "Extremely lightweight but extensible database access library written in C";
     mainProgram = "odbx-sql";
-    license = licenses.lgpl21;
+    license = lib.licenses.lgpl21;
     platforms = platforms.all;
   };
 }

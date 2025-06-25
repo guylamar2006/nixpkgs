@@ -19,7 +19,7 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [ pkg-config ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://xiph.org/oggz/";
     description = "C library and tools for manipulating with Ogg files and streams";
     longDescription = ''
@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
       support the Ogg Vorbis audio format but now used for many free codecs
       including Dirac, FLAC, Speex and Theora.'';
     platforms = platforms.unix;
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
   };
 }

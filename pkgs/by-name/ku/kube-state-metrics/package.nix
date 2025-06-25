@@ -26,7 +26,7 @@ buildGoModule rec {
     homepage = "https://github.com/kubernetes/kube-state-metrics";
     description = "Add-on agent to generate and expose k8s cluster-level metrics";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.eskytthe ];
+    maintainers = with lib.maintainers; [ eskytthe ];
     platforms = lib.platforms.unix;
   };
 }

@@ -49,7 +49,7 @@ stdenv.mkDerivation (finalAttrs: {
       processing applications.
     '';
     license = lib.licenses.cecill-c;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
   };
 })

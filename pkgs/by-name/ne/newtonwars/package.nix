@@ -46,8 +46,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Space battle game with gravity as the main theme";
     mainProgram = "nw";
-    maintainers = with maintainers; [ pSub ];
-    platforms = platforms.linux;
-    license = licenses.mit;
+    maintainers = with lib.maintainers; [ pSub ];
+    platforms = lib.platforms.linux;
+    license = lib.licenses.mit;
   };
 }

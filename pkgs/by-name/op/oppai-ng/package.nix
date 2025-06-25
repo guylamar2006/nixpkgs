@@ -29,8 +29,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Difficulty and pp calculator for osu!";
     homepage = "https://github.com/Francesco149/oppai-ng";
-    license = licenses.unlicense;
-    maintainers = [ ];
+    license = lib.licenses.unlicense;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "oppai";
     platforms = platforms.all;
   };

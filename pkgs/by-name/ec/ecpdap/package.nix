@@ -31,7 +31,7 @@ rustPlatform.buildRustPackage rec {
     cp drivers/*.rules $out/etc/udev/rules.d
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Tool to program ECP5 FPGAs";
     mainProgram = "ecpdap";
     longDescription = ''
@@ -39,7 +39,7 @@ rustPlatform.buildRustPackage rec {
       using CMSIS-DAP probes in JTAG mode.
     '';
     homepage = "https://github.com/adamgreig/ecpdap";
-    license = licenses.asl20;
-    maintainers = [ ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ ];
   };
 }

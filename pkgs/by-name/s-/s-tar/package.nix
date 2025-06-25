@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://cdrtools.sourceforge.net/private/star.html";
     license = lib.licenses.cddl;
-    maintainers = [ lib.maintainers.wucke13 ];
+    maintainers = with lib.maintainers; [ wucke13 ];
     platforms = [ "x86_64-linux" ];
   };
 }

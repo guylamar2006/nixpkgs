@@ -30,6 +30,6 @@ buildGoModule rec {
     homepage = "https://github.com/itaysk/kubectl-neat";
     changelog = "https://github.com/itaysk/kubectl-neat/releases/tag/v${version}";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.koralowiec ];
+    maintainers = with lib.maintainers; [ koralowiec ];
   };
 }

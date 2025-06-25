@@ -60,8 +60,8 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "ptcollab";
     homepage = "https://yuxshao.github.io/ptcollab/";
     changelog = "https://github.com/yuxshao/ptcollab/releases/tag/v${finalAttrs.version}";
-    license = licenses.mit;
-    maintainers = with maintainers; [ OPNA2608 ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ OPNA2608 ];
     platforms = platforms.all;
   };
 })

@@ -20,8 +20,8 @@ buildGoModule {
   meta = with lib; {
     description = "Go REPL for HTTP";
     homepage = "https://github.com/1buran/rHttp";
-    license = licenses.agpl3Plus;
-    maintainers = with maintainers; [ luftmensch-luftmensch ];
+    license = lib.licenses.agpl3Plus;
+    maintainers = with lib.maintainers; [ luftmensch-luftmensch ];
     mainProgram = "rhttp";
   };
 }

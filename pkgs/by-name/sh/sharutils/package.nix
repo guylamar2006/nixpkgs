@@ -96,8 +96,8 @@ stdenv.mkDerivation rec {
       concatenated shell archives.
     '';
     homepage = "https://www.gnu.org/software/sharutils/";
-    license = licenses.gpl3Plus;
-    maintainers = [ ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
   };
 }

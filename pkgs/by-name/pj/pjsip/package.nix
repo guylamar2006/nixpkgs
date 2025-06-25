@@ -134,10 +134,10 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "Multimedia communication library written in C, implementing standard based protocols such as SIP, SDP, RTP, STUN, TURN, and ICE";
     homepage = "https://pjsip.org/";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [ olynch ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ olynch ];
     mainProgram = "pjsua";
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
     pkgConfigModules = [ "libpjproject" ];
   };
 })

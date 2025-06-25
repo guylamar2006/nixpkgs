@@ -62,7 +62,7 @@ stdenv.mkDerivation rec {
       redistributable = true;
     };
     platforms = with platforms; linux ++ darwin;
-    maintainers = [ maintainers.bjornfor ];
+    maintainers = with lib.maintainers; [ bjornfor ];
     mainProgram = "ngrep";
   };
 }

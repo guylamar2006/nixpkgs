@@ -30,7 +30,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Tool which profiles OpenCL devices to find their peak capacities";
     homepage = "https://github.com/krrishnarraj/clpeak/";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.xokdvium ];
+    maintainers = with lib.maintainers; [ xokdvium ];
     mainProgram = "clpeak";
   };
 })

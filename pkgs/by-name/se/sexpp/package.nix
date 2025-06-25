@@ -54,8 +54,8 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/rnpgp/sexp";
     description = "S-expressions parser and generator C++ library, fully compliant to [https://people.csail.mit.edu/rivest/Sexp.txt]";
     mainProgram = "sexpp";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.all;
-    maintainers = with maintainers; [ ribose-jeffreylau ];
+    maintainers = with lib.maintainers; [ ribose-jeffreylau ];
   };
 })

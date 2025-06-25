@@ -65,9 +65,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Viewer for info files";
     homepage = "https://github.com/baszoetekouw/pinfo";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ fab ];
+    maintainers = with lib.maintainers; [ fab ];
     mainProgram = "pinfo";
   };
 }

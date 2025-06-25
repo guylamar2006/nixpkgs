@@ -62,6 +62,6 @@ python3Packages.buildPythonApplication rec {
     license = licenses.gpl3Plus;
     # NOTE: exclude darwin from platforms because Travis reports hash mismatch
     platforms = with platforms; filter (x: !(elem x darwin)) unix;
-    maintainers = [ maintainers.romildo ];
+    maintainers = with lib.maintainers; [ romildo ];
   };
 }

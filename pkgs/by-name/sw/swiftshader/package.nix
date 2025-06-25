@@ -56,6 +56,6 @@ stdenv.mkDerivation {
     # Should be possible to support Darwin by changing the install phase with
     # 's/Linux/Darwin/' and 's/so/dylib/' or something similar.
     platforms = with platforms; linux;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

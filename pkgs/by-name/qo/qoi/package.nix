@@ -49,8 +49,8 @@ stdenv.mkDerivation (finalAttrs: {
     description = "'Quite OK Image Format' for fast, lossless image compression";
     mainProgram = "qoiconv";
     homepage = "https://qoiformat.org/";
-    license = licenses.mit;
-    maintainers = with maintainers; [ hzeller ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ hzeller ];
     platforms = platforms.all;
   };
 })

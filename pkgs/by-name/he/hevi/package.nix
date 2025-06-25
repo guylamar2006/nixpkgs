@@ -32,7 +32,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Hex viewer";
     homepage = "https://github.com/Arnau478/hevi";
     license = lib.licenses.gpl3Only;
-    maintainers = [ lib.maintainers.jmbaur ];
+    maintainers = with lib.maintainers; [ jmbaur ];
     mainProgram = "hevi";
     inherit (zig.meta) platforms;
   };

@@ -73,7 +73,7 @@ stdenv.mkDerivation rec {
     updateScript = nix-update-script { };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Do maths like a normal person, designed for elementary OS";
     longDescription = ''
       It’s an app where you do maths like a normal person. It lets you
@@ -83,9 +83,9 @@ stdenv.mkDerivation rec {
       the equations it’s used in.
     '';
     homepage = "https://github.com/parnold-x/nasc";
-    teams = [ teams.pantheon ];
-    platforms = platforms.linux;
-    license = licenses.gpl3Plus;
+    teams = with lib.teams; [ pantheon ];
+    platforms = lib.platforms.linux;
+    license = lib.licenses.gpl3Plus;
     mainProgram = "com.github.parnold_x.nasc";
   };
 }

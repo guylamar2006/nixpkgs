@@ -28,7 +28,7 @@ rustPlatform.buildRustPackage rec {
       rewriting of scripts to ShellCheck conformance, mainly focused on quoting.
     '';
     homepage = "https://github.com/anordal/shellharden";
-    license = licenses.mpl20;
-    maintainers = with maintainers; [ oxzi ];
+    license = lib.licenses.mpl20;
+    maintainers = with lib.maintainers; [ oxzi ];
   };
 }

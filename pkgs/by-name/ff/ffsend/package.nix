@@ -86,7 +86,7 @@ rustPlatform.buildRustPackage rec {
   '';
   # There's also .elv and .ps1 completion files but I don't know where to install those
 
-  meta = with lib; {
+  meta = {
     description = "Easily and securely share files from the command line. A fully featured Firefox Send client";
     longDescription = ''
       Easily and securely share files and directories from the command line through a safe, private
@@ -95,8 +95,8 @@ rustPlatform.buildRustPackage rec {
       web browser.
     '';
     homepage = "https://gitlab.com/timvisee/ffsend";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ equirosa ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ equirosa ];
     platforms = platforms.unix;
     mainProgram = "ffsend";
   };

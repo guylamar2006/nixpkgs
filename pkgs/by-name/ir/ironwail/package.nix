@@ -101,7 +101,7 @@ stdenv.mkDerivation (finalAttrs: {
 
     license = lib.licenses.gpl2Plus;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.necrophcodr ];
+    maintainers = with lib.maintainers; [ necrophcodr ];
     mainProgram = "ironwail";
   };
 })

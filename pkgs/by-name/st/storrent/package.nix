@@ -26,8 +26,8 @@ buildGoModule {
     homepage = "https://github.com/jech/storrent";
     description = "Implementation of the BitTorrent protocol that is optimised for streaming media";
     mainProgram = "storrent";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.linux;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

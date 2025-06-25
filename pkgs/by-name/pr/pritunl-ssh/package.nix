@@ -27,8 +27,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Pritunl Zero SSH client";
     homepage = "https://github.com/pritunl/pritunl-zero-client";
-    license = licenses.unfree;
-    maintainers = with maintainers; [ Thunderbottom ];
+    license = lib.licenses.unfree;
+    maintainers = with lib.maintainers; [ Thunderbottom ];
     platforms = platforms.unix;
   };
 }

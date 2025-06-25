@@ -15,8 +15,8 @@ in
   meta = with lib; {
     description = "Keep track of your inventory of 3D-printer filament spools";
     homepage = "https://github.com/Donkie/Spoolman";
-    license = licenses.mit;
-    maintainers = with maintainers; [
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [
       MayNiklas
       pinpox
     ];

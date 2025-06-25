@@ -27,8 +27,8 @@ stdenv.mkDerivation {
       the Goldfarb-Idnani active-set dual method.
     '';
     homepage = "https://github.com/liuq/QuadProgpp";
-    license = licenses.mit;
-    maintainers = with maintainers; [ wegank ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ wegank ];
     platforms = platforms.all;
   };
 }

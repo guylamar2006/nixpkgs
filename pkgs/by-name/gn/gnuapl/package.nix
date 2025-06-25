@@ -50,12 +50,12 @@ stdenv.mkDerivation rec {
     find $out/share/doc/support-files -name 'Makefile*' -delete
   '';
 
-  meta = with lib; {
+  meta = {
     broken = stdenv.hostPlatform.isDarwin;
     description = "Free interpreter for the APL programming language";
     homepage = "https://www.gnu.org/software/apl/";
-    license = licenses.gpl3Plus;
-    maintainers = [ maintainers.kovirobi ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ kovirobi ];
     platforms = with platforms; linux ++ darwin;
     mainProgram = "apl";
 

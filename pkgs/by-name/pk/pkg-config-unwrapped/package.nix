@@ -74,7 +74,7 @@ stdenv.mkDerivation rec {
     description = "Tool that allows packages to find out information about other packages";
     homepage = "http://pkg-config.freedesktop.org/wiki/";
     platforms = platforms.all;
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     mainProgram = "pkg-config";
   };
 }

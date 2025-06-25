@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Stand alone tray";
     homepage = "https://github.com/kolbusa/stalonetray";
-    license = licenses.gpl2Only;
+    license = lib.licenses.gpl2Only;
     platforms = platforms.linux;
     maintainers = with maintainers; [ raskin ];
     mainProgram = "stalonetray";

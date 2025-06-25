@@ -56,11 +56,11 @@ stdenv.mkDerivation rec {
     ./add-methods-to-rc.patch
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.spinnaker.de/lbdb/";
     description = "Little Brother's Database";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [
       kaiha
       bfortz
     ];

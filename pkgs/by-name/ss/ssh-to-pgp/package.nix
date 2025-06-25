@@ -29,7 +29,7 @@ buildGoModule rec {
     description = "Convert ssh private keys to PGP";
     mainProgram = "ssh-to-pgp";
     homepage = "https://github.com/Mic92/ssh-to-pgp";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with maintainers; [ mic92 ];
   };
 }

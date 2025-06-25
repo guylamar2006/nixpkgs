@@ -13,11 +13,11 @@ stdenv.mkDerivation rec {
     sha256 = "sha256-uDRwFS2oF1k/m4biJvkxq+cacB1QlefM0T5bC2h1dd4=";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Library for accessing discs and disc image files";
     homepage = "http://www.seasip.info/Unix/LibDsk/";
-    license = licenses.gpl2Plus;
-    maintainers = [ ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
   };
 }

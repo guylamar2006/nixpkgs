@@ -59,7 +59,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://www.gnu.org/software/guile-sdl/";
     description = "Guile bindings for SDL";
     license = lib.licenses.gpl3Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     inherit (guile.meta) platforms;
   };
 })

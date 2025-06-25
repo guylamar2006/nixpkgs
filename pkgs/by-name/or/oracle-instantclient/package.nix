@@ -196,14 +196,14 @@ stdenv.mkDerivation {
       command line SQL client.
     '';
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
-    license = licenses.unfree;
+    license = lib.licenses.unfree;
     platforms = [
       "x86_64-linux"
       "aarch64-linux"
       "x86_64-darwin"
       "aarch64-darwin"
     ];
-    maintainers = with maintainers; [ dylanmtaylor ];
+    maintainers = with lib.maintainers; [ dylanmtaylor ];
     hydraPlatforms = [ ];
   };
 }

@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     description = "Program to find rational points on hyperelliptic curves";
     mainProgram = "ratpoints";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ lib.maintainers.raskin ];
+    maintainers = with lib.maintainers; [ raskin ];
     platforms = lib.platforms.unix;
     homepage = "http://www.mathe2.uni-bayreuth.de/stoll/programs/";
   };

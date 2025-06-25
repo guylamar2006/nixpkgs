@@ -32,8 +32,8 @@ buildGoModule {
       Prometheus.
     '';
     homepage = "https://github.com/tynany/frr_exporter";
-    license = licenses.mit;
-    maintainers = with maintainers; [ javaes ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ javaes ];
     mainProgram = "frr_exporter";
   };
 }

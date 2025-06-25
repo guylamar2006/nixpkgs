@@ -49,8 +49,8 @@ stdenv.mkDerivation rec {
     changelog = "https://www.pgpool.net/docs/latest/en/html/release-${
       builtins.replaceStrings [ "." ] [ "-" ] version
     }.html";
-    license = licenses.free;
+    license = lib.licenses.free;
     platforms = platforms.unix;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

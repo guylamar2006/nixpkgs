@@ -42,10 +42,10 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     homepage = "https://pcman.ptt.cc";
-    license = licenses.gpl2;
+    license = lib.licenses.gpl2;
     description = "Telnet BBS browser with GTK interface";
-    maintainers = [ maintainers.sifmelcara ];
-    platforms = platforms.linux;
+    maintainers = with lib.maintainers; [ sifmelcara ];
+    platforms = lib.platforms.linux;
     mainProgram = "pcmanx";
   };
 }

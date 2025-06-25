@@ -27,8 +27,8 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     description = "Object-oriented C++ input system";
-    maintainers = [ maintainers.raskin ];
+    maintainers = with lib.maintainers; [ raskin ];
     platforms = platforms.unix;
-    license = licenses.zlib;
+    license = lib.licenses.zlib;
   };
 }

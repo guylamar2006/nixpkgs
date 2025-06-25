@@ -45,8 +45,8 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/google/s2geometry/releases/tag/v${finalAttrs.version}";
     description = "Computational geometry and spatial indexing on the sphere";
     homepage = "http://s2geometry.io/";
-    license = licenses.asl20;
-    maintainers = [ maintainers.Thra11 ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ Thra11 ];
     platforms = platforms.unix;
   };
 })

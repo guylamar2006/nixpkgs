@@ -42,8 +42,8 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/roehling/postsrsd";
     description = "Postfix Sender Rewriting Scheme daemon";
     mainProgram = "postsrsd";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.all;
-    maintainers = with maintainers; [ abbradar ];
+    maintainers = with lib.maintainers; [ abbradar ];
   };
 }

@@ -30,7 +30,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://sdl-stretch.sourceforge.net/";
     description = "Stretch Functions For SDL";
     license = lib.licenses.lgpl2;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     inherit (SDL.meta) platforms;
   };
 })

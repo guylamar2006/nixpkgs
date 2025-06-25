@@ -83,8 +83,8 @@ stdenv.mkDerivation rec {
     description = "High-performance remote display protocol";
     homepage = "https://aws.amazon.com/hpc/dcv/";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.unfree;
+    license = lib.licenses.unfree;
     platforms = [ "x86_64-linux" ];
-    maintainers = with maintainers; [ rmcgibbo ];
+    maintainers = with lib.maintainers; [ rmcgibbo ];
   };
 }

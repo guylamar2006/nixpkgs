@@ -25,7 +25,7 @@ buildPythonPackage rec {
   meta = with lib; {
     description = "Build system of the Sage library";
     homepage = "https://www.sagemath.org";
-    license = licenses.gpl2Plus;
-    teams = [ teams.sage ];
+    license = lib.licenses.gpl2Plus;
+    teams = with lib.teams; [ sage ];
   };
 }

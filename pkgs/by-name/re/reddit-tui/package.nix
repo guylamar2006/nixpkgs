@@ -28,7 +28,7 @@ buildGoModule (finalAttrs: {
       See [the Docs](https://github.com/tonymajestro/reddit-tui#configuration-files) on how to do that.
     '';
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.LazilyStableProton ];
+    maintainers = with lib.maintainers; [ LazilyStableProton ];
     mainProgram = "reddittui";
   };
 })

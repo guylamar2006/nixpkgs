@@ -50,8 +50,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "C library for producing DKIM-aware applications and an open source milter for providing DKIM service";
     homepage = "http://www.opendkim.org/";
-    maintainers = with maintainers; [ abbradar ];
-    license = licenses.bsd3;
+    maintainers = with lib.maintainers; [ abbradar ];
+    license = lib.licenses.bsd3;
     platforms = platforms.unix;
   };
 }

@@ -22,11 +22,11 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "luculent font";
     homepage = "http://www.eastfarthing.com/luculent/";
-    license = licenses.ofl;
-    maintainers = [ ];
+    license = lib.licenses.ofl;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
   };
 }

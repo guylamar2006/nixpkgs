@@ -37,6 +37,6 @@ buildGoModule (finalAttrs: {
       directly from Nmap output.
     '';
     license = lib.licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 })

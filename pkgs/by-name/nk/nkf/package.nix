@@ -31,6 +31,6 @@ stdenv.mkDerivation rec {
     homepage = "https://nkf.osdn.jp/";
     license = lib.licenses.zlib;
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.auntie ];
+    maintainers = with lib.maintainers; [ auntie ];
   };
 }

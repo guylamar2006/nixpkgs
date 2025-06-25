@@ -114,7 +114,7 @@ stdenv.mkDerivation {
     homepage = "https://tana.inc";
     changelog = "https://tana.inc/releases";
     license = licenses.unfree;
-    maintainers = [ maintainers.massimogengarelli ];
+    maintainers = with lib.maintainers; [ massimogengarelli ];
     platforms = platforms.linux;
     mainProgram = "tana";
   };

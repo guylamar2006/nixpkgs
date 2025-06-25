@@ -49,7 +49,7 @@ stdenv.mkDerivation {
     description = "Multi-platform GUI front-end for the Subversion revision system";
     homepage = "http://rapidsvn.tigris.org/";
     license = lib.licenses.gpl3Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
     mainProgram = "rapidsvn";
   };

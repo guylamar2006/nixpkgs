@@ -23,11 +23,11 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Dead Simple VPN";
     homepage = "https://github.com/jedisct1/dsvpn";
-    license = licenses.mit;
-    maintainers = [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
     mainProgram = "dsvpn";
   };

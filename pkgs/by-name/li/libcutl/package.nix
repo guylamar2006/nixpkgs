@@ -34,7 +34,7 @@ gccStdenv.mkDerivation (finalAttrs: {
     homepage = "https://codesynthesis.com/projects/libcutl/";
     changelog = "https://git.codesynthesis.com/cgit/libcutl/libcutl/log/";
     platforms = lib.platforms.all;
-    maintainers = [ lib.maintainers.xzfc ];
+    maintainers = with lib.maintainers; [ xzfc ];
     license = lib.licenses.mit;
   };
 })

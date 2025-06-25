@@ -53,8 +53,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "SPIR-V Tools project provides an API and commands for processing SPIR-V modules";
     homepage = "https://github.com/KhronosGroup/SPIRV-Tools";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     platforms = with platforms; unix ++ windows;
-    maintainers = [ maintainers.ralith ];
+    maintainers = with lib.maintainers; [ ralith ];
   };
 }

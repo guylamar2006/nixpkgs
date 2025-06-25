@@ -209,7 +209,7 @@ stdenv.mkDerivation rec {
       though if the administrator of your instance had previously connected it
       with other instances.
     '';
-    license = licenses.agpl3Plus;
+    license = lib.licenses.agpl3Plus;
     homepage = "https://joinpeertube.org/";
     platforms = [
       "x86_64-linux"
@@ -217,7 +217,7 @@ stdenv.mkDerivation rec {
       # feasible, looking for maintainer to help out
       # "x86_64-darwin" "aarch64-darwin"
     ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       immae
       izorkin
       stevenroose

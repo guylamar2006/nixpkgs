@@ -63,7 +63,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.gnu.org/software/plotutils/";
 
     license = lib.licenses.gpl2Plus;
-    maintainers = [ lib.maintainers.marcweber ];
+    maintainers = with lib.maintainers; [ marcweber ];
     platforms = lib.platforms.unix;
   };
 }

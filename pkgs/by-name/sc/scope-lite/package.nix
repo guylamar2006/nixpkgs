@@ -22,7 +22,7 @@ stdenv.mkDerivation {
   meta = {
     description = "Migration path to C++ library extensions scope_exit, scope_fail, scope_success, unique_resource";
     license = lib.licenses.boost;
-    maintainers = [ lib.maintainers.shlevy ];
+    maintainers = with lib.maintainers; [ shlevy ];
     homepage = "https://github.com/martinmoene/scope-lite";
     platforms = lib.platforms.all;
   };

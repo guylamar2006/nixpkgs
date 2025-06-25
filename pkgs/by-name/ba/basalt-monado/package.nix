@@ -76,7 +76,7 @@ stdenv.mkDerivation {
     homepage = "https://gitlab.freedesktop.org/mateosss/basalt";
     license = lib.licenses.bsd3;
     mainProgram = "basalt_vio";
-    maintainers = [ lib.maintainers.locochoco ];
+    maintainers = with lib.maintainers; [ locochoco ];
     platforms = lib.platforms.linux;
   };
 }

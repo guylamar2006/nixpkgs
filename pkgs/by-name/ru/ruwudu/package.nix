@@ -26,8 +26,8 @@ stdenvNoCC.mkDerivation rec {
   meta = with lib; {
     homepage = "https://software.sil.org/ruwudu/";
     description = "Arabic script font for a style of writing used in Niger, West Africa";
-    license = licenses.ofl;
-    maintainers = [ maintainers.vbgl ];
+    license = lib.licenses.ofl;
+    maintainers = with lib.maintainers; [ vbgl ];
     platforms = platforms.all;
   };
 }

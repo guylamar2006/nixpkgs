@@ -36,8 +36,8 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     description = "Edit metadata found in PDFs";
-    license = licenses.gpl3;
-    maintainers = with maintainers; [ leenaars ];
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ leenaars ];
     platforms = platforms.unix;
     mainProgram = "pdftag";
   };

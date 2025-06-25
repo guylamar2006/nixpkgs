@@ -43,9 +43,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/tsmetana/spotify-tray";
     description = "Adds a tray icon to the Spotify Linux client application";
-    license = licenses.gpl3Only;
+    license = lib.licenses.gpl3Only;
     platforms = platforms.linux;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "spotify-tray";
   };
 }

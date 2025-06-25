@@ -42,6 +42,6 @@ stdenv.mkDerivation {
     homepage = "https://numixproject.github.io";
     license = lib.licenses.gpl3Plus;
     platforms = lib.platforms.all;
-    maintainers = [ lib.maintainers.romildo ];
+    maintainers = with lib.maintainers; [ romildo ];
   };
 }

@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
     cp -R usr/local/include/* $out/include
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://osxfuse.github.io";
     description = "Build time stubs for FUSE on macOS";
     longDescription = ''
@@ -59,7 +59,7 @@ stdenv.mkDerivation rec {
       project website</link>.
     '';
     platforms = platforms.darwin;
-    maintainers = with maintainers; [ midchildan ];
+    maintainers = with lib.maintainers; [ midchildan ];
 
     # macFUSE as a whole includes code with restrictions on commercial
     # redistribution. However, the build artifacts that we actually touch for

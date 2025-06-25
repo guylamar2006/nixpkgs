@@ -43,6 +43,6 @@ stdenvNoCC.mkDerivation {
     description = "Typeface inspired in First Century Roman Inscriptions";
     license = lib.licenses.ofl;
     platforms = lib.platforms.all;
-    maintainers = [ lib.maintainers.marijanp ];
+    maintainers = with lib.maintainers; [ marijanp ];
   };
 }

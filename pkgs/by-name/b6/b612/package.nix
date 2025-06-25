@@ -24,7 +24,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://b612-font.com/";
     description = "Highly legible font family for use on aircraft cockpit screens";
     longDescription = ''
@@ -46,7 +46,7 @@ stdenvNoCC.mkDerivation rec {
       epl10
       bsd3
     ];
-    maintainers = with maintainers; [ leenaars ];
+    maintainers = with lib.maintainers; [ leenaars ];
     platforms = platforms.all;
   };
 }

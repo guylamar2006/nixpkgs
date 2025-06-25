@@ -36,7 +36,7 @@ rustPlatform.buildRustPackage rec {
     pkg-config
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Background process that saves uncommitted changes on git";
     mainProgram = "dura";
     longDescription = ''
@@ -47,7 +47,7 @@ rustPlatform.buildRustPackage rec {
       checkout a "dura" branch and recover.
     '';
     homepage = "https://github.com/tkellogg/dura";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ drupol ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ drupol ];
   };
 }

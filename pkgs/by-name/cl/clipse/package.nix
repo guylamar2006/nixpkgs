@@ -22,6 +22,6 @@ buildGoModule rec {
     homepage = "https://github.com/savedra1/clipse";
     license = lib.licenses.mit;
     mainProgram = "clipse";
-    maintainers = [ lib.maintainers.savedra1 ];
+    maintainers = with lib.maintainers; [ savedra1 ];
   };
 }

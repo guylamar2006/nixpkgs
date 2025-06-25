@@ -65,6 +65,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl2Plus;
     platforms = lib.platforms.linux;
     downloadPage = "http://support.brother.com/g/b/downloadlist.aspx?c=us&lang=en&prod=mfcj470dw_us_eu_as&os=128";
-    maintainers = [ lib.maintainers.yochai ];
+    maintainers = with lib.maintainers; [ yochai ];
   };
 }

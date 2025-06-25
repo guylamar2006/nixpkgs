@@ -22,7 +22,7 @@ rustPlatform.buildRustPackage rec {
     description = "Subprocess caching utility";
     homepage = "https://github.com/dimo414/bkt";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.mangoiv ];
+    maintainers = with lib.maintainers; [ mangoiv ];
     mainProgram = "bkt";
   };
 }

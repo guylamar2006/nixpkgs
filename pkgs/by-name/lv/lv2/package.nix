@@ -60,12 +60,12 @@ stdenv.mkDerivation rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://lv2plug.in";
     description = "Plugin standard for audio systems";
     mainProgram = "lv2_validate";
-    license = licenses.mit;
-    maintainers = [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
   };
 }

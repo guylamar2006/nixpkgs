@@ -51,6 +51,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/johang/vlc-bittorrent";
     license = licenses.gpl3Plus;
     platforms = platforms.linux;
-    maintainers = [ maintainers.kintrix ];
+    maintainers = with lib.maintainers; [ kintrix ];
   };
 })

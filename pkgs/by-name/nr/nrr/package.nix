@@ -29,8 +29,8 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Minimal, blazing fast npm scripts runner";
     homepage = "https://github.com/ryanccn/nrr";
-    maintainers = with maintainers; [ ryanccn ];
-    license = licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ ryanccn ];
+    license = lib.licenses.gpl3Only;
     mainProgram = "nrr";
   };
 }

@@ -70,7 +70,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://bitbucket.org/alekseyt/nunicode";
     changelog = "https://bitbucket.org/alekseyt/nunicode/src/${finalAttrs.version}/CHANGELOG";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.mjoerg ];
+    maintainers = with lib.maintainers; [ mjoerg ];
     platforms = lib.platforms.unix;
   };
 })

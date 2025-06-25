@@ -24,8 +24,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://oatpp.io/";
     description = "Light and powerful C++ web framework for highly scalable and resource-efficient web applications";
-    license = licenses.asl20;
-    maintainers = [ ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
   };
 }

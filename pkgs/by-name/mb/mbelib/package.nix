@@ -20,11 +20,11 @@ stdenv.mkDerivation rec {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     description = "P25 Phase 1 and ProVoice vocoder";
     homepage = "https://github.com/szechyjs/mbelib";
-    license = licenses.isc;
+    license = lib.licenses.isc;
     platforms = platforms.unix;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

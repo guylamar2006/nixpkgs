@@ -28,7 +28,7 @@ python3Packages.buildPythonApplication rec {
   meta = with lib; {
     homepage = "https://github.com/buildinspace/peru";
     description = "Tool for including other people's code in your projects";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.unix;
     mainProgram = "peru";
   };

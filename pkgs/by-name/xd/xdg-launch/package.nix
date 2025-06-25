@@ -53,6 +53,6 @@ stdenv.mkDerivation rec {
     description = "Command line XDG compliant launcher and tools";
     license = licenses.gpl3;
     platforms = platforms.linux;
-    maintainers = [ maintainers.ck3d ];
+    maintainers = with lib.maintainers; [ ck3d ];
   };
 }

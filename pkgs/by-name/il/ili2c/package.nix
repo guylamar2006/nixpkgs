@@ -52,7 +52,7 @@ stdenv.mkDerivation (finalAttrs: {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "INTERLIS Compiler";
     longDescription = ''
       Checks the syntactical correctness of an INTERLIS data model.
@@ -62,9 +62,9 @@ stdenv.mkDerivation (finalAttrs: {
       fromSource
       binaryBytecode # source bundles dependencies as jars
     ];
-    license = licenses.lgpl21Plus;
-    maintainers = with maintainers; [ das-g ];
-    teams = [ teams.geospatial ];
+    license = lib.licenses.lgpl21Plus;
+    maintainers = with lib.maintainers; [ das-g ];
+    teams = with lib.teams; [ geospatial ];
     platforms = platforms.unix;
     mainProgram = "ili2c";
   };

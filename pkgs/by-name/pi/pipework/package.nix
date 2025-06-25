@@ -41,8 +41,8 @@ stdenv.mkDerivation {
     description = "Software-Defined Networking tools for LXC";
     mainProgram = "pipework";
     homepage = "https://github.com/jpetazzo/pipework";
-    license = licenses.asl20;
-    platforms = platforms.linux;
-    maintainers = [ ];
+    license = lib.licenses.asl20;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ ];
   };
 }

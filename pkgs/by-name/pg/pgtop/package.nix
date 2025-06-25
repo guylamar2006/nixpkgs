@@ -37,7 +37,7 @@ perlPackages.buildPerlPackage rec {
     mainProgram = "pgtop";
     homepage = "https://github.com/cosimo/pgtop";
     changelog = "https://github.com/cosimo/pgtop/releases/tag/v${version}";
-    maintainers = [ lib.maintainers.hagl ];
+    maintainers = with lib.maintainers; [ hagl ];
     license = [ lib.licenses.gpl2Only ];
   };
 }

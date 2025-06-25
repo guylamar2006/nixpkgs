@@ -128,10 +128,10 @@ stdenv.mkDerivation (finalAttrs: {
     '';
 
     homepage = "https://www.pango.org/";
-    license = licenses.lgpl2Plus;
+    license = lib.licenses.lgpl2Plus;
 
-    maintainers = with maintainers; [ raskin ];
-    teams = [ teams.gnome ];
+    maintainers = with lib.maintainers; [ raskin ];
+    teams = with lib.teams; [ gnome ];
     platforms = platforms.unix;
 
     pkgConfigModules = [

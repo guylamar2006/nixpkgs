@@ -32,9 +32,9 @@ stdenv.mkDerivation rec {
       are generally used to back up computer data.
     '';
     homepage = "https://www.jabberwocky.com/software/paperkey/";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.unix;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       peterhoeg
     ];
   };

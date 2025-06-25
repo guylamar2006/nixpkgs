@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
     homepage = "https://roamresearch.com/";
     maintainers = with lib.maintainers; [ dbalan ];
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.unfree;
+    license = lib.licenses.unfree;
     platforms = [
       "x86_64-darwin"
       "aarch64-darwin"

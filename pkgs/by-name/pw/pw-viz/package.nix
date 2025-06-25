@@ -62,8 +62,8 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Simple and elegant pipewire graph editor";
     homepage = "https://github.com/ax9d/pw-viz";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ figsoda ];
-    platforms = platforms.linux;
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ figsoda ];
+    platforms = lib.platforms.linux;
   };
 }

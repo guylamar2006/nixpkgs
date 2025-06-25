@@ -133,7 +133,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Easy to use local storage management for Linux";
     homepage = "https://stratis-storage.github.io";
-    license = licenses.mpl20;
+    license = lib.licenses.mpl20;
     maintainers = with maintainers; [ nickcao ];
     platforms = [ "x86_64-linux" ];
   };

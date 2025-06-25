@@ -62,7 +62,7 @@ rustPlatform.buildRustPackage rec {
       - Grids
     '';
     homepage = "https://pizarra.categulario.xyz/en/";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ mglolenstine ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ mglolenstine ];
   };
 }

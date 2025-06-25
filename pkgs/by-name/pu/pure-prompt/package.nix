@@ -26,9 +26,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Pretty, minimal and fast ZSH prompt";
     homepage = "https://github.com/sindresorhus/pure";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.all;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       euxane
       pablovsky
     ];

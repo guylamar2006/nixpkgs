@@ -56,7 +56,7 @@ stdenv.mkDerivation rec {
       cc0
     ];
     mainProgram = "com.system76.FirmwareManager";
-    maintainers = [ lib.maintainers.shlevy ];
+    maintainers = with lib.maintainers; [ shlevy ];
     platforms = lib.platforms.linux;
   };
 }

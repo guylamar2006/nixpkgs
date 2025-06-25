@@ -38,8 +38,8 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/pothosware/SoapyPlutoSDR";
     changelog = "https://github.com/pothosware/SoapyPlutoSDR/blob/soapy-plutosdr-${finalAttrs.version}/Changelog.txt";
     description = "SoapySDR plugin for Pluto SDR devices";
-    license = licenses.lgpl21;
-    maintainers = with maintainers; [ wucke13 ];
+    license = lib.licenses.lgpl21;
+    maintainers = with lib.maintainers; [ wucke13 ];
     platforms = platforms.unix;
   };
 })

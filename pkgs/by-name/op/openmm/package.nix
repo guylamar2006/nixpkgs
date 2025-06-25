@@ -125,7 +125,7 @@ stdenv.mkDerivation (finalAttrs: {
       lgpl3Plus
       mit
     ];
-    platforms = platforms.linux;
-    maintainers = [ maintainers.sheepforce ];
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ sheepforce ];
   };
 })

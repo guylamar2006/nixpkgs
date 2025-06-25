@@ -143,8 +143,8 @@ stdenv.mkDerivation rec {
       network of workstations to Computational Grids.
     '';
     homepage = "https://simgrid.org/";
-    license = licenses.lgpl2Plus;
-    maintainers = with maintainers; [
+    license = lib.licenses.lgpl2Plus;
+    maintainers = with lib.maintainers; [
       mickours
       mpoquet
     ];

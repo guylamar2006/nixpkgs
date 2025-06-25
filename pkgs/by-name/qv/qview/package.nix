@@ -35,8 +35,8 @@ stdenv.mkDerivation rec {
     description = "Practical and minimal image viewer";
     mainProgram = "qview";
     homepage = "https://interversehq.com/qview/";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ acowley ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ acowley ];
     platforms = platforms.all;
   };
 }

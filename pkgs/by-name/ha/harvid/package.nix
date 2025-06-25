@@ -62,7 +62,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "http://x42.github.io/harvid";
     license = lib.licenses.gpl2Plus;
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.mitchmindtree ];
+    maintainers = with lib.maintainers; [ mitchmindtree ];
     mainProgram = "harvid";
   };
 })

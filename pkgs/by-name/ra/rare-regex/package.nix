@@ -47,7 +47,7 @@ buildGoModule rec {
     description = "Fast text scanner/regex extractor and realtime summarizer";
     homepage = "https://rare.zdyn.net";
     changelog = "https://github.com/zix99/rare/releases/tag/${src.rev}";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ figsoda ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ figsoda ];
   };
 }

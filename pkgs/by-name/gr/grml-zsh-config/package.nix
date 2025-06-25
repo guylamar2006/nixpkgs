@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     ln -s grmlzshrc.5.gz $out/share/man/man5/grml-zsh-config.5.gz
   '';
 
-  meta = with lib; {
+  meta = {
     description = "grml's zsh setup";
     homepage = "https://grml.org/zsh/";
     license = with licenses; [
@@ -44,7 +44,7 @@ stdenv.mkDerivation rec {
       gpl2Only
     ];
     platforms = platforms.unix;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       msteen
       rvolosatovs
     ];

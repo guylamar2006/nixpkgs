@@ -39,6 +39,6 @@ stdenv.mkDerivation rec {
     changelog = "https://github.com/devernay/cminpack/blob/v${version}/README.md#history";
     license = lib.licenses.bsd3;
     platforms = lib.platforms.all;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

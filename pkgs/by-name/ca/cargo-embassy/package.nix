@@ -34,7 +34,7 @@ rustPlatform.buildRustPackage {
     description = "Command line tool for creating Embassy projects";
     homepage = "https://github.com/adinack/cargo-embassy";
     license = lib.licenses.gpl3Only;
-    maintainers = [ lib.maintainers.samw ];
+    maintainers = with lib.maintainers; [ samw ];
     platforms = lib.platforms.unix;
     mainProgram = "cargo-embassy";
   };

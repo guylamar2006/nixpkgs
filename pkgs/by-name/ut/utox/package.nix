@@ -69,7 +69,7 @@ stdenv.mkDerivation rec {
     mainProgram = "utox";
     homepage = "https://github.com/uTox/uTox";
     license = licenses.gpl3;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
   };
 }

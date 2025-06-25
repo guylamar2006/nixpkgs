@@ -92,7 +92,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/SeaDve/Delineate";
     changelog = "https://github.com/SeaDve/Delineate/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.gpl3Plus;
-    maintainers = [ lib.maintainers.nekowinston ];
+    maintainers = with lib.maintainers; [ nekowinston ];
     platforms = lib.platforms.linux;
     mainProgram = "delineate";
   };

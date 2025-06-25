@@ -59,7 +59,7 @@ stdenv.mkDerivation rec {
     homepage = "https://wolf-plugins.github.io/wolf-shaper/";
     description = "Waveshaper plugin with spline-based graph editor";
     license = licenses.gpl3Plus;
-    maintainers = [ maintainers.magnetophon ];
+    maintainers = with lib.maintainers; [ magnetophon ];
     platforms = [
       "i686-linux"
       "x86_64-linux"

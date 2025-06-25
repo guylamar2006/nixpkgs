@@ -46,7 +46,7 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "texi2html";
     homepage = "https://www.nongnu.org/texi2html/";
     license = lib.licenses.gpl3Plus;
-    maintainers = [ lib.maintainers.marcweber ];
+    maintainers = with lib.maintainers; [ marcweber ];
     platforms = lib.platforms.unix;
   };
 })

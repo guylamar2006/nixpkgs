@@ -33,10 +33,10 @@ python3Packages.buildPythonApplication rec {
 
   meta = with lib; {
     homepage = "https://pwittchen.github.io/spotify-cli-linux/";
-    maintainers = [ maintainers.kmein ];
+    maintainers = with lib.maintainers; [ kmein ];
     description = "Command line interface to Spotify on Linux";
     mainProgram = "spotifycli";
-    license = licenses.gpl3;
+    license = lib.licenses.gpl3;
     platforms = platforms.linux;
   };
 }

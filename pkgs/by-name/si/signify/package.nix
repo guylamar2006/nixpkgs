@@ -36,8 +36,8 @@ stdenv.mkDerivation rec {
       for fast signing and verification of messages using small public keys.
     '';
     homepage = "https://www.tedunangst.com/flak/post/signify";
-    license = licenses.isc;
-    maintainers = [ maintainers.rlupton20 ];
+    license = lib.licenses.isc;
+    maintainers = with lib.maintainers; [ rlupton20 ];
     platforms = platforms.linux;
   };
 }

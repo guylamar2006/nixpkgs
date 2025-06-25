@@ -38,8 +38,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Collection of image builders";
     homepage = "https://github.com/nix-community/nixos-generators";
-    license = licenses.mit;
-    maintainers = with maintainers; [ lassulus ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ lassulus ];
     mainProgram = "nixos-generate";
     platforms = platforms.unix;
   };

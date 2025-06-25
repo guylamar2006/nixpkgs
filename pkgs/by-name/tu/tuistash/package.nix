@@ -29,7 +29,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
     homepage = "https://github.com/edmocosta/tuistash";
     changelog = "https://github.com/edmocosta/tuistash/blob/v${finalAttrs.version}/CHANGELOG.md";
     license = [ lib.licenses.asl20 ];
-    maintainers = [ lib.maintainers.kpbaks ];
+    maintainers = with lib.maintainers; [ kpbaks ];
     mainProgram = "tuistash";
   };
 })

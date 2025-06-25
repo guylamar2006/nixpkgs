@@ -63,7 +63,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Karabiner-Elements is a powerful utility for keyboard customization on macOS Ventura (13) or later";
     homepage = "https://karabiner-elements.pqrs.org/";
     license = lib.licenses.unlicense;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.darwin;
   };
 })

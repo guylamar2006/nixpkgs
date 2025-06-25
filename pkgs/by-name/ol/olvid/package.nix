@@ -109,9 +109,9 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "Secure french messenger";
     homepage = "https://www.olvid.io";
-    license = licenses.agpl3Only;
+    license = lib.licenses.agpl3Only;
     mainProgram = "olvid";
-    maintainers = with maintainers; [ rookeur ];
-    platforms = platforms.linux;
+    maintainers = with lib.maintainers; [ rookeur ];
+    platforms = lib.platforms.linux;
   };
 })

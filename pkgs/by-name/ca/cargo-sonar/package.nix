@@ -29,6 +29,6 @@ rustPlatform.buildRustPackage (finalAttrs: {
     mainProgram = "cargo-sonar";
     homepage = "https://gitlab.com/woshilapin/cargo-sonar";
     license = [ lib.licenses.mit ];
-    maintainers = [ lib.maintainers.jonboh ];
+    maintainers = with lib.maintainers; [ jonboh ];
   };
 })

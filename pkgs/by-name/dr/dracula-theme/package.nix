@@ -48,11 +48,11 @@ stdenvNoCC.mkDerivation {
     tagPrefix = "v";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Dracula variant of the Ant theme";
     homepage = "https://github.com/dracula/gtk";
-    license = licenses.gpl3;
+    license = lib.licenses.gpl3;
     platforms = platforms.all;
-    maintainers = with maintainers; [ alexarice ];
+    maintainers = with lib.maintainers; [ alexarice ];
   };
 }

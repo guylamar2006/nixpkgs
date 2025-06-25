@@ -139,8 +139,8 @@ stdenv.mkDerivation (finalAttrs: {
       and uses a VCS to maintain history of changes.
     '';
     homepage = "https://shrubbery.net/rancid/";
-    license = licenses.bsd3;
-    maintainers = with maintainers; [ peterhoeg ];
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ peterhoeg ];
     platforms = platforms.linux;
   };
 })

@@ -70,9 +70,9 @@ stdenvNoCC.mkDerivation {
   meta = with lib; {
     description = "Fast, highly customizable system info script";
     homepage = "https://github.com/dylanaraps/neofetch";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.all;
-    maintainers = with maintainers; [ konimex ];
+    maintainers = with lib.maintainers; [ konimex ];
     mainProgram = "neofetch";
   };
 }

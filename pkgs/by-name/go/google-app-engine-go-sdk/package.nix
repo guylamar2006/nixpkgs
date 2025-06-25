@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     done
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Google App Engine SDK for Go";
     version = version;
     homepage = "https://cloud.google.com/appengine/docs/go/";
@@ -46,11 +46,11 @@ stdenv.mkDerivation rec {
       fromSource
       binaryNativeCode # includes golang toolchain binaries
     ];
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     platforms = [
       "x86_64-linux"
       "x86_64-darwin"
     ];
-    maintainers = with maintainers; [ lufia ];
+    maintainers = with lib.maintainers; [ lufia ];
   };
 }

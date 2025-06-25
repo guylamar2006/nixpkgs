@@ -106,7 +106,7 @@ stdenv.mkDerivation rec {
     description = "Next generation modular control surface";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
     license = licenses.unfree;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = [
       "aarch64-linux"
       "armv7l-linux"

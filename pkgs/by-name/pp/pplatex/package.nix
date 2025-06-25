@@ -37,8 +37,8 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Tool to reformat the output of latex and friends into readable messages";
     mainProgram = "pplatex";
     homepage = "https://github.com/stefanhepp/pplatex";
-    license = licenses.gpl3Plus;
-    maintainers = [ maintainers.doronbehar ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ doronbehar ];
     platforms = platforms.unix;
   };
 })

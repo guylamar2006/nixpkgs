@@ -40,7 +40,7 @@ beamPackages.mixRelease rec {
     description = "Language server for Elixir that just works";
     license = lib.licenses.mit;
     mainProgram = "nextls";
-    maintainers = [ lib.maintainers.adamcstephens ];
+    maintainers = with lib.maintainers; [ adamcstephens ];
     platforms = beamPackages.erlang.meta.platforms;
   };
 }

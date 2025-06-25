@@ -30,11 +30,11 @@ stdenv.mkDerivation {
     substituteInPlace $out/bin/deco --replace "xdpyinfo" "${xorg.xdpyinfo}/bin/xdpyinfo"
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/ebzzry/deco";
     description = "Simple root image setter";
-    license = licenses.mit;
-    maintainers = [ maintainers.ebzzry ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ebzzry ];
     platforms = platforms.unix;
     mainProgram = "deco";
   };

@@ -47,8 +47,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Simple wrapper around the VTE terminal emulator widget for GTK";
     homepage = "https://github.com/esmil/stupidterm";
-    license = licenses.lgpl3Plus;
-    maintainers = [ maintainers.etu ];
+    license = lib.licenses.lgpl3Plus;
+    maintainers = with lib.maintainers; [ etu ];
     platforms = platforms.linux;
     mainProgram = "stupidterm";
   };

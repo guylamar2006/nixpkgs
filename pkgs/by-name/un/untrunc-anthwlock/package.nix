@@ -51,6 +51,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/anthwlock/untrunc";
     license = licenses.gpl2Only;
     platforms = platforms.all;
-    maintainers = [ maintainers.romildo ];
+    maintainers = with lib.maintainers; [ romildo ];
   };
 }

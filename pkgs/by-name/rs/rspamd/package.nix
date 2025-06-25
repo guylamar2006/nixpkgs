@@ -98,9 +98,9 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     homepage = "https://rspamd.com";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     description = "Advanced spam filtering system";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       avnik
       fpletz
       globin

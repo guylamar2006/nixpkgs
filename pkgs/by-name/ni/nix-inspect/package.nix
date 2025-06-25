@@ -69,8 +69,8 @@ rustPlatform.buildRustPackage {
   meta = with lib; {
     description = "Interactive TUI for inspecting nix configs and other expressions";
     homepage = "https://github.com/bluskript/nix-inspect";
-    license = licenses.mit;
-    maintainers = with maintainers; [ blusk ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ blusk ];
     platforms = platforms.unix;
     mainProgram = "nix-inspect";
   };

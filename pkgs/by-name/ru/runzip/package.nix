@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Tool to convert filename encoding inside a ZIP archive";
     license = lib.licenses.bsd2;
-    maintainers = [ lib.maintainers.raskin ];
+    maintainers = with lib.maintainers; [ raskin ];
     platforms = lib.platforms.unix;
     mainProgram = "runzip";
   };

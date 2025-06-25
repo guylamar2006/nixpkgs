@@ -43,6 +43,6 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Alsa mixer application for Windowmaker";
     homepage = "https://www.dockapps.net/alsamixerapp";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 })

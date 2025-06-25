@@ -48,7 +48,7 @@ stdenv.mkDerivation (finalAttrs: {
       hpndSellVariant
       mit
     ];
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     pkgConfigModules = [ "xorg-macros" ];
     platforms = lib.platforms.unix;
   };

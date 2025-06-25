@@ -66,6 +66,6 @@ stdenv.mkDerivation rec {
     # The library is LGPLv3, the wildmidi executable is GPLv3
     license = licenses.lgpl3;
     platforms = platforms.unix;
-    maintainers = [ maintainers.bjornfor ];
+    maintainers = with lib.maintainers; [ bjornfor ];
   };
 }

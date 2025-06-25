@@ -52,8 +52,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "PIC-like markup language for diagrams in technical documentation";
     homepage = "https://pikchr.org";
-    license = licenses.bsd0;
-    maintainers = with maintainers; [ fgaz ];
+    license = lib.licenses.bsd0;
+    maintainers = with lib.maintainers; [ fgaz ];
     platforms = platforms.all;
     mainProgram = "pikchr";
   };

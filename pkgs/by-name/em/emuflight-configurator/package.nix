@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
     })
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Emuflight flight control system configuration tool";
     mainProgram = "emuflight-configurator";
     longDescription = ''
@@ -62,8 +62,8 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/emuflight/EmuConfigurator";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ beezow ];
-    platforms = platforms.linux;
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ beezow ];
+    platforms = lib.platforms.linux;
   };
 }

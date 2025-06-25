@@ -21,8 +21,8 @@ rustPlatform.buildRustPackage {
   meta = with lib; {
     description = "Command-line utility that takes grep-formatted lines and performs a find-and-replace on them";
     homepage = "https://github.com/robenkleene/rep-grep";
-    license = licenses.mit;
-    maintainers = with maintainers; [ philiptaron ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ philiptaron ];
     mainProgram = "rep";
   };
 }

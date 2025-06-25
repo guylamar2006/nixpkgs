@@ -38,6 +38,6 @@ stdenv.mkDerivation rec {
     sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.mit;
     homepage = "https://projectlombok.org/";
-    maintainers = [ lib.maintainers.CrystalGamma ];
+    maintainers = with lib.maintainers; [ CrystalGamma ];
   };
 }

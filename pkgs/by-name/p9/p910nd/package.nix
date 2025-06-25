@@ -48,8 +48,8 @@ stdenv.mkDerivation rec {
       this protocol and the syntax is lp=remotehost%9100 in /etc/printcap.
     '';
     homepage = "https://github.com/kenyapcomau/p910nd";
-    license = licenses.gpl2Only;
-    maintainers = with maintainers; [ peterhoeg ];
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [ peterhoeg ];
     platforms = platforms.unix;
     mainProgram = "p910nd";
   };

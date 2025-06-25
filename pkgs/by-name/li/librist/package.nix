@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     mbedtls
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Library that can be used to easily add the RIST protocol to your application";
     homepage = "https://code.videolan.org/rist/librist";
     license = with licenses; [
@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
       mit
       isc
     ];
-    maintainers = with maintainers; [ raphaelr ];
+    maintainers = with lib.maintainers; [ raphaelr ];
     platforms = platforms.all;
   };
 }

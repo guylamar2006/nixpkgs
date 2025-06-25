@@ -25,12 +25,12 @@ stdenv.mkDerivation rec {
       --add-flags "-classpath $classpath org.apache.directory.server.UberjarMain"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Extensible and embeddable directory server";
     mainProgram = "apache-directory-server";
     homepage = "https://directory.apache.org/apacheds/";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     platforms = platforms.unix;
-    maintainers = [ maintainers.ners ];
+    maintainers = with lib.maintainers; [ ners ];
   };
 }

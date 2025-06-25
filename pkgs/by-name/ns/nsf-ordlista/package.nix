@@ -21,8 +21,8 @@ stdenvNoCC.mkDerivation {
     description = "Wordlist from the Norwegian Scrabble Federation";
     homepage = "https://www2.scrabbleforbundet.no/";
     downloadPage = "https://www2.scrabbleforbundet.no/?p=4881#more-4881";
-    license = licenses.unfree;
-    maintainers = with maintainers; [ h7x4 ];
+    license = lib.licenses.unfree;
+    maintainers = with lib.maintainers; [ h7x4 ];
     platforms = platforms.all;
   };
 }

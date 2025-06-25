@@ -18,9 +18,9 @@ buildNimPackage (finalAttrs: {
   meta = with lib; {
     description = "Simple tool to explore prometheus exporter metrics";
     homepage = "https://github.com/marcusramberg/promexplorer";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ marcusramberg ];
+    maintainers = with lib.maintainers; [ marcusramberg ];
     mainProgram = "promexplorer";
   };
 })

@@ -100,7 +100,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "Caching proxy for the Web supporting HTTP, HTTPS, FTP, and more";
     homepage = "http://www.squid-cache.org";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.linux;
     maintainers = with maintainers; [ raskin ];
     knownVulnerabilities = [

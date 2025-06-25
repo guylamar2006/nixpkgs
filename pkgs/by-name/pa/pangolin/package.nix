@@ -62,7 +62,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://github.com/stevenlovegrove/Pangolin";
     license = lib.licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.all;
   };
 })

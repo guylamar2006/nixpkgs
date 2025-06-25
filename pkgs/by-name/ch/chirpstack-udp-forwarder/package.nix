@@ -33,7 +33,7 @@ rustPlatform.buildRustPackage rec {
     description = "UDP packet-forwarder for the ChirpStack Concentratord";
     homepage = "https://www.chirpstack.io/";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.stv0g ];
+    maintainers = with lib.maintainers; [ stv0g ];
     mainProgram = "chirpstack-udp-forwarder";
   };
 }

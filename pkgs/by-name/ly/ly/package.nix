@@ -48,7 +48,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "TUI display manager";
     license = lib.licenses.wtfpl;
     homepage = "https://codeberg.org/AnErrupTion/ly";
-    maintainers = [ lib.maintainers.vidister ];
+    maintainers = with lib.maintainers; [ vidister ];
     platforms = lib.platforms.linux;
     mainProgram = "ly";
   };

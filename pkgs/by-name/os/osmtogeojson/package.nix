@@ -25,8 +25,8 @@ buildNpmPackage rec {
   meta = with lib; {
     description = "Converts OSM data to GeoJSON";
     homepage = "https://tyrasd.github.io/osmtogeojson/";
-    maintainers = with maintainers; [ thibautmarty ];
-    license = licenses.mit;
+    maintainers = with lib.maintainers; [ thibautmarty ];
+    license = lib.licenses.mit;
     mainProgram = "osmtogeojson";
   };
 }

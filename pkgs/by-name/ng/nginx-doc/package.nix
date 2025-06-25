@@ -41,9 +41,9 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Reverse proxy and lightweight webserver (documentation)";
     homepage = "https://nginx.org/";
-    license = licenses.bsd2;
+    license = lib.licenses.bsd2;
     platforms = platforms.all;
     priority = 6;
-    maintainers = with maintainers; [ kaction ];
+    maintainers = with lib.maintainers; [ kaction ];
   };
 }

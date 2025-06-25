@@ -23,8 +23,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://gitlab.com/post-factum/pcapc";
     description = "Compile libpcap filter expressions into BPF opcodes";
-    license = licenses.gpl3Only;
-    platforms = platforms.linux;
+    license = lib.licenses.gpl3Only;
+    platforms = lib.platforms.linux;
     mainProgram = "pcapc";
   };
 }

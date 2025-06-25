@@ -21,8 +21,8 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Simple terminal clock written in Rust";
     homepage = "https://github.com/valebes/rsClock";
-    license = licenses.mit;
-    maintainers = with maintainers; [ valebes ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ valebes ];
     mainProgram = "rsclock";
   };
 }

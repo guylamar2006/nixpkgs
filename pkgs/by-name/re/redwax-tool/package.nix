@@ -60,7 +60,7 @@ stdenv.mkDerivation rec {
       certificates and keys you're interested in, write those
       certificates and keys to the destinations of your choice.
     '';
-    license = licenses.asl20;
-    maintainers = with maintainers; [ astro ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ astro ];
   };
 }

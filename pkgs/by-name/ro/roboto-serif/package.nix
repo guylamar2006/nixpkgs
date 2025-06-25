@@ -36,8 +36,8 @@ stdenvNoCC.mkDerivation rec {
       Material Design.
     '';
     homepage = "https://github.com/googlefonts/roboto-serif";
-    license = licenses.ofl;
-    maintainers = with maintainers; [ wegank ];
+    license = lib.licenses.ofl;
+    maintainers = with lib.maintainers; [ wegank ];
     platforms = platforms.all;
   };
 }

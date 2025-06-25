@@ -69,6 +69,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/michaelrsweet/pappl";
     license = lib.licenses.asl20;
     platforms = lib.platforms.linux; # should also work for darwin, but requires additional work
-    maintainers = [ lib.maintainers.NotAShelf ];
+    maintainers = with lib.maintainers; [ NotAShelf ];
   };
 }

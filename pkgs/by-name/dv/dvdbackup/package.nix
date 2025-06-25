@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     description = "Tool to rip video DVDs from the command line";
     homepage = "https://dvdbackup.sourceforge.net/";
     license = lib.licenses.gpl3Plus;
-    maintainers = [ lib.maintainers.bradediger ];
+    maintainers = with lib.maintainers; [ bradediger ];
     platforms = lib.platforms.linux;
     mainProgram = "dvdbackup";
   };

@@ -70,8 +70,8 @@ buildGoModule rec {
   meta = with lib; {
     description = "Reproducible apt/dnf/apk/pacman, with content-addressing";
     homepage = "https://github.com/reproducible-containers/repro-get";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ matthewcroughan ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ matthewcroughan ];
     mainProgram = "repro-get";
   };
 }

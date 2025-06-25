@@ -39,9 +39,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://nng.nanomsg.org/";
     description = "Nanomsg next generation";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     mainProgram = "nngcat";
     platforms = platforms.unix;
-    maintainers = with maintainers; [ nviets ];
+    maintainers = with lib.maintainers; [ nviets ];
   };
 }

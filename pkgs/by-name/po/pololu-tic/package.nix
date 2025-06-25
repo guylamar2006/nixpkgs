@@ -42,7 +42,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/pololu/pololu-tic-software";
     description = "Pololu Tic stepper motor controller software";
     platforms = platforms.all;
-    license = licenses.cc-by-sa-30;
-    maintainers = with maintainers; [ bzizou ];
+    license = lib.licenses.cc-by-sa-30;
+    maintainers = with lib.maintainers; [ bzizou ];
   };
 })

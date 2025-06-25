@@ -108,7 +108,7 @@ buildGoModule {
   meta = with lib; {
     description = "Namecoin to DNS bridge daemon";
     homepage = "https://github.com/namecoin/ncdns";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ rnhmjoj ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ rnhmjoj ];
   };
 }

@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
       display multiple clocks for different world time zones.
     '';
     license = lib.licenses.bsd3;
-    maintainers = [ lib.maintainers.romildo ];
+    maintainers = with lib.maintainers; [ romildo ];
     platforms = lib.platforms.linux;
     mainProgram = "gsimplecal";
   };

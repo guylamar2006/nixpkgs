@@ -35,7 +35,7 @@ stdenv.mkDerivation {
     openssl
   ];
 
-  meta = with lib; {
+  meta = {
     description = "High level HTTP/2 C++ library";
     longDescription = ''
       libnghttp2_asio is C++ library built on top of libnghttp2
@@ -45,6 +45,6 @@ stdenv.mkDerivation {
     '';
     homepage = "https://github.com/nghttp2/nghttp2-asio";
     license = with licenses; [ mit ];
-    maintainers = with maintainers; [ izorkin ];
+    maintainers = with lib.maintainers; [ izorkin ];
   };
 }

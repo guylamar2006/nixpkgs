@@ -145,8 +145,8 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "PDAL is Point Data Abstraction Library. GDAL for point cloud data";
     homepage = "https://pdal.io";
-    license = licenses.bsd3;
-    teams = [ teams.geospatial ];
+    license = lib.licenses.bsd3;
+    teams = with lib.teams; [ geospatial ];
     platforms = platforms.all;
     pkgConfigModules = [ "pdal" ];
   };

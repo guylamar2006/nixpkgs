@@ -31,6 +31,6 @@ buildGoModule rec {
     mainProgram = "kfilt";
     homepage = "https://github.com/ryane/kfilt";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.ryane ];
+    maintainers = with lib.maintainers; [ ryane ];
   };
 }

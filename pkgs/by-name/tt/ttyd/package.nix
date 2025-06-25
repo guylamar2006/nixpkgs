@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
     description = "Share your terminal over the web";
     homepage = "https://github.com/tsl0922/ttyd";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.thoughtpolice ];
+    maintainers = with lib.maintainers; [ thoughtpolice ];
     platforms = lib.platforms.all;
     mainProgram = "ttyd";
   };

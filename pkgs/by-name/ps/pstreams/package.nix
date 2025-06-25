@@ -38,8 +38,8 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://pstreams.sourceforge.net/";
     downloadPage = "https://pstreams.sourceforge.net/download/";
-    maintainers = with maintainers; [ arthur ];
-    license = licenses.boost;
+    maintainers = with lib.maintainers; [ arthur ];
+    license = lib.licenses.boost;
     platforms = platforms.all;
   };
 }

@@ -123,11 +123,11 @@ lib.checkListOfEnum "${pname}: theme variants"
 
     passthru.updateScript = gitUpdater { };
 
-    meta = with lib; {
+    meta = {
       description = "Flat Gtk+ theme based on Elegant Design";
       homepage = "https://github.com/vinceliuice/Graphite-gtk-theme";
-      license = licenses.gpl3Only;
+      license = lib.licenses.gpl3Only;
       platforms = platforms.unix;
-      maintainers = [ maintainers.romildo ];
+      maintainers = with lib.maintainers; [ romildo ];
     };
   }

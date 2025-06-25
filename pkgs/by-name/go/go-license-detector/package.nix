@@ -20,11 +20,11 @@ buildGoModule rec {
 
   nativeCheckInputs = [ git ];
 
-  meta = with lib; {
+  meta = {
     description = "Reliable project licenses detector";
     homepage = "https://github.com/go-enry/go-license-detector";
-    license = licenses.asl20;
-    maintainers = [ ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "license-detector";
   };
 }

@@ -79,8 +79,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://pocoproject.org/";
     description = "Cross-platform C++ libraries with a network/internet focus";
-    license = licenses.boost;
-    maintainers = with maintainers; [
+    license = lib.licenses.boost;
+    maintainers = with lib.maintainers; [
       orivej
       tomodachi94
     ];

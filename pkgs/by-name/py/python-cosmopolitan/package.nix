@@ -37,8 +37,8 @@ stdenv.mkDerivation {
     description = "Actually Portable Python using Cosmopolitan";
     platforms = platforms.x86_64;
     badPlatforms = platforms.darwin;
-    license = licenses.isc;
-    teams = [ teams.cosmopolitan ];
+    license = lib.licenses.isc;
+    teams = with lib.teams; [ cosmopolitan ];
     mainProgram = "python.com";
   };
 }

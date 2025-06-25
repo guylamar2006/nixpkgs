@@ -18,11 +18,11 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-Pny/RBtr65jKu2DdyIrluZWeZIgGb8Ev7mxvTMWPlyI=";
 
-  meta = with lib; {
+  meta = {
     description = "Scriptable, curses-based, digital habit tracker";
     homepage = "https://github.com/NerdyPepper/dijo";
-    license = licenses.mit;
-    maintainers = [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "dijo";
   };
 }

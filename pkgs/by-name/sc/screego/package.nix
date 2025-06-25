@@ -77,8 +77,8 @@ buildGo123Module rec {
   meta = with lib; {
     description = "Screen sharing for developers";
     homepage = "https://screego.net";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ pinpox ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ pinpox ];
     mainProgram = "screego";
   };
 }

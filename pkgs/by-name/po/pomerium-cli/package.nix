@@ -65,8 +65,8 @@ buildGoModule rec {
     homepage = "https://pomerium.io";
     description = "Client-side helper for Pomerium authenticating reverse proxy";
     mainProgram = "pomerium-cli";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ lukegb ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ lukegb ];
     platforms = platforms.unix;
   };
 }

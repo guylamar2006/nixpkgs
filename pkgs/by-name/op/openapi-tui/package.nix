@@ -28,8 +28,8 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Terminal UI to list, browse and run APIs defined with openapi spec";
     homepage = "https://github.com/zaghaghi/openapi-tui";
-    license = licenses.mit;
-    maintainers = with maintainers; [ matthiasbeyer ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ matthiasbeyer ];
     mainProgram = "openapi-tui";
   };
 }

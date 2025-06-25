@@ -65,7 +65,7 @@ buildGoModule (finalAttrs: {
     description = "Debian repository management tool";
     license = lib.licenses.mit;
     changelog = "https://github.com/aptly-dev/aptly/releases/tag/v${finalAttrs.version}";
-    maintainers = [ lib.maintainers.montag451 ];
+    maintainers = with lib.maintainers; [ montag451 ];
     teams = [ lib.teams.bitnomial ];
     mainProgram = "aptly";
   };

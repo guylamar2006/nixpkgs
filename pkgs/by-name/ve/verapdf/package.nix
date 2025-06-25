@@ -73,9 +73,9 @@ maven.buildMavenPackage rec {
       lib.licenses.mpl20
     ];
     mainProgram = "verapdf-gui";
-    maintainers = [
-      lib.maintainers.mohe2015
-      lib.maintainers.kilianar
+    maintainers = with lib.maintainers; [
+      mohe2015
+      kilianar
     ];
   };
 }

@@ -16,14 +16,14 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-OgVeAuC36mP8rv4+XHsrOe7KKnpQ/u0M3g91NE0u98A=";
 
-  meta = with lib; {
+  meta = {
     description = "Cargo subcommand to build and test all feature flag combinations";
     homepage = "https://github.com/frewsxcv/cargo-all-features";
     license = with licenses; [
       asl20 # or
       mit
     ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       figsoda
       matthiasbeyer
     ];

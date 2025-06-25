@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Thunderbolt(TM) user-space components";
     license = lib.licenses.bsd3;
-    maintainers = [ lib.maintainers.ryantrinkle ];
+    maintainers = with lib.maintainers; [ ryantrinkle ];
     homepage = "https://01.org/thunderbolt-sw";
     platforms = lib.platforms.linux;
   };

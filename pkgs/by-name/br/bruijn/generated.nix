@@ -71,5 +71,5 @@ mkDerivation {
   homepage = "https://github.com/githubuser/bruijn#readme";
   license = lib.licenses.mit;
   mainProgram = "bruijn";
-  maintainers = [ lib.maintainers.defelo ];
+  maintainers = with lib.maintainers; [ defelo ];
 }

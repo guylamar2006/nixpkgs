@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     inherit version;
     homepage = "https://sourceforge.net/projects/reiser4/";
     description = "Reiser4 utilities";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.linux;
 
     # error: initialization of

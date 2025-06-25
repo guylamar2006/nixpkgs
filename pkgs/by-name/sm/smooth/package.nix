@@ -54,9 +54,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Smooth Class Library";
     mainProgram = "smooth-translator";
-    license = licenses.artistic2;
+    license = lib.licenses.artistic2;
     homepage = "http://www.smooth-project.org/";
-    maintainers = with maintainers; [ shamilton ];
+    maintainers = with lib.maintainers; [ shamilton ];
     platforms = platforms.linux;
   };
 }

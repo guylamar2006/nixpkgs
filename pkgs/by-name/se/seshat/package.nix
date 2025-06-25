@@ -40,10 +40,10 @@ stdenvNoCC.mkDerivation {
       It incorporates symbols and ligatures used in the European region.
     '';
     platforms = platforms.all;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       leenaars
       minijackson
     ];
-    license = licenses.cc0;
+    license = lib.licenses.cc0;
   };
 }

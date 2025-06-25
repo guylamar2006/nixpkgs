@@ -129,7 +129,7 @@ else
       )
     '';
 
-    meta = with lib; {
+    meta = {
       platforms = platforms.unix;
       description = "LD_PRELOAD library to intercept and rewrite the paths in glibc calls";
       longDescription = ''

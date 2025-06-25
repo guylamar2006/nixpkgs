@@ -63,8 +63,8 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/owncloud/ocis/releases/tag/v${finalAttrs.version}";
     # oCIS is licensed under non-free EULA which can be found here :
     # https://github.com/owncloud/ocis/releases/download/v5.0.1/End-User-License-Agreement-for-ownCloud-Infinite-Scale.pdf
-    license = licenses.unfree;
-    maintainers = with maintainers; [
+    license = lib.licenses.unfree;
+    maintainers = with lib.maintainers; [
       ramblurr
       bhankas
       danth

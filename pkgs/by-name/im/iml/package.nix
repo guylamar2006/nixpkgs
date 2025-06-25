@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Algorithms for computing exact solutions to dense systems of linear equations over the integers";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ lib.maintainers.raskin ];
+    maintainers = with lib.maintainers; [ raskin ];
     platforms = lib.platforms.unix;
     homepage = "https://cs.uwaterloo.ca/~astorjoh/iml.html";
   };

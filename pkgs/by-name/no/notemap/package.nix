@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
       from the phone.
     '';
     license = lib.licenses.gpl3Plus;
-    maintainers = [ lib.maintainers.sternenseemann ];
+    maintainers = with lib.maintainers; [ sternenseemann ];
     homepage = "https://git.causal.agency/notemap/about/";
     platforms = lib.platforms.unix;
   };

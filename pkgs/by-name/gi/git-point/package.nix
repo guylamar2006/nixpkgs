@@ -26,9 +26,9 @@ rustPlatform.buildRustPackage rec {
   meta = {
     homepage = "https://github.com/Qyriad/git-point";
     description = "Set arbitrary refs without shooting yourself in the foot, a procelain `git update-ref`";
-    maintainers = [
-      lib.maintainers.qyriad
-      lib.maintainers.philiptaron
+    maintainers = with lib.maintainers; [
+      qyriad
+      philiptaron
     ];
     license = [ lib.licenses.mit ];
     sourceProvenance = [ lib.sourceTypes.fromSource ];

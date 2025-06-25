@@ -66,6 +66,6 @@ stdenv.mkDerivation {
       # rime-cantonese
       cc-by-40
     ];
-    maintainers = with maintainers; [ pmy ];
+    maintainers = with lib.maintainers; [ pmy ];
   };
 }

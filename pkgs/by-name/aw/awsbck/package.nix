@@ -21,14 +21,14 @@ rustPlatform.buildRustPackage rec {
   # tests run in CI on the source repo
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Backup a folder to AWS S3, once or periodically";
     homepage = "https://github.com/beeb/awsbck";
     license = with licenses; [
       mit
       asl20
     ];
-    maintainers = with maintainers; [ beeb ];
+    maintainers = with lib.maintainers; [ beeb ];
     mainProgram = "awsbck";
   };
 }

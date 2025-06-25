@@ -27,11 +27,11 @@ buildGoModule rec {
 
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Tool to clean out your AWS account";
     homepage = "https://github.com/jckuester/awsweeper";
-    license = licenses.mpl20;
-    maintainers = [ ];
+    license = lib.licenses.mpl20;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "awsweeper";
   };
 }

@@ -55,9 +55,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Graphical disk usage analyzer";
     homepage = "https://github.com/shundhammer/qdirstat";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [ donovanglover ];
-    platforms = platforms.linux;
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ donovanglover ];
+    platforms = lib.platforms.linux;
     mainProgram = "qdirstat";
   };
 }

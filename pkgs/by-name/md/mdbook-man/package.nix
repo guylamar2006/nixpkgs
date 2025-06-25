@@ -18,11 +18,11 @@ rustPlatform.buildRustPackage {
   useFetchCargoVendor = true;
   cargoHash = "sha256-+CD7+pYAoKRmkMZPpEru6lug9sBakrL0rLXs78e3tqk=";
 
-  meta = with lib; {
+  meta = {
     description = "Generate manual pages from mdBooks";
     mainProgram = "mdbook-man";
     homepage = "https://github.com/vv9k/mdbook-man";
-    license = licenses.mit;
-    maintainers = with maintainers; [ matthiasbeyer ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ matthiasbeyer ];
   };
 }

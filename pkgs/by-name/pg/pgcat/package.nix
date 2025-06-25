@@ -37,7 +37,7 @@ rustPlatform.buildRustPackage rec {
     changelog = "https://github.com/postgresml/pgcat/releases";
     license = with licenses; [ mit ];
     platforms = platforms.unix;
-    maintainers = with maintainers; [ cathalmullan ];
+    maintainers = with lib.maintainers; [ cathalmullan ];
     mainProgram = "pgcat";
   };
 }

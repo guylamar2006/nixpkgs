@@ -36,8 +36,8 @@ stdenv.mkDerivation {
     description = "Proof assistant for Nominal Computational Type Theory";
     mainProgram = "redprl";
     homepage = "http://www.redprl.org/";
-    license = licenses.mit;
-    maintainers = with maintainers; [ acowley ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ acowley ];
     platforms = platforms.unix;
   };
 }

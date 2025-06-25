@@ -84,9 +84,9 @@ stdenv.mkDerivation rec {
     description = "Elegant, simple, clean dock";
     mainProgram = "plank";
     homepage = "https://launchpad.net/plank";
-    license = licenses.gpl3Plus;
-    platforms = platforms.linux;
-    maintainers = with maintainers; [ davidak ];
-    teams = [ teams.pantheon ];
+    license = lib.licenses.gpl3Plus;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ davidak ];
+    teams = with lib.teams; [ pantheon ];
   };
 }

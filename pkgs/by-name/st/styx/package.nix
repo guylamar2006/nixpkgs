@@ -81,7 +81,7 @@ stdenv.mkDerivation rec {
     homepage = "https://styx-static.github.io/styx-site/";
     downloadPage = "https://github.com/styx-static/styx/";
     platforms = platforms.all;
-    license = licenses.mit;
+    license = lib.licenses.mit;
     mainProgram = "styx";
   };
 }

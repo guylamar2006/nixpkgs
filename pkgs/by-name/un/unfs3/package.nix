@@ -80,6 +80,6 @@ stdenv.mkDerivation rec {
 
     license = lib.licenses.bsd3;
     platforms = lib.platforms.unix;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

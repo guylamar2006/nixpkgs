@@ -48,7 +48,7 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://github.com/vinnymeller/twm";
     changelog = "https://github.com/vinnymeller/twm/releases/tag/v${version}";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.vinnymeller ];
+    maintainers = with lib.maintainers; [ vinnymeller ];
     mainProgram = "twm";
   };
 }

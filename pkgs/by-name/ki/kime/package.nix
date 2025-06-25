@@ -136,7 +136,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/Riey/kime";
     description = "Korean IME";
     license = lib.licenses.gpl3Plus;
-    maintainers = [ lib.maintainers.riey ];
+    maintainers = with lib.maintainers; [ riey ];
     platforms = lib.platforms.linux;
   };
 })

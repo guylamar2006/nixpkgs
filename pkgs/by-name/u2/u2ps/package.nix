@@ -27,7 +27,7 @@ stdenv.mkDerivation (finalAttrs: {
       with emphasis on Unicode support.
     '';
     mainProgram = "u2ps";
-    maintainers = [ maintainers.athas ];
+    maintainers = with lib.maintainers; [ athas ];
     platforms = platforms.unix;
   };
 })

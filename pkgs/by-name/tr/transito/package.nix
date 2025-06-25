@@ -67,7 +67,7 @@ buildGoModule rec {
     '';
     homepage = "https://git.sr.ht/~mil/transito";
     license = licenses.gpl3Plus;
-    maintainers = [ maintainers.McSinyx ];
+    maintainers = with lib.maintainers; [ McSinyx ];
     mainProgram = "transito";
     platforms = platforms.unix;
   };

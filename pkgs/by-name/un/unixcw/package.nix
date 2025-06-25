@@ -63,7 +63,7 @@ stdenv.mkDerivation (finalAttrs: {
       cw reports any errors in  embedded  commands
     '';
     homepage = "https://unixcw.sourceforge.net";
-    maintainers = [ lib.maintainers.mafo ];
+    maintainers = with lib.maintainers; [ mafo ];
     license = lib.licenses.gpl2Plus;
     platforms = lib.platforms.linux;
   };

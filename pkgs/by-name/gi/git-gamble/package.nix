@@ -62,7 +62,7 @@ rustPlatform.buildRustPackage {
     changelog = "https://gitlab.com/pinage404/git-gamble/-/blob/${src.rev}/CHANGELOG.md";
     license = lib.licenses.isc;
     sourceProvenance = [ lib.sourceTypes.fromSource ];
-    maintainers = [ lib.maintainers.pinage404 ];
+    maintainers = with lib.maintainers; [ pinage404 ];
     mainProgram = "git-gamble";
   };
 }

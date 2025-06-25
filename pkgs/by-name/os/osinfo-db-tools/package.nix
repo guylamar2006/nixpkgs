@@ -53,6 +53,6 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://gitlab.com/libosinfo/osinfo-db-tools/-/blob/v${finalAttrs.version}/NEWS";
     license = lib.licenses.lgpl2Plus;
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.bjornfor ];
+    maintainers = with lib.maintainers; [ bjornfor ];
   };
 })

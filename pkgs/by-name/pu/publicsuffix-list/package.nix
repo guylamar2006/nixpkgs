@@ -32,7 +32,7 @@ stdenvNoCC.mkDerivation {
     homepage = "https://publicsuffix.org/";
     description = "Cross-vendor public domain suffix database";
     platforms = platforms.all;
-    license = licenses.mpl20;
-    maintainers = [ maintainers.c0bw3b ];
+    license = lib.licenses.mpl20;
+    maintainers = with lib.maintainers; [ c0bw3b ];
   };
 }

@@ -41,7 +41,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Calendar clock with antialiased text";
     homepage = "https://www.dockapps.net/wmcalclock";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
   };
 })

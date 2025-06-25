@@ -22,8 +22,8 @@ buildNpmPackage rec {
   meta = with lib; {
     homepage = "https://github.com/ArchiveBox/readability-extractor";
     description = "Javascript wrapper around Mozilla Readability for ArchiveBox to call as a oneshot CLI to extract article text";
-    license = licenses.mit;
-    maintainers = with maintainers; [ viraptor ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ viraptor ];
     mainProgram = "readability-extractor";
   };
 }

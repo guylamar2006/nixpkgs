@@ -87,7 +87,7 @@ stdenv.mkDerivation (finalAttrs: {
       editors and other tools to locate the indexed items.
     '';
     license = licenses.gpl2Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
     mainProgram = "ctags";
     priority = 1; # over the emacs implementation

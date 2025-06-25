@@ -25,7 +25,7 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://www.indlinux.org/wiki/index.php/Downloads";
     description = "Indic Opentype Fonts collection";
     license = lib.licenses.gpl2Only;
-    maintainers = [ lib.maintainers.akssri ];
+    maintainers = with lib.maintainers; [ akssri ];
     platforms = lib.platforms.all;
   };
 }

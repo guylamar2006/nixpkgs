@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
       fullName = shortName;
       url = "https://github.com/eyJhb/sl/blob/master/LICENSE";
     };
-    maintainers = with maintainers; [ eyjhb ];
+    maintainers = with lib.maintainers; [ eyjhb ];
     platforms = platforms.unix;
     mainProgram = "sl";
   };

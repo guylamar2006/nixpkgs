@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
     homepage = "https://mhddfs.uvw.ru/";
     description = "Combines a several mount points into the single one";
     license = lib.licenses.gpl3;
-    maintainers = [ lib.maintainers.makefu ];
+    maintainers = with lib.maintainers; [ makefu ];
     mainProgram = "mhddfs";
   };
 }

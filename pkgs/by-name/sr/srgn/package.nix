@@ -28,7 +28,7 @@ rustPlatform.buildRustPackage rec {
 
   meta = with lib; {
     description = "Code surgeon for precise text and code transplantation";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with maintainers; [ magistau ];
     mainProgram = "srgn";
     homepage = "https://github.com/${src.owner}/${src.repo}/";

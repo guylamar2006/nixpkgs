@@ -33,7 +33,7 @@ buildGoModule rec {
     homepage = "https://github.com/aojea/nftrace";
     changelog = "https://github.com/aojea/nftrace/releases/tag/v${version}";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.jmbaur ];
+    maintainers = with lib.maintainers; [ jmbaur ];
     mainProgram = "nftrace";
   };
 }

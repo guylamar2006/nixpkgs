@@ -48,11 +48,11 @@ rustPlatform.buildRustPackage rec {
     description = "Userspace daemon written in Rust that implements an analogue of the Texas Instruments Smart Amp speaker protection model";
     mainProgram = "speakersafetyd";
     homepage = "https://github.com/AsahiLinux/speakersafetyd";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       flokli
       yuka
     ];
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.linux;
   };
 }

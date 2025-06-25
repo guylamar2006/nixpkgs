@@ -48,8 +48,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Use rofi to quickly open files";
     homepage = "https://github.com/marvinkreis/rofi-file-browser-extended";
-    license = licenses.mit;
-    maintainers = with maintainers; [
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [
       bew
       jluttine
     ];

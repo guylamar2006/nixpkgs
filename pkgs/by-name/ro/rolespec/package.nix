@@ -45,8 +45,8 @@ stdenv.mkDerivation {
       Travis-CI.
     '';
     downloadPage = "https://github.com/nickjj/rolespec";
-    license = licenses.gpl3;
-    maintainers = [ maintainers.dochang ];
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ dochang ];
     platforms = platforms.unix;
   };
 }

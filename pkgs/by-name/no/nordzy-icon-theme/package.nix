@@ -50,8 +50,8 @@ stdenvNoCC.mkDerivation rec {
   meta = with lib; {
     description = "Icon theme using the Nord color palette, based on WhiteSur and Numix icon themes";
     homepage = "https://github.com/alvatip/Nordzy-icon";
-    license = licenses.gpl3Only;
-    platforms = platforms.linux;
-    maintainers = with maintainers; [ alexnortung ];
+    license = lib.licenses.gpl3Only;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ alexnortung ];
   };
 }

@@ -38,11 +38,11 @@ buildGoModule rec {
     command = "madonctl version";
   };
 
-  meta = with lib; {
+  meta = {
     description = "CLI for the Mastodon social network API";
     homepage = "https://github.com/McKael/madonctl";
-    license = licenses.mit;
-    maintainers = [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "madonctl";
   };
 }

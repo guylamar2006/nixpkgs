@@ -45,8 +45,8 @@ stdenv.mkDerivation rec {
       Unlike dnsmasq's all-servers, smartdns returns the fastest access resolution.
     '';
     homepage = "https://github.com/pymumu/smartdns";
-    maintainers = [ maintainers.lexuge ];
-    license = licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ lexuge ];
+    license = lib.licenses.gpl3Plus;
     platforms = platforms.linux;
     mainProgram = "smartdns";
   };

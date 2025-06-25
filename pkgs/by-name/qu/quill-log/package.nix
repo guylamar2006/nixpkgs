@@ -24,7 +24,7 @@ stdenv.mkDerivation rec {
     downloadPage = "https://github.com/odygrd/quill";
     description = "Asynchronous Low Latency C++17 Logging Library";
     platforms = platforms.all;
-    license = licenses.mit;
-    maintainers = [ maintainers.odygrd ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ odygrd ];
   };
 }

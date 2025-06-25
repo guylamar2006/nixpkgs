@@ -69,8 +69,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Traffic generator powered by DPDK";
     homepage = "http://dpdk.org/";
-    license = licenses.bsdOriginal;
-    platforms = platforms.linux;
-    maintainers = [ maintainers.abuibrahim ];
+    license = lib.licenses.bsdOriginal;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ abuibrahim ];
   };
 }

@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
       format is PSF2.
     '';
     platforms = platforms.unix;
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [ kaction ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ kaction ];
   };
 }

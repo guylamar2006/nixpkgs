@@ -51,9 +51,9 @@ stdenvNoCC.mkDerivation rec {
       Japanese kana, vertical forms, and variant characters (itaiji); it
       supports Korean hangeul — both contemporary and archaic.
     '';
-    license = licenses.ofl;
+    license = lib.licenses.ofl;
     platforms = platforms.all;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       mathnerd314
       emily
       leana8959

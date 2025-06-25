@@ -29,6 +29,6 @@ buildGoModule rec {
     description = "Convert yaml to json";
     mainProgram = "yaml2json";
     license = with licenses; [ mit ];
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

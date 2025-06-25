@@ -27,8 +27,8 @@ stdenvNoCC.mkDerivation rec {
   meta = with lib; {
     description = "SN Pro Font Family";
     homepage = "https://github.com/supernotes/sn-pro";
-    license = licenses.ofl;
-    maintainers = with maintainers; [ ];
+    license = lib.licenses.ofl;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
   };
 }

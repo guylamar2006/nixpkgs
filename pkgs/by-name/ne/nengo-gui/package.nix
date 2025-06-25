@@ -24,7 +24,7 @@ python3Packages.buildPythonPackage rec {
   meta = with lib; {
     description = "Nengo interactive visualizer";
     homepage = "https://nengo.ai/";
-    license = licenses.unfreeRedistributable;
-    maintainers = with maintainers; [ arjix ];
+    license = lib.licenses.unfreeRedistributable;
+    maintainers = with lib.maintainers; [ arjix ];
   };
 }

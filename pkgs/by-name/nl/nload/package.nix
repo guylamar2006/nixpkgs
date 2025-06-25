@@ -57,7 +57,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.roland-riegel.de/nload/index.html";
     license = lib.licenses.gpl2;
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.devhell ];
+    maintainers = with lib.maintainers; [ devhell ];
     mainProgram = "nload";
   };
 }

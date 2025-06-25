@@ -27,6 +27,6 @@ buildEnv {
   paths = lib.optional gitwebTheme gitwebThemeSrc ++ [ "${git}/share/gitweb" ];
 
   meta = git.meta // {
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

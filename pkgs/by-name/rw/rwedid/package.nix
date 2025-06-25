@@ -46,8 +46,8 @@ rustPlatform.buildRustPackage rec {
       And you will have to load i2c-dev kernel module, for that add `boot.initrd.availableKernelModules = [ i2c-dev ] to your config.
     '';
     homepage = "https://codeberg.org/ral/rwedid";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.linux;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

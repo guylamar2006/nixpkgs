@@ -43,7 +43,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
 
   meta = {
     description = "Issue tracking and project management tool for developers";
-    maintainers = [ lib.maintainers.leona ];
+    maintainers = with lib.maintainers; [ leona ];
     teams = [ lib.teams.serokell ];
     sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     # https://www.jetbrains.com/youtrack/buy/license.html

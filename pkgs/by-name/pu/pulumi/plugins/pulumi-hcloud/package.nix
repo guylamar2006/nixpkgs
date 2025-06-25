@@ -19,7 +19,7 @@ mkPulumiPackage rec {
     description = "Hetzner Cloud Pulumi resource package, providing multi-language access to Hetzner Cloud";
     mainProgram = "pulumi-resource-hcloud";
     homepage = "https://github.com/pulumi/pulumi-hcloud";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ tie ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ tie ];
   };
 }

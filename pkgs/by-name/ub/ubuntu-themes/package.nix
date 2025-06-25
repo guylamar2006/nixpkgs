@@ -75,6 +75,6 @@ stdenv.mkDerivation rec {
       gpl3
     ];
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.romildo ];
+    maintainers = with lib.maintainers; [ romildo ];
   };
 }

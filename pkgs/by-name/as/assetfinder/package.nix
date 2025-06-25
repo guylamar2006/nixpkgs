@@ -21,11 +21,11 @@ buildGoModule rec {
 
   vendorHash = null;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/tomnomnom/assetfinder";
     description = "Find domains and subdomains related to a given domain";
     mainProgram = "assetfinder";
-    maintainers = with maintainers; [ shard7 ];
+    maintainers = with lib.maintainers; [ shard7 ];
     platforms = platforms.unix;
     sourceProvenance = with sourceTypes; [
       fromSource

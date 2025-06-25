@@ -36,6 +36,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.asl20;
     platforms = lib.platforms.linux ++ lib.platforms.darwin;
     mainProgram = "unshieldv3";
-    maintainers = [ lib.maintainers.jchw ];
+    maintainers = with lib.maintainers; [ jchw ];
   };
 })

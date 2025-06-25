@@ -21,8 +21,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Simplified perturbations models library";
     homepage = "https://github.com/dnwrnr/sgp4";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ alexwinter ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ alexwinter ];
     platforms = platforms.unix;
   };
 }

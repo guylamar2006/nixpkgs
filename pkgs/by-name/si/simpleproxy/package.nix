@@ -22,8 +22,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/vzaliva/simpleproxy";
     description = "Simple TCP proxy";
-    license = licenses.gpl2Plus;
-    maintainers = [ maintainers.montag451 ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ montag451 ];
     mainProgram = "simpleproxy";
   };
 }

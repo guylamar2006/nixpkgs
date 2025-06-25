@@ -69,8 +69,8 @@ stdenv.mkDerivation rec {
       create and manage DPAA2 containers and objects from Linux.
     '';
     homepage = "https://github.com/nxp-qoriq/restool";
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     platforms = platforms.linux;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

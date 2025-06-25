@@ -24,11 +24,11 @@ stdenv.mkDerivation rec {
   ];
   buildInputs = [ glib ];
 
-  meta = with lib; {
+  meta = {
     description = "C library for reading and writing Standard MIDI Files";
     homepage = "https://github.com/stump/libsmf";
-    license = licenses.bsd2;
-    maintainers = [ ];
+    license = lib.licenses.bsd2;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "smfsh";
     platforms = platforms.unix;
   };

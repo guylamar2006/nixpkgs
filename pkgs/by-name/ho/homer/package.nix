@@ -62,12 +62,12 @@ stdenvNoCC.mkDerivation rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Very simple static homepage for your server";
     homepage = "https://homer-demo.netlify.app/";
     changelog = "https://github.com/bastienwirtz/homer/releases";
-    license = licenses.asl20;
-    maintainers = with maintainers; [
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [
       stunkymonkey
       christoph-heiss
     ];

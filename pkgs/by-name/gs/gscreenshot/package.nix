@@ -90,6 +90,6 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://github.com/thenaterhood/gscreenshot";
     license = lib.licenses.gpl2Only;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.davisrichard437 ];
+    maintainers = with lib.maintainers; [ davisrichard437 ];
   };
 }

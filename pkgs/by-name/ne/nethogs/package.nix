@@ -43,10 +43,10 @@ stdenv.mkDerivation rec {
       identify programs that have gone wild and are suddenly taking up your
       bandwidth.
     '';
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     homepage = "https://github.com/raboof/nethogs#readme";
-    platforms = platforms.linux;
-    maintainers = [ maintainers.rycee ];
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ rycee ];
     mainProgram = "nethogs";
   };
 }

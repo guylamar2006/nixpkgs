@@ -58,8 +58,8 @@ stdenv.mkDerivation rec {
     #homepage = "http://gna.org/projects/soundmodem"; # official, but "Connection refused"
     homepage = "http://soundmodem.vk4msl.id.au/";
     downloadPage = "https://archive.org/download/${pname}-${version}/${pname}-${version}.tar.gz";
-    license = licenses.gpl2Only;
-    maintainers = with maintainers; [ ymarkus ];
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [ ymarkus ];
     platforms = platforms.all;
   };
 }

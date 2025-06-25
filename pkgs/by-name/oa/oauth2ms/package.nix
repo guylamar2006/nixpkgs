@@ -37,7 +37,7 @@ stdenv.mkDerivation {
     description = "XOAUTH2 compatible Office365 token fetcher";
     mainProgram = "oauth2ms";
     platforms = platforms.all;
-    license = licenses.asl20;
-    maintainers = with maintainers; [ wentasah ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ wentasah ];
   };
 }

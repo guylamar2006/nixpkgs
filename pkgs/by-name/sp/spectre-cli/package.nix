@@ -66,8 +66,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Stateless cryptographic identity algorithm";
     homepage = "https://spectre.app";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ emmabastas ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ emmabastas ];
     mainProgram = "spectre";
     platforms = platforms.all;
   };

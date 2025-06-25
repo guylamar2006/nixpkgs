@@ -81,8 +81,8 @@ stdenv.mkDerivation rec {
       text-based databases called recfiles. The data is stored as a sequence of
       records, each record containing an arbitrary number of named fields.
     '';
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
   };
 }

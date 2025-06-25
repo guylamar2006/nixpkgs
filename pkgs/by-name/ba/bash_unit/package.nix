@@ -44,11 +44,11 @@ stdenv.mkDerivation rec {
     cp bash_unit $out/bin/
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Bash unit testing enterprise edition framework for professionals";
-    maintainers = with maintainers; [ pamplemousse ];
+    maintainers = with lib.maintainers; [ pamplemousse ];
     platforms = platforms.all;
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     mainProgram = "bash_unit";
   };
 }

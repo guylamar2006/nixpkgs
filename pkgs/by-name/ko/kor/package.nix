@@ -32,7 +32,7 @@ buildGoModule rec {
     homepage = "https://github.com/yonahd/kor";
     changelog = "https://github.com/yonahd/kor/releases/tag/v${version}";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.ivankovnatsky ];
+    maintainers = with lib.maintainers; [ ivankovnatsky ];
     mainProgram = "kor";
   };
 }

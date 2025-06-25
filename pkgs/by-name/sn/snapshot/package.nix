@@ -87,8 +87,8 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     homepage = "https://gitlab.gnome.org/GNOME/snapshot";
     description = "Take pictures and videos on your computer, tablet, or phone";
-    teams = [ teams.gnome ];
-    license = licenses.gpl3Plus;
+    teams = with lib.teams; [ gnome ];
+    license = lib.licenses.gpl3Plus;
     platforms = platforms.unix;
     mainProgram = "snapshot";
   };

@@ -62,9 +62,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Real-time noise suppression plugin for voice based on Xiph's RNNoise";
     homepage = "https://github.com/werman/noise-suppression-for-voice";
-    license = licenses.gpl3;
+    license = lib.licenses.gpl3;
     platforms = platforms.all;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       panaeon
       henrikolsson
       sciencentistguy

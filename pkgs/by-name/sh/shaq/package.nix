@@ -58,8 +58,8 @@ python3.pkgs.buildPythonApplication rec {
     description = "CLI client for Shazam";
     homepage = "https://github.com/woodruffw/shaq";
     changelog = "https://github.com/woodruffw/shaq/releases/tag/${src.rev}";
-    license = licenses.mit;
-    maintainers = with maintainers; [
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [
       figsoda
       mig4ng
     ];

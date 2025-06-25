@@ -33,7 +33,7 @@ rustPlatform.buildRustPackage {
     "cargo-guppy"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Command-line frontend for guppy";
     mainProgram = "cargo-guppy";
     homepage = "https://github.com/guppy-rs/guppy/tree/main/cargo-guppy";
@@ -41,6 +41,6 @@ rustPlatform.buildRustPackage {
       mit # or
       asl20
     ];
-    maintainers = with maintainers; [ figsoda ];
+    maintainers = with lib.maintainers; [ figsoda ];
   };
 }

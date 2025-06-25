@@ -64,7 +64,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://icecast.org/ezstream/";
     license = lib.licenses.gpl2Only;
-    maintainers = [ lib.maintainers.barrucadu ];
+    maintainers = with lib.maintainers; [ barrucadu ];
     platforms = lib.platforms.all;
   };
 })

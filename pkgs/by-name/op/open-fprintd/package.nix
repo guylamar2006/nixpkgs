@@ -54,7 +54,7 @@ python3Packages.buildPythonPackage rec {
   meta = with lib; {
     description = "Fprintd replacement which allows you to have your own backend as a standalone service";
     homepage = "https://github.com/uunicorn/open-fprintd";
-    license = licenses.gpl2Only;
-    platforms = platforms.linux;
+    license = lib.licenses.gpl2Only;
+    platforms = lib.platforms.linux;
   };
 }

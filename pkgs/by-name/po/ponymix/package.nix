@@ -30,8 +30,8 @@ stdenv.mkDerivation rec {
     description = "CLI PulseAudio Volume Control";
     homepage = "https://github.com/falconindy/ponymix";
     mainProgram = "ponymix";
-    license = licenses.mit;
-    platforms = platforms.linux;
-    maintainers = with maintainers; [ ];
+    license = lib.licenses.mit;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ ];
   };
 }

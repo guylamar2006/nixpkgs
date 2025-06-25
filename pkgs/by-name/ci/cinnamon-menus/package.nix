@@ -33,14 +33,14 @@ stdenv.mkDerivation rec {
     gobject-introspection
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/linuxmint/cinnamon-menus";
     description = "Menu system for the Cinnamon project";
     license = [
       licenses.gpl2
       licenses.lgpl2
     ];
-    platforms = platforms.linux;
-    teams = [ teams.cinnamon ];
+    platforms = lib.platforms.linux;
+    teams = with lib.teams; [ cinnamon ];
   };
 }

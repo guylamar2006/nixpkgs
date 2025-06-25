@@ -32,8 +32,8 @@ stdenv.mkDerivation {
     description = "Securely control a remote docker daemon CLI using ssh forwarding, no SSL setup needed";
     mainProgram = "rdocker";
     homepage = "https://github.com/dvddarias/rdocker";
-    maintainers = [ lib.maintainers.pneumaticat ];
-    license = licenses.mit;
+    maintainers = with lib.maintainers; [ pneumaticat ];
+    license = lib.licenses.mit;
     platforms = platforms.unix;
   };
 }

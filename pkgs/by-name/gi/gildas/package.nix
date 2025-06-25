@@ -102,9 +102,9 @@ stdenv.mkDerivation rec {
       plotting, widgets).'';
     homepage = "http://www.iram.fr/IRAMFR/GILDAS/gildas.html";
     license = lib.licenses.free;
-    maintainers = [
-      lib.maintainers.bzizou
-      lib.maintainers.smaret
+    maintainers = with lib.maintainers; [
+      bzizou
+      smaret
     ];
     platforms = lib.platforms.all;
   };

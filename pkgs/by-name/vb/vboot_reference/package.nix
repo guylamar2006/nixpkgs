@@ -70,6 +70,6 @@ stdenv.mkDerivation {
     description = "Chrome OS partitioning and kernel signing tools";
     license = licenses.bsd3;
     platforms = platforms.linux;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

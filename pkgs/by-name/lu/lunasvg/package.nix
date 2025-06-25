@@ -39,7 +39,7 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/sammycage/lunasvg/releases/tag/v${finalAttrs.version}";
     description = "SVG rendering and manipulation library in C++";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.eymeric ];
+    maintainers = with lib.maintainers; [ eymeric ];
     platforms = lib.platforms.all;
   };
 })

@@ -53,6 +53,6 @@ makeImpureTest {
   '';
 
   meta = with lib.maintainers; {
-    maintainers = [ Flakebi ];
+    maintainers = with lib.maintainers; [ Flakebi ];
   };
 }

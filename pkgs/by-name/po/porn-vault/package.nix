@@ -31,7 +31,7 @@ let
       description = "Rust In-Memory K-V Store with Redis-Style File Persistence and Secondary Indices";
       homepage = "https://gitlab.com/porn-vault/izzy";
       license = lib.licenses.gpl3Plus;
-      maintainers = [ lib.maintainers.luNeder ];
+      maintainers = with lib.maintainers; [ luNeder ];
       mainProgram = "izzy";
     };
   };
@@ -104,7 +104,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     description = "Porn-Vault is a self hosted organizer for adult videos and imagery.";
     homepage = "https://gitlab.com/porn-vault/porn-vault";
     license = lib.licenses.gpl3Plus;
-    maintainers = [ lib.maintainers.luNeder ];
+    maintainers = with lib.maintainers; [ luNeder ];
     inherit (nodejs.meta) platforms;
     mainProgram = "porn-vault";
   };

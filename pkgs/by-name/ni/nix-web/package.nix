@@ -48,9 +48,9 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Web interface for the Nix store";
     homepage = "https://codeberg.org/gorgon/gorgon/src/branch/main/nix-web";
-    license = licenses.eupl12;
+    license = lib.licenses.eupl12;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ embr ];
+    maintainers = with lib.maintainers; [ embr ];
     mainProgram = "nix-web";
   };
 }

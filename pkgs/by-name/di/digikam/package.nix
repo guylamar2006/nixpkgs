@@ -213,7 +213,7 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "${finalAttrs.src.meta.homepage}-/blob/master/project/NEWS.${finalAttrs.version}";
     sourceProvenance = [ lib.sourceTypes.fromSource ];
     license = lib.licenses.gpl2Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
     mainProgram = "digikam";
   };

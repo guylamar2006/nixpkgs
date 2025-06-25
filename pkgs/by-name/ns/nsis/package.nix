@@ -67,9 +67,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Free scriptable win32 installer/uninstaller system that doesn't suck and isn't huge";
     homepage = "https://nsis.sourceforge.io/";
-    license = licenses.zlib;
+    license = lib.licenses.zlib;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ pombeirp ];
+    maintainers = with lib.maintainers; [ pombeirp ];
     mainProgram = "makensis";
     broken = stdenv.hostPlatform.isDarwin;
   };

@@ -90,6 +90,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/ErikReider/SwaySettings";
     license = lib.licenses.gpl3Plus;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.aacebedo ];
+    maintainers = with lib.maintainers; [ aacebedo ];
   };
 }

@@ -35,7 +35,7 @@ buildGoModule rec {
     homepage = "https://github.com/nalgeon/sqlpkg-cli";
     changelog = "https://github.com/nalgeon/sqlpkg-cli/releases/tag/${version}";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.pbsds ];
+    maintainers = with lib.maintainers; [ pbsds ];
     mainProgram = "sqlpkg";
     platforms = lib.platforms.unix;
     badPlatforms = [

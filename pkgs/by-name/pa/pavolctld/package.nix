@@ -24,7 +24,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://tjkeller.xyz/projects/pavolctld";
     platforms = lib.platforms.linux;
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.tjkeller ];
+    maintainers = with lib.maintainers; [ tjkeller ];
     mainProgram = "pavolctld";
   };
 })

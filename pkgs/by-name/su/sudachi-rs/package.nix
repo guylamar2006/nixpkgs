@@ -60,7 +60,7 @@ rustPlatform.buildRustPackage rec {
     description = "Japanese morphological analyzer";
     homepage = "https://github.com/WorksApplications/sudachi.rs";
     changelog = "https://github.com/WorksApplications/sudachi.rs/blob/${src.rev}/CHANGELOG.md";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     maintainers = with maintainers; [ natsukium ];
     mainProgram = "sudachi";
   };

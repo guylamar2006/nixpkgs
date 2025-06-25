@@ -124,7 +124,7 @@ gccStdenv.mkDerivation (finalAttrs: {
       a simple session manager and a system tray.
     '';
     license = lib.licenses.lgpl2Only;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
   };
 })

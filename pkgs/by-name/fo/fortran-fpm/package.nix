@@ -54,7 +54,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = {
     description = "Fortran Package Manager (fpm)";
     homepage = "https://fpm.fortran-lang.org";
-    maintainers = [ lib.maintainers.proofconstruction ];
+    maintainers = with lib.maintainers; [ proofconstruction ];
     license = lib.licenses.mit;
     platforms = lib.platforms.all;
     mainProgram = "fortran-fpm";

@@ -22,11 +22,11 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description = "Shared library for libmediainfo and mediainfo";
     homepage = "https://mediaarea.net/";
-    license = licenses.bsd2;
+    license = lib.licenses.bsd2;
     platforms = platforms.unix;
-    maintainers = [ maintainers.devhell ];
+    maintainers = with lib.maintainers; [ devhell ];
   };
 }

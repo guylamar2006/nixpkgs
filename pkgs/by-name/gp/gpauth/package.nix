@@ -32,7 +32,7 @@ rustPlatform.buildRustPackage rec {
     webkitgtk_4_1
   ];
 
-  meta = with lib; {
+  meta = {
     changelog = "https://github.com/${src.owner}/${src.repo}/blob/${src.rev}/changelog.md";
     description = "CLI for GlobalProtect VPN, based on OpenConnect, supports the SSO authentication method";
     longDescription = ''
@@ -44,7 +44,7 @@ rustPlatform.buildRustPackage rec {
     '';
     homepage = "https://github.com/${src.owner}/${src.repo}";
     license = with licenses; [ gpl3Only ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       binary-eater
       m1dugh
     ];

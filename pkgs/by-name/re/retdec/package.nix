@@ -230,8 +230,8 @@ stdenv.mkDerivation (self: {
   meta = with lib; {
     description = "Retargetable machine-code decompiler based on LLVM";
     homepage = "https://retdec.com";
-    license = licenses.mit;
-    maintainers = with maintainers; [ katrinafyi ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ katrinafyi ];
     platforms = [ "x86_64-linux" ];
   };
 })

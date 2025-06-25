@@ -59,8 +59,8 @@ buildGoModule {
   meta = with lib; {
     homepage = "https://github.com/uber/pam-ussh";
     description = "PAM module to authenticate using SSH certificates";
-    license = licenses.mit;
-    platforms = platforms.linux;
-    maintainers = with maintainers; [ lukegb ];
+    license = lib.licenses.mit;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ lukegb ];
   };
 }

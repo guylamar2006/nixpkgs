@@ -17,11 +17,11 @@ buildGoModule rec {
 
   vendorHash = "sha256-Iiifu0dYgeqWUgWRjJ3uaBL6SyYl2Ehqzk+1COO/XXI=";
 
-  meta = with lib; {
+  meta = {
     description = "generic gRPC command line client";
     mainProgram = "grpc-client-cli";
-    maintainers = with maintainers; [ Philipp-M ];
+    maintainers = with lib.maintainers; [ Philipp-M ];
     homepage = "https://github.com/vadimi/grpc-client-cli";
-    license = licenses.mit;
+    license = lib.licenses.mit;
   };
 }

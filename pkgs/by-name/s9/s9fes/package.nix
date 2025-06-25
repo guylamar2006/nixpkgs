@@ -44,8 +44,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Scheme 9 From Empty Space, an interpreter for R4RS Scheme";
     homepage = "http://www.t3x.org/s9fes/index.html";
-    license = licenses.publicDomain;
-    maintainers = with maintainers; [ siraben ];
+    license = lib.licenses.publicDomain;
+    maintainers = with lib.maintainers; [ siraben ];
     platforms = platforms.unix;
   };
 }

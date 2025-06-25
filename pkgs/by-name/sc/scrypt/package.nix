@@ -44,8 +44,8 @@ stdenv.mkDerivation rec {
     description = "Encryption utility";
     mainProgram = "scrypt";
     homepage = "https://www.tarsnap.com/scrypt.html";
-    license = licenses.bsd2;
+    license = lib.licenses.bsd2;
     platforms = platforms.all;
-    maintainers = with maintainers; [ thoughtpolice ];
+    maintainers = with lib.maintainers; [ thoughtpolice ];
   };
 }

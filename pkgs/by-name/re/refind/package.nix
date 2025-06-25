@@ -173,13 +173,13 @@ stdenv.mkDerivation rec {
       Linux kernels that provide EFI stub support.
     '';
     homepage = "http://refind.sourceforge.net/";
-    maintainers = with maintainers; [ johnrtitor ];
+    maintainers = with lib.maintainers; [ johnrtitor ];
     platforms = [
       "i686-linux"
       "x86_64-linux"
       "aarch64-linux"
     ];
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
   };
 
 }

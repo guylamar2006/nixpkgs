@@ -35,8 +35,8 @@ buildGoModule rec {
   meta = with lib; {
     description = "Tool for effortless deployment and configuration management";
     homepage = "https://spot.umputun.dev/";
-    maintainers = with maintainers; [ sikmir ];
-    license = licenses.mit;
+    maintainers = with lib.maintainers; [ sikmir ];
+    license = lib.licenses.mit;
     mainProgram = "spot";
   };
 }

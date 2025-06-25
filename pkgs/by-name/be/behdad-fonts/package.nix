@@ -23,11 +23,11 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/font-store/BehdadFont";
     description = "Persian/Arabic Open Source Font";
-    license = licenses.ofl;
+    license = lib.licenses.ofl;
     platforms = platforms.all;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

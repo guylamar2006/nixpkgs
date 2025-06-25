@@ -23,7 +23,7 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://github.com/frectonz/mek-ut-er-ya";
     mainProgram = "mekuteriya";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.frectonz ];
+    maintainers = with lib.maintainers; [ frectonz ];
     platforms = lib.platforms.all;
   };
 }

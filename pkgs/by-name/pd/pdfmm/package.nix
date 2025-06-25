@@ -52,9 +52,9 @@ resholve.mkDerivation {
   meta = with lib; {
     description = "Graphical assistant to reduce the size of a PDF file";
     homepage = "https://github.com/jpfleury/pdfmm";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ urandom ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ urandom ];
     mainProgram = "pdfmm";
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
   };
 }

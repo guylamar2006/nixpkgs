@@ -91,9 +91,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Desktop client for the Matrix protocol";
     homepage = "https://github.com/Nheko-Reborn/nheko";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     mainProgram = "nheko";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       ekleog
       fpletz
       rnhmjoj

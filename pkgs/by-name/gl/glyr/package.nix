@@ -30,11 +30,11 @@ stdenv.mkDerivation rec {
     curl
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Music related metadata searchengine";
     homepage = "https://github.com/sahib/glyr";
-    license = licenses.lgpl3;
-    maintainers = [ maintainers.sternenseemann ];
+    license = lib.licenses.lgpl3;
+    maintainers = with lib.maintainers; [ sternenseemann ];
     mainProgram = "glyrc";
     platforms = platforms.unix;
   };

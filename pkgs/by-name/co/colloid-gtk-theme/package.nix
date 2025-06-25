@@ -98,11 +98,11 @@ lib.checkListOfEnum "colloid-gtk-theme: theme variants"
       runHook postInstall
     '';
 
-    meta = with lib; {
+    meta = {
       description = "Modern and clean Gtk theme";
       homepage = "https://github.com/vinceliuice/Colloid-gtk-theme";
-      license = licenses.gpl3Only;
+      license = lib.licenses.gpl3Only;
       platforms = platforms.unix;
-      maintainers = [ maintainers.romildo ];
+      maintainers = with lib.maintainers; [ romildo ];
     };
   }

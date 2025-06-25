@@ -44,8 +44,8 @@ stdenv.mkDerivation {
       Root Bar is a bar for wlroots based wayland compositors such as sway and
       was designed to address the lack of good bars for wayland.
     '';
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
     broken = stdenv.hostPlatform.isDarwin;
   };

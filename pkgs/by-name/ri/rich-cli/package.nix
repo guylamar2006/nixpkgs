@@ -67,7 +67,7 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://github.com/Textualize/rich-cli";
     changelog = "https://github.com/Textualize/rich-cli/releases/tag/v${version}";
     license = lib.licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "rich";
   };
 }

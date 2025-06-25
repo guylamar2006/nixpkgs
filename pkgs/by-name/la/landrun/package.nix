@@ -104,7 +104,7 @@ buildGoModule (finalAttrs: {
     homepage = "https://github.com/Zouuup/landrun";
     changelog = "https://github.com/Zouuup/landrun/releases/tag/{finalAttrs.src.tag}";
     license = lib.licenses.gpl2Only;
-    maintainers = [ lib.maintainers.fliegendewurst ];
+    maintainers = with lib.maintainers; [ fliegendewurst ];
     platforms = lib.platforms.linux;
   };
 })

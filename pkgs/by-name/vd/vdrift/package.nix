@@ -75,7 +75,7 @@ let
       mainProgram = "vdrift";
       homepage = "https://vdrift.net/";
       license = lib.licenses.gpl2Plus;
-      maintainers = [ ];
+      maintainers = with lib.maintainers; [ ];
       platforms = lib.platforms.linux;
     };
   };

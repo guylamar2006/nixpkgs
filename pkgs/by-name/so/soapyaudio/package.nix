@@ -49,8 +49,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/pothosware/SoapyAudio";
     description = "SoapySDR plugin for amateur radio and audio devices";
-    license = licenses.mit;
-    maintainers = with maintainers; [ numinit ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ numinit ];
     platforms = platforms.unix;
   };
 }

@@ -32,6 +32,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/dftlibs/xcfun";
     license = licenses.mpl20;
     platforms = platforms.unix;
-    maintainers = [ maintainers.sheepforce ];
+    maintainers = with lib.maintainers; [ sheepforce ];
   };
 }

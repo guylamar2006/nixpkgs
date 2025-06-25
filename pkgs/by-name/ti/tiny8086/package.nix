@@ -62,7 +62,7 @@ stdenv.mkDerivation {
       "unobfuscated" version :)
     '';
     license = licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.linux;
     mainProgram = "8086tiny";
   };

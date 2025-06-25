@@ -28,7 +28,7 @@ buildGoModule rec {
   # Test data is missing in the repo
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Contextual content discovery tool";
     mainProgram = "kiterunner";
     longDescription = ''
@@ -38,6 +38,6 @@ buildGoModule rec {
     '';
     homepage = "https://github.com/assetnote/kiterunner";
     license = with licenses; [ agpl3Only ];
-    maintainers = with maintainers; [ fab ];
+    maintainers = with lib.maintainers; [ fab ];
   };
 }

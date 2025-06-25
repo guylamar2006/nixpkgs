@@ -43,7 +43,7 @@ appimageTools.wrapType2 {
   '';
   meta = with lib; {
     description = "Desktop client for the Status Network";
-    license = licenses.mpl20;
+    license = lib.licenses.mpl20;
     maintainers = with maintainers; [ a-kenji ];
     platforms = platforms.linux;
   };

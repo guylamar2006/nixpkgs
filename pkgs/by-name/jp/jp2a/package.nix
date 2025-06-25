@@ -48,7 +48,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://csl.name/jp2a/";
     description = "Small utility that converts JPG images to ASCII";
     license = lib.licenses.gpl2Only;
-    maintainers = [ lib.maintainers.FlorianFranzen ];
+    maintainers = with lib.maintainers; [ FlorianFranzen ];
     platforms = lib.platforms.unix;
     mainProgram = "jp2a";
   };

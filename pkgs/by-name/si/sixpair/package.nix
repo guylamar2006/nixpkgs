@@ -38,7 +38,7 @@ stdenv.mkDerivation {
     '';
     homepage = "http://www.pabr.org/sixlinux/";
     license = lib.licenses.gpl2Only;
-    maintainers = [ lib.maintainers.tomsmeets ];
+    maintainers = with lib.maintainers; [ tomsmeets ];
     platforms = lib.platforms.linux;
     mainProgram = "sixpair";
   };

@@ -32,8 +32,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Addicting game based on The Settlers of Catan";
     homepage = "https://pio.sourceforge.net/"; # https does not work
-    license = licenses.gpl2Plus;
-    maintainers = [ ];
-    platforms = platforms.linux;
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ ];
+    platforms = lib.platforms.linux;
   };
 }

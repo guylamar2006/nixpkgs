@@ -26,7 +26,7 @@ rustPlatform.buildRustPackage {
     changelog = "https://github.com/9999years/git-upstream/releases/tag/v${version}";
     description = "Shortcut for `git push --set-upstream`";
     license = [ lib.licenses.mit ];
-    maintainers = [ lib.maintainers._9999years ];
+    maintainers = with lib.maintainers; [ _9999years ];
     mainProgram = "git-upstream";
   };
 

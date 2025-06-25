@@ -258,10 +258,10 @@ stdenv.mkDerivation rec {
     homepage = "https://root.cern/";
     description = "Data analysis framework";
     platforms = platforms.unix;
-    maintainers = [
+    maintainers = with lib.maintainers; [
       maintainers.guitargeek
       maintainers.veprbl
     ];
-    license = licenses.lgpl21;
+    license = lib.licenses.lgpl21;
   };
 }

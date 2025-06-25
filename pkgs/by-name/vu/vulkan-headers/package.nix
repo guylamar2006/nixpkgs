@@ -34,6 +34,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.lunarg.com";
     platforms = platforms.unix ++ platforms.windows;
     license = licenses.asl20;
-    maintainers = [ maintainers.ralith ];
+    maintainers = with lib.maintainers; [ ralith ];
   };
 }

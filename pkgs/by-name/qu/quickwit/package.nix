@@ -142,8 +142,8 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Sub-second search & analytics engine on cloud storage";
     homepage = "https://quickwit.io/";
-    license = licenses.agpl3Only;
-    maintainers = with maintainers; [ happysalada ];
+    license = lib.licenses.agpl3Only;
+    maintainers = with lib.maintainers; [ happysalada ];
     platforms = platforms.all;
   };
 }

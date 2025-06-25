@@ -50,11 +50,11 @@ stdenv.mkDerivation rec {
       libiconv
     ];
 
-  meta = with lib; {
+  meta = {
     description = "Portable ASS/SSA subtitle renderer";
     homepage = "https://github.com/libass/libass";
-    license = licenses.isc;
+    license = lib.licenses.isc;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ codyopel ];
+    maintainers = with lib.maintainers; [ codyopel ];
   };
 }

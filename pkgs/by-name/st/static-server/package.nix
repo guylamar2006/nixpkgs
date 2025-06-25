@@ -52,7 +52,7 @@ buildGoModule rec {
   meta = with lib; {
     description = "Simple, zero-configuration HTTP server CLI for serving static files";
     homepage = "https://github.com/eliben/static-server";
-    license = licenses.unlicense;
+    license = lib.licenses.unlicense;
     maintainers = with maintainers; [ figsoda ];
     mainProgram = "static-server";
   };

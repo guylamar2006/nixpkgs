@@ -21,7 +21,7 @@ buildGoModule rec {
     description = "Chat over SSH";
     mainProgram = "ssh-chat";
     homepage = "https://github.com/shazow/ssh-chat";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with maintainers; [ ];
   };
 }

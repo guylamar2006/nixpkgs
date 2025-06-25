@@ -65,8 +65,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Open Data Plane optimized for DPDK";
     homepage = "https://www.opendataplane.org";
-    license = licenses.bsd3;
-    platforms = platforms.linux;
-    maintainers = [ maintainers.abuibrahim ];
+    license = lib.licenses.bsd3;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ abuibrahim ];
   };
 }

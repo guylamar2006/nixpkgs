@@ -28,7 +28,7 @@ stdenv.mkDerivation {
     description = "Tiny color picker for X11";
     homepage = "https://github.com/blblapco/xmcp";
     license = licenses.gpl3Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.linux;
     mainProgram = "xmcp";
   };

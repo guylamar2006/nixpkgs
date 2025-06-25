@@ -40,8 +40,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Embed code, results of computations, and plots from Sage into LaTeX documents";
     homepage = "https://github.com/sagemath/sagetex";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [ alexnortung ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ alexnortung ];
     platforms = platforms.all;
   };
 }

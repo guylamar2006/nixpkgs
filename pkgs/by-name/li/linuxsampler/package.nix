@@ -66,7 +66,7 @@ stdenv.mkDerivation (finalAttrs: {
       FAQ, please contact us.
     '';
     license = lib.licenses.unfree;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
   };
 })

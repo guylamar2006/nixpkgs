@@ -62,6 +62,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://www.ravenbrook.com/project/mps";
     license = lib.licenses.sleepycat;
     platforms = lib.platforms.linux ++ lib.platforms.darwin;
-    maintainers = [ lib.maintainers.thoughtpolice ];
+    maintainers = with lib.maintainers; [ thoughtpolice ];
   };
 })

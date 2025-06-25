@@ -67,9 +67,9 @@ buildGoModule rec {
   meta = with lib; {
     homepage = "https://github.com/opencontainers/runc";
     description = "CLI tool for spawning and running containers according to the OCI specification";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ offline ];
-    teams = [ teams.podman ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ offline ];
+    teams = with lib.teams; [ podman ];
     platforms = platforms.linux;
     mainProgram = "runc";
   };

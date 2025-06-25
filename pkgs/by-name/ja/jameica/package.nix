@@ -113,7 +113,7 @@ stdenv.mkDerivation rec {
       "''${gappsWrapperArgs[@]}"
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.willuhn.de/products/jameica/";
     description = "Free Runtime Environment for Java Applications";
     longDescription = ''
@@ -124,9 +124,9 @@ stdenv.mkDerivation rec {
       fromSource
       binaryBytecode # source bundles dependencies as jars
     ];
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.unix;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       flokli
       r3dl3g
     ];

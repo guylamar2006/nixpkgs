@@ -59,6 +59,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/lenemter/wingpanel-indicator-namarupa";
     license = licenses.lgpl21Plus;
     platforms = platforms.linux;
-    teams = [ teams.pantheon ];
+    teams = with lib.teams; [ pantheon ];
   };
 }

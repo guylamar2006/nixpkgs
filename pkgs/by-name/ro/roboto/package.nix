@@ -33,6 +33,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     '';
     license = lib.licenses.ofl;
     platforms = lib.platforms.all;
-    maintainers = [ lib.maintainers.romildo ];
+    maintainers = with lib.maintainers; [ romildo ];
   };
 })

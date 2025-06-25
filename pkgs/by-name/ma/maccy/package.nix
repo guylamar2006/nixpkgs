@@ -27,12 +27,12 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Simple clipboard manager for macOS";
     homepage = "https://maccy.app";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       emilytrau
       baongoc124
     ];

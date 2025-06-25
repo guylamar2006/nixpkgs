@@ -29,9 +29,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/jceb/srandrd";
     description = "Simple randr daemon";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.linux;
-    maintainers = [ maintainers.utdemir ];
+    maintainers = with lib.maintainers; [ utdemir ];
     mainProgram = "srandrd";
   };
 

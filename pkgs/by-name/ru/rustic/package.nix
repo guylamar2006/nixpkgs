@@ -41,9 +41,9 @@ rustPlatform.buildRustPackage rec {
       lib.licenses.mit
       lib.licenses.asl20
     ];
-    maintainers = [
-      lib.maintainers.nobbz
-      lib.maintainers.pmw
+    maintainers = with lib.maintainers; [
+      nobbz
+      pmw
     ];
   };
 }

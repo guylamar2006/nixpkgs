@@ -101,6 +101,6 @@ stdenv.mkDerivation rec {
     description = "Cross-desktop libraries and common resources";
     license = licenses.lgpl3;
     platforms = platforms.linux;
-    teams = [ teams.cinnamon ];
+    teams = with lib.teams; [ cinnamon ];
   };
 }

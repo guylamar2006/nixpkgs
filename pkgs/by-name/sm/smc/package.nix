@@ -52,9 +52,9 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://smc.sourceforge.net/";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
-    license = licenses.mpl11;
+    license = lib.licenses.mpl11;
     platforms = platforms.linux;
-    maintainers = [ maintainers.bjornfor ];
+    maintainers = with lib.maintainers; [ bjornfor ];
     mainProgram = "smc";
   };
 }

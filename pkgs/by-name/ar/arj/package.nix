@@ -61,7 +61,7 @@ gccStdenv.mkDerivation (finalAttrs: {
       provided by ARJ Software, Inc.
     '';
     license = lib.licenses.gpl2Plus;
-    maintainers = [ lib.maintainers.sander ];
+    maintainers = with lib.maintainers; [ sander ];
     platforms = lib.platforms.unix;
   };
 })

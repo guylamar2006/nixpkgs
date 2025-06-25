@@ -36,9 +36,9 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Lightweight application launcher for X11";
     homepage = "https://github.com/PonasKovas/rlaunch";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.linux;
-    maintainers = with maintainers; [ danc86 ];
+    maintainers = with lib.maintainers; [ danc86 ];
     mainProgram = "rlaunch";
   };
 }

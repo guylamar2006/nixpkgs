@@ -27,15 +27,15 @@ stdenv.mkDerivation rec {
     mkdir -p $out/man/; cp doc/cntlm.1 $out/man/;
   '';
 
-  meta = with lib; {
+  meta = {
     description = "NTLM/NTLMv2 authenticating HTTP proxy";
     homepage = "https://cntlm.sourceforge.net/";
-    license = licenses.gpl2Only;
-    maintainers = [
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [
       maintainers.qknight
       maintainers.carlosdagos
     ];
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
     mainProgram = "cntlm";
   };
 }

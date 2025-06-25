@@ -80,7 +80,7 @@ stdenv.mkDerivation (finalAttrs: {
     license = {
       url = "https://github.com/blakemcbride/TECOC/blob/${finalAttrs.src.rev}/doc/readme-1st.txt";
     };
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
   };
 })

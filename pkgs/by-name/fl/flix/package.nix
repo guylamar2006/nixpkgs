@@ -30,13 +30,13 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Flix Programming Language";
     mainProgram = "flix";
     homepage = "https://github.com/flix/flix";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
-    license = licenses.asl20;
-    maintainers = with maintainers; [ athas ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ athas ];
     inherit (jre.meta) platforms;
   };
 }

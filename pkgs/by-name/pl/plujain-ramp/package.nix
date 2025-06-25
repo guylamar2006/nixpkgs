@@ -25,8 +25,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Mono rhythmic tremolo LV2 Audio Plugin";
     homepage = "https://github.com/Houston4444/plujain-ramp";
-    license = licenses.gpl2Only;
-    platforms = platforms.linux;
-    maintainers = [ maintainers.hirenashah ];
+    license = lib.licenses.gpl2Only;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ hirenashah ];
   };
 }

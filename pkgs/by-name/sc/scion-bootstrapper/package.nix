@@ -31,8 +31,8 @@ buildGoModule rec {
   meta = with lib; {
     description = "bootstrapper for SCION network configuration";
     homepage = "https://github.com/netsec-ethz/bootstrapper";
-    license = licenses.asl20;
-    maintainers = with maintainers; [
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [
       matthewcroughan
       sarcasticadmin
     ];

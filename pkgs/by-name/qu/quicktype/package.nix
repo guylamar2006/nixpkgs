@@ -35,8 +35,8 @@ buildNpmPackage rec {
   meta = with lib; {
     description = "Generate types and converters from JSON, Schema, and GraphQL";
     homepage = "https://quicktype.io/";
-    license = licenses.asl20;
-    maintainers = [ ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "quicktype";
   };
 }

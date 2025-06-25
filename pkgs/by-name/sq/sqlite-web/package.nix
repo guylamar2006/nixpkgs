@@ -26,7 +26,7 @@ python3Packages.buildPythonApplication rec {
     description = "Web-based SQLite database browser";
     mainProgram = "sqlite_web";
     homepage = "https://github.com/coleifer/sqlite-web";
-    license = licenses.mit;
-    maintainers = [ maintainers.costrouc ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ costrouc ];
   };
 }

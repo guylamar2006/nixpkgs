@@ -56,9 +56,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/lainsce/notejot";
     description = "Stupidly-simple notes app";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ ];
-    platforms = platforms.linux;
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ ];
+    platforms = lib.platforms.linux;
     mainProgram = "io.github.lainsce.Notejot";
   };
 }

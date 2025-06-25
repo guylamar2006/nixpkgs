@@ -105,7 +105,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://imager.oasu.u-bordeaux.fr";
     license = lib.licenses.free;
-    maintainers = [ lib.maintainers.smaret ];
+    maintainers = with lib.maintainers; [ smaret ];
     platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 

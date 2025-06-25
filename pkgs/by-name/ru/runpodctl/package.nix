@@ -26,7 +26,7 @@ buildGoModule rec {
     description = "CLI tool to automate / manage GPU pods for runpod.io";
     changelog = "https://github.com/runpod/runpodctl/raw/v${version}/CHANGELOG.md";
     license = lib.licenses.gpl3;
-    maintainers = [ lib.maintainers.georgewhewell ];
+    maintainers = with lib.maintainers; [ georgewhewell ];
     mainProgram = "runpodctl";
   };
 }

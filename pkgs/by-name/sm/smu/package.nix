@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     description = "simple markup - markdown like syntax";
     mainProgram = "smu";
     homepage = "https://github.com/Gottox/smu";
-    license = licenses.mit;
-    maintainers = with maintainers; [ oxzi ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ oxzi ];
   };
 }

@@ -71,9 +71,9 @@ stdenv.mkDerivation rec {
     homepage = "https://www.signalyst.com/index.html";
     description = "Network Audio Adapter daemon";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.unfree;
-    maintainers = with maintainers; [ lovesegfault ];
-    platforms = platforms.linux;
+    license = lib.licenses.unfree;
+    maintainers = with lib.maintainers; [ lovesegfault ];
+    platforms = lib.platforms.linux;
     mainProgram = "networkaudiod";
   };
 }

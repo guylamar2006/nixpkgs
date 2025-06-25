@@ -48,6 +48,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/ugetdm/uget-integrator";
     license = licenses.gpl3;
     platforms = platforms.linux;
-    maintainers = [ maintainers.romildo ];
+    maintainers = with lib.maintainers; [ romildo ];
   };
 }

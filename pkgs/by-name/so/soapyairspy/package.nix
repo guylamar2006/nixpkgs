@@ -29,8 +29,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/pothosware/SoapyAirspy";
     description = "SoapySDR plugin for Airspy devices";
-    license = licenses.mit;
-    maintainers = with maintainers; [ markuskowa ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ markuskowa ];
     platforms = platforms.unix;
   };
 }

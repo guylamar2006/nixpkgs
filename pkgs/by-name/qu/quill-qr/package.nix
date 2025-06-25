@@ -43,7 +43,7 @@ stdenvNoCC.mkDerivation rec {
     description = "Print QR codes for use with https://p5deo-6aaaa-aaaab-aaaxq-cai.raw.ic0.app/";
     mainProgram = "quill-qr.sh";
     homepage = "https://github.com/IvanMalison/quill-qr";
-    maintainers = with maintainers; [ imalison ];
+    maintainers = with lib.maintainers; [ imalison ];
     platforms = with platforms; linux;
   };
 }

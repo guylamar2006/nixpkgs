@@ -23,6 +23,6 @@ rustPlatform.buildRustPackage rec {
     mainProgram = "rusti-cal";
     homepage = "https://github.com/arthurhenrique/rusti-cal";
     license = [ licenses.mit ];
-    maintainers = [ maintainers.detegr ];
+    maintainers = with lib.maintainers; [ detegr ];
   };
 }

@@ -106,12 +106,12 @@ crystal.buildCrystalPackage rec {
     '';
   };
 
-  meta = with lib; {
+  meta = {
     description = "Check hashes for your files";
     homepage = "https://github.com/GeopJr/Collision";
-    license = licenses.bsd2;
+    license = lib.licenses.bsd2;
     mainProgram = "collision";
-    maintainers = with maintainers; [ sund3RRR ];
-    teams = [ teams.gnome-circle ];
+    maintainers = with lib.maintainers; [ sund3RRR ];
+    teams = with lib.teams; [ gnome-circle ];
   };
 }

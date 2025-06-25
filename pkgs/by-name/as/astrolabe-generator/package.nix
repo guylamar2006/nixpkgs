@@ -31,12 +31,12 @@ stdenv.mkDerivation rec {
       --add-flags "-jar $out/share/java/AstrolabeGenerator-${version}.jar"
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.astrolabeproject.com";
     description = "Java-based tool for generating EPS files for constructing astrolabes and related tools";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
-    license = licenses.gpl3;
-    maintainers = [ ];
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "AstrolabeGenerator";
     platforms = platforms.all;
   };

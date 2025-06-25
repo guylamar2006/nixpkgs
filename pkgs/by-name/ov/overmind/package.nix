@@ -36,6 +36,6 @@ buildGoModule rec {
     description = "Process manager for Procfile-based applications and tmux";
     mainProgram = "overmind";
     license = with licenses; [ mit ];
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

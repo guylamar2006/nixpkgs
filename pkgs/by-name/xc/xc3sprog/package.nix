@@ -38,6 +38,6 @@ stdenv.mkDerivation rec {
     homepage = "https://xc3sprog.sourceforge.net/";
     license = licenses.gpl2Plus;
     platforms = platforms.linux;
-    maintainers = [ maintainers.bjornfor ];
+    maintainers = with lib.maintainers; [ bjornfor ];
   };
 }

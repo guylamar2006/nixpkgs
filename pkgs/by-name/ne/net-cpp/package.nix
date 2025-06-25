@@ -117,9 +117,9 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Simple yet beautiful networking API for C++11";
     homepage = "https://gitlab.com/ubports/development/core/lib-cpp/net-cpp";
     changelog = "https://gitlab.com/ubports/development/core/lib-cpp/net-cpp/-/blob/${finalAttrs.version}/ChangeLog";
-    license = licenses.lgpl3Only;
-    teams = [ teams.lomiri ];
-    platforms = platforms.linux;
+    license = lib.licenses.lgpl3Only;
+    teams = with lib.teams; [ lomiri ];
+    platforms = lib.platforms.linux;
     pkgConfigModules = [
       "net-cpp"
     ];

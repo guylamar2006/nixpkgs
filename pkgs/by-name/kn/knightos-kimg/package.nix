@@ -28,12 +28,12 @@ stdenv.mkDerivation rec {
 
   hardeningDisable = [ "format" ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://knightos.org/";
     description = "Converts image formats supported by stb_image to the KnightOS image format";
     mainProgram = "kimg";
-    license = licenses.mit;
-    maintainers = with maintainers; [ siraben ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ siraben ];
     platforms = platforms.all;
   };
 }

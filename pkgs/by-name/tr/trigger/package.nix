@@ -87,7 +87,7 @@ stdenv.mkDerivation rec {
     mainProgram = "trigger-rally";
     homepage = "http://trigger-rally.sourceforge.net/";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = with lib.platforms; linux;
   };
 }

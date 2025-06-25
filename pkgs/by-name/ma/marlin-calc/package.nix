@@ -30,11 +30,11 @@ stdenv.mkDerivation {
     install -Dm0755 {,$out/bin/}marlin-calc
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/eyal0/Marlin";
     description = "Marlin 3D printer timing simulator";
-    license = licenses.gpl3;
-    maintainers = with maintainers; [ ];
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
     broken = stdenv.hostPlatform.isDarwin; # never built on Hydra https://hydra.nixos.org/job/nixpkgs/trunk/marlin-calc.x86_64-darwin
     mainProgram = "marlin-calc";

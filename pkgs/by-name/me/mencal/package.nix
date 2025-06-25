@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
 
   buildInputs = [ perl ];
 
-  meta = with lib; {
+  meta = {
     description = "Menstruation calendar";
     longDescription = ''
       Mencal is a simple variation of the well-known unix command cal.
@@ -30,8 +30,8 @@ stdenv.mkDerivation rec {
       menstruation (or other) cycles conveniently.
     '';
     homepage = "http://www.kyberdigi.cz/projects/mencal/english.html";
-    license = licenses.gpl2;
-    maintainers = [ maintainers.mmahut ];
+    license = lib.licenses.gpl2;
+    maintainers = with lib.maintainers; [ mmahut ];
     platforms = platforms.all;
     mainProgram = "mencal";
   };

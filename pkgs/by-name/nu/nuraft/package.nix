@@ -42,8 +42,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/eBay/NuRaft";
     description = "C++ implementation of Raft core logic as a replication library";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ wheelsandmetal ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ wheelsandmetal ];
     platforms = platforms.all;
   };
 }

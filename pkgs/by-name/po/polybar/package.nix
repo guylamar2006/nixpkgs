@@ -114,13 +114,13 @@ stdenv.mkDerivation (finalAttrs: {
       status bars for their desktop environment, without the need of
       having a black belt in shell scripting.
     '';
-    license = licenses.mit;
-    maintainers = with maintainers; [
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [
       afldcr
       Br1ght0ne
       moni
     ];
     mainProgram = "polybar";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 })

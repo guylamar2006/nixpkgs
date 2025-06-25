@@ -134,8 +134,8 @@ buildGoModule (finalAttrs: {
   meta = with lib; {
     description = "Service monitoring system and time series database";
     homepage = "https://prometheus.io";
-    license = licenses.asl20;
-    maintainers = with maintainers; [
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [
       fpletz
       Frostman
     ];

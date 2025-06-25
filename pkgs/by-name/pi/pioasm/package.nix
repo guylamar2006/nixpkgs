@@ -34,8 +34,8 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "Assemble PIO programs for Raspberry Pi Pico";
     homepage = "https://github.com/raspberrypi/pico-sdk";
-    license = licenses.bsd3;
-    maintainers = with maintainers; [ emilytrau ];
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ emilytrau ];
     platforms = platforms.unix;
     mainProgram = "pioasm";
   };

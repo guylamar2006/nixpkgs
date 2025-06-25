@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
     description = "Minimalistic database migration tool with MySQL, PostgreSQL and SQLite support";
     mainProgram = "shmig";
     homepage = "https://github.com/mbucc/shmig";
-    license = licenses.bsd3;
-    maintainers = [ ];
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ ];
   };
 }

@@ -45,6 +45,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://xmlbeans.apache.org/";
     downloadPage = "https://dlcdn.apache.org/poi/xmlbeans/release/bin/";
     license = lib.licenses.asl20;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 })

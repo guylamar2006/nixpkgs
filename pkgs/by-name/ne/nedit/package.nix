@@ -38,6 +38,6 @@ stdenv.mkDerivation rec {
     homepage = "https://sourceforge.net/projects/nedit";
     description = "Fast, compact Motif/X11 plain text editor";
     platforms = with platforms; linux ++ darwin;
-    license = licenses.gpl2;
+    license = lib.licenses.gpl2;
   };
 }

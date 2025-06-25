@@ -40,7 +40,7 @@ rustPlatform.buildRustPackage rec {
     description = "Seed your development database with real data";
     mainProgram = "replibyte";
     homepage = "https://github.com/Qovery/replibyte";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ dit7ya ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ dit7ya ];
   };
 }

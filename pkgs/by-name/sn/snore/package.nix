@@ -20,8 +20,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "sleep with feedback";
     homepage = "https://github.com/clamiax/snore";
-    license = licenses.mit;
-    maintainers = with maintainers; [ cafkafk ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ cafkafk ];
     platforms = platforms.unix;
     mainProgram = "snore";
   };

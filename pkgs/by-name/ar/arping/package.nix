@@ -27,11 +27,11 @@ stdenv.mkDerivation rec {
     libpcap
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Broadcasts a who-has ARP packet on the network and prints answers";
     homepage = "https://github.com/ThomasHabets/arping";
     license = with licenses; [ gpl2Plus ];
-    maintainers = with maintainers; [ michalrus ];
+    maintainers = with lib.maintainers; [ michalrus ];
     platforms = platforms.unix;
     mainProgram = "arping";
   };

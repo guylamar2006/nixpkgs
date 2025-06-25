@@ -64,8 +64,8 @@ buildGoModule rec {
     changelog = "https://github.com/restic/restic/blob/${src.rev}/CHANGELOG.md";
     description = "Backup program that is fast, efficient and secure";
     platforms = platforms.linux ++ platforms.darwin;
-    license = licenses.bsd2;
-    maintainers = with maintainers; [
+    license = lib.licenses.bsd2;
+    maintainers = with lib.maintainers; [
       mbrgm
       dotlambda
       ryan4yin

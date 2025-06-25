@@ -26,7 +26,7 @@ rustPlatform.buildRustPackage rec {
     description = "IDE support for Pest, via the LSP";
     homepage = "https://pest.rs";
     license = with licenses; [ asl20 ];
-    maintainers = with maintainers; [ nickhu ];
+    maintainers = with lib.maintainers; [ nickhu ];
     mainProgram = "pest-language-server";
   };
 }

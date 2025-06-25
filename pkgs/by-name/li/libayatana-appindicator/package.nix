@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
       lib.licenses.lgpl3Plus
       lib.licenses.lgpl21Plus
     ];
-    maintainers = [ lib.maintainers.nickhu ];
+    maintainers = with lib.maintainers; [ nickhu ];
     platforms = lib.platforms.linux;
   };
 }

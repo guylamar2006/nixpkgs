@@ -29,7 +29,7 @@ buildGoModule rec {
     mainProgram = "regal";
     homepage = "https://github.com/StyraInc/regal";
     changelog = "https://github.com/StyraInc/regal/releases/tag/${src.rev}";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ rinx ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ rinx ];
   };
 }

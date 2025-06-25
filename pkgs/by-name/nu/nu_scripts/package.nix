@@ -33,6 +33,6 @@ stdenvNoCC.mkDerivation {
     license = lib.licenses.mit;
 
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.CardboardTurkey ];
+    maintainers = with lib.maintainers; [ CardboardTurkey ];
   };
 }

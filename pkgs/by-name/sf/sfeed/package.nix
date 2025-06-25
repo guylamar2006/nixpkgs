@@ -41,7 +41,7 @@ stdenv.mkDerivation (finalAttrs: {
       items.
     '';
     license = lib.licenses.isc;
-    maintainers = [ lib.maintainers.matthiasbeyer ];
+    maintainers = with lib.maintainers; [ matthiasbeyer ];
     platforms = lib.platforms.all;
   };
 })

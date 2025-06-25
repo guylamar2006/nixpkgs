@@ -36,7 +36,7 @@ rustPlatform.buildRustPackage rec {
     description = "Command-line tool to extract partitions from Android OTA files";
     homepage = "https://github.com/crazystylus/otadump";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.axka ];
+    maintainers = with lib.maintainers; [ axka ];
     mainProgram = "otadump";
   };
 }

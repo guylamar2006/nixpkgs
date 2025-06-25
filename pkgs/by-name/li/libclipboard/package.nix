@@ -42,6 +42,6 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/jtanx/libclipboard/releases/tag/${finalAttrs.src.rev}";
     platforms = lib.platforms.unix;
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.sigmanificient ];
+    maintainers = with lib.maintainers; [ sigmanificient ];
   };
 })

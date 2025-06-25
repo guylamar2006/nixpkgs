@@ -27,9 +27,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Test various memory protection measures";
     mainProgram = "paxtest";
-    license = licenses.gpl2Only;
-    platforms = platforms.linux;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl2Only;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [
       joachifm
     ];
   };

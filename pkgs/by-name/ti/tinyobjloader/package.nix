@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/tinyobjloader/tinyobjloader";
     description = "Tiny but powerful single file wavefront obj loader";
     license = licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
   };
 }

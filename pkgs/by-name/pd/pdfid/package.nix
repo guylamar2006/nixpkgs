@@ -35,7 +35,7 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://blog.didierstevens.com/programs/pdf-tools/";
     license = with licenses; [ free ];
     mainProgram = "pdfid";
-    maintainers = with maintainers; [ d3vil0p3r ];
+    maintainers = with lib.maintainers; [ d3vil0p3r ];
     platforms = platforms.unix;
   };
 }

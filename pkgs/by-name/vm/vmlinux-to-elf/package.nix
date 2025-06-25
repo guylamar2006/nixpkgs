@@ -32,6 +32,6 @@ python3Packages.buildPythonApplication {
     mainProgram = "vmlinux-to-elf";
 
     license = lib.licenses.gpl3;
-    maintainers = [ lib.maintainers.fidgetingbits ];
+    maintainers = with lib.maintainers; [ fidgetingbits ];
   };
 }

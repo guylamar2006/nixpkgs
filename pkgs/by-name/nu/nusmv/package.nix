@@ -38,8 +38,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "New symbolic model checker for the analysis of synchronous finite-state and infinite-state systems";
     homepage = "https://nusmv.fbk.eu/";
-    maintainers = with maintainers; [ mgttlinger ];
+    maintainers = with lib.maintainers; [ mgttlinger ];
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
   };
 }

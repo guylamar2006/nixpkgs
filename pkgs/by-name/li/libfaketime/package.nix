@@ -76,7 +76,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/wolfcw/libfaketime/";
     license = lib.licenses.gpl2;
     platforms = lib.platforms.all;
-    maintainers = [ lib.maintainers.bjornfor ];
+    maintainers = with lib.maintainers; [ bjornfor ];
     mainProgram = "faketime";
   };
 })

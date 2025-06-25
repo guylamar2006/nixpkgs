@@ -242,7 +242,7 @@ stdenv.mkDerivation {
 
   meta = with lib; {
     platforms = platforms.darwin;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     license = licenses.mit;
   };
 }

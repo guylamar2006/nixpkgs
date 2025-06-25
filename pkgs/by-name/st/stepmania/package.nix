@@ -87,7 +87,7 @@ stdenv.mkDerivation {
     homepage = "https://www.stepmania.com/";
     description = "Free dance and rhythm game for Windows, Mac, and Linux";
     platforms = platforms.linux;
-    license = licenses.mit; # expat version
+    license = lib.licenses.mit; # expat version
     maintainers = with maintainers; [ h7x4 ];
     mainProgram = "stepmania";
   };

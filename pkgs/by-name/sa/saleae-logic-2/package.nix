@@ -71,9 +71,9 @@ appimageTools.wrapType2 {
   meta = with lib; {
     homepage = "https://www.saleae.com/";
     description = "Software for Saleae logic analyzers";
-    license = licenses.unfree;
+    license = lib.licenses.unfree;
     platforms = [ "x86_64-linux" ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       j-hui
       newam
     ];

@@ -48,8 +48,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/linuxmint/nemo-extensions/tree/master/nemo-fileroller";
     description = "Nemo file roller extension";
-    license = licenses.gpl2Plus;
-    platforms = platforms.linux;
-    teams = [ teams.cinnamon ];
+    license = lib.licenses.gpl2Plus;
+    platforms = lib.platforms.linux;
+    teams = with lib.teams; [ cinnamon ];
   };
 }

@@ -56,7 +56,7 @@ stdenvNoCC.mkDerivation rec {
       a random image from the specified subreddits. If you have pywal it also
       can set automatically your terminal colors.
     '';
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with maintainers; [ tchab ];
   };
 }

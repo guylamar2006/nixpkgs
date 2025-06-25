@@ -72,7 +72,7 @@ rustPlatform.buildRustPackage rec {
       asl20
       mit
     ];
-    maintainers = with maintainers; [ pbsds ];
+    maintainers = with lib.maintainers; [ pbsds ];
     mainProgram = "spade";
   };
 }

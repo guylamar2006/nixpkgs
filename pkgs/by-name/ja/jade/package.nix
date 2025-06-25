@@ -44,6 +44,6 @@ stdenv.mkDerivation rec {
     license = "custom";
     homepage = "http://www.jclark.com/jade/";
     platforms = with lib.platforms; linux;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

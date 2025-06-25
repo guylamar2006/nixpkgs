@@ -35,11 +35,11 @@ stdenv.mkDerivation rec {
       --replace "-lnss3" "-L${nss.out}/lib -lnss3"
   '';
 
-  meta = with lib; {
+  meta = {
     platforms = platforms.all;
     description = "C library implementing the OAuth secure authentication protocol";
     homepage = "http://liboauth.sourceforge.net/";
-    license = licenses.mit;
+    license = lib.licenses.mit;
   };
 
 }

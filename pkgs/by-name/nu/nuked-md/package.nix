@@ -75,9 +75,9 @@ stdenv.mkDerivation (finalAttrs: {
       possible using decapped chips photos.
     '';
     homepage = "https://github.com/nukeykt/Nuked-MD";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     mainProgram = "Nuked-MD";
-    maintainers = with maintainers; [ OPNA2608 ];
+    maintainers = with lib.maintainers; [ OPNA2608 ];
     platforms = platforms.all;
   };
 })

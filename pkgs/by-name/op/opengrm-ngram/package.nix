@@ -24,8 +24,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Library to make and modify n-gram language models encoded as weighted finite-state transducers";
     homepage = "https://www.openfst.org/twiki/bin/view/GRM/NGramLibrary";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ mic92 ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ mic92 ];
     platforms = platforms.unix;
   };
 }

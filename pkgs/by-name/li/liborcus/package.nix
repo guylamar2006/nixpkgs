@@ -56,12 +56,12 @@ stdenv.mkDerivation rec {
   enableParallelBuilding = true;
   enableParallelChecking = true;
 
-  meta = with lib; {
+  meta = {
     description = "Collection of parsers and import filters for spreadsheet documents";
     homepage = "https://gitlab.com/orcus/orcus";
     changelog = "https://gitlab.com/orcus/orcus/-/blob/${src.rev}/CHANGELOG";
-    license = licenses.mpl20;
-    maintainers = [ ];
+    license = lib.licenses.mpl20;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
   };
 }

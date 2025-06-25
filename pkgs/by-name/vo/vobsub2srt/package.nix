@@ -33,7 +33,7 @@ stdenv.mkDerivation {
     description = "Converts VobSub subtitles into SRT subtitles";
     license = lib.licenses.gpl3Plus;
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.ttuegel ];
+    maintainers = with lib.maintainers; [ ttuegel ];
     mainProgram = "vobsub2srt";
   };
 }

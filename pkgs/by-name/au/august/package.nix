@@ -22,14 +22,14 @@ rustPlatform.buildRustPackage {
     mv $out/bin/{august-cli,ag}
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Emmet-like language that produces JSON, TOML, or YAML";
     homepage = "https://github.com/yoav-lavi/august";
     license = with licenses; [
       asl20
       mit
     ];
-    maintainers = with maintainers; [ figsoda ];
+    maintainers = with lib.maintainers; [ figsoda ];
     mainProgram = "ag";
   };
 }

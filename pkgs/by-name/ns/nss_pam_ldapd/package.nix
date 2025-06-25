@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "LDAP identity and authentication for NSS/PAM";
     homepage = "https://arthurdejong.org/nss-pam-ldapd/";
-    license = licenses.lgpl21Plus;
-    platforms = platforms.linux;
+    license = lib.licenses.lgpl21Plus;
+    platforms = lib.platforms.linux;
   };
 }

@@ -44,8 +44,8 @@ stdenv.mkDerivation rec {
     description = "Handy personal organizer";
     mainProgram = "osmo";
     homepage = "https://clayo.org/osmo/";
-    license = licenses.gpl2;
-    platforms = platforms.linux;
-    maintainers = with maintainers; [ pSub ];
+    license = lib.licenses.gpl2;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ pSub ];
   };
 }

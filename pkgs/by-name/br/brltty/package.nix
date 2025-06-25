@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://brltty.app";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ lib.maintainers.bramd ];
+    maintainers = with lib.maintainers; [ bramd ];
     platforms = lib.platforms.all;
   };
 

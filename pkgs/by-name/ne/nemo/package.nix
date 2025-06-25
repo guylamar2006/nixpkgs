@@ -108,8 +108,8 @@ stdenv.mkDerivation rec {
       licenses.gpl2
       licenses.lgpl2
     ];
-    platforms = platforms.linux;
-    teams = [ teams.cinnamon ];
+    platforms = lib.platforms.linux;
+    teams = with lib.teams; [ cinnamon ];
     mainProgram = "nemo";
   };
 }

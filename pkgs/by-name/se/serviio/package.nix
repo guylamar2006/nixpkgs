@@ -25,8 +25,8 @@ stdenv.mkDerivation rec {
       Serviio is a free media server. It allows you to stream your media files (music, video or images)
       to any DLNA-certified renderer device (e.g. a TV set, Bluray player, games console) on your home network.
     '';
-    license = licenses.unfree;
-    maintainers = [ maintainers.thpham ];
+    license = lib.licenses.unfree;
+    maintainers = with lib.maintainers; [ thpham ];
     platforms = platforms.linux;
   };
 }

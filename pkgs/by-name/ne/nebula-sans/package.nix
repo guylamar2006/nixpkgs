@@ -25,7 +25,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
 
   meta = {
     description = "Versatile, modern, humanist sans-serif with a neutral aesthetic, designed for legibility in both digital and print applications";
-    maintainers = [ lib.maintainers.colemickens ];
+    maintainers = with lib.maintainers; [ colemickens ];
     platforms = lib.platforms.all;
     homepage = "https://nebulasans.com/";
     license = lib.licenses.ofl;

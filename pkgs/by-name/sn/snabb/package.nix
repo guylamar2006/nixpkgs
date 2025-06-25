@@ -32,8 +32,8 @@ stdenv.mkDerivation rec {
       It is especially intended for ISPs and other network operators.
     '';
     platforms = [ "x86_64-linux" ];
-    license = licenses.asl20;
-    maintainers = [ maintainers.lukego ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ lukego ];
     mainProgram = "snabb";
   };
 }

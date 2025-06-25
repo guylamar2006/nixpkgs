@@ -41,6 +41,6 @@ python3.pkgs.buildPythonApplication {
     description = "Passive hostname, domain and IP lookup tool for non-robots";
     mainProgram = "wtfis";
     license = lib.licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

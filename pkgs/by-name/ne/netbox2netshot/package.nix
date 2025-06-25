@@ -31,8 +31,8 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Inventory synchronization tool between Netbox and Netshot";
     homepage = "https://github.com/scaleway/netbox2netshot";
-    license = licenses.asl20;
-    maintainers = [ ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "netbox2netshot";
   };
 }

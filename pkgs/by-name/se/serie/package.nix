@@ -29,7 +29,7 @@ rustPlatform.buildRustPackage rec {
     description = "Rich git commit graph in your terminal, like magic";
     homepage = "https://github.com/lusingander/serie";
     license = with licenses; [ mit ];
-    maintainers = with maintainers; [ matthiasbeyer ];
+    maintainers = with lib.maintainers; [ matthiasbeyer ];
     mainProgram = "serie";
   };
 }

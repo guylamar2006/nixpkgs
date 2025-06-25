@@ -46,8 +46,8 @@ let
       XChaCha20-Poly1305 & Argon2.
     '';
     homepage = "https://notesnook.com";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [
       cig0
       j0lol
     ];

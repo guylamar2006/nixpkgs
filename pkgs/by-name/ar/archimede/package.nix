@@ -25,6 +25,6 @@ buildGoModule {
     description = "Unobtrusive directory information fetcher";
     license = lib.licenses.asl20;
     mainProgram = "archimede";
-    maintainers = [ lib.maintainers.anugrahn1 ];
+    maintainers = with lib.maintainers; [ anugrahn1 ];
   };
 }

@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
     description = "Console jack loudness meter";
     homepage = "https://www.aelius.com/njh/jackmeter/";
     license = lib.licenses.gpl2;
-    maintainers = [ lib.maintainers.marcweber ];
+    maintainers = with lib.maintainers; [ marcweber ];
     platforms = lib.platforms.linux;
     mainProgram = "jack_meter";
   };

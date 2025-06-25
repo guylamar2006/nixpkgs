@@ -89,7 +89,7 @@ buildNpmPackage rec {
     homepage = "https://github.com/BruceMacD/chatd";
     changelog = "https://github.com/BruceMacD/chatd/releases/tag/v${version}";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.lucasew ];
+    maintainers = with lib.maintainers; [ lucasew ];
     mainProgram = "chatd";
     platforms = electron.meta.platforms;
   };

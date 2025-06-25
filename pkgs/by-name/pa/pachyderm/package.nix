@@ -28,8 +28,8 @@ buildGoModule rec {
   meta = with lib; {
     description = "Containerized Data Analytics";
     homepage = "https://www.pachyderm.com/";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ offline ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ offline ];
     mainProgram = "pachctl";
   };
 }

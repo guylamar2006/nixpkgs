@@ -80,7 +80,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://github.com/Fedict/fts-beidconnect/";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.jovandeginste ];
+    maintainers = with lib.maintainers; [ jovandeginste ];
     platforms = lib.platforms.linux;
   };
 })

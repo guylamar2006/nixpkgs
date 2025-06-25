@@ -139,8 +139,8 @@ buildDotnetModule rec {
       2017. The project has since been abandoned on October 1st 2024 and QoL
       updates are now managed under a fork.
     '';
-    license = licenses.mit;
-    maintainers = with maintainers; [
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [
       jk
       artemist
       willow

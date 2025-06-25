@@ -56,8 +56,8 @@ buildGoModule rec {
     '';
     homepage = "https://soju.im";
     changelog = "https://codeberg.org/emersion/soju/releases/tag/${src.rev}";
-    license = licenses.agpl3Only;
-    maintainers = with maintainers; [
+    license = lib.licenses.agpl3Only;
+    maintainers = with lib.maintainers; [
       azahi
       malte-v
     ];

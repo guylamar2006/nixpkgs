@@ -38,11 +38,11 @@ stdenv.mkDerivation rec {
     package = igv;
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.broadinstitute.org/igv/";
     description = "Visualization tool for interactive exploration of genomic datasets";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.unix;
-    maintainers = [ maintainers.mimame ];
+    maintainers = with lib.maintainers; [ mimame ];
   };
 }

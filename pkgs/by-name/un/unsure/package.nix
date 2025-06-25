@@ -40,9 +40,9 @@ buildDartApplication rec {
     homepage = "https://filiph.github.io/unsure";
     license = lib.licenses.mit;
     mainProgram = "unsure";
-    maintainers = [
-      lib.maintainers.l0b0
-      lib.maintainers.rksm
+    maintainers = with lib.maintainers; [
+      l0b0
+      rksm
     ];
   };
 }

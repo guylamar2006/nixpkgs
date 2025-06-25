@@ -120,7 +120,7 @@ python.pkgs.buildPythonApplication rec {
     description = "Government planner and basis of FragDenStaat.de Koalitionstracker";
     homepage = "https://github.com/okfde/froide-govplan";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.onny ];
+    maintainers = with lib.maintainers; [ onny ];
     mainProgram = "froide-govplan";
   };
 

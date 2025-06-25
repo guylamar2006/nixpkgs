@@ -67,7 +67,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     homepage = "https://gpx-animator.app";
     changelog = "https://github.com/gpx-animator/gpx-animator/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.markasoftware ];
+    maintainers = with lib.maintainers; [ markasoftware ];
     mainProgram = "gpx-animator";
     platforms = lib.platforms.unix;
   };

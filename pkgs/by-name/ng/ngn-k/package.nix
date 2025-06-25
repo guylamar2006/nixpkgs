@@ -58,7 +58,7 @@ stdenv.mkDerivation {
     description = "Simple fast vector programming language";
     homepage = "https://codeberg.org/ngn/k";
     license = lib.licenses.agpl3Only;
-    maintainers = [ lib.maintainers.sternenseemann ];
+    maintainers = with lib.maintainers; [ sternenseemann ];
     platforms = [
       "x86_64-linux"
       "x86_64-freebsd"

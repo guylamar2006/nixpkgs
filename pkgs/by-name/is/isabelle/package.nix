@@ -229,7 +229,7 @@ stdenv.mkDerivation (finalAttrs: {
     ];
   };
 
-  meta = with lib; {
+  meta = {
     description = "Generic proof assistant";
 
     longDescription = ''
@@ -242,8 +242,8 @@ stdenv.mkDerivation (finalAttrs: {
       fromSource
       binaryNativeCode # source bundles binary dependencies
     ];
-    license = licenses.bsd3;
-    maintainers = [
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [
       maintainers.jwiegley
       maintainers.jvanbruegge
     ];

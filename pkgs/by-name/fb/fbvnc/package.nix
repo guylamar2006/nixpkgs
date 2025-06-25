@@ -37,7 +37,7 @@ stdenv.mkDerivation {
   meta = {
     description = "Framebuffer VNC client";
     license = lib.licenses.bsd3;
-    maintainers = [ lib.maintainers.raskin ];
+    maintainers = with lib.maintainers; [ raskin ];
     platforms = lib.platforms.linux;
     homepage = "https://github.com/zohead/fbvnc/";
     mainProgram = "fbvnc";

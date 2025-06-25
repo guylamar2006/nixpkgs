@@ -61,7 +61,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     license = lib.licenses.gpl3Plus;
     mainProgram = "dumphfdl";
-    maintainers = [ lib.maintainers.mafo ];
+    maintainers = with lib.maintainers; [ mafo ];
     platforms = with lib.platforms; linux ++ darwin;
     badPlatforms = lib.platforms.darwin;
   };

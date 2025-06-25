@@ -21,12 +21,12 @@ stdenv.mkDerivation rec {
     cp gzrecover $out/bin
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.urbanophile.com/arenn/hacking/gzrt/";
     description = "Gzip Recovery Toolkit";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "gzrecover";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.unix;
   };
 }

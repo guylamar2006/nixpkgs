@@ -37,8 +37,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Pinentry implementation based on bemenu";
     homepage = "https://github.com/t-8ch/pinentry-bemenu";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ jc ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ jc ];
     platforms = with platforms; linux;
     mainProgram = "pinentry-bemenu";
   };

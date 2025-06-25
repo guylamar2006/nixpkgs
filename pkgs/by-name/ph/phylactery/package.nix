@@ -27,8 +27,8 @@ buildGoModule rec {
     description = "Old school comic web server";
     mainProgram = "phylactery";
     homepage = "https://trong.loang.net/phylactery/about";
-    license = licenses.agpl3Plus;
-    maintainers = with maintainers; [ McSinyx ];
+    license = lib.licenses.agpl3Plus;
+    maintainers = with lib.maintainers; [ McSinyx ];
     platforms = platforms.all;
   };
 }

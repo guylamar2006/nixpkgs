@@ -31,8 +31,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Estwald's PS3ISO utilities";
     homepage = "https://github.com/bucanero/ps3iso-utils";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ soupglasses ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ soupglasses ];
     platforms = platforms.all;
   };
 }

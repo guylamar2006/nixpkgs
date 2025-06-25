@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
 
   installFlags = [ "BIN=$(out)/bin/" ];
 
-  meta = with lib; {
+  meta = {
     homepage = "http://www.knossos.net.nz/resources/free-software/dterm/";
     description = "Simple terminal program";
     longDescription = ''
@@ -36,8 +36,8 @@ stdenv.mkDerivation rec {
       are forwarded to the serial line, and data forwarded from the serial line
       appears on the terminal.
     '';
-    license = licenses.gpl2Only;
-    maintainers = with maintainers; [ auchter ];
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [ auchter ];
     platforms = platforms.unix;
     mainProgram = "dterm";
   };

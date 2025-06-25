@@ -45,7 +45,7 @@ buildPythonApplication rec {
     homepage = "https://github.com/Kuniwak/vint";
     license = licenses.mit;
     mainProgram = "vint";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
   };
 }

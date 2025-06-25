@@ -158,8 +158,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Pritunl OpenVPN client";
     homepage = "https://client.pritunl.com/";
-    license = licenses.unfree;
-    maintainers = with maintainers; [
+    license = lib.licenses.unfree;
+    maintainers = with lib.maintainers; [
       minizilla
       andrevmatos
     ];

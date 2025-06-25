@@ -21,12 +21,12 @@ buildGoModule rec {
   # Tests have additional requirements
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Command line client for LibreSpeed";
     homepage = "https://github.com/librespeed/speedtest-cli";
     changelog = "https://github.com/librespeed/speedtest-cli/releases/tag/${src.tag}";
-    license = licenses.lgpl3Only;
-    maintainers = with maintainers; [ fab ];
+    license = lib.licenses.lgpl3Only;
+    maintainers = with lib.maintainers; [ fab ];
     mainProgram = "speedtest-cli";
     broken = stdenv.hostPlatform.isDarwin;
   };

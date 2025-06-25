@@ -167,7 +167,7 @@ stdenv.mkDerivation (finalAttrs: {
       astsmtl
       antono
     ];
-    teams = [ teams.gnome ];
+    teams = with lib.teams; [ gnome ];
     platforms = platforms.unix;
   };
 })

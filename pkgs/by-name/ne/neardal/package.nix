@@ -46,9 +46,9 @@ stdenv.mkDerivation {
   meta = with lib; {
     broken = true; # 2022-11-13
     description = "C APIs to exchange datas with the NFC daemon 'Neard'";
-    license = licenses.lgpl2;
+    license = lib.licenses.lgpl2;
     homepage = "https://01.org/linux-nfc";
-    maintainers = [ ];
-    platforms = platforms.linux;
+    maintainers = with lib.maintainers; [ ];
+    platforms = lib.platforms.linux;
   };
 }

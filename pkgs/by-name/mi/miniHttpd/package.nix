@@ -26,6 +26,6 @@ stdenv.mkDerivation rec {
     mainProgram = "httpd";
     license = lib.licenses.gpl3;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.peti ];
+    maintainers = with lib.maintainers; [ peti ];
   };
 }

@@ -28,6 +28,6 @@ python3Packages.buildPythonApplication rec {
     description = "Command line interface for Bugzilla";
     mainProgram = "bugz";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

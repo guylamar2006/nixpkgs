@@ -30,7 +30,7 @@ buildNpmPackage rec {
     description = "Backend server for the Nextcloud Whiteboard app";
     homepage = "https://apps.nextcloud.com/apps/whiteboard";
     license = lib.licenses.agpl3Plus;
-    maintainers = [ lib.maintainers.onny ];
+    maintainers = with lib.maintainers; [ onny ];
     mainProgram = "nextcloud-whiteboard-server";
   };
 }

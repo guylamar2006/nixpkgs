@@ -54,7 +54,7 @@ stdenv.mkDerivation rec {
     mainProgram = "osmo-hnbgw";
     homepage = "https://osmocom.org/projects/osmohnbgw";
     license = lib.licenses.agpl3Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
   };
 }

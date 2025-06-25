@@ -34,8 +34,8 @@ buildGoModule rec {
   meta = with lib; {
     description = "Onmetal OCI Image Specification, Library and Tooling";
     homepage = "https://github.com/onmetal/onmetal-image";
-    license = licenses.asl20;
-    maintainers = [ ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "onmetal-image";
   };
 }

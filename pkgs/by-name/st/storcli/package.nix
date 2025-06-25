@@ -56,7 +56,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     homepage = "https://www.broadcom.com/support/download-search?pg=&pf=Host+Bus+Adapters&pn=&pa=&po=&dk=storcli&pl=&l=false";
     description = "Storage Command Line Tool";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.unfree;
+    license = lib.licenses.unfree;
     maintainers = with maintainers; [ panicgh ];
     mainProgram = "storcli";
     platforms = [

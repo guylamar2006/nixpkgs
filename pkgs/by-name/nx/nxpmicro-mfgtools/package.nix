@@ -65,8 +65,8 @@ stdenv.mkDerivation rec {
       script works on both OS.
     '';
     homepage = "https://github.com/NXPmicro/mfgtools";
-    license = licenses.bsd3;
-    maintainers = with maintainers; [
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [
       bmilanov
       jraygauthier
     ];

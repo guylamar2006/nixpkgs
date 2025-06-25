@@ -23,6 +23,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/markwal/GPX/";
     license = lib.licenses.gpl2;
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.leo60228 ];
+    maintainers = with lib.maintainers; [ leo60228 ];
   };
 }

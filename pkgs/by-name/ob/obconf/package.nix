@@ -51,7 +51,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "http://openbox.org/wiki/ObConf";
     changelog = "http://openbox.org/wiki/ObConf:Changelog";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ lib.maintainers.sfrijters ];
+    maintainers = with lib.maintainers; [ sfrijters ];
     platforms = lib.platforms.linux;
     mainProgram = "obconf";
   };

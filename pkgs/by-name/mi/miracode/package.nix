@@ -26,11 +26,11 @@ stdenvNoCC.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Sharp, readable, vector-y version of Monocraft";
     homepage = "https://github.com/IdreesInc/Miracode";
-    license = licenses.ofl;
+    license = lib.licenses.ofl;
     platforms = platforms.all;
-    maintainers = with maintainers; [ coca ];
+    maintainers = with lib.maintainers; [ coca ];
   };
 }

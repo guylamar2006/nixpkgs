@@ -85,6 +85,6 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/COMBINE-lab/salmon/releases/tag/" + "v${finalAttrs.version}";
     license = lib.licenses.gpl3Only;
     platforms = lib.platforms.all;
-    maintainers = [ lib.maintainers.kupac ];
+    maintainers = with lib.maintainers; [ kupac ];
   };
 })

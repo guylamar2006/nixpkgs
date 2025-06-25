@@ -37,11 +37,11 @@ rustPlatform.buildRustPackage rec {
     "--all-features"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Bindle: Aggregate Object Storage";
     homepage = "https://github.com/deislabs/bindle";
-    license = licenses.asl20;
-    maintainers = [ ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
   };
 }

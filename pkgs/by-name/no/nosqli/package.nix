@@ -22,6 +22,6 @@ buildGoModule rec {
     mainProgram = "nosqli";
     homepage = "https://github.com/Charlie-belmer/nosqli";
     license = with licenses; [ agpl3Plus ];
-    maintainers = with maintainers; [ fab ];
+    maintainers = with lib.maintainers; [ fab ];
   };
 }

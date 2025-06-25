@@ -40,7 +40,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
     homepage = "https://posit-dev.github.io/air";
     changelog = "https://github.com/posit-dev/air/blob/${finalAttrs.version}/CHANGELOG.md";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.kupac ];
+    maintainers = with lib.maintainers; [ kupac ];
     mainProgram = "air";
   };
 })

@@ -75,7 +75,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = {
     homepage = "http://abcde.einval.com/wiki/";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     description = "Command-line audio CD ripper";
     longDescription = ''
       abcde is a front-end command-line utility (actually, a shell

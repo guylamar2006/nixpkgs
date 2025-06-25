@@ -56,7 +56,7 @@ stdenv.mkDerivation rec {
     description = "Dune, Reinvented";
     mainProgram = "opendune";
     homepage = "https://github.com/OpenDUNE/OpenDUNE";
-    license = licenses.gpl2Only;
-    maintainers = [ ];
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [ ];
   };
 }

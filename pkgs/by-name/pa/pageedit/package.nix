@@ -49,7 +49,7 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "pageedit";
     homepage = "https://sigil-ebook.com/pageedit/";
     license = lib.licenses.gpl3Plus;
-    maintainers = [ lib.maintainers.pasqui23 ];
+    maintainers = with lib.maintainers; [ pasqui23 ];
     platforms = lib.platforms.all;
   };
 })

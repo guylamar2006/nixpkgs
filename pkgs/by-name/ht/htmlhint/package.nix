@@ -23,6 +23,6 @@ buildNpmPackage rec {
     homepage = "https://github.com/htmlhint/HTMLHint";
     license = lib.licenses.mit;
     mainProgram = "htmlhint";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

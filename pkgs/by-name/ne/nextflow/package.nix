@@ -109,8 +109,8 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://www.nextflow.io/";
     changelog = "https://github.com/nextflow-io/nextflow/releases";
-    license = licenses.asl20;
-    maintainers = with maintainers; [
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [
       Etjean
       edmundmiller
     ];

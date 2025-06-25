@@ -98,8 +98,8 @@ let
       description = "Autoscaling daemon for Nomad";
       mainProgram = "nomad-autoscaler";
       homepage = "https://github.com/hashicorp/nomad-autoscaler";
-      license = licenses.mpl20;
-      maintainers = [ ];
+      license = lib.licenses.mpl20;
+      maintainers = with lib.maintainers; [ ];
     };
   };
 

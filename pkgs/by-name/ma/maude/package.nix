@@ -100,6 +100,6 @@ stdenv.mkDerivation {
     '';
 
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.peti ];
+    maintainers = with lib.maintainers; [ peti ];
   };
 }

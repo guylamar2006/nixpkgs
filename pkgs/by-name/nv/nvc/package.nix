@@ -62,8 +62,8 @@ stdenv.mkDerivation rec {
     description = "VHDL compiler and simulator";
     mainProgram = "nvc";
     homepage = "https://www.nickg.me.uk/nvc/";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ wegank ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ wegank ];
     platforms = platforms.unix;
   };
 }

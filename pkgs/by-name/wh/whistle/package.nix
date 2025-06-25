@@ -24,7 +24,7 @@ buildNpmPackage rec {
     homepage = "https://github.com/avwo/whistle";
     changelog = "https://github.com/avwo/whistle/blob/${src.rev}/CHANGELOG.md";
     license = licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "whistle";
   };
 }

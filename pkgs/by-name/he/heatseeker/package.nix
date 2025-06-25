@@ -30,11 +30,11 @@ rustPlatform.buildRustPackage rec {
   # which we can also make use of
   TRAVIS = "true";
 
-  meta = with lib; {
+  meta = {
     description = "General-purpose fuzzy selector";
     homepage = "https://github.com/rschmitt/heatseeker";
-    license = licenses.mit;
-    maintainers = [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "hs";
     platforms = platforms.unix;
   };

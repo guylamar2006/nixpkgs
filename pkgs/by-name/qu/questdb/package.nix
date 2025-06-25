@@ -37,7 +37,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://questdb.io/";
     sourceProvenance = [ lib.sourceTypes.binaryBytecode ];
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.jacfal ];
+    maintainers = with lib.maintainers; [ jacfal ];
     platforms = lib.platforms.linux;
   };
 })

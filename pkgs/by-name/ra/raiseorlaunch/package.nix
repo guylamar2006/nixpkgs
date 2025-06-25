@@ -21,11 +21,11 @@ python3Packages.buildPythonApplication rec {
   pythonImportsCheck = [ "raiseorlaunch" ];
 
   meta = with lib; {
-    maintainers = with maintainers; [ winpat ];
+    maintainers = with lib.maintainers; [ winpat ];
     description = "Run-or-raise-application-launcher for i3 window manager";
     mainProgram = "raiseorlaunch";
     homepage = "https://github.com/open-dynaMIX/raiseorlaunch";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.linux;
   };
 }

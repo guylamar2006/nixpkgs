@@ -28,7 +28,7 @@ stdenv.mkDerivation (finalAtts: {
     description = "Terminal mixer - multiplexer for the i/o of terminal applications";
     homepage = "http://vicerveza.homeunix.net/~viric/soft/tm";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.all;
     mainProgram = "tm";
   };

@@ -59,9 +59,9 @@ rustPlatform.buildRustPackage {
     downloadPage = "https://github.com/josh-project/josh";
     changelog = "https://github.com/josh-project/josh/releases/tag/${version}";
     license = lib.licenses.mit;
-    maintainers = [
-      lib.maintainers.sternenseemann
-      lib.maintainers.tazjin
+    maintainers = with lib.maintainers; [
+      sternenseemann
+      tazjin
     ];
     platforms = lib.platforms.all;
   };

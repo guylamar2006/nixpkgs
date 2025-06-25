@@ -75,7 +75,7 @@ stdenv.mkDerivation rec {
     description = "Terra station is the official wallet of the Terra blockchain";
     homepage = "https://station.money/";
     license = licenses.isc;
-    maintainers = [ maintainers.peterwilli ];
+    maintainers = with lib.maintainers; [ peterwilli ];
     platforms = [ "x86_64-linux" ];
     mainProgram = "terra-station";
     sourceProvenance = [ lib.sourceTypes.binaryNativeCode ];

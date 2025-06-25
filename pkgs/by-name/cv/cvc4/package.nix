@@ -65,13 +65,13 @@ stdenv.mkDerivation rec {
 
   cmakeBuildType = "Production";
 
-  meta = with lib; {
+  meta = {
     description = "High-performance theorem prover and SMT solver";
     mainProgram = "cvc4";
     homepage = "http://cvc4.cs.stanford.edu/web/";
-    license = licenses.gpl3;
+    license = lib.licenses.gpl3;
     platforms = platforms.unix;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       vbgl
       thoughtpolice
     ];

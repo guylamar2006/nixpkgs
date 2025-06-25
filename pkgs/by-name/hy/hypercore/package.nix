@@ -31,7 +31,7 @@ buildNpmPackage (finalAttrs: {
     homepage = "https://github.com/holepunchto/hypercore";
     license = lib.licenses.mit;
     teams = with lib.teams; [ ngi ];
-    maintainers = [ lib.maintainers.goodylove ];
+    maintainers = with lib.maintainers; [ goodylove ];
     platforms = lib.platforms.all;
   };
 

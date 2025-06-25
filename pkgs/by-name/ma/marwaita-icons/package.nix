@@ -53,6 +53,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://github.com/darkomarko42/Marwaita-Icons";
     license = lib.licenses.gpl3Only;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.romildo ];
+    maintainers = with lib.maintainers; [ romildo ];
   };
 }

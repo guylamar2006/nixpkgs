@@ -67,9 +67,9 @@ stdenv.mkDerivation rec {
       and a ansi esc mode to highlight ansi escape sequences in neovim.
     '';
     homepage = "https://github.com/lucc/nvimpager";
-    license = licenses.bsd2;
+    license = lib.licenses.bsd2;
     platforms = platforms.unix;
-    maintainers = [ maintainers.lucc ];
+    maintainers = with lib.maintainers; [ lucc ];
     mainProgram = "nvimpager";
   };
 }

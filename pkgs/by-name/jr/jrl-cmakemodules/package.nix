@@ -22,7 +22,7 @@ stdenv.mkDerivation {
     description = "CMake utility toolbox";
     homepage = "https://github.com/jrl-umi3218/jrl-cmakemodules";
     license = lib.licenses.lgpl3Plus;
-    maintainers = [ lib.maintainers.nim65s ];
+    maintainers = with lib.maintainers; [ nim65s ];
     platforms = lib.platforms.all;
   };
 }

@@ -27,6 +27,6 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.com/grobian/html2text";
     license = lib.licenses.gpl2Plus;
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.eikek ];
+    maintainers = with lib.maintainers; [ eikek ];
   };
 }

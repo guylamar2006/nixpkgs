@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
     mainProgram = "rund";
     homepage = "https://github.com/dragon-lang/rund";
     license = lib.licenses.boost;
-    maintainers = with maintainers; [ jonathanmarler ];
+    maintainers = with lib.maintainers; [ jonathanmarler ];
     platforms = lib.platforms.unix;
   };
 }

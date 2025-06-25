@@ -26,7 +26,7 @@ buildGoModule {
     homepage = "https://github.com/brianstrauch/solitaire-tui";
     description = "Klondike solitaire for the terminal";
     mainProgram = "solitaire-tui";
-    maintainers = with maintainers; [ nyadiia ];
-    license = licenses.asl20;
+    maintainers = with lib.maintainers; [ nyadiia ];
+    license = lib.licenses.asl20;
   };
 }

@@ -57,8 +57,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Decentralized pool for Monero mining";
     homepage = "https://github.com/SChernykh/p2pool";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ ratsclub ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ ratsclub ];
     mainProgram = "p2pool";
     platforms = platforms.all;
   };

@@ -22,8 +22,8 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Test the 16 terminal colors in all combinations";
     homepage = "https://codeberg.org/annaaurora/sanctity";
-    license = licenses.lgpl3Only;
-    maintainers = with maintainers; [ annaaurora ];
+    license = lib.licenses.lgpl3Only;
+    maintainers = with lib.maintainers; [ annaaurora ];
     mainProgram = "sanctity";
   };
 }

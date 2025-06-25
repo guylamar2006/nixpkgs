@@ -27,6 +27,6 @@ buildGoModule rec {
     homepage = "https://github.com/chenjiandongx/kubectl-images";
     changelog = "https://github.com/chenjiandongx/kubectl-images/releases/tag/v${version}";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.ivankovnatsky ];
+    maintainers = with lib.maintainers; [ ivankovnatsky ];
   };
 }

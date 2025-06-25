@@ -38,7 +38,7 @@ buildGoModule {
     description = "Distributed service for announcement and discovery of services";
     homepage = "https://github.com/skynetservices/skydns";
     license = lib.licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "skydns";
     # link: golang.org/x/net/internal/socket: invalid reference to syscall.recvmsg
     broken = stdenv.hostPlatform.isDarwin;

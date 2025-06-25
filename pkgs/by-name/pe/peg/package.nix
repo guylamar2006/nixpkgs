@@ -24,6 +24,6 @@ stdenv.mkDerivation rec {
     homepage = "http://piumarta.com/software/peg/";
     description = "Tools for generating recursive-descent parsers: programs that perform pattern matching on text";
     platforms = platforms.all;
-    license = licenses.mit;
+    license = lib.licenses.mit;
   };
 }

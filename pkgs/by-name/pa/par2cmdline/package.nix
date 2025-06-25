@@ -26,8 +26,8 @@ stdenv.mkDerivation rec {
       damage in data files and repair them if necessary. It can be used with
       any kind of file.
     '';
-    license = licenses.gpl2Plus;
-    maintainers = [ ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
   };
 }

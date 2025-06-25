@@ -99,7 +99,7 @@ stdenv.mkDerivation {
     mainProgram = "midisheetmusic.mono.exe";
     homepage = "http://midisheetmusic.com";
     license = lib.licenses.gpl2;
-    maintainers = [ lib.maintainers.mdarocha ];
+    maintainers = with lib.maintainers; [ mdarocha ];
     platforms = lib.platforms.linux;
   };
 }

@@ -13,10 +13,10 @@ stdenv.mkDerivation rec {
     sha256 = "sha256-6OJ2R72ziHOsVw1GwalompKwG7Z/WQidHN0IeE9wUtA=";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Simple commandline torrent creator";
     homepage = "https://mathr.co.uk/blog/torrent.html";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     platforms = platforms.all;
     mainProgram = "buildtorrent";
   };

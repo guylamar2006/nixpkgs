@@ -77,8 +77,8 @@ stdenv.mkDerivation rec {
     homepage = "http://www.shoup.net/ntl/";
     # also locally at "${src}/doc/tour-changes.html";
     changelog = "https://www.shoup.net/ntl/doc/tour-changes.html";
-    teams = [ teams.sage ];
-    license = licenses.gpl2Plus;
+    teams = with lib.teams; [ sage ];
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.all;
     # Does not cross compile
     # https://github.com/libntl/ntl/issues/8

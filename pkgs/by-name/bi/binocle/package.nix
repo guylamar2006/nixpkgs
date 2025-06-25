@@ -42,7 +42,7 @@ rustPlatform.buildRustPackage rec {
       }
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Graphical tool to visualize binary data";
     mainProgram = "binocle";
     homepage = "https://github.com/sharkdp/binocle";
@@ -50,6 +50,6 @@ rustPlatform.buildRustPackage rec {
       asl20 # or
       mit
     ];
-    maintainers = with maintainers; [ figsoda ];
+    maintainers = with lib.maintainers; [ figsoda ];
   };
 }

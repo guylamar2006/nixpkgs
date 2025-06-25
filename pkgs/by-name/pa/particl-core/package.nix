@@ -73,8 +73,8 @@ stdenv.mkDerivation rec {
       RPC daemon and CLI client only.
     '';
     homepage = "https://particl.io/";
-    maintainers = with maintainers; [ demyanrogozhin ];
-    license = licenses.mit;
+    maintainers = with lib.maintainers; [ demyanrogozhin ];
+    license = lib.licenses.mit;
     platforms = platforms.unix;
   };
 }

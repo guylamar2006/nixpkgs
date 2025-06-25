@@ -38,11 +38,11 @@ stdenv.mkDerivation rec {
     chmod +x $prefix/bin/git-latexdiff
   '';
 
-  meta = with lib; {
+  meta = {
     description = "View diff on LaTeX source files on the generated PDF files";
     homepage = "https://gitlab.com/git-latexdiff/git-latexdiff";
-    maintainers = [ ];
-    license = licenses.bsd3; # https://gitlab.com/git-latexdiff/git-latexdiff/issues/9
+    maintainers = with lib.maintainers; [ ];
+    license = lib.licenses.bsd3; # https://gitlab.com/git-latexdiff/git-latexdiff/issues/9
     platforms = platforms.unix;
     mainProgram = "git-latexdiff";
   };

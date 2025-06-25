@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     mainProgram = "xoscope";
     homepage = "https://xoscope.sourceforge.net";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = with lib.platforms; linux;
   };
 }

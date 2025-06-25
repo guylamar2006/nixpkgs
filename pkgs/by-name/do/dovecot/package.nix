@@ -177,7 +177,7 @@ stdenv.mkDerivation rec {
 
   doCheck = !stdenv.hostPlatform.isDarwin;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://dovecot.org/";
     description = "Open source IMAP and POP3 email server written with security primarily in mind";
     license = with licenses; [
@@ -188,7 +188,7 @@ stdenv.mkDerivation rec {
       bsdOriginal
     ];
     mainProgram = "dovecot";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       fpletz
       globin
     ];

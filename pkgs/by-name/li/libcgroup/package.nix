@@ -58,6 +58,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/libcgroup/libcgroup";
     license = lib.licenses.lgpl2;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.thoughtpolice ];
+    maintainers = with lib.maintainers; [ thoughtpolice ];
   };
 }

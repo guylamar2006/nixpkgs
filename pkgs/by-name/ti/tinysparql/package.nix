@@ -183,7 +183,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://tracker.gnome.org/";
     description = "Desktop-neutral user information store, search tool and indexer";
     mainProgram = "tinysparql";
-    teams = [ teams.gnome ];
+    teams = with lib.teams; [ gnome ];
     license = licenses.gpl2Plus;
     platforms = platforms.unix;
     pkgConfigModules = [

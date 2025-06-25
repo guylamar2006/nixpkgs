@@ -56,7 +56,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Remote execution tool";
     homepage = "https://www.eyrie.org/~eagle/software/remctl";
     mainProgram = "remctl";
-    license = licenses.mit;
-    teams = [ teams.deshaw ];
+    license = lib.licenses.mit;
+    teams = with lib.teams; [ deshaw ];
   };
 })

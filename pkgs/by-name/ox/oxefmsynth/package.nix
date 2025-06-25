@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://github.com/oxesoft/oxefmsynth";
     description = "Open source VST 2.4 instrument plugin";
-    maintainers = [ lib.maintainers.hirenashah ];
+    maintainers = with lib.maintainers; [ hirenashah ];
     platforms = [ "x86_64-linux" ];
     license = lib.licenses.gpl3Only;
   };

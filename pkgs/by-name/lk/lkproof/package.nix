@@ -21,8 +21,8 @@ stdenv.mkDerivation {
     cp -prd *.sty $out/share/texmf-nix/tex/generic/lkproof
   ";
 
-  meta = with lib; {
+  meta = {
     platforms = platforms.unix;
-    license = licenses.gpl1Plus;
+    license = lib.licenses.gpl1Plus;
   };
 }

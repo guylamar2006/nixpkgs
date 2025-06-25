@@ -98,8 +98,8 @@ let
       description = "Launcher for RuneScape 3, the current main RuneScape";
       homepage = "https://www.runescape.com/";
       sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-      license = licenses.unfree;
-      maintainers = with maintainers; [ grburst ];
+      license = lib.licenses.unfree;
+      maintainers = with lib.maintainers; [ grburst ];
       platforms = [ "x86_64-linux" ];
     };
   };
@@ -148,8 +148,8 @@ buildFHSEnv {
   meta = with lib; {
     description = "RuneScape Game Client (NXT) - Launcher for RuneScape 3";
     homepage = "https://www.runescape.com/";
-    license = licenses.unfree;
-    maintainers = with maintainers; [ grburst ];
+    license = lib.licenses.unfree;
+    maintainers = with lib.maintainers; [ grburst ];
     platforms = [ "x86_64-linux" ];
   };
 }

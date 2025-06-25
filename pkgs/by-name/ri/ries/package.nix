@@ -20,7 +20,7 @@ stdenv.mkDerivation rec {
     description = "Tool to produce a list of equations that approximately solve to a given number";
     mainProgram = "ries";
     platforms = platforms.all;
-    maintainers = with maintainers; [ symphorien ];
-    license = licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ symphorien ];
+    license = lib.licenses.gpl3Plus;
   };
 }

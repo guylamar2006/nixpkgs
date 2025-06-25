@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/phillbush/xnotify";
     license = licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
     mainProgram = "xnotify";
   };

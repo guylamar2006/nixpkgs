@@ -16,7 +16,7 @@ stdenv.mkDerivation rec {
     description = "Provides the ability to communicate with the Garmin Forerunner 305 via the USB interface";
     homepage = "https://code.google.com/archive/p/garmintools/"; # community clone at https://github.com/ianmartin/garmintools
     license = lib.licenses.gpl2;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
     # never built on aarch64-darwin since first introduction in nixpkgs
     broken = stdenv.hostPlatform.isDarwin && stdenv.hostPlatform.isAarch64;

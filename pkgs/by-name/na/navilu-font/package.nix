@@ -29,8 +29,8 @@ stdenvNoCC.mkDerivation rec {
     src.meta
     // {
       description = "Kannada handwriting font";
-      license = licenses.gpl3Plus;
+      license = lib.licenses.gpl3Plus;
       platforms = platforms.all;
-      maintainers = with maintainers; [ ehmry ];
+      maintainers = with lib.maintainers; [ ehmry ];
     };
 }

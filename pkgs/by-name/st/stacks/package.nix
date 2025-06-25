@@ -18,7 +18,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Software pipeline for building loci from short-read sequences";
     homepage = "http://catchenlab.life.illinois.edu/stacks/";
-    maintainers = [ lib.maintainers.bzizou ];
+    maintainers = with lib.maintainers; [ bzizou ];
     license = lib.licenses.gpl3Plus;
     platforms = lib.platforms.linux;
   };

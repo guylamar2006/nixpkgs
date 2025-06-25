@@ -59,9 +59,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/haiwen/seafile";
     description = "Shared components of Seafile: seafile-daemon, libseafile, libseafile python bindings, manuals, and icons";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.linux;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       schmittlauch
     ];
   };

@@ -89,8 +89,8 @@ python.pkgs.buildPythonApplication rec {
       cc-by-sa-40
       cc0
     ];
-    platforms = platforms.linux;
-    maintainers = with maintainers; [ erictapen ];
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ erictapen ];
     mainProgram = "open-web-calendar";
   };
 }

@@ -32,8 +32,8 @@ stdenvNoCC.mkDerivation {
       Type Director of Ascender Corp.
     '';
     homepage = "https://www.opensans.com";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     platforms = platforms.all;
-    teams = [ teams.pantheon ];
+    teams = with lib.teams; [ pantheon ];
   };
 }

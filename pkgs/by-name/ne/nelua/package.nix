@@ -37,8 +37,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Minimal, efficient, statically-typed and meta-programmable systems programming language heavily inspired by Lua, which compiles to C and native code";
     homepage = "https://nelua.io/";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.all;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

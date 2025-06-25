@@ -17,11 +17,11 @@ stdenv.mkDerivation rec {
     ./include.patch
   ];
 
-  meta = with lib; {
+  meta = {
     description = "CloneCD to ISO converter";
     homepage = "https://sourceforge.net/projects/ccd2iso/";
-    license = licenses.gpl2Plus;
-    maintainers = [ ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
     mainProgram = "ccd2iso";
   };

@@ -57,7 +57,7 @@ stdenv.mkDerivation rec {
     description = "Modern IRC client written in GTK";
     mainProgram = "srain";
     homepage = "https://srain.silverrainz.me";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     platforms = platforms.linux;
     maintainers = with maintainers; [ rewine ];
   };

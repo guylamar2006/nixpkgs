@@ -36,9 +36,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Optimized OpenType builder and inspector";
     homepage = "https://github.com/caryll/otfcc";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ ttuegel ];
+    maintainers = with lib.maintainers; [ ttuegel ];
     # Build fails on all platforms with
     #        > configure flags: gmake
     #   > ** Warning: action 'xcode4' sets 'os' field, which is deprecated, use 'targetos' instead.

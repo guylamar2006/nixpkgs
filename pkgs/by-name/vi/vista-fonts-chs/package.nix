@@ -45,7 +45,7 @@ stdenvNoCC.mkDerivation {
     description = "TrueType fonts from Microsoft Windows Vista For Simplified Chinese (Microsoft YaHei)";
     homepage = "https://www.microsoft.com/typography/fonts/family.aspx?FID=350";
     license = lib.licenses.unfree;
-    maintainers = [ lib.maintainers.ChengCat ];
+    maintainers = with lib.maintainers; [ ChengCat ];
 
     # Set a non-zero priority to allow easy overriding of the
     # fontconfig configuration files.

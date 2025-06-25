@@ -31,7 +31,7 @@ stdenvNoCC.mkDerivation rec {
     description = "Header-only C++ program options parser library";
     homepage = "https://github.com/badaix/popl";
     changelog = "https://github.com/badaix/popl/releases/tag/${src.rev}";
-    license = licenses.mit;
-    maintainers = [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
   };
 }

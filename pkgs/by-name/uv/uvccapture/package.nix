@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
     description = "Capture image from USB webcam at a specified interval";
     license = licenses.gpl2Plus;
     platforms = platforms.linux;
-    maintainers = [ maintainers.bjornfor ];
+    maintainers = with lib.maintainers; [ bjornfor ];
     mainProgram = "uvccapture";
   };
 }

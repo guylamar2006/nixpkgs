@@ -64,7 +64,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://ccl.northwestern.edu/netlogo/index.shtml";
     sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.gpl2;
-    maintainers = [ lib.maintainers.dpaetzel ];
+    maintainers = with lib.maintainers; [ dpaetzel ];
     platforms = lib.platforms.linux;
   };
 })

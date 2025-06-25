@@ -21,8 +21,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "PARI database needed by ellap for large primes";
     homepage = "http://pari.math.u-bordeaux.fr/";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.all;
-    teams = [ teams.sage ];
+    teams = with lib.teams; [ sage ];
   };
 }

@@ -118,7 +118,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/shadow-maint/shadow";
     description = "Suite containing authentication-related tools such as passwd and su";
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     platforms = platforms.linux;
   };
 

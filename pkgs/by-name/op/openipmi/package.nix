@@ -40,8 +40,8 @@ stdenv.mkDerivation rec {
       gpl2Only
       lgpl2Only
     ];
-    platforms = platforms.linux;
-    maintainers = with maintainers; [ arezvov ];
-    teams = [ teams.c3d2 ];
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ arezvov ];
+    teams = with lib.teams; [ c3d2 ];
   };
 }

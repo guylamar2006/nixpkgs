@@ -90,7 +90,7 @@ stdenv.mkDerivation rec {
       teams.gnome
       teams.gnome-circle
     ];
-    license = licenses.gpl2Plus;
-    platforms = platforms.linux;
+    license = lib.licenses.gpl2Plus;
+    platforms = lib.platforms.linux;
   };
 }

@@ -38,7 +38,7 @@ buildGoModule rec {
     description = "Gateway Bridge abstracts Packet Forwarder protocols into Protobuf or JSON over MQTT";
     homepage = "https://www.chirpstack.io/";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.stv0g ];
+    maintainers = with lib.maintainers; [ stv0g ];
     mainProgram = "chirpstack-gateway-bridge";
   };
 }

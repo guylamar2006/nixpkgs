@@ -135,12 +135,12 @@ rustPlatform.buildRustPackage {
     version = "2.2.1";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Cross-platform Text Expander written in Rust";
     mainProgram = "espanso";
     homepage = "https://espanso.org";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [
       kimat
       pyrox0
       n8henrie

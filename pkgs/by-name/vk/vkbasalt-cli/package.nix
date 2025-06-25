@@ -30,7 +30,7 @@ python3Packages.buildPythonApplication rec {
       lgpl3Only
       gpl3Only
     ];
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "vkbasalt";
   };
 }

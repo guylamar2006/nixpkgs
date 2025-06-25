@@ -23,7 +23,7 @@ buildGoModule rec {
     homepage = "https://moncho.github.io/dry/";
     changelog = "https://github.com/moncho/dry/releases/tag/v${version}";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.dump_stack ];
+    maintainers = with lib.maintainers; [ dump_stack ];
     mainProgram = "dry";
   };
 }

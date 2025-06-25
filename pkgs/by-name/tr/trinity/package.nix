@@ -32,7 +32,7 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "trinity";
     homepage = "https://github.com/kernelslacker/trinity";
     license = lib.licenses.gpl2Only;
-    maintainers = [ lib.maintainers.dezgeg ];
+    maintainers = with lib.maintainers; [ dezgeg ];
     platforms = lib.platforms.linux;
   };
 })

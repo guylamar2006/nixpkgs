@@ -49,7 +49,7 @@ rustPlatform.buildRustPackage rec {
     --set ADB ${androidenv.androidPkgs.platform-tools}/bin/adb
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Reverse tethering over adb for Android";
     mainProgram = "gnirehtet";
     longDescription = ''
@@ -62,8 +62,8 @@ rustPlatform.buildRustPackage rec {
       fromSource
       binaryBytecode # gnirehtet.apk
     ];
-    license = licenses.asl20;
-    maintainers = with maintainers; [ symphorien ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ symphorien ];
     platforms = platforms.unix;
   };
 }

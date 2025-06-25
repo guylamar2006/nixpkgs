@@ -39,7 +39,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
     homepage = "https://github.com/Virviil/oci2git";
     changelog = "https://github.com/Virviil/oci2git/releases/tag/v${finalAttrs.version}";
     license = [ lib.licenses.mit ];
-    maintainers = [ lib.maintainers.kpbaks ];
+    maintainers = with lib.maintainers; [ kpbaks ];
     mainProgram = "oci2git";
     platforms = lib.platforms.all;
   };

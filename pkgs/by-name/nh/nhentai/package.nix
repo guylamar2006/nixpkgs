@@ -32,7 +32,7 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://github.com/RicterZ/nhentai";
     description = "CLI tool for downloading doujinshi from adult site(s)";
     license = lib.licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "nhentai";
   };
 }

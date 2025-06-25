@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
     description = "Simple toolset for broadcasting live audio using RTP/UDP and Opus";
     homepage = "http://www.pogo.org.uk/~mark/trx/";
     license = licenses.gpl2Only;
-    maintainers = [ maintainers.hansjoergschurr ];
+    maintainers = with lib.maintainers; [ hansjoergschurr ];
     platforms = platforms.linux;
   };
 }

@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
     homepage = "https://salsa.debian.org/debian/xtrace";
     description = "Tool to trace X11 protocol connections";
     license = licenses.gpl2Only;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = with platforms; linux;
     mainProgram = "xtrace";
   };

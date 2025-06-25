@@ -36,11 +36,11 @@ stdenv.mkDerivation rec {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/jluttine/cholmod-extra";
     description = "Set of additional routines for SuiteSparse CHOLMOD Module";
     license = with licenses; [ gpl2Plus ];
-    maintainers = with maintainers; [ jluttine ];
+    maintainers = with lib.maintainers; [ jluttine ];
     platforms = with platforms; unix;
   };
 

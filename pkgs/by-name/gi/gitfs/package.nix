@@ -50,7 +50,7 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://github.com/PressLabs/gitfs";
     license = lib.licenses.asl20;
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.robbinch ];
+    maintainers = with lib.maintainers; [ robbinch ];
     mainProgram = "gitfs";
     # requires <=python39, otherwise you get this at runtime:
     # AttributeError: module 'collections' has no attribute 'MutableMapping'

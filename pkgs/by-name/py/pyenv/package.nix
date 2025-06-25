@@ -47,8 +47,8 @@ stdenv.mkDerivation rec {
     description = "Simple Python version management";
     homepage = "https://github.com/pyenv/pyenv";
     changelog = "https://github.com/pyenv/pyenv/blob/${src.rev}/CHANGELOG.md";
-    license = licenses.mit;
-    maintainers = with maintainers; [ tjni ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ tjni ];
     platforms = platforms.all;
     mainProgram = "pyenv";
   };

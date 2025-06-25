@@ -33,8 +33,8 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "Utilities for analyzing application performance";
     homepage = "https://0x.tools";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [ astro ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ astro ];
     platforms = [ "x86_64-linux" ];
   };
 })

@@ -104,8 +104,8 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://www.powerdns.com";
     platforms = platforms.unix;
     broken = stdenv.hostPlatform.isDarwin;
-    license = licenses.gpl2Only;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [
       mic92
       disassembler
       nickcao

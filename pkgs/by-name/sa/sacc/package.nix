@@ -37,8 +37,8 @@ stdenv.mkDerivation rec {
     description = "Terminal gopher client";
     mainProgram = "sacc";
     homepage = "gopher://bitreich.org/1/scm/sacc";
-    license = licenses.isc;
-    maintainers = [ maintainers.sternenseemann ];
+    license = lib.licenses.isc;
+    maintainers = with lib.maintainers; [ sternenseemann ];
     platforms = platforms.unix;
   };
 }

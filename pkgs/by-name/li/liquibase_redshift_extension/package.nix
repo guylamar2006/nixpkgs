@@ -21,11 +21,11 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/liquibase/liquibase-redshift/";
     description = "Amazon Redshift extension for Liquibase";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ sir4ur0n ];
+    maintainers = with lib.maintainers; [ sir4ur0n ];
   };
 }

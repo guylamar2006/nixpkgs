@@ -112,11 +112,11 @@ stdenv.mkDerivation (finalAttrs: {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Library that aggregates people from multiple sources to create metacontacts";
     homepage = "https://gitlab.gnome.org/GNOME/folks";
-    license = licenses.lgpl21Plus;
-    teams = [ teams.gnome ];
+    license = lib.licenses.lgpl21Plus;
+    teams = with lib.teams; [ gnome ];
     platforms = platforms.unix;
   };
 })

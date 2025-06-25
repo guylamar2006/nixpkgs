@@ -24,8 +24,8 @@ buildGoModule rec {
   meta = with lib; {
     description = "Yet another SIP003 plugin for shadowsocks, based on v2ray";
     homepage = "https://github.com/shadowsocks/v2ray-plugin/";
-    license = licenses.mit;
-    maintainers = [ maintainers.ahrzb ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ahrzb ];
     mainProgram = "v2ray-plugin";
   };
 }

@@ -21,7 +21,7 @@ buildGoModule rec {
     homepage = "https://github.com/michaelmacinnis/oh";
     description = "New Unix shell";
     mainProgram = "oh";
-    license = licenses.mit;
+    license = lib.licenses.mit;
   };
 
   passthru = {

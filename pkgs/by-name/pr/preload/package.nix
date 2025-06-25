@@ -38,9 +38,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Makes applications run faster by prefetching binaries and shared objects";
     homepage = "https://sourceforge.net/projects/preload";
-    license = licenses.gpl2Only;
+    license = lib.licenses.gpl2Only;
     platforms = lib.platforms.linux;
     mainProgram = "preload";
-    maintainers = with maintainers; [ ldprg ];
+    maintainers = with lib.maintainers; [ ldprg ];
   };
 }

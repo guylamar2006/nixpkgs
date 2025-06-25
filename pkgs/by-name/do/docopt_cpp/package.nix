@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
 
   checkPhase = "python ./run_tests";
 
-  meta = with lib; {
+  meta = {
     description = "C++11 port of docopt";
     homepage = "https://github.com/docopt/docopt.cpp";
     license = with licenses; [
@@ -53,6 +53,6 @@ stdenv.mkDerivation rec {
       boost
     ];
     platforms = platforms.all;
-    maintainers = with maintainers; [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

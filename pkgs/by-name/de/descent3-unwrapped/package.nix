@@ -140,7 +140,7 @@ stdenv.mkDerivation rec {
       mit
     ];
     mainProgram = "Descent3";
-    maintainers = [ lib.maintainers.jayman2000 ];
+    maintainers = with lib.maintainers; [ jayman2000 ];
     platforms = lib.platforms.all;
     badPlatforms = [
       # Descent 3 stores modules in HOG2 archives. It extracts those modules

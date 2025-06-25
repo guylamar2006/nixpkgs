@@ -26,9 +26,9 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Fast SNMP Scanner";
     homepage = "https://github.com/trailofbits/onesixtyone";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.unix;
-    maintainers = [ maintainers.fishi0x01 ];
+    maintainers = with lib.maintainers; [ fishi0x01 ];
     mainProgram = "onesixtyone";
   };
 }

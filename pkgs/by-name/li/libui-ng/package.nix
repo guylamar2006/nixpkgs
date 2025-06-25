@@ -44,11 +44,11 @@ stdenv.mkDerivation {
     tagPrefix = "alpha";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Portable GUI library for C";
     homepage = "https://github.com/libui-ng/libui-ng";
-    license = licenses.mit;
-    maintainers = [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
   };
 }

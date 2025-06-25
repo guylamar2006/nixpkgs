@@ -24,10 +24,10 @@ stdenvNoCC.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Typeface used in Edward Tufte’s books";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.all;
-    maintainers = with maintainers; [ jethro ];
+    maintainers = with lib.maintainers; [ jethro ];
   };
 }

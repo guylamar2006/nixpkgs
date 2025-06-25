@@ -56,7 +56,7 @@ rustPlatform.buildRustPackage rec {
       asl20
       isc
     ];
-    maintainers = with maintainers; [ figsoda ];
+    maintainers = with lib.maintainers; [ figsoda ];
     mainProgram = "oro";
   };
 }

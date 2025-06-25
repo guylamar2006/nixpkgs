@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
     description = "High quality CD audio ripper";
     mainProgram = "rrip_cli";
     platforms = platforms.linux;
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     homepage = "https://github.com/bleskodev/rubyripper";
   };
 }

@@ -26,12 +26,12 @@ stdenv.mkDerivation (finalAttrs: {
     guile
   ];
 
-  meta = with lib; {
+  meta = {
     description = "POSIX-compatible shell written in Guile Scheme";
     mainProgram = "gash";
     homepage = "https://savannah.nongnu.org/projects/gash/";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ wegank ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ wegank ];
     platforms = platforms.all;
   };
 })

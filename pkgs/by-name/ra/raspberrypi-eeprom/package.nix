@@ -77,7 +77,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
       bsd3
       unfreeRedistributableFirmware
     ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       das_j
       Luflosi
     ];

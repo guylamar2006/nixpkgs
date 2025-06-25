@@ -62,8 +62,8 @@ stdenv.mkDerivation rec {
     changelog = "https://github.com/andmarti1424/sc-im/blob/${src.rev}/CHANGES";
     homepage = "https://github.com/andmarti1424/sc-im";
     description = "Ncurses spreadsheet program for terminal";
-    license = licenses.bsdOriginal;
-    maintainers = with maintainers; [ dotlambda ];
+    license = lib.licenses.bsdOriginal;
+    maintainers = with lib.maintainers; [ dotlambda ];
     platforms = platforms.unix;
   };
 }

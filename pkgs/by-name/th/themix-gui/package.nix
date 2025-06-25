@@ -73,7 +73,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/themix-project/themix-gui";
     license = lib.licenses.gpl3Only;
     mainProgram = "themix-gui";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
   };
 }

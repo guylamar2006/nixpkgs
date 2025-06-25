@@ -51,8 +51,8 @@ rustPlatform.buildRustPackage rec {
     description = "RISC Zero zero-knowledge VM";
     homepage = "https://github.com/risc0/risc0";
     changelog = "https://github.com/risc0/risc0/blob/${src.rev}/CHANGELOG.md";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ marijanp ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ marijanp ];
     mainProgram = "r0vm";
   };
 }

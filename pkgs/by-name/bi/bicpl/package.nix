@@ -30,10 +30,10 @@ stdenv.mkDerivation {
   doCheck = false;
   # internal_volume_io.h: No such file or directory
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/BIC-MNI/bicpl";
     description = "Brain Imaging Centre programming library";
-    maintainers = with maintainers; [ bcdarwin ];
+    maintainers = with lib.maintainers; [ bcdarwin ];
     platforms = platforms.unix;
     license = with licenses; [
       hpndUc

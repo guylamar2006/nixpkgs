@@ -72,15 +72,15 @@ stdenv.mkDerivation rec {
     "-DUSE_MACOS_PACKAGE_MANAGER=False"
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://elmerfem.org";
     description = "Finite element software for multiphysical problems";
     platforms = platforms.unix;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       wulfsta
       broke
     ];
-    license = licenses.lgpl21;
+    license = lib.licenses.lgpl21;
   };
 
 }

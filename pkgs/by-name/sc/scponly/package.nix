@@ -40,6 +40,6 @@ stdenv.mkDerivation {
     mainProgram = "scponly";
     homepage = "https://github.com/scponly/scponly";
     license = with licenses; [ bsd2 ];
-    maintainers = with maintainers; [ wmertens ];
+    maintainers = with lib.maintainers; [ wmertens ];
   };
 }

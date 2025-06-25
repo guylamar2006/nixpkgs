@@ -54,8 +54,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/scanmem/scanmem";
     description = "Memory scanner for finding and poking addresses in executing processes";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.linux;
-    license = licenses.gpl3;
+    license = lib.licenses.gpl3;
   };
 }

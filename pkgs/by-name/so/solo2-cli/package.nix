@@ -55,7 +55,7 @@ rustPlatform.buildRustPackage rec {
       asl20
       mit
     ]; # either at your option
-    maintainers = with maintainers; [ lukegb ];
+    maintainers = with lib.maintainers; [ lukegb ];
     mainProgram = "solo2";
   };
 }

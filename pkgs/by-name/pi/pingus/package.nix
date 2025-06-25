@@ -49,7 +49,7 @@ stdenv.mkDerivation {
     description = "Puzzle game with mechanics similar to Lemmings";
     mainProgram = "pingus";
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.raskin ];
+    maintainers = with lib.maintainers; [ raskin ];
     license = lib.licenses.gpl3;
   };
 }

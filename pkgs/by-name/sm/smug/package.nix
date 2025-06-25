@@ -36,8 +36,8 @@ buildGoModule rec {
   meta = with lib; {
     homepage = "https://github.com/ivaaaan/smug";
     description = "Smug - tmux session manager";
-    license = licenses.mit;
-    maintainers = with maintainers; [ juboba ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ juboba ];
     mainProgram = "smug";
   };
 }

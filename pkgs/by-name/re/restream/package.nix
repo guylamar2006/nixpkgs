@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
     description = "reMarkable screen sharing over SSH";
     mainProgram = "restream";
     homepage = "https://github.com/rien/reStream";
-    license = licenses.mit;
-    maintainers = [ maintainers.cpcloud ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ cpcloud ];
   };
 }

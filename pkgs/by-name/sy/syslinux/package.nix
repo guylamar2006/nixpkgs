@@ -141,7 +141,7 @@ stdenv.mkDerivation {
     homepage = "https://www.syslinux.org/";
     description = "Lightweight bootloader";
     license = licenses.gpl2Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = [
       "i686-linux"
       "x86_64-linux"

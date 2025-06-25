@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     mainProgram = "osmo-pcu";
     homepage = "https://osmocom.org/projects/osmopcu";
     license = lib.licenses.gpl2Only;
-    maintainers = [ lib.maintainers.markuskowa ];
+    maintainers = with lib.maintainers; [ markuskowa ];
     platforms = lib.platforms.linux;
   };
 }

@@ -33,8 +33,8 @@ buildGoModule rec {
   meta = with lib; {
     description = "Add numbered shortcuts to common git commands";
     homepage = "https://github.com/mroth/scmpuff";
-    license = licenses.mit;
-    maintainers = with maintainers; [ cpcloud ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ cpcloud ];
     mainProgram = "scmpuff";
   };
 }

@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.stribob.com/stricat/";
     license = lib.licenses.bsd3;
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.thoughtpolice ];
+    maintainers = with lib.maintainers; [ thoughtpolice ];
     mainProgram = "stricat";
   };
 }

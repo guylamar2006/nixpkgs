@@ -74,7 +74,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://www.lxde.org/";
     license = lib.licenses.gpl2Only;
-    maintainers = [ lib.maintainers.pbsds ];
+    maintainers = with lib.maintainers; [ pbsds ];
     platforms = lib.platforms.linux;
     mainProgram = "lxterminal";
   };

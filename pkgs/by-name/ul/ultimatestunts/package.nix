@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.ultimatestunts.nl/";
     description = "Remake of the popular racing DOS-game Stunts";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = with lib.platforms; linux;
   };
 }

@@ -27,7 +27,7 @@ buildGoModule rec {
     description = "Compose with Mutagen integration";
     homepage = "https://mutagen.io/";
     changelog = "https://github.com/mutagen-io/mutagen-compose/releases/tag/v${version}";
-    maintainers = [ lib.maintainers.matthewpi ];
+    maintainers = with lib.maintainers; [ matthewpi ];
     license = lib.licenses.mit;
     mainProgram = "mutagen-compose";
   };

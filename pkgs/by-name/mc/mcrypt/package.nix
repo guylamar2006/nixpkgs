@@ -40,6 +40,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://mcrypt.sourceforge.net";
     license = lib.licenses.gpl3Plus;
     platforms = lib.platforms.all;
-    maintainers = [ lib.maintainers.qknight ];
+    maintainers = with lib.maintainers; [ qknight ];
   };
 })

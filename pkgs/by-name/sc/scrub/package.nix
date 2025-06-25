@@ -30,8 +30,8 @@ stdenv.mkDerivation rec {
     description = "Disk overwrite utility";
     homepage = "https://github.com/chaos/scrub";
     changelog = "https://raw.githubusercontent.com/chaos/scrub/master/NEWS";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [ j0hax ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ j0hax ];
     platforms = platforms.unix;
     mainProgram = "scrub";
   };

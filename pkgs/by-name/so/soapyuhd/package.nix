@@ -39,8 +39,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/pothosware/SoapyAirspy";
     description = "SoapySDR plugin for UHD devices";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ markuskowa ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ markuskowa ];
     platforms = platforms.unix;
   };
 }

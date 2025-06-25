@@ -59,7 +59,7 @@ stdenv.mkDerivation (finalAttrs: {
       # repo contains the X logo, which was converted from Xmu/DrawLogo.c, licensed under:
       mitOpenGroup
     ];
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
   };
 })

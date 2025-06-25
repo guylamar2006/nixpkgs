@@ -86,11 +86,11 @@ stdenv.mkDerivation {
   # A few tests fail on aarch64-linux
   doCheck = !(stdenv.hostPlatform.isLinux && stdenv.hostPlatform.isAarch64);
 
-  meta = with lib; {
+  meta = {
     description = "Tool to extract files from visual novel archives";
     homepage = "https://github.com/vn-tools/arc_unpacker";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ midchildan ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ midchildan ];
     platforms = platforms.all;
     mainProgram = "arc_unpacker";
 

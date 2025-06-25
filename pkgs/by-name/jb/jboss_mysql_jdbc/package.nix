@@ -19,13 +19,13 @@ stdenv.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     inherit (mysql_jdbc.meta)
       description
       license
       platforms
       homepage
       ;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

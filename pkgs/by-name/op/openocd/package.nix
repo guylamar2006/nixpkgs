@@ -93,8 +93,8 @@ stdenv.mkDerivation rec {
       GNU GDB program.
     '';
     homepage = "https://openocd.sourceforge.net/";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [
       bjornfor
       prusnak
     ];

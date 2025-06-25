@@ -29,7 +29,7 @@ rustPlatform.buildRustPackage rec {
       mit
       asl20
     ];
-    maintainers = [ lib.maintainers.mangoiv ];
+    maintainers = with lib.maintainers; [ mangoiv ];
     mainProgram = "pol";
     platforms = lib.platforms.all;
   };

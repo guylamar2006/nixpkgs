@@ -24,11 +24,11 @@ python3.pkgs.buildPythonPackage {
 
   pythonImportsCheck = [ "dictcc" ];
 
-  meta = with lib; {
+  meta = {
     description = "Unofficial command line client for dict.cc";
     mainProgram = "dict.cc.py";
     homepage = "https://github.com/rbaron/dict.cc.py";
     license = with licenses; [ cc0 ];
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

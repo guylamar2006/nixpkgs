@@ -60,9 +60,9 @@ stdenvNoCC.mkDerivation (finalAttrs: {
 
   passthru.updateScript = nix-update-script { extraArgs = [ "--version=branch" ]; };
 
-  meta = with lib; {
+  meta = {
     description = "Helper for screenshots within Hyprland, based on grimshot";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.unix;
     teams = [ lib.teams.hyprland ];
     mainProgram = "grimblast";

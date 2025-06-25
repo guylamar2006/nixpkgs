@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
       bsd0
       isc
     ];
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
   };
 }

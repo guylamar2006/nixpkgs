@@ -74,7 +74,7 @@ stdenv.mkDerivation {
     homepage = "http://kitone.github.io/subtitleeditor/";
     license = lib.licenses.gpl3Plus;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.plcplc ];
+    maintainers = with lib.maintainers; [ plcplc ];
     mainProgram = "subtitleeditor";
   };
 }

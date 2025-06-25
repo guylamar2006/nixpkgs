@@ -82,7 +82,7 @@ let
       description = "Implementation of the Infinote protocol written in GObject-based C";
       mainProgram = "infinoted-0.7";
       license = lib.licenses.lgpl2Plus;
-      maintainers = [ ];
+      maintainers = with lib.maintainers; [ ];
       platforms = with lib.platforms; linux ++ darwin;
     };
   };

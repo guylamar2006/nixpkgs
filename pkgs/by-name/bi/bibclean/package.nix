@@ -21,11 +21,11 @@ stdenv.mkDerivation rec {
     mkdir -p $out/bin $out/share/man/man1
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Prettyprint and syntax check BibTeX and Scribe bibliography data base files";
     homepage = "http://ftp.math.utah.edu/pub/bibclean";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.all;
-    maintainers = with maintainers; [ dtzWill ];
+    maintainers = with lib.maintainers; [ dtzWill ];
   };
 }

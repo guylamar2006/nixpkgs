@@ -68,7 +68,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Virtual keyboard supporting Wayland";
     homepage = "https://gitlab.gnome.org/World/Phosh/squeekboard";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     maintainers = with maintainers; [ artturin ];
     platforms = platforms.linux;
   };

@@ -35,8 +35,8 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://spacenav.sourceforge.net/";
     description = "Device driver and SDK for 3Dconnexion 3D input devices";
     longDescription = "A free, compatible alternative, to the proprietary 3Dconnexion device driver and SDK, for their 3D input devices (called 'space navigator', 'space pilot', 'space traveller', etc)";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ sohalt ];
+    maintainers = with lib.maintainers; [ sohalt ];
   };
 })

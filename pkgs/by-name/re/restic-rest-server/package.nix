@@ -25,7 +25,7 @@ buildGoModule rec {
     description = "High performance HTTP server that implements restic's REST backend API";
     mainProgram = "rest-server";
     homepage = "https://github.com/restic/rest-server";
-    license = licenses.bsd2;
-    maintainers = with maintainers; [ dotlambda ];
+    license = lib.licenses.bsd2;
+    maintainers = with lib.maintainers; [ dotlambda ];
   };
 }

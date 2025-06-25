@@ -95,11 +95,11 @@ stdenv.mkDerivation rec {
     description = "Translator of declarative Datalog programs into the C++ language";
     homepage = "https://souffle-lang.github.io/";
     platforms = platforms.unix;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       thoughtpolice
       wchresta
       markusscherer
     ];
-    license = licenses.upl;
+    license = lib.licenses.upl;
   };
 }

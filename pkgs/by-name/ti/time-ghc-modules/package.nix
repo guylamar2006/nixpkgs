@@ -58,7 +58,7 @@ stdenv.mkDerivation rec {
     mainProgram = "time-ghc-modules";
     homepage = "https://github.com/codedownio/time-ghc-modules";
     license = licenses.mit;
-    maintainers = [ maintainers.thomasjm ];
+    maintainers = with lib.maintainers; [ thomasjm ];
     platforms = platforms.all;
   };
 }

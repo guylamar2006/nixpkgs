@@ -35,8 +35,8 @@ python3Packages.buildPythonApplication rec {
   meta = with lib; {
     description = "Download Music from Soundcloud";
     homepage = "https://github.com/flyingrub/scdl";
-    license = licenses.gpl2Only;
-    maintainers = [ ];
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "scdl";
   };
 }

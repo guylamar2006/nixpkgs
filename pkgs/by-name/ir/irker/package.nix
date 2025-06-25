@@ -48,11 +48,11 @@ stdenv.mkDerivation {
     "DESTDIR=$$out"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "IRC client that runs as a daemon accepting notification requests";
     homepage = "https://gitlab.com/esr/irker";
-    license = licenses.bsd2;
-    maintainers = [ ];
+    license = lib.licenses.bsd2;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "irkerd";
     platforms = platforms.unix;
   };

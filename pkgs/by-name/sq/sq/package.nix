@@ -51,8 +51,8 @@ buildGoModule rec {
     description = "Swiss army knife for data";
     mainProgram = "sq";
     homepage = "https://sq.io/";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.all;
-    maintainers = with maintainers; [ raitobezarius ];
+    maintainers = with lib.maintainers; [ raitobezarius ];
   };
 }

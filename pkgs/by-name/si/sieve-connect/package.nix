@@ -67,9 +67,9 @@ stdenv.mkDerivation rec {
       implemented by timsieved in Cyrus IMAP.
     '';
     homepage = "https://github.com/philpennock/sieve-connect";
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ das_j ];
+    maintainers = with lib.maintainers; [ das_j ];
     mainProgram = "sieve-connect";
   };
 }

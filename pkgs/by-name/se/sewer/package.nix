@@ -22,7 +22,7 @@ python3Packages.buildPythonApplication rec {
   meta = with lib; {
     homepage = "https://github.com/komuw/sewer";
     description = "ACME client";
-    license = licenses.mit;
-    maintainers = with maintainers; [ kevincox ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ kevincox ];
   };
 }

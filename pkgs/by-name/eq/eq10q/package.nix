@@ -68,7 +68,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://eq10q.sourceforge.net/";
     license = lib.licenses.gpl3;
-    maintainers = [ lib.maintainers.magnetophon ];
+    maintainers = with lib.maintainers; [ magnetophon ];
     platforms = lib.platforms.linux;
   };
 }

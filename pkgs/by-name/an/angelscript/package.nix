@@ -32,10 +32,10 @@ stdenv.mkDerivation rec {
     cp -r $ROOT/docs/* "$out/share/docs/angelscript"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Light-weight scripting library";
-    license = licenses.zlib;
-    maintainers = with maintainers; [ raskin ];
+    license = lib.licenses.zlib;
+    maintainers = with lib.maintainers; [ raskin ];
     platforms = platforms.all;
     downloadPage = "https://www.angelcode.com/angelscript/downloads.html";
     homepage = "https://www.angelcode.com/angelscript/";

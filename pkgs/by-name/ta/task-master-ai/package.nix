@@ -30,7 +30,7 @@ buildNpmPackage (finalAttrs: {
     changelog = "https://github.com/eyaltoledano/claude-task-master/blob/${finalAttrs.src.tag}/CHANGELOG.md";
     license = licenses.mit;
     mainProgram = "task-master-ai";
-    maintainers = [ maintainers.repparw ];
+    maintainers = with lib.maintainers; [ repparw ];
     platforms = platforms.all;
   };
 })

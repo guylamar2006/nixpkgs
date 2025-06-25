@@ -22,8 +22,8 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://github.com/3andne/restls";
     changelog = "https://github.com/3andne/restls/releases/tag/${src.rev}";
     description = "Perfect Impersonation of TLS";
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     mainProgram = "restls";
-    maintainers = with maintainers; [ oluceps ];
+    maintainers = with lib.maintainers; [ oluceps ];
   };
 }

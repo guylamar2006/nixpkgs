@@ -29,7 +29,7 @@ stdenv.mkDerivation {
     description = "CLI frontend to the poppler-glib library of PDF tools";
     homepage = "https://github.com/TrilbyWhite/Leela";
     license = lib.licenses.gpl3;
-    maintainers = [ lib.maintainers.puffnfresh ];
+    maintainers = with lib.maintainers; [ puffnfresh ];
     platforms = lib.platforms.linux;
     mainProgram = "leela";
   };

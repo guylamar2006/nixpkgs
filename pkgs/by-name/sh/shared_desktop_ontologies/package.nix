@@ -26,6 +26,6 @@ stdenv.mkDerivation rec {
       are used by projects like KDE or Strigi.
     '';
     platforms = platforms.all;
-    maintainers = [ maintainers.sander ];
+    maintainers = with lib.maintainers; [ sander ];
   };
 }

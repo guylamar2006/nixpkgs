@@ -170,7 +170,7 @@ stdenv.mkDerivation rec {
 
   passthru.updateScript = ./update.sh;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.gnucash.org/";
     description = "Free software for double entry accounting";
     longDescription = ''
@@ -193,8 +193,8 @@ stdenv.mkDerivation rec {
       - Scheduled Transactions
       - Financial Calculations
     '';
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [
       nevivurn
     ];
     platforms = platforms.unix;

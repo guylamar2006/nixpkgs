@@ -29,7 +29,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Single-header, public domain, short vector math library for C++";
     homepage = "https://github.com/sgorsten/linalg";
     license = lib.licenses.publicDomain;
-    maintainers = [ lib.maintainers.eymeric ];
+    maintainers = with lib.maintainers; [ eymeric ];
     platforms = lib.platforms.all;
   };
 })

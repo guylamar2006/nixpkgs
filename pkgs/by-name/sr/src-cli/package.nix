@@ -48,7 +48,7 @@ buildGoModule rec {
     description = "Sourcegraph CLI";
     homepage = "https://github.com/sourcegraph/src-cli";
     changelog = "https://github.com/sourcegraph/src-cli/blob/${src.rev}/CHANGELOG.md";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     maintainers = with maintainers; [ figsoda ];
     mainProgram = "src";
   };

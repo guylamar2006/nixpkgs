@@ -41,6 +41,6 @@ stdenv.mkDerivation rec {
     mainProgram = "tcptrack";
     license = licenses.lgpl21;
     platforms = platforms.linux;
-    maintainers = [ maintainers.bjornfor ];
+    maintainers = with lib.maintainers; [ bjornfor ];
   };
 }

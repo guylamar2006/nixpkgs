@@ -24,7 +24,7 @@ buildGoModule rec {
   meta = with lib; {
     description = "ssh config editor and bookmarks manager";
     homepage = "https://github.com/trntv/sshed";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     maintainers = with maintainers; [ ocfox ];
     mainProgram = "sshed";
   };

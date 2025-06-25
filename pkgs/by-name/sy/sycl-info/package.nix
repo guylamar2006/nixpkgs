@@ -53,6 +53,6 @@ stdenv.mkDerivation {
     mainProgram = "sycl-info";
     platforms = platforms.linux;
     license = licenses.asl20;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

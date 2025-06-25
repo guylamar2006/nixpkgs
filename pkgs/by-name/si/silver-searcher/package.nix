@@ -43,9 +43,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/ggreer/the_silver_searcher/";
     description = "Code-searching tool similar to ack, but faster";
-    maintainers = with maintainers; [ madjar ];
+    maintainers = with lib.maintainers; [ madjar ];
     mainProgram = "ag";
     platforms = platforms.all;
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
   };
 }

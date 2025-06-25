@@ -25,11 +25,11 @@ stdenv.mkDerivation rec {
   doCheck = false;
   # internal_volume_io.h: No such file or directory
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/${owner}/arguments";
     description = "Library for argument handling for MINC programs";
-    maintainers = with maintainers; [ bcdarwin ];
+    maintainers = with lib.maintainers; [ bcdarwin ];
     platforms = platforms.unix;
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
   };
 }

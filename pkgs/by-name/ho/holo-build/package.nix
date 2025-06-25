@@ -64,11 +64,11 @@ buildGoModule rec {
     cp src/holo-build.sh $out/bin/holo-build
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Cross-distribution system package compiler";
     homepage = "https://holocm.org/";
-    license = licenses.gpl3Plus;
-    maintainers = [ ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "holo-build";
   };
 }

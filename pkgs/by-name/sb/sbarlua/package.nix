@@ -26,7 +26,7 @@ lua54Packages.buildLuaPackage {
     description = "Lua API for SketchyBar";
     homepage = "https://github.com/FelixKratz/SbarLua/";
     license = lib.licenses.gpl3;
-    maintainers = [ lib.maintainers.khaneliman ];
+    maintainers = with lib.maintainers; [ khaneliman ];
     platforms = lib.platforms.darwin;
   };
 }

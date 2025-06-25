@@ -20,7 +20,7 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     homepage = "https://www.gnu.org/software/ssw/";
-    license = licenses.gpl3;
+    license = lib.licenses.gpl3;
     description = "GNU Spread Sheet Widget";
     platforms = platforms.linux;
   };

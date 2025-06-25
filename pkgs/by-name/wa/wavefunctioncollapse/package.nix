@@ -32,7 +32,7 @@ stdenv.mkDerivation {
   meta = {
     description = "Generator of bitmaps that are locally similar to the input bitmap";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.raskin ];
+    maintainers = with lib.maintainers; [ raskin ];
     platforms = lib.platforms.linux;
   };
 }

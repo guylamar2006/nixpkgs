@@ -27,11 +27,11 @@ stdenv.mkDerivation rec {
     done
   '';
 
-  meta = with lib; {
+  meta = {
     description = "General purpose multiple sequence alignment program for protein and DNA/RNA";
     homepage = "http://www.clustal.org/omega/";
-    license = licenses.gpl2;
-    maintainers = [ maintainers.bzizou ];
+    license = lib.licenses.gpl2;
+    maintainers = with lib.maintainers; [ bzizou ];
     mainProgram = "clustalo";
     platforms = platforms.unix;
   };

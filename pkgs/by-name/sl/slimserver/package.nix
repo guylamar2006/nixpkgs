@@ -176,7 +176,7 @@ perlPackages.buildPerlPackage rec {
     # https://github.com/LMS-Community/slimserver/blob/public/8.3/License.txt
     license = if enableUnfreeFirmware then licenses.unfree else licenses.gpl2Only;
     mainProgram = "slimserver";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       adamcstephens
       jecaro
     ];

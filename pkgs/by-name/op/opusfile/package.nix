@@ -44,8 +44,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "High-level API for decoding and seeking in .opus files";
     homepage = "https://www.opus-codec.org/";
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     platforms = platforms.all;
-    maintainers = with maintainers; [ taeer ];
+    maintainers = with lib.maintainers; [ taeer ];
   };
 }

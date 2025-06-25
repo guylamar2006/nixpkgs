@@ -72,7 +72,7 @@ stdenv.mkDerivation {
     '';
     homepage = "https://github.com/brettlangdon/git-vendor";
     license = lib.licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.all;
     mainProgram = "git-vendor";
   };

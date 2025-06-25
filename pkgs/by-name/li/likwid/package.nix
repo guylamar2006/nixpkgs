@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl3Only;
     # Might work on ARM by appropriately setting COMPILER in config.mk
     platforms = lib.intersectLists lib.platforms.linux lib.platforms.x86;
-    maintainers = [ lib.maintainers.vbgl ];
+    maintainers = with lib.maintainers; [ vbgl ];
     mainProgram = "likwid-perfctr";
   };
 }

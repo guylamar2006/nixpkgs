@@ -122,6 +122,6 @@ stdenv.mkDerivation (finalAttrs: {
     # Tested on linux-x86_64. Might work on linux-i386.
     # Probably won't work on anything else.
     platforms = lib.platforms.linux;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 })

@@ -145,6 +145,6 @@ clangStdenv.mkDerivation (finalAttrs: {
     description = "Free open-source library for nonlinear optimization";
     license = if withoutLuksanSolvers then lib.licenses.mit else lib.licenses.lgpl21Plus;
     platforms = lib.platforms.all;
-    maintainers = [ lib.maintainers.bengsparks ];
+    maintainers = with lib.maintainers; [ bengsparks ];
   };
 })

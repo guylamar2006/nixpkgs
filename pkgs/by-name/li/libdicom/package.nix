@@ -44,11 +44,11 @@ stdenv.mkDerivation (finalAttrs: {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     description = "C library for reading DICOM files";
     homepage = "https://github.com/ImagingDataCommons/libdicom";
-    license = licenses.mit;
-    maintainers = with maintainers; [ lromor ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ lromor ];
     platforms = platforms.unix;
   };
 })

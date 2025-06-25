@@ -32,8 +32,8 @@ python3Packages.buildPythonApplication rec {
   meta = with lib; {
     description = "Automatic bank data upload tool for pretix (with FinTS client)";
     homepage = "https://github.com/pretix/pretix-banktool";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ hexa ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ hexa ];
     mainProgram = "pretix-banktool";
   };
 }

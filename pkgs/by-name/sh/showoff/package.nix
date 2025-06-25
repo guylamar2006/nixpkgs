@@ -17,7 +17,7 @@ bundlerApp {
     homepage = "https://puppetlabs.github.io/showoff/";
     license = with licenses; mit;
     platforms = platforms.unix;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       maxwilson
       nicknovitski
     ];

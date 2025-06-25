@@ -30,12 +30,12 @@ stdenv.mkDerivation rec {
     cmake
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Software for rapid LiDAR processing";
     homepage = "http://lastools.org/";
-    license = licenses.unfree;
-    maintainers = with maintainers; [ stephenwithph ];
-    teams = [ teams.geospatial ];
+    license = lib.licenses.unfree;
+    maintainers = with lib.maintainers; [ stephenwithph ];
+    teams = with lib.teams; [ geospatial ];
     platforms = platforms.unix;
   };
 }

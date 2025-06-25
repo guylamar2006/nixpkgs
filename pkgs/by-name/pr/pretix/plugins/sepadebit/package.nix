@@ -58,7 +58,7 @@ buildPythonPackage rec {
   meta = with lib; {
     description = "Plugin to receive payments via SEPA direct debit";
     homepage = "https://github.com/pretix/pretix-sepadebit";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ bbenno ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ bbenno ];
   };
 }

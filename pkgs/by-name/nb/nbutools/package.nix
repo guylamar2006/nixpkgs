@@ -37,6 +37,6 @@ python3.pkgs.buildPythonApplication {
     description = "Tools for offensive security of NetBackup infrastructures";
     homepage = "https://github.com/airbus-seclab/nbutools";
     license = with licenses; [ gpl2Only ];
-    maintainers = with maintainers; [ fab ];
+    maintainers = with lib.maintainers; [ fab ];
   };
 }

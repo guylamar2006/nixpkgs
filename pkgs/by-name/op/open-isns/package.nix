@@ -47,9 +47,9 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     description = "iSNS server and client for Linux";
-    license = licenses.lgpl21Only;
+    license = lib.licenses.lgpl21Only;
     homepage = "https://github.com/open-iscsi/open-isns";
-    platforms = platforms.linux;
-    maintainers = [ maintainers.markuskowa ];
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ markuskowa ];
   };
 }

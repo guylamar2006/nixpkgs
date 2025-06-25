@@ -21,8 +21,8 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "CLI tool for formatting SQL";
     homepage = "https://github.com/nrempel/sleek";
-    license = licenses.mit;
-    maintainers = with maintainers; [ xrelkd ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ xrelkd ];
     mainProgram = "sleek";
   };
 }

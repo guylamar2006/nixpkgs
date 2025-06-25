@@ -136,7 +136,7 @@ stdenv.mkDerivation rec {
     homepage = "https://unigine.com/products/benchmarks/valley/";
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unfree; # see also: $out/$instPath/documentation/License.pdf
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = [
       "x86_64-linux"
       "i686-linux"

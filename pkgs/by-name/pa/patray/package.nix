@@ -37,8 +37,8 @@ python312.pkgs.buildPythonApplication rec {
   meta = with lib; {
     description = "Yet another tray pulseaudio frontend";
     homepage = "https://github.com/pohmelie/patray";
-    license = licenses.mit;
-    maintainers = with maintainers; [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "patray";
   };
 }

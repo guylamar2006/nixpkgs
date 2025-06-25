@@ -63,8 +63,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Free/libre soft-body physics simulator mainly targeted at simulating vehicle physics";
     homepage = "https://www.rigsofrods.org";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [
       raskin
       wegank
     ];

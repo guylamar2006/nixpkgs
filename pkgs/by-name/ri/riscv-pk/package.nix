@@ -43,6 +43,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/riscv/riscv-pk";
     license = lib.licenses.bsd3;
     platforms = lib.platforms.riscv;
-    maintainers = [ lib.maintainers.shlevy ];
+    maintainers = with lib.maintainers; [ shlevy ];
   };
 }

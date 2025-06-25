@@ -40,7 +40,7 @@ stdenvNoCC.mkDerivation rec {
   meta = {
     description = "WhatsApp Emoji for GNU/Linux";
     homepage = "https://github.com/dmlls/whatsapp-emoji-linux";
-    maintainers = [ lib.maintainers.lucasew ];
+    maintainers = with lib.maintainers; [ lucasew ];
     sourceProvenance = [ lib.sourceTypes.fromSource ];
     license = lib.licenses.unfree;
   };

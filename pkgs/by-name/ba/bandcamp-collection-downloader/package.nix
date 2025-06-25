@@ -57,7 +57,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Tool to automatically download purchased music from bandcamp";
     license = lib.licenses.agpl3Only;
     homepage = "https://framagit.org/Ezwen/bandcamp-collection-downloader";
-    maintainers = [ lib.maintainers.shelvacu ];
+    maintainers = with lib.maintainers; [ shelvacu ];
     mainProgram = "bandcamp-collection-downloader";
     platforms = lib.platforms.all;
     sourceProvenance = with lib.sourceTypes; [

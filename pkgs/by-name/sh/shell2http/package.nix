@@ -47,7 +47,7 @@ buildGoModule rec {
     mainProgram = "shell2http";
     homepage = "https://github.com/msoap/shell2http";
     changelog = "https://github.com/msoap/shell2http/releases/tag/${src.rev}";
-    license = licenses.mit;
-    maintainers = with maintainers; [ figsoda ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ figsoda ];
   };
 }

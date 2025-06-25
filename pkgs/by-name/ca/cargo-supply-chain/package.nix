@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-fsW3qTyFMcj/OTouOah1ZFskw075V8jBwhs02AxY7kU=";
 
-  meta = with lib; {
+  meta = {
     description = "Gather author, contributor and publisher data on crates in your dependency graph";
     mainProgram = "cargo-supply-chain";
     homepage = "https://github.com/rust-secure-code/cargo-supply-chain";
@@ -28,7 +28,7 @@ rustPlatform.buildRustPackage rec {
       mit
       zlib
     ]; # any of three
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       figsoda
       matthiasbeyer
     ];

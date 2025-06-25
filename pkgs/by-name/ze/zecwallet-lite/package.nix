@@ -28,7 +28,7 @@ appimageTools.wrapType2 rec {
     description = "Fully featured shielded wallet for Zcash";
     homepage = "https://www.zecwallet.co/";
     license = licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = [ "x86_64-linux" ];
     mainProgram = "zecwallet-lite";
   };

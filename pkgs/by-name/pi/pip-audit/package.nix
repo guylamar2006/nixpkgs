@@ -63,8 +63,8 @@ python3.pkgs.buildPythonApplication rec {
     description = "Tool for scanning Python environments for known vulnerabilities";
     homepage = "https://github.com/trailofbits/pip-audit";
     changelog = "https://github.com/pypa/pip-audit/releases/tag/${src.tag}";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ fab ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ fab ];
     mainProgram = "pip-audit";
   };
 }

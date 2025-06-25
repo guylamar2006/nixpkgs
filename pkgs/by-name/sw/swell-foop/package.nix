@@ -63,7 +63,7 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://gitlab.gnome.org/GNOME/swell-foop/-/tree/${finalAttrs.version}?ref_type=tags";
     description = "Puzzle game, previously known as Same GNOME";
     mainProgram = "swell-foop";
-    teams = [ teams.gnome ];
+    teams = with lib.teams; [ gnome ];
     license = licenses.gpl2Plus;
     platforms = platforms.linux;
   };

@@ -65,8 +65,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Tuning tool for Monte Carlo event generators";
     homepage = "https://professor.hepforge.org/";
-    license = licenses.gpl3Only;
-    maintainers = [ maintainers.veprbl ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ veprbl ];
     platforms = platforms.unix;
   };
 }

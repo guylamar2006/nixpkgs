@@ -35,6 +35,6 @@ rustPlatform.buildRustPackage rec {
     mainProgram = "wapm";
     homepage = "https://docs.wasmer.io/ecosystem/wapm";
     license = with licenses; [ mit ];
-    maintainers = [ maintainers.lucperkins ];
+    maintainers = with lib.maintainers; [ lucperkins ];
   };
 }

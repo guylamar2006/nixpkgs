@@ -25,11 +25,11 @@ stdenv.mkDerivation rec {
     wrapProgram $out/bin/c-graph --prefix PATH : ${lib.makeBinPath [ gnuplot ]}
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Tool for Learning about Convolution";
     homepage = "https://www.gnu.org/software/c-graph/";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ sikmir ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ sikmir ];
     platforms = platforms.unix;
     mainProgram = "c-graph";
   };

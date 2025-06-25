@@ -21,11 +21,11 @@ stdenvNoCC.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Soothing pastel theme for qt5ct";
     homepage = "https://github.com/catppuccin/qt5ct";
-    license = licenses.mit;
-    maintainers = with maintainers; [ pluiedev ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ pluiedev ];
     platforms = platforms.all;
   };
 }

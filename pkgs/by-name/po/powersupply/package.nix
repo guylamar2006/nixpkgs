@@ -55,9 +55,9 @@ python3.pkgs.buildPythonApplication rec {
   meta = with lib; {
     description = "Graphical app to display power status of mobile Linux platforms";
     homepage = "https://gitlab.com/MartijnBraam/powersupply";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     mainProgram = "powersupply";
-    platforms = platforms.linux;
-    maintainers = with maintainers; [ Luflosi ];
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ Luflosi ];
   };
 }

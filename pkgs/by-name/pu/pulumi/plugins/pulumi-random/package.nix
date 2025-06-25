@@ -19,8 +19,8 @@ mkPulumiPackage rec {
     description = "Pulumi provider that safely enables randomness for resources";
     mainProgram = "pulumi-resource-random";
     homepage = "https://github.com/pulumi/pulumi-random";
-    license = licenses.asl20;
-    maintainers = with maintainers; [
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [
       veehaitch
       trundle
     ];

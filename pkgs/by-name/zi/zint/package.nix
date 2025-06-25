@@ -71,7 +71,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://www.zint.org.uk";
     changelog = "https://github.com/zint/zint/blob/${finalAttrs.src.rev}/ChangeLog";
     license = licenses.gpl3Plus;
-    maintainers = [ lib.maintainers.azahi ];
+    maintainers = with lib.maintainers; [ azahi ];
     platforms = platforms.all;
     mainProgram = "zint";
   };

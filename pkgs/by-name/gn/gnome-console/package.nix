@@ -59,12 +59,12 @@ stdenv.mkDerivation rec {
 
   passthru.tests.test = nixosTests.terminal-emulators.kgx;
 
-  meta = with lib; {
+  meta = {
     description = "Simple user-friendly terminal emulator for the GNOME desktop";
     homepage = "https://gitlab.gnome.org/GNOME/console";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ zhaofengli ];
-    teams = [ teams.gnome ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ zhaofengli ];
+    teams = with lib.teams; [ gnome ];
     platforms = platforms.unix;
     mainProgram = "kgx";
   };

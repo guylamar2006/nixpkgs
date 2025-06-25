@@ -28,8 +28,8 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Autojump \"zap to directory\" helper";
     homepage = "https://github.com/euank/pazi";
-    license = licenses.gpl3;
-    maintainers = [ ];
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "pazi";
   };
 }

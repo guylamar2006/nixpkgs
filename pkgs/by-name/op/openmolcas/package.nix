@@ -175,7 +175,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Advanced quantum chemistry software package";
     homepage = "https://gitlab.com/Molcas/OpenMolcas";
-    maintainers = [ lib.maintainers.markuskowa ];
+    maintainers = with lib.maintainers; [ markuskowa ];
     license = with lib.licenses; [
       lgpl21Only
       bsd3

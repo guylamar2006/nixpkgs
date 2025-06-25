@@ -39,11 +39,11 @@ stdenv.mkDerivation (finalAttrs: {
     "-DLITEHTML_BUILD_TESTING=OFF"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Fast and lightweight HTML/CSS rendering engine";
     homepage = "http://www.litehtml.com/";
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     platforms = platforms.all;
-    maintainers = with maintainers; [ fgaz ];
+    maintainers = with lib.maintainers; [ fgaz ];
   };
 })

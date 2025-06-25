@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     description = "Tracker music player for the terminal";
     homepage = "http://mikmod.shlomifish.org/";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = with lib.platforms; linux;
     mainProgram = "mikmod";
   };

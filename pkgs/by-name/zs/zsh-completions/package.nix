@@ -34,6 +34,6 @@ stdenv.mkDerivation rec {
       mit-modern
     ];
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.olejorgenb ];
+    maintainers = with lib.maintainers; [ olejorgenb ];
   };
 }

@@ -39,8 +39,8 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Quarkus is a Kubernetes-native Java framework tailored for GraalVM and HotSpot, crafted from best-of-breed Java libraries and standards";
     homepage = "https://quarkus.io";
     changelog = "https://github.com/quarkusio/quarkus/releases/tag/${finalAttrs.version}";
-    license = licenses.asl20;
-    maintainers = [ maintainers.vinetos ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ vinetos ];
     platforms = platforms.all;
     mainProgram = "quarkus";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];

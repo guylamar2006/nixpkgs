@@ -15,11 +15,11 @@ stdenv.mkDerivation rec {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     homepage = "http://micans.org/apparix";
     description = "Add directory bookmarks, distant listing, and distant editing to the command line";
-    maintainers = [ ];
-    license = licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ ];
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.all;
     mainProgram = "apparix";
   };

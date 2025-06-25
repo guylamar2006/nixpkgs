@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/dbohdan/s2png/";
     description = "Store any data in PNG images";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ lib.maintainers.dbohdan ];
+    maintainers = with lib.maintainers; [ dbohdan ];
     platforms = lib.platforms.unix;
     mainProgram = "s2png";
   };

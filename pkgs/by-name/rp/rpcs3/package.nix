@@ -154,12 +154,12 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "PS3 emulator/debugger";
     homepage = "https://rpcs3.net/";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       abbradar
       neonfuz
       ilian
     ];
-    license = licenses.gpl2Only;
+    license = lib.licenses.gpl2Only;
     platforms = [
       "x86_64-linux"
       "aarch64-linux"

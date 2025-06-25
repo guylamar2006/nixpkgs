@@ -94,8 +94,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://developer.qualcomm.com/software/snapdragon-profiler";
     description = "Profiler for Android devices running Snapdragon chips";
-    license = licenses.unfree;
-    maintainers = [ ];
+    license = lib.licenses.unfree;
+    maintainers = with lib.maintainers; [ ];
     platforms = [ "x86_64-linux" ];
   };
 }

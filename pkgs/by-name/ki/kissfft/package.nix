@@ -80,7 +80,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Mixed-radix Fast Fourier Transform based up on the KISS principle";
     homepage = "https://github.com/mborgerding/kissfft";
     license = lib.licenses.bsd3;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.all;
   };
 })

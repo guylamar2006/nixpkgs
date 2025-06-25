@@ -53,8 +53,8 @@ stdenv.mkDerivation rec {
     description = "Cross-platform scientific graphics plotting library";
     mainProgram = "pltek";
     homepage = "https://plplot.org";
-    maintainers = with maintainers; [ bcdarwin ];
+    maintainers = with lib.maintainers; [ bcdarwin ];
     platforms = platforms.unix;
-    license = licenses.lgpl2;
+    license = lib.licenses.lgpl2;
   };
 }

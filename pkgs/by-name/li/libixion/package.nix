@@ -32,12 +32,12 @@ stdenv.mkDerivation rec {
     python3
   ];
 
-  meta = with lib; {
+  meta = {
     description = "General purpose formula parser, interpreter, formula cell dependency tracker and spreadsheet document model backend all in one package";
     homepage = "https://gitlab.com/ixion/ixion";
     changelog = "https://gitlab.com/ixion/ixion/-/blob/${src.rev}/CHANGELOG";
-    license = licenses.mpl20;
-    maintainers = [ ];
+    license = lib.licenses.mpl20;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
   };
 }

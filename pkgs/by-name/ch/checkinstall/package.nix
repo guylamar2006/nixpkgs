@@ -78,7 +78,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://checkinstall.izto.org/";
     description = "Tool for automatically generating Slackware, RPM or Debian packages when doing `make install'";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
     license = lib.licenses.gpl2Plus;
     knownVulnerabilities = [

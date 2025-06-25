@@ -36,7 +36,7 @@ stdenv.mkDerivation {
     description = "Pretty janky assembly REPL";
     mainProgram = "rappel";
     license = lib.licenses.bsdOriginal;
-    maintainers = [ lib.maintainers.pamplemousse ];
+    maintainers = with lib.maintainers; [ pamplemousse ];
     platforms = lib.platforms.linux;
   };
 }

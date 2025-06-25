@@ -27,7 +27,7 @@ stdenv.mkDerivation {
       of deleted information, even if the machine is compromised.
     '';
     homepage = "https://srm.sourceforge.net";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with maintainers; [ edwtjo ];
     platforms = platforms.unix;
   };

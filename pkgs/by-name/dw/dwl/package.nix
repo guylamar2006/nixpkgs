@@ -129,7 +129,7 @@ stdenv.mkDerivation (finalAttrs: {
       - Tied to as few external dependencies as possible
     '';
     license = lib.licenses.gpl3Only;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     inherit (wayland.meta) platforms;
     mainProgram = "dwl";
   };

@@ -22,11 +22,11 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "monospace font designed to be clear, pragmatic and very readable";
     homepage = "https://pcaro.es/p/hermit";
-    license = licenses.ofl;
-    maintainers = [ ];
+    license = lib.licenses.ofl;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
   };
 }

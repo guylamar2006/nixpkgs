@@ -26,7 +26,7 @@ stdenv.mkDerivation {
       lgpl21Plus # library
       gpl2Plus # examples
     ];
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
   };
 }

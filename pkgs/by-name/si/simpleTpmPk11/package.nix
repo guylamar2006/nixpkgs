@@ -38,8 +38,8 @@ stdenv.mkDerivation rec {
       A simple library for using the TPM chip to secure SSH keys.
     '';
     homepage = "https://github.com/ThomasHabets/simple-tpm-pk11";
-    license = licenses.asl20;
-    maintainers = [ ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
   };
 }

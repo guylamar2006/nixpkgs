@@ -159,8 +159,8 @@ stdenv.mkDerivation rec {
     homepage = "https://premid.app";
     downloadPage = "https://premid.app/downloads";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.mpl20;
-    maintainers = with maintainers; [ natto1784 ];
+    license = lib.licenses.mpl20;
+    maintainers = with lib.maintainers; [ natto1784 ];
     platforms = [ "x86_64-linux" ];
     mainProgram = "premid";
   };

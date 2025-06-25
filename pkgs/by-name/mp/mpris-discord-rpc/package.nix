@@ -41,7 +41,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
     homepage = "https://github.com/patryk-ku/mpris-discord-rpc";
     changelog = "https://github.com/patryk-ku/mpris-discord-rpc/blob/${finalAttrs.src.tag}/CHANGELOG.md";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.lukaswrz ];
+    maintainers = with lib.maintainers; [ lukaswrz ];
     mainProgram = "mpris-discord-rpc";
   };
 })

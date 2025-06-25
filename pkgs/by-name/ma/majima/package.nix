@@ -21,7 +21,7 @@ rustPlatform.buildRustPackage {
     description = "Generate random usernames quickly and in various formats";
     homepage = "https://majima.matte.fyi/";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.ufUNnxagpM ];
+    maintainers = with lib.maintainers; [ ufUNnxagpM ];
     mainProgram = "majima";
   };
 }

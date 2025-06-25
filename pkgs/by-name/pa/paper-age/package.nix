@@ -22,8 +22,8 @@ rustPlatform.buildRustPackage rec {
     description = "Easy and secure paper backups of secrets";
     homepage = "https://github.com/matiaskorhonen/paper-age";
     changelog = "https://github.com/matiaskorhonen/paper-age/blob/${src.rev}/CHANGELOG.md";
-    license = licenses.mit;
-    maintainers = [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "paper-age";
   };
 }

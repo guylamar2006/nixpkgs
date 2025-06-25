@@ -69,7 +69,7 @@ stdenv.mkDerivation (finalAttrs: {
 
     homepage = "https://freewheeling.sourceforge.net";
     license = lib.licenses.gpl2;
-    maintainers = [ lib.maintainers.sepi ];
+    maintainers = with lib.maintainers; [ sepi ];
     platforms = lib.platforms.linux;
     mainProgram = "fweelin";
   };

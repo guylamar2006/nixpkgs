@@ -25,6 +25,6 @@ buildNpmPackage rec {
     homepage = "https://github.com/isaacs/node-glob";
     license = lib.licenses.isc;
     mainProgram = "glob";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

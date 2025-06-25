@@ -21,6 +21,6 @@ stdenv.mkDerivation rec {
     description = "Small, easy to use Open Source Database Connection Pool Library";
     license = lib.licenses.gpl3;
     platforms = lib.platforms.linux;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

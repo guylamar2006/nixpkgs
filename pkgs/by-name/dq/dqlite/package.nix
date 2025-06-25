@@ -62,7 +62,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://dqlite.io/";
     license = lib.licenses.asl20;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
   };
 })

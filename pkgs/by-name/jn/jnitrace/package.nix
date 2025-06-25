@@ -23,7 +23,7 @@ python3Packages.buildPythonApplication rec {
   meta = {
     description = "Frida based tool that traces usage of the JNI API in Android apps";
     homepage = "https://github.com/chame1eon/jnitrace";
-    maintainers = [ lib.maintainers.axka ];
+    maintainers = with lib.maintainers; [ axka ];
     license = lib.licenses.mit;
     mainProgram = "jnitrace";
   };

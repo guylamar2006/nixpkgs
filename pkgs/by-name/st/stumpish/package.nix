@@ -47,8 +47,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     homepage = "https://github.com/stumpwm/stumpwm-contrib";
     description = "STUMPwm Interactive SHell";
-    license = licenses.gpl2;
-    maintainers = [ maintainers.ebzzry ];
+    license = lib.licenses.gpl2;
+    maintainers = with lib.maintainers; [ ebzzry ];
     platforms = platforms.unix;
     mainProgram = "stumpish";
   };

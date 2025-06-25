@@ -38,7 +38,7 @@ buildDotnetModule (finalAttrs: {
     homepage = "https://codewithrockstar.com";
     license = lib.licenses.agpl3Only;
     sourceProvenance = [ lib.sourceTypes.fromSource ];
-    maintainers = [ lib.maintainers.pinage404 ];
+    maintainers = with lib.maintainers; [ pinage404 ];
     mainProgram = "rockstar";
   };
 })

@@ -91,7 +91,7 @@ python.pkgs.buildPythonApplication rec {
       bsd3
       cc-by-30
     ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       henrirosten
       jk
     ];

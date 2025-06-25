@@ -47,7 +47,7 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     homepage = "https://gitee.com/openeuler/stratovirt";
     description = "Virtual Machine Manager from Huawei";
-    license = licenses.mulan-psl2;
+    license = lib.licenses.mulan-psl2;
     maintainers = with maintainers; [ astro ];
     platforms = [
       "aarch64-linux"

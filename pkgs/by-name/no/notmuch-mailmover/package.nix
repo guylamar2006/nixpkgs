@@ -50,8 +50,8 @@ rustPlatform.buildRustPackage rec {
     description = "Application to assign notmuch tagged mails to IMAP folders";
     mainProgram = "notmuch-mailmover";
     homepage = "https://github.com/michaeladler/notmuch-mailmover/";
-    license = licenses.asl20;
-    maintainers = with maintainers; [
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [
       michaeladler
       archer-65
     ];

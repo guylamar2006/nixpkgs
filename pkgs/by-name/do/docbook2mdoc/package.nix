@@ -18,12 +18,12 @@ stdenv.mkDerivation rec {
 
   makeFlags = [ "PREFIX=$(out)" ];
 
-  meta = with lib; {
+  meta = {
     homepage = "http://mdocml.bsd.lv/";
     description = "converter from DocBook V4.x and v5.x XML into mdoc";
-    license = licenses.isc;
+    license = lib.licenses.isc;
     platforms = platforms.all;
-    maintainers = with maintainers; [ ramkromberg ];
+    maintainers = with lib.maintainers; [ ramkromberg ];
     mainProgram = "docbook2mdoc";
   };
 }

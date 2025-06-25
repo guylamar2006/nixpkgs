@@ -36,6 +36,6 @@ rustPlatform.buildRustPackage {
     '';
     homepage = "https://github.com/pedroscaff/swaywsr";
     license = licenses.mit;
-    maintainers = [ maintainers.sebbadk ];
+    maintainers = with lib.maintainers; [ sebbadk ];
   };
 }

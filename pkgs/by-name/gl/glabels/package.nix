@@ -74,7 +74,7 @@ stdenv.mkDerivation rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Create labels and business cards";
     homepage = "https://github.com/jimevins/glabels";
     license = with licenses; [
@@ -82,6 +82,6 @@ stdenv.mkDerivation rec {
       lgpl3Plus
     ];
     platforms = platforms.unix;
-    maintainers = [ maintainers.nico202 ];
+    maintainers = with lib.maintainers; [ nico202 ];
   };
 }

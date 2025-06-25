@@ -24,7 +24,7 @@ rustPlatform.buildRustPackage rec {
       mit # grammars
       mpl20 # code
     ];
-    maintainers = with maintainers; [ figsoda ];
+    maintainers = with lib.maintainers; [ figsoda ];
     mainProgram = "rust-code-analysis-cli";
   };
 }

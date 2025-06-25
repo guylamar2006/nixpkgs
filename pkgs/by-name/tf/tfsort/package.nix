@@ -33,8 +33,8 @@ buildGoModule (finalAttrs: {
     homepage = "https://github.com/AlexNabokikh/tfsort";
     license = lib.licenses.asl20;
     mainProgram = "tfsort";
-    maintainers = [
-      lib.maintainers.alexnabokikh
+    maintainers = with lib.maintainers; [
+      alexnabokikh
     ];
   };
 })

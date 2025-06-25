@@ -28,8 +28,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Simple AIS tuner and generic dual-frequency FM demodulator";
     homepage = "https://github.com/dgiardini/rtl-ais";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [ mgdm ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ mgdm ];
     mainProgram = "rtl_ais";
     platforms = platforms.unix;
   };

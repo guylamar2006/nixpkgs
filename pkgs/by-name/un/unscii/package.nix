@@ -81,7 +81,7 @@ stdenv.mkDerivation rec {
     # Basically GPL2+ with font exception — because of the Unifont-augmented
     # version. The reduced version is public domain.
     license = "http://unifoundry.com/LICENSE.txt";
-    maintainers = [ lib.maintainers.raskin ];
+    maintainers = with lib.maintainers; [ raskin ];
     homepage = "http://viznut.fi/unscii/";
   };
 }

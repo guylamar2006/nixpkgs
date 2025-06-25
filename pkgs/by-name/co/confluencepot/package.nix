@@ -32,7 +32,7 @@ buildGoModule rec {
     install -vD confluence.html -t $out/share
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Honeypot for the Atlassian Confluence OGNL injection vulnerability";
     homepage = "https://github.com/SIFalcon/confluencePot";
     longDescription = ''
@@ -40,7 +40,7 @@ buildGoModule rec {
       and remote OGNL injection vulnerability (CVE-2022-26134).
     '';
     license = with licenses; [ agpl3Plus ];
-    maintainers = with maintainers; [ fab ];
+    maintainers = with lib.maintainers; [ fab ];
     mainProgram = "confluencepot";
   };
 }

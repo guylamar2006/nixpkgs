@@ -74,7 +74,7 @@ buildDotnetModule {
     homepage = "https://retro-spy.com/";
     changelog = "https://github.com/retrospy/RetroSpy/releases/tag/${src.rev}";
     license = lib.licenses.gpl3;
-    maintainers = [ lib.maintainers.naxdy ];
+    maintainers = with lib.maintainers; [ naxdy ];
     platforms = lib.platforms.linux;
     mainProgram = "RetroSpy";
   };

@@ -45,7 +45,7 @@ ocamlPackages.buildDunePackage {
     description = "Proxy Wayland connections across a VM boundary";
     license = licenses.asl20;
     mainProgram = "wayland-proxy-virtwl";
-    maintainers = [
+    maintainers = with lib.maintainers; [
       maintainers.qyliss
       maintainers.sternenseemann
     ];

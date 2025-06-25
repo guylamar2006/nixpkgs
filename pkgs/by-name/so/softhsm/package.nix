@@ -50,8 +50,8 @@ stdenv.mkDerivation rec {
       able to work with many cryptographic products. SoftHSM is a
       programme of The Commons Conservancy.
     ";
-    license = licenses.bsd2;
-    maintainers = [ maintainers.leenaars ];
+    license = lib.licenses.bsd2;
+    maintainers = with lib.maintainers; [ leenaars ];
     platforms = platforms.unix;
   };
 }

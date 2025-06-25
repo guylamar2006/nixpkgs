@@ -22,7 +22,7 @@ buildGoModule rec {
     homepage = "https://github.com/tenox7/stc";
     changelog = "https://github.com/tenox7/stc/releases/tag/${version}";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.ivankovnatsky ];
+    maintainers = with lib.maintainers; [ ivankovnatsky ];
     mainProgram = "stc";
   };
 }

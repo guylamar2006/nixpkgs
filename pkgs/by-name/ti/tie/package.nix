@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
     description = "Allow multiple web change files";
     mainProgram = "tie";
     platforms = platforms.all;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     license = licenses.abstyles;
   };
 }

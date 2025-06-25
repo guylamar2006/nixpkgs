@@ -28,6 +28,6 @@ buildGoModule rec {
     homepage = "https://github.com/anderseknert/kube-review";
     changelog = "https://github.com/anderseknert/kube-review/releases/tag/v${version}";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.ardubev16 ];
+    maintainers = with lib.maintainers; [ ardubev16 ];
   };
 }

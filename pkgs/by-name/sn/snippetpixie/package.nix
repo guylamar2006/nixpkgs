@@ -83,8 +83,8 @@ stdenv.mkDerivation rec {
       For non-accessible applications such as browsers and Electron apps, there's a shortcut (default is Ctrl+`) for opening a search window that pastes the selected snippet.
     '';
     homepage = "https://www.snippetpixie.com";
-    license = licenses.gpl2Plus;
-    teams = [ teams.pantheon ];
+    license = lib.licenses.gpl2Plus;
+    teams = with lib.teams; [ pantheon ];
     platforms = platforms.linux;
     mainProgram = "com.github.bytepixie.snippetpixie";
   };

@@ -71,13 +71,13 @@ let
 
     passthru = { inherit python; };
 
-    meta = with lib; {
+    meta = {
       description = "SMT solver for Monotonic Theories";
       mainProgram = "monosat";
       platforms = platforms.unix;
       license = if includeGplCode then licenses.gpl2 else licenses.mit;
       homepage = "https://github.com/sambayless/monosat";
-      maintainers = [ maintainers.acairncross ];
+      maintainers = with lib.maintainers; [ acairncross ];
     };
   };
 

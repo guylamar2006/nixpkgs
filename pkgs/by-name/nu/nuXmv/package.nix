@@ -37,8 +37,8 @@ stdenv.mkDerivation rec {
     description = "Symbolic model checker for analysis of finite and infinite state systems";
     homepage = "https://nuxmv.fbk.eu/pmwiki.php";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.unfree;
-    maintainers = with maintainers; [ siraben ];
+    license = lib.licenses.unfree;
+    maintainers = with lib.maintainers; [ siraben ];
     platforms = [
       "x86_64-linux"
       "x86_64-darwin"

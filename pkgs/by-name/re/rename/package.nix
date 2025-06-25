@@ -17,7 +17,7 @@ perlPackages.buildPerlPackage rec {
   meta = with lib; {
     description = "Rename files according to a Perl rewrite expression";
     homepage = "https://github.com/pstray/rename";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       mkg
       cyplo
     ];

@@ -38,7 +38,7 @@ stdenv.mkDerivation (finalAttrs: {
       to the above pages also shows links to precompiled Matlab mex-libraries.
       Please consult the documentation for more information.
     '';
-    maintainers = [ lib.maintainers.locochoco ];
+    maintainers = with lib.maintainers; [ locochoco ];
     platforms = lib.platforms.all;
   };
 })

@@ -23,7 +23,7 @@ rustPlatform.buildRustPackage rec {
     mainProgram = "rustywind";
     homepage = "https://github.com/avencera/rustywind";
     changelog = "https://github.com/avencera/rustywind/blob/${src.rev}/CHANGELOG.md";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ figsoda ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ figsoda ];
   };
 }

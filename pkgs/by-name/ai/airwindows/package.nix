@@ -63,6 +63,6 @@ stdenv.mkDerivation {
     license = [
       lib.licenses.mit
     ];
-    maintainers = [ lib.maintainers.l1npengtul ];
+    maintainers = with lib.maintainers; [ l1npengtul ];
   };
 }

@@ -96,7 +96,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Namespace-based sandboxing tool for Linux";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ lib.maintainers.raskin ];
+    maintainers = with lib.maintainers; [ raskin ];
     platforms = lib.platforms.linux;
     homepage = "https://firejail.wordpress.com/";
   };

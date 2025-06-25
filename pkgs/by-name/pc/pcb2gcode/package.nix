@@ -48,8 +48,8 @@ stdenv.mkDerivation rec {
       It also includes an Autoleveller, useful for the automatic dynamic calibration of the milling depth.
     '';
     homepage = "https://github.com/pcb2gcode/pcb2gcode";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ kritnich ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ kritnich ];
     platforms = platforms.unix;
   };
 }

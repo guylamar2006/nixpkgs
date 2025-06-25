@@ -30,7 +30,7 @@ python3.pkgs.buildPythonApplication {
     description = "CLI tool to open files in the terminal";
     homepage = "https://github.com/Textualize/textualize-see";
     license = lib.licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "see";
   };
 }

@@ -56,9 +56,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Sound measurement application for tuning audio systems in real-time";
     homepage = "https://opensoundmeter.com/";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     mainProgram = "OpenSoundMeter";
-    maintainers = with maintainers; [ orivej ];
-    platforms = platforms.linux;
+    maintainers = with lib.maintainers; [ orivej ];
+    platforms = lib.platforms.linux;
   };
 }

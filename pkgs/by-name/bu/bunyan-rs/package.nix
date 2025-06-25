@@ -18,14 +18,14 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-eLbfrlZWwPv1AFgwFz+IacLZrSl9/KU9zfTstwB8ol0=";
 
-  meta = with lib; {
+  meta = {
     description = "CLI to pretty print logs in bunyan format (Rust port of the original JavaScript bunyan CLI)";
     homepage = "https://github.com/LukeMathWalker/bunyan";
     license = with licenses; [
       asl20
       mit
     ];
-    maintainers = with maintainers; [ netcrns ];
+    maintainers = with lib.maintainers; [ netcrns ];
     mainProgram = "bunyan";
   };
 }

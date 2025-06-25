@@ -91,7 +91,7 @@ stdenv.mkDerivation {
       cc-by-nc-nd-40
     ];
 
-    maintainers = with maintainers; [ jtrees ];
+    maintainers = with lib.maintainers; [ jtrees ];
     platforms = [ "x86_64-linux" ];
   };
 }

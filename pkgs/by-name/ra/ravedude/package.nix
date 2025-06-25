@@ -50,7 +50,7 @@ rustPlatform.buildRustPackage rec {
       asl20
     ];
     platforms = platforms.linux;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       rvarago
       liff
     ];

@@ -25,12 +25,12 @@ stdenv.mkDerivation rec {
     (lib.cmakeBool "OCL_ICD_ENABLE_TRACE" withTracing)
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Official Khronos OpenCL ICD Loader";
     mainProgram = "cllayerinfo";
     homepage = "https://github.com/KhronosGroup/OpenCL-ICD-Loader";
-    license = licenses.asl20;
-    maintainers = [ ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
   };
 }

@@ -25,11 +25,11 @@ python3Packages.buildPythonApplication rec {
     wxpython
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://git.sr.ht/~thestr4ng3r/mymcplus";
     description = "PlayStation 2 memory card manager";
     mainProgram = "mymcplus";
-    license = licenses.gpl3Plus;
-    maintainers = [ ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ ];
   };
 }

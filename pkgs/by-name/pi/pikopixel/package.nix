@@ -41,8 +41,8 @@ clangStdenv.mkDerivation rec {
     mainProgram = "PikoPixel";
     homepage = "https://twilightedge.com/mac/pikopixel/";
     downloadPage = "https://twilightedge.com/mac/pikopixel/";
-    license = licenses.agpl3Plus;
-    maintainers = with maintainers; [ fgaz ];
+    license = lib.licenses.agpl3Plus;
+    maintainers = with lib.maintainers; [ fgaz ];
     platforms = platforms.all;
   };
 }

@@ -30,11 +30,11 @@ buildGoModule rec {
     "-w"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Very simple compile daemon for Go";
     homepage = "https://github.com/githubnemo/CompileDaemon";
-    license = licenses.bsd2;
-    maintainers = [ ];
+    license = lib.licenses.bsd2;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "CompileDaemon";
   };
 }

@@ -29,9 +29,9 @@ stdenv.mkDerivation rec {
     description = "Web application to generate UML diagrams on-the-fly";
     homepage = "https://plantuml.com/";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     platforms = platforms.all;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       truh
       anthonyroussel
     ];

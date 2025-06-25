@@ -47,8 +47,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Transport-independent RPC (TI-RPC)";
     homepage = "https://github.com/nfs-ganesha/ntirpc";
-    maintainers = [ maintainers.markuskowa ];
-    platforms = platforms.linux;
-    license = licenses.bsd3;
+    maintainers = with lib.maintainers; [ markuskowa ];
+    platforms = lib.platforms.linux;
+    license = lib.licenses.bsd3;
   };
 }

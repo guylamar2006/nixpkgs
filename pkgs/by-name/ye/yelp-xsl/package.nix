@@ -47,7 +47,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     homepage = "https://gitlab.gnome.org/GNOME/yelp-xsl";
     description = "Yelp's universal stylesheets for Mallard and DocBook";
-    teams = [ teams.gnome ];
+    teams = with lib.teams; [ gnome ];
     license = with licenses; [
       # See https://gitlab.gnome.org/GNOME/yelp-xsl/blob/master/COPYING
       # Stylesheets

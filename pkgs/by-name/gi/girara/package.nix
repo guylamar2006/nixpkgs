@@ -87,6 +87,6 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.zlib;
     platforms = lib.platforms.linux ++ lib.platforms.darwin;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

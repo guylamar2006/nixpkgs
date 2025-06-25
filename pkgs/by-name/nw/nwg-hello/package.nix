@@ -72,7 +72,7 @@ python3Packages.buildPythonApplication rec {
     description = "GTK3-based greeter for the greetd daemon, written in python";
     license = lib.licenses.mit;
     platforms = lib.platforms.linux;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "nwg-hello";
   };
 }

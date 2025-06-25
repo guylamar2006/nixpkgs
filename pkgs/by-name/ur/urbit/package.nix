@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
       "x86_64-darwin"
       "aarch64-darwin"
     ];
-    maintainers = [ maintainers.matthew-levan ];
+    maintainers = with lib.maintainers; [ matthew-levan ];
     license = licenses.mit;
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
     mainProgram = "urbit";

@@ -44,8 +44,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     homepage = "https://tobiasjung.name/profont/";
     description = "Monospaced font created to be a most readable font for programming";
-    maintainers = with maintainers; [ myrl ];
-    license = licenses.mit;
+    maintainers = with lib.maintainers; [ myrl ];
+    license = lib.licenses.mit;
     platforms = platforms.all;
   };
 

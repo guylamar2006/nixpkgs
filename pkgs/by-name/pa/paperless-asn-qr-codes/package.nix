@@ -36,8 +36,8 @@ python3.pkgs.buildPythonApplication rec {
   meta = with lib; {
     description = "Command line utility for generating ASN labels for paperless with both a human-readable representation, as well as a QR code for machine consumption";
     homepage = "https://github.com/entropia/paperless-asn-qr-codes";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ xanderio ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ xanderio ];
     mainProgram = "paperless-asn-qr-codes";
   };
 }

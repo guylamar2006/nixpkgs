@@ -38,7 +38,7 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://gitlab.gnome.org/Archive/policykit-gnome/-/blob/${finalAttrs.version}/NEWS?ref_type=tags";
     description = "Dbus session bus service that is used to bring up authentication dialogs";
     license = lib.licenses.lgpl2Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
   };
 })

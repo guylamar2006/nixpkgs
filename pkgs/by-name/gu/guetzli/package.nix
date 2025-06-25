@@ -31,7 +31,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/google/guetzli";
     license = lib.licenses.asl20;
     platforms = lib.platforms.x86_64;
-    maintainers = [ lib.maintainers.seppeljordan ];
+    maintainers = with lib.maintainers; [ seppeljordan ];
     mainProgram = "guetzli";
   };
 }

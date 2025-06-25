@@ -83,10 +83,10 @@ stdenv.mkDerivation {
     homepage = "https://scala-cli.virtuslab.org";
     downloadPage = "https://github.com/VirtusLab/scala-cli/releases/v${version}";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     description = "Command-line tool to interact with the Scala language";
     mainProgram = "scala-cli";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       kubukoz
       agilesteel
     ];

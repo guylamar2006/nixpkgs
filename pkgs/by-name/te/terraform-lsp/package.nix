@@ -29,6 +29,6 @@ buildGoModule rec {
     mainProgram = "terraform-lsp";
     homepage = "https://github.com/juliosueiras/terraform-lsp";
     license = licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

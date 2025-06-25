@@ -35,10 +35,10 @@ stdenvNoCC.mkDerivation {
       with a small x-height.
     '';
     platforms = platforms.all;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       leenaars
       minijackson
     ];
-    license = licenses.cc0;
+    license = lib.licenses.cc0;
   };
 }

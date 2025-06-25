@@ -84,8 +84,8 @@ stdenv.mkDerivation rec {
       fromSource
       binaryBytecode # deps
     ];
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ wirew0rm ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ wirew0rm ];
     platforms = platforms.all;
   };
 }

@@ -38,8 +38,8 @@ stdenv.mkDerivation rec {
     '';
     homepage = "http://holdenc.altervista.org/seren/";
     changelog = "http://holdenc.altervista.org/seren/";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [
       matthewcroughan
       nixinator
     ];

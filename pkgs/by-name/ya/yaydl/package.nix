@@ -38,7 +38,7 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://code.rosaelefanten.org/yaydl";
     description = "Yet another youtube down loader";
     license = licenses.cddl;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "yaydl";
   };
 }

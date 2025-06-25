@@ -31,8 +31,8 @@ stdenv.mkDerivation rec {
       written in ANSI C.
     '';
     homepage = "https://github.com/Usbac/quich";
-    license = licenses.mit;
-    maintainers = [ maintainers.xdhampus ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ xdhampus ];
     platforms = platforms.all;
     mainProgram = "quich";
   };

@@ -59,7 +59,7 @@ stdenv.mkDerivation rec {
     '';
     license = licenses.hpnd;
     homepage = "https://shantanugoel.com/2008/09/03/shantz-xwinwrap/";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.linux;
     mainProgram = "xwinwrap";
   };

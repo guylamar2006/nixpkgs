@@ -59,7 +59,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://odbc.postgresql.org/";
     description = "ODBC driver for PostgreSQL";
-    license = licenses.lgpl2;
+    license = lib.licenses.lgpl2;
     platforms = platforms.unix;
     teams = libpq.meta.teams;
   };

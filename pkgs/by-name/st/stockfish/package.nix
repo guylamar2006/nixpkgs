@@ -122,7 +122,7 @@ stdenv.mkDerivation rec {
       "aarch64-linux"
       "aarch64-darwin"
     ];
-    license = licenses.gpl3Only;
+    license = lib.licenses.gpl3Only;
   };
 
 }

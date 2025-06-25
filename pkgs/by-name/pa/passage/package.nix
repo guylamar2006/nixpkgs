@@ -66,8 +66,8 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "Stores, retrieves, generates, and synchronizes passwords securely";
     homepage = "https://github.com/FiloSottile/passage";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [
       kaction
       ma27
     ];

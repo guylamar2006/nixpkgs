@@ -36,8 +36,8 @@ python3.pkgs.buildPythonApplication rec {
     homepage = "https://github.com/carderne/signal-export";
     description = "Export your Signal chats to markdown files with attachments";
     platforms = platforms.unix;
-    license = licenses.mit;
-    maintainers = with maintainers; [
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [
       phaer
       picnoir
     ];

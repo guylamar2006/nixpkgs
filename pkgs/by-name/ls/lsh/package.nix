@@ -19,6 +19,6 @@ buildGoModule rec {
     description = "Command-Line Interface for Latitude.sh";
     homepage = "https://github.com/latitudesh/lsh";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.dzmitry-lahoda ];
+    maintainers = with lib.maintainers; [ dzmitry-lahoda ];
   };
 }

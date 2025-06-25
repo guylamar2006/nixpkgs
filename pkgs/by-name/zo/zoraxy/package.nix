@@ -42,7 +42,7 @@ buildGoModule (finalAttrs: {
     homepage = "https://zoraxy.arozos.com/";
     changelog = "https://github.com/tobychui/zoraxy/blob/v${finalAttrs.version}/CHANGELOG.md";
     license = lib.licenses.agpl3Only;
-    maintainers = [ lib.maintainers.luftmensch-luftmensch ];
+    maintainers = with lib.maintainers; [ luftmensch-luftmensch ];
     mainProgram = "zoraxy";
     platforms = lib.platforms.linux;
   };

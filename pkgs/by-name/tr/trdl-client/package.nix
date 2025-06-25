@@ -54,7 +54,7 @@ buildGoModule (finalAttrs: {
     homepage = "https://trdl.dev";
     changelog = "https://github.com/werf/trdl/blob/${finalAttrs.src.rev}/CHANGELOG.md";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.azahi ];
+    maintainers = with lib.maintainers; [ azahi ];
     mainProgram = "trdl";
   };
 })

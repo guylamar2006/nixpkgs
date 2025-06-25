@@ -22,7 +22,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = {
     description = "Tool for analyzing Clang's -ftime-trace files";
     homepage = "https://github.com/aras-p/ClangBuildAnalyzer";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     license = lib.licenses.unlicense;
     platforms = lib.platforms.unix;
     mainProgram = "ClangBuildAnalyzer";

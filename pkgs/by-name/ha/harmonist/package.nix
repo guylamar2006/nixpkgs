@@ -36,6 +36,6 @@ buildGoModule (finalAttrs: {
     '';
     homepage = "https://harmonist.tuxfamily.org/";
     license = lib.licenses.isc;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 })

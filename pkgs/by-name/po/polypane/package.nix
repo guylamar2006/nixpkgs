@@ -36,9 +36,9 @@ appimageTools.wrapType2 {
       accessible and performant websites in a fraction of the time it takes with other browsers.
     '';
     homepage = "https://polypane.app/";
-    maintainers = with maintainers; [ zoedsoupe ];
+    maintainers = with lib.maintainers; [ zoedsoupe ];
     platforms = [ "x86_64-linux" ];
     changelog = "https://polypane.app/docs/changelog/";
-    license = licenses.unfree;
+    license = lib.licenses.unfree;
   };
 }

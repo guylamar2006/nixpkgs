@@ -64,7 +64,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Desktop library for Bluetooth low energy development";
     homepage = "https://github.com/NordicSemiconductor/pc-ble-driver";
-    license = licenses.unfreeRedistributable;
+    license = lib.licenses.unfreeRedistributable;
     platforms = platforms.unix;
   };
 }

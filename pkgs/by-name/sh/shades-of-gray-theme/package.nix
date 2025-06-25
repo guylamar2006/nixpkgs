@@ -29,8 +29,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Flat dark GTK theme with ergonomic contrasts";
     homepage = "https://github.com/WernerFP/Shades-of-gray-theme";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     platforms = platforms.unix;
-    maintainers = [ maintainers.romildo ];
+    maintainers = with lib.maintainers; [ romildo ];
   };
 }

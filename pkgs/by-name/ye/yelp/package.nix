@@ -62,7 +62,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://apps.gnome.org/Yelp/";
     description = "Help viewer in Gnome";
-    teams = [ teams.gnome ];
+    teams = with lib.teams; [ gnome ];
     license = licenses.gpl2;
     platforms = platforms.linux;
   };

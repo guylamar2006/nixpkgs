@@ -171,6 +171,6 @@ lib.checkListOfEnum "${pname}: button size variants" [ "standard" "small" ] butt
       homepage = "https://github.com/vinceliuice/Mojave-gtk-theme";
       license = lib.licenses.gpl3Only;
       platforms = lib.platforms.unix;
-      maintainers = [ lib.maintainers.romildo ];
+      maintainers = with lib.maintainers; [ romildo ];
     };
   }

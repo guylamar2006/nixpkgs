@@ -47,12 +47,12 @@ stdenv.mkDerivation rec {
     "-Dwith-perl=yes"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Terminal based IRC client";
     mainProgram = "irssi";
     homepage = "https://irssi.org";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [
       fab
       lovek323
     ];

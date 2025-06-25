@@ -37,12 +37,12 @@ stdenv.mkDerivation {
     export DESTDIR=$out
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "http://kmkeen.com/jshon";
     description = "JSON parser designed for maximum convenience within the shell";
     mainProgram = "jshon";
-    license = licenses.free;
+    license = lib.licenses.free;
     platforms = platforms.all;
-    maintainers = with maintainers; [ rushmorem ];
+    maintainers = with lib.maintainers; [ rushmorem ];
   };
 }

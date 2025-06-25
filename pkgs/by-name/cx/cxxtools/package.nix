@@ -50,6 +50,6 @@ stdenv.mkDerivation rec {
     description = "Comprehensive C++ class library for Unix and Linux";
     platforms = lib.platforms.linux;
     license = lib.licenses.lgpl21;
-    maintainers = [ lib.maintainers.juliendehos ];
+    maintainers = with lib.maintainers; [ juliendehos ];
   };
 }

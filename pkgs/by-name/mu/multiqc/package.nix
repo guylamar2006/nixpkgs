@@ -126,7 +126,7 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://multiqc.info";
     changelog = "https://github.com/MultiQC/MultiQC/releases/tag/v${version}/";
     license = [ lib.licenses.gpl3Plus ];
-    maintainers = [ lib.maintainers.apraga ];
+    maintainers = with lib.maintainers; [ apraga ];
     mainProgram = "multiqc";
     platforms = lib.platforms.unix;
   };

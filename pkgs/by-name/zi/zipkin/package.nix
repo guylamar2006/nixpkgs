@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = licenses.asl20;
     platforms = platforms.unix;
-    maintainers = [ maintainers.hectorj ];
+    maintainers = with lib.maintainers; [ hectorj ];
     mainProgram = "zipkin-server";
   };
 }

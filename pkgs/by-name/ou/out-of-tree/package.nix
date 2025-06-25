@@ -37,7 +37,7 @@ buildGoModule rec {
     description = "kernel {module, exploit} development tool";
     mainProgram = "out-of-tree";
     homepage = "https://out-of-tree.io";
-    maintainers = [ maintainers.dump_stack ];
-    license = licenses.agpl3Plus;
+    maintainers = with lib.maintainers; [ dump_stack ];
+    license = lib.licenses.agpl3Plus;
   };
 }

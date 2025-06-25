@@ -43,7 +43,7 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "zasm";
     homepage = "https://k1.spdns.de/Develop/Projects/zasm/Distributions/";
     license = lib.licenses.bsd2;
-    maintainers = [ lib.maintainers.turbomack ];
+    maintainers = with lib.maintainers; [ turbomack ];
     platforms = lib.platforms.unix;
     badPlatforms = lib.platforms.aarch64;
   };

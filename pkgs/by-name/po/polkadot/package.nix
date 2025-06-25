@@ -73,8 +73,8 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Implementation of a https://polkadot.network node in Rust based on the Substrate framework";
     homepage = "https://github.com/paritytech/polkadot-sdk";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [
       akru
       andresilva
       FlorianFranzen

@@ -52,7 +52,7 @@ buildGraalvmNativeImage (finalAttrs: {
     description = "Update your Scala dependencies interactively";
     homepage = "https://github.com/kitlangton/scala-update";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.rtimush ];
+    maintainers = with lib.maintainers; [ rtimush ];
     mainProgram = "scala-update";
   };
 })

@@ -72,8 +72,8 @@ python3Packages.buildPythonApplication {
     description = "Lightweight streaming server which brings DLNA / UPNP and Chromecast support to PulseAudio and Linux";
     mainProgram = "pulseaudio-dlna";
     homepage = "https://github.com/Cygn/pulseaudio-dlna";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ mog ];
-    platforms = platforms.linux;
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ mog ];
+    platforms = lib.platforms.linux;
   };
 }

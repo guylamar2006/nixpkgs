@@ -57,7 +57,7 @@ rustPlatform.buildRustPackage rec {
       --set-default ERG_PATH $out/share/erg
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Statically typed language that can deeply improve the Python ecosystem";
     mainProgram = "erg";
     homepage = "https://github.com/erg-lang/erg";
@@ -66,6 +66,6 @@ rustPlatform.buildRustPackage rec {
       asl20
       mit
     ];
-    maintainers = with maintainers; [ figsoda ];
+    maintainers = with lib.maintainers; [ figsoda ];
   };
 }

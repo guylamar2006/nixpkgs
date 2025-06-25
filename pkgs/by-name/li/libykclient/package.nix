@@ -25,11 +25,11 @@ stdenv.mkDerivation {
   ];
   buildInputs = [ curl ];
 
-  meta = with lib; {
+  meta = {
     description = "Yubikey C client library";
     mainProgram = "ykclient";
     homepage = "https://developers.yubico.com/yubico-c-client";
-    license = licenses.bsd2;
-    maintainers = [ ];
+    license = lib.licenses.bsd2;
+    maintainers = with lib.maintainers; [ ];
   };
 }

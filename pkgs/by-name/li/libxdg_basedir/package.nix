@@ -20,11 +20,11 @@ stdenv.mkDerivation rec {
     autoreconfHook
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Implementation of the XDG Base Directory specification";
     homepage = "https://github.com/devnev/libxdg-basedir";
-    license = licenses.mit;
-    maintainers = with maintainers; [ nickcao ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ nickcao ];
     platforms = platforms.unix;
   };
 }

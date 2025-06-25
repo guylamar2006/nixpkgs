@@ -189,7 +189,7 @@ stdenv.mkDerivation rec {
     description = "Data analysis framework";
     platforms = platforms.unix;
     broken = !stdenv.hostPlatform.isx86_64 || stdenv.cc.isClang or false;
-    maintainers = with maintainers; [ veprbl ];
-    license = licenses.lgpl21;
+    maintainers = with lib.maintainers; [ veprbl ];
+    license = lib.licenses.lgpl21;
   };
 }

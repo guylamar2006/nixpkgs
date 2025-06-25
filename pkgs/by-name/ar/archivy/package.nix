@@ -59,11 +59,11 @@ buildPythonApplication rec {
   # __init__.py attempts to mkdir in read-only file system
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Self-hosted knowledge repository";
     homepage = "https://archivy.github.io";
-    license = licenses.mit;
-    maintainers = with maintainers; [ siraben ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ siraben ];
     platforms = platforms.unix;
   };
 }

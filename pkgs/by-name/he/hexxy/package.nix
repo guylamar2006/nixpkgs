@@ -27,7 +27,7 @@ buildGoModule (finalAttrs: {
     description = "Modern and beautiful alternative to xxd and hexdump";
     homepage = "https://github.com/sweetbbak/hexxy";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.NotAShelf ];
+    maintainers = with lib.maintainers; [ NotAShelf ];
     mainProgram = "hexxy";
   };
 })

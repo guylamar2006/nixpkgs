@@ -163,13 +163,13 @@ let
         fully compatible with Office Open XML formats: .docx, .xlsx, .pptx and enabling collaborative editing in real time.
       '';
       homepage = "https://github.com/ONLYOFFICE/DocumentServer";
-      license = licenses.agpl3Plus;
+      license = lib.licenses.agpl3Plus;
       platforms = [
         "x86_64-linux"
         "aarch64-linux"
       ];
       sourceProvenance = [ sourceTypes.binaryNativeCode ];
-      maintainers = with maintainers; [ SuperSandro2000 ];
+      maintainers = with lib.maintainers; [ SuperSandro2000 ];
     };
   };
 in

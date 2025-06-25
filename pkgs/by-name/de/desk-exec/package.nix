@@ -34,7 +34,7 @@ rustPlatform.buildRustPackage rec {
     description = "Execute programs defined in XDG desktop entries directly from the command line";
     homepage = "https://github.com/AxerTheAxe/desk-exec";
     license = lib.licenses.unlicense;
-    maintainers = [ lib.maintainers.axertheaxe ];
+    maintainers = with lib.maintainers; [ axertheaxe ];
     mainProgram = "desk-exec";
     platforms = lib.platforms.linux;
   };

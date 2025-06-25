@@ -30,8 +30,8 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     homepage = "https://github.com/g-plane/pnpm-shell-completion";
     description = "Complete your pnpm command fastly";
-    license = licenses.mit;
-    maintainers = with maintainers; [ donovanglover ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ donovanglover ];
     mainProgram = "pnpm-shell-completion";
   };
 }

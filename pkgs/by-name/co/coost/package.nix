@@ -43,11 +43,11 @@ stdenv.mkDerivation (finalAttrs: {
   ];
   passthru.updateScript = gitUpdater { };
 
-  meta = with lib; {
+  meta = {
     description = "Tiny boost library in C++11";
     homepage = "https://github.com/idealvin/coost";
-    license = licenses.mit;
-    maintainers = [ maintainers.sigmanificient ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ sigmanificient ];
     platforms = platforms.unix;
   };
 })

@@ -53,8 +53,8 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     description = "NILFS utilities";
-    maintainers = [ maintainers.raskin ];
-    platforms = platforms.linux;
+    maintainers = with lib.maintainers; [ raskin ];
+    platforms = lib.platforms.linux;
     license = with licenses; [
       gpl2Plus
       lgpl21

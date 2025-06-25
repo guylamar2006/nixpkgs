@@ -19,10 +19,10 @@ buildGoModule rec {
 
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Simple text-based Minecraft modpack manager";
-    license = licenses.agpl3Plus;
+    license = lib.licenses.agpl3Plus;
     homepage = src.meta.homepage;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

@@ -27,7 +27,7 @@ buildGoModule rec {
   meta = with lib; {
     description = "Simple, fun and transparent SSH (and telnet) bastion server";
     homepage = "https://manfred.life/sshportal";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     maintainers = with maintainers; [ zaninime ];
     mainProgram = "sshportal";
   };

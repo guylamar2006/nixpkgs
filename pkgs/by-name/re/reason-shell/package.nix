@@ -33,7 +33,7 @@ rustPlatform.buildRustPackage rec {
     mainProgram = "reason";
     homepage = "https://github.com/jaywonchung/reason";
     changelog = "https://github.com/jaywonchung/reason/releases/tag/${src.rev}";
-    license = licenses.mit;
-    maintainers = with maintainers; [ figsoda ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ figsoda ];
   };
 }

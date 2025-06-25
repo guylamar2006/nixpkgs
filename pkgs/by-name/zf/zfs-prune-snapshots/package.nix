@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
     mainProgram = "zfs-prune-snapshots";
     homepage = "https://github.com/bahamas10/zfs-prune-snapshots";
     license = licenses.mit;
-    maintainers = [ maintainers.ymarkus ];
+    maintainers = with lib.maintainers; [ ymarkus ];
     platforms = platforms.all;
   };
 }

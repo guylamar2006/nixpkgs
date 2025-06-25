@@ -81,9 +81,9 @@ stdenv.mkDerivation rec {
     description = "Cross-platform gettext catalogs (.po files) editor";
     mainProgram = "poedit";
     homepage = "https://www.poedit.net/";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ dasj19 ];
+    maintainers = with lib.maintainers; [ dasj19 ];
     # configure: error: GTK+ build of wxWidgets is required
     broken = stdenv.hostPlatform.isDarwin;
   };

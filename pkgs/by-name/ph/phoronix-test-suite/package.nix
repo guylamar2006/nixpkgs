@@ -48,8 +48,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Open-Source, Automated Benchmarking";
     homepage = "https://www.phoronix-test-suite.com/";
-    maintainers = with maintainers; [ davidak ];
-    license = licenses.gpl3;
+    maintainers = with lib.maintainers; [ davidak ];
+    license = lib.licenses.gpl3;
     platforms = with platforms; unix;
     mainProgram = "phoronix-test-suite";
   };

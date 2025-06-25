@@ -28,7 +28,7 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://github.com/ZingerLittleBee/netop";
     license = lib.licenses.mit;
     mainProgram = "netop";
-    maintainers = [ lib.maintainers.marcusramberg ];
+    maintainers = with lib.maintainers; [ marcusramberg ];
     platforms = lib.platforms.linux;
   };
 }

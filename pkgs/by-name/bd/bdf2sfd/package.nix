@@ -18,12 +18,12 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [ cmake ];
 
-  meta = with lib; {
+  meta = {
     description = "BDF to SFD converter";
     homepage = "https://github.com/fcambus/bdf2sfd";
-    license = licenses.bsd2;
+    license = lib.licenses.bsd2;
     platforms = platforms.all;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "bdf2sfd";
   };
 }

@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
     mainProgram = "networkmanager_dmenu";
     homepage = "https://github.com/firecat53/networkmanager-dmenu";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.jensbin ];
+    maintainers = with lib.maintainers; [ jensbin ];
     platforms = lib.platforms.all;
   };
 }

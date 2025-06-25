@@ -39,6 +39,6 @@ buildNpmPackage rec {
     homepage = "https://github.com/rvl/bower2nix";
     license = lib.licenses.gpl3Only;
     mainProgram = "bower2nix";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

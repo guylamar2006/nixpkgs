@@ -108,7 +108,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = {
     description = "Collaborative online office suite based on LibreOffice technology";
     license = lib.licenses.mpl20;
-    maintainers = [ lib.maintainers.xzfc ];
+    maintainers = with lib.maintainers; [ xzfc ];
     homepage = "https://www.collaboraonline.com";
     platforms = lib.platforms.linux;
   };

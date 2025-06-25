@@ -21,8 +21,8 @@ rustPlatform.buildRustPackage {
   meta = with lib; {
     description = "Simple CLI browser for the peertube federated video platform";
     homepage = "https://gitlab.com/peertube-viewer/peertube-viewer-rs";
-    license = licenses.agpl3Only;
-    maintainers = with maintainers; [ haruki7049 ];
+    license = lib.licenses.agpl3Only;
+    maintainers = with lib.maintainers; [ haruki7049 ];
     mainProgram = "peertube-viewer-rs";
   };
 }

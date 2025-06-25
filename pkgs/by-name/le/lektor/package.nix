@@ -112,6 +112,6 @@ python.pkgs.buildPythonApplication rec {
     changelog = "https://github.com/lektor/lektor/blob/v${version}/CHANGES.md";
     license = lib.licenses.bsd3;
     mainProgram = "lektor";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

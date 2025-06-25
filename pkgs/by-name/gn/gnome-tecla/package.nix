@@ -45,11 +45,11 @@ stdenv.mkDerivation (finalAttrs: {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Keyboard layout viewer";
     homepage = "https://gitlab.gnome.org/GNOME/tecla";
-    license = licenses.gpl2Plus;
-    teams = [ teams.gnome ];
+    license = lib.licenses.gpl2Plus;
+    teams = with lib.teams; [ gnome ];
     platforms = platforms.unix;
     mainProgram = "tecla";
   };

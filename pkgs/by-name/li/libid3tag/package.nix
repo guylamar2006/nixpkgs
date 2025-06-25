@@ -44,7 +44,7 @@ stdenv.mkDerivation rec {
     description = "ID3 tag manipulation library";
     homepage = "https://codeberg.org/tenacityteam/libid3tag";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
   };
 }

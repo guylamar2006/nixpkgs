@@ -64,7 +64,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Gtk based drop down terminal for Linux and Unix";
     mainProgram = "tilda";
     license = lib.licenses.gpl3Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
   };
 })

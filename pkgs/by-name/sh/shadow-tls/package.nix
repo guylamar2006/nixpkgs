@@ -26,9 +26,9 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     homepage = "https://github.com/ihciah/shadow-tls";
     description = "Proxy to expose real tls handshake to the firewall";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     mainProgram = "shadow-tls";
-    maintainers = with maintainers; [ oluceps ];
+    maintainers = with lib.maintainers; [ oluceps ];
     platforms = platforms.linux;
   };
 }

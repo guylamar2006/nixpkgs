@@ -59,8 +59,8 @@ resholve.mkDerivation {
   meta = with lib; {
     description = "PDF to ODT/ODS format converter";
     homepage = "https://github.com/gutschke/pdf2odt";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.all;
-    maintainers = with maintainers; [ peterhoeg ];
+    maintainers = with lib.maintainers; [ peterhoeg ];
   };
 }

@@ -120,9 +120,9 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.mit;
     # https://github.com/NixOS/nixpkgs/issues/403846
     broken = stdenv.hostPlatform.isDarwin;
-    maintainers = [
-      lib.maintainers.oddlama
-      lib.maintainers.patrickdag
+    maintainers = with lib.maintainers; [
+      oddlama
+      patrickdag
     ];
   };
 })

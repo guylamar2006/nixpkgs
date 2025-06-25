@@ -24,7 +24,7 @@ stdenv.mkDerivation rec {
     homepage = "http://thrysoee.dk/xtermcontrol";
     license = lib.licenses.gpl2;
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.derchris ];
+    maintainers = with lib.maintainers; [ derchris ];
     mainProgram = "xtermcontrol";
   };
 }

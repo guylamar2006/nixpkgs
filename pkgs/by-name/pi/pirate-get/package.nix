@@ -25,8 +25,8 @@ buildPythonApplication rec {
     description = "Command line interface for The Pirate Bay";
     mainProgram = "pirate-get";
     homepage = "https://github.com/vikstrous/pirate-get";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ rnhmjoj ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ rnhmjoj ];
     platforms = platforms.unix;
   };
 }

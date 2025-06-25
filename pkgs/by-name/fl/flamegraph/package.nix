@@ -44,7 +44,7 @@ stdenv.mkDerivation {
     runHook postCheck
   '';
 
-  meta = with lib; {
+  meta = {
     license = with licenses; [
       asl20
       cddl

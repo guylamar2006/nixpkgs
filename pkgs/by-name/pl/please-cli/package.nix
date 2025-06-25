@@ -43,8 +43,8 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "AI helper script to create CLI commands based on GPT prompts";
     homepage = "https://github.com/TNG/please-cli";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ _8-bit-fox ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ _8-bit-fox ];
     mainProgram = "please";
     platforms = platforms.all;
   };

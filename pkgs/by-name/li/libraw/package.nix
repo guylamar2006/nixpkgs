@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
     inherit (python3.pkgs) rawkit;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Library for reading RAW files obtained from digital photo cameras (CRW/CR2, NEF, RAF, DNG, and others)";
     homepage = "https://www.libraw.org/";
     license = with licenses; [

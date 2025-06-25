@@ -57,8 +57,8 @@ stdenv.mkDerivation rec {
     description = "Desktop application to test regular expressions interactively";
     mainProgram = "com.github.artemanufrij.regextester";
     homepage = "https://github.com/artemanufrij/regextester";
-    maintainers = with maintainers; [ samdroid-apps ];
+    maintainers = with lib.maintainers; [ samdroid-apps ];
     platforms = platforms.linux;
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
   };
 }

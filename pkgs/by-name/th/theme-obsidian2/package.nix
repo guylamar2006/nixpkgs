@@ -44,6 +44,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://github.com/madmaxms/theme-obsidian-2";
     license = with licenses; [ gpl3Only ];
     platforms = platforms.linux;
-    maintainers = [ maintainers.romildo ];
+    maintainers = with lib.maintainers; [ romildo ];
   };
 }

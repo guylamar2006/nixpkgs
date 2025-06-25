@@ -42,6 +42,6 @@ stdenv.mkDerivation rec {
     description = "Open-source SIP User-Agent library, compliant with the IETF RFC3261 specification";
     homepage = "https://github.com/freeswitch/sofia-sip";
     platforms = platforms.unix;
-    license = licenses.lgpl2;
+    license = lib.licenses.lgpl2;
   };
 }

@@ -48,6 +48,6 @@ stdenv.mkDerivation (finalAttrs: {
     description = "System monitor for Windowmaker";
     homepage = "https://www.dockapps.net/wmsmapp";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 })

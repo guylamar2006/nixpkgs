@@ -32,7 +32,7 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.mit;
     homepage = "https://github.com/mpereira/tty-solitaire";
     platforms = ncurses.meta.platforms;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "ttysolitaire";
   };
 })

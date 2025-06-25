@@ -54,7 +54,7 @@ stdenv.mkDerivation rec {
     description = "Bourne shell script that can be used to report on expiring SSL certificates";
     mainProgram = "ssl-cert-check";
     homepage = "https://github.com/Matty9191/ssl-cert-check";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     maintainers = with maintainers; [ ryantm ];
     platforms = platforms.linux;
   };

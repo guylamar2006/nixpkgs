@@ -47,7 +47,7 @@ buildDartApplication {
     changelog = "https://github.com/Merrit/vscode-runner/blob/${src.rev}/CHANGELOG.md";
     license = lib.licenses.gpl3Only;
     sourceProvenance = [ lib.sourceTypes.fromSource ];
-    maintainers = [ lib.maintainers.pinage404 ];
+    maintainers = with lib.maintainers; [ pinage404 ];
     mainProgram = "vscode_runner";
     inherit (kdePackages.krunner.meta) platforms;
   };

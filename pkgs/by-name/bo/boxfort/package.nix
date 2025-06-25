@@ -36,11 +36,11 @@ stdenv.mkDerivation rec {
     "out"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Convenient & cross-platform sandboxing C library";
     homepage = "https://github.com/Snaipe/BoxFort";
-    license = licenses.mit;
-    maintainers = with maintainers; [
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [
       thesola10
       Yumasi
     ];

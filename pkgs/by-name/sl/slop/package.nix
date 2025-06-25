@@ -57,8 +57,8 @@ stdenv.mkDerivation rec {
     inherit (src.meta) homepage;
     description = "Queries a selection from the user and prints to stdout";
     platforms = lib.platforms.linux;
-    license = licenses.gpl3Plus;
-    maintainers = [ ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "slop";
   };
 }

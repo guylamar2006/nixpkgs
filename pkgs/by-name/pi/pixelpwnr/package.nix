@@ -21,7 +21,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
     description = "Insanely fast pixelflut client for images and animations written in Rust";
     homepage = "https://github.com/timvisee/pixelpwnr";
     license = lib.licenses.gpl3Only;
-    maintainers = [ lib.maintainers.ixhby ];
+    maintainers = with lib.maintainers; [ ixhby ];
     platforms = lib.platforms.linux;
     mainProgram = "pixelpwnr";
   };

@@ -62,11 +62,11 @@ perlPackages.buildPerlPackage rec {
     mv docs "$doc/share/doc/awstats"
   '';
 
-  meta = with lib; {
+  meta = {
     changelog = "https://www.awstats.org/docs/awstats_changelog.txt";
     description = "Real-time logfile analyzer to get advanced statistics";
     homepage = "https://awstats.org";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     platforms = platforms.unix;
     mainProgram = "awstats";
   };

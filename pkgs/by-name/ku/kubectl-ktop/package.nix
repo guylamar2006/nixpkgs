@@ -35,6 +35,6 @@ buildGoModule rec {
     homepage = "https://github.com/vladimirvivien/ktop";
     changelog = "https://github.com/vladimirvivien/ktop/releases/tag/v${version}";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.ivankovnatsky ];
+    maintainers = with lib.maintainers; [ ivankovnatsky ];
   };
 }

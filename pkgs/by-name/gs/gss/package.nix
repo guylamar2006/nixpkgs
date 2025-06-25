@@ -44,12 +44,12 @@ stdenv.mkDerivation rec {
     sed -i 's,\(-lshishi\),-L${shishi}/lib \1,' $out/lib/libgss.la
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.gnu.org/software/gss/";
     description = "Generic Security Service";
     mainProgram = "gss";
-    license = licenses.gpl3Plus;
-    maintainers = [ ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
   };
 }

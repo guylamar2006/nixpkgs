@@ -58,6 +58,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/namhyung/uftrace";
     license = lib.licenses.gpl2;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.nthorne ];
+    maintainers = with lib.maintainers; [ nthorne ];
   };
 }

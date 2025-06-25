@@ -57,7 +57,7 @@ buildGo124Module rec {
     homepage = "https://abhinav.github.io/git-spice/";
     changelog = "https://github.com/abhinav/git-spice/blob/${src.rev}/CHANGELOG.md";
     license = lib.licenses.gpl3Only;
-    maintainers = [ lib.maintainers.vinnymeller ];
+    maintainers = with lib.maintainers; [ vinnymeller ];
     mainProgram = "gs";
   };
 }

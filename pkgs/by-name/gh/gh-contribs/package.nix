@@ -41,7 +41,7 @@ stdenvNoCC.mkDerivation rec {
   meta = {
     homepage = "https://github.com/MintArchit/gh-contribs";
     description = "GitHub Contribution Graph CLI";
-    maintainers = [ lib.maintainers.vinnymeller ];
+    maintainers = with lib.maintainers; [ vinnymeller ];
     license = lib.licenses.unlicense;
     mainProgram = "gh-contribs";
     platforms = lib.platforms.all;

@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
     homepage = "https://code.google.com/archive/p/udptunnel/";
     description = "Tunnels TCP over UDP packets";
     license = lib.licenses.gpl3Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = with lib.platforms; linux;
     mainProgram = "udptunnel";
   };

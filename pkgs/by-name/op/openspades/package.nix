@@ -93,9 +93,9 @@ stdenv.mkDerivation rec {
     description = "Compatible client of Ace of Spades 0.75";
     mainProgram = "openspades";
     homepage = "https://github.com/yvt/openspades/";
-    license = licenses.gpl3;
+    license = lib.licenses.gpl3;
     platforms = platforms.all;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       abbradar
       azahi
     ];

@@ -25,6 +25,6 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/COMBINE-lab/libgff/releases/tag/" + "v${finalAttrs.version}";
     license = lib.licenses.boost;
     platforms = lib.platforms.all;
-    maintainers = [ lib.maintainers.kupac ];
+    maintainers = with lib.maintainers; [ kupac ];
   };
 })

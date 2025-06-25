@@ -95,6 +95,6 @@ stdenv.mkDerivation rec {
     description = "Share files across the LAN";
     license = licenses.gpl3Plus;
     platforms = platforms.linux;
-    teams = [ teams.cinnamon ];
+    teams = with lib.teams; [ cinnamon ];
   };
 }

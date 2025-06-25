@@ -42,9 +42,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/rootless-containers/slirp4netns";
     description = "User-mode networking for unprivileged network namespaces";
-    license = licenses.gpl2Only;
-    maintainers = with maintainers; [ orivej ];
-    teams = [ teams.podman ];
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [ orivej ];
+    teams = with lib.teams; [ podman ];
     platforms = platforms.linux;
     mainProgram = "slirp4netns";
   };

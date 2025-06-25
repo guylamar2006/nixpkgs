@@ -31,7 +31,7 @@ buildGoModule (finalAttrs: {
     homepage = "https://github.com/byawitz/ggh";
     changelog = "https://github.com/byawitz/ggh/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.ilarvne ];
+    maintainers = with lib.maintainers; [ ilarvne ];
     platforms = lib.platforms.unix;
     mainProgram = "ggh";
   };

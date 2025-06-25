@@ -55,7 +55,7 @@ let
     mainProgram = "dsmc";
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unfree;
-    maintainers = [ lib.maintainers.yarny ];
+    maintainers = with lib.maintainers; [ yarny ];
     description = "IBM Storage Protect (Tivoli Storage Manager) CLI and API";
     longDescription = ''
       IBM Storage Protect (Tivoli Storage Manager) provides

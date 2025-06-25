@@ -76,6 +76,6 @@ rustPlatform.buildRustPackage {
     description = "SystemVerilog Language Server";
     homepage = "https://github.com/vivekmalneedi/veridian";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.hakan-demirli ];
+    maintainers = with lib.maintainers; [ hakan-demirli ];
   };
 }

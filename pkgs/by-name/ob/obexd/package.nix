@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     homepage = "https://www.bluez.org/";
-    platforms = platforms.linux;
-    license = licenses.gpl3;
+    platforms = lib.platforms.linux;
+    license = lib.licenses.gpl3;
   };
 }

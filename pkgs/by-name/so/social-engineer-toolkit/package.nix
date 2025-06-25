@@ -70,7 +70,7 @@ python3Packages.buildPythonApplication rec {
     '';
     homepage = "https://github.com/trustedsec/social-engineer-toolkit";
     mainProgram = "setoolkit";
-    license = licenses.bsd3;
-    maintainers = with maintainers; [ emilytrau ];
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ emilytrau ];
   };
 }

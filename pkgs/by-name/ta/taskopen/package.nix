@@ -49,6 +49,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/ValiValpas/taskopen";
     platforms = platforms.linux;
     license = licenses.gpl2Plus;
-    maintainers = [ maintainers.winpat ];
+    maintainers = with lib.maintainers; [ winpat ];
   };
 }

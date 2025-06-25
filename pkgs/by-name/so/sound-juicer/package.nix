@@ -66,8 +66,8 @@ stdenv.mkDerivation rec {
     description = "Gnome CD Ripper";
     mainProgram = "sound-juicer";
     homepage = "https://gitlab.gnome.org/GNOME/sound-juicer";
-    maintainers = [ maintainers.bdimcheff ];
-    license = licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ bdimcheff ];
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.linux;
   };
 }

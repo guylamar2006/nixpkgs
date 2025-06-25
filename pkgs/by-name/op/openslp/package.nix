@@ -32,8 +32,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "http://www.openslp.org/";
     description = "Open-source implementation of the IETF Service Location Protocol";
-    maintainers = with maintainers; [ ttuegel ];
-    license = licenses.bsd3;
+    maintainers = with lib.maintainers; [ ttuegel ];
+    license = lib.licenses.bsd3;
     platforms = platforms.all;
     # never built on aarch64-darwin since first introduction in nixpkgs
     broken = stdenv.hostPlatform.isDarwin && stdenv.hostPlatform.isAarch64;

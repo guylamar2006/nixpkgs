@@ -45,7 +45,7 @@ stdenvNoCC.mkDerivation rec {
     description = "utilities to deal with text based name service databases";
     homepage = "https://ytrizja.de/";
     license = licenses.gpl3Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
   };
 }

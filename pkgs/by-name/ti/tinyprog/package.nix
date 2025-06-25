@@ -36,7 +36,7 @@ buildPythonApplication rec {
     homepage = "https://github.com/tinyfpga/TinyFPGA-Bootloader/tree/master/programmer";
     description = "Programmer for FPGA boards using the TinyFPGA USB Bootloader";
     mainProgram = "tinyprog";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     license = licenses.asl20;
   };
 }

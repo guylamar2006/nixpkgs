@@ -89,7 +89,7 @@ stdenv.mkDerivation rec {
       gpl3Only
       mit
     ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       twhitehead
       chn
     ];

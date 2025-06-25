@@ -44,8 +44,8 @@ stdenv.mkDerivation rec {
       omitting some of its little-used features, like Tektronix 4014
       emulation and toolkit-style configurability.
     '';
-    maintainers = with maintainers; [ ];
-    license = licenses.gpl2;
+    maintainers = with lib.maintainers; [ ];
+    license = lib.licenses.gpl2;
     platforms = platforms.linux;
     knownVulnerabilities = [
       "Usage of ANSI escape sequences causes unexpected newline-termination, leading to unexpected command execution (https://www.openwall.com/lists/oss-security/2021/05/17/1)"

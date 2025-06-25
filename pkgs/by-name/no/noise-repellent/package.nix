@@ -40,8 +40,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "LV2 plugin for broadband noise reduction";
     homepage = "https://github.com/lucianodato/noise-repellent";
-    license = licenses.gpl3;
-    maintainers = [ maintainers.magnetophon ];
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ magnetophon ];
     platforms = platforms.unix;
   };
 }

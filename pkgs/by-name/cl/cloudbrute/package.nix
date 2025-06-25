@@ -17,7 +17,7 @@ buildGoModule rec {
 
   vendorHash = "sha256-SRk5kEUVmY3IJSB/XwchqWGnaXLQUoisx6KlVzMHdjg=";
 
-  meta = with lib; {
+  meta = {
     description = "Cloud enumeration tool";
     mainProgram = "cloudbrute";
     longDescription = ''
@@ -27,6 +27,6 @@ buildGoModule rec {
     '';
     homepage = "https://github.com/0xsha/CloudBrute";
     license = with licenses; [ mit ];
-    maintainers = with maintainers; [ fab ];
+    maintainers = with lib.maintainers; [ fab ];
   };
 }

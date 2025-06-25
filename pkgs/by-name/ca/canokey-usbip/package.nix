@@ -46,7 +46,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "CanoKey USB/IP Virt Card";
     homepage = "https://github.com/canokeys/canokey-usbip";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.jmbaur ];
+    maintainers = with lib.maintainers; [ jmbaur ];
     mainProgram = "canokey-usbip";
     platforms = lib.platforms.all;
   };

@@ -19,11 +19,11 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-rVYRbaj+9nFVyo9Zjdmd5t7CoFfxtntXIW2bWp2L7DE=";
 
-  meta = with lib; {
+  meta = {
     description = "VK-GL-CTS/dEQP wrapper program to parallelize it across CPUs and report results against a baseline";
     homepage = "https://gitlab.freedesktop.org/anholt/deqp-runner";
-    license = licenses.mit;
-    platforms = platforms.linux;
-    maintainers = [ ];
+    license = lib.licenses.mit;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ ];
   };
 }

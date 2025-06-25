@@ -29,12 +29,12 @@ buildDotnetModule rec {
 
   meta = with lib; {
     description = "Minimalist UTXO tracker for HD Cryptocurrency Wallets";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       kcalvinalvin
       erikarvstedt
     ];
-    license = licenses.mit;
-    platforms = platforms.linux ++ platforms.darwin;
+    license = lib.licenses.mit;
+    platforms = lib.platforms.linux ++ platforms.darwin;
     mainProgram = "nbxplorer";
   };
 }

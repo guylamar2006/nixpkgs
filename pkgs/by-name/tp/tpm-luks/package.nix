@@ -43,7 +43,7 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "LUKS key storage in TPM NVRAM";
     homepage = "https://github.com/shpedoikal/tpm-luks/";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     license = with licenses; [ gpl2Only ];
     platforms = platforms.linux;
   };

@@ -49,7 +49,7 @@ buildGoModule {
     homepage = "https://git.sr.ht/~rockorager/mjmap";
     license = lib.licenses.mpl20;
     sourceProvenance = [ lib.sourceTypes.fromSource ];
-    maintainers = [ lib.maintainers.emily ];
+    maintainers = with lib.maintainers; [ emily ];
     mainProgram = "mjmap";
     platforms = lib.platforms.unix;
   };

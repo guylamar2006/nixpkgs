@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     description = "iSNS client for the Linux LIO iSCSI target";
     mainProgram = "target-isns";
     homepage = "https://github.com/open-iscsi/target-isns";
-    maintainers = [ maintainers.markuskowa ];
+    maintainers = with lib.maintainers; [ markuskowa ];
     license = licenses.gpl2Only;
     platforms = platforms.linux;
   };

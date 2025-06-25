@@ -125,8 +125,8 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     homepage = "https://www.freedesktop.org/wiki/Software/Plymouth/";
     description = "Boot splash and boot logger";
-    license = licenses.gpl2Plus;
-    teams = [ teams.gnome ];
-    platforms = platforms.linux;
+    license = lib.licenses.gpl2Plus;
+    teams = with lib.teams; [ gnome ];
+    platforms = lib.platforms.linux;
   };
 })

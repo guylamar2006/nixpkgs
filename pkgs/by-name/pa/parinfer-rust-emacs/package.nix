@@ -21,7 +21,7 @@ rustPlatform.buildRustPackage rec {
     description = "Emacs centric fork of parinfer-rust";
     mainProgram = "parinfer-rust";
     homepage = "https://github.com/justinbarclay/parinfer-rust-emacs";
-    license = licenses.isc;
-    maintainers = with maintainers; [ brsvh ];
+    license = lib.licenses.isc;
+    maintainers = with lib.maintainers; [ brsvh ];
   };
 }

@@ -41,7 +41,7 @@ let
       homepage = "https://github.com/go-flutter-desktop/hover";
       license = [ lib.licenses.bsd3 ];
       platforms = lib.platforms.linux;
-      maintainers = [ lib.maintainers.ericdallo ];
+      maintainers = with lib.maintainers; [ ericdallo ];
     };
 
     subPackages = [ "." ];

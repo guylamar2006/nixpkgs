@@ -39,6 +39,6 @@ rustPlatform.buildRustPackage rec {
     mainProgram = "janitor";
     platforms = lib.platforms.linux;
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.nobbz ];
+    maintainers = with lib.maintainers; [ nobbz ];
   };
 }

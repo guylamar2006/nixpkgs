@@ -48,6 +48,6 @@ rustPlatform.buildRustPackage rec {
     mainProgram = "syzygy";
     homepage = "https://mdsteele.games/syzygy";
     license = licenses.gpl3Plus;
-    maintainers = [ maintainers.marius851000 ];
+    maintainers = with lib.maintainers; [ marius851000 ];
   };
 }

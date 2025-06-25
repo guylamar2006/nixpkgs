@@ -61,8 +61,8 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "http://www.drpetter.se/project_sfxr.html";
     description = "Videogame sound effect generator";
     mainProgram = "sfxr";
-    license = licenses.mit;
-    maintainers = with maintainers; [ fgaz ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ fgaz ];
     platforms = platforms.unix;
   };
 })

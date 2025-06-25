@@ -34,7 +34,7 @@ stdenv.mkDerivation (finalAttrs: {
   doCheck = true;
   passthru.updateScript = gitUpdater { };
 
-  meta = with lib; {
+  meta = {
     description = "C++ Performance Portability Programming EcoSystem";
     homepage = "https://github.com/kokkos/kokkos";
     changelog = "https://github.com/kokkos/kokkos/blob/${finalAttrs.src.rev}/CHANGELOG.md";
@@ -42,7 +42,7 @@ stdenv.mkDerivation (finalAttrs: {
       asl20
       llvm-exception
     ];
-    maintainers = with maintainers; [ Madouura ];
+    maintainers = with lib.maintainers; [ Madouura ];
     platforms = platforms.unix;
     broken = stdenv.hostPlatform.isDarwin;
   };

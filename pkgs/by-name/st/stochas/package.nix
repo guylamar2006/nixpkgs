@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Probabilistic polyrhythmic sequencer plugin";
     homepage = "https://stochas.org/";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     maintainers = with maintainers; [ magnetophon ];
     platforms = platforms.unix;
   };

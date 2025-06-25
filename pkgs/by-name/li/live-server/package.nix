@@ -34,7 +34,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
     changelog = "https://github.com/lomirus/live-server/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.mit;
     mainProgram = "live-server";
-    maintainers = [ lib.maintainers.philiptaron ];
+    maintainers = with lib.maintainers; [ philiptaron ];
     platforms = lib.platforms.unix;
   };
 })

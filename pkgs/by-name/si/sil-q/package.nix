@@ -81,7 +81,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/sil-quirk/sil-q";
     license = lib.licenses.gpl2Only;
-    maintainers = [ lib.maintainers.kenran ];
+    maintainers = with lib.maintainers; [ kenran ];
     platforms = lib.platforms.linux;
   };
 }

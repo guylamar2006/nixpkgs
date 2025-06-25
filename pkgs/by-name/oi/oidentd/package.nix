@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
     description = "Configurable Ident protocol server";
     mainProgram = "oidentd";
     homepage = "https://oidentd.janikrabe.com/";
-    license = licenses.gpl2Only;
-    platforms = platforms.linux;
+    license = lib.licenses.gpl2Only;
+    platforms = lib.platforms.linux;
   };
 }

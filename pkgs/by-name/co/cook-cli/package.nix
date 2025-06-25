@@ -54,7 +54,7 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://cooklang.org/";
     license = lib.licenses.mit;
     mainProgram = "cook";
-    maintainers = [ lib.maintainers.emilioziniades ];
+    maintainers = with lib.maintainers; [ emilioziniades ];
     platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

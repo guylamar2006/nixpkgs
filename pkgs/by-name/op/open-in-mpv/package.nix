@@ -36,8 +36,8 @@ buildGoModule rec {
       https://chrome.google.com/webstore/detail/open-in-mpv/ggijpepdpiehgbiknmfpfbhcalffjlbj
     '';
     homepage = "https://github.com/Baldomo/open-in-mpv";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ SuperSandro2000 ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ SuperSandro2000 ];
     mainProgram = "open-in-mpv";
   };
 }

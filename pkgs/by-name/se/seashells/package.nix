@@ -25,7 +25,7 @@ python3Packages.buildPythonApplication rec {
       Official cient for seashells.io, which allows you to view
       command-line output on the web, in real-time.
     '';
-    license = licenses.mit;
-    maintainers = with maintainers; [ deejayem ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ deejayem ];
   };
 }

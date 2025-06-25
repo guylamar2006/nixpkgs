@@ -26,8 +26,8 @@ stdenvNoCC.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/deepestblue/sampradaya";
     description = "Unicode-compliant Grantha font";
-    maintainers = with maintainers; [ mathnerd314 ];
-    license = licenses.ofl; # See font metadata
+    maintainers = with lib.maintainers; [ mathnerd314 ];
+    license = lib.licenses.ofl; # See font metadata
     platforms = platforms.all;
   };
 }

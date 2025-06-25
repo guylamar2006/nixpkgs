@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/AyatanaIndicators/libayatana-indicator";
     changelog = "https://github.com/AyatanaIndicators/libayatana-indicator/blob/${version}/ChangeLog";
     license = lib.licenses.gpl3Plus;
-    maintainers = [ lib.maintainers.nickhu ];
+    maintainers = with lib.maintainers; [ nickhu ];
     platforms = lib.platforms.linux;
   };
 }

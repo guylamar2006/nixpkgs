@@ -43,11 +43,11 @@ stdenv.mkDerivation {
       aubio
     ];
 
-  meta = with lib; {
+  meta = {
     homepage = "http://codefromabove.com/2014/05/catclock/";
     description = "Analog / Digital / Cat clock for X";
     license = with licenses; mit;
-    maintainers = with maintainers; [ ramkromberg ];
+    maintainers = with lib.maintainers; [ ramkromberg ];
     mainProgram = "xclock";
     platforms = with platforms; linux ++ darwin;
   };

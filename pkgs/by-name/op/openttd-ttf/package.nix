@@ -52,6 +52,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     description = "TrueType typefaces for text in a pixel art style, designed for use in OpenTTD";
     license = [ lib.licenses.gpl2 ];
     platforms = lib.platforms.all;
-    maintainers = [ lib.maintainers.sfrijters ];
+    maintainers = with lib.maintainers; [ sfrijters ];
   };
 })

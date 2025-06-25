@@ -28,6 +28,6 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://github.com/its-the-shrimp/yew-fmt";
     changelog = "https://github.com/its-the-shrimp/yew-fmt/releases/tag/v${version}";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.dandedotdev ];
+    maintainers = with lib.maintainers; [ dandedotdev ];
   };
 }

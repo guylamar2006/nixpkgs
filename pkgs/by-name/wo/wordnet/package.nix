@@ -59,7 +59,7 @@ stdenv.mkDerivation rec {
       fullName = "WordNet 3.0 license";
       url = "https://wordnet.princeton.edu/license-and-commercial-use";
     };
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = with lib.platforms; linux ++ darwin;
     mainProgram = "wn";
   };

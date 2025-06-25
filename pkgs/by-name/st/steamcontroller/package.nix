@@ -35,7 +35,7 @@ buildPythonApplication {
   meta = with lib; {
     description = "Standalone Steam controller driver";
     homepage = "https://github.com/ynsta/steamcontroller";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with maintainers; [ rnhmjoj ];
     platforms = platforms.linux;
   };

@@ -91,7 +91,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.segger.com/products/development-tools/ozone-j-link-debugger";
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unfree;
-    maintainers = [ lib.maintainers.bmilanov ];
+    maintainers = with lib.maintainers; [ bmilanov ];
     platforms = [
       "x86_64-linux"
       "i686-linux"

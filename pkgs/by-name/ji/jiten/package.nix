@@ -77,7 +77,7 @@ python3.pkgs.buildPythonApplication rec {
       --fish <(env _JITEN_COMPLETE=fish_source $out/bin/jiten)
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Japanese android/cli/web dictionary based on jmdict/kanjidic";
     longDescription = ''
       Jiten is a Japanese dictionary based on JMDict/Kanjidic
@@ -123,6 +123,6 @@ python3.pkgs.buildPythonApplication rec {
       cc-by-sa-30 # jmdict/kanjidic
       unfreeRedistributable # pitch data & audio are non-commercial
     ];
-    maintainers = [ maintainers.obfusk ];
+    maintainers = with lib.maintainers; [ obfusk ];
   };
 }

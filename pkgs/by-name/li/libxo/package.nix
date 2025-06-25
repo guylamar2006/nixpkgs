@@ -64,7 +64,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = {
     description = "Library to generate text, XML, JSON, and HTML";
     license = lib.licenses.bsd2;
-    maintainers = [ lib.maintainers.reckenrode ];
+    maintainers = with lib.maintainers; [ reckenrode ];
     platforms = lib.platforms.unix;
   };
 })

@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "High-quality Japanese font based on Inconsolata and Migu 1M";
     homepage = "https://rictyfonts.github.io";
-    license = licenses.unfree;
-    maintainers = [ maintainers.mikoim ];
+    license = lib.licenses.unfree;
+    maintainers = with lib.maintainers; [ mikoim ];
   };
 }

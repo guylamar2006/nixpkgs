@@ -56,8 +56,8 @@ rustPlatform.buildRustPackage rec {
     description = "Modern and extensible pixel editor implemented in Rust";
     mainProgram = "rx";
     homepage = "https://rx.cloudhead.io/";
-    license = licenses.gpl3;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [
       minijackson
       Br1ght0ne
     ];

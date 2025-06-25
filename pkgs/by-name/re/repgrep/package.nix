@@ -55,7 +55,7 @@ rustPlatform.buildRustPackage rec {
       asl20
       unlicense
     ];
-    maintainers = with maintainers; [ figsoda ];
+    maintainers = with lib.maintainers; [ figsoda ];
     mainProgram = "rgr";
   };
 }

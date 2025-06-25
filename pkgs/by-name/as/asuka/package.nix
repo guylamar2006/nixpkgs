@@ -28,12 +28,12 @@ rustPlatform.buildRustPackage rec {
     openssl
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Gemini Project client written in Rust with NCurses";
     mainProgram = "asuka";
     homepage = "https://git.sr.ht/~julienxx/asuka";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ sikmir ];
+    maintainers = with lib.maintainers; [ sikmir ];
   };
 }

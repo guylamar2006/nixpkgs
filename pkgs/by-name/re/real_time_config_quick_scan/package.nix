@@ -51,8 +51,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Linux configuration checker for systems to be used for real-time audio";
     homepage = "https://github.com/raboof/realtimeconfigquickscan";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [ magnetophon ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ magnetophon ];
     platforms = platforms.linux;
   };
 }

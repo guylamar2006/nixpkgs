@@ -21,6 +21,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.gpl2Plus;
     description = "Utilities for converting between abc and MIDI";
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.dotlambda ];
+    maintainers = with lib.maintainers; [ dotlambda ];
   };
 })

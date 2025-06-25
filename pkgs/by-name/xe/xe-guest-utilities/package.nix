@@ -52,7 +52,7 @@ buildGoModule rec {
     description = "XenServer guest utilities";
     homepage = "https://github.com/xenserver/xe-guest-utilities";
     license = lib.licenses.bsd2;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
   };
 }

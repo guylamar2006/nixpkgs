@@ -62,9 +62,9 @@ python3.pkgs.buildPythonApplication rec {
   meta = with lib; {
     homepage = "https://www.thregr.org/~wavexx/software/screenkey/";
     description = "Screencast tool to display your keys inspired by Screenflick";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     platforms = platforms.linux;
-    maintainers = [ maintainers.rasendubi ];
+    maintainers = with lib.maintainers; [ rasendubi ];
     mainProgram = "screenkey";
   };
 }

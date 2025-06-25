@@ -93,6 +93,6 @@ lib.checkListOfEnum "${pname}: theme variants"
       homepage = "https://github.com/vinceliuice/vimix-gtk-themes";
       license = licenses.gpl3Only;
       platforms = platforms.unix;
-      maintainers = [ maintainers.romildo ];
+      maintainers = with lib.maintainers; [ romildo ];
     };
   }

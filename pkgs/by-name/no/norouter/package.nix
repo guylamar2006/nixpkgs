@@ -33,8 +33,8 @@ buildGoModule rec {
     broken = true;
     description = "Tool to handle unprivileged networking by using multiple loopback addresses";
     homepage = "https://github.com/norouter/norouter";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "norouter";
   };
 }

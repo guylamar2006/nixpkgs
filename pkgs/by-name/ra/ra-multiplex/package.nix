@@ -32,6 +32,6 @@ rustPlatform.buildRustPackage rec {
     mainProgram = "ra-multiplex";
     homepage = "https://github.com/pr2502/ra-multiplex";
     license = with licenses; [ mit ];
-    maintainers = with maintainers; [ norfair ];
+    maintainers = with lib.maintainers; [ norfair ];
   };
 }

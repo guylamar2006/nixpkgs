@@ -106,7 +106,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Usenet NZB downloader, par2 repairer and auto extracting server";
     homepage = "https://sabnzbd.org";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.linux;
     maintainers = with lib.maintainers; [
       jojosch

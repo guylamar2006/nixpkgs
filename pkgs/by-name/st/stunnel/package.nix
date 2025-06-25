@@ -65,7 +65,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Universal tls/ssl wrapper";
     homepage = "https://www.stunnel.org/";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ lib.maintainers.thoughtpolice ];
+    maintainers = with lib.maintainers; [ thoughtpolice ];
     platforms = lib.platforms.unix;
     mainProgram = "stunnel";
   };

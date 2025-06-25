@@ -51,7 +51,7 @@ python3.pkgs.buildPythonApplication rec {
   meta = with lib; {
     description = "Collection of offensive tools targeting Microsoft Azure";
     homepage = "https://github.com/blacklanternsecurity/offensive-azure";
-    license = licenses.mit;
-    maintainers = with maintainers; [ fab ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ fab ];
   };
 }

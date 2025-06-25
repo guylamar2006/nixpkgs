@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
     changelog = "https://github.com/leahneukirchen/nq/blob/v${version}/NEWS.md";
     license = lib.licenses.publicDomain;
     platforms = lib.platforms.all;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

@@ -55,9 +55,9 @@ pypkgs.buildPythonApplication rec {
       produce PostScript documents is also included, as well as usage
       of pdfLaTeX to produce PDF documents.
     '';
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     homepage = "https://gitlab.com/latex-rubber/rubber";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       ttuegel
       peterhoeg
     ];

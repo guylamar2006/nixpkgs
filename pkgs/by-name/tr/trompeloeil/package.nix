@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
     description = "Header only C++14 mocking framework";
     homepage = "https://github.com/rollbear/trompeloeil";
     license = licenses.boost;
-    maintainers = [ maintainers.bjornfor ];
+    maintainers = with lib.maintainers; [ bjornfor ];
     platforms = platforms.unix;
   };
 }

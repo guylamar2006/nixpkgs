@@ -32,7 +32,7 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Generates menu based applications using rofi";
     homepage = "https://github.com/octotep/menugen";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
   };
 }

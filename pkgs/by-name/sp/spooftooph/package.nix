@@ -30,8 +30,8 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://sourceforge.net/projects/spooftooph";
     description = "Automate spoofing or clone Bluetooth device Name, Class, and Address";
     mainProgram = "spooftooph";
-    license = licenses.gpl2Only;
+    license = lib.licenses.gpl2Only;
     platforms = platforms.linux;
-    maintainers = with maintainers; [ d3vil0p3r ];
+    maintainers = with lib.maintainers; [ d3vil0p3r ];
   };
 })

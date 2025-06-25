@@ -26,8 +26,8 @@ buildGoModule rec {
     homepage = "https://github.com/museoa/nixops-dns";
     description = "DNS server for resolving NixOps machines";
     mainProgram = "nixops-dns";
-    license = licenses.mit;
-    maintainers = with maintainers; [
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [
       kamilchm
       sorki
     ];

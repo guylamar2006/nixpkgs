@@ -78,7 +78,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://bpfilter.io";
     changelog = "https://github.com/facebook/bpfilter/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.gpl2Only;
-    maintainers = [ lib.maintainers.jmbaur ];
+    maintainers = with lib.maintainers; [ jmbaur ];
     mainProgram = "bpfilter";
     platforms = lib.platforms.linux;
   };

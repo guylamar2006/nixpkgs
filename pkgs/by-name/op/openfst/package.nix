@@ -38,8 +38,8 @@ stdenv.mkDerivation rec {
       pattern matching, string processing, machine learning, information extraction and retrieval among others
     '';
     homepage = "https://www.openfst.org/twiki/bin/view/FST/WebHome";
-    license = licenses.asl20;
-    maintainers = [ maintainers.dfordivam ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ dfordivam ];
     platforms = platforms.unix;
   };
 }

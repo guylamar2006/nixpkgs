@@ -94,11 +94,11 @@ resholve.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/kward/shunit2";
     description = "XUnit based unit test framework for Bourne based shell scripts";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       abathur
       utdemir
     ];
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     platforms = platforms.unix;
     mainProgram = "shunit2";
   };

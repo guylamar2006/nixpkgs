@@ -18,11 +18,11 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [ cmake ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/bo0ts/ddate";
     description = "Discordian version of the date program";
-    license = licenses.publicDomain;
-    maintainers = with maintainers; [ kovirobi ];
+    license = lib.licenses.publicDomain;
+    maintainers = with lib.maintainers; [ kovirobi ];
     platforms = platforms.all;
     mainProgram = "ddate";
   };

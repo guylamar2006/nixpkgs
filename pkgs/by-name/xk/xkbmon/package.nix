@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     description = "Command-line keyboard layout monitor for X11";
     license = licenses.mit;
     platforms = platforms.linux;
-    maintainers = [ maintainers.romildo ];
+    maintainers = with lib.maintainers; [ romildo ];
     mainProgram = "xkbmon";
   };
 }

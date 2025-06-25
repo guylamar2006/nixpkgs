@@ -55,7 +55,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Non-reparenting, dynamic window manager with decorations";
     license = lib.licenses.mit;
     mainProgram = "katriawm";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     inherit (libX11.meta) platforms;
   };
 })

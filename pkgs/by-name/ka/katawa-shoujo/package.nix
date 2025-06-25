@@ -181,7 +181,7 @@ stdenv.mkDerivation rec {
       runHook postInstall
     '';
 
-  meta = with lib; {
+  meta = {
     description = "Bishoujo-style visual novel by Four Leaf Studios, built in Ren'Py";
     longDescription = ''
       Katawa Shoujo is a bishoujo-style visual novel set in the fictional Yamaku High School for disabled children,
@@ -201,7 +201,7 @@ stdenv.mkDerivation rec {
     # November 2022: Update, is it still ND?
     # https://ks.renai.us/viewtopic.php?f=13&p=248149#p248149
     license = with licenses; [ cc-by-nc-nd-30 ];
-    maintainers = with maintainers; [ OPNA2608 ];
+    maintainers = with lib.maintainers; [ OPNA2608 ];
     # Building Ren'Py6 from source would allow more, but too much of a hassle
     platforms = platforms.x86;
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];

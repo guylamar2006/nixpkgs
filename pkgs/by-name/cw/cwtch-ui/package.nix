@@ -55,6 +55,6 @@ flutter329.buildFlutterApplication rec {
     license = lib.licenses.mit;
     mainProgram = "cwtch";
     platforms = [ "x86_64-linux" ];
-    maintainers = [ lib.maintainers.gmacon ];
+    maintainers = with lib.maintainers; [ gmacon ];
   };
 }

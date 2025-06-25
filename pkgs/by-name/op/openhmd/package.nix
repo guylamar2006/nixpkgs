@@ -66,8 +66,8 @@ stdenv.mkDerivation rec {
       Head-mounted Displays (HMDs), controllers and trackers like
       Oculus Rift, HTC Vive, Windows Mixed Reality, and etc.
     '';
-    license = licenses.boost;
-    maintainers = with maintainers; [ oxij ];
+    license = lib.licenses.boost;
+    maintainers = with lib.maintainers; [ oxij ];
     platforms = platforms.unix;
   };
 }

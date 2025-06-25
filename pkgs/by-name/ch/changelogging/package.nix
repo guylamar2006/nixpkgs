@@ -30,7 +30,7 @@ rustPlatform.buildRustPackage rec {
     changelog = "https://github.com/nekitdev/changelogging/releases/tag/v${version}";
     platforms = lib.platforms.all;
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.nekitdev ];
+    maintainers = with lib.maintainers; [ nekitdev ];
     mainProgram = "changelogging";
   };
 }

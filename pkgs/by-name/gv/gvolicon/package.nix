@@ -45,7 +45,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/Unia/gvolicon";
     platforms = lib.platforms.linux;
     license = lib.licenses.gpl3Plus;
-    maintainers = [ lib.maintainers.bennofs ];
+    maintainers = with lib.maintainers; [ bennofs ];
     mainProgram = "gvolicon";
   };
 }

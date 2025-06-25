@@ -191,7 +191,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "OpenSource IPsec-based VPN Solution";
     homepage = "https://www.strongswan.org";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.all;
   };
 }

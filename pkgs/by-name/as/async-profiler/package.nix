@@ -38,11 +38,11 @@ stdenv.mkDerivation rec {
 
   passthru.updateScript = nix-update-script { };
 
-  meta = with lib; {
+  meta = {
     description = "Low overhead sampling profiler for Java that does not suffer from Safepoint bias problem";
     homepage = "https://github.com/jvm-profiling-tools/async-profiler";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ mschuwalow ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ mschuwalow ];
     platforms = platforms.all;
     mainProgram = "async-profiler";
   };

@@ -40,6 +40,6 @@ rustPlatform.buildRustPackage rec {
       asl20 # or
       mit
     ];
-    maintainers = [ maintainers.dhkl ];
+    maintainers = with lib.maintainers; [ dhkl ];
   };
 }

@@ -22,7 +22,7 @@ rustPlatform.buildRustPackage rec {
 
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Fast production-ready static web server";
     homepage = "https://github.com/mufeedvh/binserve";
     longDescription = ''
@@ -30,8 +30,8 @@ rustPlatform.buildRustPackage rec {
       (HTTPS), routing, hot reloading, caching, templating, and security in a
       single-binary you can set up with zero code
     '';
-    license = licenses.mit;
-    maintainers = with maintainers; [ snapdgn ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ snapdgn ];
     platforms = platforms.unix;
     mainProgram = "binserve";
   };

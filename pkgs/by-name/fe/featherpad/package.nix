@@ -36,7 +36,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Lightweight Qt5 Plain-Text Editor for Linux";
     homepage = "https://github.com/tsujan/FeatherPad";
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.flosse ];
+    maintainers = with lib.maintainers; [ flosse ];
     license = lib.licenses.gpl3Plus;
   };
 })

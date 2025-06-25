@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "SubBand Codec Library";
     homepage = "https://www.bluez.org/";
-    license = licenses.gpl2;
+    license = lib.licenses.gpl2;
     platforms = platforms.linux;
   };
 }

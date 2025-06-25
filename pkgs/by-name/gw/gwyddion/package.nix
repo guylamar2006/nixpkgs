@@ -86,7 +86,7 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.gpl2;
     platforms = with lib.platforms; linux ++ darwin;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     # never built on aarch64-darwin since first introduction in nixpkgs
     broken = stdenv.hostPlatform.isDarwin && stdenv.hostPlatform.isAarch64;
   };

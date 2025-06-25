@@ -50,8 +50,8 @@ buildGoModule rec {
     license = lib.licenses.mit;
     homepage = "https://github.com/mykso/myks";
     maintainers = with lib.maintainers; [
-      lib.maintainers.kbudde
-      lib.maintainers.zebradil
+      kbudde
+      zebradil
     ];
     mainProgram = "myks";
   };

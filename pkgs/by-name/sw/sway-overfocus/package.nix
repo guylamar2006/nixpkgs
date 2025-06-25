@@ -29,7 +29,7 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://github.com/korreman/sway-overfocus";
     changelog = "https://github.com/korreman/sway-overfocus/releases/tag/${src.rev}";
     license = licenses.mit;
-    maintainers = [ maintainers.ivan770 ];
+    maintainers = with lib.maintainers; [ ivan770 ];
     mainProgram = "sway-overfocus";
   };
 }

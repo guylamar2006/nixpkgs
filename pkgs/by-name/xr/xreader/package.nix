@@ -82,6 +82,6 @@ document formats like PDF and Postscript";
     homepage = "https://github.com/linuxmint/xreader";
     license = licenses.gpl2Plus;
     platforms = platforms.linux;
-    teams = [ teams.cinnamon ];
+    teams = with lib.teams; [ cinnamon ];
   };
 }

@@ -40,8 +40,8 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "Powerful image viewer with minimal UI";
     homepage = "https://www.pberndt.com/Programme/Linux/pqiv";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ donovanglover ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ donovanglover ];
     platforms = platforms.unix;
     mainProgram = "pqiv";
   };

@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
     mainProgram = "acpitool";
     homepage = "https://sourceforge.net/projects/acpitool/";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ lib.maintainers.guibert ];
+    maintainers = with lib.maintainers; [ guibert ];
     platforms = lib.platforms.unix;
   };
 }

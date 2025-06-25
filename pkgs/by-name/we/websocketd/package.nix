@@ -22,7 +22,7 @@ buildGoModule rec {
   meta = with lib; {
     description = "Turn any program that uses STDIN/STDOUT into a WebSocket server";
     homepage = "http://websocketd.com/";
-    maintainers = [ maintainers.bjornfor ];
+    maintainers = with lib.maintainers; [ bjornfor ];
     license = licenses.bsd2;
     mainProgram = "websocketd";
   };

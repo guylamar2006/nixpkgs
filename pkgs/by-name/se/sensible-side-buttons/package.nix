@@ -31,8 +31,8 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "Utilize mouse side navigation buttons";
     homepage = "https://sensible-side-buttons.archagon.net";
-    license = licenses.unfree;
-    maintainers = with maintainers; [ yamashitax ];
+    license = lib.licenses.unfree;
+    maintainers = with lib.maintainers; [ yamashitax ];
     platforms = platforms.darwin;
   };
 })

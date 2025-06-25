@@ -37,8 +37,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "FUSE file system for reading RAR archives";
     homepage = "https://hasse69.github.io/rar2fs/";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [
       kraem
       wegank
     ];

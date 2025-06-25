@@ -43,7 +43,7 @@ stdenv.mkDerivation (finalAttrs: {
       lib.licenses.bsd3
       lib.licenses.mit
     ];
-    maintainers = [ lib.maintainers.stv0g ];
+    maintainers = with lib.maintainers; [ stv0g ];
     platforms = lib.platforms.linux;
   };
 })

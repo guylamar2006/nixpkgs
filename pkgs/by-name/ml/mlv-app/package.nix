@@ -70,7 +70,7 @@ stdenv.mkDerivation (finalAttrs: {
     downloadPage = "https://github.com/ilia3101/MLV-App";
     changelog = "https://github.com/ilia3101/MLV-App/releases/tag/QTv${finalAttrs.version}";
     license = lib.licenses.gpl3Only;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = [ "x86_64-linux" ];
     mainProgram = "mlvapp";
   };

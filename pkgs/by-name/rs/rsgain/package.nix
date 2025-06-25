@@ -43,6 +43,6 @@ stdenv.mkDerivation rec {
     changelog = "https://github.com/complexlogic/rsgain/blob/v${version}/CHANGELOG";
     license = lib.licenses.bsd2;
     platforms = lib.platforms.all;
-    maintainers = [ lib.maintainers.felipeqq2 ];
+    maintainers = with lib.maintainers; [ felipeqq2 ];
   };
 }

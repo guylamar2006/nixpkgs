@@ -66,7 +66,7 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://github.com/ideveCore/Valuta";
     license = licenses.gpl3Plus;
     maintainers = with maintainers; [ arthsmn ];
-    teams = [ teams.gnome-circle ];
+    teams = with lib.teams; [ gnome-circle ];
     mainProgram = "currencyconverter";
     platforms = platforms.linux;
   };

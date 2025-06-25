@@ -137,7 +137,7 @@ stdenv.mkDerivation rec {
     changelog = "https://gitlab.nic.cz/knot/knot-dns/-/releases/v${version}";
     license = lib.licenses.gpl3Plus;
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.vcunat ];
+    maintainers = with lib.maintainers; [ vcunat ];
     mainProgram = "knotd";
   };
 }

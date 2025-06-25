@@ -54,7 +54,7 @@ buildGoModule (finalAttrs: {
     homepage = "https://github.com/openconfig/ygot";
     changelog = "https://github.com/openconfig/ygot/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.haylin ];
+    maintainers = with lib.maintainers; [ haylin ];
     mainProgram = "ygot_generator";
   };
 })

@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/skywind3000/z.lua";
     description = "New cd command that helps you navigate faster by learning your habits";
     license = licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "z.lua";
   };
 }

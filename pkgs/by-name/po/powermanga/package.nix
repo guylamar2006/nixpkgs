@@ -53,8 +53,8 @@ stdenv.mkDerivation (finalAttrs: {
       the levels, you will destroy enemy spaceships and bosses, collect gems to
       power up your ship and get special powers, helpers and weapons.
     '';
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ fgaz ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ fgaz ];
     platforms = platforms.all;
     broken = stdenv.hostPlatform.isDarwin;
   };

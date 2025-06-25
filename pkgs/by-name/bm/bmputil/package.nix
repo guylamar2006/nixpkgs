@@ -37,6 +37,6 @@ rustPlatform.buildRustPackage rec {
       asl20
     ];
     mainProgram = "bmputil";
-    maintainers = [ lib.maintainers.shimun ];
+    maintainers = with lib.maintainers; [ shimun ];
   };
 }

@@ -32,8 +32,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Open-source C implementation of the RPKI/Router Protocol client";
     homepage = "https://github.com/rtrlib/rtrlib";
-    license = licenses.mit;
-    maintainers = with maintainers; [ Anillc ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ Anillc ];
     platforms = platforms.all;
   };
 }

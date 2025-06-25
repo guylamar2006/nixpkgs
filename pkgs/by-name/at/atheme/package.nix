@@ -47,11 +47,11 @@ stdenv.mkDerivation rec {
     "--enable-reproducible-builds"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Set of services for IRC networks";
     homepage = "https://atheme.github.io/";
-    license = licenses.isc;
+    license = lib.licenses.isc;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ leo60228 ];
+    maintainers = with lib.maintainers; [ leo60228 ];
   };
 }

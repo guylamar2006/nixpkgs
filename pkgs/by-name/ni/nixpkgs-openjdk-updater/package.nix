@@ -80,7 +80,7 @@ python3Packages.buildPythonApplication {
     description = "Updater for Nixpkgs OpenJDK packages";
     license = lib.licenses.mit;
     sourceProvenance = [ lib.sourceTypes.fromSource ];
-    maintainers = [ lib.maintainers.emily ];
+    maintainers = with lib.maintainers; [ emily ];
     mainProgram = "nixpkgs-openjdk-updater";
   };
 }

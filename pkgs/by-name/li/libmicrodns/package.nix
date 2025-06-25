@@ -24,11 +24,11 @@ stdenv.mkDerivation rec {
     pkg-config
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Minimal mDNS resolver library, used by VLC";
     homepage = "https://github.com/videolabs/libmicrodns";
-    license = licenses.lgpl21;
+    license = lib.licenses.lgpl21;
     platforms = platforms.unix;
-    maintainers = [ maintainers.shazow ];
+    maintainers = with lib.maintainers; [ shazow ];
   };
 }

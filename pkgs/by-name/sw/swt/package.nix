@@ -105,7 +105,7 @@ stdenv.mkDerivation (finalAttrs: {
       mpl11
       mpl20
     ];
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.attrNames finalAttrs.passthru.srcMetadataByPlatform;
   };
 })

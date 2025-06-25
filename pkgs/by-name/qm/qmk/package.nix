@@ -76,8 +76,8 @@ python3.pkgs.buildPythonApplication rec {
         - qmk lint
       - ... and many more!
     '';
-    license = licenses.mit;
-    maintainers = with maintainers; [
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [
       bhipple
       ekleog
     ];

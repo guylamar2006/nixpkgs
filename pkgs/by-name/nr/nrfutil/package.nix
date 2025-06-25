@@ -51,9 +51,9 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     description = "CLI tool for managing Nordic Semiconductor devices";
     homepage = "https://www.nordicsemi.com/Products/Development-tools/nRF-Util";
     changelog = "https://docs.nordicsemi.com/bundle/nrfutil/page/guides/revision_history.html";
-    license = licenses.unfree;
+    license = lib.licenses.unfree;
     platforms = attrNames supported;
-    maintainers = with maintainers; [ h7x4 ];
+    maintainers = with lib.maintainers; [ h7x4 ];
     mainProgram = "nrfutil";
   };
 })

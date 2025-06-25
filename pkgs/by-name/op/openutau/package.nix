@@ -106,8 +106,8 @@ buildDotnetModule rec {
       # some deps and worldline resampler
       binaryNativeCode
     ];
-    license = licenses.mit;
-    maintainers = [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
     platforms = [
       "x86_64-linux"
       "aarch64-linux"

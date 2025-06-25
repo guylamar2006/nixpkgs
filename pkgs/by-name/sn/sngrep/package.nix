@@ -52,8 +52,8 @@ stdenv.mkDerivation rec {
     description = "Tool for displaying SIP calls message flows from terminal";
     mainProgram = "sngrep";
     homepage = "https://github.com/irontec/sngrep";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ jorise ];
+    maintainers = with lib.maintainers; [ jorise ];
   };
 }

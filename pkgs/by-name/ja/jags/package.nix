@@ -28,12 +28,12 @@ stdenv.mkDerivation rec {
     "--with-lapack=-llapack"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Just Another Gibbs Sampler";
     mainProgram = "jags";
-    license = licenses.gpl2;
+    license = lib.licenses.gpl2;
     homepage = "http://mcmc-jags.sourceforge.net";
-    maintainers = [ maintainers.andres ];
+    maintainers = with lib.maintainers; [ andres ];
     platforms = platforms.unix;
   };
 }

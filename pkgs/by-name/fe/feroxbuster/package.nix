@@ -42,12 +42,12 @@ rustPlatform.buildRustPackage rec {
 
   passthru.updateScript = nix-update-script { };
 
-  meta = with lib; {
+  meta = {
     description = "Recursive content discovery tool";
     homepage = "https://github.com/epi052/feroxbuster";
     changelog = "https://github.com/epi052/feroxbuster/releases/tag/v${src.tag}";
-    license = licenses.mit;
-    maintainers = with maintainers; [ fab ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ fab ];
     platforms = platforms.unix;
     mainProgram = "feroxbuster";
   };

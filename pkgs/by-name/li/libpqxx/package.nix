@@ -47,7 +47,7 @@ stdenv.mkDerivation (finalAttrs: {
     downloadPage = "https://github.com/jtv/libpqxx";
     homepage = "https://pqxx.org/development/libpqxx/";
     license = lib.licenses.bsd3;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
   };
 })

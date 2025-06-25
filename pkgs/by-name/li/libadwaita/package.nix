@@ -129,14 +129,14 @@ stdenv.mkDerivation (finalAttrs: {
     };
   };
 
-  meta = with lib; {
+  meta = {
     changelog = "https://gitlab.gnome.org/GNOME/libadwaita/-/blob/${finalAttrs.src.tag}/NEWS";
     description = "Library to help with developing UI for mobile devices using GTK/GNOME";
     mainProgram = "adwaita-1-demo";
     homepage = "https://gitlab.gnome.org/GNOME/libadwaita";
-    license = licenses.lgpl21Plus;
-    maintainers = with maintainers; [ dotlambda ];
-    teams = [ teams.gnome ];
+    license = lib.licenses.lgpl21Plus;
+    maintainers = with lib.maintainers; [ dotlambda ];
+    teams = with lib.teams; [ gnome ];
     platforms = platforms.unix;
     pkgConfigModules = [ "libadwaita-1" ];
   };

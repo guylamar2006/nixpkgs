@@ -46,6 +46,6 @@ buildDunePackage rec {
       lgpl21Only
       ocamlLgplLinkingException
     ];
-    maintainers = with maintainers; [ niols ];
+    maintainers = with lib.maintainers; [ niols ];
   };
 }

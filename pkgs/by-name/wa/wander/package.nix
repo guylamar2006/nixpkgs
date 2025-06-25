@@ -36,7 +36,7 @@ buildGoModule rec {
     description = "Terminal app/TUI for HashiCorp Nomad";
     license = licenses.mit;
     homepage = "https://github.com/robinovitch61/wander";
-    teams = [ teams.c3d2 ];
+    teams = with lib.teams; [ c3d2 ];
     mainProgram = "wander";
   };
 }

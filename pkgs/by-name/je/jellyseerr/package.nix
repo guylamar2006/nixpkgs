@@ -88,7 +88,7 @@ stdenv.mkDerivation (finalAttrs: {
       bring support for Jellyfin & Emby media servers!
     '';
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.camillemndn ];
+    maintainers = with lib.maintainers; [ camillemndn ];
     platforms = lib.platforms.linux;
     mainProgram = "jellyseerr";
   };

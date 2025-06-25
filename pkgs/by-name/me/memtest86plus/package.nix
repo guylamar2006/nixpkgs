@@ -38,6 +38,6 @@ stdenv.mkDerivation (finalAttrs: {
       "x86_64-linux"
       "i686-linux"
     ];
-    maintainers = [ lib.maintainers.LunNova ];
+    maintainers = with lib.maintainers; [ LunNova ];
   };
 })

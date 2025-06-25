@@ -38,7 +38,7 @@ rustPlatform.buildRustPackage rec {
     description = "Portable volatile memory acquisition tool for Linux";
     homepage = "https://github.com/microsoft/avml";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.lesuisse ];
+    maintainers = with lib.maintainers; [ lesuisse ];
     platforms = lib.platforms.linux;
     mainProgram = "avml";
   };

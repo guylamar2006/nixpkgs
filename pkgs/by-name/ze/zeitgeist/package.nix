@@ -80,7 +80,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Service which logs the users’s activities and events";
     homepage = "https://zeitgeist.freedesktop.org/";
-    teams = [ teams.freedesktop ];
+    teams = with lib.teams; [ freedesktop ];
     license = licenses.lgpl21Plus;
     platforms = platforms.linux;
   };

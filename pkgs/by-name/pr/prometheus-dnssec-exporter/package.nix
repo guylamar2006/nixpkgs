@@ -19,7 +19,7 @@ buildGoModule {
   meta = with lib; {
     homepage = "https://github.com/chrj/prometheus-dnssec-exporter";
     description = "DNSSEC Exporter for Prometheus";
-    license = licenses.mit;
-    maintainers = with maintainers; [ swendel ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ swendel ];
   };
 }

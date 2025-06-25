@@ -41,12 +41,12 @@ stdenv.mkDerivation rec {
         -i "$out/bin/autorevision"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Extracts revision metadata from your VCS repository";
     homepage = "https://autorevision.github.io/";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.all;
-    maintainers = [ maintainers.bjornfor ];
+    maintainers = with lib.maintainers; [ bjornfor ];
     mainProgram = "autorevision";
   };
 }

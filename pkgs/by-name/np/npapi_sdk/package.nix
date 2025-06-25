@@ -19,7 +19,7 @@ stdenv.mkDerivation rec {
     description = "Bundle of NPAPI headers by Mozilla";
 
     homepage = "https://bitbucket.org/mgorny/npapi-sdk"; # see also https://github.com/mozilla/npapi-sdk
-    license = licenses.bsd3;
-    platforms = platforms.linux;
+    license = lib.licenses.bsd3;
+    platforms = lib.platforms.linux;
   };
 }

@@ -96,7 +96,7 @@ stdenv.mkDerivation rec {
     homepage = "https://thelettervsixtim.es";
     changelog = "https://github.com/TerryCavanagh/VVVVVV/releases/tag/${src.rev}";
     license = licenses.unfree;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
   };
 }

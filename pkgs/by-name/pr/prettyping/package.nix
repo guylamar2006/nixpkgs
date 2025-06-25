@@ -24,6 +24,6 @@ stdenv.mkDerivation rec {
     mainProgram = "prettyping";
     license = with licenses; [ mit ];
     platforms = platforms.unix;
-    maintainers = with maintainers; [ qoelet ];
+    maintainers = with lib.maintainers; [ qoelet ];
   };
 }

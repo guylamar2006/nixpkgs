@@ -89,6 +89,6 @@ stdenv.mkDerivation rec {
     homepage = "http://cr.yp.to/ucspi-tcp.html";
     license = licenses.publicDomain;
     platforms = platforms.linux;
-    maintainers = [ maintainers.bjornfor ];
+    maintainers = with lib.maintainers; [ bjornfor ];
   };
 }

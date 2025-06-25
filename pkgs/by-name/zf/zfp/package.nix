@@ -74,7 +74,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://computing.llnl.gov/projects/zfp";
     description = "Library for random-access compression of floating-point arrays";
     license = lib.licenses.bsd3;
-    maintainers = [ lib.maintainers.spease ];
+    maintainers = with lib.maintainers; [ spease ];
     # 64-bit only
     platforms = lib.platforms.aarch64 ++ lib.platforms.x86_64;
     mainProgram = "zfp";

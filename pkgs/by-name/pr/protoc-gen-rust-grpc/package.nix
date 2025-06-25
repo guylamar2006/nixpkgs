@@ -20,8 +20,8 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Protobuf plugin for generating Rust code for gRPC";
     homepage = "https://github.com/stepancheg/grpc-rust";
-    license = licenses.mit;
-    maintainers = with maintainers; [ lucperkins ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ lucperkins ];
     mainProgram = "protoc-gen-rust-grpc";
   };
 }

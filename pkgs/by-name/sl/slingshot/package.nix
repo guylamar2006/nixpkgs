@@ -22,8 +22,8 @@ rustPlatform.buildRustPackage rec {
     description = "Lightweight command line tool to quickly navigate across folders";
     homepage = "https://github.com/caio-ishikawa/slingshot";
     changelog = "https://github.com/caio-ishikawa/slingshot/releases/tag/${src.rev}";
-    license = licenses.mit;
-    maintainers = with maintainers; [ figsoda ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ figsoda ];
     mainProgram = "slingshot";
   };
 }

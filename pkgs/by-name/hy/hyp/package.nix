@@ -13,7 +13,7 @@ python3Packages.buildPythonPackage rec {
     sha256 = "1lafjdcn9nnq6xc3hhyizfwh6l69lc7rixn6dx65aq71c913jc15";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Hyperminimal https server";
     mainProgram = "hyp";
     homepage = "https://github.com/rnhmjoj/hyp";
@@ -21,7 +21,7 @@ python3Packages.buildPythonPackage rec {
       gpl3Plus
       mit
     ];
-    maintainers = with maintainers; [ rnhmjoj ];
+    maintainers = with lib.maintainers; [ rnhmjoj ];
     platforms = platforms.unix;
   };
 }

@@ -58,7 +58,7 @@ stdenv.mkDerivation {
     homepage = "https://mtpaint.sourceforge.net/";
     license = lib.licenses.gpl3Plus;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.vklquevs ];
+    maintainers = with lib.maintainers; [ vklquevs ];
     mainProgram = "mtpaint";
   };
 }

@@ -62,10 +62,10 @@ stdenv.mkDerivation {
     mv $prefix $out
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Input event device header files for FreeBSD";
-    maintainers = with maintainers; [ qyliss ];
+    maintainers = with lib.maintainers; [ qyliss ];
     platforms = platforms.freebsd;
-    license = licenses.gpl2Only;
+    license = lib.licenses.gpl2Only;
   };
 }

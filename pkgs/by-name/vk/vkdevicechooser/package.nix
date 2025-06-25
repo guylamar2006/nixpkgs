@@ -51,6 +51,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/aejsmith/vkdevicechooser";
     platforms = lib.platforms.unix;
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.sigmike ];
+    maintainers = with lib.maintainers; [ sigmike ];
   };
 }

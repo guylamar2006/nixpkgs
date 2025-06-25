@@ -71,11 +71,11 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description = "Easy to use web application framework for C";
     homepage = "https://kore.io";
-    license = licenses.isc;
+    license = lib.licenses.isc;
     platforms = platforms.all;
-    maintainers = with maintainers; [ johnmh ];
+    maintainers = with lib.maintainers; [ johnmh ];
   };
 }

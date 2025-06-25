@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.gnu.org/software/gcal/";
     license = lib.licenses.gpl3Plus;
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.romildo ];
+    maintainers = with lib.maintainers; [ romildo ];
     mainProgram = "gcal";
   };
 }

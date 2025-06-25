@@ -99,9 +99,9 @@ stdenvNoCC.mkDerivation rec {
       gpl2Only
       asl20
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     sourceProvenance = with sourceTypes; [ fromSource ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       znewman01
       lewo
       squalus

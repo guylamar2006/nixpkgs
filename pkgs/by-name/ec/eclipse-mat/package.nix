@@ -114,7 +114,7 @@ stdenv.mkDerivation rec {
   dontBuild = true;
   dontConfigure = true;
 
-  meta = with lib; {
+  meta = {
     description = "Fast and feature-rich Java heap analyzer";
     mainProgram = "eclipse-mat";
     longDescription = ''
@@ -127,8 +127,8 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://www.eclipse.org/mat";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.epl20;
-    maintainers = [ maintainers.ktor ];
+    license = lib.licenses.epl20;
+    maintainers = with lib.maintainers; [ ktor ];
     platforms = [ "x86_64-linux" ];
   };
 

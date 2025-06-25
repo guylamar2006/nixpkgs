@@ -24,7 +24,7 @@ stdenv.mkDerivation rec {
     description = "Tool to list content of virtual tables in a C++ shared library";
     mainProgram = "vtable-dumper";
     license = licenses.lgpl21;
-    maintainers = [ maintainers.bhipple ];
+    maintainers = with lib.maintainers; [ bhipple ];
     platforms = platforms.all;
   };
 }

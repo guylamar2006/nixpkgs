@@ -37,6 +37,6 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "ruri";
     license = lib.licenses.mit;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.dabao1955 ];
+    maintainers = with lib.maintainers; [ dabao1955 ];
   };
 })

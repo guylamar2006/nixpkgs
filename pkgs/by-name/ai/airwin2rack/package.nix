@@ -223,6 +223,6 @@ stdenv.mkDerivation {
         unfreeRedistributable
       ];
     mainProgram = "Airwindows Consolidated";
-    maintainers = [ lib.maintainers.l1npengtul ];
+    maintainers = with lib.maintainers; [ l1npengtul ];
   };
 }

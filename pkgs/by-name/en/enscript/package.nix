@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
 
     homepage = "https://www.gnu.org/software/enscript/";
 
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.all;
     mainProgram = "enscript";
   };

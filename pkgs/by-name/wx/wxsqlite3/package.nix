@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     homepage = "https://utelle.github.io/wxsqlite3/";
     description = "C++ wrapper around the public domain SQLite 3.x for wxWidgets";
     platforms = platforms.unix;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     license = with licenses; [
       lgpl3Plus
       gpl3Plus

@@ -76,7 +76,7 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://raw.githubusercontent.com/pekwm/pekwm/release-${finalAttrs.version}/NEWS.md";
     license = lib.licenses.gpl2Plus;
     mainProgram = "pekwm";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
   };
 })

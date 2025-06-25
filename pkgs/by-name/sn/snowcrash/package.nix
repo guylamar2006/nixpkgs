@@ -28,8 +28,8 @@ buildGoModule rec {
     description = "Polyglot payload generator";
     homepage = "https://github.com/redcode-labs/SNOWCRASH";
     license = with licenses; [ mit ];
-    maintainers = with maintainers; [ fab ];
-    teams = [ teams.redcodelabs ];
+    maintainers = with lib.maintainers; [ fab ];
+    teams = with lib.teams; [ redcodelabs ];
     mainProgram = "SNOWCRASH";
   };
 }

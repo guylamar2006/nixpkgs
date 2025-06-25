@@ -42,6 +42,6 @@ buildNpmPackage rec {
     homepage = "https://github.com/LibreScore/dl-librescore";
     license = lib.licenses.mit;
     mainProgram = "dl-librescore";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

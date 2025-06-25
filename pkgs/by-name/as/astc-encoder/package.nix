@@ -88,8 +88,8 @@ stdenv.mkDerivation rec {
       -help` to see all the options.
     '';
     platforms = platforms.unix;
-    license = licenses.asl20;
-    maintainers = with maintainers; [ dasisdormax ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ dasisdormax ];
     broken = !stdenv.hostPlatform.is64bit;
   };
 }

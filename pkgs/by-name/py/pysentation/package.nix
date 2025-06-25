@@ -37,8 +37,8 @@ python3.pkgs.buildPythonApplication rec {
     description = "CLI for displaying Python presentations";
     homepage = "https://github.com/mimseyedi/pysentation";
     changelog = "https://github.com/mimseyedi/pysentation/releases/tag/${src.rev}";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ figsoda ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ figsoda ];
     mainProgram = "pysentation";
   };
 }

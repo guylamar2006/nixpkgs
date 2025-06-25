@@ -53,7 +53,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://gitlab.freedesktop.org/xorg/util/lndir";
     license = lib.licenses.mitOpenGroup;
     mainProgram = "lndir";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
   };
 })

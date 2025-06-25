@@ -36,7 +36,7 @@ rustPlatform.buildRustPackage rec {
     description = "Forwarder which can be installed on the gateway to forward LoRa data over MQTT";
     homepage = "https://www.chirpstack.io/";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.stv0g ];
+    maintainers = with lib.maintainers; [ stv0g ];
     mainProgram = "chirpstack-mqtt-forwarder";
   };
 }

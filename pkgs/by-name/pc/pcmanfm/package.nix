@@ -54,7 +54,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://blog.lxde.org/category/pcmanfm/";
     license = lib.licenses.gpl2Plus;
     description = "File manager with GTK interface";
-    maintainers = [ lib.maintainers.ttuegel ];
+    maintainers = with lib.maintainers; [ ttuegel ];
     platforms = lib.platforms.linux;
     mainProgram = "pcmanfm";
   };

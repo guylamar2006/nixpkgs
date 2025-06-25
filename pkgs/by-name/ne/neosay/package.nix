@@ -26,7 +26,7 @@ buildGoModule rec {
     description = "Pipe stdin to matrix";
     mainProgram = "neosay";
     homepage = "https://github.com/donuts-are-good/neosay";
-    license = licenses.mit;
-    maintainers = [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
   };
 }

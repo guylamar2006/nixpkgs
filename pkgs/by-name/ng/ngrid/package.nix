@@ -66,8 +66,8 @@ python3.pkgs.buildPythonApplication rec {
   meta = with lib; {
     description = "It's \"less\" for data";
     homepage = "https://github.com/twosigma/ngrid";
-    license = licenses.bsd3;
-    maintainers = with maintainers; [ twitchy0 ];
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ twitchy0 ];
     mainProgram = "ngrid";
   };
 }

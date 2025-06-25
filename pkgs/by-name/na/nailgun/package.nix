@@ -22,7 +22,7 @@ let
     license = lib.licenses.asl20;
     homepage = "https://www.martiansoftware.com/nailgun/";
     platforms = lib.platforms.linux;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 
   server = stdenvNoCC.mkDerivation {

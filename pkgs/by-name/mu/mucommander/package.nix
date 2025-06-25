@@ -52,11 +52,11 @@ stdenv.mkDerivation (finalAttrs: {
       --set JAVA_HOME ${jdk}
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.mucommander.com/";
     description = "Cross-platform file manager";
-    license = licenses.gpl3;
-    maintainers = with maintainers; [ jiegec ];
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ jiegec ];
     platforms = platforms.all;
     mainProgram = "mucommander";
   };

@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     homepage = "https://s48.org/";
     description = "Scheme 48 interpreter for R5RS";
     platforms = platforms.unix;
-    license = licenses.bsd3;
-    maintainers = [ maintainers.siraben ];
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ siraben ];
   };
 }

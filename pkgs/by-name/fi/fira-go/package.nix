@@ -23,14 +23,14 @@ stdenvNoCC.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://bboxtype.com/typefaces/FiraGO";
     description = ''
       Font with the same glyph set as Fira Sans 4.3 and additionally
       supports Arabic, Devenagari, Georgian, Hebrew and Thai
     '';
-    license = licenses.ofl;
-    maintainers = [ maintainers.loicreynier ];
+    license = lib.licenses.ofl;
+    maintainers = with lib.maintainers; [ loicreynier ];
     platforms = platforms.all;
   };
 }

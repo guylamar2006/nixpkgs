@@ -28,7 +28,7 @@ buildGoModule rec {
     description = "gRPC API to REST proxy for Chirpstack";
     homepage = "https://www.chirpstack.io/";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.stv0g ];
+    maintainers = with lib.maintainers; [ stv0g ];
     mainProgram = "chirpstack-rest-api";
   };
 }

@@ -36,8 +36,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Soapy SDR module for SDRplay";
     homepage = "https://github.com/pothosware/SoapySDRPlay3";
-    license = licenses.mit;
-    maintainers = [ maintainers.pmenke ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ pmenke ];
     platforms = platforms.linux;
   };
 }

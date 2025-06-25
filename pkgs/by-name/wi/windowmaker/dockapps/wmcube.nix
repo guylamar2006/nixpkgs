@@ -44,6 +44,6 @@ stdenv.mkDerivation (finalAttrs: {
   meta = {
     description = "System monitor for Windowmaker";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 })

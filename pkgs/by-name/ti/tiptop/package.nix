@@ -53,6 +53,6 @@ stdenv.mkDerivation rec {
     homepage = "http://tiptop.gforge.inria.fr";
     license = licenses.gpl2Only;
     platforms = platforms.linux;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

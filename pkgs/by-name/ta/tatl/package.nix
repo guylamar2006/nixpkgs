@@ -24,6 +24,6 @@ ocamlPackages.buildDunePackage rec {
     description = "Implementation of a tableau-based decision procedure for the full Alternating-time Temporal Logic (ATL*)";
     homepage = "https://atila.ibisc.univ-evry.fr/tableau_ATL_star/";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.mgttlinger ];
+    maintainers = with lib.maintainers; [ mgttlinger ];
   };
 }

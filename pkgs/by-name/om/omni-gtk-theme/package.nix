@@ -32,8 +32,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Dark theme created by Rocketseat";
     homepage = "https://github.com/getomni/gtk";
-    license = licenses.gpl3;
+    license = lib.licenses.gpl3;
     platforms = platforms.all;
-    maintainers = with maintainers; [ zoedsoupe ];
+    maintainers = with lib.maintainers; [ zoedsoupe ];
   };
 }

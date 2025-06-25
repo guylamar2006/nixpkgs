@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
     mv usr/share/ppd/FujiXerox/* $out/share/cups/model
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Fuji Xerox Linux Printer Driver";
     longDescription = ''
       DocuPrint P365/368 d
@@ -58,8 +58,8 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://onlinesupport.fujixerox.com";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.unfree;
-    maintainers = [ ];
-    platforms = platforms.linux;
+    license = lib.licenses.unfree;
+    maintainers = with lib.maintainers; [ ];
+    platforms = lib.platforms.linux;
   };
 }

@@ -59,8 +59,8 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Screenshot annotation tool inspired by Swappy and Flameshot";
     homepage = "https://github.com/gabm/Satty";
-    license = licenses.mpl20;
-    maintainers = with maintainers; [
+    license = lib.licenses.mpl20;
+    maintainers = with lib.maintainers; [
       pinpox
       donovanglover
     ];

@@ -50,7 +50,7 @@ stdenv.mkDerivation (finalAttrs: {
       Graphics (SVG) files with the wxWidgets toolkit.
     '';
     license = lib.licenses.gpl2Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     inherit (wxGTK32.meta) platforms;
   };
 })

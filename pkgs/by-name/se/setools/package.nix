@@ -65,7 +65,7 @@ python3Packages.buildPythonApplication rec {
       gpl2Only
       lgpl21Plus
     ];
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
   };
 }

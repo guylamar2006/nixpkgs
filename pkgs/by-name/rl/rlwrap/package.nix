@@ -31,9 +31,9 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Readline wrapper for console programs";
     homepage = "https://github.com/hanslub42/rlwrap";
     changelog = "https://github.com/hanslub42/rlwrap/raw/refs/tags/v${finalAttrs.version}/NEWS";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ jlesquembre ];
+    maintainers = with lib.maintainers; [ jlesquembre ];
     mainProgram = "rlwrap";
   };
 })

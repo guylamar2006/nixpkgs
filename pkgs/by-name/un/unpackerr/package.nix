@@ -26,7 +26,7 @@ buildGoModule rec {
   meta = with lib; {
     description = "Extracts downloads for Radarr, Sonarr, Lidarr - Deletes extracted files after import";
     homepage = "https://github.com/davidnewhall/unpackerr";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     license = licenses.mit;
     mainProgram = "unpackerr";
   };

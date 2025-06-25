@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Library for parsing command line options";
     homepage = "https://shh.thathost.com/pub-unix/";
-    license = licenses.artistic1;
+    license = lib.licenses.artistic1;
     platforms = platforms.all;
   };
 }

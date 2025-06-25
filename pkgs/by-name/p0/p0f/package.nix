@@ -44,6 +44,6 @@ stdenv.mkDerivation rec {
     homepage = "https://lcamtuf.coredump.cx/p0f3/";
     license = lib.licenses.lgpl21;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.thoughtpolice ];
+    maintainers = with lib.maintainers; [ thoughtpolice ];
   };
 }

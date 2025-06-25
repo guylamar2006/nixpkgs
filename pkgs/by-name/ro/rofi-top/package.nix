@@ -45,8 +45,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Plugin for rofi that emulates top behaviour";
     homepage = "https://github.com/davatorium/rofi-top";
-    license = licenses.mit;
-    maintainers = with maintainers; [ aacebedo ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ aacebedo ];
     platforms = platforms.linux;
   };
 }

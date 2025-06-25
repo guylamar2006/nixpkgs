@@ -40,7 +40,7 @@ stdenv.mkDerivation {
     license = licenses.bsd3;
     description = "Digital clock in ncurses";
     platforms = platforms.all;
-    maintainers = [ maintainers.koral ];
+    maintainers = with lib.maintainers; [ koral ];
     mainProgram = "tty-clock";
   };
 }

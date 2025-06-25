@@ -26,7 +26,7 @@ stdenvNoCC.mkDerivation rec {
     description = "Most over-engineered cursor theme";
     homepage = "https://github.com/phisch/phinger-cursors";
     platforms = platforms.unix;
-    license = licenses.cc-by-sa-40;
-    maintainers = with maintainers; [ moni ];
+    license = lib.licenses.cc-by-sa-40;
+    maintainers = with lib.maintainers; [ moni ];
   };
 }

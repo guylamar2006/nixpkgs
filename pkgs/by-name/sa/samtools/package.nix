@@ -48,10 +48,10 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     description = "Tools for manipulating SAM/BAM/CRAM format";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     homepage = "http://www.htslib.org/";
     platforms = platforms.unix;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       mimame
       unode
     ];

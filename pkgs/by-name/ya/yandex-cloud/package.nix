@@ -76,7 +76,7 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://cloud.yandex/docs/cli/release-notes#version${version}";
     sourceProvenance = [ lib.sourceTypes.binaryNativeCode ];
     license = lib.licenses.unfree;
-    maintainers = [ lib.maintainers.tie ];
+    maintainers = with lib.maintainers; [ tie ];
     platforms = [
       "aarch64-darwin"
       "x86_64-darwin"

@@ -57,8 +57,8 @@ buildGoModule rec {
       edge and cloud computing.
     '';
     homepage = "https://shellhub.io/";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ otavio ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ otavio ];
     platforms = platforms.linux;
     mainProgram = "agent";
   };

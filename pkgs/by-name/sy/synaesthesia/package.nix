@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     description = "Program for representing sounds visually";
     license = lib.licenses.gpl2Only;
     platforms = lib.platforms.linux;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "synaesthesia";
   };
 }

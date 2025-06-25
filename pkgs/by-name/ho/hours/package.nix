@@ -27,7 +27,7 @@ buildGoModule (finalAttrs: {
     description = "No-frills time tracking toolkit for command line nerds";
     homepage = "https://github.com/dhth/hours";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.ilarvne ];
+    maintainers = with lib.maintainers; [ ilarvne ];
     platforms = lib.platforms.unix;
     mainProgram = "hours";
   };

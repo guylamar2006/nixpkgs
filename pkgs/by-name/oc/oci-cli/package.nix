@@ -102,7 +102,7 @@ py.pkgs.buildPythonApplication rec {
       asl20 # or
       upl
     ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       ilian
       FKouhai
     ];

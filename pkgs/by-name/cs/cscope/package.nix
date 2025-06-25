@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
 
     homepage = "https://cscope.sourceforge.net/";
 
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
 
     platforms = lib.platforms.unix;
   };

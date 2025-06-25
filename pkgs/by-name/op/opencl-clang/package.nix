@@ -117,8 +117,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     homepage = "https://github.com/intel/opencl-clang/";
     description = "Clang wrapper library with an OpenCL-oriented API and the ability to compile OpenCL C kernels to SPIR-V modules";
-    license = licenses.ncsa;
-    maintainers = [ ];
+    license = lib.licenses.ncsa;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
     # error: invalid value 'CL3.0' in '-cl-std=CL3.0'
     broken = stdenv.hostPlatform.isDarwin;

@@ -57,6 +57,6 @@ python3Packages.buildPythonApplication rec {
     mainProgram = "refurb";
     homepage = "https://github.com/dosisod/refurb";
     license = with licenses; [ gpl3Only ];
-    maintainers = with maintainers; [ knl ];
+    maintainers = with lib.maintainers; [ knl ];
   };
 }

@@ -69,6 +69,6 @@ stdenv.mkDerivation {
       "i686-linux"
     ]; # fails on ARM and Darwin
     broken = stdenv.hostPlatform.isAarch64;
-    maintainers = [ lib.maintainers.l1npengtul ];
+    maintainers = with lib.maintainers; [ l1npengtul ];
   };
 }

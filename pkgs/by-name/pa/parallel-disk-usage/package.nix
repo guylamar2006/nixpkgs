@@ -20,8 +20,8 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Highly parallelized, blazing fast directory tree analyzer";
     homepage = "https://github.com/KSXGitHub/parallel-disk-usage";
-    license = licenses.asl20;
-    maintainers = [ maintainers.peret ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ peret ];
     mainProgram = "pdu";
   };
 }

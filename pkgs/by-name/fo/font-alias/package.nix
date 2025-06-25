@@ -34,7 +34,7 @@ stdenv.mkDerivation (finalAttrs: {
       cronyx
       mit
     ];
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.all;
   };
 })

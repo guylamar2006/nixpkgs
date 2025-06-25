@@ -72,7 +72,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
       asl20
     ];
     mainProgram = "amazon-q";
-    maintainers = [ lib.maintainers.jamesward ];
+    maintainers = with lib.maintainers; [ jamesward ];
     platforms = lib.platforms.linux;
   };
 })

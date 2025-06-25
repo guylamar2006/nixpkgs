@@ -42,7 +42,7 @@ python3Packages.buildPythonApplication {
     description = "Script to submit ISRCs from disc to MusicBrainz";
     license = lib.licenses.gpl3Plus;
     homepage = "http://jonnyjd.github.io/musicbrainz-isrcsubmit/";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "isrcsubmit";
   };
 }

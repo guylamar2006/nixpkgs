@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://anttweakbar.sourceforge.net/";
     license = lib.licenses.zlib;
-    maintainers = [ lib.maintainers.razvan ];
+    maintainers = with lib.maintainers; [ razvan ];
     platforms = lib.platforms.linux;
   };
 }

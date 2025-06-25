@@ -96,6 +96,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/KhronosGroup/Vulkan-Tools";
     platforms = platforms.unix;
     license = licenses.asl20;
-    maintainers = [ maintainers.ralith ];
+    maintainers = with lib.maintainers; [ ralith ];
   };
 }

@@ -33,7 +33,7 @@ python3.pkgs.buildPythonApplication {
     description = "Parse NTLM challenge messages over HTTP and SMB";
     mainProgram = "ntlm_challenger";
     homepage = "https://github.com/nopfor/ntlm_challenger";
-    license = licenses.mit;
-    maintainers = [ maintainers.crem ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ crem ];
   };
 }

@@ -38,7 +38,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Interactive Qt graphViz display";
     homepage = "https://github.com/gepetto/qgv";
     license = lib.licenses.lgpl3Only;
-    maintainers = [ lib.maintainers.nim65s ];
+    maintainers = with lib.maintainers; [ nim65s ];
     platforms = lib.platforms.unix;
   };
 })

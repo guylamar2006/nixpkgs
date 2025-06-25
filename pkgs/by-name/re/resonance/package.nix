@@ -87,9 +87,9 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "Intuitive GTK4/LibAdwaita music player";
     homepage = "https://github.com/nate-xyz/resonance";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     mainProgram = "resonance";
-    maintainers = with maintainers; [ Guanran928 ];
+    maintainers = with lib.maintainers; [ Guanran928 ];
     platforms = platforms.linux;
   };
 })

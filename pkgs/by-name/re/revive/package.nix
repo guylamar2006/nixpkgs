@@ -52,7 +52,7 @@ buildGoModule rec {
     description = "Fast, configurable, extensible, flexible, and beautiful linter for Go";
     mainProgram = "revive";
     homepage = "https://revive.run";
-    license = licenses.mit;
-    maintainers = with maintainers; [ maaslalani ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ maaslalani ];
   };
 }

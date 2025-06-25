@@ -22,8 +22,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/animetosho/par2cmdline-turbo";
     description = "par2cmdline × ParPar: speed focused par2cmdline fork";
-    license = licenses.gpl2Plus;
-    maintainers = [ maintainers.proglottis ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ proglottis ];
     platforms = platforms.all;
     mainProgram = "par2";
   };

@@ -24,8 +24,8 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "App source + Nix packages + Docker = Image Resources";
     homepage = "https://github.com/railwayapp/nixpacks";
-    license = licenses.mit;
-    maintainers = [ maintainers.zoedsoupe ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ zoedsoupe ];
     mainProgram = "nixpacks";
   };
 }

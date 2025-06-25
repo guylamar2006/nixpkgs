@@ -87,7 +87,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/elasticdog/transcrypt";
     license = licenses.mit;
-    maintainers = [ maintainers.elasticdog ];
+    maintainers = with lib.maintainers; [ elasticdog ];
     platforms = platforms.all;
   };
 }

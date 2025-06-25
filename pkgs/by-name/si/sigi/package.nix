@@ -32,8 +32,8 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Organizing CLI for people who don't love organizing";
     homepage = "https://github.com/sigi-cli/sigi";
-    license = licenses.gpl2;
-    maintainers = with maintainers; [ booniepepper ];
+    license = lib.licenses.gpl2;
+    maintainers = with lib.maintainers; [ booniepepper ];
     mainProgram = "sigi";
   };
 }

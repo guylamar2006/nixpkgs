@@ -72,7 +72,7 @@ stdenv.mkDerivation rec {
       available copies of significant or representative software.
     '';
     license = with licenses; mit;
-    maintainers = with maintainers; [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = with platforms; unix;
   };
 }

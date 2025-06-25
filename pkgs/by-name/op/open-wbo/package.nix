@@ -31,9 +31,9 @@ stdenv.mkDerivation {
     broken = (stdenv.hostPlatform.isLinux && stdenv.hostPlatform.isAarch64);
     description = "State-of-the-art MaxSAT and Pseudo-Boolean solver";
     mainProgram = "open-wbo";
-    maintainers = with maintainers; [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
-    license = licenses.mit;
+    license = lib.licenses.mit;
     homepage = "http://sat.inesc-id.pt/open-wbo/";
   };
 }

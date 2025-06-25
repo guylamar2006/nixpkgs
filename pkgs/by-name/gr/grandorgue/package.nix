@@ -80,7 +80,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/GrandOrgue/grandorgue";
     license = lib.licenses.gpl2Plus;
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.puzzlewolf ];
+    maintainers = with lib.maintainers; [ puzzlewolf ];
     mainProgram = "GrandOrgue";
   };
 }

@@ -110,8 +110,8 @@ stdenv.mkDerivation {
     description = "Limiter, compressor, reverberation, equalizer and auto volume effects for Pulseaudio applications";
     mainProgram = "pulseeffects";
     homepage = "https://github.com/wwmm/pulseeffects";
-    license = licenses.gpl3Plus;
-    maintainers = [ ];
-    platforms = platforms.linux;
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ ];
+    platforms = lib.platforms.linux;
   };
 }

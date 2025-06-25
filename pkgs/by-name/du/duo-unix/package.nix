@@ -34,6 +34,6 @@ stdenv.mkDerivation rec {
     homepage = "https://duosecurity.com";
     license = lib.licenses.gpl2Only;
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.thoughtpolice ];
+    maintainers = with lib.maintainers; [ thoughtpolice ];
   };
 }

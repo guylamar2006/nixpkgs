@@ -63,7 +63,7 @@ buildGoModule (finalAttrs: {
     homepage = "https://github.com/richiejp/VoxInput";
     description = "Voice to text for any Linux app via dotool/uinput and the LocalAI/OpenAI transcription API";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.richiejp ];
+    maintainers = with lib.maintainers; [ richiejp ];
     platforms = lib.platforms.unix;
     changelog = "https://github.com/richiejp/VoxInput/releases/tag/v${finalAttrs.version}";
     mainProgram = "voxinput";

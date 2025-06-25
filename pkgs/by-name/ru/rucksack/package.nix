@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
       "x86_64-linux"
     ]; # fails on Darwin and AArch64
     homepage = "https://github.com/andrewrk/rucksack";
-    license = licenses.mit;
-    maintainers = [ maintainers.andrewrk ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ andrewrk ];
   };
 }

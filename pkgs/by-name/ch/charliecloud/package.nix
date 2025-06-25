@@ -96,7 +96,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://hpc.github.io/charliecloud";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.bzizou ];
+    maintainers = with lib.maintainers; [ bzizou ];
     platforms = lib.platforms.linux;
   };
 })

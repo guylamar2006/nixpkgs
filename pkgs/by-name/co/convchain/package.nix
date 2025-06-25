@@ -38,7 +38,7 @@ stdenv.mkDerivation {
   meta = {
     description = "Bitmap generation from a single example with convolutions and MCMC";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.raskin ];
+    maintainers = with lib.maintainers; [ raskin ];
     platforms = lib.platforms.linux;
   };
 }

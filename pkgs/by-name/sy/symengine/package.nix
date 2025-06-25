@@ -53,7 +53,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/symengine/symengine";
     platforms = platforms.unix ++ platforms.windows;
     license = licenses.bsd3;
-    maintainers = [ maintainers.costrouc ];
+    maintainers = with lib.maintainers; [ costrouc ];
   };
 
 }

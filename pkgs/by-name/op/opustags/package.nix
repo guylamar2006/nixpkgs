@@ -54,8 +54,8 @@ stdenv.mkDerivation rec {
     description = "Ogg Opus tags editor";
     platforms = platforms.all;
     broken = stdenv.hostPlatform.isDarwin;
-    maintainers = with maintainers; [ kmein ];
-    license = licenses.bsd3;
+    maintainers = with lib.maintainers; [ kmein ];
+    license = lib.licenses.bsd3;
     mainProgram = "opustags";
   };
 }

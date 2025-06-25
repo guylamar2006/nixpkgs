@@ -54,6 +54,6 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "NetworkManager's strongswan plugin";
     inherit (networkmanager.meta) platforms;
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
   };
 }

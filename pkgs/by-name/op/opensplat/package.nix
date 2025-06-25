@@ -90,7 +90,7 @@ stdenv'.mkDerivation {
       # vendored+modified gsplat
       lib.licenses.asl20
     ];
-    maintainers = [ lib.maintainers.jcaesar ];
+    maintainers = with lib.maintainers; [ jcaesar ];
     platforms = lib.platforms.linux ++ lib.optionals (!cudaSupport) lib.platforms.darwin;
   };
 }

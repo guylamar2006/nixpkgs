@@ -24,7 +24,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     description = "Qwerty keyboard layout with French accents";
     changelog = "https://github.com/qwerty-fr/qwerty-fr/blob/v${finalAttrs.version}/linux/debian/changelog";
     homepage = "https://github.com/qwerty-fr/qwerty-fr";
-    license = licenses.mit;
-    maintainers = with maintainers; [ potb ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ potb ];
   };
 })

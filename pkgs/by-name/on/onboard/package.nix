@@ -198,7 +198,7 @@ python3.pkgs.buildPythonApplication rec {
   meta = with lib; {
     homepage = "https://launchpad.net/onboard";
     description = "Onscreen keyboard useful for tablet PC users and for mobility impaired users";
-    maintainers = with maintainers; [ ];
-    license = licenses.gpl3;
+    maintainers = with lib.maintainers; [ ];
+    license = lib.licenses.gpl3;
   };
 }

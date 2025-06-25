@@ -56,8 +56,8 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=tdghn";
 
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.unfree;
-    maintainers = with maintainers; [ panicgh ];
+    license = lib.licenses.unfree;
+    maintainers = with lib.maintainers; [ panicgh ];
     platforms = [ "x86_64-linux" ];
   };
 }

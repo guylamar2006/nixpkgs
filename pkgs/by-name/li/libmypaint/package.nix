@@ -53,11 +53,11 @@ stdenv.mkDerivation rec {
 
   preConfigure = "./autogen.sh";
 
-  meta = with lib; {
+  meta = {
     homepage = "http://mypaint.org/";
     description = "Library for making brushstrokes which is used by MyPaint and other projects";
-    license = licenses.isc;
-    maintainers = with maintainers; [ jtojnar ];
+    license = lib.licenses.isc;
+    maintainers = with lib.maintainers; [ jtojnar ];
     platforms = platforms.unix;
   };
 }

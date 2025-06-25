@@ -34,8 +34,8 @@ rustPlatform.buildRustPackage {
   meta = with lib; {
     description = "Command that rotates the default PipeWire audio sink";
     homepage = "https://github.com/mightyiam/sink-rotate";
-    license = licenses.mit;
-    maintainers = with maintainers; [ mightyiam ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ mightyiam ];
     mainProgram = "sink-rotate";
     platforms = platforms.linux;
   };

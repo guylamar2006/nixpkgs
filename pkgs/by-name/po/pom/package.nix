@@ -26,8 +26,8 @@ buildGoModule rec {
   meta = with lib; {
     description = "Pomodoro timer in your terminal";
     homepage = "https://github.com/maaslalani/pom";
-    license = licenses.mit;
-    maintainers = with maintainers; [
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [
       maaslalani
       redyf
     ];

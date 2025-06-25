@@ -53,7 +53,7 @@ stdenv.mkDerivation rec {
 
   passthru.tests = { inherit (nixosTests) jibri; };
 
-  meta = with lib; {
+  meta = {
     description = "JItsi BRoadcasting Infrastructure";
     mainProgram = "jibri";
     longDescription = ''
@@ -65,8 +65,8 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/jitsi/jibri";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
-    license = licenses.asl20;
-    teams = [ teams.jitsi ];
-    platforms = platforms.linux;
+    license = lib.licenses.asl20;
+    teams = with lib.teams; [ jitsi ];
+    platforms = lib.platforms.linux;
   };
 }

@@ -45,6 +45,6 @@ stdenv.mkDerivation rec {
     mainProgram = "eternity";
     license = lib.licenses.gpl3;
     platforms = lib.platforms.linux;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

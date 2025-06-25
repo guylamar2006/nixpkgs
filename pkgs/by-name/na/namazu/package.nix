@@ -41,6 +41,6 @@ stdenv.mkDerivation rec {
     homepage = "http://namazu.org/";
 
     platforms = lib.platforms.gnu ++ lib.platforms.linux; # arbitrary choice
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

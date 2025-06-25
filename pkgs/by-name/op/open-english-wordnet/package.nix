@@ -73,8 +73,8 @@ stdenvNoCC.mkDerivation (self: {
       open source methodology.
     '';
     homepage = "https://en-word.net/";
-    license = licenses.cc-by-40;
-    maintainers = with maintainers; [ nicoo ];
+    license = lib.licenses.cc-by-40;
+    maintainers = with lib.maintainers; [ nicoo ];
     platforms = platforms.all;
   };
 })

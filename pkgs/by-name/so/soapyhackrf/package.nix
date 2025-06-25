@@ -37,8 +37,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     homepage = "https://github.com/pothosware/SoapyHackRF";
     description = "SoapySDR plugin for HackRF devices";
-    license = licenses.mit;
-    maintainers = with maintainers; [ markuskowa ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ markuskowa ];
     platforms = platforms.unix;
   };
 }

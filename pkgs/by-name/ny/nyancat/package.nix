@@ -29,8 +29,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Nyancat in your terminal, rendered through ANSI escape sequences";
     homepage = "https://nyancat.dakko.us";
-    license = licenses.ncsa;
-    maintainers = with maintainers; [ midchildan ];
+    license = lib.licenses.ncsa;
+    maintainers = with lib.maintainers; [ midchildan ];
     platforms = platforms.unix;
     mainProgram = "nyancat";
   };

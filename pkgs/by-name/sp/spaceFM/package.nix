@@ -94,8 +94,8 @@ stdenv.mkDerivation rec {
     '';
     homepage = "http://ignorantguru.github.io/spacefm/";
     platforms = platforms.linux;
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [
       jagajaga
       obadz
     ];

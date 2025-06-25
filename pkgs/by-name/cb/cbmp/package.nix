@@ -35,7 +35,7 @@ buildNpmPackage rec {
     description = "CLI App for converting cursor svg file to png";
     homepage = "https://github.com/ful1e5/cbmp";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.mrtnvgr ];
+    maintainers = with lib.maintainers; [ mrtnvgr ];
     mainProgram = "cbmp";
   };
 }

@@ -55,7 +55,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "SQLite extension for efficient vector search based on Faiss";
     homepage = "https://github.com/asg017/sqlite-vss";
     changelog = "https://github.com/asg017/sqlite-vss/releases/tag/v${finalAttrs.version}";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.unix;
   };
 })

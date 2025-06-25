@@ -55,7 +55,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/bucciarati/mpc123";
     license = lib.licenses.gpl2Plus;
     mainProgram = "mpc123";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
   };
 })

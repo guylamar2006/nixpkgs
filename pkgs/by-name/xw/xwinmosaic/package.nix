@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "X window switcher drawing a colourful grid";
     license = lib.licenses.bsd2;
-    maintainers = [ lib.maintainers.raskin ];
+    maintainers = with lib.maintainers; [ raskin ];
     platforms = lib.platforms.linux;
     mainProgram = "xwinmosaic";
   };

@@ -56,7 +56,7 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "opencsgexample";
     homepage = "http://www.opencsg.org/";
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.raskin ];
+    maintainers = with lib.maintainers; [ raskin ];
     license = lib.licenses.gpl2Plus;
   };
 })

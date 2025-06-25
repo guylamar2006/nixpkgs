@@ -51,8 +51,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Tool for writing very fast and very flexible scanners";
     homepage = "https://re2c.org";
-    license = licenses.publicDomain;
+    license = lib.licenses.publicDomain;
     platforms = platforms.all;
-    maintainers = with maintainers; [ thoughtpolice ];
+    maintainers = with lib.maintainers; [ thoughtpolice ];
   };
 }

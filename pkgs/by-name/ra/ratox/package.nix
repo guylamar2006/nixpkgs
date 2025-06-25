@@ -35,8 +35,8 @@ stdenv.mkDerivation {
     description = "FIFO based tox client";
     mainProgram = "ratox";
     homepage = "http://ratox.2f30.org/";
-    license = licenses.isc;
-    maintainers = with maintainers; [ ehmry ];
+    license = lib.licenses.isc;
+    maintainers = with lib.maintainers; [ ehmry ];
     platforms = platforms.linux;
   };
 }

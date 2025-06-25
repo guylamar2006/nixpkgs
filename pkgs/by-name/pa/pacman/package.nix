@@ -133,9 +133,9 @@ stdenv.mkDerivation (final: {
     description = "Simple library-based package manager";
     homepage = "https://archlinux.org/pacman/";
     changelog = "https://gitlab.archlinux.org/pacman/pacman/-/raw/v${final.version}/NEWS";
-    license = licenses.gpl2Plus;
-    platforms = platforms.linux;
+    license = lib.licenses.gpl2Plus;
+    platforms = lib.platforms.linux;
     mainProgram = "pacman";
-    maintainers = with maintainers; [ samlukeyes123 ];
+    maintainers = with lib.maintainers; [ samlukeyes123 ];
   };
 })

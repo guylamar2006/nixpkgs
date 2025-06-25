@@ -55,7 +55,7 @@ stdenv.mkDerivation {
     '';
     homepage = "https://github.com/Themaister/libfmsynth";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.magnetophon ];
+    maintainers = with lib.maintainers; [ magnetophon ];
     platforms = lib.platforms.linux;
   };
 }

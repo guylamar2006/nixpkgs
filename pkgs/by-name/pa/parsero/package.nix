@@ -26,8 +26,8 @@ python3Packages.buildPythonApplication {
   meta = with lib; {
     description = "Robots.txt audit tool";
     homepage = "https://github.com/behindthefirewalls/Parsero";
-    license = licenses.gpl2Only;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [
       emilytrau
       fab
     ];

@@ -24,7 +24,7 @@ buildGoModule {
     homepage = "https://codeberg.org/aryak/mozhi";
     description = "Alternative-frontend for many translation engines, fork of SimplyTranslate";
     license = lib.licenses.agpl3Plus;
-    maintainers = [ lib.maintainers.ryand56 ];
+    maintainers = with lib.maintainers; [ ryand56 ];
     mainProgram = "mozhi";
   };
 }

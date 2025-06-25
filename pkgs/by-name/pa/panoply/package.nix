@@ -36,9 +36,9 @@ stdenvNoCC.mkDerivation rec {
   meta = with lib; {
     description = "netCDF, HDF and GRIB Data Viewer";
     homepage = "https://www.giss.nasa.gov/tools/panoply";
-    platforms = platforms.linux;
-    maintainers = [ maintainers.markuskowa ];
-    license = licenses.unfree; # Package does not state a license
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ markuskowa ];
+    license = lib.licenses.unfree; # Package does not state a license
     mainProgram = "panoply";
   };
 }

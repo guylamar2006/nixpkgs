@@ -31,7 +31,7 @@ rustPlatform.buildRustPackage rec {
     description = "Simple, high performance relay server written in rust";
     homepage = "https://github.com/zhboner/realm";
     mainProgram = "realm";
-    license = licenses.mit;
-    maintainers = with maintainers; [ ocfox ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ocfox ];
   };
 }

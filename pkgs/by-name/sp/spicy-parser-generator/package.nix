@@ -68,8 +68,8 @@ stdenv.mkDerivation rec {
       unified language. Think of Spicy as a domain-specific scripting language
       for all your parsing needs.
     '';
-    license = licenses.bsd3;
-    maintainers = with maintainers; [ tobim ];
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ tobim ];
     platforms = platforms.unix;
   };
 }

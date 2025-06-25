@@ -32,8 +32,8 @@ python312Packages.buildPythonApplication rec {
   '';
 
   meta = with lib; {
-    maintainers = [ maintainers.cab404 ];
-    license = licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ cab404 ];
+    license = lib.licenses.gpl3Plus;
     description = "Tool for converting Slic3r PE's SL1 files to Photon files for the Anycubic Photon 3D-Printer";
     homepage = "https://github.com/cab404/SL1toPhoton";
     mainProgram = "sl1-to-photon";

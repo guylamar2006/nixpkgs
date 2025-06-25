@@ -138,9 +138,9 @@ stdenv.mkDerivation (finalAttrs: {
       on the GNOME Desktop with a more modern interface.
     '';
 
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.unix;
     mainProgram = "papers";
-    teams = [ teams.gnome ];
+    teams = with lib.teams; [ gnome ];
   };
 })

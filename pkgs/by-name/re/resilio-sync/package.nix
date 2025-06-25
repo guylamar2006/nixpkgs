@@ -44,9 +44,9 @@ stdenv.mkDerivation rec {
     description = "Automatically sync files via secure, distributed technology";
     homepage = "https://www.resilio.com/";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.unfreeRedistributable;
+    license = lib.licenses.unfreeRedistributable;
     platforms = platforms.linux;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       thoughtpolice
       cwoac
     ];

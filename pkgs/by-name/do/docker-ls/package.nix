@@ -18,7 +18,7 @@ buildGoModule rec {
 
   vendorHash = "sha256-UulcjQOLEIP++eoYQTEIbCJW51jyE312dMxB8+AKcdU=";
 
-  meta = with lib; {
+  meta = {
     description = "Tools for browsing and manipulating docker registries";
     longDescription = ''
       Docker-ls is a set of CLI tools for browsing and manipulating docker registries.
@@ -27,8 +27,8 @@ buildGoModule rec {
     '';
 
     homepage = "https://github.com/mayflower/docker-ls";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = docker.meta.platforms;
-    license = licenses.mit;
+    license = lib.licenses.mit;
   };
 }

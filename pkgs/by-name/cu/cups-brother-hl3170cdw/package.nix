@@ -146,7 +146,7 @@ stdenv.mkDerivation rec {
       }
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.brother.com/";
     description = "Brother ${model} printer driver";
     sourceProvenance = with sourceTypes; [
@@ -162,6 +162,6 @@ stdenv.mkDerivation rec {
       "i686-linux"
     ];
     downloadPage = "https://support.brother.com/g/b/downloadlist.aspx?c=us&lang=en&prod=${model}_all&os=128";
-    maintainers = with maintainers; [ luna_1024 ];
+    maintainers = with lib.maintainers; [ luna_1024 ];
   };
 }

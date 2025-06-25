@@ -66,6 +66,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://bblanche.gitlabpages.inria.fr/CryptoVerif/";
     license = lib.licenses.cecill-b;
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.thoughtpolice ];
+    maintainers = with lib.maintainers; [ thoughtpolice ];
   };
 })

@@ -20,8 +20,8 @@ buildNpmPackage rec {
   meta = with lib; {
     description = "Lightweight JSON Resume builder, no-frills alternative to resume-cli";
     homepage = "https://github.com/rbardini/resumed";
-    license = licenses.mit;
-    maintainers = with maintainers; [ ambroisie ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ambroisie ];
     mainProgram = "resumed";
   };
 }

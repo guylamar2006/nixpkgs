@@ -93,9 +93,9 @@ buildNpmPackage rec {
   meta = with lib; {
     description = "Libre and modular OSC / MIDI controller";
     homepage = "https://openstagecontrol.ammd.net/";
-    license = licenses.gpl3Only;
-    maintainers = [ ];
-    platforms = platforms.linux;
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ ];
+    platforms = lib.platforms.linux;
     mainProgram = "open-stage-control";
     # Depends on nodejs_18 that has been removed.
     broken = true;

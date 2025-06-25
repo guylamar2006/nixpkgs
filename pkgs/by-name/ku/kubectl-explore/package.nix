@@ -24,6 +24,6 @@ buildGoModule rec {
     homepage = "https://github.com/keisku/kubectl-explore";
     changelog = "https://github.com/keisku/kubectl-explore/releases/tag/v${version}";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.koralowiec ];
+    maintainers = with lib.maintainers; [ koralowiec ];
   };
 }

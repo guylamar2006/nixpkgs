@@ -30,9 +30,9 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Modern desktop theme suite featuring a mostly flat with a minimal use of shadows for depth";
     homepage = "https://snwh.org/paper";
-    license = licenses.gpl3;
-    platforms = platforms.linux;
-    maintainers = [
+    license = lib.licenses.gpl3;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [
       maintainers.simonvandel
       maintainers.romildo
     ];

@@ -41,8 +41,8 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/graysky2/profile-sync-daemon";
     downloadPage = "https://github.com/graysky2/profile-sync-daemon/releases";
-    license = licenses.mit;
-    maintainers = [ maintainers.prikhi ];
-    platforms = platforms.linux;
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ prikhi ];
+    platforms = lib.platforms.linux;
   };
 }

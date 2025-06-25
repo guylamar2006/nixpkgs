@@ -77,6 +77,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.wtfpl;
     platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin;
-    maintainers = [ lib.maintainers.kugland ];
+    maintainers = with lib.maintainers; [ kugland ];
   };
 }

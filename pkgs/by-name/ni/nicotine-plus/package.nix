@@ -64,8 +64,8 @@ python3Packages.buildPythonApplication {
       keeping current with the Soulseek protocol.
     '';
     homepage = "https://www.nicotine-plus.org";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [
       klntsky
       amadaluzia
     ];

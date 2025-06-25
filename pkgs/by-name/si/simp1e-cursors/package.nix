@@ -45,6 +45,6 @@ stdenvNoCC.mkDerivation rec {
     changelog = "https://gitlab.com/cursors/simp1e/-/tags/${version}";
     license = lib.licenses.gpl3;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.natto1784 ];
+    maintainers = with lib.maintainers; [ natto1784 ];
   };
 }

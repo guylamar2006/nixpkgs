@@ -28,11 +28,11 @@ buildGoModule rec {
       --prefix PATH : ${lib.makeBinPath [ jq ]}
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/fiatjaf/jiq";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     description = "jid on jq - interactive JSON query tool using jq expressions";
     mainProgram = "jiq";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

@@ -26,8 +26,8 @@ stdenvNoCC.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/akryukov/oldstand";
     description = "Attempt to revive a specific type of Modern style of serif typefaces";
-    maintainers = with maintainers; [ raskin ];
-    license = licenses.ofl;
+    maintainers = with lib.maintainers; [ raskin ];
+    license = lib.licenses.ofl;
     platforms = platforms.all;
   };
 }

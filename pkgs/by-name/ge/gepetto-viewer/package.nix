@@ -119,7 +119,7 @@ let
       description = "Graphical Interface for Pinocchio and HPP.";
       homepage = "https://github.com/gepetto/gepetto-viewer";
       license = lib.licenses.lgpl3Only;
-      maintainers = [ lib.maintainers.nim65s ];
+      maintainers = with lib.maintainers; [ nim65s ];
       mainProgram = "gepetto-gui";
       platforms = lib.platforms.unix;
     };

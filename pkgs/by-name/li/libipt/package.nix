@@ -24,11 +24,11 @@ stdenv.mkDerivation rec {
     NIX_LDFLAGS = "-lstdthreads";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Intel Processor Trace decoder library";
     homepage = "https://github.com/intel/libipt";
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ orivej ];
+    maintainers = with lib.maintainers; [ orivej ];
   };
 }

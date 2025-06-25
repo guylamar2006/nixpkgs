@@ -49,6 +49,6 @@ stdenv.mkDerivation rec {
       gpl2Only
       lgpl21
     ]; # libnuma is lgpl21
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

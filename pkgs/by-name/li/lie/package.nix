@@ -26,7 +26,7 @@ stdenv.mkDerivation {
     ''; # take from the website
 
     platforms = lib.platforms.linux;
-    maintainers = [ ]; # this package is probably not going to change anyway
+    maintainers = with lib.maintainers; [ ]; # this package is probably not going to change anyway
   };
 
   src = fetchurl {

@@ -27,6 +27,6 @@ stdenv.mkDerivation rec {
     homepage = "https://sourceforge.net/projects/ispike/";
     license = lib.licenses.lgpl3;
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.nico202 ];
+    maintainers = with lib.maintainers; [ nico202 ];
   };
 }

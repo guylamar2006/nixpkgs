@@ -72,6 +72,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/wannier-developers/wannier90";
     license = licenses.gpl2Plus;
     platforms = [ "x86_64-linux" ];
-    maintainers = [ maintainers.sheepforce ];
+    maintainers = with lib.maintainers; [ sheepforce ];
   };
 }

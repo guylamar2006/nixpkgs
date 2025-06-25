@@ -38,7 +38,7 @@ runCommand name
       description = "Postfix policy server to provide greylisting";
       homepage = "https://postgrey.schweikert.ch/";
       platforms = postfix.meta.platforms;
-      license = licenses.gpl2Plus;
+      license = lib.licenses.gpl2Plus;
     };
   }
   ''

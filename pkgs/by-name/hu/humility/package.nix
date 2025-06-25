@@ -31,11 +31,11 @@ rustPlatform.buildRustPackage {
   useFetchCargoVendor = true;
   cargoHash = "sha256-GZkHPoDKiqTVwRAWXXbELXC1I/KRO+9sshY8/rGbA4A=";
 
-  meta = with lib; {
+  meta = {
     description = "Debugger for Hubris";
     mainProgram = "humility";
     homepage = "https://github.com/oxidecomputer/humility";
     license = with licenses; [ mpl20 ];
-    maintainers = with maintainers; [ therishidesai ];
+    maintainers = with lib.maintainers; [ therishidesai ];
   };
 }

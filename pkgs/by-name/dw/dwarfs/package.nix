@@ -120,7 +120,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/mhx/dwarfs";
     changelog = "https://github.com/mhx/dwarfs/blob/v${finalAttrs.version}/CHANGES.md";
     license = lib.licenses.gpl3Only;
-    maintainers = [ lib.maintainers.luftmensch-luftmensch ];
+    maintainers = with lib.maintainers; [ luftmensch-luftmensch ];
     platforms = lib.platforms.linux;
   };
 })

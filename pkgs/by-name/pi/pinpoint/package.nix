@@ -35,9 +35,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://gitlab.gnome.org/Archive/pinpoint";
     description = "Tool for making hackers do excellent presentations";
-    license = licenses.lgpl21;
-    platforms = platforms.linux;
-    maintainers = with maintainers; [ pSub ];
+    license = lib.licenses.lgpl21;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ pSub ];
     mainProgram = "pinpoint";
   };
 }

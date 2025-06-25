@@ -27,7 +27,7 @@ rustPlatform.buildRustPackage rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://dotslash-cli.com";
     description = "Simplified multi-platform executable deployment";
     longDescription = ''
@@ -44,6 +44,6 @@ rustPlatform.buildRustPackage rec {
       mit
     ];
     mainProgram = "dotslash";
-    maintainers = with maintainers; [ thoughtpolice ];
+    maintainers = with lib.maintainers; [ thoughtpolice ];
   };
 }

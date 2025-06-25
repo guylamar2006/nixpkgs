@@ -16,6 +16,6 @@ rustPlatform.buildRustPackage {
 
   meta = {
     description = "Output a path's realpath within a chroot.";
-    maintainers = [ lib.maintainers.elvishjerricco ];
+    maintainers = with lib.maintainers; [ elvishjerricco ];
   };
 }

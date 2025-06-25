@@ -70,8 +70,8 @@ stdenv.mkDerivation rec {
     mainProgram = "open-ecard";
     homepage = "https://www.openecard.org/";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
-    license = licenses.gpl3;
-    maintainers = with maintainers; [ sephalon ];
-    platforms = platforms.linux;
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ sephalon ];
+    platforms = lib.platforms.linux;
   };
 }

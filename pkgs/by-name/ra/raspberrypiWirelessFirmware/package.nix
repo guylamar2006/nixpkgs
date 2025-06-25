@@ -56,8 +56,8 @@ stdenvNoCC.mkDerivation {
   meta = with lib; {
     description = "Firmware for builtin Wifi/Bluetooth devices in the Raspberry Pi 3+ and Zero W";
     homepage = "https://github.com/RPi-Distro/firmware-nonfree";
-    license = licenses.unfreeRedistributableFirmware;
+    license = lib.licenses.unfreeRedistributableFirmware;
     platforms = platforms.linux;
-    maintainers = with maintainers; [ lopsided98 ];
+    maintainers = with lib.maintainers; [ lopsided98 ];
   };
 }

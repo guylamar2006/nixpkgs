@@ -86,8 +86,8 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "Space Nerds In Space, a multi-player spaceship bridge simulator";
     homepage = "https://smcameron.github.io/space-nerds-in-space/";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [ pentane ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ pentane ];
     platforms = platforms.linux;
     mainProgram = "snis_launcher";
   };

@@ -32,8 +32,8 @@ buildGoModule rec {
       with your RBAC and SSO. Ships as a GUI, API, and CLI.
     '';
     homepage = "https://www.paralus.io/";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ kashw2 ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ kashw2 ];
     mainProgram = "paralus";
   };
 }

@@ -25,8 +25,8 @@ stdenvNoCC.mkDerivation {
   meta = with lib; {
     description = "narrow monospaced font, designed to fit a fifteen pixel bitmap";
     homepage = "https://fontlibrary.org/en/font/quinze";
-    license = licenses.ofl;
-    maintainers = with maintainers; [ phunehehe ];
+    license = lib.licenses.ofl;
+    maintainers = with lib.maintainers; [ phunehehe ];
     platforms = platforms.all;
   };
 }

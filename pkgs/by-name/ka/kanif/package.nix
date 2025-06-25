@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
       for efficiency and scalability.'';
     homepage = "http://taktuk.gforge.inria.fr/kanif";
     license = lib.licenses.gpl2;
-    maintainers = [ lib.maintainers.bzizou ];
+    maintainers = with lib.maintainers; [ bzizou ];
     platforms = lib.platforms.linux;
   };
 

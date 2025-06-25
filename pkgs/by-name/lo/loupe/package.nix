@@ -103,13 +103,13 @@ stdenv.mkDerivation (finalAttrs: {
       ];
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://gitlab.gnome.org/GNOME/loupe";
     changelog = "https://gitlab.gnome.org/GNOME/loupe/-/blob/${finalAttrs.version}/NEWS?ref_type=tags";
     description = "Simple image viewer application written with GTK4 and Rust";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ jk ];
-    teams = [ teams.gnome ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ jk ];
+    teams = with lib.teams; [ gnome ];
     platforms = platforms.unix;
     mainProgram = "loupe";
   };

@@ -87,6 +87,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     description = "Firefly III Data Importer can import data into Firefly III.";
     homepage = "https://github.com/firefly-iii/data-importer";
     license = lib.licenses.agpl3Only;
-    maintainers = [ lib.maintainers.savyajha ];
+    maintainers = with lib.maintainers; [ savyajha ];
   };
 })

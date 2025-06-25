@@ -73,7 +73,7 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://github.com/bitcraze/crazyflie-clients-python";
     changelog = "https://github.com/bitcraze/crazyflie-clients-python/releases/tag/${version}";
     license = lib.licenses.gpl2Only;
-    maintainers = [ lib.maintainers.brianmcgillion ];
+    maintainers = with lib.maintainers; [ brianmcgillion ];
     platforms = lib.platforms.linux;
   };
 }

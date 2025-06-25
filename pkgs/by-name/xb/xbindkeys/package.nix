@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.nongnu.org/xbindkeys/xbindkeys.html";
     description = "Launch shell commands with your keyboard or your mouse under X Window";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = with lib.platforms; linux;
   };
 }

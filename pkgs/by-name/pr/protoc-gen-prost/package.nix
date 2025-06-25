@@ -24,8 +24,8 @@ rustPlatform.buildRustPackage rec {
     mainProgram = "protoc-gen-prost";
     homepage = "https://github.com/neoeinstein/protoc-gen-prost";
     changelog = "https://github.com/neoeinstein/protoc-gen-prost/blob/main/CHANGELOG.md";
-    license = licenses.asl20;
-    maintainers = with maintainers; [
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [
       felschr
       sitaaax
     ];

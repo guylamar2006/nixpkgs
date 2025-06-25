@@ -28,12 +28,12 @@ stdenv.mkDerivation rec {
     "PREFIX=$(out)"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Wordlist generator";
     mainProgram = "crunch";
     homepage = "https://sourceforge.net/projects/crunch-wordlist/";
     platforms = platforms.unix;
     license = with licenses; [ gpl2Only ];
-    maintainers = with maintainers; [ lnl7 ];
+    maintainers = with lib.maintainers; [ lnl7 ];
   };
 }

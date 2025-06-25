@@ -32,7 +32,7 @@ stdenv.mkDerivation {
   ];
   buildInputs = with pkgs; [ libuecc ];
 
-  meta = with lib; {
+  meta = {
     description = "Create and manipulate ECC NISTP256 keypairs";
     mainProgram = "ecdsatool";
     homepage = "https://github.com/kaniini/ecdsatool/";

@@ -40,7 +40,7 @@ buildGoModule rec {
     changelog = "https://github.com/ent/ent/releases/tag/v${version}";
     downloadPage = "https://github.com/ent/ent";
     license = lib.licenses.asl20;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "ent";
   };
 }

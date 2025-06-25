@@ -42,8 +42,8 @@ stdenv.mkDerivation rec {
     description = "OpenCL ICD Loader for ${opencl-headers.name}";
     mainProgram = "cllayerinfo";
     homepage = "https://github.com/OCL-dev/ocl-icd";
-    license = licenses.bsd2;
+    license = lib.licenses.bsd2;
     platforms = platforms.unix ++ platforms.windows;
-    maintainers = with maintainers; [ r-burns ];
+    maintainers = with lib.maintainers; [ r-burns ];
   };
 }

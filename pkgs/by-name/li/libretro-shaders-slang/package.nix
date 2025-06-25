@@ -26,7 +26,7 @@ stdenvNoCC.mkDerivation {
     description = "Slang shaders for use with RetroArch's shader system";
     homepage = "https://github.com/libretro/slang-shaders";
     license = lib.licenses.gpl3Only;
-    maintainers = [ lib.maintainers.nadiaholmquist ];
+    maintainers = with lib.maintainers; [ nadiaholmquist ];
     platforms = lib.platforms.all;
   };
 }

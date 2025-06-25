@@ -28,11 +28,11 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://lwn.net/Articles/421072/";
     description = "cat replacement";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [ qknight ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ qknight ];
     platforms = platforms.all;
     mainProgram = "dog";
   };

@@ -38,8 +38,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "CLI software to monitor the power consumption of software and hardware components";
     homepage = "https://github.com/joular/powerjoular";
-    maintainers = [ maintainers.julienmalka ];
-    license = licenses.gpl3Plus;
-    platforms = platforms.linux;
+    maintainers = with lib.maintainers; [ julienmalka ];
+    license = lib.licenses.gpl3Plus;
+    platforms = lib.platforms.linux;
   };
 }

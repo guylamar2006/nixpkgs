@@ -77,6 +77,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.yacreader.com";
     license = lib.licenses.gpl3;
     mainProgram = "YACReader";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

@@ -33,11 +33,11 @@ stdenvNoCC.mkDerivation (finalAttrs: {
 
   passthru.updateScript = nix-update-script { };
 
-  meta = with lib; {
+  meta = {
     description = "System status icons by Google, featuring material design";
     homepage = "https://material.io/icons";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     platforms = platforms.all;
-    maintainers = with maintainers; [ mpcsh ];
+    maintainers = with lib.maintainers; [ mpcsh ];
   };
 })

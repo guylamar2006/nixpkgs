@@ -66,11 +66,11 @@ resholve.mkDerivation {
     ];
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/roman/locate-dominating-file";
     description = "Program that looks up in a directory hierarchy for a given filename";
-    license = licenses.mit;
-    maintainers = [ maintainers.roman ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ roman ];
     platforms = platforms.all;
     mainProgram = "locate-dominating-file";
   };

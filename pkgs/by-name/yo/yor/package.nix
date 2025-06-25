@@ -38,6 +38,6 @@ buildGoModule rec {
     homepage = "https://github.com/bridgecrewio/yor";
     changelog = "https://github.com/bridgecrewio/yor/releases/tag/${version}";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.ivankovnatsky ];
+    maintainers = with lib.maintainers; [ ivankovnatsky ];
   };
 }

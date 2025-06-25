@@ -43,7 +43,7 @@ stdenv.mkDerivation {
   meta = with lib; {
     homepage = "https://cgit.freedesktop.org/xorg/driver/xf86-video-nested";
     description = "Driver to run Xorg on top of Xorg or something else";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.linux;
     license = licenses.mit;
   };

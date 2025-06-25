@@ -50,7 +50,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "JSON for Modern C++";
     homepage = "https://json.nlohmann.me";
     changelog = "https://github.com/nlohmann/json/blob/develop/ChangeLog.md";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.all;
   };
 })

@@ -113,7 +113,7 @@ stdenv.mkDerivation rec {
     license = lib.licenses.lgpl2Plus;
     homepage = "http://www.clutter-project.org/";
 
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
   };
 }

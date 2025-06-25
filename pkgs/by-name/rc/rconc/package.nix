@@ -21,7 +21,7 @@ rustPlatform.buildRustPackage {
   meta = with lib; {
     description = "Simple cross-platform RCON client written in rust";
     homepage = "https://github.com/klemens/rconc";
-    license = licenses.gpl3Only;
+    license = lib.licenses.gpl3Only;
     mainProgram = "rconc";
   };
 }

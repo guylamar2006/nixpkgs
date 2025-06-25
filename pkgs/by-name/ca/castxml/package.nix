@@ -66,7 +66,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "C-family Abstract Syntax Tree XML Output";
     license = lib.licenses.asl20;
     mainProgram = "castxml";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
   };
 })

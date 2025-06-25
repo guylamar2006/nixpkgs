@@ -28,8 +28,8 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     homepage = "https://github.com/azur1s/octofetch";
     description = "Github user information on terminal";
-    license = licenses.mit;
-    maintainers = [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "octofetch";
   };
 }

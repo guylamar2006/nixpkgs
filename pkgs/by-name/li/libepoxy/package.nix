@@ -82,11 +82,11 @@ stdenv.mkDerivation (finalAttrs: {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Library for handling OpenGL function pointer management";
     homepage = "https://github.com/anholt/libepoxy";
-    license = licenses.mit;
-    maintainers = [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
     pkgConfigModules = [ "epoxy" ];
   };

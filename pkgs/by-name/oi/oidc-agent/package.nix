@@ -64,7 +64,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Manage OpenID Connect tokens on the command line";
     homepage = "https://github.com/indigo-dc/oidc-agent";
-    maintainers = with maintainers; [ xinyangli ];
-    license = licenses.mit;
+    maintainers = with lib.maintainers; [ xinyangli ];
+    license = lib.licenses.mit;
   };
 }

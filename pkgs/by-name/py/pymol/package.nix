@@ -157,8 +157,8 @@ python3Packages.buildPythonApplication rec {
     inherit description;
     mainProgram = "pymol";
     homepage = "https://www.pymol.org/";
-    license = licenses.mit;
-    maintainers = with maintainers; [
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [
       natsukium
       samlich
     ];

@@ -113,7 +113,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     license = lib.licenses.unfree;
     platforms = lib.platforms.x86;
-    maintainers = [ lib.maintainers.shelvacu ];
+    maintainers = with lib.maintainers; [ shelvacu ];
     mainProgram = "sm64coopdx";
     homepage = "https://sm64coopdx.com/";
     changelog = "https://github.com/coop-deluxe/sm64coopdx/releases/tag/v1.3";

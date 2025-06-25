@@ -43,8 +43,8 @@ buildNpmPackage rec {
   meta = with lib; {
     description = "Command-line tool to turn web pages into readable PDF, EPUB, HTML, or Markdown docs";
     homepage = "https://github.com/danburzo/percollate";
-    license = licenses.mit;
-    maintainers = [ maintainers.austinbutler ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ austinbutler ];
     mainProgram = "percollate";
   };
 }

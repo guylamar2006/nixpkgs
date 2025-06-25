@@ -28,6 +28,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     changelog = "https://github.com/yuru7/Explex/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.ofl;
     platforms = lib.platforms.all;
-    maintainers = [ lib.maintainers.r-aizawa ];
+    maintainers = with lib.maintainers; [ r-aizawa ];
   };
 })

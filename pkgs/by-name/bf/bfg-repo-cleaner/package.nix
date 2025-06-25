@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
   versionCheckProgram = "${placeholder "out"}/bin/${meta.mainProgram}";
   versionCheckProgramArg = "--version";
 
-  meta = with lib; {
+  meta = {
     homepage = "https://rtyley.github.io/bfg-repo-cleaner/";
     # Descriptions taken with minor modification from the homepage of bfg-repo-cleaner
     description = "Removes large or troublesome blobs in a git repository like git-filter-branch does, but faster";
@@ -52,8 +52,8 @@ stdenv.mkDerivation rec {
       beautiful (can use Scala instead of bash to script customizations).
     '';
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
-    license = licenses.gpl3;
-    maintainers = [ maintainers.changlinli ];
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ changlinli ];
     mainProgram = "bfg";
     platforms = platforms.unix;
     downloadPage = "https://mvnrepository.com/artifact/com.madgag/bfg/${version}";

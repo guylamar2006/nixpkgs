@@ -22,14 +22,14 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://cm-unicode.sourceforge.io/";
     description = "Computer Modern Unicode fonts";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       raskin
       rycee
     ];
-    license = licenses.ofl;
+    license = lib.licenses.ofl;
     platforms = platforms.all;
   };
 }

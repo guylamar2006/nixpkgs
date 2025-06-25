@@ -11,7 +11,7 @@ rec {
 
   meta = with lib; {
     homepage = "https://evan-buss.github.io/openbooks/";
-    license = licenses.mit;
-    maintainers = with maintainers; [ ambroisie ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ambroisie ];
   };
 }

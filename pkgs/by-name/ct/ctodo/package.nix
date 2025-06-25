@@ -24,11 +24,11 @@ stdenv.mkDerivation rec {
     readline
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "http://ctodo.apakoh.dk/";
     description = "Simple ncurses-based task list manager";
-    license = licenses.mit;
-    maintainers = [ maintainers.matthiasbeyer ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ matthiasbeyer ];
     platforms = platforms.unix;
     mainProgram = "ctodo";
   };

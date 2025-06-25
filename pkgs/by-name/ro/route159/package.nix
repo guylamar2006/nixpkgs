@@ -30,10 +30,10 @@ stdenvNoCC.mkDerivation {
     homepage = "http://dotcolon.net/font/route159/";
     description = "Weighted sans serif font";
     platforms = platforms.all;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       leenaars
       minijackson
     ];
-    license = licenses.ofl;
+    license = lib.licenses.ofl;
   };
 }

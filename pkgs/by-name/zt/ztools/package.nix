@@ -36,7 +36,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "http://inform-fiction.org/zmachine/ztools.html";
     license = lib.licenses.cc-by-sa-40;
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.haylin ];
+    maintainers = with lib.maintainers; [ haylin ];
     mainProgram = "txd";
   };
 })

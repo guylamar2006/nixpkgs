@@ -98,7 +98,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://mtazzari.github.io/galario/";
     license = lib.licenses.lgpl3;
-    maintainers = [ lib.maintainers.smaret ];
+    maintainers = with lib.maintainers; [ smaret ];
     platforms = lib.platforms.all;
   };
 })

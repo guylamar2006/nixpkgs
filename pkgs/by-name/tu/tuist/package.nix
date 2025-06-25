@@ -45,7 +45,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     changelog = "https://github.com/tuist/tuist/blob/${finalAttrs.version}/CHANGELOG.md";
     license = lib.licenses.mit;
     sourceProvenance = [ lib.sourceTypes.binaryNativeCode ];
-    maintainers = [ lib.maintainers.DimitarNestorov ];
+    maintainers = with lib.maintainers; [ DimitarNestorov ];
     platforms = lib.platforms.darwin;
     mainProgram = "tuist";
   };

@@ -37,8 +37,8 @@ buildGoModule rec {
       to Slack, Discord, and Telegram.
     '';
     homepage = "https://github.com/projectdiscovery/notify";
-    license = licenses.mit;
-    maintainers = with maintainers; [ hanemile ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ hanemile ];
     mainProgram = "notify";
   };
 }

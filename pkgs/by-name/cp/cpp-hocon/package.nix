@@ -33,11 +33,11 @@ stdenv.mkDerivation rec {
     leatherman
   ];
 
-  meta = with lib; {
+  meta = {
     inherit (src.meta) homepage;
     description = "C++ port of the Typesafe Config library";
-    license = licenses.asl20;
-    maintainers = [ maintainers.womfoo ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ womfoo ];
     platforms = platforms.unix;
   };
 

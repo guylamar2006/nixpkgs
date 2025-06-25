@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Machine-readable components of the Khronos SPIR-V Registry";
     homepage = "https://github.com/KhronosGroup/SPIRV-Headers";
-    license = licenses.mit;
-    maintainers = [ maintainers.ralith ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ralith ];
   };
 }

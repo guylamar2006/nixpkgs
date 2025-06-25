@@ -20,11 +20,11 @@ stdenv.mkDerivation rec {
 
   cmakeFlags = [ "-DCISTA_INSTALL=ON" ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://cista.rocks";
     description = "Simple, high-performance, zero-copy C++ serialization & reflection library";
-    license = licenses.mit;
-    maintainers = [ maintainers.sigmanificient ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ sigmanificient ];
     platforms = platforms.all;
   };
 }

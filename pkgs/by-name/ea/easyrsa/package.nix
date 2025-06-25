@@ -59,11 +59,11 @@ stdenv.mkDerivation rec {
     openssl x509 -in pki/ca.crt -noout -subject | tee /dev/stderr | grep -zq "$EASYRSA_REQ_CN"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Simple shell based CA utility";
     homepage = "https://openvpn.net/";
-    license = licenses.gpl2Only;
-    maintainers = [
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [
       maintainers.offline
       maintainers.numinit
     ];

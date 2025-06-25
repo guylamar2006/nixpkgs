@@ -67,8 +67,8 @@ stdenv.mkDerivation {
       It can transform any sound/music to a texture.
     '';
     homepage = "https://github.com/paulnasca/paulstretch_cpp/";
-    platforms = platforms.linux;
-    license = licenses.gpl2;
+    platforms = lib.platforms.linux;
+    license = lib.licenses.gpl2;
     mainProgram = "paulstretch";
   };
 }

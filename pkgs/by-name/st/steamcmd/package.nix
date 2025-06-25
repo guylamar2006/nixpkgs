@@ -50,7 +50,7 @@ stdenv.mkDerivation {
     description = "Steam command-line tools";
     mainProgram = "steamcmd";
     platforms = platforms.linux;
-    license = licenses.unfreeRedistributable;
+    license = lib.licenses.unfreeRedistributable;
     maintainers = with maintainers; [ tadfisher ];
   };
 }

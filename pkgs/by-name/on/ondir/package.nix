@@ -38,8 +38,8 @@ stdenv.mkDerivation {
       See man ondir for more information
     '';
     homepage = "https://github.com/alecthomas/ondir/";
-    license = licenses.gpl2Only;
-    maintainers = [ maintainers.michaelCTS ];
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [ michaelCTS ];
     mainProgram = "ondir";
   };
 }

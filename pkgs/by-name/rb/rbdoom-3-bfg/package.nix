@@ -71,8 +71,8 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/RobertBeckebans/RBDOOM-3-BFG";
     description = "Doom 3 BFG Edition with modern engine features";
     mainProgram = "RBDoom3BFG";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ Zaechus ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ Zaechus ];
     platforms = platforms.unix;
   };
 }

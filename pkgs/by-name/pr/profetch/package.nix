@@ -35,9 +35,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "System Information Fetcher Written in GNU/Prolog";
     homepage = "https://github.com/RustemB/profetch";
-    license = licenses.gpl3Only;
+    license = lib.licenses.gpl3Only;
     platforms = platforms.all;
-    maintainers = [ maintainers.vel ];
+    maintainers = with lib.maintainers; [ vel ];
     mainProgram = "profetch";
   };
 }

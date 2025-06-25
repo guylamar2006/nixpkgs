@@ -30,8 +30,8 @@ stdenv.mkDerivation rec {
     mainProgram = "seyren";
     homepage = "https://github.com/scobal/seyren";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
-    license = licenses.asl20;
-    maintainers = [ maintainers.offline ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ offline ];
     platforms = platforms.all;
   };
 }

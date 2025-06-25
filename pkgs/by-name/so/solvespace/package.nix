@@ -95,7 +95,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Parametric 3d CAD program";
     license = lib.licenses.gpl3Plus;
-    maintainers = [ lib.maintainers.edef ];
+    maintainers = with lib.maintainers; [ edef ];
     platforms = lib.platforms.linux;
     homepage = "https://solvespace.com";
     changelog = "https://github.com/solvespace/solvespace/raw/v${version}/CHANGELOG.md";

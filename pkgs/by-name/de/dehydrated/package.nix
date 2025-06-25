@@ -53,12 +53,12 @@ stdenv.mkDerivation rec {
     }"
   '';
 
-  meta = with lib; {
+  meta = {
     inherit (src.meta) homepage;
     description = "Letsencrypt/acme client implemented as a shell-script";
     mainProgram = "dehydrated";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.all;
-    maintainers = [ maintainers.pstn ];
+    maintainers = with lib.maintainers; [ pstn ];
   };
 }

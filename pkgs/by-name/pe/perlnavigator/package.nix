@@ -77,6 +77,6 @@ buildNpmPackage rec {
     homepage = "https://github.com/bscan/PerlNavigator/tree/main/server";
     license = lib.licenses.mit;
     mainProgram = "perlnavigator";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

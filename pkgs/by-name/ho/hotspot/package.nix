@@ -88,7 +88,7 @@ stdenv.mkDerivation rec {
       $out/libexec/hotspot-perfparser
   '';
 
-  meta = with lib; {
+  meta = {
     description = "GUI for Linux perf";
     mainProgram = "hotspot";
     longDescription = ''
@@ -102,8 +102,8 @@ stdenv.mkDerivation rec {
       gpl2Only
       gpl3Only
     ];
-    platforms = platforms.linux;
-    maintainers = with maintainers; [
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [
       nh2
       tmarkus
     ];

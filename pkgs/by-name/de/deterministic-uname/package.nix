@@ -44,7 +44,7 @@ replaceVarsWith {
     modDirVersion = if modDirVersion != "" then modDirVersion else "unknown";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Print certain system information (hardcoded with lib/system values)";
     mainProgram = "uname";
     longDescription = ''
@@ -57,7 +57,7 @@ replaceVarsWith {
       different results.
     '';
     license = [ licenses.mit ];
-    maintainers = with maintainers; [ artturin ];
+    maintainers = with lib.maintainers; [ artturin ];
     platforms = platforms.all;
   };
 }

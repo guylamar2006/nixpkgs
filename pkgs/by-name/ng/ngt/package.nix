@@ -27,8 +27,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     homepage = "https://github.com/yahoojapan/NGT";
     description = "Nearest Neighbor Search with Neighborhood Graph and Tree for High-dimensional Data";
-    platforms = platforms.linux ++ platforms.darwin;
-    license = licenses.asl20;
-    maintainers = with maintainers; [ tomberek ];
+    platforms = lib.platforms.linux ++ platforms.darwin;
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ tomberek ];
   };
 }

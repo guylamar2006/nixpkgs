@@ -50,8 +50,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "";
     mainProgram = "pa-applet";
-    license = licenses.bsd2;
-    maintainers = with maintainers; [ ];
-    platforms = platforms.linux;
+    license = lib.licenses.bsd2;
+    maintainers = with lib.maintainers; [ ];
+    platforms = lib.platforms.linux;
   };
 }

@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-Ppuc6Dx3Y4JJ8doEJPCbwnD1+dQSLRuPdWfab+3q2Ug=";
 
-  meta = with lib; {
+  meta = {
     description = "Count the number of lines of LLVM IR across all instantiations of a generic function";
     mainProgram = "cargo-llvm-lines";
     homepage = "https://github.com/dtolnay/cargo-llvm-lines";
@@ -27,7 +27,7 @@ rustPlatform.buildRustPackage rec {
       asl20 # or
       mit
     ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       figsoda
       matthiasbeyer
     ];

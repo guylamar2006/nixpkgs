@@ -50,6 +50,6 @@ python3.pkgs.buildPythonApplication rec {
     homepage = "https://quark-engine.readthedocs.io/";
     changelog = "https://github.com/quark-engine/quark-engine/releases/tag/${src.tag}";
     license = with licenses; [ gpl3Only ];
-    maintainers = with maintainers; [ fab ];
+    maintainers = with lib.maintainers; [ fab ];
   };
 }

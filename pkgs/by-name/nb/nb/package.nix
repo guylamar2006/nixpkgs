@@ -80,8 +80,8 @@ stdenv.mkDerivation rec {
       of features. `nb` is flexible.
     '';
     homepage = "https://xwmx.github.io/nb/";
-    license = licenses.agpl3Plus;
-    maintainers = [ maintainers.toonn ];
+    license = lib.licenses.agpl3Plus;
+    maintainers = with lib.maintainers; [ toonn ];
     platforms = platforms.all;
     mainProgram = "nb";
   };

@@ -46,11 +46,11 @@ buildNpmPackage {
 
   passthru.updateScript = nix-update-script { };
 
-  meta = with lib; {
+  meta = {
     description = "Open Source DocuSign Alternative";
     homepage = "https://github.com/documenso/documenso";
-    license = licenses.agpl3Only;
-    maintainers = with maintainers; [ happysalada ];
+    license = lib.licenses.agpl3Only;
+    maintainers = with lib.maintainers; [ happysalada ];
     platforms = platforms.unix;
   };
 }

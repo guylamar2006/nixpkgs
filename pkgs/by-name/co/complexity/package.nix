@@ -32,6 +32,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.gnu.org/software/complexity/";
 
     platforms = lib.platforms.gnu ++ lib.platforms.linux;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

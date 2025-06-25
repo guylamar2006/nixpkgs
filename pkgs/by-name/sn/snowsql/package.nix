@@ -48,8 +48,8 @@ stdenv.mkDerivation rec {
     description = "Command line client for the Snowflake database";
     homepage = "https://www.snowflake.com";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.unfree;
-    maintainers = with maintainers; [ andehen ];
+    license = lib.licenses.unfree;
+    maintainers = with lib.maintainers; [ andehen ];
     platforms = [ "x86_64-linux" ];
     mainProgram = "snowsql";
   };

@@ -47,6 +47,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/Temptin/SkypeExport";
     license = lib.licenses.gpl2Only;
     platforms = lib.platforms.unix;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 })

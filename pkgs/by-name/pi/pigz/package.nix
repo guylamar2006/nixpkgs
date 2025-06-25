@@ -41,8 +41,8 @@ stdenv.mkDerivation rec {
     homepage = "https://www.zlib.net/pigz/";
     description = "Parallel implementation of gzip for multi-core machines";
     mainProgram = "pigz";
-    maintainers = [ ];
-    license = licenses.zlib;
+    maintainers = with lib.maintainers; [ ];
+    license = lib.licenses.zlib;
     platforms = platforms.unix;
   };
 }

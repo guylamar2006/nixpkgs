@@ -85,7 +85,7 @@ stdenv.mkDerivation {
       end-to-end encryption, powerful extensions, and open-source applications.
     '';
     homepage = "https://standardnotes.org";
-    license = licenses.agpl3Only;
+    license = lib.licenses.agpl3Only;
     maintainers = with maintainers; [
       mgregoire
       chuangzhu

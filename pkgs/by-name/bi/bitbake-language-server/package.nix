@@ -38,6 +38,6 @@ python3.pkgs.buildPythonApplication rec {
     homepage = "https://github.com/Freed-Wu/bitbake-language-server";
     changelog = "https://github.com/Freed-Wu/bitbake-language-server/releases/tag/${version}";
     license = lib.licenses.gpl3;
-    maintainers = [ lib.maintainers.otavio ];
+    maintainers = with lib.maintainers; [ otavio ];
   };
 }

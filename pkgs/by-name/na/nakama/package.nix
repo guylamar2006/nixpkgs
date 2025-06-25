@@ -33,7 +33,7 @@ buildGoModule rec {
     changelog = "https://github.com/heroiclabs/nakama/releases/tag/v${version}";
     license = lib.licenses.asl20;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.qxrein ];
+    maintainers = with lib.maintainers; [ qxrein ];
     mainProgram = "nakama";
   };
 }

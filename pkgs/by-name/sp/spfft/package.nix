@@ -77,8 +77,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Sparse 3D FFT library with MPI, OpenMP, CUDA and ROCm support";
     homepage = "https://github.com/eth-cscs/SpFFT";
-    license = licenses.bsd3;
-    maintainers = [ maintainers.sheepforce ];
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ sheepforce ];
     platforms = platforms.linux;
   };
 }

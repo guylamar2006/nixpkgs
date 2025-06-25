@@ -34,7 +34,7 @@ buildGoModule (finalAttrs: {
     homepage = "https://github.com/kcl-lang/kubectl-kcl";
     changelog = "https://github.com/kcl-lang/kubectl-kcl/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.arichtman ];
+    maintainers = with lib.maintainers; [ arichtman ];
     platforms = lib.platforms.unix;
   };
 })

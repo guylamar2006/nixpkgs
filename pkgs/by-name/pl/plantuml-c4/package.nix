@@ -79,8 +79,8 @@ stdenv.mkDerivation {
     description = "PlantUML bundled with C4-Plantuml and plantuml sprites library";
     mainProgram = "plantuml";
     homepage = "https://github.com/plantuml-stdlib/C4-PlantUML";
-    license = licenses.mit;
-    maintainers = with maintainers; [
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [
       tfc
       anthonyroussel
     ];

@@ -50,7 +50,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "http://hmmer.org/";
     changelog = "https://github.com/EddyRivasLab/hmmer/blob/hmmer-${finalAttrs.version}/release-notes/RELEASE-${finalAttrs.version}.md";
     license = lib.licenses.bsd3;
-    maintainers = [ lib.maintainers.iimog ];
+    maintainers = with lib.maintainers; [ iimog ];
     platforms = lib.platforms.unix;
   };
 })

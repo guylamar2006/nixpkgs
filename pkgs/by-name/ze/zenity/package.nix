@@ -54,6 +54,6 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://gitlab.gnome.org/GNOME/zenity/-/blob/${finalAttrs.version}/NEWS?ref_type=tags";
     license = licenses.lgpl21Plus;
     platforms = platforms.unix;
-    teams = [ teams.gnome ];
+    teams = with lib.teams; [ gnome ];
   };
 })

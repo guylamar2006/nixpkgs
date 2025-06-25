@@ -65,10 +65,10 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     description = "In-circuit debug and programming for ST-Link devices";
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     platforms = platforms.unix;
     badPlatforms = platforms.darwin;
-    maintainers = [
+    maintainers = with lib.maintainers; [
       maintainers.bjornfor
       maintainers.rongcuid
     ];

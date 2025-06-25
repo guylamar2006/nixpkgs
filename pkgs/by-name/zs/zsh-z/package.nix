@@ -28,6 +28,6 @@ stdenvNoCC.mkDerivation {
     homepage = "https://github.com/agkozak/zsh-z";
     license = licenses.mit;
     platforms = platforms.unix;
-    maintainers = [ maintainers.evalexpr ];
+    maintainers = with lib.maintainers; [ evalexpr ];
   };
 }

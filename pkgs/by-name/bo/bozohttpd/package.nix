@@ -101,7 +101,7 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "http://www.eterna23.net/bozohttpd/CHANGES";
     license = lib.licenses.bsd2;
     mainProgram = "bozohttpd";
-    maintainers = [ lib.maintainers.embr ];
+    maintainers = with lib.maintainers; [ embr ];
     platforms = lib.platforms.all;
   };
 })

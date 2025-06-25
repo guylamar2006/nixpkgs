@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
       corner of the screen.
     '';
     license = lib.licenses.bsd3;
-    maintainers = [ lib.maintainers.choochootrain ];
+    maintainers = with lib.maintainers; [ choochootrain ];
     platforms = lib.platforms.linux;
     mainProgram = "xbanish";
   };

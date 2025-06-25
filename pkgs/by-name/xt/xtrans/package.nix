@@ -41,7 +41,7 @@ stdenv.mkDerivation (finalAttrs: {
       x11
       hpndSellVariant
     ];
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     pkgConfigModules = [ "xtrans" ];
     platforms = lib.platforms.unix;
   };

@@ -55,9 +55,9 @@ buildDotnetModule rec {
   meta = with lib; {
     homepage = "https://github.com/mattpannella/pupdate";
     description = "Pupdate - A thing for updating your Analogue Pocket";
-    license = licenses.mit;
-    platforms = platforms.linux;
-    maintainers = with maintainers; [ p-rintz ];
+    license = lib.licenses.mit;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ p-rintz ];
     mainProgram = "pupdate";
   };
 }

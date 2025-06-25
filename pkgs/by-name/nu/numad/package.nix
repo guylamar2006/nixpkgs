@@ -34,8 +34,8 @@ stdenv.mkDerivation {
     description = "User-level daemon that monitors NUMA topology and processes resource consumption to facilitate good NUMA resource access";
     mainProgram = "numad";
     homepage = "https://fedoraproject.org/wiki/Features/numad";
-    license = licenses.lgpl21;
-    platforms = platforms.linux;
-    maintainers = [ ];
+    license = lib.licenses.lgpl21;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ ];
   };
 }

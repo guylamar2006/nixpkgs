@@ -23,8 +23,8 @@ stdenv.mkDerivation rec {
       or/and different numeric formats
     '';
     homepage = "https://www.nongnu.org/numdiff/";
-    license = licenses.gpl3Plus;
-    maintainers = [ ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
   };
 }

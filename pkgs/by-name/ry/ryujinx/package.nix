@@ -115,8 +115,8 @@ buildDotnetModule rec {
       written from scratch and development on the project began in September
       2017.
     '';
-    license = licenses.mit;
-    maintainers = with maintainers; [
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [
       jk
       artemist
     ];

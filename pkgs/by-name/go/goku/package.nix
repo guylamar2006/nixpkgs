@@ -44,7 +44,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     description = "Karabiner configurator";
     homepage = "https://github.com/yqrashawn/GokuRakuJoudo";
     license = lib.licenses.gpl3;
-    maintainers = [ lib.maintainers.nikitavoloboev ];
+    maintainers = with lib.maintainers; [ nikitavoloboev ];
     platforms = lib.platforms.darwin;
   };
 })

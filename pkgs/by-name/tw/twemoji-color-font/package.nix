@@ -41,6 +41,6 @@ stdenv.mkDerivation (finalAttrs: {
       cc-by-40
       mit
     ];
-    maintainers = [ maintainers.fgaz ];
+    maintainers = with lib.maintainers; [ fgaz ];
   };
 })

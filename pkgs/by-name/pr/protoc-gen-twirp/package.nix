@@ -29,7 +29,7 @@ buildGoModule rec {
     description = "Simple RPC framework with protobuf service definitions";
     mainProgram = "protoc-gen-twirp";
     homepage = "https://github.com/twitchtv/twirp";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ jojosch ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ jojosch ];
   };
 }

@@ -36,7 +36,7 @@ appimageTools.wrapAppImage rec {
     description = "Most Complete All-In-One Mod Library for Minecraft with 100+ Mods, FPS Improvements, and more";
     homepage = "https://client.badlion.net";
     license = lib.licenses.unfree;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "badlion-client";
     platforms = [ "x86_64-linux" ];
   };

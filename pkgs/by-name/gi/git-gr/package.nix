@@ -59,7 +59,7 @@ rustPlatform.buildRustPackage {
     changelog = "https://github.com/9999years/git-gr/releases/tag/v${version}";
     description = "Gerrit CLI client";
     license = [ lib.licenses.mit ];
-    maintainers = [ lib.maintainers._9999years ];
+    maintainers = with lib.maintainers; [ _9999years ];
     mainProgram = "git-gr";
   };
 

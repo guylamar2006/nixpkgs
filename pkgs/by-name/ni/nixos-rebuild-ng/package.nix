@@ -157,7 +157,7 @@ python3Packages.buildPythonApplication rec {
     description = "Rebuild your NixOS configuration and switch to it, on local hosts and remote";
     homepage = "https://github.com/NixOS/nixpkgs/tree/master/pkgs/by-name/ni/nixos-rebuild-ng";
     license = lib.licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     teams = [ lib.teams.nixos-rebuild ];
     mainProgram = executable;
   };

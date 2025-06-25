@@ -70,7 +70,7 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/grpc/grpc-java/releases/tag/v${finalAttrs.version}";
     sourceProvenance = [ lib.sourceTypes.binaryNativeCode ];
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.progrm_jarvis ];
+    maintainers = with lib.maintainers; [ progrm_jarvis ];
     homepage = "https://grpc.io/docs/languages/java/generated-code/";
     platforms = [
       # Linux

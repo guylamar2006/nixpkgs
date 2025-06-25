@@ -50,8 +50,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     homepage = "https://github.com/stark/siji";
     description = "Iconic bitmap font based on Stlarch with additional glyphs";
-    license = licenses.gpl2;
+    license = lib.licenses.gpl2;
     platforms = platforms.all;
-    maintainers = [ maintainers.asymmetric ];
+    maintainers = with lib.maintainers; [ asymmetric ];
   };
 }

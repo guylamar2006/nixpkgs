@@ -32,7 +32,7 @@ appimageTools.wrapType2 {
     description = "Streaming music player that finds free music for you";
     homepage = "https://nuclear.js.org/";
     license = lib.licenses.agpl3Plus;
-    maintainers = [ lib.maintainers.NotAShelf ];
+    maintainers = with lib.maintainers; [ NotAShelf ];
     platforms = [ "x86_64-linux" ];
     mainProgram = "nuclear";
   };

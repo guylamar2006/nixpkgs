@@ -70,8 +70,8 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://gitlab.gnome.org/GNOME/retro-gtk";
     changelog = "https://gitlab.gnome.org/GNOME/retro-gtk/-/blob/master/NEWS";
-    license = licenses.gpl3Plus;
-    maintainers = [ maintainers.DamienCassou ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ DamienCassou ];
     platforms = platforms.all;
     broken = stdenv.hostPlatform.isDarwin; # never built on Hydra https://hydra.nixos.org/job/nixpkgs/trunk/retro-gtk.x86_64-darwin
   };

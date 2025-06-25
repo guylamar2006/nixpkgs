@@ -42,8 +42,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "PAM authentication module against a MySQL database";
     homepage = "https://github.com/NigelCunningham/pam-MySQL";
-    license = licenses.gpl2Plus;
-    platforms = platforms.linux;
-    maintainers = with maintainers; [ netali ];
+    license = lib.licenses.gpl2Plus;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ netali ];
   };
 }

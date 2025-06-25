@@ -46,6 +46,6 @@ stdenv.mkDerivation (finalAttrs: {
       mit
       gpl2Plus
     ];
-    maintainers = [ lib.maintainers.sfrijters ];
+    maintainers = with lib.maintainers; [ sfrijters ];
   };
 })

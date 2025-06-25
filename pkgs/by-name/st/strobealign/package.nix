@@ -32,7 +32,7 @@ stdenv.mkDerivation (self: {
     mainProgram = "strobealign";
     license = lib.licenses.mit;
     homepage = "https://github.com/ksahlin/strobealign";
-    maintainers = [ lib.maintainers.jbedo ];
+    maintainers = with lib.maintainers; [ jbedo ];
     platforms = lib.platforms.unix;
   };
 })

@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Game starring a fruit-eating snake";
     homepage = "https://shh.thathost.com/pub-unix/html/snake4.html";
-    license = licenses.artistic1;
+    license = lib.licenses.artistic1;
     platforms = platforms.linux;
   };
 }

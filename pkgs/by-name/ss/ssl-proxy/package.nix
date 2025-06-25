@@ -27,9 +27,9 @@ buildGoModule {
       notebook or your team jenkins instance. ssl-proxy autogenerates SSL certs and proxies
       HTTPS traffic to an existing HTTP server in a single command.
     '';
-    license = licenses.mit;
+    license = lib.licenses.mit;
     mainProgram = "ssl-proxy";
-    maintainers = [ maintainers.konst-aa ];
+    maintainers = with lib.maintainers; [ konst-aa ];
     platforms = platforms.linux ++ platforms.darwin ++ platforms.windows;
   };
 }

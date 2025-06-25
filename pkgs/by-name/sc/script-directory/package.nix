@@ -41,7 +41,7 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://github.com/ianthehenry/sd";
     changelog = "https://github.com/ianthehenry/sd/tree/${src.rev}#changelog";
     license = lib.licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "sd";
   };
 }

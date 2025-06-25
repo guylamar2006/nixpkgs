@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     homepage = "https://potrace.sourceforge.net/";
     description = "Tool for tracing a bitmap, which means, transforming a bitmap into a smooth, scalable image";
     platforms = platforms.unix;
-    maintainers = [ maintainers.pSub ];
-    license = licenses.gpl2;
+    maintainers = with lib.maintainers; [ pSub ];
+    license = lib.licenses.gpl2;
   };
 }

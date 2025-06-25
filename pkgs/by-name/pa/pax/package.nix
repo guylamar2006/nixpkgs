@@ -32,8 +32,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "POSIX standard archive tool from MirBSD";
     homepage = "https://www.mirbsd.org/pax.htm";
-    license = licenses.bsd3;
-    maintainers = with maintainers; [ ];
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
   };
 }

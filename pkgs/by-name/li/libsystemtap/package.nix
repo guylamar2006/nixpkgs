@@ -35,12 +35,12 @@ stdenv.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Statically defined probes development files";
     homepage = "https://sourceware.org/systemtap/";
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     platforms = elfutils.meta.platforms or platforms.unix;
     badPlatforms = elfutils.meta.badPlatforms or [ ];
-    maintainers = [ lib.maintainers.workflow ];
+    maintainers = with lib.maintainers; [ workflow ];
   };
 }

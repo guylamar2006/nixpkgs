@@ -36,7 +36,7 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://github.com/cmake-lint/cmake-lint";
     changelog = "https://github.com/cmake-lint/cmake-lint/releases/tag/${version}";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.luftmensch-luftmensch ];
+    maintainers = with lib.maintainers; [ luftmensch-luftmensch ];
     mainProgram = "cmakelint";
   };
 }

@@ -26,7 +26,7 @@ stdenvNoCC.mkDerivation {
   meta = {
     homepage = "http://www.i18nguy.com/unicode/unicode-font.html";
     description = "Unicode Plane 1 Osmanya script font";
-    maintainers = [ lib.maintainers.raskin ];
+    maintainers = with lib.maintainers; [ raskin ];
     license = lib.licenses.unfreeRedistributable; # upstream uses the term copyleft only
     platforms = lib.platforms.all;
   };

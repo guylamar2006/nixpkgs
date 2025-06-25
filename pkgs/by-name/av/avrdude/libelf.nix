@@ -31,6 +31,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/avrdudes/libelf";
     license = lib.licenses.lgpl2Plus;
     platforms = lib.platforms.all;
-    maintainers = [ lib.maintainers.bjornfor ];
+    maintainers = with lib.maintainers; [ bjornfor ];
   };
 }

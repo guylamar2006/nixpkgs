@@ -57,7 +57,7 @@ rustPlatform.buildRustPackage rec {
       asl20 # OR
       mit
     ];
-    maintainers = with maintainers; [ nickcao ];
+    maintainers = with lib.maintainers; [ nickcao ];
     mainProgram = "oct";
   };
 }

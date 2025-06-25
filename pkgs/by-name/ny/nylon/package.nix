@@ -32,9 +32,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "http://monkey.org/~marius/nylon";
     description = "Proxy server, supporting SOCKS 4 and 5, as well as a mirror mode";
-    license = licenses.bsdOriginal;
-    maintainers = with maintainers; [ edwtjo ];
-    platforms = platforms.linux;
+    license = lib.licenses.bsdOriginal;
+    maintainers = with lib.maintainers; [ edwtjo ];
+    platforms = lib.platforms.linux;
     mainProgram = "nylon";
   };
 }

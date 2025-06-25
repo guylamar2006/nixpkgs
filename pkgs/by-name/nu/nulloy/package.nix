@@ -60,9 +60,9 @@ stdenv.mkDerivation rec {
     description = "Music player with a waveform progress bar";
     homepage = "https://nulloy.com";
     changelog = "https://github.com/nulloy/nulloy/blob/${src.rev}/ChangeLog";
-    license = licenses.gpl3Only;
+    license = lib.licenses.gpl3Only;
     mainProgram = "nulloy";
-    maintainers = with maintainers; [ aleksana ];
+    maintainers = with lib.maintainers; [ aleksana ];
     platforms = platforms.all;
     broken = stdenv.hostPlatform.isDarwin;
   };

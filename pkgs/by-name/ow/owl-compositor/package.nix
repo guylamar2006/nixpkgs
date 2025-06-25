@@ -83,8 +83,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Portable Wayland compositor in Objective-C";
     homepage = "https://github.com/owl-compositor/owl";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ wegank ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ wegank ];
     platforms = platforms.unix;
     mainProgram = "Owl";
   };

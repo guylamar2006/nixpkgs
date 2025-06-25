@@ -35,7 +35,7 @@ stdenv.mkDerivation {
     description = "Program for testing if X is running";
     license = lib.licenses.free;
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.romildo ];
+    maintainers = with lib.maintainers; [ romildo ];
     mainProgram = "RunningX";
   };
 }

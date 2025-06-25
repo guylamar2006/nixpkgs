@@ -67,7 +67,7 @@ stdenv.mkDerivation (finalAttrs: {
       the rows and columns.
     '';
     license = lib.licenses.bsd3;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
   };
 })

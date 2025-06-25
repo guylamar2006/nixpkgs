@@ -17,7 +17,7 @@ stdenv.mkDerivation rec {
     description = "Console progress bar";
     homepage = "https://clpbar.sourceforge.net/";
     license = lib.licenses.gpl2Only;
-    maintainers = [ lib.maintainers.rdnetto ];
+    maintainers = with lib.maintainers; [ rdnetto ];
     platforms = lib.platforms.all;
     mainProgram = "bar";
   };

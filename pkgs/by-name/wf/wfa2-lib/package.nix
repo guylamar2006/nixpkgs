@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     description = "Wavefront alignment algorithm library v2";
     homepage = "https://github.com/smarco/WFA2-lib";
     license = licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.linux;
   };
 }

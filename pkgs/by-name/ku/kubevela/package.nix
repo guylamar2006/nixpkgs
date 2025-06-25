@@ -60,7 +60,7 @@ buildGoModule rec {
     downloadPage = "https://github.com/kubevela/kubevela";
     homepage = "https://kubevela.io/";
     license = lib.licenses.asl20;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "vela";
   };
 }

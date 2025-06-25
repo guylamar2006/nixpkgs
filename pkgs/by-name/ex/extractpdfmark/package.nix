@@ -36,11 +36,11 @@ stdenv.mkDerivation rec {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/trueroad/extractpdfmark";
     description = "Extract page mode and named destinations as PDFmark from PDF";
-    license = licenses.gpl3Plus;
-    maintainers = [ maintainers.samueltardieu ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ samueltardieu ];
     platforms = platforms.all;
     mainProgram = "extractpdfmark";
   };

@@ -43,7 +43,7 @@ let
         changelog = "https://github.com/xremap/xremap/blob/${src.tag}/CHANGELOG.md";
         license = lib.licenses.mit;
         mainProgram = "xremap";
-        maintainers = [ lib.maintainers.hakan-demirli ];
+        maintainers = with lib.maintainers; [ hakan-demirli ];
         platforms = lib.platforms.linux;
       };
     };

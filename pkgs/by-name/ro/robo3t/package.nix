@@ -96,8 +96,8 @@ stdenv.mkDerivation rec {
     description = "Query GUI for mongodb. Formerly called Robomongo";
     platforms = [ "x86_64-linux" ];
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ eperuffo ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ eperuffo ];
     mainProgram = "robo3t";
   };
 }

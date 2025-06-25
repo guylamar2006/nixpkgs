@@ -42,7 +42,7 @@ buildGoModule rec {
   meta = with lib; {
     description = "SSH agent with support for TPM sealed keys for public key authentication";
     homepage = "https://github.com/Foxboron/ssh-tpm-agent";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.linux;
     maintainers = with maintainers; [ sgo ];
     mainProgram = "ssh-tpm-agent";

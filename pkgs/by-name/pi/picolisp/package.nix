@@ -54,8 +54,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Pragmatic programming language";
     homepage = "https://picolisp.com/";
-    license = licenses.mit;
-    maintainers = with maintainers; [ nat-418 ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ nat-418 ];
     platforms = platforms.all;
   };
 }

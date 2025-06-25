@@ -50,7 +50,7 @@ stdenv.mkDerivation (finalAttrs: {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Extremely fast compression algorithm";
     longDescription = ''
       Very fast lossless compression algorithm, providing compression speed
@@ -66,6 +66,6 @@ stdenv.mkDerivation (finalAttrs: {
     ];
     platforms = platforms.all;
     mainProgram = "lz4";
-    maintainers = [ maintainers.tobim ];
+    maintainers = with lib.maintainers; [ tobim ];
   };
 })

@@ -49,11 +49,11 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description = "Random generator of C programs";
     homepage = "https://embed.cs.utah.edu/csmith";
     # Officially, the license is this: https://github.com/csmith-project/csmith/blob/master/COPYING
-    license = licenses.bsd2;
+    license = lib.licenses.bsd2;
     longDescription = ''
       Csmith is a tool that can generate random C programs that statically and
       dynamically conform to the C99 standard. It is useful for stress-testing
@@ -61,7 +61,7 @@ stdenv.mkDerivation rec {
       Csmith has found bugs in every tool that it has tested, and has been used
       to find and report more than 400 previously unknown compiler bugs.
     '';
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
   };
 }

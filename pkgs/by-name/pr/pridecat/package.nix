@@ -21,8 +21,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Like cat, but more colorful";
     homepage = "https://github.com/lunasorcery/pridecat";
-    license = licenses.cc-by-nc-sa-40;
-    maintainers = with maintainers; [ lunarequest ];
+    license = lib.licenses.cc-by-nc-sa-40;
+    maintainers = with lib.maintainers; [ lunarequest ];
     mainProgram = "pridecat";
   };
 }

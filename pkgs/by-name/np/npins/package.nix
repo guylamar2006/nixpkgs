@@ -50,7 +50,7 @@ rustPlatform.buildRustPackage rec {
     description = "Simple and convenient dependency pinning for Nix";
     mainProgram = "npins";
     homepage = "https://github.com/andir/npins";
-    license = licenses.eupl12;
-    maintainers = with maintainers; [ piegames ];
+    license = lib.licenses.eupl12;
+    maintainers = with lib.maintainers; [ piegames ];
   };
 }

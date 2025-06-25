@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/iblech/sshlatex";
     license = lib.licenses.gpl3Plus; # actually dual-licensed gpl3Plus | lppl13cplus
     platforms = lib.platforms.all;
-    maintainers = [ maintainers.iblech ];
+    maintainers = with lib.maintainers; [ iblech ];
     mainProgram = "sshlatex";
   };
 }

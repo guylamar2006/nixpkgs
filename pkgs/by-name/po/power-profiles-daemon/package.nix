@@ -136,9 +136,9 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://gitlab.freedesktop.org/upower/power-profiles-daemon";
     description = "Makes user-selected power profiles handling available over D-Bus";
     mainProgram = "powerprofilesctl";
-    platforms = platforms.linux;
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [
+    platforms = lib.platforms.linux;
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [
       mvnetbiz
       picnoir
       lyndeno

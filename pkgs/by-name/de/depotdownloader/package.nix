@@ -27,7 +27,7 @@ buildDotnetModule rec {
     description = "Steam depot downloader utilizing the SteamKit2 library";
     changelog = "https://github.com/SteamRE/DepotDownloader/releases/tag/DepotDownloader_${version}";
     license = lib.licenses.gpl2Only;
-    maintainers = [ lib.maintainers.babbaj ];
+    maintainers = with lib.maintainers; [ babbaj ];
     platforms = [
       "x86_64-linux"
       "aarch64-linux"

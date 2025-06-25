@@ -23,11 +23,11 @@ appimageTools.wrapType2 {
       --replace 'Exec=AppRun' 'Exec=${pname}'
     cp -r ${appimageContents}/usr/share/icons $out/share
   '';
-  meta = with lib; {
+  meta = {
     description = "French TV service";
     homepage = "https://www.molotov.tv/";
     license = with licenses; [ unfree ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       apeyroux
       freezeboy
     ];

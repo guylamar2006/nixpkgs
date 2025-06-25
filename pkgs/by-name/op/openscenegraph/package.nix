@@ -140,7 +140,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "3D graphics toolkit";
     homepage = "http://www.openscenegraph.org/";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       aanderse
       raskin
     ];

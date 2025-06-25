@@ -25,6 +25,6 @@ rustPlatform.buildRustPackage rec {
       mit # or
       asl20
     ];
-    maintainers = [ lib.maintainers.eymeric ];
+    maintainers = with lib.maintainers; [ eymeric ];
   };
 }

@@ -63,6 +63,6 @@ stdenv.mkDerivation (finalAttrs: {
 
     homepage = "https://groups.csail.mit.edu/mac/users/gjs/6.5160/installation.html";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ lib.maintainers.fbeffa ];
+    maintainers = with lib.maintainers; [ fbeffa ];
   };
 })

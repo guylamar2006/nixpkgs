@@ -56,8 +56,8 @@ flutter.buildFlutterApplication rec {
     description = "Elegant virtual machine manager for the desktop";
     homepage = "https://github.com/quickemu-project/quickgui";
     changelog = "https://github.com/quickemu-project/quickgui/releases/";
-    license = licenses.mit;
-    maintainers = with maintainers; [
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [
       flexiondotorg
       heyimnova
     ];

@@ -26,6 +26,6 @@ stdenv.mkDerivation rec {
     description = "POSIX man-pages (0p, 1p, 3p)";
     homepage = "https://www.kernel.org/doc/man-pages/";
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.sternenseemann ];
+    maintainers = with lib.maintainers; [ sternenseemann ];
   };
 }

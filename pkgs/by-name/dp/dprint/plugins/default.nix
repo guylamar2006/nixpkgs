@@ -16,7 +16,7 @@ let
       initConfig,
       updateUrl,
       license ? lib.licenses.mit,
-      maintainers ? [ lib.maintainers.phanirithvij ],
+      maintainers ? [ phanirithvij ],
     }:
     stdenv.mkDerivation (finalAttrs: {
       inherit pname version;

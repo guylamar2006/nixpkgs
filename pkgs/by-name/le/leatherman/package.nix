@@ -30,11 +30,11 @@ stdenv.mkDerivation rec {
     ruby
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/puppetlabs/leatherman/";
     description = "Collection of C++ and CMake utility libraries";
-    license = licenses.asl20;
-    maintainers = [ maintainers.womfoo ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ womfoo ];
     platforms = platforms.unix;
   };
 

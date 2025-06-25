@@ -31,8 +31,8 @@ stdenv.mkDerivation rec {
     description = "Quick-and-dirty, literate-programming-style documentation generator for / in POSIX shell";
     mainProgram = "shocco";
     homepage = "https://rtomayko.github.io/shocco/";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.all;
-    maintainers = with maintainers; [ dotlambda ];
+    maintainers = with lib.maintainers; [ dotlambda ];
   };
 }

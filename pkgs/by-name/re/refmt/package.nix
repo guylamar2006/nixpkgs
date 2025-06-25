@@ -21,7 +21,7 @@ buildGoModule rec {
     description = "Reformat HCL <-> JSON <-> YAML";
     mainProgram = "refmt";
     homepage = "https://github.com/rjeczalik/refmt";
-    license = licenses.agpl3Only;
+    license = lib.licenses.agpl3Only;
     maintainers = with lib.maintainers; [ deemp ];
   };
 }

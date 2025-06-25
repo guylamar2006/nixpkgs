@@ -45,7 +45,7 @@ stdenvNoCC.mkDerivation {
       course Orbitron could also be used on the posters for the movies
       portraying this inevitable future.
     '';
-    license = licenses.ofl;
+    license = lib.licenses.ofl;
     platforms = platforms.all;
     maintainers = with lib.maintainers; [
       leenaars

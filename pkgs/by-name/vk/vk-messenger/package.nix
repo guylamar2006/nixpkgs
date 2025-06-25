@@ -40,7 +40,7 @@ let
     homepage = "https://vk.com/messenger";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
     license = licenses.unfree;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = [
       "i686-linux"
       "x86_64-linux"

@@ -45,8 +45,8 @@ stdenv.mkDerivation rec {
           Gouy M., Guindon S. & Gascuel O. (2010) SeaView version 4 : a multiplatform graphical user interface for sequence alignment and phylogenetic tree building. Molecular Biology and Evolution 27(2):221-224.
     '';
     homepage = "https://doua.prabi.fr/software/seaview";
-    license = licenses.gpl3;
-    maintainers = [ maintainers.iimog ];
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ iimog ];
     platforms = platforms.linux;
   };
 }

@@ -31,11 +31,11 @@ stdenvNoCC.mkDerivation {
     patchShebangs --host src/*
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Collection of small shell utilities to fetch system information";
     homepage = "https://github.com/lptstr/fetchutils";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ moni ];
+    maintainers = with lib.maintainers; [ moni ];
   };
 }

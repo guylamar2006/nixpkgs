@@ -26,6 +26,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     homepage = "https://unifoundry.com/unifont/";
     license = lib.licenses.gpl2Plus;
     platforms = lib.platforms.all;
-    maintainers = [ lib.maintainers.qxrein ];
+    maintainers = with lib.maintainers; [ qxrein ];
   };
 })

@@ -53,8 +53,8 @@ stdenvNoCC.mkDerivation rec {
   meta = with lib; {
     description = "Various data formats for the SPDX License List";
     homepage = "https://github.com/spdx/license-list-data";
-    license = licenses.cc0;
-    maintainers = with maintainers; [
+    license = lib.licenses.cc0;
+    maintainers = with lib.maintainers; [
       oxzi
       c0bw3b
     ];

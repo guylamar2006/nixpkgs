@@ -28,8 +28,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Smooth blue theme based on Materia Design";
     homepage = "https://www.opencode.net/ju1464/Snowblind";
-    license = licenses.gpl3;
+    license = lib.licenses.gpl3;
     platforms = platforms.unix;
-    maintainers = [ maintainers.romildo ];
+    maintainers = with lib.maintainers; [ romildo ];
   };
 }

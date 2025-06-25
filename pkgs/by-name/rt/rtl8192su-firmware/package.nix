@@ -33,8 +33,8 @@ stdenvNoCC.mkDerivation {
   meta = with lib; {
     description = "Firmware for Realtek RTL8188SU/RTL8191SU/RTL8192SU";
     homepage = "https://github.com/chunkeey/rtl8192su";
-    license = licenses.unfreeRedistributableFirmware;
-    maintainers = with maintainers; [ mic92 ];
+    license = lib.licenses.unfreeRedistributableFirmware;
+    maintainers = with lib.maintainers; [ mic92 ];
     platforms = with platforms; linux;
   };
 }

@@ -57,7 +57,7 @@ stdenvNoCC.mkDerivation {
       lgpl3
     ];
     # darwin cannot deal with file names differing only in case
-    platforms = platforms.linux;
-    maintainers = with maintainers; [ romildo ];
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ romildo ];
   };
 }

@@ -32,8 +32,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://nifti-imaging.github.io";
     description = "Medical imaging format C API";
-    maintainers = with maintainers; [ bcdarwin ];
+    maintainers = with lib.maintainers; [ bcdarwin ];
     platforms = platforms.unix;
-    license = licenses.publicDomain;
+    license = lib.licenses.publicDomain;
   };
 }

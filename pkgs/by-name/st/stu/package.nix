@@ -27,7 +27,7 @@ rustPlatform.buildRustPackage rec {
     changelog = "https://github.com/lusingander/stu/releases/tag/v${version}";
     homepage = "https://lusingander.github.io/stu/";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.Nebucatnetzer ];
+    maintainers = with lib.maintainers; [ Nebucatnetzer ];
     mainProgram = "stu";
   };
 }

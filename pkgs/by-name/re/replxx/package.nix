@@ -25,8 +25,8 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/AmokHuginnsson/replxx";
     changelog = "https://github.com/AmokHuginnsson/replxx/releases/tag/release-${finalAttrs.version}";
     description = "Readline and libedit replacement that supports UTF-8, syntax highlighting, hints and Windows and is BSD licensed";
-    license = licenses.bsd3;
-    maintainers = [ ];
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
   };
 })

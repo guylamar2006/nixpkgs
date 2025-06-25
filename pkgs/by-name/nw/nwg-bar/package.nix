@@ -48,8 +48,8 @@ buildGoModule rec {
     description = "GTK3-based button bar for sway and other wlroots-based compositors";
     mainProgram = "nwg-bar";
     homepage = "https://github.com/nwg-piotr/nwg-bar";
-    license = licenses.mit;
-    platforms = platforms.linux;
-    maintainers = with maintainers; [ sei40kr ];
+    license = lib.licenses.mit;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ sei40kr ];
   };
 }

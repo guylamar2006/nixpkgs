@@ -34,6 +34,6 @@ stdenv.mkDerivation rec {
       lppl13c
       free
     ];
-    maintainers = [ maintainers.yrashk ];
+    maintainers = with lib.maintainers; [ yrashk ];
   };
 }

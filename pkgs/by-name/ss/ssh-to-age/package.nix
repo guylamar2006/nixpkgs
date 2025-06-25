@@ -28,7 +28,7 @@ buildGoModule rec {
   meta = with lib; {
     description = "Convert ssh private keys in ed25519 format to age keys";
     homepage = "https://github.com/Mic92/ssh-to-age";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with maintainers; [ mic92 ];
     mainProgram = "ssh-to-age";
   };

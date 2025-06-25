@@ -55,6 +55,6 @@ python3.pkgs.buildPythonApplication rec {
     mainProgram = "yarGen.py";
     homepage = "https://github.com/Neo23x0/yarGen";
     license = licenses.bsd3;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

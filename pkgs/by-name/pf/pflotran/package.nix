@@ -77,7 +77,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "Parallel, multi-physics simulation code for subsurface flow and transport";
     homepage = "https://pflotran.org/";
-    license = licenses.lgpl3Only;
-    maintainers = [ maintainers.sheepforce ];
+    license = lib.licenses.lgpl3Only;
+    maintainers = with lib.maintainers; [ sheepforce ];
   };
 })

@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "stderr in red";
     homepage = "https://github.com/sickill/stderred";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with maintainers; [ vojta001 ];
     platforms = platforms.unix;
   };

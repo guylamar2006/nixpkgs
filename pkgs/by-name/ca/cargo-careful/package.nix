@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-5uMz1j0ZnA4wPMfC2SeY33zsiTt2NNZnWh9th2UJiNI=";
 
-  meta = with lib; {
+  meta = {
     description = "Tool to execute Rust code carefully, with extra checking along the way";
     mainProgram = "cargo-careful";
     homepage = "https://github.com/RalfJung/cargo-careful";
@@ -26,7 +26,7 @@ rustPlatform.buildRustPackage rec {
       asl20
       mit
     ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       figsoda
       matthiasbeyer
     ];

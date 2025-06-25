@@ -32,7 +32,7 @@ stdenv.mkDerivation {
   meta = {
     description = "Texture synthesis from examples";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.raskin ];
+    maintainers = with lib.maintainers; [ raskin ];
     platforms = lib.platforms.linux;
   };
 }

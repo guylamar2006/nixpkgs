@@ -39,6 +39,6 @@ buildGoModule rec {
     homepage = "https://github.com/linuxboot/fiano";
     changelog = "https://github.com/linuxboot/fiano/blob/v${version}/RELEASES.md";
     license = lib.licenses.bsd3;
-    maintainers = [ lib.maintainers.jmbaur ];
+    maintainers = with lib.maintainers; [ jmbaur ];
   };
 }

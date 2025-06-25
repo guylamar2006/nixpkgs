@@ -45,8 +45,8 @@ stdenvNoCC.mkDerivation rec {
       way that is, otherwise as `trash-put` itself, compatible to GNUs `rm`
       and `rmdir`.
     '';
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ peelz ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ peelz ];
     platforms = platforms.all;
   };
 }

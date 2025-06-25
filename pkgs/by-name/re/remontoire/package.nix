@@ -52,8 +52,8 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Small GTK app for presenting keybinding hints";
     mainProgram = "remontoire";
     homepage = "https://github.com/regolith-linux/remontoire";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     platforms = platforms.linux;
-    maintainers = with maintainers; [ aacebedo ];
+    maintainers = with lib.maintainers; [ aacebedo ];
   };
 })

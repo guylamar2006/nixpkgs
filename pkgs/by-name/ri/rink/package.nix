@@ -62,7 +62,7 @@ rustPlatform.buildRustPackage rec {
       mpl20
       gpl3Plus
     ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       sb0
       Br1ght0ne
     ];

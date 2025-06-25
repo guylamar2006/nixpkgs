@@ -25,7 +25,7 @@ buildGoModule rec {
   meta = with lib; {
     description = "Test ssh login key acceptance without having the private key";
     homepage = "https://github.com/benjojo/ssh-key-confirmer";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with maintainers; [ oxzi ];
     mainProgram = "ssh-key-confirmer";
   };

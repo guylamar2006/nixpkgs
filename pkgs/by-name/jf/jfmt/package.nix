@@ -24,6 +24,6 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://github.com/scruffystuffs/jfmt.rs";
     changelog = "https://github.com/scruffystuffs/jfmt.rs/blob/${version}/CHANGELOG.md";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.psibi ];
+    maintainers = with lib.maintainers; [ psibi ];
   };
 }

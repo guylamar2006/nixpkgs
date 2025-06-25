@@ -47,8 +47,8 @@ stdenv.mkDerivation rec {
     broken = (stdenv.hostPlatform.isLinux && stdenv.hostPlatform.isAarch64);
     homepage = "https://github.com/jpcima/quadrafuzz";
     description = "Multi-band fuzz distortion plugin";
-    maintainers = [ maintainers.magnetophon ];
-    platforms = platforms.linux;
-    license = licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ magnetophon ];
+    platforms = lib.platforms.linux;
+    license = lib.licenses.gpl3Plus;
   };
 }

@@ -78,7 +78,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "SDL image library";
     homepage = "https://github.com/libsdl-org/SDL_image";
     license = lib.licenses.zlib;
-    maintainers = [ lib.maintainers.evythedemon ];
+    maintainers = with lib.maintainers; [ evythedemon ];
     teams = [ lib.teams.sdl ];
     inherit (sdl3.meta) platforms;
   };

@@ -18,12 +18,12 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-QXT7utSEF5S5MWAng4fKMoloUJovxLT8oLUK9dJEb/0=";
 
-  meta = with lib; {
+  meta = {
     description = "Per window keyboard layout (language) for Hyprland wayland compositor";
     homepage = "https://github.com/coffebar/hyprland-per-window-layout";
-    license = licenses.mit;
-    maintainers = [ maintainers.azazak123 ];
-    platforms = platforms.linux;
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ azazak123 ];
+    platforms = lib.platforms.linux;
     mainProgram = "hyprland-per-window-layout";
   };
 }

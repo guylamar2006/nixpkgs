@@ -30,6 +30,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/madmaxms/theme-jade-1";
     license = with licenses; [ gpl3Only ];
     platforms = platforms.linux;
-    maintainers = [ maintainers.romildo ];
+    maintainers = with lib.maintainers; [ romildo ];
   };
 }

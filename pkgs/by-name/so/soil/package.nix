@@ -38,8 +38,8 @@ stdenv.mkDerivation {
       into OpenGL.
     '';
     homepage = "https://www.lonesock.net/soil.html";
-    license = licenses.publicDomain;
+    license = lib.licenses.publicDomain;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ r-burns ];
+    maintainers = with lib.maintainers; [ r-burns ];
   };
 }

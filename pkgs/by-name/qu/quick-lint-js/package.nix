@@ -67,8 +67,8 @@ stdenv.mkDerivation {
     description = "Find bugs in Javascript programs";
     mainProgram = "quick-lint-js";
     homepage = "https://quick-lint-js.com";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ ratsclub ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ ratsclub ];
     platforms = platforms.all;
   };
 

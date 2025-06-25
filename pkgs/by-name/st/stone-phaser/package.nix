@@ -47,8 +47,8 @@ stdenv.mkDerivation rec {
     broken = (stdenv.hostPlatform.isLinux && stdenv.hostPlatform.isAarch64);
     homepage = "https://github.com/jpcima/stone-phaser";
     description = "Classic analog phaser effect, made with DPF and Faust";
-    maintainers = [ maintainers.magnetophon ];
+    maintainers = with lib.maintainers; [ magnetophon ];
     platforms = platforms.linux;
-    license = licenses.boost;
+    license = lib.licenses.boost;
   };
 }

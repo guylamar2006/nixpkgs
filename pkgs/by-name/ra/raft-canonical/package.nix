@@ -68,8 +68,8 @@ stdenv.mkDerivation rec {
       snapshots).
     '';
     homepage = "https://github.com/canonical/raft";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     platforms = platforms.linux;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

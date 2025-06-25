@@ -70,7 +70,7 @@ lib.checkListOfEnum "${pname}: color variants" [ "standard" "dark" "all" ] color
       description = "Flat colorful design icon theme";
       homepage = "https://github.com/vinceliuice/Qogir-icon-theme";
       license = with licenses; [ gpl3Only ];
-      platforms = platforms.linux;
-      maintainers = with maintainers; [ romildo ];
+      platforms = lib.platforms.linux;
+      maintainers = with lib.maintainers; [ romildo ];
     };
   }

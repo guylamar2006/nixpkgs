@@ -25,7 +25,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
       asl20 # or
       mit
     ];
-    maintainers = [ lib.maintainers.awwpotato ];
+    maintainers = with lib.maintainers; [ awwpotato ];
     mainProgram = "mandown";
   };
 })

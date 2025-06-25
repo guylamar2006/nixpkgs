@@ -187,8 +187,8 @@ python311Packages.buildPythonApplication {
   meta = with lib; {
     description = "Scalable, User-Friendly Source Control System";
     homepage = "https://sapling-scm.com";
-    license = licenses.gpl2Only;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [
       pbar
       thoughtpolice
     ];

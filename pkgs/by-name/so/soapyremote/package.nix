@@ -37,8 +37,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     homepage = "https://github.com/pothosware/SoapyRemote";
     description = "SoapySDR plugin for remote access to SDRs";
-    license = licenses.boost;
-    maintainers = with maintainers; [ markuskowa ];
+    license = lib.licenses.boost;
+    maintainers = with lib.maintainers; [ markuskowa ];
     platforms = platforms.unix;
     mainProgram = "SoapySDRServer";
   };

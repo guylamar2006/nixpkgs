@@ -62,6 +62,6 @@ rustPlatform.buildRustPackage {
       lib.licenses.asl20 # or
       lib.licenses.mit
     ];
-    maintainers = [ lib.maintainers.pigeonf ];
+    maintainers = with lib.maintainers; [ pigeonf ];
   };
 }

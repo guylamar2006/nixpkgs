@@ -43,8 +43,8 @@ stdenv.mkDerivation (finalAttrs: {
 
   meta = with lib; {
     homepage = "https://github.com/cloudinary/ssimulacra2";
-    maintainers = [ maintainers.viraptor ];
-    license = licenses.bsd3;
+    maintainers = with lib.maintainers; [ viraptor ];
+    license = lib.licenses.bsd3;
     description = "Perceptual image comparison tool";
   };
 })

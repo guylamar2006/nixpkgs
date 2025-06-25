@@ -288,8 +288,8 @@ stdenvNoCC.mkDerivation rec {
       binaryBytecode
       binaryNativeCode
     ];
-    license = licenses.asl20;
-    maintainers = with maintainers; [
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [
       emmanuelrosa
       _1000101
     ];

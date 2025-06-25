@@ -28,6 +28,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "http://taku910.github.io/zinnia/";
     license = lib.licenses.bsd2;
     platforms = lib.platforms.unix;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 })

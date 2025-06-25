@@ -62,7 +62,7 @@ buildGoModule (finalAttrs: {
     homepage = "https://github.com/werf/nelm";
     changelog = "https://github.com/werf/nelm/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.azahi ];
+    maintainers = with lib.maintainers; [ azahi ];
     mainProgram = "nelm";
   };
 })

@@ -34,6 +34,6 @@ stdenv.mkDerivation (finalAttrs: {
     platforms = platforms.all;
     homepage = "https://github.com/newdigate/teensy-cmake-macros";
     license = licenses.mit;
-    maintainers = [ maintainers.michaeldonovan ];
+    maintainers = with lib.maintainers; [ michaeldonovan ];
   };
 })

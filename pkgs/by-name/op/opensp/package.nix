@@ -72,9 +72,9 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     description = "Suite of SGML/XML processing tools";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     homepage = "https://openjade.sourceforge.net/";
     platforms = platforms.unix;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

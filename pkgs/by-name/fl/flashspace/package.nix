@@ -35,7 +35,7 @@ stdenv.mkDerivation {
     changelog = "https://github.com/wojciech-kulik/FlashSpace/releases/tag/v${version}";
     description = "Blazingly fast virtual workspace manager for macOS";
     platforms = lib.platforms.darwin;
-    maintainers = [ lib.maintainers.marcusramberg ];
+    maintainers = with lib.maintainers; [ marcusramberg ];
     sourceProvenance = [ lib.sourceTypes.binaryNativeCode ];
   };
 }

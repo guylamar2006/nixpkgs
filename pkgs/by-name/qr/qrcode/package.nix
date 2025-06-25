@@ -29,8 +29,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Small QR-code tool";
     homepage = "https://github.com/qsantos/qrcode";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [
       raskin
       lucasew
     ];

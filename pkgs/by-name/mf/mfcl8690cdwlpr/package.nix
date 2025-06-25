@@ -63,7 +63,7 @@ stdenv.mkDerivation rec {
     homepage = "http://www.brother.com/";
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unfree;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = [
       "x86_64-linux"
       "i686-linux"

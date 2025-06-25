@@ -42,8 +42,8 @@ stdenvNoCC.mkDerivation rec {
     description = "Prometheus exporter for the Restic backup system";
     homepage = "https://github.com/ngosang/restic-exporter";
     changelog = "https://github.com/ngosang/restic-exporter/blob/${src.rev}/CHANGELOG.md";
-    license = licenses.mit;
-    maintainers = with maintainers; [ minersebas ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ minersebas ];
     mainProgram = "restic-exporter.py";
     platforms = platforms.all;
   };

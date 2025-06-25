@@ -17,7 +17,7 @@ buildGoModule rec {
 
   vendorHash = null;
 
-  meta = with lib; {
+  meta = {
     description = "Phishing tool for red teams and pentesters";
     longDescription = ''
       DeepSea phishing gear aims to help RTOs and pentesters with the
@@ -26,7 +26,7 @@ buildGoModule rec {
     '';
     homepage = "https://github.com/dsnezhkov/deepsea";
     license = with licenses; [ asl20 ];
-    maintainers = with maintainers; [ fab ];
+    maintainers = with lib.maintainers; [ fab ];
     broken = true; # vendor isn't reproducible with go > 1.17: nix-build -A $name.goModules --check
   };
 }

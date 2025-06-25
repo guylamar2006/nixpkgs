@@ -47,7 +47,7 @@ stdenv.mkDerivation (final: {
     description = "Tool for analysis of TCP dump files";
     homepage = "http://www.tcptrace.org/";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ lib.maintainers.gmacon ];
+    maintainers = with lib.maintainers; [ gmacon ];
     mainProgram = "tcptrace";
     platforms = lib.platforms.unix;
   };

@@ -45,8 +45,8 @@ buildGoModule rec {
       dead man's switch for your cron jobs. You get alerted if they don't run on time
       or terminate with a failure.
     '';
-    license = licenses.bsd0;
-    maintainers = with maintainers; [ bdd ];
+    license = lib.licenses.bsd0;
+    maintainers = with lib.maintainers; [ bdd ];
     mainProgram = "runitor";
   };
 }

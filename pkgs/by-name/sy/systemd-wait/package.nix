@@ -25,7 +25,7 @@ python3Packages.buildPythonApplication {
     license = lib.licenses.gpl3;
     description = "Wait for a systemd unit to enter a specific state";
     mainProgram = "systemd-wait";
-    maintainers = [ lib.maintainers.benley ];
+    maintainers = with lib.maintainers; [ benley ];
     platforms = lib.platforms.linux;
   };
 }

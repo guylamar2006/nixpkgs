@@ -70,6 +70,6 @@ stdenv.mkDerivation rec {
     description = "Terminal-based ripper/encoder/tagger tool for creating Ogg Vorbis/FLAC files";
     license = lib.licenses.gpl1Only;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.endgame ];
+    maintainers = with lib.maintainers; [ endgame ];
   };
 }

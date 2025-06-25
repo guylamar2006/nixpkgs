@@ -27,11 +27,11 @@ stdenvNoCC.mkDerivation {
   dontBuild = true;
   dontFixup = true;
 
-  meta = with lib; {
+  meta = {
     description = "Firmware from Armbian";
     homepage = "https://github.com/armbian/firmware";
-    license = licenses.unfree;
+    license = lib.licenses.unfree;
     platforms = platforms.all;
-    maintainers = with maintainers; [ zaldnoay ];
+    maintainers = with lib.maintainers; [ zaldnoay ];
   };
 }

@@ -31,8 +31,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Nordic Semiconductor nRF5 Software Development Kit";
     homepage = "https://www.nordicsemi.com/Products/Development-software/nRF5-SDK";
-    license = licenses.unfree;
+    license = lib.licenses.unfree;
     platforms = platforms.all;
-    maintainers = with maintainers; [ stargate01 ];
+    maintainers = with lib.maintainers; [ stargate01 ];
   };
 }

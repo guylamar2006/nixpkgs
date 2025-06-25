@@ -23,7 +23,7 @@ rustPlatform.buildRustPackage rec {
   meta = {
     description = "Command line application that converts alphanumeric characters to various styles defined in Unicode";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.jcaesar ];
+    maintainers = with lib.maintainers; [ jcaesar ];
     homepage = "https://github.com/ikanago/omekasy";
     mainProgram = "omekasy";
   };

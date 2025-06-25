@@ -26,6 +26,6 @@ rustPlatform.buildRustPackage (finalAttrs: {
     description = "Displays time as calculated by your longitude";
     homepage = "https://github.com/FGRCL/geoclock";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.fgrcl ];
+    maintainers = with lib.maintainers; [ fgrcl ];
   };
 })

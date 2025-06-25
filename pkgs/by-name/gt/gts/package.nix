@@ -54,7 +54,7 @@ stdenv.mkDerivation rec {
       3D surfaces meshed with interconnected triangles.
     '';
 
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

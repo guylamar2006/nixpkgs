@@ -46,7 +46,7 @@ let
       inherit license;
       homepage = "https://github.com/alda-lang/alda/tree/master/client";
       broken = !stdenv.buildPlatform.canExecute stdenv.hostPlatform;
-      maintainers = [ lib.maintainers.ericdallo ];
+      maintainers = with lib.maintainers; [ ericdallo ];
       platforms = lib.platforms.unix;
     };
   };
@@ -83,7 +83,7 @@ let
     meta = {
       inherit license;
       homepage = "https://github.com/alda-lang/alda/tree/master/player";
-      maintainers = [ lib.maintainers.ericdallo ];
+      maintainers = with lib.maintainers; [ ericdallo ];
       platforms = lib.platforms.unix;
     };
   };
@@ -103,7 +103,7 @@ symlinkJoin {
       fromSource
       binaryBytecode
     ];
-    maintainers = [ lib.maintainers.ericdallo ];
+    maintainers = with lib.maintainers; [ ericdallo ];
     platforms = lib.platforms.unix;
   };
 }

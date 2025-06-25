@@ -94,7 +94,7 @@ stdenv'.mkDerivation (finalAttrs: {
 
     homepage = "https://www.prismmodelchecker.org";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ lib.maintainers.astrobeastie ];
+    maintainers = with lib.maintainers; [ astrobeastie ];
     platforms = lib.platforms.unix;
     mainProgram = "prism";
   };

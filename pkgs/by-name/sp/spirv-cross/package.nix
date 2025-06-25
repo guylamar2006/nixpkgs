@@ -32,8 +32,8 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/KhronosGroup/SPIRV-Cross";
     changelog = "https://github.com/KhronosGroup/SPIRV-Cross/releases/tag/${finalAttrs.version}";
     platforms = platforms.all;
-    license = licenses.asl20;
-    maintainers = with maintainers; [ Flakebi ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ Flakebi ];
     mainProgram = "spirv-cross";
   };
 })

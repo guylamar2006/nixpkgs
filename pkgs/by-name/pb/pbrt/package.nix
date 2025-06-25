@@ -35,9 +35,9 @@ stdenv.mkDerivation {
   meta = with lib; {
     homepage = "https://pbrt.org/";
     description = "Renderer described in the third edition of the book 'Physically Based Rendering: From Theory To Implementation'";
-    platforms = platforms.linux;
-    license = licenses.bsd2;
-    maintainers = [ maintainers.juliendehos ];
+    platforms = lib.platforms.linux;
+    license = lib.licenses.bsd2;
+    maintainers = with lib.maintainers; [ juliendehos ];
     priority = 10;
   };
 }

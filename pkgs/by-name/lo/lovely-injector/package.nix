@@ -47,7 +47,7 @@ rustPlatform.buildRustPackage {
     license = lib.licenses.mit;
     homepage = "https://github.com/ethangreen-dev/lovely-injector";
     downloadPage = "https://github.com/ethangreen-dev/lovely-injector/releases";
-    maintainers = [ lib.maintainers.antipatico ];
+    maintainers = with lib.maintainers; [ antipatico ];
     platforms = [ "x86_64-linux" ];
   };
 }

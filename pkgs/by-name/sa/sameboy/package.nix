@@ -63,8 +63,8 @@ stdenv.mkDerivation rec {
       an emulator – from save states to scaling filters.
     '';
 
-    license = licenses.mit;
-    maintainers = with maintainers; [ NieDzejkob ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ NieDzejkob ];
     platforms = platforms.linux;
   };
 }

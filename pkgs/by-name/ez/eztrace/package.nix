@@ -92,7 +92,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://eztrace.gitlab.io/eztrace/index.html";
     downloadPage = "https://gitlab.com/eztrace/eztrace/";
     license = lib.licenses.cecill-b;
-    maintainers = [ lib.maintainers.xokdvium ];
+    maintainers = with lib.maintainers; [ xokdvium ];
     mainProgram = "eztrace";
     badPlatforms = [
       # Undefined symbols for architecture x86_64:

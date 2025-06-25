@@ -62,8 +62,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Creates djvu files from PDF files";
     homepage = "https://jwilk.net/software/pdf2djvu";
-    license = licenses.gpl2Only;
-    maintainers = with maintainers; [ pSub ];
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [ pSub ];
     mainProgram = "pdf2djvu";
   };
 }

@@ -105,7 +105,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Forensic/data recovery tool";
     homepage = "https://www.sleuthkit.org/";
     changelog = "https://github.com/sleuthkit/sleuthkit/blob/${finalAttrs.src.rev}/NEWS.txt";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       raskin
       gfrascadorio
     ];
@@ -114,6 +114,6 @@ stdenv.mkDerivation (finalAttrs: {
       fromSource
       binaryBytecode # dependencies
     ];
-    license = licenses.ipl10;
+    license = lib.licenses.ipl10;
   };
 })

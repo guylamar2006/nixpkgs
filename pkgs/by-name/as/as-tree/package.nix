@@ -18,11 +18,11 @@ rustPlatform.buildRustPackage {
   useFetchCargoVendor = true;
   cargoHash = "sha256-HTwzmfpp9HKBKvjYXUqVDv9GUHl+2K3LMBSy1+GfmNU=";
 
-  meta = with lib; {
+  meta = {
     description = "Print a list of paths as a tree of paths";
     homepage = "https://github.com/jez/as-tree";
     license = with licenses; [ blueOak100 ];
-    maintainers = with maintainers; [ jshholland ];
+    maintainers = with lib.maintainers; [ jshholland ];
     mainProgram = "as-tree";
   };
 }

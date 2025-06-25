@@ -48,6 +48,6 @@ buildGoModule rec {
     mainProgram = "spyre";
     homepage = "https://github.com/spyre-project/spyre";
     license = with licenses; [ lgpl3Plus ];
-    maintainers = with maintainers; [ fab ];
+    maintainers = with lib.maintainers; [ fab ];
   };
 }

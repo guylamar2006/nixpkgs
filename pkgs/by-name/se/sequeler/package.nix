@@ -81,8 +81,8 @@ stdenv.mkDerivation rec {
       Gtk.Grid Widget.
     '';
     homepage = "https://github.com/Alecaddd/sequeler";
-    license = licenses.gpl3;
-    teams = [ teams.pantheon ];
+    license = lib.licenses.gpl3;
+    teams = with lib.teams; [ pantheon ];
     platforms = platforms.linux;
     mainProgram = "com.github.alecaddd.sequeler";
   };

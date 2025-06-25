@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     homepage = "https://github.com/AgentD/squashfs-tools-ng";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     maintainers = with maintainers; [ qyliss ];
     platforms = platforms.unix;
   };

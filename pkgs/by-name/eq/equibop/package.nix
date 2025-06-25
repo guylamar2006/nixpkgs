@@ -144,8 +144,8 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/Equicord/Equibop";
     changelog = "https://github.com/Equicord/Equibop/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.gpl3Only;
-    maintainers = [
-      lib.maintainers.NotAShelf
+    maintainers = with lib.maintainers; [
+      NotAShelf
     ];
     mainProgram = "equibop";
     # I am not confident in my ability to support Darwin, please PR if this is important to you

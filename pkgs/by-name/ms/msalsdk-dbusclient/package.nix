@@ -32,10 +32,10 @@ stdenv.mkDerivation rec {
   '';
 
   passthru.updateScript = ./update.sh;
-  meta = with lib; {
+  meta = {
     description = "Microsoft Authentication Library cross platform Dbus client for talking to microsoft-identity-broker";
     homepage = "https://github.com/AzureAD/microsoft-authentication-library-for-cpp";
-    license = licenses.unfree;
+    license = lib.licenses.unfree;
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
     platforms = [ "x86_64-linux" ];
     maintainers = with lib.maintainers; [ rhysmdnz ];

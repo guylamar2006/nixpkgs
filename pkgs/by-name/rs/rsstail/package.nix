@@ -36,8 +36,8 @@ stdenv.mkDerivation (final: {
       detects a new entry it'll emit only that new entry.
     '';
     homepage = "https://www.vanheusden.com/rsstail/";
-    license = licenses.gpl2Only;
-    maintainers = [ maintainers.Necior ];
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [ Necior ];
     platforms = platforms.unix;
   };
 })

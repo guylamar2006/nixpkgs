@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
     description = "Portable Amstrad CPC 464/664/6128 emulator written in C";
     homepage = "https://www.xcpc-emulator.net";
     license = licenses.gpl2Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.linux;
     mainProgram = "xcpc";
   };

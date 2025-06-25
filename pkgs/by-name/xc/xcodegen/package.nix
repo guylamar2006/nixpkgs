@@ -71,7 +71,7 @@ swiftPackages.stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/XcodeGen/blob/${finalAttrs.version}/CHANGELOG.md";
     license = lib.licenses.mit;
     platforms = lib.platforms.darwin;
-    maintainers = [ lib.maintainers.samasaur ];
+    maintainers = with lib.maintainers; [ samasaur ];
     mainProgram = "xcodegen";
   };
 })

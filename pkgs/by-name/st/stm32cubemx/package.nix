@@ -96,7 +96,7 @@ let
       '';
       homepage = "https://www.st.com/en/development-tools/stm32cubemx.html";
       sourceProvenance = with sourceTypes; [ binaryBytecode ];
-      license = licenses.unfree;
+      license = lib.licenses.unfree;
       maintainers = with maintainers; [
         angaz
         wucke13

@@ -24,8 +24,8 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     description = "New test TCP program";
-    license = licenses.unfree;
-    maintainers = with maintainers; [ emilytrau ];
+    license = lib.licenses.unfree;
+    maintainers = with lib.maintainers; [ emilytrau ];
     platforms = platforms.all;
   };
 }

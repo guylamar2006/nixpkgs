@@ -43,8 +43,8 @@ python3.pkgs.buildPythonApplication {
     homepage = "https://github.com/linuxerwang/pdf-quench";
     description = "Visual tool for cropping pdf files";
     mainProgram = "pdf-quench";
-    platforms = platforms.linux;
-    license = licenses.gpl2;
-    maintainers = with maintainers; [ flokli ];
+    platforms = lib.platforms.linux;
+    license = lib.licenses.gpl2;
+    maintainers = with lib.maintainers; [ flokli ];
   };
 }

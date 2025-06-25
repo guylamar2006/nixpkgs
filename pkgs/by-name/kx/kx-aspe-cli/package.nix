@@ -32,6 +32,6 @@ rustPlatform.buildRustPackage rec {
     mainProgram = "kx-aspe";
     platforms = lib.platforms.linux;
     license = [ lib.licenses.asl20 ];
-    maintainers = [ lib.maintainers.nobbz ];
+    maintainers = with lib.maintainers; [ nobbz ];
   };
 }

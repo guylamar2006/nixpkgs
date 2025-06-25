@@ -33,6 +33,6 @@ buildNpmPackage {
     homepage = "https://github.com/sveltejs/language-tools";
     license = lib.licenses.mit;
     mainProgram = "svelteserver";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

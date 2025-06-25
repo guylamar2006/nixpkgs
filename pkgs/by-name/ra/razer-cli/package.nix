@@ -37,7 +37,7 @@ python3.pkgs.buildPythonApplication rec {
     description = "Command line interface for controlling Razer devices on Linux";
     mainProgram = "razer-cli";
     license = lib.licenses.gpl3Only;
-    maintainers = [ lib.maintainers.kaylorben ];
+    maintainers = with lib.maintainers; [ kaylorben ];
     platforms = lib.platforms.linux;
   };
 }

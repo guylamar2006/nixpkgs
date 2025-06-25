@@ -16,7 +16,7 @@ let
     description = "Graphical utilities for interacting with AJA desktop video cards";
     homepage = "https://www.aja.com/products/aja-control-room";
     license = lib.licenses.unfree; # https://www.aja.com/software-license-agreement
-    maintainers = [ lib.maintainers.lukegb ];
+    maintainers = with lib.maintainers; [ lukegb ];
     platforms = [ "x86_64-linux" ];
     sourceProvenance = [
       lib.sourceTypes.binaryNativeCode

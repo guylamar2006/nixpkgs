@@ -70,11 +70,11 @@ lib.checkListOfEnum "${pname}: color variants" [ "standard" "light" "dark" ] col
 
     passthru.updateScript = gitUpdater { };
 
-    meta = with lib; {
+    meta = {
       description = "Stylish flat Design theme for GTK based desktop environments";
       homepage = "https://vinceliuice.github.io/theme-matcha";
-      license = licenses.gpl3Only;
+      license = lib.licenses.gpl3Only;
       platforms = platforms.unix;
-      maintainers = [ maintainers.romildo ];
+      maintainers = with lib.maintainers; [ romildo ];
     };
   }

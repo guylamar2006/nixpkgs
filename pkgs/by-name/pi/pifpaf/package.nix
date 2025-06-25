@@ -41,7 +41,7 @@ python3Packages.buildPythonApplication rec {
     description = "Suite of tools and fixtures to manage daemons for testing";
     mainProgram = "pifpaf";
     homepage = "https://github.com/jd/pifpaf";
-    license = licenses.asl20;
-    maintainers = [ ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ ];
   };
 }

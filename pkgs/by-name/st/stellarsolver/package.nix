@@ -39,7 +39,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     homepage = "https://github.com/rlancaste/stellarsolver";
     description = "Astrometric plate solving library";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     maintainers = with maintainers; [
       hjones2199
       returntoreality

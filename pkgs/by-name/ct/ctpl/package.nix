@@ -18,12 +18,12 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [ pkg-config ];
   buildInputs = [ glib ];
 
-  meta = with lib; {
+  meta = {
     homepage = "http://ctpl.tuxfamily.org/";
     description = "Template engine library written in C";
     mainProgram = "ctpl";
-    platforms = platforms.linux;
-    maintainers = [ ];
-    license = licenses.gpl3Plus;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ ];
+    license = lib.licenses.gpl3Plus;
   };
 }

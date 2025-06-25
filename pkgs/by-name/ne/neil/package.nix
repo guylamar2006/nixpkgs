@@ -31,8 +31,8 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/babashka/neil";
     description = "CLI to add common aliases and features to deps.edn-based projects";
     mainProgram = "neil";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = babashka.meta.platforms;
-    maintainers = with maintainers; [ jlesquembre ];
+    maintainers = with lib.maintainers; [ jlesquembre ];
   };
 }

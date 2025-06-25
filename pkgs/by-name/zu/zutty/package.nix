@@ -55,7 +55,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://tomscii.sig7.se/zutty/";
     description = "X terminal emulator rendering through OpenGL ES Compute Shaders";
     license = lib.licenses.gpl3Plus;
-    maintainers = [ lib.maintainers.rolfschr ];
+    maintainers = with lib.maintainers; [ rolfschr ];
     platforms = lib.platforms.linux;
   };
 })

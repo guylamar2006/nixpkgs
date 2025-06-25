@@ -29,6 +29,6 @@ stdenv.mkDerivation {
       cc-by-nc-sa-30
     ];
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.romildo ];
+    maintainers = with lib.maintainers; [ romildo ];
   };
 }

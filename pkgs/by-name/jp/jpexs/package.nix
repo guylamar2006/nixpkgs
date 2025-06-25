@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
     startupWMClass = "com-jpexs-decompiler-flash-gui-Main";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Flash SWF decompiler and editor";
     mainProgram = "ffdec";
     longDescription = ''
@@ -60,7 +60,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/jindrapetrik/jpexs-decompiler";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
-    license = licenses.gpl3;
+    license = lib.licenses.gpl3;
     platforms = jdk8.meta.platforms;
     maintainers = with lib.maintainers; [
       xrtxn

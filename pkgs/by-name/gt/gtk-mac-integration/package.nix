@@ -36,11 +36,11 @@ stdenv.mkDerivation rec {
     gtkdocize
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Provides integration for GTK applications into the Mac desktop";
-    license = licenses.lgpl21;
+    license = lib.licenses.lgpl21;
     homepage = "https://gitlab.gnome.org/GNOME/gtk-mac-integration";
-    maintainers = with maintainers; [ matthewbauer ];
+    maintainers = with lib.maintainers; [ matthewbauer ];
     platforms = platforms.darwin;
   };
 }

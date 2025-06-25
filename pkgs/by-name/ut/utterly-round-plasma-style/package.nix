@@ -36,6 +36,6 @@ stdenv.mkDerivation {
     homepage = "https://himdek.com/Utterly-Round-Plasma-Style/";
     license = licenses.gpl2Plus;
     platforms = platforms.all;
-    maintainers = [ maintainers.romildo ];
+    maintainers = with lib.maintainers; [ romildo ];
   };
 }

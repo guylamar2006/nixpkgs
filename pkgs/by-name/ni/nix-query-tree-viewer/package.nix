@@ -35,7 +35,7 @@ rustPlatform.buildRustPackage rec {
     mainProgram = "nix-query-tree-viewer";
     homepage = "https://github.com/cdepillabout/nix-query-tree-viewer";
     license = with licenses; [ mit ];
-    maintainers = with maintainers; [ cdepillabout ];
+    maintainers = with lib.maintainers; [ cdepillabout ];
     platforms = platforms.unix;
   };
 }

@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/AngusJohnson/Clipper2";
     license = lib.licenses.boost;
-    maintainers = [ lib.maintainers.cadkin ];
+    maintainers = with lib.maintainers; [ cadkin ];
     platforms = lib.platforms.all;
   };
 }

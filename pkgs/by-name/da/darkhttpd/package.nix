@@ -25,12 +25,12 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Small and secure static webserver";
     mainProgram = "darkhttpd";
     homepage = "https://unix4lyfe.org/darkhttpd/";
-    license = licenses.bsd3;
-    maintainers = with maintainers; [ bobvanderlinden ];
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ bobvanderlinden ];
     platforms = platforms.all;
   };
 }

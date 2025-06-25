@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/stolowski/QComicBook";
     description = "Comic book reader in Qt5";
     mainProgram = "qcomicbook";
-    license = licenses.gpl2;
+    license = lib.licenses.gpl2;
 
     longDescription = ''
       QComicBook is a viewer for PDF files and comic book archives containing
@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
       mouse or keyboard navigation etc.
     '';
 
-    platforms = platforms.linux;
-    maintainers = with maintainers; [ greydot ];
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ greydot ];
   };
 }

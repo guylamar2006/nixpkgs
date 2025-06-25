@@ -33,9 +33,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Portable, simple and extensible C++ logging library";
     homepage = "https://github.com/SergiusTheBest/plog";
-    license = licenses.mit;
-    platforms = platforms.linux ++ platforms.darwin;
-    maintainers = with maintainers; [
+    license = lib.licenses.mit;
+    platforms = lib.platforms.linux ++ platforms.darwin;
+    maintainers = with lib.maintainers; [
       raphaelr
       erdnaxe
     ];

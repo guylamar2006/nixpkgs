@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-D0Exfm6NRRedncDAgC3MgfagzsM0Dsc7X0i9arYYOgc=";
 
-  meta = with lib; {
+  meta = {
     description = "Cargo extension for running Criterion.rs benchmarks";
     mainProgram = "cargo-criterion";
     homepage = "https://github.com/bheisler/cargo-criterion";
@@ -26,7 +26,7 @@ rustPlatform.buildRustPackage rec {
       asl20 # or
       mit
     ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       humancalico
       matthiasbeyer
     ];

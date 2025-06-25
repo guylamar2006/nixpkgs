@@ -30,7 +30,7 @@ rustPlatform.buildRustPackage rec {
     description = "Little application that makes it possible to display mpv's subs anywhere you want. With translation features";
     homepage = "https://github.com/sdaqo/mpv-subs-popout";
     license = lib.licenses.gpl3;
-    maintainers = [ lib.maintainers.sdaqo ];
+    maintainers = with lib.maintainers; [ sdaqo ];
     platforms = lib.platforms.linux;
   };
 }

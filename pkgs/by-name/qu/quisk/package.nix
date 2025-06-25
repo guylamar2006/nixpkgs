@@ -44,9 +44,9 @@ python3.pkgs.buildPythonApplication rec {
       programs like Fldigi and WSJT-X. Quisk can be connected to other software
       like N1MM+ and software that uses Hamlib.
     '';
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     homepage = "https://james.ahlstrom.name/quisk/";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       pulsation
       kashw2
     ];

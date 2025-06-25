@@ -57,11 +57,11 @@ stdenv.mkDerivation rec {
     "--without-librtmp"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Fork of libcurl used by GNUnet";
     homepage = "https://gnunet.org/en/gnurl.html";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
-    license = licenses.curl;
+    license = lib.licenses.curl;
   };
 }

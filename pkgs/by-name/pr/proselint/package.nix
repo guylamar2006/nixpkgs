@@ -34,6 +34,6 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://github.com/amperser/proselint";
     changelog = "https://github.com/amperser/proselint/releases/tag/${version}/CHANGELOG.md";
     license = lib.licenses.bsd3;
-    maintainers = [ lib.maintainers.pbsds ];
+    maintainers = with lib.maintainers; [ pbsds ];
   };
 }

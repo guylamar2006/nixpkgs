@@ -23,9 +23,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     inherit (src.meta) homepage;
     description = "Fuzzy text selection utility";
-    license = licenses.mit;
-    maintainers = [ maintainers.womfoo ];
-    platforms = platforms.linux ++ platforms.darwin;
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ womfoo ];
+    platforms = lib.platforms.linux ++ platforms.darwin;
     mainProgram = "pick";
   };
 

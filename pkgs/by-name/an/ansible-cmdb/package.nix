@@ -53,7 +53,7 @@ buildPythonApplication {
     description = "Generate host overview from ansible fact gathering output";
     homepage = "https://github.com/fboender/ansible-cmdb";
     license = lib.licenses.gpl3Only;
-    maintainers = [ lib.maintainers.tie ];
+    maintainers = with lib.maintainers; [ tie ];
     mainProgram = "ansible-cmdb";
   };
 }

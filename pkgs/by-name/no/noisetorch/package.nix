@@ -43,9 +43,9 @@ buildGoModule rec {
   meta = with lib; {
     description = "Virtual microphone device with noise supression for PulseAudio";
     homepage = "https://github.com/noisetorch/NoiseTorch";
-    license = licenses.gpl3Plus;
-    platforms = platforms.linux;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl3Plus;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [
       panaeon
       lom
     ];

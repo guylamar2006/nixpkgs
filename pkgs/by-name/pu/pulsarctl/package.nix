@@ -71,7 +71,7 @@ buildGoModule rec {
     homepage = "https://github.com/streamnative/pulsarctl";
     license = with licenses; [ asl20 ];
     platforms = platforms.unix;
-    maintainers = with maintainers; [ gaelreyrol ];
+    maintainers = with lib.maintainers; [ gaelreyrol ];
     mainProgram = "pulsarctl";
   };
 }

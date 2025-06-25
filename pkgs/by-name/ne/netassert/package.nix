@@ -35,8 +35,8 @@ buildGoModule rec {
       It currently supports Deployment, Pod, Statefulset and Daemonset.
       You can check the traffic flow between these objects or from these objects to a remote host or an IP address.
     '';
-    license = licenses.asl20;
-    maintainers = with maintainers; [ jk ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ jk ];
     mainProgram = "netassert";
   };
 }

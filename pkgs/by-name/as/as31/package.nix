@@ -46,7 +46,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "8031/8051 assembler";
     mainProgram = "as31";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
   };
 })

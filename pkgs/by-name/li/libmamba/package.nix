@@ -62,6 +62,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/mamba-org/mamba";
     license = lib.licenses.bsd3;
     platforms = lib.platforms.all;
-    maintainers = [ lib.maintainers.ericthemagician ];
+    maintainers = with lib.maintainers; [ ericthemagician ];
   };
 })

@@ -35,6 +35,6 @@ python3.pkgs.buildPythonApplication rec {
     mainProgram = "xorex";
     homepage = "https://github.com/Neo23x0/xorex";
     license = licenses.asl20;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

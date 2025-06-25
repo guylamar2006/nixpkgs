@@ -33,8 +33,8 @@ buildGoModule rec {
   meta = with lib; {
     description = "Permissioned implementation of Ethereum supporting data privacy";
     homepage = "https://consensys.net/quorum/";
-    license = licenses.lgpl3;
-    maintainers = with maintainers; [ mmahut ];
+    license = lib.licenses.lgpl3;
+    maintainers = with lib.maintainers; [ mmahut ];
     platforms = platforms.linux;
   };
 }

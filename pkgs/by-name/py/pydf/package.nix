@@ -23,7 +23,7 @@ python3Packages.buildPythonPackage rec {
     description = "colourised df(1)-clone";
     homepage = "http://kassiopeia.juls.savba.sk/~garabik/software/pydf/";
     mainProgram = "pydf";
-    license = licenses.publicDomain;
-    maintainers = with maintainers; [ monsieurp ];
+    license = lib.licenses.publicDomain;
+    maintainers = with lib.maintainers; [ monsieurp ];
   };
 }

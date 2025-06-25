@@ -43,8 +43,8 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "LADSPA plugins based on filters of nova";
     homepage = "http://klingt.org/~tim/nova-filters/";
-    license = licenses.gpl2Plus;
-    maintainers = [ maintainers.magnetophon ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ magnetophon ];
     platforms = platforms.unix;
   };
 })

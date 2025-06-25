@@ -28,8 +28,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Collection of lua filters for pandoc";
     homepage = "https://github.com/pandoc/lua-filters";
-    license = licenses.mit;
-    maintainers = with maintainers; [ jtojnar ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ jtojnar ];
     platforms = platforms.all;
   };
 }

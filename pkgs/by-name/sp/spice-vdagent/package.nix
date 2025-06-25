@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://www.spice-space.org/";
     license = lib.licenses.gpl3Plus;
-    maintainers = [ lib.maintainers.aboseley ];
+    maintainers = with lib.maintainers; [ aboseley ];
     platforms = lib.platforms.linux;
   };
 }

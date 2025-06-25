@@ -27,14 +27,14 @@ rustPlatform.buildRustPackage rec {
     (allow file-read* (subpath "/usr/share/icu"))
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Connect A to B - Send Data";
     homepage = "https://www.dumbpipe.dev/";
     license = with licenses; [
       asl20
       mit
     ];
-    maintainers = with maintainers; [ cameronfyfe ];
+    maintainers = with lib.maintainers; [ cameronfyfe ];
     mainProgram = "dumbpipe";
   };
 }

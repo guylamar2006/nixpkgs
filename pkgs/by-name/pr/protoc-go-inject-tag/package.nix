@@ -19,8 +19,8 @@ buildGoModule rec {
   meta = with lib; {
     description = "Inject custom tags to protobuf golang struct";
     homepage = "https://github.com/favadi/protoc-go-inject-tag/tree/v1.4.0";
-    license = licenses.bsd2;
-    maintainers = with maintainers; [ elrohirgt ];
+    license = lib.licenses.bsd2;
+    maintainers = with lib.maintainers; [ elrohirgt ];
     mainProgram = "protoc-go-inject-tag";
   };
 }

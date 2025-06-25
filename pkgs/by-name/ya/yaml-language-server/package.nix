@@ -77,6 +77,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/redhat-developer/yaml-language-server";
     license = lib.licenses.mit;
     mainProgram = "yaml-language-server";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 })

@@ -24,7 +24,7 @@ buildNpmPackage rec {
     description = "Framework for converting Left-To-Right (LTR) Cascading Style Sheets(CSS) to Right-To-Left (RTL)";
     mainProgram = "rtlcss";
     homepage = "https://rtlcss.com";
-    license = licenses.mit;
-    maintainers = [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
   };
 }

@@ -33,10 +33,10 @@ buildGoModule rec {
     install -Dm444 -t $out/share/doc/aws-assume-role README.md
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Easily assume AWS roles in your terminal";
     homepage = "https://github.com/remind101/assume-role";
-    license = licenses.bsd2;
+    license = lib.licenses.bsd2;
     mainProgram = "assume-role";
     maintainers = with lib.maintainers; [ averyvigolo ];
     platforms = platforms.all;

@@ -47,11 +47,11 @@ stdenv.mkDerivation rec {
     libgcrypt
   ] ++ lib.optional stdenv.hostPlatform.isLinux systemd;
 
-  meta = with lib; {
+  meta = {
     description = "MPD client which submits info about tracks being played to a scrobbler";
     homepage = "https://www.musicpd.org/clients/mpdscribble/";
-    license = licenses.gpl2Plus;
-    maintainers = [ maintainers.sohalt ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ sohalt ];
     platforms = platforms.unix;
     mainProgram = "mpdscribble";
   };

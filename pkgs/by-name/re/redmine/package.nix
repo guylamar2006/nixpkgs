@@ -68,11 +68,11 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://www.redmine.org/";
     changelog = "https://www.redmine.org/projects/redmine/wiki/changelog";
     platforms = platforms.linux;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       aanderse
       felixsinger
       megheaiulian
     ];
-    license = licenses.gpl2;
+    license = lib.licenses.gpl2;
   };
 })

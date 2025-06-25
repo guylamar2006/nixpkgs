@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/coqui-ai/STT";
     description = "Deep learning toolkit for Speech-to-Text, battle-tested in research and production";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.mpl20;
+    license = lib.licenses.mpl20;
     platforms = [ "x86_64-linux" ];
     maintainers = with maintainers; [ rvolosatovs ];
     mainProgram = "stt";

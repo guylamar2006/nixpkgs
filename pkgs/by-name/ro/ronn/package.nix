@@ -41,8 +41,8 @@ stdenv.mkDerivation rec {
     description = "markdown-based tool for building manpages";
     mainProgram = "ronn";
     homepage = "https://github.com/apjanke/ronn-ng";
-    license = licenses.mit;
-    maintainers = with maintainers; [
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [
       zimbatm
       nicknovitski
     ];

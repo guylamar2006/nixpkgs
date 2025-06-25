@@ -57,7 +57,7 @@ haskell.lib.compose.justStaticExecutables (
       changelog = "https://github.com/samtay/tetris/releases/tag/v${version}";
       license = lib.licenses.bsd3;
       mainProgram = "tetris";
-      maintainers = [ lib.maintainers.Svenum ];
+      maintainers = with lib.maintainers; [ Svenum ];
     }
   ) { }
 )

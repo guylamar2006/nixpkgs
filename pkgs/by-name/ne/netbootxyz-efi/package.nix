@@ -16,8 +16,8 @@ fetchurl {
   meta = with lib; {
     homepage = "https://netboot.xyz/";
     description = "Tool to boot OS installers and utilities over the network, to be run from a bootloader";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ pinpox ];
-    platforms = platforms.linux;
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ pinpox ];
+    platforms = lib.platforms.linux;
   };
 }

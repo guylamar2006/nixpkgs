@@ -63,8 +63,8 @@ rustPlatform.buildRustPackage rec {
     description = "Cross platform application for controlling settings of Soundcore headphones";
     homepage = "https://github.com/Oppzippy/OpenSCQ30";
     changelog = "https://github.com/Oppzippy/OpenSCQ30/blob/${src.rev}/CHANGELOG.md";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ mkg20001 ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ mkg20001 ];
     mainProgram = "open-scq30";
   };
 }

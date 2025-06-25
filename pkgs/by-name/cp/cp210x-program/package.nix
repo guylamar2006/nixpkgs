@@ -24,11 +24,11 @@ python3.pkgs.buildPythonApplication rec {
     ln -s $out/bin/cp210x-program{.py,}
   '';
 
-  meta = with lib; {
+  meta = {
     description = "EEPROM tool for Silabs CP210x USB-Serial adapter";
     homepage = "https://github.com/VCTLabs/cp210x-program";
-    license = licenses.lgpl21Only; # plus/only status unclear
-    maintainers = [ ];
+    license = lib.licenses.lgpl21Only; # plus/only status unclear
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "cp210x-program";
   };
 }

@@ -30,7 +30,7 @@ appimageTools.wrapType2 {
     homepage = "https://github.com/janhq/jan";
     license = lib.licenses.agpl3Plus;
     mainProgram = "jan";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = with lib.systems.inspect; patternLogicalAnd patterns.isLinux patterns.isx86_64;
   };
 }

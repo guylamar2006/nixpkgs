@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
     description = "Port of the Adapta theme for Plasma";
     homepage = "https://github.com/PapirusDevelopmentTeam/adapta-kde";
     license = lib.licenses.gpl3;
-    maintainers = [ lib.maintainers.tadfisher ];
+    maintainers = with lib.maintainers; [ tadfisher ];
     platforms = lib.platforms.all;
   };
 }

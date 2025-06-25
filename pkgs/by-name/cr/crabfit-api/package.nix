@@ -68,7 +68,7 @@ rustPlatform.buildRustPackage rec {
     description = "Enter your availability to find a time that works for everyone";
     homepage = "https://github.com/GRA0007/crab.fit";
     license = lib.licenses.gpl3;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "crabfit-api";
   };
 }

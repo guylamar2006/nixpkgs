@@ -31,8 +31,8 @@ stdenv.mkDerivation rec {
     description = "Per-Face Texture Mapping for Production Rendering";
     mainProgram = "ptxinfo";
     homepage = "http://ptex.us/";
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     platforms = platforms.all;
-    maintainers = [ maintainers.guibou ];
+    maintainers = with lib.maintainers; [ guibou ];
   };
 }

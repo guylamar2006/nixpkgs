@@ -31,6 +31,6 @@ stdenv.mkDerivation rec {
     homepage = "https://typespeed.sourceforge.net/";
     license = licenses.gpl2Plus;
     platforms = platforms.unix;
-    maintainers = [ maintainers.auntie ];
+    maintainers = with lib.maintainers; [ auntie ];
   };
 }

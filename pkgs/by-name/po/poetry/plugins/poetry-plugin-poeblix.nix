@@ -31,8 +31,8 @@ buildPythonPackage rec {
   meta = with lib; {
     changelog = "https://github.com/spoorn/poeblix/releases/tag/${lib.removePrefix "refs/tags/" src.rev}";
     description = "Poetry Plugin that adds various features that extend the poetry command such as building wheel files with locked dependencies, and validations of wheel/docker containers";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     homepage = "https://github.com/spoorn/poeblix";
-    maintainers = with maintainers; [ hennk ];
+    maintainers = with lib.maintainers; [ hennk ];
   };
 }

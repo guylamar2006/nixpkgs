@@ -57,8 +57,8 @@ buildGoModule rec {
     description = "Terminal web radio client";
     mainProgram = "radioboat";
     homepage = "https://github.com/slashformotion/radioboat";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     platforms = platforms.linux;
-    maintainers = with maintainers; [ zendo ];
+    maintainers = with lib.maintainers; [ zendo ];
   };
 }

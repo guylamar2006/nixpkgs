@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/apenwarr/netselect";
     description = "Ultrafast intelligent parallelizing binary-search implementation of \"ping\"";
-    license = licenses.bsd3;
-    platforms = platforms.linux;
+    license = lib.licenses.bsd3;
+    platforms = lib.platforms.linux;
   };
 }

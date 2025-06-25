@@ -63,8 +63,8 @@ stdenv.mkDerivation rec {
     description = "C-library for generating multi page PostScript documents";
     homepage = "https://pslib.sourceforge.net/";
     changelog = "https://sourceforge.net/p/pslib/git/ci/master/tree/pslib/ChangeLog";
-    license = licenses.gpl2;
-    maintainers = with maintainers; [ ShamrockLee ];
+    license = lib.licenses.gpl2;
+    maintainers = with lib.maintainers; [ ShamrockLee ];
     platforms = platforms.unix;
   };
 }

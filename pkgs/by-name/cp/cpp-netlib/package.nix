@@ -45,10 +45,10 @@ stdenvForCppNetlib.mkDerivation rec {
   # Most tests make network GET requests to various websites
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Collection of open-source libraries for high level network programming";
     homepage = "https://cpp-netlib.org";
-    license = licenses.boost;
+    license = lib.licenses.boost;
     platforms = platforms.all;
   };
 }

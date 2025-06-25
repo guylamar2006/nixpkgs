@@ -72,11 +72,11 @@ stdenv.mkDerivation {
     install -Dm644 systemd/hostsblock.timer $out/share/dbus-1/system-services
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Ad- and malware-blocking script for Linux";
     homepage = "http://gaenserich.github.io/hostsblock/";
-    license = licenses.gpl3;
-    maintainers = [ maintainers.nicknovitski ];
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ nicknovitski ];
     platforms = platforms.unix;
   };
 

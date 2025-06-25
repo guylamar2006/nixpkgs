@@ -79,8 +79,8 @@ stdenv.mkDerivation rec {
       It is not a source-compatible X/Open Curses implementation, nor a
       replacement for NCURSES on existing systems.
     '';
-    license = licenses.asl20;
-    maintainers = with maintainers; [ ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ ];
     inherit (ncurses.meta) platforms;
   };
 }

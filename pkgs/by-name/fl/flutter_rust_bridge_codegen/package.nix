@@ -37,6 +37,6 @@ rustPlatform.buildRustPackage rec {
     description = "Flutter/Dart <-> Rust binding generator, feature-rich, but seamless and simple";
     homepage = "https://fzyzcjy.github.io/flutter_rust_bridge";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.eymeric ];
+    maintainers = with lib.maintainers; [ eymeric ];
   };
 }

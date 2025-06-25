@@ -23,6 +23,6 @@ buildGoModule rec {
     homepage = "https://github.com/ahmetb/kubectl-tree";
     changelog = "https://github.com/ahmetb/kubectl-tree/releases/tag/v${version}";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.ivankovnatsky ];
+    maintainers = with lib.maintainers; [ ivankovnatsky ];
   };
 }

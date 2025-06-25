@@ -36,9 +36,9 @@ rustPlatform.buildRustPackage rec {
     description = "Bitcoin wallet leveraging on-chain timelocks for safety and recovery";
     homepage = "https://wizardsardine.com/liana";
     license = lib.licenses.bsd3;
-    maintainers = [
-      lib.maintainers.dunxen
-      lib.maintainers.plebhash
+    maintainers = with lib.maintainers; [
+      dunxen
+      plebhash
     ];
     platforms = lib.platforms.linux;
     broken = stdenv.hostPlatform.isAarch64;

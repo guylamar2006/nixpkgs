@@ -116,7 +116,7 @@ stdenvNoCC.mkDerivation rec {
   # attributes are used to choose which variant(s) to have.
   outputsToInstall = [ ];
 
-  meta = with lib; {
+  meta = {
     description = "Comix Cursors mouse themes";
     longDescription = ''
       There are many (${toString ((length outputs) - 1)}) variants of color,
@@ -131,8 +131,8 @@ stdenvNoCC.mkDerivation rec {
     '';
     homepage = "https://gitlab.com/limitland/comixcursors";
     changelog = "https://gitlab.com/limitland/comixcursors/-/blob/HEAD/NEWS";
-    license = licenses.gpl3Plus;
-    maintainers = [ maintainers.DerickEddington ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ DerickEddington ];
     platforms = platforms.all;
   };
 }

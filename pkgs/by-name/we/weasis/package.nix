@@ -78,7 +78,7 @@ stdenv.mkDerivation (finalAttrs: {
       asl20
       epl20
     ];
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = [ "x86_64-linux" ];
     mainProgram = "Weasis";
   };

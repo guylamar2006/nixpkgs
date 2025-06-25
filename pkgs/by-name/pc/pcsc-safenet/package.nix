@@ -96,7 +96,7 @@ stdenv.mkDerivation rec {
     description = "Safenet Authentication Client";
     platforms = [ "x86_64-linux" ];
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.unfree;
-    maintainers = with maintainers; [ wldhx ];
+    license = lib.licenses.unfree;
+    maintainers = with lib.maintainers; [ wldhx ];
   };
 }

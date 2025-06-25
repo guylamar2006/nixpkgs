@@ -97,7 +97,7 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Patch manager implemented on top of Git";
     homepage = "https://stacked-git.github.io/";
-    license = licenses.gpl2Only;
+    license = lib.licenses.gpl2Only;
     platforms = platforms.unix;
     maintainers = with maintainers; [ jshholland ];
     mainProgram = "stg";

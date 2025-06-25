@@ -38,7 +38,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://quantlib.org";
     changelog = "https://github.com/lballabio/QuantLib/releases/tag/v${finalAttrs.version}";
     platforms = platforms.unix;
-    license = licenses.bsd3;
-    maintainers = [ maintainers.kupac ];
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ kupac ];
   };
 })

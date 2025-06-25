@@ -41,8 +41,8 @@ rustPlatform.buildRustPackage rec {
     changelog = "https://github.com/containers/netavark/releases/tag/${src.rev}";
     description = "Rust based network stack for containers";
     homepage = "https://github.com/containers/netavark";
-    license = licenses.asl20;
-    teams = [ teams.podman ];
-    platforms = platforms.linux;
+    license = lib.licenses.asl20;
+    teams = with lib.teams; [ podman ];
+    platforms = lib.platforms.linux;
   };
 }

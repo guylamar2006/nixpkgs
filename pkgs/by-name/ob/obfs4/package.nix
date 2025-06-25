@@ -50,7 +50,7 @@ buildGoModule rec {
       multiple pluggable transports.
     '';
     homepage = "https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/lyrebird";
-    maintainers = with maintainers; [ thoughtpolice ];
+    maintainers = with lib.maintainers; [ thoughtpolice ];
     mainProgram = "lyrebird";
     changelog = "https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/lyrebird/-/raw/${src.rev}/ChangeLog";
     license = with lib.licenses; [

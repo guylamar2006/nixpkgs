@@ -53,7 +53,7 @@ stdenv.mkDerivation {
 
   meta = with lib; {
     description = "Sundtek MediaTV driver";
-    maintainers = [ maintainers.simonvandel ];
+    maintainers = with lib.maintainers; [ simonvandel ];
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     platforms = platforms.unix;
     license = licenses.unfree;

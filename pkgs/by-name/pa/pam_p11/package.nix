@@ -45,8 +45,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/OpenSC/pam_p11";
     description = "Authentication with PKCS#11 modules";
-    license = licenses.lgpl21Plus;
+    license = lib.licenses.lgpl21Plus;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ sb0 ];
+    maintainers = with lib.maintainers; [ sb0 ];
   };
 }

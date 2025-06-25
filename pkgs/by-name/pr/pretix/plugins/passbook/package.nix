@@ -53,7 +53,7 @@ buildPythonPackage rec {
   meta = with lib; {
     description = "Support for Apple Wallet/Passbook files in pretix";
     homepage = "https://github.com/pretix/pretix-passbook";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ hexa ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ hexa ];
   };
 }

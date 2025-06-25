@@ -23,7 +23,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Japanese Mincho-typeface TrueType font";
     homepage = "https://fonts.jp/hanazono/";
     longDescription = ''
@@ -43,7 +43,7 @@ stdenvNoCC.mkDerivation rec {
       licenses.ofl
       licenses.free
     ];
-    maintainers = with maintainers; [ mathnerd314 ];
+    maintainers = with lib.maintainers; [ mathnerd314 ];
     platforms = platforms.all;
   };
 }

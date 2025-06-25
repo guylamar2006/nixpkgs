@@ -82,7 +82,7 @@ stdenv.mkDerivation (finalAttrs: {
       gpl2
       lgpl21
     ];
-    maintainers = [ lib.maintainers.malt3 ];
+    maintainers = with lib.maintainers; [ malt3 ];
     mainProgram = "tdnf";
     # rpm only supports linux
     platforms = lib.platforms.linux;

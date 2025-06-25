@@ -41,12 +41,12 @@ stdenv.mkDerivation rec {
     "--with-moduledir=${placeholder "out"}/lib/dovecot/modules"
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/grosjo/fts-xapian";
     description = "Dovecot FTS plugin based on Xapian";
     changelog = "https://github.com/grosjo/fts-xapian/releases";
-    license = licenses.lgpl21Only;
-    maintainers = with maintainers; [
+    license = lib.licenses.lgpl21Only;
+    maintainers = with lib.maintainers; [
       julm
       symphorien
     ];

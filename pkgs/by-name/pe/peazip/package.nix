@@ -111,10 +111,10 @@ stdenv.mkDerivation rec {
 
       Supports 7Z, 7-Zip sfx, ACE, ARJ, Brotli, BZ2, CAB, CHM, CPIO, DEB, GZ, ISO, JAR, LHA/LZH, NSIS, OOo, PEA, RAR, RPM, split, TAR, Z, ZIP, ZIPX, Zstandard.
     '';
-    license = licenses.gpl3Only;
+    license = lib.licenses.gpl3Only;
     homepage = "https://peazip.github.io";
-    platforms = platforms.linux;
-    maintainers = with maintainers; [ annaaurora ];
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ annaaurora ];
     mainProgram = "peazip";
   };
 }

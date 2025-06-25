@@ -57,6 +57,6 @@ python3Packages.buildPythonApplication rec {
     mainProgram = "zapzap";
     license = licenses.gpl3Only;
     changelog = "https://github.com/rafatosta/zapzap/releases/tag/${src.tag}";
-    maintainers = [ maintainers.eymeric ];
+    maintainers = with lib.maintainers; [ eymeric ];
   };
 }

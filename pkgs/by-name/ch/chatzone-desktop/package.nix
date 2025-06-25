@@ -69,7 +69,7 @@ stdenvNoCC.mkDerivation {
     downloadPage = "https://apps.o3team.ru/";
     sourceProvenance = [ lib.sourceTypes.binaryNativeCode ];
     license = lib.licenses.unfreeRedistributable;
-    maintainers = [ lib.maintainers.progrm_jarvis ];
+    maintainers = with lib.maintainers; [ progrm_jarvis ];
     platforms = [ "x86_64-linux" ];
   };
 }

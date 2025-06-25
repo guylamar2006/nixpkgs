@@ -69,11 +69,11 @@ stdenv.mkDerivation rec {
     "-Dexamples=false"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "GObject/GTK port of three.js";
     homepage = "https://github.com/alexlarsson/gthree";
-    license = licenses.mit;
-    maintainers = [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
     broken = stdenv.hostPlatform.isDarwin; # never built on Hydra https://hydra.nixos.org/job/nixpkgs/trunk/gthree.x86_64-darwin
   };

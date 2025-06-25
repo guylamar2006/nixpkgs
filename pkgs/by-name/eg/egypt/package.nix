@@ -19,7 +19,7 @@ perlPackages.buildPerlPackage rec {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     description = "Tool for making call graphs of C programmes";
     mainProgram = "egypt";
     longDescription = ''

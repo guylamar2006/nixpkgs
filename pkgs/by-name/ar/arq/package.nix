@@ -45,7 +45,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     homepage = "https://www.arqbackup.com/";
     license = lib.licenses.unfree;
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
-    maintainers = [ lib.maintainers.Enzime ];
+    maintainers = with lib.maintainers; [ Enzime ];
     platforms = lib.platforms.darwin;
   };
 })

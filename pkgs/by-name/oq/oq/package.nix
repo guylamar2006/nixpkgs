@@ -41,8 +41,8 @@ crystal.buildCrystalPackage rec {
     description = "Performant, and portable jq wrapper";
     mainProgram = "oq";
     homepage = "https://blacksmoke16.github.io/oq/";
-    license = licenses.mit;
-    maintainers = with maintainers; [ Br1ght0ne ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ Br1ght0ne ];
     platforms = platforms.unix;
   };
 }

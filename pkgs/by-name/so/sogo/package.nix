@@ -115,6 +115,6 @@ clangStdenv.mkDerivation rec {
     ];
     homepage = "https://sogo.nu/";
     platforms = platforms.linux;
-    maintainers = with maintainers; [ jceb ];
+    maintainers = with lib.maintainers; [ jceb ];
   };
 }

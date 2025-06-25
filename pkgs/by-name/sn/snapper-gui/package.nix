@@ -53,8 +53,8 @@ python3Packages.buildPythonApplication {
       and revert changes. Currently works with btrfs, ext4 and thin-provisioned LVM volumes.
     '';
     homepage = "https://github.com/ricardomv/snapper-gui";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.linux;
-    maintainers = with maintainers; [ ahuzik ];
+    maintainers = with lib.maintainers; [ ahuzik ];
   };
 }

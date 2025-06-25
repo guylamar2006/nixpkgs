@@ -29,7 +29,7 @@ buildPythonPackage rec {
   meta = with lib; {
     description = "Pure python implementation of multicast DNS service discovery";
     homepage = "https://github.com/jstasiak/python-zeroconf";
-    license = licenses.lgpl21;
-    maintainers = [ ];
+    license = lib.licenses.lgpl21;
+    maintainers = with lib.maintainers; [ ];
   };
 }

@@ -60,11 +60,11 @@ stdenv.mkDerivation rec {
     libmodulemd
   ];
 
-  meta = with lib; {
+  meta = {
     description = "C implementation of createrepo";
     homepage = "https://rpm-software-management.github.io/createrepo_c/";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.unix;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

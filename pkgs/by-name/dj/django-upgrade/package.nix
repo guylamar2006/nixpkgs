@@ -36,6 +36,6 @@ python3Packages.buildPythonApplication rec {
     changelog = "https://github.com/adamchainz/django-upgrade/blob/${version}/CHANGELOG.rst";
     mainProgram = "django-upgrade";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.kalekseev ];
+    maintainers = with lib.maintainers; [ kalekseev ];
   };
 }

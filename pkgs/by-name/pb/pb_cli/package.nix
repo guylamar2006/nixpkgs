@@ -50,8 +50,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "No bullshit 0x0.st client";
     homepage = "https://github.com/ptpb/pb_cli";
-    maintainers = [ maintainers.ar1a ];
-    license = licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ ar1a ];
+    license = lib.licenses.gpl3Plus;
     mainProgram = "pb";
   };
 }

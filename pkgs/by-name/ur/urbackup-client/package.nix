@@ -41,6 +41,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.urbackup.org/index.html";
     license = licenses.agpl3Plus;
     platforms = platforms.linux;
-    maintainers = [ maintainers.mgttlinger ];
+    maintainers = with lib.maintainers; [ mgttlinger ];
   };
 }

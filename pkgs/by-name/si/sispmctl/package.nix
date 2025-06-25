@@ -26,9 +26,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://sispmctl.sourceforge.net/";
     description = "USB controlled powerstrips management software";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     mainProgram = "sispmctl";
-    maintainers = [ maintainers._9R ];
+    maintainers = with lib.maintainers; [ _9R ];
     platforms = platforms.unix;
   };
 }

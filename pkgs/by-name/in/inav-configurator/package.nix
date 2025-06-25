@@ -60,7 +60,7 @@ stdenv.mkDerivation rec {
     })
   ];
 
-  meta = with lib; {
+  meta = {
     description = "INav flight control system configuration tool";
     mainProgram = "inav-configurator";
     longDescription = ''
@@ -70,11 +70,11 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/iNavFlight/inav/wiki";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [
       tilcreator
       wucke13
     ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

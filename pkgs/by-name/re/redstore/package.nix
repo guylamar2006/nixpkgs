@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     description = "HTTP interface to Redland RDF store";
     mainProgram = "redstore";
     homepage = "https://www.aelius.com/njh/redstore/";
-    maintainers = [ lib.maintainers.raskin ];
+    maintainers = with lib.maintainers; [ raskin ];
     platforms = with lib.platforms; linux ++ freebsd ++ gnu;
     license = lib.licenses.gpl3Plus;
   };

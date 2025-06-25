@@ -126,16 +126,16 @@ stdenv.mkDerivation rec {
     udev
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/mbrlabs/Lorien";
     description = "Infinite canvas drawing/note-taking app";
     longDescription = ''
       An infinite canvas drawing/note-taking app that is focused on performance,
       small savefiles and simplicity
     '';
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ hqurve ];
+    maintainers = with lib.maintainers; [ hqurve ];
     mainProgram = "lorien";
   };
 }

@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     '';
     downloadPage = "https://github.com/mptre/yank/releases";
     license = licenses.mit;
-    maintainers = [ maintainers.dochang ];
+    maintainers = with lib.maintainers; [ dochang ];
     platforms = platforms.unix;
     mainProgram = "yank";
   };

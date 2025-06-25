@@ -91,6 +91,6 @@ stdenv.mkDerivation rec {
     homepage = "http://swift.im/swiften.html";
     license = licenses.gpl2Plus;
     platforms = platforms.linux;
-    maintainers = [ maintainers.twey ];
+    maintainers = with lib.maintainers; [ twey ];
   };
 }

@@ -37,8 +37,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Serial to network connection server";
     homepage = "https://github.com/cminyard/ser2net";
-    license = licenses.gpl2Only;
-    maintainers = with maintainers; [ emantor ];
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [ emantor ];
     platforms = with platforms; linux;
     mainProgram = "ser2net";
   };

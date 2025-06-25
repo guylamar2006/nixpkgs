@@ -58,11 +58,11 @@ stdenv.mkDerivation rec {
     makeWrapper $out/lib/lite/lite $out/bin/lite
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Lightweight text editor written in Lua";
     homepage = "https://github.com/rxi/lite";
-    license = licenses.mit;
-    maintainers = with maintainers; [ Br1ght0ne ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ Br1ght0ne ];
     platforms = platforms.unix;
     mainProgram = "lite";
   };

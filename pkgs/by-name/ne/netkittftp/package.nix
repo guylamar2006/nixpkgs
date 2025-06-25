@@ -34,7 +34,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Netkit TFTP client and server";
     homepage = "ftp://ftp.uk.linux.org/pub/linux/Networking/netkit/";
     license = lib.licenses.bsdOriginal;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = with lib.platforms; linux;
   };
 })

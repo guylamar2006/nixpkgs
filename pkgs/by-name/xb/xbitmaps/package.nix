@@ -38,7 +38,7 @@ stdenv.mkDerivation (finalAttrs: {
       icu
       smlnj
     ];
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     pkgConfigModules = [ "xbitmaps" ];
     platforms = lib.platforms.unix;
   };

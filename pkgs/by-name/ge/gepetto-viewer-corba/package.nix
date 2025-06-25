@@ -56,7 +56,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/gepetto/gepetto-viewer-corba";
     description = "CORBA client/server for gepetto-viewer.";
     license = lib.licenses.bsd3;
-    maintainers = [ lib.maintainers.nim65s ];
+    maintainers = with lib.maintainers; [ nim65s ];
     platforms = lib.platforms.unix;
   };
 })

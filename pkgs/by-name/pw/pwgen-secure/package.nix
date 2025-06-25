@@ -47,8 +47,8 @@ buildPythonApplication rec {
   meta = with lib; {
     description = "Secure password generation library to replace pwgen";
     homepage = "https://github.com/mjmunger/pwgen_secure/";
-    license = licenses.mit;
-    maintainers = with maintainers; [ peterhoeg ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ peterhoeg ];
     mainProgram = "spwgen";
   };
 }

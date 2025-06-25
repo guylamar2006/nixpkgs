@@ -25,7 +25,7 @@ buildGoModule {
     homepage = "https://github.com/ScriptTiger/Hosts-BL";
     description = "Simple tool to handle hosts file black lists";
     mainProgram = "Hosts-BL";
-    maintainers = [ lib.maintainers.puffnfresh ];
+    maintainers = with lib.maintainers; [ puffnfresh ];
     platforms = lib.platforms.unix;
     license = lib.licenses.mit;
   };

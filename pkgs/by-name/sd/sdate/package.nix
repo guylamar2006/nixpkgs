@@ -21,8 +21,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://www.df7cb.de/projects/sdate";
     description = "Eternal september version of the date program";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [ edef ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ edef ];
     platforms = platforms.all;
     mainProgram = "sdate";
   };

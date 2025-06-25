@@ -161,9 +161,9 @@ stdenv.mkDerivation {
     description = "J-Link Software and Documentation pack";
     homepage = "https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack";
     changelog = "https://www.segger.com/downloads/jlink/ReleaseNotes_JLink.html";
-    license = licenses.unfree;
+    license = lib.licenses.unfree;
     platforms = attrNames supported;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       FlorianFranzen
       h7x4
       stargate01

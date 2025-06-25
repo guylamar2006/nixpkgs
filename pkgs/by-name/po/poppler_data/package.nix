@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     homepage = "https://poppler.freedesktop.org/";
     description = "Encoding files for Poppler, a PDF rendering library";
     platforms = platforms.all;
-    license = licenses.free; # more free licenses combined
+    license = lib.licenses.free; # more free licenses combined
     inherit (poppler.meta) teams maintainers;
   };
 }

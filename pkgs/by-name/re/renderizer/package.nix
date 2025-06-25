@@ -29,7 +29,7 @@ buildGoModule rec {
     description = "CLI to render Go template text files";
     mainProgram = "renderizer";
     inherit (src.meta) homepage;
-    license = licenses.gpl3;
-    maintainers = [ ];
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ ];
   };
 }

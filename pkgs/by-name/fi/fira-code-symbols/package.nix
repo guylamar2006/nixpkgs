@@ -21,15 +21,15 @@ stdenvNoCC.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "FiraCode unicode ligature glyphs in private use area";
     longDescription = ''
       FiraCode uses ligatures, which some editors don’t support.
       This addition adds them as glyphs to the private unicode use area.
       See https://github.com/tonsky/FiraCode/issues/211.
     '';
-    license = licenses.ofl;
-    maintainers = [ ];
+    license = lib.licenses.ofl;
+    maintainers = with lib.maintainers; [ ];
     homepage = "https://github.com/tonsky/FiraCode/issues/211#issuecomment-239058632";
   };
 }

@@ -253,10 +253,10 @@ goBuild (finalAttrs: {
       + lib.optionalString cudaRequested ", using CUDA for NVIDIA GPU acceleration";
     homepage = "https://github.com/ollama/ollama";
     changelog = "https://github.com/ollama/ollama/releases/tag/v${finalAttrs.version}";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = if (rocmRequested || cudaRequested) then platforms.linux else platforms.unix;
     mainProgram = "ollama";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       abysssol
       dit7ya
       elohmeier

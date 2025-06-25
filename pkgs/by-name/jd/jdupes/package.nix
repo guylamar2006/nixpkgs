@@ -50,7 +50,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://codeberg.org/jbruchon/jdupes";
     license = lib.licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "jdupes";
   };
 })

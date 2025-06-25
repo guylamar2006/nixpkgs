@@ -32,8 +32,8 @@ rustPlatform.buildRustPackage rec {
     description = "Application that lets you drag and drop files from and to the terminal";
     homepage = "https://github.com/nik012003/ripdrag";
     changelog = "https://github.com/nik012003/ripdrag/releases/tag/${src.rev}";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ figsoda ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ figsoda ];
     mainProgram = "ripdrag";
   };
 }

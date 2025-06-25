@@ -42,6 +42,6 @@ buildNpmPackage (finalAttrs: {
     homepage = "https://docs.sillytavern.app/";
     mainProgram = "sillytavern";
     license = lib.licenses.agpl3Only;
-    maintainers = [ lib.maintainers.wrvsrx ];
+    maintainers = with lib.maintainers; [ wrvsrx ];
   };
 })

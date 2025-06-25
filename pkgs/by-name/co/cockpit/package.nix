@@ -235,6 +235,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://cockpit-project.org/";
     changelog = "https://cockpit-project.org/blog/cockpit-${finalAttrs.version}.html";
     license = lib.licenses.lgpl21;
-    maintainers = [ lib.maintainers.lucasew ];
+    maintainers = with lib.maintainers; [ lucasew ];
   };
 })

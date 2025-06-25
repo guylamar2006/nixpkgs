@@ -48,7 +48,7 @@ stdenv.mkDerivation {
     description = "Time domain pitch tracker for Pure Data";
     homepage = "http://www.katjaas.nl/helmholtz/helmholtz.html";
     license = lib.licenses.bsd3;
-    maintainers = [ lib.maintainers.magnetophon ];
+    maintainers = with lib.maintainers; [ magnetophon ];
     platforms = lib.platforms.linux;
   };
 }

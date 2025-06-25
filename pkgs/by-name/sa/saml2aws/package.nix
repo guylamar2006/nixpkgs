@@ -40,7 +40,7 @@ buildGoModule rec {
     description = "CLI tool which enables you to login and retrieve AWS temporary credentials using a SAML IDP";
     mainProgram = "saml2aws";
     homepage = "https://github.com/Versent/saml2aws";
-    license = licenses.mit;
-    maintainers = [ lib.maintainers.pmyjavec ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ pmyjavec ];
   };
 }

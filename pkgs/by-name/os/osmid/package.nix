@@ -35,8 +35,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/llloret/osmid";
     description = "Lightweight, portable, easy to use tool to convert MIDI to OSC and OSC to MIDI";
-    license = licenses.mit;
-    maintainers = with maintainers; [ c0deaddict ];
-    platforms = platforms.linux;
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ c0deaddict ];
+    platforms = lib.platforms.linux;
   };
 }

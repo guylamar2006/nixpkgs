@@ -28,6 +28,6 @@ stdenvNoCC.mkDerivation rec {
     description = "Persian (farsi) Monospaced Font for coding";
     license = licenses.publicDomain;
     platforms = platforms.all;
-    maintainers = [ maintainers.dearrude ];
+    maintainers = with lib.maintainers; [ dearrude ];
   };
 }

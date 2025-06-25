@@ -35,7 +35,7 @@ python3Packages.buildPythonApplication rec {
     description = "Software to support data assessment, reduction and analysis at synchrotron radiation facilities";
     homepage = "https://github.com/silx-kit/silx";
     license = [ lib.licenses.mit ];
-    maintainers = [ lib.maintainers.pmiddend ];
+    maintainers = with lib.maintainers; [ pmiddend ];
     mainProgram = "silx";
   };
 

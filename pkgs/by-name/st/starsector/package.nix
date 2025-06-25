@@ -102,7 +102,7 @@ stdenv.mkDerivation rec {
     description = "Open-world single-player space-combat, roleplaying, exploration, and economic game";
     homepage = "https://fractalsoftworks.com";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
-    license = licenses.unfree;
+    license = lib.licenses.unfree;
     maintainers = with maintainers; [
       bbigras
       rafaelrc

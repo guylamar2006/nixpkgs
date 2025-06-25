@@ -142,7 +142,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://karakeep.app/";
     description = "Self-hostable bookmark-everything app (links, notes and images) with AI-based automatic tagging and full text search";
     license = lib.licenses.agpl3Only;
-    maintainers = [ lib.maintainers.three ];
+    maintainers = with lib.maintainers; [ three ];
     mainProgram = "karakeep";
     platforms = lib.platforms.linux;
   };

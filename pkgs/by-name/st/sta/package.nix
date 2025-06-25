@@ -48,9 +48,9 @@ stdenv.mkDerivation {
       in C++, allowing for faster computation of statistics given larger
       non-trivial data sets.
     '';
-    license = licenses.mit;
+    license = lib.licenses.mit;
     homepage = "https://github.com/simonccarter/sta";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
     mainProgram = "sta";
   };

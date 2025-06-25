@@ -59,8 +59,8 @@ buildGoModule rec {
 
   meta = with lib; {
     description = "CLI for the Red Hat OpenShift Service on AWS";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     homepage = "https://github.com/openshift/rosa";
-    maintainers = with maintainers; [ jfchevrette ];
+    maintainers = with lib.maintainers; [ jfchevrette ];
   };
 }

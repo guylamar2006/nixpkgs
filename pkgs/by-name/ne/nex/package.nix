@@ -32,7 +32,7 @@ buildGoModule {
     description = "Lexer for Go";
     mainProgram = "nex";
     homepage = "https://github.com/blynn/nex";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ urandom ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ urandom ];
   };
 }

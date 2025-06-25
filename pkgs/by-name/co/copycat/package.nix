@@ -22,7 +22,7 @@ rustPlatform.buildRustPackage rec {
     description = "Utility to copy project tree contents to clipboard";
     homepage = "https://github.com/DeeKahy/CopyCat";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.deekahy ];
+    maintainers = with lib.maintainers; [ deekahy ];
     mainProgram = "ccat";
   };
 }

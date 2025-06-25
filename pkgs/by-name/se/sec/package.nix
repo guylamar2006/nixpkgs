@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     homepage = "https://simple-evcorr.github.io";
     license = lib.licenses.gpl2Plus;
     description = "Simple Event Correlator";
-    maintainers = [ lib.maintainers.tv ];
+    maintainers = with lib.maintainers; [ tv ];
     platforms = lib.platforms.all;
     mainProgram = "sec";
   };

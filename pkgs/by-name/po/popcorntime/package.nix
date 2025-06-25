@@ -100,7 +100,7 @@ stdenv.mkDerivation rec {
     platforms = [ "x86_64-linux" ];
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.gpl3;
-    maintainers = with maintainers; [ onny ];
+    maintainers = with lib.maintainers; [ onny ];
     mainProgram = "popcorntime";
   };
 }

@@ -38,7 +38,7 @@ buildGoModule rec {
     homepage = "https://github.com/mongodb/mongodb-cli";
     changelog = "https://www.mongodb.com/docs/mongocli/current/release-notes/#mongodb-cli-${version}";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.iamanaws ];
+    maintainers = with lib.maintainers; [ iamanaws ];
     mainProgram = "mongocli";
   };
 }

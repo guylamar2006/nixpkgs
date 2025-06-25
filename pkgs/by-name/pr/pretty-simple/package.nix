@@ -7,7 +7,7 @@
 haskell.lib.compose.justStaticExecutables (
   haskell.lib.compose.overrideCabal (oldAttrs: {
     maintainers = (oldAttrs.maintainers or [ ]) ++ [
-      lib.maintainers.cdepillabout
+      cdepillabout
     ];
 
     configureFlags = (oldAttrs.configureFlags or [ ]) ++ [ "-fbuildexe" ];

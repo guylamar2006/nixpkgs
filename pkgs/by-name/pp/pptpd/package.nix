@@ -23,8 +23,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://poptop.sourceforge.net/dox/";
     description = "PPTP Server for Linux";
-    platforms = platforms.linux;
-    maintainers = with maintainers; [ obadz ];
-    license = licenses.gpl2Only;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ obadz ];
+    license = lib.licenses.gpl2Only;
   };
 }

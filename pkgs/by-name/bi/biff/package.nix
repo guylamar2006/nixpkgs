@@ -34,7 +34,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
       lib.licenses.mit
       lib.licenses.unlicense
     ];
-    maintainers = [ lib.maintainers.kpbaks ];
+    maintainers = with lib.maintainers; [ kpbaks ];
     mainProgram = "biff";
     platforms = lib.platforms.all;
   };

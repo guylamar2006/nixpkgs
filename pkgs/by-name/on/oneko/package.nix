@@ -53,7 +53,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/IreneKnapp/oneko";
     license = with licenses; [ publicDomain ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       xaverdh
       irenes
     ];

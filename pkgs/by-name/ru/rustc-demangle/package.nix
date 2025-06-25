@@ -45,6 +45,6 @@ rustPlatform.buildRustPackage rec {
     ];
     # upstream supports other platforms, but maintainer can only test on linux
     platforms = platforms.linux;
-    maintainers = with maintainers; [ _1000teslas ];
+    maintainers = with lib.maintainers; [ _1000teslas ];
   };
 }

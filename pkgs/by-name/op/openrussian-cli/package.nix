@@ -89,7 +89,7 @@ stdenv.mkDerivation rec {
       mit
       cc-by-sa-40
     ];
-    maintainers = with maintainers; [ zane ];
+    maintainers = with lib.maintainers; [ zane ];
     mainProgram = "openrussian";
     platforms = platforms.unix;
   };

@@ -71,7 +71,7 @@ stdenv.mkDerivation {
     mainProgram = "xneur";
     homepage = "https://xneur.ru";
     license = licenses.gpl2Plus;
-    maintainers = [ maintainers.raskin ];
+    maintainers = with lib.maintainers; [ raskin ];
     platforms = platforms.linux;
   };
 }

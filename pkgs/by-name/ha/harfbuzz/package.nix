@@ -126,12 +126,12 @@ stdenv.mkDerivation (finalAttrs: {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "OpenType text shaping engine";
     homepage = "https://harfbuzz.github.io/";
     changelog = "https://github.com/harfbuzz/harfbuzz/raw/${finalAttrs.version}/NEWS";
-    maintainers = [ ];
-    license = licenses.mit;
+    maintainers = with lib.maintainers; [ ];
+    license = lib.licenses.mit;
     platforms = platforms.unix ++ platforms.windows;
     pkgConfigModules = [
       "harfbuzz"

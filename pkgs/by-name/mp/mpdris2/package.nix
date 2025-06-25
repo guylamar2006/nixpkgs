@@ -45,11 +45,11 @@ python3.pkgs.buildPythonApplication rec {
     pygobject3
   ];
 
-  meta = with lib; {
+  meta = {
     description = "MPRIS 2 support for mpd";
     homepage = "https://github.com/eonpatapon/mpDris2/";
-    license = licenses.gpl3;
-    maintainers = [ ];
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
     mainProgram = "mpDris2";
   };

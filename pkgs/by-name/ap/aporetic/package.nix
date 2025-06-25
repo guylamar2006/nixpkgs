@@ -61,6 +61,6 @@ symlinkJoin {
     '';
     license = lib.licenses.ofl;
     platforms = iosevka.meta.platforms;
-    maintainers = [ lib.maintainers.DamienCassou ];
+    maintainers = with lib.maintainers; [ DamienCassou ];
   };
 }

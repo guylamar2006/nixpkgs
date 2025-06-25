@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.joachim-breitner.de/en/projects#screen-message";
     description = "Displays a short text fullscreen in an X11 window";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ lib.maintainers.fpletz ];
+    maintainers = with lib.maintainers; [ fpletz ];
     mainProgram = "sm";
     platforms = lib.platforms.unix;
   };

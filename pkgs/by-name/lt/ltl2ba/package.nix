@@ -31,6 +31,6 @@ stdenv.mkDerivation rec {
     homepage = "http://www.lsv.ens-cachan.fr/~gastin/ltl2ba";
     license = lib.licenses.gpl2Plus;
     platforms = lib.platforms.darwin ++ lib.platforms.linux;
-    maintainers = [ lib.maintainers.thoughtpolice ];
+    maintainers = with lib.maintainers; [ thoughtpolice ];
   };
 }

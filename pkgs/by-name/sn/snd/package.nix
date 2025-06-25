@@ -49,8 +49,8 @@ stdenv.mkDerivation rec {
     description = "Sound editor";
     homepage = "https://ccrma.stanford.edu/software/snd/";
     platforms = platforms.unix;
-    license = licenses.free;
-    maintainers = [ ];
+    license = lib.licenses.free;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "snd";
   };
 }

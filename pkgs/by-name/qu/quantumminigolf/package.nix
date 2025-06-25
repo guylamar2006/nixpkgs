@@ -40,8 +40,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Quantum mechanics-based minigolf-like game";
     mainProgram = "quantumminigolf";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [ raskin ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ raskin ];
     platforms = platforms.linux;
     # never built on aarch64-linux since first introduction in nixpkgs
     broken = stdenv.hostPlatform.isLinux && stdenv.hostPlatform.isAarch64;

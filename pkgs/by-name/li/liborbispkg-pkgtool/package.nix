@@ -24,7 +24,7 @@ buildDotnetModule {
     description = "Library, GUI, CLI for creating, inspecting, and modifying PS4 PKG, SFO, PFS, and related filetypes";
     homepage = "https://github.com/OpenOrbis/LibOrbisPkg";
     license = lib.licenses.lgpl3Plus;
-    maintainers = [ lib.maintainers.ryand56 ];
+    maintainers = with lib.maintainers; [ ryand56 ];
     mainProgram = "pkgtool";
   };
 }

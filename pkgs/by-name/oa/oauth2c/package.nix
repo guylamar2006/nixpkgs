@@ -29,8 +29,8 @@ buildGoModule rec {
       using any grant type or client authentication method. It is compliant with
       almost all basic and advanced OAuth 2.0, OIDC, OIDF FAPI and JWT profiles.
     '';
-    license = licenses.asl20;
-    maintainers = [ maintainers.flokli ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ flokli ];
     platforms = platforms.darwin ++ platforms.linux;
   };
 }

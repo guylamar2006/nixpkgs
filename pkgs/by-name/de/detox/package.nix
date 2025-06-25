@@ -44,7 +44,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     license = lib.licenses.bsd3;
     platforms = lib.platforms.linux;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "detox";
   };
 })

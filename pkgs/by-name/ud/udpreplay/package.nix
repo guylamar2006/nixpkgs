@@ -24,7 +24,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/rigtorp/udpreplay";
     license = licenses.mit;
-    maintainers = [ maintainers.considerate ];
+    maintainers = with lib.maintainers; [ considerate ];
     platforms = platforms.linux;
     mainProgram = "udpreplay";
   };

@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
       lgpl21Only
     ];
     mainProgram = "traceroute";
-    maintainers = with maintainers; [ nicoo ];
+    maintainers = with lib.maintainers; [ nicoo ];
     platforms = platforms.all;
     broken = stdenv.hostPlatform.isDarwin;
   };

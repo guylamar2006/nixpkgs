@@ -66,8 +66,8 @@ buildGoModule rec {
     {
       description = "Suite of programs to use native stores to keep Docker credentials safe";
       homepage = "https://github.com/docker/docker-credential-helpers";
-      license = licenses.mit;
-      maintainers = [ ];
+      license = lib.licenses.mit;
+      maintainers = with lib.maintainers; [ ];
     }
     // lib.optionalAttrs stdenv.hostPlatform.isDarwin {
       mainProgram = "docker-credential-osxkeychain";

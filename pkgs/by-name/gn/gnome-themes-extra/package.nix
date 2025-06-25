@@ -54,8 +54,8 @@ stdenv.mkDerivation rec {
     gtk-update-icon-cache "$out"/share/icons/HighContrast
   '';
 
-  meta = with lib; {
+  meta = {
     platforms = platforms.unix;
-    teams = [ teams.gnome ];
+    teams = with lib.teams; [ gnome ];
   };
 }

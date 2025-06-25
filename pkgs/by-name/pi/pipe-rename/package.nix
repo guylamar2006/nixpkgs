@@ -32,8 +32,8 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Rename your files using your favorite text editor";
     homepage = "https://github.com/marcusbuffett/pipe-rename";
-    license = licenses.mit;
-    maintainers = with maintainers; [ figsoda ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ figsoda ];
     mainProgram = "renamer";
   };
 }

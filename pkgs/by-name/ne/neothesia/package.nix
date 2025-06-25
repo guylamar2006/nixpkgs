@@ -68,8 +68,8 @@ rustPlatform.buildRustPackage {
     license = lib.licenses.gpl3;
     platforms = lib.platforms.linux;
     mainProgram = "neothesia";
-    maintainers = [
-      lib.maintainers.naxdy
+    maintainers = with lib.maintainers; [
+      naxdy
     ];
   };
 }

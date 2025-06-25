@@ -54,8 +54,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "http://www.netlib.org/linalg/spooles/";
     description = "Library for solving sparse real and complex linear systems of equations";
-    license = licenses.publicDomain;
-    maintainers = with maintainers; [ ];
+    license = lib.licenses.publicDomain;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
   };
 }

@@ -119,9 +119,9 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://rocksdb.org";
     description = "Library that provides an embeddable, persistent key-value store for fast storage";
     changelog = "https://github.com/facebook/rocksdb/raw/v${finalAttrs.version}/HISTORY.md";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     platforms = platforms.all;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       adev
       magenbluten
     ];

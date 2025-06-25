@@ -31,8 +31,8 @@ python3.pkgs.buildPythonApplication rec {
       output is code which implements the hash function. Templates can
       easily be constructed for any programming language.
     '';
-    license = licenses.bsd3;
-    maintainers = [ maintainers.kaction ];
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ kaction ];
 
     homepage = "https://github.com/ilanschnell/perfect-hash";
     platforms = platforms.unix;

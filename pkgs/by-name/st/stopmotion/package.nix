@@ -37,9 +37,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Create stop-motion animation movies";
     homepage = "http://linuxstopmotion.org/";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.linux;
-    maintainers = [ maintainers.bjornfor ];
+    maintainers = with lib.maintainers; [ bjornfor ];
     mainProgram = "stopmotion";
   };
 }

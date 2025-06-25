@@ -22,7 +22,7 @@ stdenvNoCC.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.latofonts.com/";
 
     description = ''
@@ -42,8 +42,8 @@ stdenvNoCC.mkDerivation {
       additional weights were created.
     '';
 
-    license = licenses.ofl;
+    license = lib.licenses.ofl;
     platforms = platforms.all;
-    maintainers = with maintainers; [ chris-martin ];
+    maintainers = with lib.maintainers; [ chris-martin ];
   };
 }

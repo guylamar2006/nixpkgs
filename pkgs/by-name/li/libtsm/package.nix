@@ -25,11 +25,11 @@ stdenv.mkDerivation {
     pkg-config
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Terminal-emulator State Machine";
     homepage = "https://www.freedesktop.org/wiki/Software/kmscon/libtsm/";
-    license = licenses.mit;
-    maintainers = [ ];
-    platforms = platforms.linux;
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
+    platforms = lib.platforms.linux;
   };
 }

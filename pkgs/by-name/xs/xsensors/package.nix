@@ -28,6 +28,6 @@ stdenv.mkDerivation (finalAttrs: {
   meta = {
     license = lib.licenses.gpl2Plus;
     platforms = lib.platforms.linux;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 })

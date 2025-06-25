@@ -44,7 +44,7 @@ stdenv.mkDerivation rec {
     homepage = "https://drobilla.net/software/patchage.html";
     license = lib.licenses.lgpl3;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.nico202 ];
+    maintainers = with lib.maintainers; [ nico202 ];
     mainProgram = "patchage";
   };
 }

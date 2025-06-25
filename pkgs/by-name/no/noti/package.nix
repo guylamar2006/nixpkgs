@@ -46,7 +46,7 @@ buildGoModule (finalAttrs: {
     '';
     homepage = "https://github.com/variadico/noti";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.stites ];
+    maintainers = with lib.maintainers; [ stites ];
     mainProgram = "noti";
   };
 })

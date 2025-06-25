@@ -48,6 +48,6 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://gitlab.com/asus-linux/supergfxctl";
     license = licenses.mpl20;
     platforms = [ "x86_64-linux" ];
-    maintainers = [ maintainers.k900 ];
+    maintainers = with lib.maintainers; [ k900 ];
   };
 }

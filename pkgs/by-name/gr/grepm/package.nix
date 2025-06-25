@@ -32,12 +32,12 @@ stdenv.mkDerivation {
       $out/bin/grepm
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Wrapper for grepmail utilizing mutt";
     homepage = "https://www.barsnick.net/sw/grepm.html";
-    license = licenses.free;
+    license = lib.licenses.free;
     platforms = platforms.unix;
-    maintainers = [ maintainers.romildo ];
+    maintainers = with lib.maintainers; [ romildo ];
     mainProgram = "grepm";
   };
 }

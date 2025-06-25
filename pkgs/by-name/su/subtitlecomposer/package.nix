@@ -53,7 +53,7 @@ stdenv.mkDerivation rec {
       Subtitle Workshop for every platform supported by Plasma Frameworks.
     '';
     changelog = "https://invent.kde.org/multimedia/subtitlecomposer/-/blob/master/ChangeLog";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     maintainers = with maintainers; [ kugland ];
     mainProgram = "subtitlecomposer";
     platforms = with platforms; linux ++ freebsd ++ windows;

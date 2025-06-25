@@ -56,6 +56,6 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://github.com/HumanSignal/labelImg";
     license = lib.licenses.mit;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.cmcdragonkai ];
+    maintainers = with lib.maintainers; [ cmcdragonkai ];
   };
 }

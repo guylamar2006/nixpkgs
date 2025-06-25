@@ -28,7 +28,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     '';
     homepage = "https://linearicons.com/free";
     license = lib.licenses.cc-by-sa-40;
-    maintainers = [ lib.maintainers.CardboardTurkey ];
+    maintainers = with lib.maintainers; [ CardboardTurkey ];
     platforms = lib.platforms.all;
   };
 })

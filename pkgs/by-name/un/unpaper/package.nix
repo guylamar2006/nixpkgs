@@ -56,6 +56,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl2Only;
     platforms = lib.platforms.all;
     mainProgram = "unpaper";
-    maintainers = [ lib.maintainers.rycee ];
+    maintainers = with lib.maintainers; [ rycee ];
   };
 }

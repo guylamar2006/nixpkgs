@@ -30,7 +30,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = {
     description = "Client-only implementation of the SCEP (Cisco System's Simple Certificate Enrollment Protocol)";
     homepage = "https://github.com/certnanny/sscep";
-    maintainers = [ lib.maintainers.stv0g ];
+    maintainers = with lib.maintainers; [ stv0g ];
     license = [
       lib.licenses.bsd2
       lib.licenses.openssl

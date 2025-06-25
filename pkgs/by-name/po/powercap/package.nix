@@ -34,8 +34,8 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     description = "Tools and library to read/write to the Linux power capping framework (sysfs interface)";
-    license = licenses.bsd3;
-    platforms = platforms.linux;
-    maintainers = with maintainers; [ rowanG077 ];
+    license = lib.licenses.bsd3;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ rowanG077 ];
   };
 }

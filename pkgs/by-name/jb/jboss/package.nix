@@ -18,12 +18,12 @@ stdenv.mkDerivation rec {
     find $out/bin -name \*.sh -print0 | xargs -0 sed -i -e '/#!\/bin\/sh/aJAVA_HOME=${jdk}'
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.jboss.org/";
     description = "Open Source J2EE application server";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
-    license = licenses.lgpl21;
-    maintainers = [ maintainers.sander ];
+    license = lib.licenses.lgpl21;
+    maintainers = with lib.maintainers; [ sander ];
     platforms = platforms.unix;
     knownVulnerabilities = [
       "CVE-2015-7501: remote code execution in apache-commons-collections: InvokerTransformer during deserialisation"

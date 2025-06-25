@@ -164,7 +164,7 @@ stdenv.mkDerivation rec {
   #    scan_devices.o: file not recognized: file format not recognized
   enableParallelBuilding = false;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://xiph.org/paranoia";
     description = "Tool and library for reading digital audio from CDs";
     license = with licenses; [

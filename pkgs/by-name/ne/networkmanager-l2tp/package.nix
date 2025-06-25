@@ -81,8 +81,8 @@ stdenv.mkDerivation rec {
     description = "L2TP plugin for NetworkManager";
     inherit (networkmanager.meta) platforms;
     homepage = "https://github.com/nm-l2tp/network-manager-l2tp";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [
       abbradar
       obadz
     ];

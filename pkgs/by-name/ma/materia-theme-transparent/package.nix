@@ -19,6 +19,6 @@ materia-theme.overrideAttrs (oldAttrs: {
     homepage = "https://github.com/ckissane/materia-theme-transparent";
     license = lib.licenses.gpl2Only;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.corbinwunderlich ];
+    maintainers = with lib.maintainers; [ corbinwunderlich ];
   };
 })

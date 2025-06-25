@@ -72,7 +72,7 @@ buildGraalvmNativeImage (finalAttrs: {
     changelog = "https://github.com/clojure-lsp/clojure-lsp/releases/tag/${finalAttrs.version}";
     sourceProvenance = [ lib.sourceTypes.binaryBytecode ];
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.ericdallo ];
+    maintainers = with lib.maintainers; [ ericdallo ];
     mainProgram = "clojure-lsp";
   };
 })

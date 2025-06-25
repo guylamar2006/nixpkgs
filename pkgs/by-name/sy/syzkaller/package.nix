@@ -53,7 +53,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Unsupervised, coverage-guided kernel fuzzer";
     homepage = "https://github.com/google/syzkaller";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.msanft ];
+    maintainers = with lib.maintainers; [ msanft ];
     platforms = lib.platforms.linux;
     mainProgram = "syz-manager";
   };

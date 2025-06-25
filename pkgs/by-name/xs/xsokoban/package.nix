@@ -64,7 +64,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.cs.cornell.edu/andru/xsokoban.html";
     mainProgram = "xsokoban";
     license = licenses.publicDomain;
-    maintainers = [ maintainers.raskin ];
+    maintainers = with lib.maintainers; [ raskin ];
     platforms = platforms.linux;
   };
 }

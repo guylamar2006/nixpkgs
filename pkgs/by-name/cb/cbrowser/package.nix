@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
 
     homepage = "https://sourceforge.net/projects/cbrowser/";
 
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
 
     platforms = with lib.platforms; linux;
   };

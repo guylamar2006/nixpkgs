@@ -29,13 +29,13 @@ stdenv.mkDerivation rec {
 
   installFlags = [ "DESTDIR=$(out)" ];
 
-  meta = with lib; {
+  meta = {
     broken = (stdenv.hostPlatform.isLinux && stdenv.hostPlatform.isAarch64);
     homepage = "https://kristaps.bsd.lv/kcgi";
     description = "Minimal CGI and FastCGI library for C/C++";
-    license = licenses.isc;
+    license = lib.licenses.isc;
     platforms = platforms.all;
-    maintainers = [ maintainers.leenaars ];
+    maintainers = with lib.maintainers; [ leenaars ];
     mainProgram = "kfcgi";
   };
 }

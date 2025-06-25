@@ -35,7 +35,7 @@ rustPlatform.buildRustPackage rec {
     mainProgram = "qir-runner";
     homepage = "https://qir-alliance.github.io/qir-runner";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.bbenno ];
+    maintainers = with lib.maintainers; [ bbenno ];
     # llvm-sys crate locates llvm by calling llvm-config
     # which is not available when cross compiling
     broken = stdenv.buildPlatform != stdenv.hostPlatform;

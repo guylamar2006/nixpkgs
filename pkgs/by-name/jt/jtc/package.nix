@@ -40,12 +40,12 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "JSON manipulation and transformation tool";
     mainProgram = "jtc";
     homepage = "https://github.com/ldn-softdev/jtc";
-    license = licenses.mit;
-    maintainers = [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
   };
 }

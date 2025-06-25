@@ -89,7 +89,7 @@ stdenv.mkDerivation (finalAttrs: {
       gpl3Plus
       asl20
     ];
-    maintainers = [ lib.maintainers.dflores ];
+    maintainers = with lib.maintainers; [ dflores ];
     mainProgram = "fastqc";
     platforms = lib.platforms.unix;
   };

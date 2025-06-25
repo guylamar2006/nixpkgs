@@ -29,9 +29,9 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "High performance X11 animated wallpaper setter";
     homepage = "https://github.com/glouw/paperview";
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
     license = with licenses; [ mit ];
-    maintainers = with maintainers; [ _3JlOy-PYCCKUi ];
+    maintainers = with lib.maintainers; [ _3JlOy-PYCCKUi ];
     mainProgram = "paperview";
   };
 }

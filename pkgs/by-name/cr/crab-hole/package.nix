@@ -23,8 +23,8 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://github.com/LuckyTurtleDev/crab-hole";
     license = lib.licenses.agpl3Plus;
     mainProgram = "crab-hole";
-    maintainers = [
-      lib.maintainers.NiklasVousten
+    maintainers = with lib.maintainers; [
+      NiklasVousten
     ];
     platforms = lib.platforms.linux;
   };

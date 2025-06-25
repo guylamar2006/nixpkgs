@@ -89,6 +89,6 @@ stdenv.mkDerivation (finalAttrs: {
     #
     # https://github.com/NixOS/nixpkgs/pull/306372#issuecomment-2111688236
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.lucasbergman ];
+    maintainers = with lib.maintainers; [ lucasbergman ];
   };
 })

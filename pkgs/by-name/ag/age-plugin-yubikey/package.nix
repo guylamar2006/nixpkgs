@@ -30,7 +30,7 @@ rustPlatform.buildRustPackage rec {
     openssl
   ] ++ lib.optionals stdenv.hostPlatform.isLinux [ pcsclite ];
 
-  meta = with lib; {
+  meta = {
     description = "YubiKey plugin for age";
     mainProgram = "age-plugin-yubikey";
     homepage = "https://github.com/str4d/age-plugin-yubikey";
@@ -39,7 +39,7 @@ rustPlatform.buildRustPackage rec {
       mit
       asl20
     ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       kranzes
       vtuan10
       adamcstephens

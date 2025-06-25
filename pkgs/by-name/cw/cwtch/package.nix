@@ -48,6 +48,6 @@ buildGoModule rec {
     changelog = "https://docs.cwtch.im/changelog";
     license = lib.licenses.mit;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.gmacon ];
+    maintainers = with lib.maintainers; [ gmacon ];
   };
 }

@@ -67,7 +67,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Library for creating smooth cubic splines";
     homepage = "https://github.com/loco-3d/ndcurves";
     license = lib.licenses.bsd2;
-    maintainers = [ lib.maintainers.nim65s ];
+    maintainers = with lib.maintainers; [ nim65s ];
     platforms = lib.platforms.unix;
   };
 })

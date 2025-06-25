@@ -105,9 +105,9 @@ stdenv.mkDerivation rec {
       utilized by a third-party component.
     '';
     homepage = "https://www.spice-space.org/";
-    license = licenses.lgpl21;
+    license = lib.licenses.lgpl21;
 
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       atemu
     ];
     platforms = with platforms; linux ++ darwin;

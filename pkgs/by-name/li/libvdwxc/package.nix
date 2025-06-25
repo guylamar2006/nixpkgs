@@ -51,7 +51,7 @@ stdenv.mkDerivation {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     description = "Portable C library of density functionals with van der Waals interactions for density functional theory";
     license = with licenses; [
       lgpl3Plus
@@ -59,6 +59,6 @@ stdenv.mkDerivation {
     ];
     homepage = "https://libvdwxc.materialsmodeling.org/";
     platforms = platforms.unix;
-    maintainers = [ maintainers.sheepforce ];
+    maintainers = with lib.maintainers; [ sheepforce ];
   };
 }

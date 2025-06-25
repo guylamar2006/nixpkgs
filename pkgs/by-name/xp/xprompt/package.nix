@@ -56,7 +56,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/phillbush/xprompt";
     license = licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
     mainProgram = "xprompt";
   };

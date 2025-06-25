@@ -65,8 +65,8 @@ stdenv.mkDerivation rec {
     description = "Portable cross-platform Audio API";
     homepage = "https://www.portaudio.com/";
     # Not exactly a bsd license, but alike
-    license = licenses.mit;
-    maintainers = with maintainers; [ lovek323 ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ lovek323 ];
     platforms = platforms.unix;
   };
 

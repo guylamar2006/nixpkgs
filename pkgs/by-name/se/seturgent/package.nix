@@ -30,8 +30,8 @@ stdenv.mkDerivation rec {
     platforms = platforms.linux;
     description = "Set an application's urgency hint (or not)";
     mainProgram = "seturgent";
-    maintainers = with maintainers; [ yarr ];
+    maintainers = with lib.maintainers; [ yarr ];
     homepage = "https://codemadness.org/seturgent-set-urgency-hints-for-x-applications.html";
-    license = licenses.mit;
+    license = lib.licenses.mit;
   };
 }

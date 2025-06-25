@@ -23,7 +23,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = {
     description = "ASP system to ground and solve logic programs";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.raskin ];
+    maintainers = with lib.maintainers; [ raskin ];
     platforms = lib.platforms.unix;
     homepage = "https://potassco.org/";
     downloadPage = "https://github.com/potassco/clingo/releases/";

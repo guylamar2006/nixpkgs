@@ -100,7 +100,7 @@ stdenv.mkDerivation {
     homepage = "https://core.telegram.org/tdlib/";
     license = [ licenses.boost ];
     platforms = platforms.unix;
-    maintainers = [
+    maintainers = with lib.maintainers; [
       maintainers.vyorkin
       maintainers.vonfry
     ];

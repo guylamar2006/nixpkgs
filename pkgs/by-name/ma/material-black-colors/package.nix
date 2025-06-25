@@ -60,10 +60,10 @@ lib.checkListOfEnum "${pname}: color variants" colorVariantList colorVariants
 
     dontFixup = true;
 
-    meta = with lib; {
+    meta = {
       description = "Material Black Colors icons";
       homepage = "https://github.com/rtlewis88/rtl88-Themes/tree/material-black-COLORS";
-      maintainers = with maintainers; [ d3vil0p3r ];
+      maintainers = with lib.maintainers; [ d3vil0p3r ];
       platforms = platforms.all;
       license = with licenses; [
         gpl3Plus

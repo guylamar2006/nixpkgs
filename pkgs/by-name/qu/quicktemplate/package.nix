@@ -19,8 +19,8 @@ buildGoModule rec {
   meta = with lib; {
     homepage = "https://github.com/valyala/quicktemplate";
     description = "Fast, powerful, yet easy to use template engine for Go";
-    license = licenses.mit;
-    maintainers = with maintainers; [ Madouura ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ Madouura ];
     mainProgram = "qtc";
   };
 }

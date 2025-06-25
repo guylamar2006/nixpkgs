@@ -43,11 +43,11 @@ stdenv.mkDerivation rec {
     #"-DCMAKE_PREFIX_PATH=${gtest.dev}/lib/cmake"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "PoW algorithm for Ethereum 1.0 based on Dagger-Hashimoto";
     homepage = "https://github.com/ethereum/ethash";
     platforms = platforms.unix;
-    maintainers = [ ];
-    license = licenses.asl20;
+    maintainers = with lib.maintainers; [ ];
+    license = lib.licenses.asl20;
   };
 }

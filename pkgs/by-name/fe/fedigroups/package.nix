@@ -33,12 +33,12 @@ rustPlatform.buildRustPackage rec {
     openssl
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://git.ondrovo.com/MightyPork/group-actor#fedi-groups";
     downloadPage = "https://git.ondrovo.com/MightyPork/group-actor/releases";
     description = "Approximation of groups usable with Fediverse software that implements the Mastodon client API";
-    license = licenses.mit;
-    maintainers = with maintainers; [ fgaz ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ fgaz ];
     platforms = platforms.all;
     mainProgram = "fedigroups";
   };

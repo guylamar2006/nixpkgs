@@ -80,7 +80,7 @@ lib.checkListOfEnum "${pname}: platform"
         description = "Simple and easy-to-use library to enjoy videogames programming";
         homepage = "https://www.raylib.com/";
         license = lib.licenses.zlib;
-        maintainers = [ lib.maintainers.diniamo ];
+        maintainers = with lib.maintainers; [ diniamo ];
         platforms = lib.platforms.all;
         changelog = "https://github.com/raysan5/raylib/blob/${finalAttrs.version}/CHANGELOG";
       };

@@ -22,8 +22,8 @@ stdenv.mkDerivation {
     description = "Scan networks searching for NetBIOS information";
     mainProgram = "nbtscan";
     homepage = "https://github.com/resurrecting-open-source-projects/nbtscan";
-    maintainers = with maintainers; [ d3vil0p3r ];
+    maintainers = with lib.maintainers; [ d3vil0p3r ];
     platforms = platforms.unix;
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
   };
 }

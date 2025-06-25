@@ -75,8 +75,8 @@ stdenv.mkDerivation rec {
       Supports full SNOBOL4 language plus SPITBOL, [Blocks](https://www.regressive.org/snobol4/blocks/) and other extensions.
     '';
     homepage = "https://www.regressive.org/snobol4/csnobol4/";
-    license = licenses.bsd2;
+    license = lib.licenses.bsd2;
     platforms = platforms.all;
-    maintainers = with maintainers; [ xworld21 ];
+    maintainers = with lib.maintainers; [ xworld21 ];
   };
 }

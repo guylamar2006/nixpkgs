@@ -92,9 +92,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/phw/peek";
     description = "Simple animated GIF screen recorder with an easy to use interface";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ puffnfresh ];
-    platforms = platforms.linux;
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ puffnfresh ];
+    platforms = lib.platforms.linux;
     mainProgram = "peek";
   };
 }

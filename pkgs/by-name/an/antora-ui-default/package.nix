@@ -15,7 +15,7 @@ stdenvNoCC.mkDerivation {
   pname = "antora-ui-default";
   version = "0-unstable-2024-12-26";
 
-  # The UI bundle is fetched from lib.maintainers.naho's antora-ui-default fork
+  # The UI bundle is fetched from naho's antora-ui-default fork
   # for the following reasons:
   #
   # > The UI bundle is currently unpackaged [1] [2], and only accessible by
@@ -73,7 +73,7 @@ stdenvNoCC.mkDerivation {
       references.
     '';
 
-    maintainers = [ lib.maintainers.naho ];
+    maintainers = with lib.maintainers; [ naho ];
     platforms = lib.platforms.all;
   };
 }

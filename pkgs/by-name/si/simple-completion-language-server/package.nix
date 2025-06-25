@@ -25,7 +25,7 @@ rustPlatform.buildRustPackage {
     description = "Language server to enable word completion and snippets for Helix editor";
     homepage = "https://github.com/estin/simple-completion-language-server";
     license = [ lib.licenses.mit ];
-    maintainers = [ lib.maintainers.kpbaks ];
+    maintainers = with lib.maintainers; [ kpbaks ];
     mainProgram = "simple-completion-language-server";
     platforms = lib.platforms.all;
   };

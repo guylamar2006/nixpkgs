@@ -34,7 +34,7 @@ stdenv.mkDerivation (finalAttrs: {
       The library is header-only for easy integration with projects, and a single header can be used for drag-and-drop start up.
     '';
     homepage = "https://github.com/ThePhD/sol2";
-    license = licenses.mit;
-    maintainers = with maintainers; [ mrcjkb ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ mrcjkb ];
   };
 })

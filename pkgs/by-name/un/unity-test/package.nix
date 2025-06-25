@@ -23,6 +23,6 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Unity Unit Testing Framework";
     homepage = "https://www.throwtheswitch.org/unity";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.i01011001 ];
+    maintainers = with lib.maintainers; [ i01011001 ];
   };
 })

@@ -74,7 +74,7 @@ python3.pkgs.buildPythonApplication rec {
     license = licenses.gpl3Plus;
     platforms = platforms.linux;
     maintainers = with maintainers; [ samalws ];
-    teams = [ teams.gnome-circle ];
+    teams = with lib.teams; [ gnome-circle ];
     mainProgram = "wike";
   };
 }

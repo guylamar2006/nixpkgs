@@ -21,8 +21,8 @@ mkPulumiPackage rec {
   meta = with lib; {
     description = "Unofficial Yandex Cloud Resource Provider";
     homepage = "https://github.com/Regrau/pulumi-yandex";
-    license = licenses.asl20;
-    maintainers = with maintainers; [
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [
       tie
       veehaitch
       trundle

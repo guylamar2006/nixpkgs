@@ -39,7 +39,7 @@ stdenv.mkDerivation {
     mainProgram = "connman_dmenu";
     homepage = "https://github.com/march-linux/connman_dmenu";
     license = lib.licenses.free;
-    maintainers = [ lib.maintainers.magnetophon ];
+    maintainers = with lib.maintainers; [ magnetophon ];
     platforms = lib.platforms.all;
   };
 }

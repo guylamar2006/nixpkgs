@@ -32,7 +32,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://yx7.cc/code/";
     license = lib.licenses.mit;
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.haylin ];
+    maintainers = with lib.maintainers; [ haylin ];
     mainProgram = "ynetd";
   };
 })

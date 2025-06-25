@@ -57,7 +57,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://www.openimagedenoise.org";
     description = "High-Performance Denoising Library for Ray Tracing";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.leshainc ];
+    maintainers = with lib.maintainers; [ leshainc ];
     platforms = lib.platforms.unix;
     changelog = "https://github.com/RenderKit/oidn/blob/v${finalAttrs.version}/CHANGELOG.md";
   };

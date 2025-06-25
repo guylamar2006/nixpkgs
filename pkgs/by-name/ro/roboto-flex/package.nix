@@ -27,6 +27,6 @@ stdenvNoCC.mkDerivation rec {
     description = "Google Roboto Flex family of fonts";
     license = lib.licenses.ofl;
     platforms = lib.platforms.all;
-    maintainers = [ lib.maintainers.romildo ];
+    maintainers = with lib.maintainers; [ romildo ];
   };
 }

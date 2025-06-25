@@ -29,8 +29,8 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/kkos/oniguruma";
     description = "Regular expressions library";
     mainProgram = "onig-config";
-    license = licenses.bsd2;
-    maintainers = with maintainers; [ artturin ];
+    license = lib.licenses.bsd2;
+    maintainers = with lib.maintainers; [ artturin ];
     platforms = platforms.unix;
   };
 }

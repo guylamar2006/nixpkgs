@@ -27,7 +27,7 @@ stdenvNoCC.mkDerivation rec {
     description = "Chinese TrueType Kai font by Ministry of Education of Taiwan government";
     homepage = "https://www.cns11643.gov.tw/";
     license = lib.licenses.ofl;
-    maintainers = [ lib.maintainers.rypervenche ];
+    maintainers = with lib.maintainers; [ rypervenche ];
     platforms = lib.platforms.all;
   };
 }

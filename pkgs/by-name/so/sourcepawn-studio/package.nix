@@ -37,6 +37,6 @@ rustPlatform.buildRustPackage (finalAttrs: {
     homepage = "https://sarrus1.github.io/sourcepawn-studio/";
     changelog = "https://github.com/Sarrus1/sourcepawn-studio/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.awwpotato ];
+    maintainers = with lib.maintainers; [ awwpotato ];
   };
 })

@@ -48,6 +48,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://www.unix-ag.uni-kl.de/~bloch/acng/";
     license = lib.licenses.bsdOriginal;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.makefu ];
+    maintainers = with lib.maintainers; [ makefu ];
   };
 })

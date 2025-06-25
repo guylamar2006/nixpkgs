@@ -21,8 +21,8 @@ rustPlatform.buildRustPackage {
   meta = with lib; {
     description = "Command-line utility that takes find-formatted lines and batch renames them";
     homepage = "https://github.com/robenkleene/ren-find";
-    license = licenses.mit;
-    maintainers = with maintainers; [ philiptaron ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ philiptaron ];
     mainProgram = "ren";
   };
 }

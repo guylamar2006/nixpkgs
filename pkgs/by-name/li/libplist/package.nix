@@ -54,11 +54,11 @@ stdenv.mkDerivation rec {
     moveToOutput "lib/${python3.libPrefix}" "$py"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Library to handle Apple Property List format in binary or XML";
     homepage = "https://github.com/libimobiledevice/libplist";
-    license = licenses.lgpl21Plus;
-    maintainers = [ ];
+    license = lib.licenses.lgpl21Plus;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
     mainProgram = "plistutil";
   };

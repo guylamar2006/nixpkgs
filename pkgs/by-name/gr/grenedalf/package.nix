@@ -67,7 +67,7 @@ stdenv.mkDerivation (finalAttrs: {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/lczech/grenedalf";
     description = "Collection of commands for working with population genetic data";
     longDescription = ''
@@ -79,7 +79,7 @@ stdenv.mkDerivation (finalAttrs: {
       friendly, and offers more settings and input file formats.
     '';
     platforms = platforms.all;
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ bzizou ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ bzizou ];
   };
 })

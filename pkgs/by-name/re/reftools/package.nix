@@ -24,7 +24,7 @@ buildGoModule {
   meta = with lib; {
     description = "Refactoring tools for Go";
     homepage = "https://github.com/davidrjenni/reftools";
-    license = licenses.bsd2;
-    maintainers = with maintainers; [ kalbasit ];
+    license = lib.licenses.bsd2;
+    maintainers = with lib.maintainers; [ kalbasit ];
   };
 }

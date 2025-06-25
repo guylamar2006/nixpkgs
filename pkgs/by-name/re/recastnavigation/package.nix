@@ -52,8 +52,8 @@ stdenv.mkDerivation {
     homepage = "https://github.com/recastnavigation/recastnavigation";
     description = "Navigation-mesh Toolset for Games";
     mainProgram = "RecastDemo";
-    license = licenses.zlib;
-    maintainers = with maintainers; [ marius851000 ];
+    license = lib.licenses.zlib;
+    maintainers = with lib.maintainers; [ marius851000 ];
     platforms = platforms.all;
   };
 }

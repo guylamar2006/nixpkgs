@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
     mainProgram = "resolvconf";
     homepage = "https://roy.marples.name/projects/openresolv";
     license = lib.licenses.bsd2;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
   };
 }

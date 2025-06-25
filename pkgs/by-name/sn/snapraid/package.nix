@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     homepage = "http://www.snapraid.it/";
     description = "Backup program for disk arrays";
     license = lib.licenses.gpl3;
-    maintainers = [ lib.maintainers.makefu ];
+    maintainers = with lib.maintainers; [ makefu ];
     platforms = lib.platforms.unix;
     mainProgram = "snapraid";
   };

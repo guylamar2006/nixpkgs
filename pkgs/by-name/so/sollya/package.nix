@@ -36,8 +36,8 @@ stdenv.mkDerivation rec {
     description = "Tool environment for safe floating-point code development";
     mainProgram = "sollya";
     homepage = "https://www.sollya.org/";
-    license = licenses.cecill-c;
+    license = lib.licenses.cecill-c;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ wegank ];
+    maintainers = with lib.maintainers; [ wegank ];
   };
 }

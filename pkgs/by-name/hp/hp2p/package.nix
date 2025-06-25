@@ -55,7 +55,7 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/cea-hpc/hp2p/releases/tag/${finalAttrs.version}";
     platforms = lib.platforms.unix;
     license = lib.licenses.cecill-c;
-    maintainers = [ lib.maintainers.bzizou ];
+    maintainers = with lib.maintainers; [ bzizou ];
     mainProgram = "hp2p.exe";
     badPlatforms = [
       # hp2p_algo_cpp.cpp:38:10: error: no member named 'random_shuffle' in namespace 'std'

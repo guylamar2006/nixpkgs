@@ -71,7 +71,7 @@ stdenv.mkDerivation {
     '';
     homepage = "https://github.com/Zepmann/lldap-cli";
     license = lib.licenses.gpl3Only;
-    maintainers = [ lib.maintainers.nw ];
+    maintainers = with lib.maintainers; [ nw ];
     mainProgram = "lldap-cli";
     platforms = lib.platforms.unix;
   };

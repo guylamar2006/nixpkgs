@@ -47,7 +47,7 @@ stdenv.mkDerivation (finalAttrs: {
       url = "https://www.unix-ag.uni-kl.de/~conrad/krypto/pkcrack/pkcrack-readme.html";
       free = false;
     };
-    maintainers = with maintainers; [ emilytrau ];
+    maintainers = with lib.maintainers; [ emilytrau ];
     platforms = platforms.all;
     mainProgram = "pkcrack";
   };

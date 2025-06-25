@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
     description = "Tracks what nix is building";
     homepage = "https://github.com/jerith666/nix-top";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.jerith666 ];
+    maintainers = with lib.maintainers; [ jerith666 ];
     platforms = lib.platforms.unix;
     mainProgram = "nix-top";
   };

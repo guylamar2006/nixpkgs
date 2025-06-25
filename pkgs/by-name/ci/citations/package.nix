@@ -85,12 +85,12 @@ stdenv.mkDerivation (finalAttrs: {
     updateScript = nix-update-script { };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Manage your bibliographies using the BibTeX format";
     homepage = "https://apps.gnome.org/app/org.gnome.World.Citations";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ benediktbroich ];
-    teams = [ teams.gnome-circle ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ benediktbroich ];
+    teams = with lib.teams; [ gnome-circle ];
     platforms = platforms.unix;
     mainProgram = "citations";
   };

@@ -63,7 +63,7 @@ stdenv.mkDerivation (finalAttrs: {
       easy to use.
     '';
     license = lib.licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "omf-install";
     inherit (fish.meta) platforms;
   };

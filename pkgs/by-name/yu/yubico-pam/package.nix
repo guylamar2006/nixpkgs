@@ -42,6 +42,6 @@ stdenv.mkDerivation rec {
     mainProgram = "ykpamcfg";
     homepage = "https://developers.yubico.com/yubico-pam";
     license = licenses.bsd2;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

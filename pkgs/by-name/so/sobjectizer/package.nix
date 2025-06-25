@@ -54,7 +54,7 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/Stiffstream/sobjectizer/releases/tag/v.${finalAttrs.version}";
     description = "Implementation of Actor, Publish-Subscribe, and CSP models in one rather small C++ framework";
     license = lib.licenses.bsd3;
-    maintainers = [ lib.maintainers.ivalery111 ];
+    maintainers = with lib.maintainers; [ ivalery111 ];
     platforms = lib.platforms.all;
   };
 })

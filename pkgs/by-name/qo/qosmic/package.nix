@@ -77,8 +77,8 @@ stdenv.mkDerivation rec {
     description = "Cosmic recursive flame fractal editor";
     mainProgram = "qosmic";
     homepage = "https://github.com/bitsed/qosmic";
-    license = licenses.gpl3Plus;
-    maintainers = [ maintainers.raboof ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ raboof ];
     platforms = platforms.unix;
   };
 }

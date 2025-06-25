@@ -28,6 +28,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     description = "Lovingly crafted handwriting-style monospace font";
     license = lib.licenses.ofl;
     platforms = lib.platforms.all;
-    maintainers = [ lib.maintainers.theonlymrcat ];
+    maintainers = with lib.maintainers; [ theonlymrcat ];
   };
 })

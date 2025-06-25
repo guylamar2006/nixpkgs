@@ -58,8 +58,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "System and kernel logging services";
     homepage = "https://smarden.org/socklog/";
-    license = licenses.publicDomain;
+    license = lib.licenses.publicDomain;
     platforms = platforms.unix;
-    maintainers = [ maintainers.joachifm ];
+    maintainers = with lib.maintainers; [ joachifm ];
   };
 }

@@ -31,9 +31,9 @@ stdenv.mkDerivation rec {
       pace than usual as the eye can stay fixed on a single place.
     '';
     homepage = src.meta.homepage;
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.unix;
-    maintainers = [ maintainers.oxij ];
+    maintainers = with lib.maintainers; [ oxij ];
     mainProgram = "speedread";
   };
 }

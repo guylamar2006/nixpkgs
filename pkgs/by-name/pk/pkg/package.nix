@@ -51,9 +51,9 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     homepage = "https://github.com/freebsd/pkg";
     description = "Package management tool for FreeBSD";
-    maintainers = with maintainers; [ qyliss ];
+    maintainers = with lib.maintainers; [ qyliss ];
     platforms = with platforms; darwin ++ freebsd ++ linux ++ netbsd ++ openbsd;
-    license = licenses.bsd2;
+    license = lib.licenses.bsd2;
     mainProgram = "pkg";
   };
 })

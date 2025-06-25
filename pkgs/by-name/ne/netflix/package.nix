@@ -23,7 +23,7 @@ let
     '';
     homepage = google-chrome.meta.homepage or null;
     license = lib.licenses.unfree;
-    maintainers = [ lib.maintainers.roberth ];
+    maintainers = with lib.maintainers; [ roberth ];
     platforms = google-chrome.meta.platforms or lib.platforms.all;
   };
 

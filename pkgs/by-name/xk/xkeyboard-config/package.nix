@@ -74,7 +74,7 @@ stdenv.mkDerivation (finalAttrs: {
       # also see this issue https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/issues/527
       free
     ];
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
   };
 })

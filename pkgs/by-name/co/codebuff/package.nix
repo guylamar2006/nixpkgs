@@ -28,7 +28,7 @@ buildNpmPackage rec {
     homepage = "https://www.codebuff.com/";
     downloadPage = "https://www.npmjs.com/package/codebuff";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.malo ];
+    maintainers = with lib.maintainers; [ malo ];
     mainProgram = "codebuff";
   };
 }

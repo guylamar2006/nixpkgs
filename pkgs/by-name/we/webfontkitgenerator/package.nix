@@ -74,7 +74,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://apps.gnome.org/app/com.rafaelmardojai.WebfontKitGenerator";
     license = licenses.gpl3Plus;
     maintainers = with maintainers; [ benediktbroich ];
-    teams = [ teams.gnome-circle ];
+    teams = with lib.teams; [ gnome-circle ];
     platforms = platforms.unix;
   };
 })

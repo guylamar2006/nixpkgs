@@ -50,7 +50,7 @@ rustPlatform.buildRustPackage rec {
     description = "ibusb based driver for Elgato StreamDeck devices";
     homepage = "https://github.com/ryankurte/rust-streamdeck";
     license = lib.licenses.mpl20;
-    maintainers = [ lib.maintainers.gdifolco ];
+    maintainers = with lib.maintainers; [ gdifolco ];
     mainProgram = "streamdeck-cli";
   };
 }

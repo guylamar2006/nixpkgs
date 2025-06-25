@@ -42,8 +42,8 @@ appimageTools.wrapType1 {
   meta = with lib; {
     description = "Reference Image Viewer";
     homepage = "https://www.pureref.com";
-    license = licenses.unfree;
-    maintainers = with maintainers; [
+    license = lib.licenses.unfree;
+    maintainers = with lib.maintainers; [
       elnudev
       husjon
     ];

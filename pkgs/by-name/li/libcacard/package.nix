@@ -27,11 +27,11 @@ stdenv.mkDerivation rec {
     nss
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Smart card emulation library";
     homepage = "https://gitlab.freedesktop.org/spice/libcacard";
-    license = licenses.lgpl21;
-    maintainers = [ ];
+    license = lib.licenses.lgpl21;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
   };
 }

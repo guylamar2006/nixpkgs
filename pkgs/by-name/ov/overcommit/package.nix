@@ -31,9 +31,9 @@ bundlerApp {
     description = "Tool to manage and configure Git hooks";
     homepage = "https://github.com/sds/overcommit";
     changelog = "https://github.com/sds/overcommit/blob/main/CHANGELOG.md";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     mainProgram = "overcommit";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       Br1ght0ne
       anthonyroussel
     ];

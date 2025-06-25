@@ -38,6 +38,6 @@ buildNpmPackage rec {
     mainProgram = "semantic-release";
     homepage = "https://semantic-release.gitbook.io/semantic-release/";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.sestrella ];
+    maintainers = with lib.maintainers; [ sestrella ];
   };
 }

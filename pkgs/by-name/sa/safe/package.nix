@@ -27,7 +27,7 @@ buildGoModule rec {
     description = "Vault CLI";
     mainProgram = "safe";
     homepage = "https://github.com/starkandwayne/safe";
-    license = licenses.mit;
-    maintainers = with maintainers; [ eonpatapon ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ eonpatapon ];
   };
 }

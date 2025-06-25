@@ -93,8 +93,8 @@ python3Packages.buildPythonApplication rec {
       This tool requires either to be run with root/sudo or alternatively to have the udev rules files installed. On NixOS this can be achieved by setting `hardware.logitech.wireless.enable`.
     '';
     homepage = "https://pwr-solaar.github.io/Solaar/";
-    license = licenses.gpl2Only;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [
       spinus
       ysndr
       oxalica

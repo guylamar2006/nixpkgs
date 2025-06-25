@@ -141,9 +141,9 @@ rustPlatform.buildRustPackage (finalAttrs: {
       lib.licenses.mit
       lib.licenses.asl20
     ];
-    maintainers = [
-      lib.maintainers.jchw
-      lib.maintainers.normalcea
+    maintainers = with lib.maintainers; [
+      jchw
+      normalcea
     ];
     mainProgram = "ruffle";
     platforms = lib.platforms.linux ++ lib.platforms.darwin;

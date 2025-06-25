@@ -30,8 +30,8 @@ stdenv.mkDerivation rec {
     homepage = "https://z00m128.github.io/sjasmplus/";
     description = "Z80 assembly language cross compiler. It is based on the SjASM source code by Sjoerd Mastijn";
     mainProgram = "sjasmplus";
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     platforms = platforms.all;
-    maintainers = with maintainers; [ electrified ];
+    maintainers = with lib.maintainers; [ electrified ];
   };
 }

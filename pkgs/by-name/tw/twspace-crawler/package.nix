@@ -22,7 +22,7 @@ buildNpmPackage rec {
     homepage = "https://github.com/HitomaruKonpaku/twspace-crawler";
     changelog = "https://github.com/HitomaruKonpaku/twspace-crawler/blob/${src.rev}/CHANGELOG.md";
     license = licenses.isc;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "twspace-crawler";
   };
 }

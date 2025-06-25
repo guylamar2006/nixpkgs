@@ -38,8 +38,8 @@ stdenv.mkDerivation rec {
 
     homepage = "https://pg_top.gitlab.io";
     changelog = "https://gitlab.com/pg_top/pg_top/-/blob/main/HISTORY.rst";
-    platforms = platforms.linux;
-    license = licenses.bsd3;
+    platforms = lib.platforms.linux;
+    license = lib.licenses.bsd3;
     mainProgram = "pg_top";
   };
 }

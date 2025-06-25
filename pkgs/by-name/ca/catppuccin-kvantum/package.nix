@@ -56,6 +56,6 @@ lib.checkListOfEnum "${pname}: theme accent"
       homepage = "https://github.com/catppuccin/Kvantum";
       license = lib.licenses.mit;
       platforms = lib.platforms.linux;
-      maintainers = [ lib.maintainers.bastaynav ];
+      maintainers = with lib.maintainers; [ bastaynav ];
     };
   }

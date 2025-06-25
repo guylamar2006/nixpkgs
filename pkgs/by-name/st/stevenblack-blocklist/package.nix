@@ -59,7 +59,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "Unified hosts file with base extensions";
     homepage = "https://github.com/StevenBlack/hosts";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with maintainers; [
       moni
       Guanran928

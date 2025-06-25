@@ -20,8 +20,8 @@ buildGoModule {
   meta = with lib; {
     description = "Peer-to-peer overlay routing for the Matrix ecosystem";
     homepage = "https://matrix-org.github.io/pinecone/";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ networkexception ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ networkexception ];
     mainProgram = "pinecone";
   };
 }

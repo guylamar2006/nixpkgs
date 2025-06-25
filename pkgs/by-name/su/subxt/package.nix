@@ -39,6 +39,6 @@ rustPlatform.buildRustPackage rec {
       gpl3Plus
       asl20
     ];
-    maintainers = [ maintainers.FlorianFranzen ];
+    maintainers = with lib.maintainers; [ FlorianFranzen ];
   };
 }

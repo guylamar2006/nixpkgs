@@ -71,7 +71,7 @@ stdenv.mkDerivation rec {
     description = "Sticky notes app for the linux desktop";
     mainProgram = "sticky";
     homepage = "https://github.com/linuxmint/sticky";
-    license = licenses.gpl2Only;
+    license = lib.licenses.gpl2Only;
     platforms = platforms.linux;
     maintainers = with maintainers; [
       linsui

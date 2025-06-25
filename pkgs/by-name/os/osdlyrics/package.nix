@@ -82,8 +82,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Standalone lyrics fetcher/displayer";
     homepage = "https://github.com/osdlyrics/osdlyrics";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ pedrohlc ];
-    platforms = platforms.linux;
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ pedrohlc ];
+    platforms = lib.platforms.linux;
   };
 }

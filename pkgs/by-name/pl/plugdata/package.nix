@@ -151,9 +151,9 @@ stdenv.mkDerivation {
     homepage = "https://plugdata.org/";
     license = lib.licenses.gpl3;
     platforms = lib.platforms.linux;
-    maintainers = [
-      lib.maintainers.PowerUser64
-      lib.maintainers.l1npengtul
+    maintainers = with lib.maintainers; [
+      PowerUser64
+      l1npengtul
     ];
   };
 }

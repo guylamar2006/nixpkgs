@@ -23,10 +23,10 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/madmalik/mononoki";
     description = "Font for programming and code review";
-    license = licenses.ofl;
+    license = lib.licenses.ofl;
     platforms = platforms.all;
   };
 }

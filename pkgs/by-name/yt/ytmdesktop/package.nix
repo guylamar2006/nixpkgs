@@ -145,7 +145,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://ytmdesktop.app/";
     license = lib.licenses.gpl3Only;
     mainProgram = "ytmdesktop";
-    maintainers = [ lib.maintainers.cjshearer ];
+    maintainers = with lib.maintainers; [ cjshearer ];
     inherit (electron.meta) platforms;
   };
 })

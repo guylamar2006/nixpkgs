@@ -79,8 +79,8 @@ buildGoModule rec {
   meta = with lib; {
     description = "PDF processor written in Go";
     homepage = "https://pdfcpu.io";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ doronbehar ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ doronbehar ];
     mainProgram = "pdfcpu";
   };
 }

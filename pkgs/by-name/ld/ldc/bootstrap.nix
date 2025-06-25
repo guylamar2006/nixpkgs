@@ -58,7 +58,7 @@ stdenv.mkDerivation {
     mv bin etc import lib LICENSE README $out/
   '';
 
-  meta = with lib; {
+  meta = {
     description = "LLVM-based D Compiler";
     homepage = "https://github.com/ldc-developers/ldc";
     # from https://github.com/ldc-developers/ldc/blob/master/LICENSE
@@ -69,7 +69,7 @@ stdenv.mkDerivation {
       ncsa
       gpl2Plus
     ];
-    maintainers = with maintainers; [ lionello ];
+    maintainers = with lib.maintainers; [ lionello ];
     platforms = [
       "x86_64-linux"
       "x86_64-darwin"

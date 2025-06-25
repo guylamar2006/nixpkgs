@@ -60,11 +60,11 @@ python3Packages.buildPythonApplication rec {
     runHook postCheck
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Upstream packaging automation tool";
     homepage = "https://pkg.labs.nic.cz/pages/apkg";
-    license = licenses.gpl3Plus;
-    maintainers = [
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [
       maintainers.vcunat # close to upstream
     ];
     mainProgram = "apkg";

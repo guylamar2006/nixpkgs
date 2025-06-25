@@ -52,11 +52,11 @@ stdenv.mkDerivation rec {
       stdenv.hostPlatform.isDarwin && stdenv.hostPlatform.isAarch64
     ) "-DPNG_ARM_NEON=off";
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/MCredstoner2004/ImageLOL";
     description = "Simple program to store a file into a PNG image";
-    license = licenses.mit;
-    maintainers = [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
     mainProgram = "ImageLOL";
   };

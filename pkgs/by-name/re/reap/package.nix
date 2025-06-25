@@ -27,6 +27,6 @@ stdenv.mkDerivation {
     mainProgram = "reap";
     license = with licenses; [ publicDomain ];
     platforms = platforms.linux;
-    maintainers = [ maintainers.leahneukirchen ];
+    maintainers = with lib.maintainers; [ leahneukirchen ];
   };
 }

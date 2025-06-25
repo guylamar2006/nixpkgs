@@ -52,8 +52,8 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "recoverdm";
     homepage = "https://salsa.debian.org/pkg-security-team/recoverdm";
     changelog = "https://salsa.debian.org/pkg-security-team/recoverdm/-/blob/debian/master/debian/changelog";
-    maintainers = with maintainers; [ d3vil0p3r ];
+    maintainers = with lib.maintainers; [ d3vil0p3r ];
     platforms = platforms.unix;
-    license = licenses.gpl1Only;
+    license = lib.licenses.gpl1Only;
   };
 })

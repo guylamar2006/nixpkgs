@@ -24,7 +24,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
     description = "Mass renamer TUI written in Rust";
     homepage = "https://github.com/linkdd/regname";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.ilarvne ];
+    maintainers = with lib.maintainers; [ ilarvne ];
     mainProgram = "regname";
   };
 })

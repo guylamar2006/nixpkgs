@@ -76,7 +76,7 @@ stdenv.mkDerivation (finalAttrs: {
       boost
       gpl2Plus
     ];
-    maintainers = with maintainers; [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
     mainProgram = "openmsx";
   };

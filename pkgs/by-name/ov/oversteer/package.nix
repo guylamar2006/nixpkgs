@@ -105,7 +105,7 @@ stdenv.mkDerivation {
     description = "Steering Wheel Manager for Linux";
     mainProgram = "oversteer";
     license = lib.licenses.gpl3Plus;
-    maintainers = [ lib.maintainers.srounce ];
+    maintainers = with lib.maintainers; [ srounce ];
     platforms = lib.platforms.unix;
   };
 }

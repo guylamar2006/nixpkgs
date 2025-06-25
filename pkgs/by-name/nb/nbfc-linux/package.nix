@@ -34,7 +34,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://github.com/nbfc-linux/nbfc-linux";
     license = lib.licenses.gpl3;
-    maintainers = [ lib.maintainers.Celibistrial ];
+    maintainers = with lib.maintainers; [ Celibistrial ];
     mainProgram = "nbfc";
     platforms = lib.platforms.linux;
   };

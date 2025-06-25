@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
     mainProgram = "dvtest";
     homepage = "https://github.com/f4exb/serialdv";
     platforms = platforms.unix;
-    maintainers = with maintainers; [ alkeryn ];
-    license = licenses.gpl3;
+    maintainers = with lib.maintainers; [ alkeryn ];
+    license = lib.licenses.gpl3;
   };
 }

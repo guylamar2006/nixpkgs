@@ -24,7 +24,7 @@ stdenv.mkDerivation rec {
   ];
   buildInputs = [ libsodium ];
 
-  meta = with lib; {
+  meta = {
     description = "Simple tool for signing files and verifying signatures";
     longDescription = ''
       minisign uses public key cryptography to help facilitate secure (but not
@@ -32,8 +32,8 @@ stdenv.mkDerivation rec {
       is similar to and compatible with OpenBSD's signify.
     '';
     homepage = "https://jedisct1.github.io/minisign/";
-    license = licenses.isc;
-    maintainers = with maintainers; [ joachifm ];
+    license = lib.licenses.isc;
+    maintainers = with lib.maintainers; [ joachifm ];
     platforms = platforms.unix;
     mainProgram = "minisign";
   };

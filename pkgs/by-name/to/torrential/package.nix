@@ -78,7 +78,7 @@ stdenv.mkDerivation rec {
     description = "Download torrents in style with this speedy, minimalist torrent client for elementary OS";
     homepage = "https://github.com/davidmhewitt/torrential";
     maintainers = with maintainers; [ xiorcale ];
-    teams = [ teams.pantheon ];
+    teams = with lib.teams; [ pantheon ];
     platforms = platforms.linux;
     license = licenses.gpl2Plus;
     mainProgram = "com.github.davidmhewitt.torrential";

@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
       simple and concise way.
     '';
     homepage = "https://github.com/aestasit/sshoogr";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     platforms = platforms.all;
     maintainers = with maintainers; [ moaxcp ];
   };

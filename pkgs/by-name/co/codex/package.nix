@@ -74,7 +74,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Lightweight coding agent that runs in your terminal";
     homepage = "https://github.com/openai/codex";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.malo ];
+    maintainers = with lib.maintainers; [ malo ];
     mainProgram = "codex";
   };
 })

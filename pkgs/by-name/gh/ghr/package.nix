@@ -28,11 +28,11 @@ buildGoModule rec {
     version = "v${version}";
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/tcnksm/ghr";
     description = "Upload multiple artifacts to GitHub Release in parallel";
-    license = licenses.mit;
-    maintainers = [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "ghr";
   };
 }

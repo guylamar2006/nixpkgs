@@ -65,7 +65,7 @@ buildGoModule rec {
     description = "Declarative hardware configuration for NixOS";
     homepage = "https://github.com/numtide/nixos-facter";
     license = lib.licenses.gpl3Plus;
-    maintainers = [ lib.maintainers.brianmcgee ];
+    maintainers = with lib.maintainers; [ brianmcgee ];
     mainProgram = "nixos-facter";
     platforms = lib.platforms.linux;
   };

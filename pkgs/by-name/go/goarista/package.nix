@@ -30,7 +30,7 @@ buildGoModule {
     description = "Collection of open-source tools for network management and monitoring mostly based around gNMI";
     homepage = "https://github.com/aristanetworks/goarista";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.haylin ];
+    maintainers = with lib.maintainers; [ haylin ];
     mainProgram = "gnmi";
   };
 }

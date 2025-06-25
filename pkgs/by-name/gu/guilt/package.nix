@@ -64,7 +64,7 @@ stdenv.mkDerivation rec {
     wrapProgram $out/bin/guilt --prefix PATH : ${lib.makeBinPath buildInputs}
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Manage patches like quilt, on top of a git repository";
     longDescription = ''
       Andrew Morton originally developed a set of scripts for

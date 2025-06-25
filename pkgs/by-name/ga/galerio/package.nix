@@ -18,10 +18,10 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-jXUAjK/fqBaXaehcbFZU02w9/MTHluqKjtWGoAJa7ks=";
 
-  meta = with lib; {
+  meta = {
     description = " A simple generator for self-contained HTML flexbox galleries";
     homepage = "https://github.com/dbrgn/galerio";
-    maintainers = with maintainers; [ dbrgn ];
+    maintainers = with lib.maintainers; [ dbrgn ];
     license = with licenses; [
       asl20
       mit

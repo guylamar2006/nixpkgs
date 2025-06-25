@@ -35,7 +35,7 @@ buildNpmPackage {
     description = "Node.js-based server to run Zotero translators";
     homepage = "https://github.com/zotero/translation-server";
     license = licenses.agpl3Only;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "translation-server";
   };
 }

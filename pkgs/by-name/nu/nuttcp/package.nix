@@ -43,9 +43,9 @@ stdenv.mkDerivation rec {
       system, and wall-clock time, transmitter and receiver CPU utilization,
       and loss percentage (for UDP transfers).
     '';
-    license = licenses.gpl2Only;
+    license = lib.licenses.gpl2Only;
     homepage = "http://nuttcp.net/";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
     mainProgram = "nuttcp";
   };

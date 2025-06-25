@@ -53,7 +53,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
     homepage = "https://git.sr.ht/~whynothugo/pimsync";
     license = lib.licenses.eupl12;
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.qxrein ];
+    maintainers = with lib.maintainers; [ qxrein ];
     mainProgram = "pimsync";
   };
 })

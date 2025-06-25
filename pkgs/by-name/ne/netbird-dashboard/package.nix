@@ -29,8 +29,8 @@ buildNpmPackage rec {
   meta = with lib; {
     description = "NetBird Management Service Web UI Panel";
     homepage = "https://github.com/netbirdio/dashboard";
-    license = licenses.bsd3;
-    maintainers = with maintainers; [
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [
       patrickdag
     ];
   };

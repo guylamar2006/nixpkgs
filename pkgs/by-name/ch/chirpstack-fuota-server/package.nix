@@ -40,7 +40,7 @@ buildGoModule rec {
     description = "FUOTA server which can be used together with ChirpStack Application Server";
     homepage = "https://www.chirpstack.io/";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.stv0g ];
+    maintainers = with lib.maintainers; [ stv0g ];
     mainProgram = "chirpstack-fuota-server";
   };
 }

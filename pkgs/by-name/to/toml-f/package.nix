@@ -45,6 +45,6 @@ stdenv.mkDerivation rec {
     ];
     homepage = "https://github.com/toml-f/toml-f";
     platforms = platforms.linux;
-    maintainers = [ maintainers.sheepforce ];
+    maintainers = with lib.maintainers; [ sheepforce ];
   };
 }

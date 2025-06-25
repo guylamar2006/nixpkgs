@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     homepage = "https://djvu.sourceforge.net/djview4.html";
     description = "Black-and-white djvu page encoder and decoder that use interpage information";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
     mainProgram = "minidjvu";
     knownVulnerabilities = [

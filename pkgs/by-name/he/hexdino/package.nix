@@ -18,11 +18,11 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-NfVtNoTDGx3MGOe+bUOCgjSs8ZTfxMSCTp09sXOfUPs=";
 
-  meta = with lib; {
+  meta = {
     description = "Hex editor with vim like keybindings written in Rust";
     homepage = "https://github.com/Luz/hexdino";
-    license = licenses.mit;
-    maintainers = [ maintainers.luz ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ luz ];
     mainProgram = "hexdino";
   };
 }

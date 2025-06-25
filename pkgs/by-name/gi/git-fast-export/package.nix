@@ -91,7 +91,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Import mercurial into git";
     homepage = "https://repo.or.cz/w/fast-export.git";
     license = lib.licenses.gpl2;
-    maintainers = [ lib.maintainers.koral ];
+    maintainers = with lib.maintainers; [ koral ];
     platforms = lib.platforms.unix;
     mainProgram = "hg-fast-export.sh";
   };

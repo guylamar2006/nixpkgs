@@ -56,7 +56,7 @@ stdenvNoCC.mkDerivation rec {
       font family, along with documentation.
     '';
     downloadPage = "https://software.sil.org/scheherazade/download/";
-    license = licenses.ofl;
+    license = lib.licenses.ofl;
     platforms = platforms.all;
   };
 }

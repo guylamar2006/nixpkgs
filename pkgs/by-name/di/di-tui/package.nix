@@ -23,7 +23,7 @@ buildGoModule rec {
     description = "Simple terminal UI player for di.fm";
     homepage = "https://github.com/acaloiaro/di-tui";
     license = lib.licenses.bsd2;
-    maintainers = [ lib.maintainers.acaloiaro ];
+    maintainers = with lib.maintainers; [ acaloiaro ];
     mainProgram = "di-tui";
   };
 }

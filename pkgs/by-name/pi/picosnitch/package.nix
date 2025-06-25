@@ -37,9 +37,9 @@ python3.pkgs.buildPythonApplication rec {
     mainProgram = "picosnitch";
     homepage = "https://github.com/elesiuta/picosnitch";
     changelog = "https://github.com/elesiuta/picosnitch/releases";
-    license = licenses.gpl3Plus;
-    maintainers = [ maintainers.elesiuta ];
-    platforms = platforms.linux;
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ elesiuta ];
+    platforms = lib.platforms.linux;
     knownVulnerabilities = [
       "Allows an unprivileged user to write to arbitrary files as root; see https://github.com/elesiuta/picosnitch/issues/40"
     ];

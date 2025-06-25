@@ -34,9 +34,9 @@ stdenv.mkDerivation {
   ];
 
   meta = with lib; {
-    maintainers = with maintainers; [ matthewbauer ];
+    maintainers = with lib.maintainers; [ matthewbauer ];
     description = "CPP bindings for Plist";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.unix;
   };
 }

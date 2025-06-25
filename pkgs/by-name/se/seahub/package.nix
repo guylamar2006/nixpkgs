@@ -77,8 +77,8 @@ python3.pkgs.buildPythonApplication rec {
   meta = with lib; {
     description = "Web end of seafile server";
     homepage = "https://github.com/haiwen/seahub";
-    license = licenses.asl20;
-    maintainers = with maintainers; [
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [
       schmittlauch
       melvyn2
     ];

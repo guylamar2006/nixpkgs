@@ -193,6 +193,6 @@ stdenv.mkDerivation rec {
     license = with licenses; [ asl20 ];
     platforms = platforms.all;
     broken = stdenv.hostPlatform.isDarwin; # Cannot find macos sdk
-    maintainers = with maintainers; [ tfmoraes ];
+    maintainers = with lib.maintainers; [ tfmoraes ];
   };
 }

@@ -32,7 +32,7 @@ stdenvNoCC.mkDerivation {
     description = "GTK Theme based off of the Gruvbox Material colour palette";
     homepage = "https://github.com/TheGreatMcPain/gruvbox-material-gtk";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.amadaluzia ];
+    maintainers = with lib.maintainers; [ amadaluzia ];
     platforms = lib.platforms.unix;
   };
 }

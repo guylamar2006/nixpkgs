@@ -42,9 +42,9 @@ stdenvNoCC.mkDerivation rec {
     {
       homepage = "https://ltex-plus.github.io/ltex-plus/";
       description = "LSP language server for LanguageTool";
-      license = licenses.mpl20;
+      license = lib.licenses.mpl20;
       mainProgram = "ltex-cli-plus";
-      maintainers = [ maintainers.FirelightFlagboy ];
+      maintainers = with lib.maintainers; [ FirelightFlagboy ];
       platforms = jre_headless.meta.platforms;
     };
 }

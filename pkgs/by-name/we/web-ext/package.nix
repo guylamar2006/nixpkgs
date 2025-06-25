@@ -31,6 +31,6 @@ buildNpmPackage rec {
     homepage = "https://github.com/mozilla/web-ext";
     license = lib.licenses.mpl20;
     mainProgram = "web-ext";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

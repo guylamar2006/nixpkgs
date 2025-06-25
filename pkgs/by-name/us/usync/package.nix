@@ -32,7 +32,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/ebzzry/usync";
     description = "Simple site-to-site synchronization tool";
     license = licenses.mit;
-    maintainers = [ maintainers.ebzzry ];
+    maintainers = with lib.maintainers; [ ebzzry ];
     platforms = platforms.unix;
     mainProgram = "usync";
   };

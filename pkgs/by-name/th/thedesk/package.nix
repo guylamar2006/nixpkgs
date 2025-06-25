@@ -62,7 +62,7 @@ stdenv.mkDerivation rec {
     homepage = "https://thedesk.top";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
     license = licenses.gpl3Only;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = [ "x86_64-linux" ];
     mainProgram = "thedesk";
   };

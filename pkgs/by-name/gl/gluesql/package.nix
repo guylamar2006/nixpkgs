@@ -24,11 +24,11 @@ rustPlatform.buildRustPackage {
 
   passthru.updateScript = nix-update-script { };
 
-  meta = with lib; {
+  meta = {
     description = "GlueSQL is quite sticky. It attaches to anywhere";
     homepage = "https://github.com/gluesql/gluesql";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ happysalada ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ happysalada ];
     platforms = platforms.all;
   };
 }

@@ -34,8 +34,8 @@ stdenvNoCC.mkDerivation rec {
   meta = with lib; {
     description = "Web-based news feed (RSS/Atom) aggregator";
     homepage = "https://selfoss.aditu.de";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [
       jtojnar
       regnat
     ];

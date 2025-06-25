@@ -29,8 +29,8 @@ appimageTools.wrapType2 {
   meta = with lib; {
     description = "GUI front-end for Neo4j";
     homepage = "https://neo4j.com/";
-    license = licenses.unfree;
-    maintainers = [ maintainers.bobvanderlinden ];
+    license = lib.licenses.unfree;
+    maintainers = with lib.maintainers; [ bobvanderlinden ];
     platforms = [ "x86_64-linux" ];
     mainProgram = "neo4j-desktop";
   };

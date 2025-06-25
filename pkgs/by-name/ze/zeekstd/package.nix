@@ -22,7 +22,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
     homepage = "https://github.com/rorosen/zeekstd";
     changelog = "https://github.com/rorosen/zeekstd/releases/tag/v${finalAttrs.version}-cli";
     license = lib.licenses.bsd2;
-    maintainers = [ lib.maintainers.rorosen ];
+    maintainers = with lib.maintainers; [ rorosen ];
     mainProgram = "zeekstd";
   };
 })

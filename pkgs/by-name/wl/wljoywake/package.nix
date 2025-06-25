@@ -43,7 +43,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/nowrep/wljoywake";
     license = licenses.gpl2;
     platforms = platforms.linux;
-    maintainers = [ maintainers.jtrees ];
+    maintainers = with lib.maintainers; [ jtrees ];
     mainProgram = "wljoywake";
   };
 }

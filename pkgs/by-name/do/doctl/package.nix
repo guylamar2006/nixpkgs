@@ -50,6 +50,6 @@ buildGoModule rec {
     mainProgram = "doctl";
     homepage = "https://github.com/digitalocean/doctl";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.siddharthist ];
+    maintainers = with lib.maintainers; [ siddharthist ];
   };
 }

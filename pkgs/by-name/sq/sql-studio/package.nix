@@ -41,7 +41,7 @@ rustPlatform.buildRustPackage {
     homepage = "https://github.com/frectonz/sql-studio";
     mainProgram = "sql-studio";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.frectonz ];
+    maintainers = with lib.maintainers; [ frectonz ];
     platforms = lib.platforms.all;
   };
 }

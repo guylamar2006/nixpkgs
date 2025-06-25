@@ -30,6 +30,6 @@ stdenvNoCC.mkDerivation rec {
     description = "Persian (Farsi) Font - قلم (فونت) فارسی وزیر";
     license = licenses.ofl;
     platforms = platforms.all;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

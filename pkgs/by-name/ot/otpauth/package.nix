@@ -21,7 +21,7 @@ buildGo124Module rec {
     description = "Google Authenticator migration decoder";
     mainProgram = "otpauth";
     homepage = "https://github.com/dim13/otpauth";
-    license = licenses.isc;
-    maintainers = with maintainers; [ ereslibre ];
+    license = lib.licenses.isc;
+    maintainers = with lib.maintainers; [ ereslibre ];
   };
 }

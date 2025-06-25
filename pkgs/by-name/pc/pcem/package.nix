@@ -50,8 +50,8 @@ stdenv.mkDerivation rec {
     description = "Emulator for IBM PC computers and clones";
     mainProgram = "pcem";
     homepage = "https://pcem-emulator.co.uk/";
-    license = licenses.gpl2Only;
-    maintainers = [ maintainers.terin ];
-    platforms = platforms.linux ++ platforms.windows;
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [ terin ];
+    platforms = lib.platforms.linux ++ platforms.windows;
   };
 }

@@ -61,12 +61,12 @@ stdenv.mkDerivation rec {
     smoke-test = nixosTests.bazarr;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Subtitle manager for Sonarr and Radarr";
     homepage = "https://www.bazarr.media/";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ d-xo ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ d-xo ];
     mainProgram = "bazarr";
     platforms = platforms.all;
   };

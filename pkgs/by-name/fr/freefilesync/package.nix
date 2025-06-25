@@ -156,7 +156,7 @@ stdenv.mkDerivation (finalAttrs: {
     })
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Open Source File Synchronization & Backup Software";
     homepage = "https://freefilesync.org";
     license = [
@@ -165,7 +165,7 @@ stdenv.mkDerivation (finalAttrs: {
       licenses.curl
       licenses.bsd3
     ];
-    maintainers = with maintainers; [ wegank ];
-    platforms = platforms.linux;
+    maintainers = with lib.maintainers; [ wegank ];
+    platforms = lib.platforms.linux;
   };
 })

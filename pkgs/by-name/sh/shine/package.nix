@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
     description = "Fast fixed-point mp3 encoding library";
     mainProgram = "shineenc";
     homepage = "https://github.com/toots/shine";
-    license = licenses.lgpl2Only;
-    maintainers = with maintainers; [ dandellion ];
+    license = lib.licenses.lgpl2Only;
+    maintainers = with lib.maintainers; [ dandellion ];
   };
 }

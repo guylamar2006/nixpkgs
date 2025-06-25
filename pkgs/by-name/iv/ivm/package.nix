@@ -60,7 +60,7 @@ rustPlatform.buildRustPackage (finalAttr: {
     description = "Cross-platform Inko version manager";
     homepage = "https://github.com/inko-lang/ivm";
     license = lib.licenses.mpl20;
-    maintainers = [ lib.maintainers.feathecutie ];
+    maintainers = with lib.maintainers; [ feathecutie ];
     teams = [ lib.teams.ngi ];
     platforms = lib.platforms.unix;
     mainProgram = "ivm";

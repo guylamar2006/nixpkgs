@@ -28,7 +28,7 @@ stdenv.mkDerivation (finalAttrs: {
       lgpl3Only
       zlib
     ];
-    maintainers = with maintainers; [ wegank ];
+    maintainers = with lib.maintainers; [ wegank ];
     platforms = platforms.unix;
   };
 })

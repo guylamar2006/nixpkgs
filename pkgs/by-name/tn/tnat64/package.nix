@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     '';
     platforms = platforms.unix;
     badPlatforms = platforms.darwin;
-    maintainers = [ maintainers.rnhmjoj ];
+    maintainers = with lib.maintainers; [ rnhmjoj ];
   };
 
 }

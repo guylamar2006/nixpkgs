@@ -44,10 +44,10 @@ stdenv.mkDerivation {
 
   meta = with lib; {
     description = "ONC RPC portmapper";
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     platforms = platforms.unix;
     homepage = "https://linux-nfs.org/";
-    maintainers = with maintainers; [ abbradar ];
+    maintainers = with lib.maintainers; [ abbradar ];
     longDescription = ''
       Universal addresses to RPC program number mapper.
     '';

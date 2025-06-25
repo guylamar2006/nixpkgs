@@ -25,7 +25,7 @@ rustPlatform.buildRustPackage rec {
     description = "Your filesystem as a dungeon";
     mainProgram = "rpg-cli";
     homepage = "https://github.com/facundoolano/rpg-cli";
-    license = licenses.mit;
-    maintainers = with maintainers; [ lom ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ lom ];
   };
 }

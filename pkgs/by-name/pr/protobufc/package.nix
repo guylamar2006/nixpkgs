@@ -41,8 +41,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/protobuf-c/protobuf-c/";
     description = "C bindings for Google's Protocol Buffers";
-    license = licenses.bsd2;
+    license = lib.licenses.bsd2;
     platforms = platforms.all;
-    maintainers = with maintainers; [ nickcao ];
+    maintainers = with lib.maintainers; [ nickcao ];
   };
 }

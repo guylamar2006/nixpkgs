@@ -27,6 +27,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/skeeto/enchive";
     license = lib.licenses.unlicense;
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.nico202 ];
+    maintainers = with lib.maintainers; [ nico202 ];
   };
 }

@@ -149,7 +149,7 @@ stdenv.mkDerivation (finalAttrs: {
     platforms = lib.platforms.unix;
     sourceProvenance = [ lib.sourceTypes.fromSource ];
     license = lib.licenses.gpl2Only;
-    maintainers = [ lib.maintainers.emily ];
+    maintainers = with lib.maintainers; [ emily ];
     mainProgram = "ccextractor";
   };
 })

@@ -80,7 +80,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Distributed POSIX file system";
     homepage = "https://saunafs.com";
     platforms = platforms.linux;
-    license = licenses.gpl3Only;
-    maintainers = [ maintainers.markuskowa ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ markuskowa ];
   };
 })

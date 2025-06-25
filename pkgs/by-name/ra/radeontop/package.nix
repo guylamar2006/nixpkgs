@@ -60,6 +60,6 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/clbr/radeontop";
     platforms = platforms.linux;
-    license = licenses.gpl3;
+    license = lib.licenses.gpl3;
   };
 }

@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     done
   '';
 
-  meta = with lib; {
+  meta = {
     description = "LaTeX-to-HTML translator";
     longDescription = ''
       A Perl program that translates LaTeX into HTML (HyperText Markup
@@ -55,8 +55,8 @@ stdenv.mkDerivation rec {
 
     homepage = "https://www.ctan.org/pkg/latex2html";
 
-    license = licenses.gpl2Only;
+    license = lib.licenses.gpl2Only;
     platforms = with platforms; linux ++ darwin;
-    maintainers = with maintainers; [ yurrriq ];
+    maintainers = with lib.maintainers; [ yurrriq ];
   };
 }

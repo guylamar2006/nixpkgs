@@ -93,7 +93,7 @@ buildFHSEnv {
 
   passthru.updateScript = ./update.sh;
 
-  meta = with lib; {
+  meta = {
     inherit description;
     longDescription = ''
       Burp Suite is an integrated platform for performing security testing of web applications.
@@ -106,10 +106,10 @@ buildFHSEnv {
       "https://portswigger.net/burp/releases/professional-community-"
       + replaceStrings [ "." ] [ "-" ] version;
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
-    license = licenses.unfree;
+    license = lib.licenses.unfree;
     platforms = jdk.meta.platforms;
     hydraPlatforms = [ ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       bennofs
       blackzeshi
       fab

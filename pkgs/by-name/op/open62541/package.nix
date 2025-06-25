@@ -189,8 +189,8 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://www.open62541.org";
     changelog = "https://github.com/open62541/open62541/releases/tag/v${finalAttrs.version}";
-    license = licenses.mpl20;
-    maintainers = with maintainers; [ panicgh ];
+    license = lib.licenses.mpl20;
+    maintainers = with lib.maintainers; [ panicgh ];
     platforms = platforms.unix;
   };
 })

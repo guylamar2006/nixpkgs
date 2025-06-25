@@ -42,8 +42,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://www.upperbounds.net";
     description = "Set of fixed-width screen fonts that are designed for code listings";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.all;
-    maintainers = [ maintainers.myrl ];
+    maintainers = with lib.maintainers; [ myrl ];
   };
 }

@@ -79,6 +79,6 @@ haskellPackages.callPackage (
     homepage = "https://github.com/olivierverdier/zsh-git-prompt#readme";
     description = "Informative git prompt for zsh";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.league ];
+    maintainers = with lib.maintainers; [ league ];
   }
 ) { }

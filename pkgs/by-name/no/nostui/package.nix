@@ -28,8 +28,8 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     homepage = "https://github.com/akiomik/nostui";
     description = "TUI client for Nostr";
-    license = licenses.mit;
-    maintainers = with maintainers; [ heywoodlh ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ heywoodlh ];
     platforms = platforms.unix;
     mainProgram = "nostui";
   };

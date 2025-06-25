@@ -87,7 +87,7 @@ stdenv.mkDerivation rec {
     description = "Emulators for a variety of 8-bit Commodore computers";
     homepage = "https://vice-emu.sourceforge.io/";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ lib.maintainers.sander ];
+    maintainers = with lib.maintainers; [ sander ];
     platforms = lib.platforms.linux;
   };
 }

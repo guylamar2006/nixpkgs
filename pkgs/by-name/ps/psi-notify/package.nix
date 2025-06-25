@@ -41,10 +41,10 @@ stdenv.mkDerivation rec {
       oversaturated, and allow you to take action before your system slows to a
       crawl.
     '';
-    license = licenses.mit;
+    license = lib.licenses.mit;
     homepage = "https://github.com/cdown/psi-notify";
-    platforms = platforms.linux;
-    maintainers = with maintainers; [ eduarrrd ];
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ eduarrrd ];
     mainProgram = "psi-notify";
   };
 }

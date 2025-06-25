@@ -19,8 +19,8 @@ let
     homepage = "https://obsidian.md";
     downloadPage = "https://github.com/obsidianmd/obsidian-releases/releases";
     mainProgram = "obsidian";
-    license = licenses.obsidian;
-    maintainers = with maintainers; [
+    license = lib.licenses.obsidian;
+    maintainers = with lib.maintainers; [
       atila
       conradmearns
       zaninime

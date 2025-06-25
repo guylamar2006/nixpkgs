@@ -71,12 +71,12 @@ stdenv.mkDerivation (finalAttrs: {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     changelog = "https://github.com/supranational/blst/releases/tag/${finalAttrs.src.tag}";
     description = "Multilingual BLS12-381 signature library";
     homepage = "https://github.com/supranational/blst";
-    license = licenses.isc;
-    maintainers = with maintainers; [
+    license = lib.licenses.isc;
+    maintainers = with lib.maintainers; [
       iquerejeta
       yvan-sraka
     ];

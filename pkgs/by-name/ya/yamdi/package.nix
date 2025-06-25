@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
     homepage = "https://yamdi.sourceforge.net/";
     license = licenses.bsd3;
     platforms = platforms.all;
-    maintainers = [ maintainers.ryanartecona ];
+    maintainers = with lib.maintainers; [ ryanartecona ];
     mainProgram = "yamdi";
   };
 }

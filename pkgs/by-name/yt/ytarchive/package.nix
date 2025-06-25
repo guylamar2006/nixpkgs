@@ -35,7 +35,7 @@ buildGoModule rec {
     homepage = "https://github.com/Kethsar/ytarchive";
     description = "Garbage Youtube livestream downloader";
     license = licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "ytarchive";
   };
 }

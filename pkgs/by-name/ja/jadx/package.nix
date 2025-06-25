@@ -90,7 +90,7 @@ stdenv.mkDerivation (finalAttrs: {
     })
   ];
 
-  meta = with lib; {
+  meta = {
     changelog = "https://github.com/skylot/jadx/releases/tag/v${finalAttrs.version}";
     description = "Dex to Java decompiler";
     homepage = "https://github.com/skylot/jadx";
@@ -102,9 +102,9 @@ stdenv.mkDerivation (finalAttrs: {
       fromSource
       binaryBytecode # deps
     ];
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     platforms = platforms.unix;
     mainProgram = "jadx-gui";
-    maintainers = with maintainers; [ emilytrau ];
+    maintainers = with lib.maintainers; [ emilytrau ];
   };
 })

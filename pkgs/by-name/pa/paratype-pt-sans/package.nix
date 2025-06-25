@@ -36,6 +36,6 @@ stdenvNoCC.mkDerivation {
     # http://www.paratype.ru/public/pt_openlicense.asp
 
     platforms = platforms.all;
-    maintainers = with maintainers; [ raskin ];
+    maintainers = with lib.maintainers; [ raskin ];
   };
 }

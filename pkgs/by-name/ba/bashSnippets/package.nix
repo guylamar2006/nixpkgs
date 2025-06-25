@@ -51,11 +51,11 @@ stdenv.mkDerivation {
     done
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Collection of small bash scripts for heavy terminal users";
     homepage = "https://github.com/alexanderepstein/Bash-Snippets";
-    license = licenses.mit;
-    maintainers = [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
   };
 }

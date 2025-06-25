@@ -39,7 +39,7 @@ buildGoModule rec {
       that is lightweight, highly available, and fault tolerant.
     '';
     homepage = "https://www.serf.io";
-    license = licenses.mpl20;
-    maintainers = with maintainers; [ pradeepchhetri ];
+    license = lib.licenses.mpl20;
+    maintainers = with lib.maintainers; [ pradeepchhetri ];
   };
 }

@@ -37,11 +37,11 @@ stdenv.mkDerivation rec {
     spdlog
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Simple async wrapper around CURL for C++";
     homepage = "https://nheko.im/nheko-reborn/coeurl";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.all;
-    maintainers = with maintainers; [ rnhmjoj ];
+    maintainers = with lib.maintainers; [ rnhmjoj ];
   };
 }

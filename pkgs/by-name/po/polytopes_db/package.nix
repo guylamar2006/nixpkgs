@@ -20,8 +20,8 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     description = "Reflexive polytopes database";
-    license = licenses.gpl2;
+    license = lib.licenses.gpl2;
     platforms = platforms.all;
-    teams = [ teams.sage ];
+    teams = with lib.teams; [ sage ];
   };
 }

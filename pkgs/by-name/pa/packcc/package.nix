@@ -72,8 +72,8 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://github.com/arithy/packcc";
     changelog = "https://github.com/arithy/packcc/releases/tag/${finalAttrs.src.rev}";
-    license = licenses.mit;
-    maintainers = with maintainers; [ azahi ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ azahi ];
     platforms = platforms.unix;
     mainProgram = "packcc";
   };

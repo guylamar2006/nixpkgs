@@ -33,9 +33,9 @@ stdenv.mkDerivation {
       It also does not use any external dependencies (except from libdbus of course).
     '';
     homepage = "https://github.com/nowrep/notify-desktop";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ ylwghst ];
+    maintainers = with lib.maintainers; [ ylwghst ];
     mainProgram = "notify-desktop";
   };
 }

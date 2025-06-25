@@ -36,10 +36,10 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     homepage = "https://sslmate.com";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     description = "Easy to buy, deploy, and manage your SSL certs";
     mainProgram = "sslmate";
     platforms = platforms.unix;
-    license = licenses.mit; # X11
+    license = lib.licenses.mit; # X11
   };
 }

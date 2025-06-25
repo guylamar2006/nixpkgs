@@ -125,8 +125,8 @@ stdenv.mkDerivation rec {
       It uses a layered approach to connect all of the parts.
     '';
     homepage = "https://networkupstools.org/";
-    platforms = platforms.linux;
-    maintainers = [ maintainers.pierron ];
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ pierron ];
     license = with licenses; [
       gpl1Plus
       gpl2Plus

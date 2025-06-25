@@ -78,7 +78,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "jnr-posix is a lightweight cross-platform POSIX emulation layer for Java, written in Java and is part of the JNR project";
     homepage = "https://github.com/jnr/jnr-posix";
     license = with licenses; [

@@ -67,7 +67,7 @@ stdenv.mkDerivation rec {
       Chili-Man
       techknowlogick
     ];
-    teams = [ teams.serokell ];
+    teams = with lib.teams; [ serokell ];
     mainProgram = "vault";
     platforms = [
       "x86_64-linux"

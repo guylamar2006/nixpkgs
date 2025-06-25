@@ -112,8 +112,8 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://gitlab.com/ubports/development/core/lib-cpp/persistent-cache-cpp";
     changelog = "https://gitlab.com/ubports/development/core/lib-cpp/persistent-cache-cpp/-/blob/${finalAttrs.version}/ChangeLog";
-    license = licenses.lgpl3Only;
-    teams = [ teams.lomiri ];
+    license = lib.licenses.lgpl3Only;
+    teams = with lib.teams; [ lomiri ];
     platforms = platforms.unix;
     pkgConfigModules = [
       "libpersistent-cache-cpp"

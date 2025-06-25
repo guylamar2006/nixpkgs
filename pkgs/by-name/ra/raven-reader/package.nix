@@ -34,8 +34,8 @@ appimageTools.wrapType2 {
     description = "Open source desktop news reader with flexible settings to optimize your experience";
     mainProgram = "raven-reader";
     homepage = "https://ravenreader.app/";
-    license = licenses.mit;
-    maintainers = [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
     platforms = [ "x86_64-linux" ];
   };
 }

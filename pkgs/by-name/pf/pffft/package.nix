@@ -21,8 +21,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Pretty Fast FFT (PFFFT) library";
     homepage = "https://github.com/marton78/pffft";
-    license = licenses.bsd3;
-    maintainers = with maintainers; [ sikmir ];
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ sikmir ];
     platforms = platforms.unix;
   };
 }

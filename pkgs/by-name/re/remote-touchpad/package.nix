@@ -33,8 +33,8 @@ buildGoModule rec {
     description = "Control mouse and keyboard from the web browser of a smartphone";
     mainProgram = "remote-touchpad";
     homepage = "https://github.com/unrud/remote-touchpad";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ schnusch ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ schnusch ];
     platforms = platforms.linux;
   };
 }

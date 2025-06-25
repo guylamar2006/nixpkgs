@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     chmod +x $out/bin/avr8-burn-omat
   '';
 
-  meta = with lib; {
+  meta = {
     description = "GUI tool for avrdude";
     mainProgram = "avr8-burn-omat";
     homepage = "http://avr8-burn-o-mat.aaabbb.de/avr8_burn_o_mat_avrdude_gui_en.html";

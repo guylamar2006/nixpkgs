@@ -21,8 +21,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Implementation of the redo build system in portable C with zero dependencies";
     homepage = "https://github.com/leahneukirchen/redo-c";
-    license = licenses.cc0;
+    license = lib.licenses.cc0;
     platforms = platforms.all;
-    maintainers = with maintainers; [ ck3d ];
+    maintainers = with lib.maintainers; [ ck3d ];
   };
 }

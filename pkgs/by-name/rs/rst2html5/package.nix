@@ -31,8 +31,8 @@ python3.pkgs.buildPythonPackage rec {
   meta = with lib; {
     description = "Converts ReSTructuredText to (X)HTML5";
     homepage = "https://rst2html5.readthedocs.io/";
-    license = licenses.mit;
-    maintainers = with maintainers; [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "rst2html5";
   };
 }

@@ -32,7 +32,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
     description = "Kubectl version managing shim that invokes the correct kubectl version";
     homepage = "https://gitlab.com/cromulentbanana/korrect";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.dwt ];
+    maintainers = with lib.maintainers; [ dwt ];
     mainProgram = "korrect";
   };
 })

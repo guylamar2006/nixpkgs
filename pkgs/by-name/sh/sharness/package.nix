@@ -53,8 +53,8 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "Portable shell library to write, run and analyze automated tests adhering to Test Anything Protocol (TAP)";
     homepage = "https://github.com/chriscool/sharness";
-    license = licenses.gpl2Only;
-    maintainers = [ maintainers.spacefrogg ];
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [ spacefrogg ];
     platforms = platforms.unix;
   };
 })

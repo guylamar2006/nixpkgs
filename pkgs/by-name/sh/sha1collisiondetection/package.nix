@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
       of time as regular SHA-1.
     '';
     platforms = platforms.all;
-    maintainers = with maintainers; [ leenaars ];
-    license = licenses.mit;
+    maintainers = with lib.maintainers; [ leenaars ];
+    license = lib.licenses.mit;
   };
 }

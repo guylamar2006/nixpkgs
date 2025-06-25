@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     description =
       "Implementation of the Sender Policy Framework for SMTP " + "authorization (Helsinki Systems fork)";
     homepage = "https://github.com/helsinki-systems/libspf2";
@@ -40,8 +40,8 @@ stdenv.mkDerivation rec {
       lgpl21Plus
       bsd2
     ];
-    maintainers = with maintainers; [ euxane ];
-    teams = [ teams.helsinki-systems ];
+    maintainers = with lib.maintainers; [ euxane ];
+    teams = with lib.teams; [ helsinki-systems ];
     platforms = platforms.all;
   };
 }

@@ -22,9 +22,9 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "KACST Latin-Arabic TrueType fonts";
-    license = licenses.gpl2Only;
+    license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ serge ];
     platforms = platforms.all;
   };

@@ -69,6 +69,6 @@ stdenv.mkDerivation (finalAttrs: {
     description = "dashy";
     homepage = "https://dashy.to";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.therealgramdalf ];
+    maintainers = with lib.maintainers; [ therealgramdalf ];
   };
 })

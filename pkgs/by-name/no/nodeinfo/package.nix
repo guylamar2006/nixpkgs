@@ -31,6 +31,6 @@ buildGoModule rec {
     homepage = "https://codeberg.org/thefederationinfo/nodeinfo-go";
     changelog = "https://codeberg.org/thefederationinfo/nodeinfo-go/releases/tag/v${version}";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers._6543 ];
+    maintainers = with lib.maintainers; [ _6543 ];
   };
 }

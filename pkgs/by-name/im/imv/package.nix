@@ -140,11 +140,11 @@ stdenv.mkDerivation rec {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     description = "Command line image viewer for tiling window managers";
     homepage = "https://sr.ht/~exec64/imv/";
-    license = licenses.mit;
-    maintainers = with maintainers; [
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [
       rnhmjoj
       markus1189
     ];

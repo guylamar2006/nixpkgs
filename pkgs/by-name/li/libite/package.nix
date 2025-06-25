@@ -24,7 +24,7 @@ stdenv.mkDerivation rec {
   ];
   buildInputs = [ libconfuse ];
 
-  meta = with lib; {
+  meta = {
     description = "Lightweight library of frog DNA";
     longDescription = ''
       Libite is a lightweight library of frog DNA. It can be used to fill
@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/troglobit/libite";
     platforms = with platforms; linux ++ netbsd;
-    maintainers = with maintainers; [ fpletz ];
+    maintainers = with lib.maintainers; [ fpletz ];
     license = with licenses; [
       mit
       isc

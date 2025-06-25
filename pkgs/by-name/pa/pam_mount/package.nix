@@ -73,7 +73,7 @@ stdenv.mkDerivation rec {
       lgpl21
       lgpl3
     ];
-    maintainers = with maintainers; [ netali ];
-    platforms = platforms.linux;
+    maintainers = with lib.maintainers; [ netali ];
+    platforms = lib.platforms.linux;
   };
 }

@@ -81,11 +81,11 @@ stdenv.mkDerivation rec {
       --replace server/drivers/ $out/lib/lcdproc/
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Client/server suite for controlling a wide variety of LCD devices";
     homepage = "https://lcdproc.org/";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [ peterhoeg ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ peterhoeg ];
     platforms = platforms.unix;
     # never built on aarch64-darwin since first introduction in nixpkgs
     broken = stdenv.hostPlatform.isDarwin && stdenv.hostPlatform.isAarch64;

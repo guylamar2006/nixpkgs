@@ -42,6 +42,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/mguentner/cannelloni";
     platforms = lib.platforms.linux;
     license = lib.licenses.gpl2Only;
-    maintainers = [ lib.maintainers.samw ];
+    maintainers = with lib.maintainers; [ samw ];
   };
 })

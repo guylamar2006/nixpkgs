@@ -55,7 +55,7 @@ buildFHSEnv {
     homepage = "http://www.qdkingst.com/";
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unfree;
-    maintainers = [ lib.maintainers.luisdaranda ];
+    maintainers = with lib.maintainers; [ luisdaranda ];
     platforms = [ "x86_64-linux" ];
   };
 }

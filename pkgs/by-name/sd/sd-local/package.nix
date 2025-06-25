@@ -23,7 +23,7 @@ buildGoModule rec {
     description = "screwdriver.cd local mode";
     mainProgram = "sd-local";
     homepage = "https://github.com/screwdriver-cd/sd-local";
-    license = licenses.bsd3;
-    maintainers = with maintainers; [ midchildan ];
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ midchildan ];
   };
 }

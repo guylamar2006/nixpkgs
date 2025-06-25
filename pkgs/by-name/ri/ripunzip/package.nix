@@ -63,6 +63,6 @@ rustPlatform.buildRustPackage rec {
       mit
       asl20
     ];
-    maintainers = [ maintainers.lesuisse ];
+    maintainers = with lib.maintainers; [ lesuisse ];
   };
 }

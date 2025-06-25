@@ -28,7 +28,7 @@ buildGoModule {
     homepage = "https://github.com/yandex-cloud/geesefs";
     description = "Finally, a good FUSE FS implementation over S3";
     license = [ lib.licenses.mit ];
-    maintainers = [ lib.maintainers.flokli ];
+    maintainers = with lib.maintainers; [ flokli ];
     platforms = lib.platforms.unix;
     mainProgram = "geesefs";
   };

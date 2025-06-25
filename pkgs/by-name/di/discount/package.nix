@@ -36,11 +36,11 @@ stdenv.mkDerivation rec {
     done
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Implementation of Markdown markup language in C";
     homepage = "http://www.pell.portland.or.us/~orc/Code/discount/";
-    license = licenses.bsd3;
-    maintainers = with maintainers; [ shell ];
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ shell ];
     mainProgram = "markdown";
     platforms = platforms.unix;
   };

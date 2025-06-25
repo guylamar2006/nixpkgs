@@ -27,8 +27,8 @@ stdenvNoCC.mkDerivation (finalAttrs: {
   meta = with lib; {
     homepage = "https://github.com/pgf-tikz/pgf-umlcd";
     description = "Some LaTeX macros for UML Class Diagrams";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [ ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
   };
 })

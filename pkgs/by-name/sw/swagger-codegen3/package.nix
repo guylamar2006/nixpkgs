@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/swagger-api/swagger-codegen/tree/3.0.0";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = licenses.asl20;
-    maintainers = [ maintainers._1000101 ];
+    maintainers = with lib.maintainers; [ _1000101 ];
     mainProgram = "swagger-codegen3";
     platforms = platforms.all;
   };

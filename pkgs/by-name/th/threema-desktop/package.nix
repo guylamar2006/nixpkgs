@@ -123,7 +123,7 @@ buildNpmPackage rec {
     homepage = "https://threema.ch";
     license = licenses.agpl3Only;
     mainProgram = "threema";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = [ "x86_64-linux" ];
   };
 }

@@ -41,7 +41,7 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "SSDFS file system utilities";
     homepage = "https://github.com/dubeyko/ssdfs-tools";
-    license = licenses.bsd3Clear;
+    license = lib.licenses.bsd3Clear;
     maintainers = with maintainers; [ ners ];
     platforms = platforms.linux;
   };

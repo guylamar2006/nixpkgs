@@ -40,7 +40,7 @@ buildGoModule (finalAttrs: {
     changelog = "https://github.com/naggie/dsnet/releases/tag/${finalAttrs.src.tag}";
     license = lib.licenses.mit;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.naggie ];
+    maintainers = with lib.maintainers; [ naggie ];
     mainProgram = "dsnet";
   };
 

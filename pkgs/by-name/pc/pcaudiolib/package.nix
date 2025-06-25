@@ -53,8 +53,8 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     homepage = "https://github.com/espeak-ng/pcaudiolib";
     description = "Provides a C API to different audio devices";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ aske ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ aske ];
     platforms = platforms.unix;
   };
 })

@@ -26,6 +26,6 @@ rustPlatform.buildRustPackage rec {
       mit # or
       asl20
     ];
-    maintainers = [ maintainers.manojkarthick ];
+    maintainers = with lib.maintainers; [ manojkarthick ];
   };
 }

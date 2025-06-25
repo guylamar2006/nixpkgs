@@ -91,6 +91,6 @@ stdenv.mkDerivation rec {
     '';
     homepage = "http://netsniff-ng.org/";
     license = with licenses; [ gpl2Only ];
-    platforms = platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

@@ -36,8 +36,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Animated pipes terminal screensaver";
     homepage = "https://github.com/pipeseroni/pipes.sh";
-    license = licenses.mit;
-    maintainers = [ maintainers.matthiasbeyer ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ matthiasbeyer ];
     mainProgram = "pipes.sh";
     platforms = platforms.unix;
   };

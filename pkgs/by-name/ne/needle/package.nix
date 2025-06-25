@@ -41,9 +41,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Compile-time safe Swift dependency injection framework";
     homepage = "https://github.com/uber/needle";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     mainProgram = "needle";
-    maintainers = with maintainers; [ matteopacini ];
+    maintainers = with lib.maintainers; [ matteopacini ];
     platforms = platforms.darwin;
   };
 }

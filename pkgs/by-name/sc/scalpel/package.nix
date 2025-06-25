@@ -54,7 +54,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/sleuthkit/scalpel";
     description = "Recover files based on their headers, footers and internal data structures, based on Foremost";
     mainProgram = "scalpel";
-    maintainers = with maintainers; [ shard7 ];
+    maintainers = with lib.maintainers; [ shard7 ];
     platforms = platforms.unix;
     license = with licenses; [ asl20 ];
   };

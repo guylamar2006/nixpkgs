@@ -44,8 +44,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "terminal emulator for the Cyber1 mainframe-based CYBIS system";
     homepage = "https://www.cyber1.org/";
-    license = licenses.zlib;
-    maintainers = with maintainers; [ sarcasticadmin ];
+    license = lib.licenses.zlib;
+    maintainers = with lib.maintainers; [ sarcasticadmin ];
     mainProgram = "pterm";
     platforms = platforms.unix;
     broken = stdenv.hostPlatform.isDarwin;

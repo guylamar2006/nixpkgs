@@ -66,9 +66,9 @@ stdenv.mkDerivation {
   meta = with lib; {
     homepage = "https://github.com/intel/S0ixSelftestTool";
     description = "Tool for testing the S2idle path CPU Package C-state and S0ix failures";
-    license = licenses.gpl2Only;
+    license = lib.licenses.gpl2Only;
     platforms = platforms.linux;
-    maintainers = with maintainers; [ adamcstephens ];
+    maintainers = with lib.maintainers; [ adamcstephens ];
     mainProgram = "s0ix-selftest-tool";
   };
 }

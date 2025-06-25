@@ -23,7 +23,7 @@ buildNpmPackage rec {
     description = "Command-line Chromecast player";
     homepage = "https://github.com/xat/castnow";
     license = lib.licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "castnow";
   };
 }

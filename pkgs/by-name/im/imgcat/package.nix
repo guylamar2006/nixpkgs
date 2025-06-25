@@ -30,11 +30,11 @@ stdenv.mkDerivation rec {
 
   env.NIX_CFLAGS_COMPILE = "-Wno-error";
 
-  meta = with lib; {
+  meta = {
     description = "It's like cat, but for images";
     homepage = "https://github.com/eddieantonio/imgcat";
-    license = licenses.isc;
-    maintainers = with maintainers; [ jwiegley ];
+    license = lib.licenses.isc;
+    maintainers = with lib.maintainers; [ jwiegley ];
     platforms = platforms.unix;
     mainProgram = "imgcat";
   };

@@ -74,7 +74,7 @@ stdenv.mkDerivation rec {
     description = "Turn IP sockets into Unix domain sockets";
     platforms = lib.platforms.linux;
     license = lib.licenses.lgpl3;
-    maintainers = [ lib.maintainers.aszlig ];
+    maintainers = with lib.maintainers; [ aszlig ];
     mainProgram = "ip2unix";
   };
 }

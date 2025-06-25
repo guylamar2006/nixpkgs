@@ -36,8 +36,8 @@ python3Packages.buildPythonApplication rec {
       including pssh, pscp, prsync, pnuke and pslurp.
     '';
     inherit (src.meta) homepage;
-    license = licenses.bsd3;
-    platforms = platforms.linux ++ platforms.darwin;
-    maintainers = with maintainers; [ chris-martin ];
+    license = lib.licenses.bsd3;
+    platforms = lib.platforms.linux ++ platforms.darwin;
+    maintainers = with lib.maintainers; [ chris-martin ];
   };
 }

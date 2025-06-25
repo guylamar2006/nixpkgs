@@ -18,8 +18,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://f00l.de/pcapfix/";
     description = "Repair your broken pcap and pcapng files";
-    license = licenses.gpl3;
-    maintainers = [ maintainers.ehmry ];
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ ehmry ];
     platforms = platforms.all;
     mainProgram = "pcapfix";
   };

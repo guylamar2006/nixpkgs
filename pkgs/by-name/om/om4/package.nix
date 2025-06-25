@@ -41,6 +41,6 @@ stdenv.mkDerivation rec {
     ];
     mainProgram = "m4";
     platforms = lib.platforms.unix;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

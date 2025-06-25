@@ -58,7 +58,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/jtheoof/swappy";
     license = licenses.mit;
     mainProgram = "swappy";
-    maintainers = [ maintainers.matthiasbeyer ];
+    maintainers = with lib.maintainers; [ matthiasbeyer ];
     platforms = platforms.linux;
   };
 }

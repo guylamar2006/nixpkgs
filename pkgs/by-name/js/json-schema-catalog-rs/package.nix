@@ -42,7 +42,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
     '';
     homepage = "https://github.com/roberth/json-schema-catalog-rs";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.roberth ];
+    maintainers = with lib.maintainers; [ roberth ];
     mainProgram = "json-schema-catalog";
   };
 })

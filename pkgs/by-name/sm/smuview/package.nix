@@ -56,8 +56,8 @@ stdenv.mkDerivation {
     mainProgram = "smuview";
     longDescription = "SmuView is a GUI for sigrok that supports power supplies, electronic loads and all sorts of measurement devices like multimeters, LCR meters and so on";
     homepage = "https://github.com/knarfS/smuview";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ vifino ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ vifino ];
     platforms = platforms.unix;
   };
 }

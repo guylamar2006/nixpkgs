@@ -48,6 +48,6 @@ python3Packages.buildPythonApplication rec {
     mainProgram = "fichub_cli";
     homepage = "https://github.com/FicHub/fichub-cli";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.samasaur ];
+    maintainers = with lib.maintainers; [ samasaur ];
   };
 }

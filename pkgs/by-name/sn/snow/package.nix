@@ -25,8 +25,8 @@ stdenv.mkDerivation rec {
     description = "Conceal messages in ASCII text by appending whitespace to the end of lines";
     mainProgram = "snow";
     homepage = "http://www.darkside.com.au/snow/";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ siraben ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ siraben ];
     platforms = platforms.unix;
   };
 }

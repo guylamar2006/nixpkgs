@@ -29,6 +29,6 @@ buildNpmPackage rec {
     homepage = "https://serverless.com";
     license = lib.licenses.mit;
     mainProgram = "serverless";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

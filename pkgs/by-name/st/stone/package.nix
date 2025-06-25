@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "TCP/IP repeater in the application layer";
     homepage = "http://www.gcd.org/sengoku/stone/";
-    license = licenses.gpl2Only;
+    license = lib.licenses.gpl2Only;
     platforms = platforms.linux;
     maintainers = with maintainers; [ corngood ];
     mainProgram = "stone";

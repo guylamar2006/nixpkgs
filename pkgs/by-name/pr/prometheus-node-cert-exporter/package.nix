@@ -26,7 +26,7 @@ buildGoModule {
     description = "Prometheus exporter for SSL certificate";
     mainProgram = "node-cert-exporter";
     homepage = "https://github.com/amimof/node-cert-exporter";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ ibizaman ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ ibizaman ];
   };
 }

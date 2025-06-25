@@ -42,12 +42,12 @@ buildBazelPackage rec {
     description = "Protobuf plugin for generating JavaScript code";
     mainProgram = "protoc-gen-js";
     homepage = "https://github.com/protocolbuffers/protobuf-javascript";
-    platforms = platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ platforms.darwin;
     license = with licenses; [
       asl20
       bsd3
     ];
     sourceProvenance = [ sourceTypes.fromSource ];
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

@@ -45,8 +45,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://www.openwall.com/pam/";
     description = "PAM for login service to provide per-user private directories";
-    license = licenses.bsd0;
-    maintainers = with maintainers; [ wladmis ];
-    platforms = platforms.linux;
+    license = lib.licenses.bsd0;
+    maintainers = with lib.maintainers; [ wladmis ];
+    platforms = lib.platforms.linux;
   };
 }

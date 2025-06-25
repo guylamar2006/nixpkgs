@@ -20,11 +20,11 @@ stdenv.mkDerivation rec {
     "PREFIX="
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/willeccles/cfm";
     description = "Simple and fast TUI file manager with no dependencies";
-    license = licenses.mpl20;
-    maintainers = with maintainers; [ lom ];
+    license = lib.licenses.mpl20;
+    maintainers = with lib.maintainers; [ lom ];
     platforms = platforms.all;
     mainProgram = "cfm";
   };

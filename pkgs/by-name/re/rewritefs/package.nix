@@ -34,8 +34,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "FUSE filesystem intended to be used like Apache mod_rewrite";
     homepage = "https://github.com/sloonz/rewritefs";
-    license = licenses.gpl2Only;
-    maintainers = with maintainers; [ rnhmjoj ];
+    license = lib.licenses.gpl2Only;
+    maintainers = with lib.maintainers; [ rnhmjoj ];
     platforms = platforms.linux;
   };
 }

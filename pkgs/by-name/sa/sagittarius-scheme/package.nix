@@ -76,8 +76,8 @@ stdenv.mkDerivation rec {
       -  Replaceable reader
     '';
     homepage = "https://bitbucket.org/ktakashi/sagittarius-scheme";
-    license = licenses.bsd2;
+    license = lib.licenses.bsd2;
     platforms = platforms.all;
-    maintainers = with maintainers; [ abbe ];
+    maintainers = with lib.maintainers; [ abbe ];
   };
 }

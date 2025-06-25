@@ -76,7 +76,7 @@ let
       description = "Download manager supporting HTTP, FTP, BitTorrent, and eDonkey network protocols";
       homepage = "https://www.xunlei.com";
       license = lib.licenses.unfree;
-      maintainers = [ lib.maintainers.linuxwhata ];
+      maintainers = with lib.maintainers; [ linuxwhata ];
       platforms = [
         "x86_64-linux"
         "aarch64-linux"

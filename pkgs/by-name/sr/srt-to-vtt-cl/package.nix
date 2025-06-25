@@ -27,7 +27,7 @@ stdenv.mkDerivation {
 
   meta = with lib; {
     description = "Convert SRT files to VTT";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with maintainers; [ ericdallo ];
     homepage = "https://github.com/nwoltman/srt-to-vtt-cl";
     platforms = platforms.unix;

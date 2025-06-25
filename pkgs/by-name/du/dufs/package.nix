@@ -37,7 +37,7 @@ rustPlatform.buildRustPackage rec {
       --zsh <($out/bin/dufs --completions zsh)
   '';
 
-  meta = with lib; {
+  meta = {
     description = "File server that supports static serving, uploading, searching, accessing control, webdav";
     mainProgram = "dufs";
     homepage = "https://github.com/sigoden/dufs";
@@ -46,7 +46,7 @@ rustPlatform.buildRustPackage rec {
       asl20 # or
       mit
     ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       figsoda
       holymonson
     ];

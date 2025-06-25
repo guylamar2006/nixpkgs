@@ -29,9 +29,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/Xfennec/progress";
     description = "Tool that shows the progress of coreutils programs";
-    license = licenses.gpl3;
-    platforms = platforms.linux ++ platforms.darwin;
-    maintainers = with maintainers; [ pSub ];
+    license = lib.licenses.gpl3;
+    platforms = lib.platforms.linux ++ platforms.darwin;
+    maintainers = with lib.maintainers; [ pSub ];
     mainProgram = "progress";
   };
 }

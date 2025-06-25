@@ -53,7 +53,7 @@ stdenv.mkDerivation rec {
     homepage = "http://www.corpit.ru/mjt/udns.html";
     description = "Async-capable DNS stub resolver library";
     license = licenses.lgpl21Plus;
-    maintainers = [ maintainers.womfoo ];
+    maintainers = with lib.maintainers; [ womfoo ];
     platforms = platforms.unix;
   };
 

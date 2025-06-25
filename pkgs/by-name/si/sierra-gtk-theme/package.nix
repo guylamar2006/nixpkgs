@@ -78,8 +78,8 @@ lib.checkListOfEnum "${pname}: button variants" [ "standard" "alt" ] buttonVaria
     meta = with lib; {
       description = "Mac OSX like theme for GTK based desktop environments";
       homepage = "https://github.com/vinceliuice/Sierra-gtk-theme";
-      license = licenses.gpl3;
+      license = lib.licenses.gpl3;
       platforms = platforms.unix;
-      maintainers = [ maintainers.romildo ];
+      maintainers = with lib.maintainers; [ romildo ];
     };
   }

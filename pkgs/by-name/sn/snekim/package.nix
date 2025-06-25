@@ -31,6 +31,6 @@ buildNimPackage (finalAttrs: {
     description = "Simple implementation of the classic snake game";
     mainProgram = "snekim";
     license = lib.licenses.lgpl3Only;
-    maintainers = [ lib.maintainers.annaaurora ];
+    maintainers = with lib.maintainers; [ annaaurora ];
   };
 })

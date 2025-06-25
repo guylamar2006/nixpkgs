@@ -42,8 +42,8 @@ python3.pkgs.buildPythonApplication {
   meta = with lib; {
     description = "Command line nmap XML parser";
     homepage = "https://github.com/jonny1102/nmap-parse";
-    license = licenses.mit;
-    maintainers = with maintainers; [ fab ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ fab ];
     mainProgram = "nmap-parse";
   };
 }

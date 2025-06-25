@@ -32,7 +32,7 @@ buildGoModule (finalAttrs: {
     homepage = "https://github.com/tinfoilsh/tinfoil-cli";
     changelog = "https://github.com/tinfoilsh/tinfoil-cli/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.gpl3Only;
-    maintainers = [ lib.maintainers.haylin ];
+    maintainers = with lib.maintainers; [ haylin ];
     mainProgram = "tinfoil";
   };
 })

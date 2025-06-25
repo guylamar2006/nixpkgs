@@ -232,7 +232,7 @@ stdenv.mkDerivation rec {
         # a GPL 2 incompatibility even if it is not in a top-level attribute,
         # but pulled in indirectly somehow.
         ++ lib.optional gpl2Conflict lib.licenses.unfree;
-      maintainers = [ lib.maintainers.sternenseemann ];
+      maintainers = with lib.maintainers; [ sternenseemann ];
       # windows is theoretically possible, but requires extra work
       # which I am not willing to do and can't test.
       # https://github.com/inspircd/inspircd/blob/master/win/README.txt

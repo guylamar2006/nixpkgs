@@ -24,7 +24,7 @@ buildGoModule rec {
     homepage = "https://github.com/yannh/redis-dump-go";
     description = "Dump Redis keys to a file in RESP format using multiple connections";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.richiejp ];
+    maintainers = with lib.maintainers; [ richiejp ];
     changelog = "https://github.com/yannh/redis-dump-go/releases/tag/v${version}";
   };
 }

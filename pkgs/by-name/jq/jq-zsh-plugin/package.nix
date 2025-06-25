@@ -39,6 +39,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/reegnz/jq-zsh-plugin";
     license = lib.licenses.mit;
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.vinnymeller ];
+    maintainers = with lib.maintainers; [ vinnymeller ];
   };
 }

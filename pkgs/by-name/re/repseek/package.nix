@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
     description = "Tool to retrieve approximate repeats from large DNA sequences";
     mainProgram = "repseek";
     homepage = "https://bioinfo.mnhn.fr/abi/public/RepSeek";
-    maintainers = [ lib.maintainers.bzizou ];
+    maintainers = with lib.maintainers; [ bzizou ];
     license = lib.licenses.lgpl21;
   };
 

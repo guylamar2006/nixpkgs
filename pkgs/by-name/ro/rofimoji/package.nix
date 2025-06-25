@@ -60,8 +60,8 @@ python3Packages.buildPythonApplication rec {
     mainProgram = "rofimoji";
     homepage = "https://github.com/fdw/rofimoji";
     changelog = "https://github.com/fdw/rofimoji/blob/${src.rev}/CHANGELOG.md";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.linux;
-    maintainers = with maintainers; [ justinlovinger ];
+    maintainers = with lib.maintainers; [ justinlovinger ];
   };
 }

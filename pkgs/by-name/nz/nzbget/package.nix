@@ -82,9 +82,9 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     homepage = "https://nzbget.com/";
     changelog = "https://github.com/nzbgetcom/nzbget/releases/tag/v${finalAttrs.version}";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     description = "Command line tool for downloading files from news servers";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       pSub
       devusb
     ];

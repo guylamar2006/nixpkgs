@@ -40,8 +40,8 @@ python3Packages.buildPythonPackage rec {
   meta = with lib; {
     description = "Terminal-based presentation tool with colors and effects";
     homepage = "https://github.com/vinayak-mehta/present";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ lom ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ lom ];
     mainProgram = "present";
   };
 }

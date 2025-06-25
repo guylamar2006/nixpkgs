@@ -26,6 +26,6 @@ stdenv.mkDerivation ({
     homepage = "https://tetworks.opengroup.org/Products/tet.htm";
     license = lib.licenses.artistic1;
     platforms = lib.platforms.unix;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 })

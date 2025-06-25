@@ -52,8 +52,8 @@ stdenv.mkDerivation rec {
     mainProgram = "poly";
     homepage = "https://github.com/polyfy/polylith";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
-    license = licenses.epl10;
-    maintainers = with maintainers; [
+    license = lib.licenses.epl10;
+    maintainers = with lib.maintainers; [
       ericdallo
       jlesquembre
     ];

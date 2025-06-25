@@ -22,11 +22,11 @@ rustPlatform.buildRustPackage rec {
   nativeBuildInputs = [ pkg-config ];
   buildInputs = [ openssl ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/alesbrelih/gitlab-ci-ls";
     description = "GitLab CI Language Server (gitlab-ci-ls)";
-    license = licenses.mit;
-    maintainers = with maintainers; [ ma27 ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ma27 ];
     platforms = platforms.unix;
     mainProgram = "gitlab-ci-ls";
   };

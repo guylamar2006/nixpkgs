@@ -18,11 +18,11 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-OMXxMWMQIYXe41sxM+KQRMRicH61dIXUe51zdXn8ZYM=";
 
-  meta = with lib; {
+  meta = {
     description = "Fast file deduplicator";
     homepage = "https://github.com/kornelski/dupe-krill";
     license = with licenses; [ mit ];
-    maintainers = with maintainers; [ urbas ];
+    maintainers = with lib.maintainers; [ urbas ];
     mainProgram = "dupe-krill";
   };
 }

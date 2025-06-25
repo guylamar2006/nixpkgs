@@ -82,8 +82,8 @@ stdenv.mkDerivation rec {
       It is a port of Shadowsocks created by @clowwindy, which is maintained by @madeye and @linusyang.
     '';
     homepage = "https://github.com/shadowsocks/shadowsocks-libev";
-    license = licenses.gpl3Plus;
-    maintainers = [ ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
   };
 }

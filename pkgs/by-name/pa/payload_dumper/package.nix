@@ -41,8 +41,8 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     homepage = finalAttrs.src.meta.homepage;
     description = "Android OTA payload dumper";
-    license = licenses.gpl3;
-    maintainers = with maintainers; [ DamienCassou ];
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ DamienCassou ];
     mainProgram = "payload_dumper";
   };
 })

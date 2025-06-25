@@ -32,6 +32,6 @@ stdenv.mkDerivation rec {
     mainProgram = "par";
     platforms = platforms.unix;
     # See https://fedoraproject.org/wiki/Licensing/Par for license details
-    license = licenses.free;
+    license = lib.licenses.free;
   };
 }

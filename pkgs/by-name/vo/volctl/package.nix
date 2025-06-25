@@ -68,7 +68,7 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://buzz.github.io/volctl/";
     license = licenses.gpl2Only;
     platforms = platforms.linux;
-    maintainers = [ maintainers.romildo ];
+    maintainers = with lib.maintainers; [ romildo ];
     mainProgram = "volctl";
   };
 }

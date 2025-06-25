@@ -34,8 +34,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Show the set of running processes as a tree";
     homepage = "http://www.thp.uni-duisburg.de/pstree/";
-    license = licenses.gpl2;
-    maintainers = [ maintainers.c0bw3b ];
+    license = lib.licenses.gpl2;
+    maintainers = with lib.maintainers; [ c0bw3b ];
     platforms = platforms.unix;
     priority = 5; # Lower than psmisc also providing pstree on Linux platforms
     mainProgram = "pstree";

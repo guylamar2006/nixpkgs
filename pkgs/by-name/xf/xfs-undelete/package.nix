@@ -54,6 +54,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/ianka/xfs_undelete";
     license = licenses.gpl3;
     platforms = platforms.linux;
-    maintainers = [ maintainers.deepfire ];
+    maintainers = with lib.maintainers; [ deepfire ];
   };
 }

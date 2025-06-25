@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     mainProgram = "vbuf";
     license = licenses.lgpl21;
     homepage = "http://vrb.sourceforge.net/";
-    maintainers = [ maintainers.bobvanderlinden ];
+    maintainers = with lib.maintainers; [ bobvanderlinden ];
     platforms = platforms.linux;
   };
 }

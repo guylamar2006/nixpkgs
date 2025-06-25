@@ -39,9 +39,9 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "Visual browser for netCDF format files";
     homepage = "http://meteora.ucsd.edu/~pierce/ncview_home_page.html";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     mainProgram = "ncview";
-    maintainers = with maintainers; [ jmettes ];
+    maintainers = with lib.maintainers; [ jmettes ];
     platforms = platforms.all;
   };
 })

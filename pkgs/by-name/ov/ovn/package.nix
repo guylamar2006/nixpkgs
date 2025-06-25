@@ -110,8 +110,8 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/ovn-org/ovn";
     changelog = "https://github.com/ovn-org/ovn/blob/${src.rev}/NEWS";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ adamcstephens ];
-    platforms = platforms.linux;
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ adamcstephens ];
+    platforms = lib.platforms.linux;
   };
 }

@@ -53,9 +53,9 @@ buildGoModule rec {
   meta = with lib; {
     description = "CLI for the Red Hat OpenShift Cluster Manager";
     mainProgram = "ocm";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     homepage = "https://github.com/openshift-online/ocm-cli";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       stehessel
       jfchevrette
     ];

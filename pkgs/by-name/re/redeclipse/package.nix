@@ -66,7 +66,7 @@ stdenv.mkDerivation rec {
       licenses.zlib
       cc-by-sa-30
     ];
-    maintainers = with maintainers; [ lambda-11235 ];
+    maintainers = with lib.maintainers; [ lambda-11235 ];
     platforms = platforms.linux;
     hydraPlatforms = [ ];
   };

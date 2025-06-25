@@ -25,8 +25,8 @@ stdenvNoCC.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "Software networking with isolation for Tart";
     homepage = "https://github.com/cirruslabs/softnet";
-    license = licenses.agpl3Plus;
-    maintainers = with maintainers; [ emilytrau ];
+    license = lib.licenses.agpl3Plus;
+    maintainers = with lib.maintainers; [ emilytrau ];
     platforms = [ "aarch64-darwin" ];
     # Source build will be possible after darwin SDK 12.0 bump
     # https://github.com/NixOS/nixpkgs/pull/229210

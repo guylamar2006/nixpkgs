@@ -25,8 +25,8 @@ stdenvNoCC.mkDerivation rec {
   meta = with lib; {
     homepage = "http://www.impallari.com/quattrocento/";
     description = "Classic, elegant, sober and strong serif typeface";
-    license = licenses.ofl;
+    license = lib.licenses.ofl;
     platforms = platforms.all;
-    maintainers = [ maintainers.rycee ];
+    maintainers = with lib.maintainers; [ rycee ];
   };
 }

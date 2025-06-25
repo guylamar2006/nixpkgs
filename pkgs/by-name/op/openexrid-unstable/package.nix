@@ -71,8 +71,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "OpenEXR files able to isolate any object of a CG image with a perfect antialiazing";
     homepage = "https://github.com/MercenariesEngineering/openexrid";
-    maintainers = [ maintainers.guibou ];
+    maintainers = with lib.maintainers; [ guibou ];
     platforms = platforms.all;
-    license = licenses.mit;
+    license = lib.licenses.mit;
   };
 }

@@ -45,7 +45,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Simple Ants simulator";
     mainProgram = "antsimulator";
     license = lib.licenses.mit;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
   };
 })

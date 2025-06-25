@@ -58,8 +58,8 @@ stdenv.mkDerivation rec {
       (https://sourceware.org/pipermail/libc-announce/2020/000029.html) recommend to use
       `libtirpc` and this package instead.
     '';
-    license = licenses.mit;
-    maintainers = with maintainers; [ ma27 ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ma27 ];
     mainProgram = "rpcgen";
   };
 }

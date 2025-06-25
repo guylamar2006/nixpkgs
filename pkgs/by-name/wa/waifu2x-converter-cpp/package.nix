@@ -56,7 +56,7 @@ stdenv.mkDerivation rec {
     description = "Improved fork of Waifu2X C++ using OpenCL and OpenCV";
     homepage = "https://github.com/DeadSix27/waifu2x-converter-cpp";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.xzfc ];
+    maintainers = with lib.maintainers; [ xzfc ];
     platforms = lib.platforms.linux ++ lib.platforms.darwin;
     mainProgram = "waifu2x-converter-cpp";
   };

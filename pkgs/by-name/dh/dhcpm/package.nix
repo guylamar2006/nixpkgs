@@ -25,7 +25,7 @@ rustPlatform.buildRustPackage rec {
     description = "Dhcpm is a CLI tool for constructing & sending DHCP messages";
     homepage = "https://github.com/leshow/dhcpm";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.jmbaur ];
+    maintainers = with lib.maintainers; [ jmbaur ];
     mainProgram = "dhcpm";
   };
 }

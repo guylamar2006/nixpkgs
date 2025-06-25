@@ -86,7 +86,7 @@ stdenv.mkDerivation rec {
     description = "TypeScript Execute (tsx): The easiest way to run TypeScript in Node.js";
     homepage = "https://tsx.is";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.sdedovic ];
+    maintainers = with lib.maintainers; [ sdedovic ];
     mainProgram = "tsx";
   };
 }

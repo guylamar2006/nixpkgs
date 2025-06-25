@@ -20,7 +20,7 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Rust tool to monitor Nix processes";
     homepage = "https://github.com/DieracDelta/nix-btm";
-    license = licenses.mit;
-    maintainers = with maintainers; [ DieracDelta ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ DieracDelta ];
   };
 }

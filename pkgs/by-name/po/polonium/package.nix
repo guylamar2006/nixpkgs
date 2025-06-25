@@ -48,8 +48,8 @@ buildNpmPackage rec {
 
   meta = with lib; {
     description = "Auto-tiler that uses KWin 6.0+ tiling functionality";
-    license = licenses.mit;
-    maintainers = with maintainers; [
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [
       peterhoeg
       kotatsuyaki
       HeitorAugustoLN

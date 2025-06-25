@@ -61,7 +61,7 @@ python3Packages.buildPythonApplication {
     homepage = "https://vidcutter.ozmartians.com/";
     changelog = "https://github.com/ozmartian/vidcutter/blob/master/CHANGELOG";
     license = lib.licenses.gpl3Plus;
-    maintainers = [ lib.maintainers.zi3m5f ];
+    maintainers = with lib.maintainers; [ zi3m5f ];
     mainProgram = "vidcutter";
   };
 }

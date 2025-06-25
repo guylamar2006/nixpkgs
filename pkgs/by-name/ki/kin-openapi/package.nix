@@ -33,6 +33,6 @@ buildGoModule rec {
     homepage = "https://github.com/getkin/kin-openapi";
     changelog = "https://github.com/getkin/kin-openapi/releases/tag/v${version}";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers._6543 ];
+    maintainers = with lib.maintainers; [ _6543 ];
   };
 }

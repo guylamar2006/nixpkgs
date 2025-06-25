@@ -53,11 +53,11 @@ stdenv.mkDerivation rec {
     substituteInPlace systemd/mpd-notification.service --replace /usr $out
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Notifications for mpd";
     homepage = "https://github.com/eworm-de/mpd-notification";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ CaitlinDavitt ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ CaitlinDavitt ];
     platforms = platforms.unix;
     mainProgram = "mpd-notification";
   };

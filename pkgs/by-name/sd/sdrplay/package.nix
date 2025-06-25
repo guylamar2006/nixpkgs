@@ -76,8 +76,8 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://www.sdrplay.com/downloads/";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = licenses.unfree;
-    maintainers = with maintainers; [
+    license = lib.licenses.unfree;
+    maintainers = with lib.maintainers; [
       pmenke
       zaninime
     ];

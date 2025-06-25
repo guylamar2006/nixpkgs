@@ -97,7 +97,7 @@ stdenv.mkDerivation rec {
       builtins.replaceStrings [ "." ] [ "" ] version
     }";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.tensor5 ];
+    maintainers = with lib.maintainers; [ tensor5 ];
     mainProgram = "bitbox";
     sourceProvenance = [ lib.sourceTypes.fromSource ];
     platforms = [ "x86_64-linux" ];

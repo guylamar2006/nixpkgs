@@ -42,6 +42,6 @@ buildPythonPackage rec {
     homepage = "https://github.com/MousaZeidBaker/poetry-plugin-up";
     changelog = "https://github.com/MousaZeidBaker/poetry-plugin-up/releases/tag/${version}";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.k900 ];
+    maintainers = with lib.maintainers; [ k900 ];
   };
 }

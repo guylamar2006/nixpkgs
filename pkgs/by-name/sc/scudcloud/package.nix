@@ -24,8 +24,8 @@ python3Packages.buildPythonPackage rec {
   meta = with lib; {
     description = "Non-official desktop client for Slack";
     homepage = "https://github.com/raelgc/scudcloud";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.linux;
-    maintainers = with maintainers; [ volhovm ];
+    maintainers = with lib.maintainers; [ volhovm ];
   };
 }

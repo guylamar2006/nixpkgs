@@ -22,7 +22,7 @@ buildGoModule rec {
     mainProgram = "scout";
     homepage = "https://github.com/liamg/scout";
     platforms = platforms.unix;
-    license = licenses.unlicense;
-    maintainers = with maintainers; [ totoroot ];
+    license = lib.licenses.unlicense;
+    maintainers = with lib.maintainers; [ totoroot ];
   };
 }

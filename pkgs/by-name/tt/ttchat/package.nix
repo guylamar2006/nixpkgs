@@ -21,7 +21,7 @@ buildGoModule rec {
     description = "Connect to a Twitch channel's chat from your terminal";
     homepage = "https://github.com/atye/ttchat";
     license = licenses.asl20;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "ttchat";
   };
 }

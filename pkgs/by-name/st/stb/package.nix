@@ -44,8 +44,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Single-file public domain libraries for C/C++";
     homepage = "https://github.com/nothings/stb";
-    license = licenses.publicDomain;
+    license = lib.licenses.publicDomain;
     platforms = platforms.all;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

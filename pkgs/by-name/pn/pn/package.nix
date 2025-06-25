@@ -30,8 +30,8 @@ stdenv.mkDerivation rec {
     description = "Libphonenumber command-line wrapper";
     mainProgram = "pn";
     homepage = "https://github.com/Orange-OpenSource/pn";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     platforms = platforms.unix;
-    maintainers = [ maintainers.McSinyx ];
+    maintainers = with lib.maintainers; [ McSinyx ];
   };
 }

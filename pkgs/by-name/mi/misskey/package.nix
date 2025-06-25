@@ -129,7 +129,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "🌎 An interplanetary microblogging platform 🚀";
     homepage = "https://misskey-hub.net/";
     license = lib.licenses.agpl3Only;
-    maintainers = [ lib.maintainers.feathecutie ];
+    maintainers = with lib.maintainers; [ feathecutie ];
     platforms = lib.platforms.unix;
     mainProgram = "misskey";
   };

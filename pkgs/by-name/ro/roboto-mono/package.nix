@@ -85,8 +85,8 @@ stdenv.mkDerivation {
       wider glyphs are adjusted for weight. Curved caps like 'C' and 'O'
       take on the straighter sides from Roboto Condensed.
     '';
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     platforms = platforms.all;
-    maintainers = [ maintainers.romildo ];
+    maintainers = with lib.maintainers; [ romildo ];
   };
 }

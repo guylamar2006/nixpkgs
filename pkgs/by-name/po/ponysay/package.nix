@@ -46,8 +46,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Cowsay reimplemention for ponies";
     homepage = "https://github.com/erkin/ponysay";
-    license = licenses.gpl3;
-    maintainers = with maintainers; [ bodil ];
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ bodil ];
     platforms = platforms.unix;
   };
 }

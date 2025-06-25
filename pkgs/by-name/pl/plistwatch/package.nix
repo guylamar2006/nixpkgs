@@ -25,8 +25,8 @@ buildGoModule {
   meta = with lib; {
     description = "Monitors and prints changes to MacOS plists in real time";
     homepage = "https://github.com/catilac/plistwatch";
-    maintainers = with maintainers; [ gdinh ];
-    license = licenses.mit;
+    maintainers = with lib.maintainers; [ gdinh ];
+    license = lib.licenses.mit;
     platforms = platforms.darwin;
   };
 }

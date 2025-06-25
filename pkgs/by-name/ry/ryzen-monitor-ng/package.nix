@@ -34,9 +34,9 @@ stdenv.mkDerivation {
     description = "Access Ryzen SMU information exposed by the ryzen_smu driver";
     homepage = "https://github.com/plasmin/ryzen_monitor_ng";
     changelog = "https://github.com/plasmin/ryzen_monitor_ng/blob/master/CHANGELOG.md";
-    license = licenses.agpl3Only;
+    license = lib.licenses.agpl3Only;
     platforms = [ "x86_64-linux" ];
-    maintainers = with maintainers; [ phdyellow ];
+    maintainers = with lib.maintainers; [ phdyellow ];
     mainProgram = "ryzen_monitor";
   };
 }

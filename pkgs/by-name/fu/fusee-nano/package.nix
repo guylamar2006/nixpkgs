@@ -26,6 +26,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/DavidBuchanan314/fusee-nano";
     license = lib.licenses.mit;
     platforms = lib.platforms.linux;
-    maintainers = [ lib.maintainers.leo60228 ];
+    maintainers = with lib.maintainers; [ leo60228 ];
   };
 }

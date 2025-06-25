@@ -32,7 +32,7 @@ stdenv.mkDerivation {
     homepage = "http://linvdr.org/projects/regionset/";
     description = "Tool for changing the region code setting of DVD players";
     mainProgram = "regionset";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = platforms.linux;
   };
 }

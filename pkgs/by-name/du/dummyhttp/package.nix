@@ -18,11 +18,11 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-bjNB0aoG9Mrz1JzD80j2Czfg0pfU2uGlFFsi5WO4pdU=";
 
-  meta = with lib; {
+  meta = {
     description = "Super simple HTTP server that replies a fixed body with a fixed response code";
     homepage = "https://github.com/svenstaro/dummyhttp";
     license = with licenses; [ mit ];
-    maintainers = with maintainers; [ GuillaumeDesforges ];
+    maintainers = with lib.maintainers; [ GuillaumeDesforges ];
     mainProgram = "dummyhttp";
   };
 }

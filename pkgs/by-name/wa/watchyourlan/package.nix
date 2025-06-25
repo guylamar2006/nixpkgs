@@ -37,6 +37,6 @@ buildGoModule rec {
     changelog = "https://github.com/aceberg/WatchYourLAN/releases/tag/${src.tag}";
     license = lib.licenses.mit;
     mainProgram = "WatchYourLAN";
-    maintainers = [ lib.maintainers.iv-nn ];
+    maintainers = with lib.maintainers; [ iv-nn ];
   };
 }

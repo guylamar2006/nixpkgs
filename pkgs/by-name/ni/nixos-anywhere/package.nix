@@ -53,9 +53,9 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Install nixos everywhere via ssh";
     homepage = "https://github.com/nix-community/nixos-anywhere";
     mainProgram = "nixos-anywhere";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.all;
-    maintainers = [
+    maintainers = with lib.maintainers; [
       maintainers.mic92
       maintainers.lassulus
       maintainers.phaer

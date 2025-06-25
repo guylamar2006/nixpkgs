@@ -56,6 +56,6 @@ stdenv.mkDerivation rec {
     '';
     license = licenses.gpl2Only;
     platforms = platforms.linux ++ platforms.darwin;
-    maintainers = [ maintainers.KibaFox ];
+    maintainers = with lib.maintainers; [ KibaFox ];
   };
 }

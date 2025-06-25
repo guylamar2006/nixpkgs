@@ -43,8 +43,8 @@ python3Packages.buildPythonApplication rec {
     description = "Prometheus exporter for Borgmatic";
     homepage = "https://github.com/maxim-mityutko/borgmatic-exporter";
     changelog = "https://github.com/maxim-mityutko/borgmatic-exporter/releases/tag/${src.tag}";
-    license = licenses.mit;
-    maintainers = with maintainers; [ flandweber ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ flandweber ];
     mainProgram = "borgmatic-exporter";
     platforms = platforms.unix;
   };

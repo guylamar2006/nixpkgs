@@ -28,6 +28,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/romkatv/zsh-defer";
     license = licenses.gpl3Only;
     platforms = platforms.unix;
-    maintainers = [ maintainers.vinnymeller ];
+    maintainers = with lib.maintainers; [ vinnymeller ];
   };
 }

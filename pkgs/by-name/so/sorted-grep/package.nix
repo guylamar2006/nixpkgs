@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
       faster than traditional Unix grep, but with significant restrictions.
     '';
     platforms = platforms.unix;
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ ivan ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ ivan ];
   };
 }

@@ -65,12 +65,12 @@ stdenv.mkDerivation (finalAttrs: {
     allowedVersions = "^[0-9\\.]+$";
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://flashprog.org";
     description = "Utility for reading, writing, erasing and verifying flash ROM chips";
     changelog = "https://flashprog.org/wiki/Flashprog/v${finalAttrs.version}";
     license = with licenses; [ gpl2 ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       felixsinger
       funkeleinhorn
     ];

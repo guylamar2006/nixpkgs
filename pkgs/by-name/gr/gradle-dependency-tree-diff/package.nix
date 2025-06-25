@@ -58,7 +58,7 @@ stdenv.mkDerivation (finalAttrs: {
       binaryBytecode
     ];
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.progrm_jarvis ];
+    maintainers = with lib.maintainers; [ progrm_jarvis ];
     inherit (jre_headless.meta) platforms;
     badPlatforms = [
       # Currently fails to build on Darwin due to `Could not connect to the Gradle daemon.` error

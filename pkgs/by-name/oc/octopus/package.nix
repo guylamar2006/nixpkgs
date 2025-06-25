@@ -98,7 +98,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Real-space time dependent density-functional theory code";
     homepage = "https://octopus-code.org";
-    maintainers = with maintainers; [ markuskowa ];
+    maintainers = with lib.maintainers; [ markuskowa ];
     license = with licenses; [
       gpl2Only
       asl20

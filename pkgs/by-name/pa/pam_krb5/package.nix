@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
       pam_krb5 can optionally convert Kerberos 5 credentials to Kerberos IV
       credentials and/or use them to set up AFS tokens for a user's session.
     '';
-    platforms = platforms.linux;
-    license = licenses.bsd3;
+    platforms = lib.platforms.linux;
+    license = lib.licenses.bsd3;
   };
 }

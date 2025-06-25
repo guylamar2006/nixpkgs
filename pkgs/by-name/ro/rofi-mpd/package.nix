@@ -29,8 +29,8 @@ python3Packages.buildPythonApplication rec {
     description = "Rofi menu for interacting with MPD written in Python";
     mainProgram = "rofi-mpd";
     homepage = "https://github.com/JakeStanger/Rofi_MPD";
-    license = licenses.mit;
-    maintainers = with maintainers; [ jakestanger ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ jakestanger ];
     platforms = platforms.all;
   };
 }

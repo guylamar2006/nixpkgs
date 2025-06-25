@@ -51,8 +51,8 @@ stdenv.mkDerivation rec {
       (shod's remote controller).
     '';
     homepage = "https://github.com/phillbush/shod";
-    license = licenses.mit;
-    maintainers = [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
   };
 }

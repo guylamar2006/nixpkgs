@@ -65,9 +65,9 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Graphical processor simulator and assembly editor for the RISC-V ISA";
     homepage = "https://github.com/mortbopet/Ripes";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.unix;
     mainProgram = "Ripes";
-    maintainers = with maintainers; [ rewine ];
+    maintainers = with lib.maintainers; [ rewine ];
   };
 }

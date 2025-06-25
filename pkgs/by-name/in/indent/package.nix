@@ -61,7 +61,7 @@ stdenv.mkDerivation rec {
     description = "Source code reformatter";
     mainProgram = "indent";
     license = lib.licenses.gpl3Plus;
-    maintainers = [ lib.maintainers.mmahut ];
+    maintainers = with lib.maintainers; [ mmahut ];
     platforms = lib.platforms.unix;
   };
 }

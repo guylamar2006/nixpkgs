@@ -51,7 +51,7 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://github.com/open-iscsi/targetcli-fb";
     changelog = "https://github.com/open-iscsi/targetcli-fb/releases/tag/v${version}";
     license = lib.licenses.asl20;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
     mainProgram = "targetcli";
   };

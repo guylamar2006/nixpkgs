@@ -51,7 +51,7 @@ stdenvNoCC.mkDerivation {
       See: http://sansoxygen.com/
     '';
 
-    license = licenses.ofl;
+    license = lib.licenses.ofl;
     platforms = platforms.all;
   };
 }

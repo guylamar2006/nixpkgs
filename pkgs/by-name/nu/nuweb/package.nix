@@ -43,8 +43,8 @@ stdenv.mkDerivation rec {
     description = "Simple literate programming tool";
     mainProgram = "nuweb";
     homepage = "https://nuweb.sourceforge.net";
-    license = licenses.free;
-    maintainers = [ ];
+    license = lib.licenses.free;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.unix;
   };
 }

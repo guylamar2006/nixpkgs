@@ -30,7 +30,7 @@ stdenvNoCC.mkDerivation {
       This Zsh plugin is a tool for displaying the code for all Zsh hook functions (such as precmd), as well as the contents of
       hook arrays (such as precmd_functions).
     '';
-    maintainers = [ lib.maintainers.fidgetingbits ];
+    maintainers = with lib.maintainers; [ fidgetingbits ];
     platforms = lib.platforms.all;
   };
 }

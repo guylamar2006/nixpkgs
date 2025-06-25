@@ -49,7 +49,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "VDL Mode 2 message decoder and protocol analyzer";
     license = lib.licenses.gpl3Plus;
     platforms = with lib.platforms; linux ++ darwin;
-    maintainers = [ lib.maintainers.mafo ];
+    maintainers = with lib.maintainers; [ mafo ];
     mainProgram = "dumpvdl2";
   };
 })

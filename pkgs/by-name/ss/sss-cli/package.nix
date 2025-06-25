@@ -23,7 +23,7 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     homepage = "https://github.com/dsprenkels/sss-cli";
     description = "Command line program for secret-sharing strings";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with maintainers; [ laalsaas ];
   };
 }

@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
     description = "Quick access to current weather conditions and forecasts";
     mainProgram = "weather";
     license = licenses.isc;
-    maintainers = [ maintainers.matthiasbeyer ];
+    maintainers = with lib.maintainers; [ matthiasbeyer ];
     platforms = platforms.unix;
   };
 }

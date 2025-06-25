@@ -59,7 +59,7 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description = "In-application debugger for ARM Cortex microcontrollers";
     mainProgram = "blackmagic";
     longDescription = ''
@@ -74,8 +74,8 @@ stdenv.mkDerivation rec {
       executable in the bin directory.
     '';
     homepage = "https://github.com/blacksphere/blackmagic";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [
       pjones
       sorki
     ];

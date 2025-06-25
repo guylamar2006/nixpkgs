@@ -53,11 +53,11 @@ stdenv.mkDerivation rec {
     spdlog
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Client API library for the Matrix protocol";
     homepage = "https://github.com/Nheko-Reborn/mtxclient";
-    license = licenses.mit;
-    maintainers = with maintainers; [
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [
       fpletz
       pstn
       rnhmjoj

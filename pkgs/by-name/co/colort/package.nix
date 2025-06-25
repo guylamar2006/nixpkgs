@@ -17,12 +17,12 @@ stdenv.mkDerivation {
 
   makeFlags = [ "PREFIX=$(out)" ];
 
-  meta = with lib; {
+  meta = {
     description = "Program for 'tinting' color values";
     homepage = "https://github.com/neeasade/colort";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.all;
-    maintainers = [ maintainers.neeasade ];
+    maintainers = with lib.maintainers; [ neeasade ];
     mainProgram = "colort";
   };
 }

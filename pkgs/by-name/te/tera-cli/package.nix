@@ -24,7 +24,7 @@ rustPlatform.buildRustPackage rec {
     description = "Command line utility to render templates from json|toml|yaml and ENV, using the tera templating engine";
     homepage = "https://github.com/chevdor/tera-cli";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers._365tuwe ];
+    maintainers = with lib.maintainers; [ _365tuwe ];
     mainProgram = "tera";
     platforms = lib.platforms.unix;
   };

@@ -37,9 +37,9 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Uncompromising screenshot GUI for Wayland compositors";
     homepage = "https://git.sr.ht/~whynothugo/shotman";
-    license = licenses.isc;
+    license = lib.licenses.isc;
     platforms = platforms.linux;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       zendo
       fpletz
     ];

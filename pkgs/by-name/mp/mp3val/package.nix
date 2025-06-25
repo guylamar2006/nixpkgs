@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     homepage = "https://mp3val.sourceforge.net/index.shtml";
     license = lib.licenses.gpl2;
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.devhell ];
+    maintainers = with lib.maintainers; [ devhell ];
     mainProgram = "mp3val";
   };
 }

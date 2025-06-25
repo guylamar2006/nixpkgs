@@ -35,6 +35,6 @@ rustPlatform.buildRustPackage rec {
     description = "DNS server for ZeroTier users";
     homepage = "https://github.com/zerotier/zeronsd";
     license = licenses.bsd3;
-    maintainers = [ maintainers.dstengele ];
+    maintainers = with lib.maintainers; [ dstengele ];
   };
 }

@@ -38,9 +38,9 @@ stdenvNoCC.mkDerivation (finalAttrs: {
   meta = with lib; {
     description = "Perform various manipulations on the wordlists";
     homepage = "https://github.com/digininja/RSMangler";
-    license = licenses.cc-by-sa-20;
+    license = lib.licenses.cc-by-sa-20;
     mainProgram = "rsmangler";
-    maintainers = with maintainers; [ d3vil0p3r ];
+    maintainers = with lib.maintainers; [ d3vil0p3r ];
     platforms = ruby.meta.platforms;
   };
 })

@@ -31,8 +31,8 @@ stdenv.mkDerivation rec {
       pages for Unix-based systems. The goal is to provide excellent
       formatting for easy readability.";
     homepage = "https://github.com/jeaye/stdman";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.unix;
-    maintainers = [ maintainers.twey ];
+    maintainers = with lib.maintainers; [ twey ];
   };
 }

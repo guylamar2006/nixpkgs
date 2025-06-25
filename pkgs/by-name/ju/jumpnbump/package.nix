@@ -64,11 +64,11 @@ stdenv.mkDerivation {
     wrapPythonPrograms
   '';
 
-  meta = with lib; {
+  meta = {
     description = "cute, true multiplayer platform game with bunnies";
     homepage = "https://libregames.gitlab.io/jumpnbump/";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [ iblech ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ iblech ];
     platforms = platforms.unix;
   };
 }

@@ -114,7 +114,7 @@ libsForQt5.mkDerivation {
     });
   };
 
-  meta = with lib; {
+  meta = {
     description = "Convert blu-ray and dvd to mkv";
     longDescription = ''
       makemkv is a one-click QT application that transcodes an encrypted
@@ -132,6 +132,6 @@ libsForQt5.mkDerivation {
     ];
     homepage = "https://makemkv.com";
     platforms = [ "x86_64-linux" ];
-    maintainers = with maintainers; [ jchw ];
+    maintainers = with lib.maintainers; [ jchw ];
   };
 }

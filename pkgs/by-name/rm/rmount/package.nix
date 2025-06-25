@@ -41,8 +41,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://github.com/Luis-Hebendanz/rmount";
     description = "Remote mount utility which parses a json file";
-    license = licenses.mit;
-    maintainers = [ maintainers.qubasa ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ qubasa ];
     platforms = platforms.linux;
     mainProgram = "rmount";
   };

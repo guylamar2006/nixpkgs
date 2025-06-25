@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
     description = "C-language implementation of Javascript Object Signing and Encryption";
     mainProgram = "jose";
     homepage = "https://github.com/latchset/jose";
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
     license = lib.licenses.asl20;
     platforms = lib.platforms.all;
   };

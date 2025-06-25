@@ -21,7 +21,7 @@ buildGoModule rec {
     homepage = "https://github.com/anacrolix/dms";
     description = "UPnP DLNA Digital Media Server with basic video transcoding";
     license = lib.licenses.bsd3;
-    maintainers = [ lib.maintainers.claes ];
+    maintainers = with lib.maintainers; [ claes ];
     platforms = lib.platforms.linux;
     mainProgram = "dms";
   };

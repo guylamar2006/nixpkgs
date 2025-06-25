@@ -40,8 +40,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Risk of Rain 2 Mod Manager in Bash";
     homepage = "https://github.com/foldex/r2mod_cli";
-    license = licenses.gpl3Only;
-    maintainers = [ maintainers.reedrw ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ reedrw ];
     mainProgram = "r2mod";
     platforms = platforms.unix;
   };

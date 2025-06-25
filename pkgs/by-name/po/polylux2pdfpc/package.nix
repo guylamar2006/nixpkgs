@@ -29,8 +29,8 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Tool to make pdfpc interpret slides created by polylux correctly";
     homepage = "https://github.com/polylux-typ/polylux/tree/main/pdfpc-extractor";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     mainProgram = "polylux2pdfpc";
-    maintainers = [ maintainers.diogotcorreia ];
+    maintainers = with lib.maintainers; [ diogotcorreia ];
   };
 }

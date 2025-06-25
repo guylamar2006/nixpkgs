@@ -23,7 +23,7 @@ rustPlatform.buildRustPackage rec {
   meta = {
     description = "Tools for building and running enclaves for the Fortanix SGX ABI";
     homepage = "https://github.com/fortanix/rust-sgx";
-    maintainers = [ lib.maintainers.ozwaldorf ];
+    maintainers = with lib.maintainers; [ ozwaldorf ];
     platforms = [ "x86_64-linux" ];
     license = lib.licenses.mpl20;
   };

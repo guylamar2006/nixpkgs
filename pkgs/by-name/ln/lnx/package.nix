@@ -21,12 +21,12 @@ rustPlatform.buildRustPackage {
 
   useFetchCargoVendor = true;
   cargoHash = "sha256-9fro1Dx7P+P9NTsg0gtMfr0s4TEpkZA31EFAnObiNFo=";
-  meta = with lib; {
+  meta = {
     description = "Insanely fast, Feature-rich searching. lnx is the adaptable, typo tollerant deployment of the tantivy search engine. Standing on the shoulders of giants.";
     mainProgram = "lnx";
     homepage = "https://lnx.rs/";
-    license = licenses.mit;
-    maintainers = with maintainers; [ happysalada ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ happysalada ];
     platforms = platforms.unix;
   };
 }

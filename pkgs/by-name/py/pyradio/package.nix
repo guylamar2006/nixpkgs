@@ -48,8 +48,8 @@ python3Packages.buildPythonApplication rec {
     description = "Curses based internet radio player";
     mainProgram = "pyradio";
     changelog = "https://github.com/coderholic/pyradio/releases/tag/${src.tag}";
-    license = licenses.mit;
-    maintainers = with maintainers; [
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [
       contrun
       yayayayaka
     ];

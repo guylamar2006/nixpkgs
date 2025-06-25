@@ -32,7 +32,7 @@ stdenv.mkDerivation {
   meta = {
     description = "Library for handling the COLLADA file format";
     homepage = "https://github.com/KhronosGroup/OpenCOLLADA/";
-    maintainers = [ lib.maintainers.amarshall ];
+    maintainers = with lib.maintainers; [ amarshall ];
     platforms = lib.platforms.unix;
     license = lib.licenses.mit;
   };

@@ -30,7 +30,7 @@ python3Packages.buildPythonApplication rec {
     description = "Top like application for PostgreSQL server activity monitoring";
     mainProgram = "pg_activity";
     homepage = "https://github.com/dalibo/pg_activity";
-    license = licenses.postgresql;
-    maintainers = with maintainers; [ mausch ];
+    license = lib.licenses.postgresql;
+    maintainers = with lib.maintainers; [ mausch ];
   };
 }

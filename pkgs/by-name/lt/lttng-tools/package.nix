@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description = "Tracing tools (kernel + user space) for Linux";
     mainProgram = "lttng";
     homepage = "https://lttng.org/";
@@ -40,8 +40,8 @@ stdenv.mkDerivation rec {
       lgpl21Only
       gpl2Only
     ];
-    platforms = platforms.linux;
-    maintainers = [ maintainers.bjornfor ];
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ bjornfor ];
   };
 
 }

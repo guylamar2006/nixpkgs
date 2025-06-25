@@ -35,7 +35,7 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://github.com/mfaerevaag/wd";
     changelog = "https://github.com/mfaerevaag/wd/releases/tag/v${version}";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.zimeg ];
+    maintainers = with lib.maintainers; [ zimeg ];
     mainProgram = "wd";
     platforms = lib.platforms.unix;
   };

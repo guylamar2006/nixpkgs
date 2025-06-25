@@ -74,6 +74,6 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "NetworkManager's iodine plugin";
     inherit (networkmanager.meta) maintainers teams platforms;
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
   };
 }

@@ -56,9 +56,9 @@ buildGoModule rec {
     homepage = "https://centrifugal.dev";
     changelog = "https://github.com/centrifugal/centrifugo/releases/tag/v${version}";
     license = lib.licenses.asl20;
-    maintainers = [
-      lib.maintainers.tie
-      lib.maintainers.valodim
+    maintainers = with lib.maintainers; [
+      tie
+      valodim
     ];
     mainProgram = "centrifugo";
   };

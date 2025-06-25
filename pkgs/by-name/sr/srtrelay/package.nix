@@ -25,7 +25,7 @@ buildGoModule rec {
   meta = with lib; {
     description = "Streaming-Relay for the SRT-protocol";
     homepage = "https://github.com/voc/srtrelay";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with maintainers; [ fpletz ];
     mainProgram = "srtrelay";
   };

@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     description = "Wave-to-Notes transcriber";
     homepage = "https://kichiki.github.io/WaoN/";
     license = licenses.gpl2;
-    maintainers = [ maintainers.puckipedia ];
+    maintainers = with lib.maintainers; [ puckipedia ];
     platforms = platforms.all;
   };
 }

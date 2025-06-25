@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
     description = "Generic Sokoban game for X11";
     mainProgram = "xsok";
     license = lib.licenses.gpl2Plus;
-    maintainers = [ lib.maintainers.raskin ];
+    maintainers = with lib.maintainers; [ raskin ];
     platforms = lib.platforms.unix;
     homepage = "https://tracker.debian.org/pkg/xsok";
   };

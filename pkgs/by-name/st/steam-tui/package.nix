@@ -49,7 +49,7 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Rust TUI client for steamcmd";
     homepage = "https://github.com/dmadisetti/steam-tui";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with maintainers; [
       lom
       dmadisetti

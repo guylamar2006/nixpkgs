@@ -55,11 +55,11 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://firefox-source-docs.mozilla.org/nspr/index.html";
     description = "Netscape Portable Runtime, a platform-neutral API for system-level and libc-like functions";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       ajs124
       hexa
     ];
     platforms = platforms.all;
-    license = licenses.mpl20;
+    license = lib.licenses.mpl20;
   };
 }

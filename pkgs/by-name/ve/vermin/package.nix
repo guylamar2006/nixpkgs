@@ -35,6 +35,6 @@ python3Packages.buildPythonApplication rec {
     changelog = "https://github.com/netromdk/vermin/releases/tag/v${version}";
     description = "Concurrently detect the minimum Python versions needed to run code";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.fidgetingbits ];
+    maintainers = with lib.maintainers; [ fidgetingbits ];
   };
 }

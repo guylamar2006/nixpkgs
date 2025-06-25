@@ -33,7 +33,7 @@ buildGoModule rec {
     description = "Convert DMARC report files from xml to human-readable formats";
     homepage = "https://github.com/tierpod/dmarc-report-converter";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.Nebucatnetzer ];
+    maintainers = with lib.maintainers; [ Nebucatnetzer ];
     mainProgram = "dmarc-report-converter";
   };
 }

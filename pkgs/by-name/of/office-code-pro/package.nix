@@ -33,7 +33,7 @@ stdenvNoCC.mkDerivation rec {
       and coding environments, but are still very usable in other applications.
     '';
     homepage = "https://github.com/nathco/Office-Code-Pro";
-    license = licenses.ofl;
-    maintainers = [ ];
+    license = lib.licenses.ofl;
+    maintainers = with lib.maintainers; [ ];
   };
 }

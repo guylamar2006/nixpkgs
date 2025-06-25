@@ -38,6 +38,6 @@ stdenv.mkDerivation rec {
     inherit (ocamlPackages.ocaml.meta) platforms;
     description = "Simple package build system for OCaml";
     license = lib.licenses.lgpl21;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

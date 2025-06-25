@@ -69,6 +69,6 @@ stdenv.mkDerivation {
     '';
     mainProgram = "prover9";
     platforms = lib.platforms.linux;
-    maintainers = [ ];
+    maintainers = with lib.maintainers; [ ];
   };
 }

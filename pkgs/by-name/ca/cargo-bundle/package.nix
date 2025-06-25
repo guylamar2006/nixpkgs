@@ -32,7 +32,7 @@ rustPlatform.buildRustPackage {
     wayland
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Wrap rust executables in OS-specific app bundles";
     mainProgram = "cargo-bundle";
     homepage = "https://github.com/burtonageo/cargo-bundle";
@@ -40,6 +40,6 @@ rustPlatform.buildRustPackage {
       asl20
       mit
     ];
-    maintainers = with maintainers; [ figsoda ];
+    maintainers = with lib.maintainers; [ figsoda ];
   };
 }

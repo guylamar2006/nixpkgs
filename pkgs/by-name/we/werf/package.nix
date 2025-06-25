@@ -105,7 +105,7 @@ buildGoModule (finalAttrs: {
     homepage = "https://werf.io";
     changelog = "https://github.com/werf/werf/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.azahi ];
+    maintainers = with lib.maintainers; [ azahi ];
     mainProgram = "werf";
   };
 })

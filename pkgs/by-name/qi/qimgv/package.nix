@@ -56,8 +56,8 @@ stdenv.mkDerivation rec {
     description = "Qt5 image viewer with optional video support";
     mainProgram = "qimgv";
     homepage = "https://github.com/easymodo/qimgv";
-    license = licenses.gpl3;
-    platforms = platforms.linux;
-    maintainers = with maintainers; [ cole-h ];
+    license = lib.licenses.gpl3;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ cole-h ];
   };
 }

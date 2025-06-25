@@ -28,8 +28,8 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Fast, dynamic, multi-threading framework for IPv6 Router Advertisements";
     homepage = "https://github.com/danrl/ratools";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     platforms = platforms.linux;
-    maintainers = [ maintainers.fpletz ];
+    maintainers = with lib.maintainers; [ fpletz ];
   };
 }

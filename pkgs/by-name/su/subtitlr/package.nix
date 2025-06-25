@@ -37,7 +37,7 @@ buildGoModule rec {
   meta = with lib; {
     description = "This application, a subtitle generator for YouTube, utilizes OpenAI's Whisper API";
     homepage = "https://github.com/yoanbernabeu/Subtitlr/";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with maintainers; [ qjoly ];
     mainProgram = "Subtitlr";
   };

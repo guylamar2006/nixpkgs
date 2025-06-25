@@ -50,6 +50,6 @@ stdenv.mkDerivation (finalAttrs: {
       free
     ];
     platforms = lib.platforms.all;
-    maintainers = [ lib.maintainers.kupac ];
+    maintainers = with lib.maintainers; [ kupac ];
   };
 })

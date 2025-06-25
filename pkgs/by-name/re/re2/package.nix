@@ -68,9 +68,9 @@ stdenv.mkDerivation (finalAttrs: {
       expression engines like those used in PCRE, Perl, and Python. It is a C++
       library.
     '';
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     homepage = "https://github.com/google/re2";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       azahi
       networkexception
     ];

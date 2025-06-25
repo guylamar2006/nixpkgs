@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
       they are also hard to predict.
     '';
     platforms = lib.platforms.unix;
-    maintainers = [ lib.maintainers.linus ];
+    maintainers = with lib.maintainers; [ linus ];
     broken = stdenv.hostPlatform.isi686; # https://github.com/imneme/pcg-c/issues/11
   };
 }

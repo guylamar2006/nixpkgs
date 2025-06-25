@@ -18,11 +18,11 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-xXzUobB8RMyJOC4lKayE+6SKC7NW1dNWGUUH3i1TaW0=";
 
-  meta = with lib; {
+  meta = {
     description = "Create licenses for your projects right from your terminal";
     mainProgram = "gen-license";
     homepage = "https://github.com/nexxeln/license-generator";
-    license = licenses.mit;
-    maintainers = [ maintainers.ryanccn ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ryanccn ];
   };
 }

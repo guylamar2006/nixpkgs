@@ -22,7 +22,7 @@ rustPlatform.buildRustPackage rec {
     description = "Manage cross-references in your code";
     homepage = "https://github.com/stepchowfun/tagref";
     license = licenses.mit;
-    maintainers = [ maintainers.yusdacra ];
+    maintainers = with lib.maintainers; [ yusdacra ];
     platforms = platforms.unix;
     mainProgram = "tagref";
   };

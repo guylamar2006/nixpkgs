@@ -78,6 +78,6 @@ stdenv.mkDerivation rec {
     homepage = "https://virgil3d.github.io/";
     license = licenses.mit;
     platforms = platforms.unix;
-    maintainers = [ maintainers.xeji ];
+    maintainers = with lib.maintainers; [ xeji ];
   };
 }

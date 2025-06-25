@@ -38,8 +38,8 @@ rustPlatform.buildRustPackage rec {
     description = "Index, block explorer, and command-line wallet for Ordinals";
     homepage = "https://github.com/ordinals/ord";
     changelog = "https://github.com/ordinals/ord/blob/${src.rev}/CHANGELOG.md";
-    license = licenses.cc0;
-    maintainers = with maintainers; [ xrelkd ];
+    license = lib.licenses.cc0;
+    maintainers = with lib.maintainers; [ xrelkd ];
     mainProgram = "ord";
   };
 }

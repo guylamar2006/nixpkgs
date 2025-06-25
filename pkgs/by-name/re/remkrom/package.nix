@@ -21,8 +21,8 @@ rustPlatform.buildRustPackage {
   meta = with lib; {
     description = "Reimplementation of mkrom in Rust";
     homepage = "https://github.com/siraben/remkrom";
-    license = licenses.mit;
-    maintainers = with maintainers; [ siraben ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ siraben ];
     mainProgram = "remkrom";
   };
 }

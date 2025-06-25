@@ -27,8 +27,8 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Test DRAM for bit flips caused by the rowhammer problem";
     homepage = "https://github.com/google/rowhammer-test";
-    license = licenses.asl20;
-    maintainers = [ ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ ];
     platforms = [
       "x86_64-linux"
       "i686-linux"

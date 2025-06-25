@@ -39,8 +39,8 @@ stdenvNoCC.mkDerivation (finalAttrs: {
       to get things working. This small script should simplify the CMake
       packaging process into a single, easy-to-use command.
     '';
-    license = licenses.mit;
-    maintainers = [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
     platforms = platforms.all;
   };
 })

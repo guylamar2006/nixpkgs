@@ -43,8 +43,8 @@ buildPythonApplication rec {
   meta = with lib; {
     description = "Script to convert a Python project declared on a pyproject.toml to a conda environment";
     homepage = "https://github.com/dojeda/poetry2conda";
-    license = licenses.mit;
-    maintainers = with maintainers; [ cpcloud ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ cpcloud ];
     mainProgram = "poetry2conda";
   };
 }

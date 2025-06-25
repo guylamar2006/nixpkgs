@@ -75,8 +75,8 @@ stdenv.mkDerivation rec {
     description = "Linux SDL/ImGui edition software for viewing .brd files";
     mainProgram = "openboardview";
     homepage = "https://github.com/OpenBoardView/OpenBoardView";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = platforms.unix;
-    maintainers = with maintainers; [ k3a ];
+    maintainers = with lib.maintainers; [ k3a ];
   };
 }

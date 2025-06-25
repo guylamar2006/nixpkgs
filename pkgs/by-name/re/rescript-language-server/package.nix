@@ -66,6 +66,6 @@ buildNpmPackage rec {
     mainProgram = "rescript-language-server";
     license = lib.licenses.mit;
     platforms = lib.platforms.linux ++ lib.platforms.darwin;
-    maintainers = [ lib.maintainers.RossSmyth ];
+    maintainers = with lib.maintainers; [ RossSmyth ];
   };
 }

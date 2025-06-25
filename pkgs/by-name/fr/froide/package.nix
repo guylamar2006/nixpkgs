@@ -177,7 +177,7 @@ python.pkgs.buildPythonApplication rec {
     description = "Freedom of Information Portal";
     homepage = "https://github.com/okfde/froide";
     license = lib.licenses.mit;
-    maintainers = [ lib.maintainers.onny ];
+    maintainers = with lib.maintainers; [ onny ];
     mainProgram = "froide";
   };
 }

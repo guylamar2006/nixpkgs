@@ -91,11 +91,11 @@ stdenv.mkDerivation {
     "--with-boost-libdir=${boostPython.out}/lib"
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://libtorrent.org/";
     description = "C++ BitTorrent implementation focusing on efficiency and scalability";
-    license = licenses.bsd3;
-    maintainers = [ ];
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ ];
     broken = stdenv.hostPlatform.isDarwin;
     platforms = platforms.unix;
   };

@@ -32,8 +32,8 @@ stdenvNoCC.mkDerivation {
   meta = with lib; {
     description = "Assets needed for RetroArch";
     homepage = "https://libretro.com";
-    license = licenses.mit;
-    teams = [ teams.libretro ];
+    license = lib.licenses.mit;
+    teams = with lib.teams; [ libretro ];
     platforms = platforms.all;
   };
 }

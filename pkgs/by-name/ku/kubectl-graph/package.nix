@@ -23,6 +23,6 @@ buildGoModule rec {
     changelog = "https://github.com/steveteuber/kubectl-graph/releases/tag/v${version}";
     mainProgram = "kubectl-graph";
     license = lib.licenses.asl20;
-    maintainers = [ lib.maintainers.rksm ];
+    maintainers = with lib.maintainers; [ rksm ];
   };
 }
