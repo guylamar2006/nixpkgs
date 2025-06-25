@@ -26,7 +26,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = {
     description = "Automatic Differentiation of C/C++";
     homepage = "https://github.com/coin-or/ADOL-C";
-    maintainers = with lib.maintainers [ bzizou ];
+    maintainers = with lib.maintainers; [ bzizou ];
     license = lib.licenses.gpl2Plus;
   };
 })
