@@ -17,7 +17,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   src =
     let
-      underscoreVersion = builtins.replaceStrings [ "." ] [ "_" ] finalAttrs.version;
+      underscoreVersion = builtins.lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version;
     in
     fetchurl {
       url = "https://www.dbvis.com/product_download/dbvis-${finalAttrs.version}/media/dbvis_linux_${underscoreVersion}.tar.gz";

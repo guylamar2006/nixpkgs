@@ -16,7 +16,7 @@ clangStdenv.mkDerivation (finalAttrs: {
   src = fetchFromGitHub {
     owner = "gnustep";
     repo = "apps-projectcenter";
-    rev = "projectcenter-${lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version}";
+    rev = "projectcenter-${lib.lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version}";
     hash = "sha256-uXT2UUvMZNc6Fqi2BUXQimbZk8b3IqXzB+A2btBOmms=";
   };
 

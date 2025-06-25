@@ -15,7 +15,7 @@ stdenv.mkDerivation (finalAttrs: {
   src = fetchFromGitHub {
     owner = "nrnrnr";
     repo = "noweb";
-    rev = "v${builtins.replaceStrings [ "." ] [ "_" ] finalAttrs.version}";
+    rev = "v${builtins.lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version}";
     sha256 = "sha256-COcWyrYkheRaSr2gqreRRsz9SYRTX2PSl7km+g98ljs=";
   };
 

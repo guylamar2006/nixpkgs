@@ -15,7 +15,7 @@ stdenv.mkDerivation (finalAttrs: {
   src = fetchFromGitHub {
     owner = "miniupnp";
     repo = "miniupnp";
-    tag = "miniupnpc_${lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version}";
+    tag = "miniupnpc_${lib.lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version}";
     hash = "sha256-8EWchUppW4H2kEUCGBXIk1meARJj2usKKO5gFYPoW3s=";
   };
 

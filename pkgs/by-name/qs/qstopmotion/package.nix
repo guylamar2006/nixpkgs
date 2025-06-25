@@ -29,7 +29,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   src = fetchurl {
     url = "mirror://sourceforge/project/qstopmotion/Version_${
-      lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version
+      lib.lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version
     }/qstopmotion-${finalAttrs.version}-Source.tar.gz";
     hash = "sha256-jyBUyadkSuQKXOrr5XZ1jy6of1Qw8S2HPxuOrPc7RnE=";
   };

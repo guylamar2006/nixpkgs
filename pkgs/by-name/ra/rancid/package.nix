@@ -61,7 +61,7 @@ stdenv.mkDerivation (finalAttrs: {
   src = fetchFromGitHub {
     owner = "haussli";
     repo = "rancid";
-    rev = "v" + replaceStrings [ "." ] [ "_" ] finalAttrs.version;
+    rev = "v" + lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version;
     hash = "sha256-TAeOSwdDhP06OSV0en/hMVF3qWVwJUsiqt97rdgtAzE=";
   };
 

@@ -20,7 +20,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   src = fetchurl {
     url = "https://www.syntevo.com/downloads/smartgit/smartgit-linux-${
-      builtins.replaceStrings [ "." ] [ "_" ] finalAttrs.version
+      builtins.lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version
     }.tar.gz";
     hash = "sha256-YhgE1Y0L8lzefJnvswKwIFnx6XIo40DszAr/cxOoOds=";
   };

@@ -20,7 +20,7 @@ stdenv.mkDerivation (finalAttrs: {
   src = fetchFromGitHub {
     owner = "conformal";
     repo = "spectrwm";
-    tag = "SPECTRWM_${lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version}";
+    tag = "SPECTRWM_${lib.lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version}";
     hash = "sha256-Dnn/iIrceiAVuMR8iMGcc7LqNhWC496eT5gNrYOInRU=";
   };
 

@@ -20,7 +20,7 @@ stdenv.mkDerivation (finalAttrs: {
   src = fetchFromGitHub {
     owner = "grisbi";
     repo = "grisbi";
-    tag = "upstream_version_${lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version}";
+    tag = "upstream_version_${lib.lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version}";
     hash = "sha256-3E57M/XE4xyo3ppVceDA4OFDnVicosCY8ikE2gDJoUQ=";
   };
 

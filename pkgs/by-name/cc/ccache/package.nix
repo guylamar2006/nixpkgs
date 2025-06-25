@@ -168,7 +168,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://ccache.dev";
     downloadPage = "https://ccache.dev/download.html";
     changelog = "https://ccache.dev/releasenotes.html#_ccache_${
-      builtins.replaceStrings [ "." ] [ "_" ] finalAttrs.version
+      builtins.lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version
     }";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [

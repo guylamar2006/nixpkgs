@@ -23,7 +23,7 @@ stdenv.mkDerivation (finalAttrs: {
   src = fetchFromGitHub {
     owner = "PixarAnimationStudios";
     repo = "OpenSubdiv";
-    tag = "v${lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version}";
+    tag = "v${lib.lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version}";
     hash = "sha256-liy6pQyWMk7rw0usrCoLGzZLO7RAg0z2pV/GF2NnOkE=";
   };
 

@@ -97,7 +97,7 @@ stdenv.mkDerivation (finalAttrs: {
     urls = [
       "https://curl.haxx.se/download/curl-${finalAttrs.version}.tar.xz"
       "https://github.com/curl/curl/releases/download/curl-${
-        builtins.replaceStrings [ "." ] [ "_" ] finalAttrs.version
+        builtins.lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version
       }/curl-${finalAttrs.version}.tar.xz"
     ];
     hash = "sha256-9GGaHiR0xLv+3IinwhkSCcgzS0j6H05T/VhMwS6RIN0=";

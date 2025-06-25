@@ -20,7 +20,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   src = fetchurl {
     url = "https://www.syntevo.com/downloads/smartsynchronize/smartsynchronize-linux-${
-      builtins.replaceStrings [ "." ] [ "_" ] finalAttrs.version
+      builtins.lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version
     }.tar.gz";
     hash = "sha256-78CidB6d7FJH17rRT3N9tCCHNZyeyOy7DOepxVDLPUM=";
   };

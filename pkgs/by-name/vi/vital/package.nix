@@ -20,7 +20,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   src = fetchzip {
     url = "https://builds.vital.audio/VitalAudio/vital/${
-      builtins.replaceStrings [ "." ] [ "_" ] finalAttrs.version
+      builtins.lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version
     }/VitalInstaller.zip";
     hash = "sha256-hCwXSUiBB0YpQ1oN6adLprwAoel6f72tBG5fEb61OCI=";
   };

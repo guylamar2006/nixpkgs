@@ -21,7 +21,7 @@ stdenv.mkDerivation (finalAttrs: {
   src = fetchFromGitHub {
     owner = "Linux-Comedi";
     repo = "comedilib";
-    rev = "r${lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version}";
+    rev = "r${lib.lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version}";
     sha256 = "0kfs2dw62vjz8j7fgsxq6ky8r8kca726gyklbm6kljvgfh47lyfw";
   };
 

@@ -37,7 +37,7 @@ clangStdenv.mkDerivation (finalAttrs: {
 
   meta = {
     changelog = "https://github.com/gnustep/tools-make/releases/tag/make-${
-      builtins.replaceStrings [ "." ] [ "_" ] finalAttrs.version
+      builtins.lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version
     }";
     description = "Build manager for GNUstep";
     homepage = "https://gnustep.github.io/";

@@ -17,7 +17,7 @@ stdenv.mkDerivation (finalAttrs: {
   src = fetchFromGitHub {
     owner = "pete-gordon";
     repo = "hivelytracker";
-    rev = "V${lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version}";
+    rev = "V${lib.lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version}";
     sha256 = "148p320sd8phcpmj4m85ns5zly2dawbp8kgx9ryjfdk24pa88xg6";
   };
 

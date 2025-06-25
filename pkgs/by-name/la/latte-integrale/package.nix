@@ -14,7 +14,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   src = fetchurl {
     url = "https://github.com/latte-int/latte/releases/download/version_${
-      lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version
+      lib.lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version
     }/latte-int-${finalAttrs.version}.tar.gz";
     hash = "sha256-AGwQ6+XVv9ybFZy6YmSkQyhh/nY84F/oIWJKt9P8IXA=";
   };

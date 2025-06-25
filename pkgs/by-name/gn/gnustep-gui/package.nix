@@ -25,7 +25,7 @@ clangStdenv.mkDerivation (finalAttrs: {
 
   meta = {
     changelog = "https://github.com/gnustep/libs-gui/releases/tag/gui-${
-      builtins.replaceStrings [ "." ] [ "_" ] finalAttrs.version
+      builtins.lib.replaceStrings [ "." ] [ "_" ] finalAttrs.version
     }";
     description = "GUI class library of GNUstep";
     homepage = "https://gnustep.github.io/";
