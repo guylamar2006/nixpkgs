@@ -76,6 +76,6 @@ python3.pkgs.buildPythonApplication rec {
     mainProgram = "diffuse";
     license = lib.licenses.gpl2;
     maintainers = with lib.maintainers; [ k3a ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

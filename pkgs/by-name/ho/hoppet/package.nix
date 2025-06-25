@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     mainProgram = "hoppet-config";
     license = lib.licenses.gpl2;
     homepage = "https://hoppet.hepforge.org";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ veprbl ];
   };
 }

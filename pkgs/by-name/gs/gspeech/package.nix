@@ -83,6 +83,6 @@ python3.pkgs.buildPythonApplication rec {
     homepage = "https://github.com/mothsART/gSpeech";
     maintainers = with lib.maintainers; [ mothsart ];
     license = lib.licenses.gpl3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

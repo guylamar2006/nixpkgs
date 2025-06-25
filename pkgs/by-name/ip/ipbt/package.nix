@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.chiark.greenend.org.uk/~sgtatham/ipbt/";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ tckmn ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "ipbt";
   };
 }

@@ -102,7 +102,7 @@ stdenv.mkDerivation {
     license = lib.licenses.gpl2Plus;
 
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     hydraplatforms = lib.platforms.linux; # sdl-config times out on darwin
   };
 }

@@ -73,6 +73,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://gitlab.gnome.org/GNOME/libpanel";
     license = lib.licenses.lgpl3Plus;
     teams = with lib.teams; [ gnome ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

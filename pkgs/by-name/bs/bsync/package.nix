@@ -52,7 +52,7 @@ stdenv.mkDerivation {
     description = "Bidirectional Synchronization using Rsync";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ dietmarw ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "bsync";
   };
 }

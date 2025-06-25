@@ -48,6 +48,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl3Plus;
     mainProgram = "headsetcontrol";
     maintainers = with lib.maintainers; [ leixb ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -193,7 +193,7 @@ stdenv.mkDerivation rec {
       globin
     ];
     teams = [ lib.teams.helsinki-systems ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
   passthru.tests = {
     opensmtpd-interaction = nixosTests.opensmtpd;

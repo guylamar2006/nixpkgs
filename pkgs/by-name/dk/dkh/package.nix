@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     description = "Arbitrary-order scalar-relativistic Douglas-Kroll-Hess module";
     license = lib.licenses.lgpl3Only;
     homepage = "https://github.com/psi4/dkh";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ sheepforce ];
   };
 }

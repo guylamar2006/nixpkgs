@@ -63,7 +63,7 @@ stdenv.mkDerivation rec {
       boost
       publicDomain
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ c0bw3b ];
   };
 }

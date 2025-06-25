@@ -61,7 +61,7 @@ stdenv.mkDerivation rec {
     description = "/efont/ Unicode bitmap font";
     homepage = "http://openlab.ring.gr.jp/efont/unicode/";
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ncfavier ];
   };
 }

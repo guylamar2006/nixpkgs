@@ -22,6 +22,6 @@ stdenv.mkDerivation rec {
     description = "Device Firmware Update based USB programmer for Atmel chips with a USB bootloader";
     mainProgram = "dfu-programmer";
     homepage = "http://dfu-programmer.sourceforge.net/";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

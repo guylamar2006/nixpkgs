@@ -22,6 +22,6 @@ buildGoModule rec {
     homepage = "https://github.com/cloudflare/goflow";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ heph2 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -34,6 +34,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/paolostivanin/libcotp";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ alexbakker ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

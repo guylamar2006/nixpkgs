@@ -32,6 +32,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://savannah.nongnu.org/projects/gash/";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ wegank ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

@@ -53,6 +53,6 @@ stdenv.mkDerivation rec {
     description = "Embeddable XML database based on Berkeley DB";
     license = lib.licenses.agpl3Only;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

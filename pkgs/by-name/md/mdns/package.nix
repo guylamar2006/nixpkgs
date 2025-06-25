@@ -26,6 +26,6 @@ stdenv.mkDerivation rec {
     changelog = "https://github.com/mjansson/mdns/blob/${src.rev}/CHANGELOG";
     license = lib.licenses.unlicense;
     maintainers = with lib.maintainers; [ hexa ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

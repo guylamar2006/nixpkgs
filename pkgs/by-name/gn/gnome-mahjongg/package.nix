@@ -60,6 +60,6 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "gnome-mahjongg";
     teams = with lib.teams; [ gnome ];
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

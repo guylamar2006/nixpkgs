@@ -29,6 +29,6 @@ stdenv.mkDerivation rec {
     description = "Lightweight decompression library with support for rar, tar and zip archives";
     license = lib.licenses.lgpl3Plus;
     maintainers = with lib.maintainers; [ wegank ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -111,7 +111,7 @@ stdenv.mkDerivation (finalAttrs: {
       gpl2Plus
       lgpl2Plus
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     teams = with lib.teams; [ gnome ];
   };
 })

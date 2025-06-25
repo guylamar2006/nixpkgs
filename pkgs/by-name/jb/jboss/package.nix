@@ -24,7 +24,7 @@ stdenv.mkDerivation rec {
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = lib.licenses.lgpl21;
     maintainers = with lib.maintainers; [ sander ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     knownVulnerabilities = [
       "CVE-2015-7501: remote code execution in apache-commons-collections: InvokerTransformer during deserialisation"
     ];

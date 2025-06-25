@@ -61,7 +61,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/g-truc/glm";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ smancill ];
   };
 }

@@ -71,7 +71,7 @@ resholve.mkDerivation {
     description = "Program that looks up in a directory hierarchy for a given filename";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ roman ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "locate-dominating-file";
   };
 }

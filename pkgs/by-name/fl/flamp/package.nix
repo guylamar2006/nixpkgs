@@ -35,7 +35,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://sourceforge.net/projects/fldigi/";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ stteague ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = stdenv.system == "x86_64-darwin";
     mainProgram = "flamp";
   };

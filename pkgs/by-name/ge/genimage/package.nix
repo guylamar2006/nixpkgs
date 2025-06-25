@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     homepage = "https://git.pengutronix.de/cgit/genimage";
     description = "Generate filesystem images from directory trees";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ bjornfor ];
     mainProgram = "genimage";
   };

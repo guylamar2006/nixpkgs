@@ -84,7 +84,7 @@ stdenv.mkDerivation (finalAttrs: {
       emilytrau
       d3vil0p3r
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = lib.licenses.unfree;
   };

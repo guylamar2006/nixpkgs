@@ -89,6 +89,6 @@ stdenv.mkDerivation (finalAttrs: {
       benediktbroich
       ranfdev
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

@@ -85,6 +85,6 @@ stdenv.mkDerivation rec {
       qknight
       globin
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

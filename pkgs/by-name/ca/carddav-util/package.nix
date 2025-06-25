@@ -48,7 +48,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/ljanyst/carddav-util";
     description = "CardDAV import/export utility";
     mainProgram = "carddav-util.py";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.isc;
   };
 }

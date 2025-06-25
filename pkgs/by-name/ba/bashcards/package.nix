@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/rpearce/bashcards/";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ rpearce ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "bashcards";
   };
 }

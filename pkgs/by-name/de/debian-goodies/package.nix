@@ -65,7 +65,7 @@ stdenv.mkDerivation rec {
     description = "Small toolbox-style utilities for Debian systems";
     homepage = "https://salsa.debian.org/debian/debian-goodies";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ SuperSandro2000 ];
   };
 }

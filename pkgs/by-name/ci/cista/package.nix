@@ -25,6 +25,6 @@ stdenv.mkDerivation rec {
     description = "Simple, high-performance, zero-copy C++ serialization & reflection library";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ sigmanificient ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

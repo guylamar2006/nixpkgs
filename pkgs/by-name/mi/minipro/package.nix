@@ -37,6 +37,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ bmwalters ];
     mainProgram = "minipro";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

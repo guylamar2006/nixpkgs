@@ -45,6 +45,6 @@ maven.buildMavenPackage rec {
     homepage = "https://docs.geodesk.com/gol";
     license = lib.licenses.agpl3Only;
     maintainers = with lib.maintainers; [ starsep ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

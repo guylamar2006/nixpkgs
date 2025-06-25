@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     description = "mbox to maildir tool";
     mainProgram = "mb2md";
     license = lib.licenses.publicDomain;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ jb55 ];
   };
 }

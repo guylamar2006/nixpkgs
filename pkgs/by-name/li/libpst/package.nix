@@ -48,6 +48,6 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Library to read PST (MS Outlook Personal Folders) files";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

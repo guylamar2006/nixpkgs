@@ -37,6 +37,6 @@ stdenv.mkDerivation rec {
     homepage = "https://ohse.de/uwe/software/lrzsz.html";
     description = "Communication package providing the XMODEM, YMODEM ZMODEM file transfer protocols";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

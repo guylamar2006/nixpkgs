@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
     changelog = "https://github.com/xqq/libaribcaption/releases/tag/${src.rev}";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ chayleaf ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

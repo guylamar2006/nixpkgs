@@ -197,7 +197,7 @@ stdenv.mkDerivation rec {
     maintainers = with lib.maintainers; [
       nevivurn
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "gnucash";
   };
 }

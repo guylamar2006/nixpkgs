@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Solver for package problems in CUDF format using ASP";
     homepage = "https://potassco.org/aspcud/";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ hakuch ];
     license = lib.licenses.gpl3Plus;
   };

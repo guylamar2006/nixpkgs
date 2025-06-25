@@ -37,6 +37,6 @@ stdenv.mkDerivation {
     homepage = "https://www.netlib.org/f2c/";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ markuskowa ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

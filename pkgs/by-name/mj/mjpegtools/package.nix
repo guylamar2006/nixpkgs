@@ -70,7 +70,7 @@ stdenv.mkDerivation rec {
     description = "Suite of programs for processing MPEG or MJPEG video";
     homepage = "http://mjpeg.sourceforge.net/";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ abbradar ];
   };
 }

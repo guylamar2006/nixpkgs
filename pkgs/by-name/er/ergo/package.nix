@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     homepage = "https://ergoplatform.org/en/";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = lib.licenses.cc0;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ mmahut ];
     mainProgram = "ergo";
   };

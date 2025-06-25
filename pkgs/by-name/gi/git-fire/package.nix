@@ -28,7 +28,7 @@ stdenv.mkDerivation {
     '';
     homepage = "https://github.com/qw3rtman/git-fire";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ swflint ];
     mainProgram = "git-fire";
   };

@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
     homepage = "https://sourceforge.net/projects/cdi2iso.berlios";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ hrdinka ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "cdi2iso";
   };
 }

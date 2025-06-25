@@ -22,7 +22,7 @@ rustPlatform.buildRustPackage rec {
     description = "Tool and Cargo subcommand that helps you find out what takes most of the space in your executable";
     homepage = "https://github.com/RazrFalcon/cargo-bloat";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       xrelkd
       matthiasbeyer

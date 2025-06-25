@@ -50,7 +50,7 @@ stdenvNoCC.mkDerivation rec {
     description = "Elegant option/argument parser for shell scripts (full support for bash and all POSIX shells)";
     homepage = "https://github.com/ko1nksm/getoptions";
     license = lib.licenses.cc0;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ matrss ];
   };
 }

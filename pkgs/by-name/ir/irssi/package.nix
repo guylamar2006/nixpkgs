@@ -56,6 +56,6 @@ stdenv.mkDerivation rec {
       fab
       lovek323
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

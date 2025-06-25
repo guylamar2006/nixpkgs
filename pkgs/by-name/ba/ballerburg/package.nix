@@ -64,6 +64,6 @@ stdenv.mkDerivation rec {
     homepage = "https://baller.tuxfamily.org/";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ j0hax ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

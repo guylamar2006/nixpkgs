@@ -26,7 +26,7 @@ buildNpmPackage rec {
     homepage = "https://github.com/Everduin94/better-commits";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ilarvne ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "better-commits";
   };
 }

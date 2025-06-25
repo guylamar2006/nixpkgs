@@ -119,6 +119,6 @@ stdenv.mkDerivation rec {
     description = "Simple markdown translator";
     license = lib.licenses.isc;
     maintainers = with lib.maintainers; [ sternenseemann ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

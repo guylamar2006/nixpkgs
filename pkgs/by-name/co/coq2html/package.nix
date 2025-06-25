@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
       jwiegley
       siraben
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "coq2html";
   };
 }

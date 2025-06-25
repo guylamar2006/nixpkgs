@@ -46,7 +46,7 @@ rustPlatform.buildRustPackage rec {
     mainProgram = "dy";
     homepage = "https://github.com/awslabs/dynein";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ pimeys ];
   };
 }

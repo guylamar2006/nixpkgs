@@ -36,6 +36,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/msoos/cryptominisat";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ mic92 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

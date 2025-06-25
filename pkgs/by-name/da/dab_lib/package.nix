@@ -37,6 +37,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/JvanKatwijk/dab-cmdline";
     license = lib.licenses.gpl2;
     maintainers = with lib.maintainers; [ alexwinter ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

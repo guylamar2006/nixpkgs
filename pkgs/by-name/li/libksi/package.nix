@@ -33,6 +33,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/GuardTime/libksi";
     description = "Keyless Signature Infrastructure API library";
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

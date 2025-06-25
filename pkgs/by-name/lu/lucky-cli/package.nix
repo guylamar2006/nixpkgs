@@ -44,7 +44,7 @@ crystal.buildCrystalPackage rec {
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ peterhoeg ];
     mainProgram = "lucky";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = lib.versionOlder crystal.version "1.6.0";
   };
 }

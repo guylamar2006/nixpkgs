@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     homepage = "http://www.kyberdigi.cz/projects/mencal/english.html";
     license = lib.licenses.gpl2;
     maintainers = with lib.maintainers; [ mmahut ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "mencal";
   };
 }

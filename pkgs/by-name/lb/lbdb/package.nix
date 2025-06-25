@@ -64,6 +64,6 @@ stdenv.mkDerivation rec {
       kaiha
       bfortz
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

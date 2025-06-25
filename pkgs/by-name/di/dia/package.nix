@@ -75,6 +75,6 @@ stdenv.mkDerivation {
     homepage = "http://live.gnome.org/Dia";
     maintainers = with lib.maintainers; [ raskin ];
     license = lib.licenses.gpl2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

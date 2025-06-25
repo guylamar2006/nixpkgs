@@ -61,6 +61,6 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "five-or-more";
     teams = with lib.teams; [ gnome ];
     license = lib.licenses.gpl2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

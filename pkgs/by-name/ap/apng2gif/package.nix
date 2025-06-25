@@ -37,6 +37,6 @@ stdenv.mkDerivation rec {
     description = "Simple program that converts APNG files to animated GIF format";
     license = lib.licenses.zlib;
     maintainers = with lib.maintainers; [ fgaz ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

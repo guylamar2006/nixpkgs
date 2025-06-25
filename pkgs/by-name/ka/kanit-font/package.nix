@@ -41,7 +41,7 @@ stdenv.mkDerivation {
       preserving readability and legibility at smaller point sizes.
     '';
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ toastal ];
   };
 }

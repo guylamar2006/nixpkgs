@@ -50,7 +50,7 @@ stdenv.mkDerivation {
     mainProgram = "litebrowser";
     homepage = "https://github.com/litehtml/litebrowser-linux";
     license = lib.licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ fgaz ];
   };
 }

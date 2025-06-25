@@ -57,6 +57,6 @@ gccStdenv.mkDerivation rec {
     '';
     license = lib.licenses.zlib;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

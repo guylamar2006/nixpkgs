@@ -41,6 +41,6 @@ stdenv.mkDerivation {
     homepage = "https://man.openbsd.org/OpenBSD-current/man1/mg.1";
     license = lib.licenses.publicDomain;
     mainProgram = "mg";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

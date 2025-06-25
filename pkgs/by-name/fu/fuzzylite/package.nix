@@ -46,6 +46,6 @@ stdenv.mkDerivation rec {
     changelog = "https://github.com/fuzzylite/fuzzylite/${src.rev}/release/CHANGELOG";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ azahi ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

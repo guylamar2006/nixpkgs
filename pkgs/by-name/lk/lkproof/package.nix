@@ -22,7 +22,7 @@ stdenv.mkDerivation {
   ";
 
   meta = {
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.gpl1Plus;
   };
 }

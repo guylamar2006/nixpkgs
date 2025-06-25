@@ -79,6 +79,6 @@ stdenv.mkDerivation rec {
     description = "Disk ARchiver, allows backing up files into indexed archives";
     maintainers = with lib.maintainers; [ izorkin ];
     license = lib.licenses.gpl2Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -24,6 +24,6 @@ stdenv.mkDerivation rec {
     mainProgram = "avra";
     homepage = "https://github.com/Ro5bert/avra";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

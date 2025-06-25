@@ -31,6 +31,6 @@ buildNpmPackage {
     changelog = "https://github.com/bcherny/json-schema-to-typescript/blob/master/CHANGELOG.md";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ hsjobeki ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

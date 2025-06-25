@@ -62,7 +62,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://forge.soutade.fr/soutade/libgourou";
     license = lib.licenses.lgpl3Plus;
     maintainers = with lib.maintainers; [ autumnal ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     broken = stdenv.hostPlatform.isDarwin;
   };
 })

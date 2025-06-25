@@ -17,6 +17,6 @@ stdenv.mkDerivation rec {
     homepage = "http://www.videolan.org/developers/libdvdcss.html";
     description = "Library for decrypting DVDs";
     license = lib.licenses.gpl2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

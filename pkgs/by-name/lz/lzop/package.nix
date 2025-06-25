@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
     description = "Fast file compressor";
     maintainers = with lib.maintainers; [ ];
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "lzop";
   };
 }

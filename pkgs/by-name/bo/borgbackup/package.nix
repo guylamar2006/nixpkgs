@@ -144,7 +144,7 @@ python.pkgs.buildPythonApplication rec {
     description = "Deduplicating archiver with compression and encryption";
     homepage = "https://www.borgbackup.org";
     license = lib.licenses.bsd3;
-    platforms = platforms.unix; # Darwin and FreeBSD mentioned on homepage
+    platforms = lib.platforms.unix; # Darwin and FreeBSD mentioned on homepage
     mainProgram = "borg";
     maintainers = with lib.maintainers; [
       dotlambda

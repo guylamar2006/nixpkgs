@@ -59,6 +59,6 @@ stdenv.mkDerivation rec {
     homepage = "https://apps.gnome.org/Baobab/";
     license = lib.licenses.gpl2Plus;
     teams = with lib.teams; [ gnome ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

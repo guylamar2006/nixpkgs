@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
       and enumerate installed or archived apps.
     '';
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ aristid ];
     mainProgram = "ideviceinstaller";
   };

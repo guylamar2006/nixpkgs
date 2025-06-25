@@ -87,7 +87,7 @@ maven.buildMavenPackage rec {
     description = pkgDescription;
     mainProgram = "digital";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ Dettorer ];
   };
 }

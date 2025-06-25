@@ -81,7 +81,7 @@ llvmPackages.stdenv.mkDerivation (finalAttrs: {
       hucancode
       anas
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "c3c";
   };
 })

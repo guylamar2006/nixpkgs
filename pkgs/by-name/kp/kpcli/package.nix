@@ -68,7 +68,7 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.artistic1;
     homepage = "http://kpcli.sourceforge.net";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ j-keck ];
   };
 }

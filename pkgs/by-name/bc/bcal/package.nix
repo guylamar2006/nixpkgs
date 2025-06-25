@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     mainProgram = "bcal";
     homepage = "https://github.com/jarun/bcal";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ];
   };
 }

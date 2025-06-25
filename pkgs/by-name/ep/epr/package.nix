@@ -21,6 +21,6 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://github.com/wustho/epr";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ Br1ght0ne ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

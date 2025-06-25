@@ -55,6 +55,6 @@ stdenv.mkDerivation rec {
     homepage = "https://apfel.mi.infn.it/";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ veprbl ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

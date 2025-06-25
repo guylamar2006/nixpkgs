@@ -30,7 +30,7 @@ rustPlatform.buildRustPackage rec {
     mainProgram = "cargo-feature";
     homepage = "https://github.com/Riey/cargo-feature";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       riey
       matthiasbeyer

@@ -155,7 +155,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/ebassi/graphene";
     license = lib.licenses.mit;
     teams = with lib.teams; [ gnome ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     pkgConfigModules = [
       "graphene-1.0"
       "graphene-gobject-1.0"

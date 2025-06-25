@@ -31,6 +31,6 @@ stdenv.mkDerivation rec {
     mainProgram = "g3kb-switch";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ Freed-Wu ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

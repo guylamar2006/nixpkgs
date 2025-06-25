@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     license = lib.licenses.mit;
     description = "Humorous typo-based git runner; drives a car over the terminal";
     maintainers = with lib.maintainers; [ fadenb ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "gti";
   };
 }

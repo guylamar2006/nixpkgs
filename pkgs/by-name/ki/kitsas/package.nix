@@ -63,6 +63,6 @@ stdenv.mkDerivation rec {
     mainProgram = "kitsas";
     maintainers = with lib.maintainers; [ gspia ];
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

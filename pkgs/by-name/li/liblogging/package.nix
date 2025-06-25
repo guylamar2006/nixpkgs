@@ -33,6 +33,6 @@ stdenv.mkDerivation rec {
     description = "Lightweight signal-safe logging library";
     mainProgram = "stdlogctl";
     license = lib.licenses.bsd2;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -32,6 +32,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://github.com/mishamyrt/Lilex";
     license = lib.licenses.ofl;
     maintainers = with lib.maintainers; [ redyf ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

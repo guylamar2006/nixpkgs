@@ -41,7 +41,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/sot-tech/LottieConverter/";
     description = "Lottie converter utility";
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       CRTified
       nickcao

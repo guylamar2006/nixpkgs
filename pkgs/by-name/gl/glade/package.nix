@@ -84,6 +84,6 @@ stdenv.mkDerivation rec {
     description = "User interface designer for GTK applications";
     teams = with lib.teams; [ gnome ];
     license = lib.licenses.lgpl2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -102,7 +102,7 @@ lib.checkListOfEnum "colloid-gtk-theme: theme variants"
       description = "Modern and clean Gtk theme";
       homepage = "https://github.com/vinceliuice/Colloid-gtk-theme";
       license = lib.licenses.gpl3Only;
-      platforms = platforms.unix;
+      platforms = lib.platforms.unix;
       maintainers = with lib.maintainers; [ romildo ];
     };
   }

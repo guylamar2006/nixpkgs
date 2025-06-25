@@ -107,7 +107,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = {
     homepage = "https://gitlab.gnome.org/GNOME/gnome-online-accounts";
     description = "Single sign-on framework for GNOME";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.lgpl2Plus;
     teams = with lib.teams; [ gnome ];
   };

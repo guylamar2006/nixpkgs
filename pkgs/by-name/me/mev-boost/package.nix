@@ -22,6 +22,6 @@ buildGoModule rec {
     license = lib.licenses.mit;
     mainProgram = "mev-boost";
     maintainers = with lib.maintainers; [ ekimber ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

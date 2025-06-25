@@ -65,6 +65,6 @@ stdenv.mkDerivation rec {
     description = "C++ library for interacting with JSON";
     maintainers = with lib.maintainers; [ ttuegel ];
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

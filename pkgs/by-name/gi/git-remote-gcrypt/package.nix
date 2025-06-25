@@ -59,7 +59,7 @@ stdenv.mkDerivation rec {
       ellis
       montag451
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "git-remote-gcrypt";
   };
 }

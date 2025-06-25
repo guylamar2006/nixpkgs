@@ -45,7 +45,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "http://www.pogo.org.uk/~mark/bpm-tools/";
     description = "Automatically calculate BPM (tempo) of music files";
     license = lib.licenses.gpl2Only;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ doronbehar ];
   };
 })

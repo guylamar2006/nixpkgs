@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://asciidoctor.org/docs/asciidoctorj/";
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ moaxcp ];
     mainProgram = "asciidoctorj";
   };

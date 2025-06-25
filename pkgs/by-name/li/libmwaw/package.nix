@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
     description = "Import library for some old mac text documents";
     license = lib.licenses.mpl20;
     maintainers = with lib.maintainers; [ raskin ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

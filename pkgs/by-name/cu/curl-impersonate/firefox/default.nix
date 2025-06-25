@@ -192,7 +192,7 @@ stdenv.mkDerivation rec {
       mit
     ];
     maintainers = with lib.maintainers; [ deliciouslytyped ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "curl-impersonate-ff";
   };
 }

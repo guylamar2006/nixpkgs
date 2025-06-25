@@ -24,7 +24,7 @@ bundlerEnv {
       nicknovitski
       matthiasbeyer
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "git-fame";
   };
 }

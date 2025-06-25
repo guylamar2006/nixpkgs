@@ -44,6 +44,6 @@ stdenv.mkDerivation {
     description = "C++ library for access to DJ record libraries";
     license = lib.licenses.lgpl3;
     maintainers = with lib.maintainers; [ benley ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

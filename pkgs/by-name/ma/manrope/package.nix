@@ -34,7 +34,7 @@ stdenvNoCC.mkDerivation {
     description = "Open-source modern sans-serif font family";
     homepage = "https://www.gent.media/manrope";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
   };
 }

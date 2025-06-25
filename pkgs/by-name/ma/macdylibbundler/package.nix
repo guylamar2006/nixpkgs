@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/auriamg/macdylibbundler";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ nomeata ];
 
   };

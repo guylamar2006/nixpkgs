@@ -67,6 +67,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.lgpl21Plus;
     mainProgram = "com.github.gabutakut.gabutdm";
     maintainers = with lib.maintainers; [ aleksana ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

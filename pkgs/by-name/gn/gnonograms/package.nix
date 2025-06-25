@@ -63,6 +63,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ fgaz ];
     homepage = "https://github.com/jeremypw/gnonograms";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

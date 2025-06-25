@@ -31,6 +31,6 @@ python3Packages.buildPythonApplication rec {
     mainProgram = "cursewords";
     license = lib.licenses.agpl3Only;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

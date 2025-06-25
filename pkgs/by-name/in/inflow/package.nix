@@ -80,6 +80,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.unlicense;
     mainProgram = "inflow";
     maintainers = with lib.maintainers; [ fbrs ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

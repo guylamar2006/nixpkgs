@@ -37,7 +37,7 @@ python3Packages.buildPythonApplication rec {
     mainProgram = "fanficfare";
     homepage = "https://github.com/JimmXinu/FanFicFare";
     license = lib.licenses.gpl3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ dwarfmaster ];
   };
 }

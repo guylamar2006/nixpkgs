@@ -46,7 +46,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://troglobit.com/projects/merecat/";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ fgaz ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     # Strange header and/or linker errors
     broken = stdenv.hostPlatform.isDarwin;
   };

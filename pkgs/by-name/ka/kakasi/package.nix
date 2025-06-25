@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "http://kakasi.namazu.org/";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 
   src = fetchurl {

@@ -47,7 +47,7 @@ stdenv.mkDerivation {
     license = lib.licenses.free;
     maintainers = with lib.maintainers; [ abigailbuccaneer ];
     # Build uses `-msse` and `-mfpmath=sse`
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     badPlatforms = [ "aarch64-linux" ];
   };
 }

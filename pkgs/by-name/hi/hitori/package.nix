@@ -60,6 +60,6 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "hitori";
     teams = with lib.teams; [ gnome ];
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

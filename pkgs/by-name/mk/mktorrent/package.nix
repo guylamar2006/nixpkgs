@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
       Profpatsch
       winter
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "mktorrent";
   };
 }

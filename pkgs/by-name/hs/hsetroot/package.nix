@@ -41,6 +41,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/himdel/hsetroot";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ shamilton ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

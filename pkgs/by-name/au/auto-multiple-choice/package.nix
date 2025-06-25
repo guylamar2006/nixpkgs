@@ -176,6 +176,6 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://gitlab.com/jojo_boulix/auto-multiple-choice/-/blob/master/ChangeLog";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ thblt ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

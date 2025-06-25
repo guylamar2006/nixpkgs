@@ -54,7 +54,7 @@ stdenvNoCC.mkDerivation {
     description = "Cli tool to browse and play korean drama, chinese drama";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ idlip ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "dra-cla";
   };
 }

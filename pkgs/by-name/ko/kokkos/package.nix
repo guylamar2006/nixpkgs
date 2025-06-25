@@ -43,7 +43,7 @@ stdenv.mkDerivation (finalAttrs: {
       llvm-exception
     ];
     maintainers = with lib.maintainers; [ Madouura ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin;
   };
 })

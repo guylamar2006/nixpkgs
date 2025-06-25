@@ -101,6 +101,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/hughsie/libgusb";
     license = lib.licenses.lgpl21;
     maintainers = with lib.maintainers; [ marcweber ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

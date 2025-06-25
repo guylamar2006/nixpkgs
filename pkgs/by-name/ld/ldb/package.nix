@@ -101,6 +101,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://ldb.samba.org/";
     license = lib.licenses.lgpl3Plus;
     pkgConfigModules = [ "ldb" ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

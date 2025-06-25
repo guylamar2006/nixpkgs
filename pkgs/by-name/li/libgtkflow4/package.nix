@@ -65,6 +65,6 @@ stdenv.mkDerivation rec {
     homepage = "https://notabug.org/grindhold/libgtkflow";
     maintainers = with lib.maintainers; [ grindhold ];
     license = lib.licenses.lgpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

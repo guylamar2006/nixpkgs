@@ -67,6 +67,6 @@ stdenv.mkDerivation (finalAttrs: {
     maintainers = with lib.maintainers; [
       fgaz
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

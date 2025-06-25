@@ -247,7 +247,7 @@ stdenv.mkDerivation (finalAttrs: {
       maintainers.jwiegley
       maintainers.jvanbruegge
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 
   passthru.withComponents =

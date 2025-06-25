@@ -51,6 +51,6 @@ stdenv.mkDerivation rec {
       seppeljordan
       vyp
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

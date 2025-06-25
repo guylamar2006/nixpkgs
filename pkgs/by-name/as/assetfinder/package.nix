@@ -26,7 +26,7 @@ buildGoModule rec {
     description = "Find domains and subdomains related to a given domain";
     mainProgram = "assetfinder";
     maintainers = with lib.maintainers; [ shard7 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     sourceProvenance = with sourceTypes; [
       fromSource
       binaryNativeCode

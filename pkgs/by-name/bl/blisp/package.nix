@@ -47,7 +47,7 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.mit;
     mainProgram = "blisp";
     homepage = "https://github.com/pine64/blisp";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ bdd ];
   };
 })

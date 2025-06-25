@@ -71,6 +71,6 @@ python3Packages.buildPythonApplication rec {
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ tochiaha ];
     mainProgram = "eye-witness";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

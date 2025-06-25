@@ -27,6 +27,6 @@ stdenv.mkDerivation rec {
     description = "Simple non-validating css1 and html parser for C++";
     mainProgram = "htmlcxx";
     license = lib.licenses.lgpl2;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -34,6 +34,6 @@ stdenv.mkDerivation {
     homepage = "https://www.gilith.com/research/metis/";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

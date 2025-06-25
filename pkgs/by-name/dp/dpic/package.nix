@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
     homepage = "https://ece.uwaterloo.ca/~aplevich/dpic/";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ aespinosa ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "dpic";
   };
 }

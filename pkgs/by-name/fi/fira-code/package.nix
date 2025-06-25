@@ -36,6 +36,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     '';
     license = lib.licenses.ofl;
     maintainers = with lib.maintainers; [ rycee ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

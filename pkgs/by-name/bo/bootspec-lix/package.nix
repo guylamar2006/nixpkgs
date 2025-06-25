@@ -34,6 +34,6 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://git.lix.systems/lix-community/bootspec";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ raitobezarius ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

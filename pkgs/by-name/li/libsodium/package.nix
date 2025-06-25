@@ -45,6 +45,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.isc;
     maintainers = with lib.maintainers; [ raskin ];
     pkgConfigModules = [ "libsodium" ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

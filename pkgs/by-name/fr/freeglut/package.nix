@@ -58,7 +58,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://freeglut.sourceforge.net/";
     license = lib.licenses.mit;
     pkgConfigModules = [ "glut" ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ bjornfor ];
   };
 })

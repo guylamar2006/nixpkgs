@@ -27,6 +27,6 @@ stdenv.mkDerivation rec {
     mainProgram = "dadadodo";
     homepage = "http://www.jwz.org/dadadodo";
     maintainers = with lib.maintainers; [ pSub ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

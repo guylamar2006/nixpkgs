@@ -39,6 +39,6 @@ stdenv.mkDerivation rec {
     homepage = "https://astyle.sourceforge.net/";
     license = lib.licenses.lgpl3;
     maintainers = with lib.maintainers; [ carlossless ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

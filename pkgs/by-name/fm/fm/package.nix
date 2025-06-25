@@ -42,6 +42,6 @@ rustPlatform.buildRustPackage {
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ aleksana ];
     mainProgram = "fm";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

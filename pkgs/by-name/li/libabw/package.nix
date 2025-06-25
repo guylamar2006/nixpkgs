@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://wiki.documentfoundation.org/DLP/Libraries/libabw";
     description = "Library parsing abiword documents";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.mpl20;
   };
 }

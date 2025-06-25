@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
     mainProgram = "lynis";
     homepage = "https://cisofy.com/lynis/";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ryneeverett ];
   };
 }

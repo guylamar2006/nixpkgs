@@ -57,7 +57,7 @@ stdenv.mkDerivation rec {
     description = "Simple program to store a file into a PNG image";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "ImageLOL";
   };
 }

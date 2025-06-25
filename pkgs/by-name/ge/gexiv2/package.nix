@@ -87,7 +87,7 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.gnome.org/GNOME/gexiv2";
     description = "GObject wrapper around the Exiv2 photo metadata library";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     teams = with lib.teams; [ gnome ];
   };
 }

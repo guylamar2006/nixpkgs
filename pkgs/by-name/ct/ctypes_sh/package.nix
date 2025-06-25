@@ -42,6 +42,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/taviso/ctypes.sh";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

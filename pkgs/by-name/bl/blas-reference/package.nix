@@ -50,6 +50,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.publicDomain;
     maintainers = with lib.maintainers; [ markuskowa ];
     homepage = "http://www.netlib.org/blas/";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

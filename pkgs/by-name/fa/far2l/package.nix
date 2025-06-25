@@ -132,6 +132,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/elfmz/far2l";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ hypersw ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -51,6 +51,6 @@ stdenv.mkDerivation {
     homepage = "https://docs.libcpr.org/";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ rycee ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

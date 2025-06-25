@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.harding.motd.ca/autossh/";
     description = "Automatically restart SSH sessions and tunnels";
     license = lib.licenses.bsd1;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ pSub ];
     mainProgram = "autossh";
   };

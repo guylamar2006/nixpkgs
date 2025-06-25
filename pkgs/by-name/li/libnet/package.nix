@@ -31,6 +31,6 @@ stdenv.mkDerivation rec {
     description = "Portable framework for low-level network packet construction";
     mainProgram = "libnet-config";
     license = lib.licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

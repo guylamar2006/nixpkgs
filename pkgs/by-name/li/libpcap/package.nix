@@ -82,7 +82,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.tcpdump.org";
     description = "Packet Capture Library";
     mainProgram = "pcap-config";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ fpletz ];
     license = lib.licenses.bsd3;
   };

@@ -187,7 +187,7 @@ effectiveStdenv.mkDerivation (finalAttrs: {
       philiptaron
       xddxdd
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     badPlatforms = optionals (cudaSupport || openclSupport) lib.platforms.darwin;
     broken = (metalSupport && !effectiveStdenv.hostPlatform.isDarwin);
   };

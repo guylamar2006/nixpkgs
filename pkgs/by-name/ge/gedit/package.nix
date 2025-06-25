@@ -94,7 +94,7 @@ stdenv.mkDerivation rec {
     description = "Former GNOME text editor";
     maintainers = with lib.maintainers; [ bobby285271 ];
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "gedit";
   };
 }

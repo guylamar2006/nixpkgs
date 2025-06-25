@@ -53,7 +53,7 @@ stdenv.mkDerivation rec {
     #  - https://github.com/tgraf/bmon/blob/master/LICENSE.BSD
     #  - https://github.com/tgraf/bmon/blob/master/LICENSE.MIT
     license = lib.licenses.bsd2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       bjornfor
       pSub

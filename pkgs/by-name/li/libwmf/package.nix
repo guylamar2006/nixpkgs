@@ -45,6 +45,6 @@ stdenv.mkDerivation rec {
     homepage = "https://wvware.sourceforge.net/libwmf.html";
     downloadPage = "https://github.com/caolanm/libwmf/releases";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -27,6 +27,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/redis/hiredis";
     description = "Minimalistic C client for Redis >= 1.2";
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

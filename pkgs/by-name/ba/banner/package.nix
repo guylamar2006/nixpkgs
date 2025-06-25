@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
       large characters.
     '';
 
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ pSub ];
   };
 }

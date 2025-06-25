@@ -83,6 +83,6 @@ stdenv.mkDerivation rec {
       lib.replaceStrings [ "." ] [ "_" ] version
     }/RELEASE-NOTES.md";
     maintainers = with lib.maintainers; [ adev ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

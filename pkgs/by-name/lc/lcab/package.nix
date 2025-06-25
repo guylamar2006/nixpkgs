@@ -27,7 +27,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "http://ohnopub.net/~ohnobinki/lcab";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ emilytrau ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "lcab";
   };
 })

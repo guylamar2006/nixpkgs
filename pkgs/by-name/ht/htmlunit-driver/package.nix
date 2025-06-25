@@ -24,7 +24,7 @@ stdenv.mkDerivation rec {
       coconnor
       offline
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = lib.licenses.asl20;
   };

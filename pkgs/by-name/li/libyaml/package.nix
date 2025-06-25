@@ -27,6 +27,6 @@ stdenv.mkDerivation rec {
     homepage = "https://pyyaml.org/";
     description = "YAML 1.1 parser and emitter written in C";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

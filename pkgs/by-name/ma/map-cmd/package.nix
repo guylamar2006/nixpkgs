@@ -32,6 +32,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/soveran/map";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ pogobanane ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

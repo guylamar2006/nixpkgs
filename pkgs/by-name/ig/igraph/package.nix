@@ -111,7 +111,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://igraph.org/";
     changelog = "https://github.com/igraph/igraph/blob/${finalAttrs.src.rev}/CHANGELOG.md";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       MostAwesomeDude
       dotlambda

@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
     homepage = "http://mdocml.bsd.lv/";
     description = "converter from DocBook V4.x and v5.x XML into mdoc";
     license = lib.licenses.isc;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ramkromberg ];
     mainProgram = "docbook2mdoc";
   };

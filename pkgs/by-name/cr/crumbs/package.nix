@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     description = "Bookmarks for the command line";
     homepage = "https://github.com/fasseg/crumbs";
     license = lib.licenses.wtfpl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ thesola10 ];
     mainProgram = "crumbs";
   };

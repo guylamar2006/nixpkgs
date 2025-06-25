@@ -30,6 +30,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ abbradar ];
     mainProgram = "xls2csv";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -33,6 +33,6 @@ stdenv.mkDerivation rec {
     description = "JWT C Library";
     license = lib.licenses.mpl20;
     maintainers = with lib.maintainers; [ pnotequalnp ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

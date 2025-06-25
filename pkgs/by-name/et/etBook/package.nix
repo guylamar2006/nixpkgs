@@ -27,7 +27,7 @@ stdenvNoCC.mkDerivation {
   meta = {
     description = "Typeface used in Edward Tufte’s books";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ jethro ];
   };
 }

@@ -42,7 +42,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Bule-ish CD ripper";
     mainProgram = "cyanrip";
     license = lib.licenses.lgpl21Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ zane ];
   };
 })

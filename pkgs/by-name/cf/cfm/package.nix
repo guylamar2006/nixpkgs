@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     description = "Simple and fast TUI file manager with no dependencies";
     license = lib.licenses.mpl20;
     maintainers = with lib.maintainers; [ lom ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "cfm";
   };
 }

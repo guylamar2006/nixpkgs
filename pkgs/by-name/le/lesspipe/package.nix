@@ -238,7 +238,7 @@ stdenv.mkDerivation rec {
     '';
     mainProgram = "lesspipe.sh";
     homepage = "https://github.com/wofr06/lesspipe";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ martijnvermaat ];
   };

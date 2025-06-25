@@ -67,6 +67,6 @@ stdenv.mkDerivation rec {
       maintainers.offline
       maintainers.numinit
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

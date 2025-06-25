@@ -53,6 +53,6 @@ stdenv.mkDerivation rec {
     maintainers = with lib.maintainers; [
       mgdelacroix
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

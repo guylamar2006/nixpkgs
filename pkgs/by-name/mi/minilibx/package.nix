@@ -62,6 +62,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/42Paris/minilibx-linux";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ wegank ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -39,7 +39,7 @@ stdenv.mkDerivation (finalAttrs: {
     longDescription = ''
       libusbp is a cross-platform C library for accessing USB devices
     '';
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.cc-by-sa-30;
     maintainers = with lib.maintainers; [ bzizou ];
   };

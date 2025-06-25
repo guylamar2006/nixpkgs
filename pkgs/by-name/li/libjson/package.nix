@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
       It's highly customizable to optimize for your particular project, and
       very lightweight. For Windows, OSX, or Linux. Works in any language.
     '';
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.bsd2;
   };
 }

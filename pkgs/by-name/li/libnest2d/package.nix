@@ -41,6 +41,6 @@ stdenv.mkDerivation {
     description = "2D irregular bin packaging and nesting library written in modern C++";
     homepage = "https://github.com/Ultimaker/libnest2d";
     license = lib.licenses.lgpl3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

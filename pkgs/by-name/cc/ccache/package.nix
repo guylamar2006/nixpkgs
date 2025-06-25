@@ -175,7 +175,7 @@ stdenv.mkDerivation (finalAttrs: {
       kira-bruneau
       r-burns
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "ccache";
   };
 })

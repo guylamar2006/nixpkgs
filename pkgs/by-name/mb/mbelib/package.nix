@@ -24,7 +24,7 @@ stdenv.mkDerivation rec {
     description = "P25 Phase 1 and ProVoice vocoder";
     homepage = "https://github.com/szechyjs/mbelib";
     license = lib.licenses.isc;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ];
   };
 }

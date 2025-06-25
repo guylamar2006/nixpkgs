@@ -50,7 +50,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://gitlab.gnome.org/GNOME/tecla";
     license = lib.licenses.gpl2Plus;
     teams = with lib.teams; [ gnome ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "tecla";
   };
 })

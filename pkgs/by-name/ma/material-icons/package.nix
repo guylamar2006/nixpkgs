@@ -37,7 +37,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     description = "System status icons by Google, featuring material design";
     homepage = "https://material.io/icons";
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ mpcsh ];
   };
 })

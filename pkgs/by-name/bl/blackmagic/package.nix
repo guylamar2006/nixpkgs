@@ -79,6 +79,6 @@ stdenv.mkDerivation rec {
       pjones
       sorki
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

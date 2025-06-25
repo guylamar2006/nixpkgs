@@ -23,6 +23,6 @@ stdenv.mkDerivation rec {
     description = "Lightweight audio filtering library made from webrtc code";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

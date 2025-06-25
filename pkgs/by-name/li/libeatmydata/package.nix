@@ -45,6 +45,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.flamingspork.com/projects/libeatmydata/";
     license = lib.licenses.gpl3Plus;
     mainProgram = "eatmydata";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

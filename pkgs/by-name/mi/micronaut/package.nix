@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://micronaut.io/";
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ moaxcp ];
     mainProgram = "mn";
   };

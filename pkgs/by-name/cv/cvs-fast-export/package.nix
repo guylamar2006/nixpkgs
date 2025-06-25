@@ -65,6 +65,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ dfoxfranke ];
     homepage = "http://www.catb.org/esr/cvs-fast-export/";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
       lgpl3Only
     ];
     maintainers = with lib.maintainers; [ veprbl ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
       flags or you can configure them using environment variables.
     '';
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ erictapen ];
     mainProgram = "fontpreview";
   };

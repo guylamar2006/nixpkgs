@@ -104,6 +104,6 @@ stdenv.mkDerivation rec {
     homepage = "http://www.68k.org/~michael/audiofile/";
     license = lib.licenses.lgpl21Plus;
     maintainers = with lib.maintainers; [ lovek323 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

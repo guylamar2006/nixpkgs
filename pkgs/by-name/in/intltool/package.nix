@@ -50,6 +50,6 @@ stdenv.mkDerivation rec {
     homepage = "https://launchpad.net/intltool/";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ raskin ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

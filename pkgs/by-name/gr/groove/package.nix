@@ -68,7 +68,7 @@ stdenv.mkDerivation rec {
     homepage = "https://groove.cs.utwente.nl/";
     license = lib.licenses.asl20;
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
   };
 }

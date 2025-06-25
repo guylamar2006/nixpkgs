@@ -27,6 +27,6 @@ stdenv.mkDerivation rec {
     homepage = "https://lolware.net/2014/04/29/libscrypt.html";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ davidak ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

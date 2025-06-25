@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.freedesktop.org/wiki/Software/VDPAU/";
     description = "Library to use the Video Decode and Presentation API for Unix (VDPAU)";
     license = lib.licenses.mit; # expat version
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ vcunat ];
   };
 }

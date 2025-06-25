@@ -70,7 +70,7 @@ python3Packages.buildPythonApplication rec {
     mainProgram = "hamster";
     homepage = "http://projecthamster.org/";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ fabianhauser ];
   };
 }

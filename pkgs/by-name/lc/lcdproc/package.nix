@@ -86,7 +86,7 @@ stdenv.mkDerivation rec {
     homepage = "https://lcdproc.org/";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ peterhoeg ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     # never built on aarch64-darwin since first introduction in nixpkgs
     broken = stdenv.hostPlatform.isDarwin && stdenv.hostPlatform.isAarch64;
   };

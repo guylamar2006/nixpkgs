@@ -60,6 +60,6 @@ stdenv.mkDerivation {
       sarcasticadmin
       pkharvey
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

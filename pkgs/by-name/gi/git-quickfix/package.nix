@@ -37,7 +37,7 @@ rustPlatform.buildRustPackage rec {
     description = "Quickfix allows you to commit changes in your git repository to a new branch without leaving the current branch";
     homepage = "https://github.com/siedentop/git-quickfix";
     license = lib.licenses.gpl3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       cafkafk
       matthiasbeyer

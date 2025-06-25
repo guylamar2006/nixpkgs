@@ -34,6 +34,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.bsd2;
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
     maintainers = with lib.maintainers; [ eliandoran ];
-    platforms = platforms.darwin;
+    platforms = lib.platforms.darwin;
   };
 }

@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "http://ywstd.fr/p/pj/#envypn";
     license = lib.licenses.miros;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ erdnaxe ];
   };
 }

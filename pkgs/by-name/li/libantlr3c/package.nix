@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
     description = "C runtime libraries of ANTLR v3";
     homepage = "https://www.antlr3.org/";
     license = lib.licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ vbgl ];
   };
 }

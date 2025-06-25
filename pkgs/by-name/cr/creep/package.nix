@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     description = "Pretty sweet 4px wide pixel font";
     homepage = "https://github.com/romeovs/creep";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
   };
 }

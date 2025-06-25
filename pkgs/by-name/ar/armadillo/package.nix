@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     description = "C++ linear algebra library";
     homepage = "https://arma.sourceforge.net";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       juliendehos
     ];

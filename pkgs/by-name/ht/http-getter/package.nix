@@ -28,7 +28,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/tohojo/http-getter";
     description = "Simple getter for HTTP URLs using cURL";
     mainProgram = "http-getter";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.gpl3;
   };
 }

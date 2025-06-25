@@ -141,7 +141,7 @@ stdenv.mkDerivation (finalAttrs: {
       builtins.replaceStrings [ "." ] [ "-" ] finalAttrs.version
     }/docs/CHANGES";
     license = lib.licenses.gpl2Plus; # or the FreeType License (BSD + advertising clause)
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     pkgConfigModules = [ "freetype2" ];
     maintainers = with lib.maintainers; [ ttuegel ];
   };

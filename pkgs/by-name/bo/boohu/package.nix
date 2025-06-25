@@ -31,7 +31,7 @@ buildGoModule rec {
     '';
     homepage = "https://download.tuxfamily.org/boohu/index.html";
     license = lib.licenses.isc;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ];
   };
 }

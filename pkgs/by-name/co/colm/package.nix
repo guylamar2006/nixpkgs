@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     mainProgram = "colm";
     homepage = "http://www.colm.net/open-source/colm";
     license = lib.licenses.gpl2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ pSub ];
   };
 }

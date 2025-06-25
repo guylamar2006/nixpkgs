@@ -54,7 +54,7 @@ stdenv.mkDerivation rec {
       sjmackenzie
       ttuegel
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 
   passthru = {

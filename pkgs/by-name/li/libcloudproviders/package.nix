@@ -63,6 +63,6 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.gnome.org/World/libcloudproviders";
     license = lib.licenses.lgpl3Plus;
     maintainers = with lib.maintainers; [ jtojnar ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

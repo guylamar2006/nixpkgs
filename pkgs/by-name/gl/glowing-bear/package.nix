@@ -26,6 +26,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/glowing-bear/glowing-bear";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

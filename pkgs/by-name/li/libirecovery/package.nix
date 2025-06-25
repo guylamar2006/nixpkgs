@@ -61,6 +61,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.lgpl21Only;
     maintainers = with lib.maintainers; [ nh2 ];
     mainProgram = "irecovery";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -63,7 +63,7 @@ stdenv.mkDerivation rec {
     homepage = "https://herwig.hepforge.org/";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ veprbl ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isAarch64; # doesn't compile: ignoring return value of 'FILE* freopen...
   };
 }

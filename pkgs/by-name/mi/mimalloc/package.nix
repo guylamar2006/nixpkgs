@@ -69,7 +69,7 @@ stdenv.mkDerivation rec {
     description = "Compact, fast, general-purpose memory allocator";
     homepage = "https://github.com/microsoft/mimalloc";
     license = lib.licenses.bsd2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       kamadorueda
       thoughtpolice

@@ -63,6 +63,6 @@ stdenv.mkDerivation rec {
     mainProgram = "chromium-bsu";
     license = lib.licenses.artistic1;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

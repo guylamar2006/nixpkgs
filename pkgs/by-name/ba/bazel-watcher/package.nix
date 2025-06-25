@@ -42,6 +42,6 @@ buildGoModule rec {
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ kalbasit ];
     mainProgram = "ibazel";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

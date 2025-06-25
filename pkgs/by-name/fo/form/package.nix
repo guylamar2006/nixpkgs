@@ -26,6 +26,6 @@ stdenv.mkDerivation {
     homepage = "https://www.nikhef.nl/~form/";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ veprbl ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

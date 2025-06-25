@@ -58,6 +58,6 @@ stdenv.mkDerivation rec {
     mainProgram = "icon-library";
     maintainers = with lib.maintainers; [ qyliss ];
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

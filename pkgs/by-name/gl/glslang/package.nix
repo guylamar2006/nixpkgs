@@ -67,7 +67,7 @@ stdenv.mkDerivation rec {
     inherit (src.meta) homepage;
     description = "Khronos reference front-end for GLSL and ESSL";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ralith ];
   };
 }

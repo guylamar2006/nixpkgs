@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     description = "Belledonne Communications' language recognition library. Part of the Linphone project";
     homepage = "https://gitlab.linphone.org/BC/public/belr";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ jluttine ];
   };
 }

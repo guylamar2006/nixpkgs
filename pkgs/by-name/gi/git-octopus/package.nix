@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/lesfurets/git-octopus";
     description = "Continuous merge workflow";
     license = lib.licenses.lgpl3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ mic92 ];
   };
 }

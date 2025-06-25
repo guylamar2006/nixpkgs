@@ -31,6 +31,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ matthewcroughan ];
     mainProgram = "cg-term";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

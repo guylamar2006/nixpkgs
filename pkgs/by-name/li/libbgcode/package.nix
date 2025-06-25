@@ -38,6 +38,6 @@ stdenv.mkDerivation {
     mainProgram = "bgcode";
     license = lib.licenses.agpl3Only;
     maintainers = with lib.maintainers; [ lach ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -27,6 +27,6 @@ stdenv.mkDerivation rec {
     homepage = "http://nongnu.org/jcal/";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

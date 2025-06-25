@@ -44,7 +44,7 @@ stdenv.mkDerivation {
     homepage = "https://www.nitrc.org/projects/gifti";
     description = "Medical imaging geometry format C API";
     maintainers = with lib.maintainers; [ bcdarwin ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.publicDomain;
   };
 }

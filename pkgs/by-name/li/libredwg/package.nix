@@ -73,6 +73,6 @@ stdenv.mkDerivation rec {
     homepage = "https://savannah.gnu.org/projects/libredwg/";
     maintainers = with lib.maintainers; [ tweber ];
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

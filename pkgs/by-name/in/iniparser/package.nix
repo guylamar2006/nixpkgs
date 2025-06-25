@@ -68,7 +68,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Free standalone ini file parsing library";
     changelog = "https://gitlab.com/iniparser/iniparser/-/releases/v${finalAttrs.version}";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     pkgConfigModules = [ "iniparser" ];
     maintainers = with lib.maintainers; [ primeos ];
   };

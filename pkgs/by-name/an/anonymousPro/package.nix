@@ -36,6 +36,6 @@ stdenvNoCC.mkDerivation rec {
     '';
     maintainers = with lib.maintainers; [ raskin ];
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

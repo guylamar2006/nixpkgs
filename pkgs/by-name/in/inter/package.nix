@@ -27,7 +27,7 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://rsms.me/inter/";
     description = "Typeface specially designed for user interfaces";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ demize ];
   };
 }

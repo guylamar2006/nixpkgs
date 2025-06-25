@@ -41,6 +41,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/jessek/hashdeep";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ karantan ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -45,6 +45,6 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.freedesktop.org/slirp/libslirp";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ orivej ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

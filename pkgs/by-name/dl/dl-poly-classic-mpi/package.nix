@@ -41,7 +41,7 @@ stdenv.mkDerivation {
     description = "DL_POLY Classic is a general purpose molecular dynamics simulation package";
     mainProgram = "DLPOLY.X";
     license = lib.licenses.bsdOriginal;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ costrouc ];
   };
 }

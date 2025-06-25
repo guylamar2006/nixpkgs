@@ -53,6 +53,6 @@ stdenv.mkDerivation {
     homepage = "https://www.brendangregg.com/flamegraphs.html";
     description = "Visualization for profiled code";
     mainProgram = "flamegraph.pl";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

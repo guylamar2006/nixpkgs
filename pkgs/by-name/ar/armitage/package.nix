@@ -137,7 +137,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/r00t0v3rr1d3/armitage";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ emilytrau ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "armitage";
   };
 })

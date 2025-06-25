@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://www.cabextract.org.uk/";
     description = "Free Software for extracting Microsoft cabinet files";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ pSub ];
     mainProgram = "cabextract";

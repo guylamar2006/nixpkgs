@@ -39,6 +39,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/ithewei/libhv";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ sikmir ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

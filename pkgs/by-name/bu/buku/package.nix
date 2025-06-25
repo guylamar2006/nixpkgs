@@ -91,7 +91,7 @@ buildPythonApplication rec {
     mainProgram = "buku";
     homepage = "https://github.com/jarun/Buku";
     license = lib.licenses.gpl3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ matthiasbeyer ];
   };
 }

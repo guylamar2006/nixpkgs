@@ -27,7 +27,7 @@ rustPlatform.buildRustPackage rec {
     description = "GitLab CI Language Server (gitlab-ci-ls)";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ma27 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "gitlab-ci-ls";
   };
 }

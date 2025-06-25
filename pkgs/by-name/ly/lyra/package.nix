@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://github.com/bfgroup/Lyra";
     description = "Simple to use, composable, command line parser for C++ 11 and beyond";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.boost;
     maintainers = with lib.maintainers; [ ];
   };

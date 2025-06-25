@@ -82,7 +82,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Useful set of utilities for interacting with a cloud";
     homepage = "https://github.com/canonical/cloud-utils";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.gpl3;
   };
 }

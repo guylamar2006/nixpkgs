@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.gnome.org/dqpb/gmetronome";
     changelog = "https://gitlab.gnome.org/dqpb/gmetronome/-/blob/${src.rev}/NEWS";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ aleksana ];
     mainProgram = "gmetronome";
     broken = stdenv.hostPlatform.isDarwin;

@@ -83,7 +83,7 @@ python3.pkgs.buildPythonApplication rec {
     description = "Automatically select a display configuration based on connected devices";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ coroa ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "autorandr";
   };
 }

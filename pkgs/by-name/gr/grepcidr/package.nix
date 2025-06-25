@@ -19,7 +19,7 @@ stdenv.mkDerivation rec {
     description = "Filter IPv4 and IPv6 addresses matching CIDR patterns";
     homepage = "https://www.pc-tools.net/unix/grepcidr/";
     license = lib.licenses.gpl3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ fadenb ];
     mainProgram = "grepcidr";
   };

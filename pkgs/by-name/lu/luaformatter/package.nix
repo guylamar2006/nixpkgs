@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
     description = "Code formatter for Lua";
     homepage = "https://github.com/Koihik/LuaFormatter";
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ figsoda ];
     mainProgram = "lua-format";
   };

@@ -139,7 +139,7 @@ stdenv.mkDerivation rec {
       render without stepping on each other's toes.
     '';
 
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = with licenses; [
       mit
       bsd3

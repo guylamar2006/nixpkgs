@@ -140,6 +140,6 @@ stdenv.mkDerivation {
       matthewbauer
       cherrykitten
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

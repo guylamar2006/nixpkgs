@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/salman-abedin/devour";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ mazurel ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "devour";
   };
 }

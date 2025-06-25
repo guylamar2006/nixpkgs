@@ -29,7 +29,7 @@ stdenvNoCC.mkDerivation {
   meta = {
     homepage = "http://dotcolon.net/font/melete/";
     description = "Headline typeface that could be used as a movie title";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ minijackson ];
     license = lib.licenses.ofl;
   };

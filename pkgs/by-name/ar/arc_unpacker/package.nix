@@ -91,7 +91,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/vn-tools/arc_unpacker";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ midchildan ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "arc_unpacker";
 
     # unit test failures

@@ -54,7 +54,7 @@ stdenv.mkDerivation rec {
     description = "Utility to create self-extracting packages";
     license = lib.licenses.gpl2;
     maintainers = with lib.maintainers; [ wmertens ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "makeself";
   };
 }

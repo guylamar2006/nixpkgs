@@ -26,6 +26,6 @@ stdenvNoCC.mkDerivation rec {
     # later." - GUST website
     license = src.meta.license;
     maintainers = with lib.maintainers; [ siddharthist ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

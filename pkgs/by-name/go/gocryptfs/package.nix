@@ -72,6 +72,6 @@ buildGoModule rec {
       offline
       prusnak
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

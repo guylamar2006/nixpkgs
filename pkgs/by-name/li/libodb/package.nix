@@ -47,6 +47,6 @@ stdenv.mkDerivation rec {
     changelog = "https://git.codesynthesis.com/cgit/odb/libodb/tree/NEWS";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ r-burns ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

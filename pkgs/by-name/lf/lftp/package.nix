@@ -60,7 +60,7 @@ stdenv.mkDerivation rec {
     description = "File transfer program supporting a number of network protocols";
     homepage = "https://lftp.yar.ru/";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ bjornfor ];
   };
 }

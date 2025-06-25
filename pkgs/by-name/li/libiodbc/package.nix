@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "iODBC driver manager";
     homepage = "https://www.iodbc.org";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.bsd3;
   };
 }

@@ -46,7 +46,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://code.videolan.org/jeeb/aribb24/";
     license = lib.licenses.lgpl3Plus;
     pkgConfigModules = [ "aribb24" ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ jopejoe1 ];
   };
 })

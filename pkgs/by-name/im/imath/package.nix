@@ -23,6 +23,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/AcademySoftwareFoundation/Imath";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ paperdigits ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

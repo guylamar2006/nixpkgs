@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/jitsi/jitsi-meet";
     license = lib.licenses.asl20;
     teams = with lib.teams; [ jitsi ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     inherit (olm.meta) knownVulnerabilities;
   };
 }

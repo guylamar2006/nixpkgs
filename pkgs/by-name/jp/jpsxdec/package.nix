@@ -75,6 +75,6 @@ stdenv.mkDerivation (finalAttrs: {
     };
     mainProgram = "jpsxdec";
     maintainers = with lib.maintainers; [ zane ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

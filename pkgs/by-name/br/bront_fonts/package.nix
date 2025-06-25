@@ -27,7 +27,7 @@ stdenvNoCC.mkDerivation {
       bitstreamVera
       ufl
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ grburst ];
   };
 }

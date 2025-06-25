@@ -20,7 +20,7 @@ stdenv.mkDerivation rec {
     description = "Library for Voronoi integration of electron densities";
     homepage = "https://brehm-research.de/libvori.php";
     license = with licenses; [ lgpl3Only ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ sheepforce ];
   };
 }

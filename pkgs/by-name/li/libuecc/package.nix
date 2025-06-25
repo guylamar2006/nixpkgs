@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
     description = "Very small Elliptic Curve Cryptography library";
     homepage = "https://git.universe-factory.net/libuecc";
     license = lib.licenses.bsd2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ fpletz ];
   };
 }

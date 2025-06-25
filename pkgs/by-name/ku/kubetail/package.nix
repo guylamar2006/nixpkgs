@@ -44,6 +44,6 @@ stdenv.mkDerivation rec {
       kalbasit
       qjoly
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

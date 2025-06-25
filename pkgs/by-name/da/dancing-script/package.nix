@@ -28,7 +28,7 @@ stdenvNoCC.mkDerivation {
     longDescription = "A lively casual script where the letters bounce and change size slightly.";
     homepage = "https://github.com/impallari/DancingScript";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ wdavidw ];
   };
 }

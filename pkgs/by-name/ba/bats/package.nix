@@ -258,6 +258,6 @@ resholve.mkDerivation rec {
     mainProgram = "bats";
     maintainers = with lib.maintainers; [ abathur ];
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

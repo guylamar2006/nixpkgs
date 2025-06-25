@@ -88,7 +88,7 @@ stdenv.mkDerivation {
     description = "FloPoCo arithmetic core generator";
     homepage = "https://flopoco.org/";
     license = lib.licenses.unfree;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ wegank ];
   };
 }

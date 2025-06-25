@@ -33,6 +33,6 @@ stdenv.mkDerivation rec {
     description = "Simple neural network library in ANSI C";
     license = lib.licenses.zlib;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

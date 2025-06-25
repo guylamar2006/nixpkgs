@@ -19,6 +19,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.asl20;
     teams = with lib.teams; [ helsinki-systems ];
     mainProgram = "mmdblookup";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

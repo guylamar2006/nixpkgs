@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
     description = "Horizontal bar for your terminal";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ matthiasbeyer ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "hr";
   };
 }

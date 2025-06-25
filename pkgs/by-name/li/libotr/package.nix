@@ -34,6 +34,6 @@ stdenv.mkDerivation rec {
     homepage = "http://www.cypherpunks.ca/otr/";
     license = lib.licenses.lgpl21;
     description = "Library for Off-The-Record Messaging";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

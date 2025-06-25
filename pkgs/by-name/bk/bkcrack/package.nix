@@ -38,7 +38,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Crack legacy zip encryption with Biham and Kocher's known plaintext attack";
     homepage = "https://github.com/kimci86/bkcrack";
     license = lib.licenses.zlib;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ erdnaxe ];
     mainProgram = "bkcrack";
   };

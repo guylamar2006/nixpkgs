@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
     description = "Full-featured & carefully designed adaptive prompt for Bash & Zsh";
     homepage = "https://github.com/liquidprompt/liquidprompt";
     license = lib.licenses.agpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ gerschtli ];
   };
 }

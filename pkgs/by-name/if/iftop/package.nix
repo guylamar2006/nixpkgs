@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.gpl2Plus;
     homepage = "http://ex-parrot.com/pdw/iftop/";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "iftop";
   };

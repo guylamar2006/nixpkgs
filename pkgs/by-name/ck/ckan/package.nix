@@ -88,6 +88,6 @@ stdenv.mkDerivation rec {
       ymarkus
       nullcube
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

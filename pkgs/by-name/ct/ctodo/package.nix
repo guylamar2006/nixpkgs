@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     description = "Simple ncurses-based task list manager";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ matthiasbeyer ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "ctodo";
   };
 }

@@ -29,6 +29,6 @@ rustPlatform.buildRustPackage {
     homepage = "https://github.com/gluesql/gluesql";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ happysalada ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

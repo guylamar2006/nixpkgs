@@ -34,6 +34,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/Autodesk/AutomaticComponentToolkit";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

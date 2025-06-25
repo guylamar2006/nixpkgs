@@ -83,7 +83,7 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl2Plus;
     description = "Interactive fiction interpreter GUI";
     mainProgram = "gargoyle";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ orivej ];
   };
 }

@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
     description = "cat replacement";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ qknight ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "dog";
   };
 }

@@ -26,6 +26,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://kamichikoichi.github.io/jigmo/";
     license = lib.licenses.cc0;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

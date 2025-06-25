@@ -48,7 +48,7 @@ buildGoModule rec {
     mainProgram = "age-plugin-tpm";
     homepage = "https://github.com/Foxboron/age-plugin-tpm";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       kranzes
       sgo

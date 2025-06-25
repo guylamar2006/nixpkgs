@@ -51,6 +51,6 @@ buildNpmPackage {
     homepage = "https://github.com/documenso/documenso";
     license = lib.licenses.agpl3Only;
     maintainers = with lib.maintainers; [ happysalada ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

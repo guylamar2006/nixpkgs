@@ -68,7 +68,7 @@ stdenv.mkDerivation rec {
     homepage = "https://libexplain.sourceforge.net";
     license = lib.licenses.lgpl3Plus;
     maintainers = with lib.maintainers; [ McSinyx ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     # never built on aarch64-linux since first introduction in nixpkgs
     broken = stdenv.hostPlatform.isLinux && stdenv.hostPlatform.isAarch64;
   };

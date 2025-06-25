@@ -26,6 +26,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://github.com/Koruri/Koruri";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ haruki7049 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -41,6 +41,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = with licenses; [ cc0 ];
     maintainers = with lib.maintainers; [ annaaurora ];
     mainProgram = "colstr";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

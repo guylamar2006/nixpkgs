@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/adrianlopezroche/fdupes";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ maggesi ];
     mainProgram = "fdupes";
   };

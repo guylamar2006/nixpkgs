@@ -61,6 +61,6 @@ stdenv.mkDerivation rec {
       olynch
     ];
     mainProgram = "argon2";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

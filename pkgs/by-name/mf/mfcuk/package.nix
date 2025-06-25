@@ -24,6 +24,6 @@ stdenv.mkDerivation {
     license = lib.licenses.gpl2Plus;
     homepage = "https://github.com/nfc-tools/mfcuk";
     maintainers = with lib.maintainers; [ offline ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

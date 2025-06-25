@@ -18,6 +18,6 @@ stdenv.mkDerivation rec {
     description = "Simple C++ unit testing framework";
     maintainers = with lib.maintainers; [ bosu ];
     license = lib.licenses.lgpl3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

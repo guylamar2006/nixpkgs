@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/tomolt/libschrift";
     description = "Lightweight TrueType font rendering library";
     license = lib.licenses.isc;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ sternenseemann ];
   };
 }

@@ -26,6 +26,6 @@ stdenv.mkDerivation rec {
     homepage = "https://codemadness.org/json2tsv.html";
     license = lib.licenses.isc;
     maintainers = with lib.maintainers; [ sikmir ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -44,6 +44,6 @@ stdenv.mkDerivation rec {
       thesola10
       Yumasi
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

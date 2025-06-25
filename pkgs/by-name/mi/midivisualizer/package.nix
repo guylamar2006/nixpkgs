@@ -65,7 +65,7 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "MIDIVisualizer";
     homepage = "https://github.com/kosua20/MIDIVisualizer";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ericdallo ];
   };
 })

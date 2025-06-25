@@ -57,7 +57,7 @@ stdenv.mkDerivation {
     description = "Generic parser and tool package for the BTOR2 format";
     homepage = "https://github.com/Boolector/btor2tools";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ thoughtpolice ];
   };
 }

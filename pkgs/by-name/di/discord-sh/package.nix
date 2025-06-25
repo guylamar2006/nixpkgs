@@ -61,7 +61,7 @@ stdenvNoCC.mkDerivation rec {
     mainProgram = "discord.sh";
     homepage = "https://github.com/ChaoticWeg/discord.sh";
     license = lib.licenses.gpl3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ matthewcroughan ];
   };
 }

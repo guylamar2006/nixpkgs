@@ -37,6 +37,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/SRI-CSL/libpoly";
     description = "C library for manipulating polynomials";
     license = lib.licenses.lgpl3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

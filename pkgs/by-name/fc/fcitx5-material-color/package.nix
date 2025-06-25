@@ -40,6 +40,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
       Cryolitia
       h7x4
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

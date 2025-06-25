@@ -37,6 +37,6 @@ rustPlatform.buildRustPackage {
       arthsmn
     ];
     mainProgram = "ion";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

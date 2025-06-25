@@ -226,6 +226,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.lgpl2Plus;
     teams = with lib.teams; [ gnome ];
     mainProgram = "rsvg-convert";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

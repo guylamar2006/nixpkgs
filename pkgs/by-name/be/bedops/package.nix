@@ -70,6 +70,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/bedops/bedops";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ jbedo ];
-    platforms = platforms.x86_64;
+    platforms = lib.platforms.x86_64;
   };
 }

@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     mainProgram = "lvmsync";
     homepage = "https://theshed.hezmatt.org/lvmsync/";
     license = lib.licenses.gpl3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       jluttine
       nicknovitski

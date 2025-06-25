@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     description = "Prevents you from committing secrets and credentials into git repositories";
     homepage = "https://github.com/awslabs/git-secrets";
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "git-secrets";
   };
 }

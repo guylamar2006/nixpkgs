@@ -39,6 +39,6 @@ stdenv.mkDerivation {
     maintainers = with lib.maintainers; [ rardiol ];
     mainProgram = "crimesquad";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

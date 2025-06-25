@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
     description = "Modern library implementing SIP (RFC 3261) transport, transaction and dialog layers. Part of the Linphone project";
     mainProgram = "belle_sip_tester";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ jluttine ];
   };
 }

@@ -18,7 +18,7 @@ let
       better scheduling of inprocessing and optimized algorithms and implementation.
     '';
     maintainers = with lib.maintainers; [ shnarazk ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.mit;
     homepage = "https://fmv.jku.at/kissat";
   };

@@ -31,6 +31,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/jpcima/fverb";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ magnetophon ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

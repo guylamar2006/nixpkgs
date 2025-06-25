@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
       branching model.
     '';
     license = lib.licenses.bsd2;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ offline ];
   };
 }

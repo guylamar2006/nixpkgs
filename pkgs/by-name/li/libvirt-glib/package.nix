@@ -92,6 +92,6 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://libvirt.org/";
     license = lib.licenses.lgpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

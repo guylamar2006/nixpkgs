@@ -36,7 +36,7 @@ stdenv.mkDerivation {
     maintainers = with lib.maintainers; [ minion3665 ];
     license = lib.licenses.mit;
     homepage = "https://github.com/AngelJumbo/lavat";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "lavat";
   };
 }

@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     description = "C++ and Python library for Polarizable Embedding";
     homepage = "https://github.com/maxscheurer/cppe";
     license = lib.licenses.lgpl3Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ sheepforce ];
   };
 }

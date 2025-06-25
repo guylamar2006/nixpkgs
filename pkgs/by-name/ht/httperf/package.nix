@@ -37,7 +37,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/httperf/httperf";
     maintainers = with lib.maintainers; [ ];
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "httperf";
   };
 

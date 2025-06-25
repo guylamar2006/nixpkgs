@@ -52,6 +52,6 @@ stdenv.mkDerivation {
     homepage = "https://castopod.org";
     license = lib.licenses.agpl3Only;
     maintainers = with lib.maintainers; [ alexoundos ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

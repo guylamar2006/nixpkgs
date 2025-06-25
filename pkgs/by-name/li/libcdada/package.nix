@@ -33,6 +33,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/msune/libcdada";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ _0x4A6F ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

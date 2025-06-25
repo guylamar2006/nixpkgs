@@ -51,6 +51,6 @@ stdenv.mkDerivation {
     homepage = "https://flasm.sourceforge.net/";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ siraben ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

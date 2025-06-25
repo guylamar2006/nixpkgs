@@ -92,6 +92,6 @@ stdenv.mkDerivation (finalAttrs: {
     maintainers = with lib.maintainers; [ markuskowa ];
     license = lib.licenses.bsd3;
     pkgConfigModules = [ "lapack" ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

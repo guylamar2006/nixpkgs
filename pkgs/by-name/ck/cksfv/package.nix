@@ -17,7 +17,7 @@ stdenv.mkDerivation rec {
     homepage = "https://zakalwe.fi/~shd/foss/cksfv/";
     description = "Tool for verifying files against a SFV checksum file";
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.gpl2Plus;
     mainProgram = "cksfv";
   };

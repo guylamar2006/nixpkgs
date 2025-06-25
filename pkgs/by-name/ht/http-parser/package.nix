@@ -71,6 +71,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/nodejs/http-parser";
     maintainers = with lib.maintainers; [ matthewbauer ];
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

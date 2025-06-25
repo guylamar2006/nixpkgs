@@ -37,7 +37,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "http://www.catb.org/~esr/ascii/";
     changelog = "https://gitlab.com/esr/ascii/-/blob/${finalAttrs.version}/NEWS.adoc";
     license = lib.licenses.bsd2;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ bjornfor ];
   };
 })

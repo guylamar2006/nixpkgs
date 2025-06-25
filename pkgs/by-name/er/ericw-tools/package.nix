@@ -66,6 +66,6 @@ stdenv.mkDerivation rec {
     description = "Map compile tools for Quake and Hexen 2";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ astro ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

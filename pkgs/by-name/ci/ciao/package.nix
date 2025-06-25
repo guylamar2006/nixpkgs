@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     description = "General purpose, multi-paradigm programming language in the Prolog family";
     license = lib.licenses.lgpl21;
     maintainers = with lib.maintainers; [ suhr ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin; # never built on Hydra https://hydra.nixos.org/job/nixpkgs/staging-next/ciao.x86_64-darwin
   };
 }

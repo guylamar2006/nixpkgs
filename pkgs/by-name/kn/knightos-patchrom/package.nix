@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
     mainProgram = "patchrom";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ siraben ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

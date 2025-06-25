@@ -27,6 +27,6 @@ stdenv.mkDerivation rec {
     maintainers = with lib.maintainers; [ ];
     mainProgram = "gzrecover";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

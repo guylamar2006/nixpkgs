@@ -41,7 +41,7 @@ stdenv.mkDerivation {
     homepage = "http://inform7.com/";
     license = lib.licenses.artistic2;
     maintainers = with lib.maintainers; [ mbbx6spp ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     # never built on aarch64-darwin since first introduction in nixpkgs
     broken =
       (stdenv.hostPlatform.isDarwin && stdenv.hostPlatform.isAarch64)

@@ -73,7 +73,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://hiawatha.leisink.net/";
     description = "Advanced and secure webserver";
     license = lib.licenses.gpl2Only;
-    platforms = platforms.unix; # "Hiawatha runs perfectly on Linux, BSD and MacOS X"
+    platforms = lib.platforms.unix; # "Hiawatha runs perfectly on Linux, BSD and MacOS X"
     mainProgram = "hiawatha";
     maintainers = with lib.maintainers; [ ];
   };

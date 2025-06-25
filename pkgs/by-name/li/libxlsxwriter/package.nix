@@ -45,6 +45,6 @@ stdenv.mkDerivation rec {
     changelog = "https://github.com/jmcnamara/libxlsxwriter/blob/${src.rev}/Changes.txt";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ dotlambda ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -52,7 +52,7 @@ stdenvNoCC.mkDerivation {
     description = "Dracula variant of the Ant theme";
     homepage = "https://github.com/dracula/gtk";
     license = lib.licenses.gpl3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ alexarice ];
   };
 }

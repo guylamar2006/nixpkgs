@@ -36,6 +36,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/sudar/Arduino-Makefile";
     license = lib.licenses.lgpl21;
     maintainers = with lib.maintainers; [ eyjhb ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

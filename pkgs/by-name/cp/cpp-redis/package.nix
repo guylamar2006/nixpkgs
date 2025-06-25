@@ -33,6 +33,6 @@ stdenv.mkDerivation rec {
     changelog = "https://github.com/cpp-redis/cpp_redis/blob/${src.rev}/CHANGELOG.md";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ poelzi ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

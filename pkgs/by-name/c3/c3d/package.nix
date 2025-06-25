@@ -26,7 +26,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/pyushkevich/c3d";
     description = "Medical imaging processing tool";
     maintainers = with lib.maintainers; [ bcdarwin ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.gpl3;
     broken = stdenv.hostPlatform.isAarch64;
     # /build/source/itkextras/OneDimensionalInPlaceAccumulateFilter.txx:312:10: fatal error: xmmintrin.h: No such file or directory

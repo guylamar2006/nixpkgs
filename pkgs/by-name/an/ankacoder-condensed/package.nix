@@ -28,6 +28,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://code.google.com/archive/p/anka-coder-fonts";
     license = lib.licenses.ofl;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

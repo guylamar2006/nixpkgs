@@ -41,6 +41,6 @@ stdenvNoCC.mkDerivation {
       an-empty-string
       totoroot
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

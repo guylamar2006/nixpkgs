@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.thregr.org/~wavexx/software/facedetect/";
     description = "Simple face detector for batch processing";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ rycee ];
     mainProgram = "facedetect";
   };

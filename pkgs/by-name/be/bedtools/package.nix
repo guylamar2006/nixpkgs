@@ -41,6 +41,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl2;
     homepage = "https://bedtools.readthedocs.io/en/latest/";
     maintainers = with lib.maintainers; [ jbedo ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

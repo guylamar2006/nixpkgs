@@ -337,6 +337,6 @@ stdenv.mkDerivation (finalAttrs: {
       dotlambda
     ];
     teams = with lib.teams; [ geospatial ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     longDescription = "A tool to view information about, decrypt, and extract common file formats for the Nintendo Switch, especially Nintendo Content Archives";
     license = lib.licenses.isc;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "hactool";
   };
 }

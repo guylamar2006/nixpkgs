@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     description = "FUSE filesystem for MTP devices like Android phones";
     homepage = "https://github.com/JasonFerrara/jmtpfs";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ coconnor ];
     mainProgram = "jmtpfs";
   };

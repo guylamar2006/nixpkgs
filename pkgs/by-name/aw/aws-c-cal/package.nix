@@ -44,7 +44,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "AWS Crypto Abstraction Layer";
     homepage = "https://github.com/awslabs/aws-c-cal";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ orivej ];
   };
 })

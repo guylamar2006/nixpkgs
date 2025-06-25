@@ -30,6 +30,6 @@ stdenv.mkDerivation rec {
     homepage = "https://jugit.fz-juelich.de/mlz/libcerf";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ orivej ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

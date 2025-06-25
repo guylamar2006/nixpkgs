@@ -38,6 +38,6 @@ stdenv.mkDerivation {
     homepage = "https://b.agaric.net/page/agave";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

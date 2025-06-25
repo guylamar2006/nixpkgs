@@ -125,7 +125,7 @@ let
         euxane
         techknowlogick
       ];
-      platforms = platforms.unix;
+      platforms = lib.platforms.unix;
       mainProgram = "hg";
     };
   };

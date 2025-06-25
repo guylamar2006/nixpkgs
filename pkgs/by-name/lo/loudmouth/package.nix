@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
 
   meta = {
     description = "Lightweight C library for the Jabber protocol";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     downloadPage = "http://mcabber.com/files/loudmouth/";
     license = lib.licenses.lgpl21;
   };

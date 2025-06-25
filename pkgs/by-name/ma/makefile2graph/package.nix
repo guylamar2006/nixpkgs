@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
     description = "Creates a graph of dependencies from GNU-Make; Output is a graphiz-dot file or a Gexf-XML file";
     maintainers = with lib.maintainers; [ cmcdragonkai ];
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

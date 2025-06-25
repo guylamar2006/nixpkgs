@@ -95,7 +95,7 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.gnome.org/GNOME/glib-networking";
     license = lib.licenses.lgpl21Plus;
     teams = with lib.teams; [ gnome ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     badPlatforms = [
       # GIO shared modules are mandatory.
       lib.systems.inspect.platformPatterns.isStatic

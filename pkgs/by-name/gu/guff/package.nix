@@ -24,7 +24,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/silentbicycle/guff";
     license = lib.licenses.isc;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "guff";
   };
 }

@@ -30,6 +30,6 @@ stdenv.mkDerivation {
     description = "Lightweight, fast C/C++ library for sequence alignment using edit distance";
     maintainers = with lib.maintainers; [ bcdarwin ];
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

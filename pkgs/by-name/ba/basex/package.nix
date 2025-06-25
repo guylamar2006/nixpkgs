@@ -80,7 +80,7 @@ stdenv.mkDerivation rec {
     homepage = "https://basex.org/";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = lib.licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ bjornfor ];
   };
 }

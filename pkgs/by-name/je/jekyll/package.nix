@@ -55,7 +55,7 @@ bundlerApp {
     changelog = "https://jekyllrb.com/news/releases/";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ anthonyroussel ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "jekyll";
   };
 }

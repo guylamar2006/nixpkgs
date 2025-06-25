@@ -65,6 +65,6 @@ stdenv.mkDerivation rec {
     description = "Library for checking the strength of passwords";
     license = lib.licenses.lgpl21; # Different license for the wordlist: http://www.openwall.com/wordlists
     maintainers = with lib.maintainers; [ lovek323 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

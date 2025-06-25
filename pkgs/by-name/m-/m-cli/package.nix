@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
 
     license = lib.licenses.mit;
 
-    platforms = platforms.darwin;
+    platforms = lib.platforms.darwin;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "m";
   };

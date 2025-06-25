@@ -34,6 +34,6 @@ maven.buildMavenPackage rec {
     changelog = "https://mariadb.com/kb/en/mariadb-connector-j-release-notes/";
     license = lib.licenses.lgpl21Plus;
     maintainers = with lib.maintainers; [ anthonyroussel ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

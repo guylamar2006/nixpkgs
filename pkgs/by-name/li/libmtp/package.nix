@@ -68,7 +68,7 @@ stdenv.mkDerivation rec {
       in the form of a library suitable primarily for POSIX compliant operating
       systems. We implement MTP Basic, the stuff proposed for standardization.
     '';
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.lgpl21;
     maintainers = with lib.maintainers; [ lovesegfault ];
   };

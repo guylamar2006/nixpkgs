@@ -61,6 +61,6 @@ stdenv.mkDerivation rec {
     homepage = "https://pagure.io/mailcap";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ c0bw3b ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

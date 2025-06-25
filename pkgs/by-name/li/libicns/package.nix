@@ -38,6 +38,6 @@ stdenv.mkDerivation {
       lgpl2
       lgpl21
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

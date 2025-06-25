@@ -29,6 +29,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://www.amirifont.org/";
     license = lib.licenses.ofl;
     maintainers = with lib.maintainers; [ vbgl ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

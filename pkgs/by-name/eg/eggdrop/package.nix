@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
 
   meta = {
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     homepage = "https://www.eggheads.org";
     description = "Internet Relay Chat (IRC) bot";
   };

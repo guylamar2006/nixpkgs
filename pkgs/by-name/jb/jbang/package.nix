@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
       binaryBytecode
     ];
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ moaxcp ];
   };
 }

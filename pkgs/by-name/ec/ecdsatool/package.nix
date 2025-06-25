@@ -37,6 +37,6 @@ stdenv.mkDerivation {
     mainProgram = "ecdsatool";
     homepage = "https://github.com/kaniini/ecdsatool/";
     license = with licenses; [ free ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

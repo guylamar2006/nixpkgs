@@ -38,6 +38,6 @@ stdenv.mkDerivation rec {
     homepage = "https://help.gnome.org/users/gnome-help/";
     license = lib.licenses.cc-by-30;
     teams = with lib.teams; [ gnome ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

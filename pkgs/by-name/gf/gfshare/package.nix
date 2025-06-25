@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     homepage = "https://git.gitano.org.uk/libgfshare.git/";
     description = "Shamir's secret-sharing method in the Galois Field GF(2**8)";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ rraval ];
     broken = stdenv.hostPlatform.isDarwin; # never built on Hydra https://hydra.nixos.org/job/nixpkgs/trunk/gfshare.x86_64-darwin
   };

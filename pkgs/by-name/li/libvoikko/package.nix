@@ -36,6 +36,6 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Finnish language processing library";
     license = lib.licenses.lgpl21Plus;
     maintainers = with lib.maintainers; [ lurkki ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

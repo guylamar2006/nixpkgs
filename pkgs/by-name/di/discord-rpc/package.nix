@@ -46,6 +46,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/discordapp/discord-rpc";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/valr/awf";
     license = lib.licenses.gpl3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ michalrus ];
   };
 }

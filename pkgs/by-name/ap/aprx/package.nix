@@ -43,6 +43,6 @@ stdenv.mkDerivation {
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ sarcasticadmin ];
     mainProgram = "aprx";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -169,6 +169,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.gpl3;
     mainProgram = "AmneziaVPN";
     maintainers = with lib.maintainers; [ sund3RRR ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

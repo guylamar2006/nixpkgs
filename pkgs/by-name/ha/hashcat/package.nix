@@ -103,7 +103,7 @@ stdenv.mkDerivation rec {
     mainProgram = "hashcat";
     homepage = "https://hashcat.net/hashcat/";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       felixalbrigtsen
       zimbatm

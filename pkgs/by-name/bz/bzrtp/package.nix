@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     description = "Opensource implementation of ZRTP keys exchange protocol. Part of the Linphone project";
     homepage = "https://gitlab.linphone.org/BC/public/bzrtp";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ jluttine ];
   };
 }

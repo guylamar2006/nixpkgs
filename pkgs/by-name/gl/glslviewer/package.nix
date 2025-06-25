@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
     homepage = "https://patriciogonzalezvivo.com/2015/glslViewer/";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ hodapp ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "glslViewer";
     # never built on aarch64-darwin since first introduction in nixpkgs
     broken = stdenv.hostPlatform.isDarwin;

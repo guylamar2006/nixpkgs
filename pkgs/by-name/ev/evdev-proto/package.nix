@@ -65,7 +65,7 @@ stdenv.mkDerivation {
   meta = {
     description = "Input event device header files for FreeBSD";
     maintainers = with lib.maintainers; [ qyliss ];
-    platforms = platforms.freebsd;
+    platforms = lib.platforms.freebsd;
     license = lib.licenses.gpl2Only;
   };
 }

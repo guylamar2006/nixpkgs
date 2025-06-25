@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
     homepage = "http://www.arpoison.net/";
     license = with licenses; [ gpl2Only ];
     maintainers = with lib.maintainers; [ michalrus ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "arpoison";
   };
 }

@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "http://www.mavetju.org/unix/general.php";
     license = lib.licenses.bsd2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "dhcping";
   };
 }

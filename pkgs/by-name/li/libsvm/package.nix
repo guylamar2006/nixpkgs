@@ -63,6 +63,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.csie.ntu.edu.tw/~cjlin/libsvm/";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

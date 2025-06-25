@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
     description = "APPLgrid project provides a fast and flexible way to reproduce the results of full NLO calculations with any input parton distribution set in only a few milliseconds rather than the weeks normally required to gain adequate statistics";
     license = lib.licenses.gpl3;
     homepage = "http://applgrid.hepforge.org";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ veprbl ];
   };
 }

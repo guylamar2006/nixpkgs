@@ -33,6 +33,6 @@ stdenv.mkDerivation rec {
       lgpl21
       mpl20
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

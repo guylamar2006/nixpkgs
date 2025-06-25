@@ -38,6 +38,6 @@ stdenvNoCC.mkDerivation {
     homepage = "http://scholarsfonts.net/cardofnt.html";
     license = lib.licenses.ofl;
     maintainers = with lib.maintainers; [ kmein ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

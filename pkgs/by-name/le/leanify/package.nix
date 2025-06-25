@@ -55,7 +55,7 @@ stdenv.mkDerivation {
     changelog = "https://github.com/JayXon/Leanify/blob/master/CHANGELOG.md";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ mynacol ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "leanify";
   };
 }

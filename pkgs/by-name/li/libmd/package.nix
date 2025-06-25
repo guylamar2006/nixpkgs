@@ -36,6 +36,6 @@ stdenv.mkDerivation (finalAttrs: {
       publicDomain
     ];
     maintainers = with lib.maintainers; [ primeos ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

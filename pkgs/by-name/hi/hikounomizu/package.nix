@@ -80,6 +80,6 @@ stdenv.mkDerivation (finalAttrs: {
       licenses.gpl3Plus
       licenses.lal13
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

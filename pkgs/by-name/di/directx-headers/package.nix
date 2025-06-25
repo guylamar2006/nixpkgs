@@ -29,6 +29,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/microsoft/DirectX-Headers";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ k900 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

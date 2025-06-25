@@ -39,6 +39,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/jncraton/catdocx";
     license = with licenses; [ bsd3 ];
     maintainers = with lib.maintainers; [ michalrus ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

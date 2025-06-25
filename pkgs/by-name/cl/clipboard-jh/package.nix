@@ -63,7 +63,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/Slackadays/clipboard";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ dit7ya ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "cb";
   };
 }

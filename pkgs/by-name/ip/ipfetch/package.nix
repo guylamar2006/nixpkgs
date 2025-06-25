@@ -47,7 +47,7 @@ stdenv.mkDerivation {
     mainProgram = "ipfetch";
     homepage = "https://github.com/trakBan/ipfetch";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ annaaurora ];
   };
 }

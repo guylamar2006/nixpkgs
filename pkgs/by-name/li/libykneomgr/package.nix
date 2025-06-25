@@ -33,6 +33,6 @@ stdenv.mkDerivation rec {
     homepage = "https://developers.yubico.com/libykneomgr";
     license = lib.licenses.bsd3;
     mainProgram = "ykneomgr";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

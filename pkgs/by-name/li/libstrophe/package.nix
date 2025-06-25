@@ -53,7 +53,7 @@ stdenv.mkDerivation rec {
       gpl3Only
       mit
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       devhell
       flosse

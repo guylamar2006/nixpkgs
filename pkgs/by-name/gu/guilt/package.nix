@@ -88,7 +88,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/jeffpc/guilt";
     maintainers = with lib.maintainers; [ javimerino ];
     license = [ licenses.gpl2 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "guilt";
   };
 }

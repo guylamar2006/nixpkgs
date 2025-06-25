@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
     inherit (src.meta) homepage;
     description = "Yeraze's TNEF Stream Reader - for winmail.dat files";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ fpletz ];
   };
 }

@@ -13,7 +13,7 @@ runCommand "glasstty-ttf"
       maintainers = with lib.maintainers; [ pkharvey ];
       homepage = "https://github.com/svofski/glasstty";
       license = lib.licenses.unlicense;
-      platforms = platforms.all;
+      platforms = lib.platforms.all;
       description = "TrueType VT220 font";
     };
   }

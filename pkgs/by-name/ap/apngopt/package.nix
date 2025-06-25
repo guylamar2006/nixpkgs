@@ -49,6 +49,6 @@ stdenv.mkDerivation rec {
     description = "Optimizes APNG animations";
     license = lib.licenses.zlib;
     maintainers = with lib.maintainers; [ fgaz ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

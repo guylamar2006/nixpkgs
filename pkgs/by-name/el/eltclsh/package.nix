@@ -44,6 +44,6 @@ tcl.mkTclDerivation rec {
     homepage = "https://homepages.laas.fr/mallet/soft/shell/eltclsh";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ iwanb ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

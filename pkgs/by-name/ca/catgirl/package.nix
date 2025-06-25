@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
     homepage = "https://git.causal.agency/catgirl/about/";
     license = lib.licenses.gpl3Plus;
     description = "TLS-only terminal IRC client";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "catgirl";
     maintainers = with lib.maintainers; [ xfnw ];
   };

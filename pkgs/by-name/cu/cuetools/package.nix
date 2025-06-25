@@ -44,6 +44,6 @@ stdenv.mkDerivation rec {
       codyopel
       jcumming
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     inherit (src.meta) homepage;
     description = "In-memory benchmark of open-source LZ77/LZSS/LZMA compressors";
     license = lib.licenses.free;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "lzbench";
   };
 }

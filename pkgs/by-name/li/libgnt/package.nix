@@ -62,7 +62,7 @@ stdenv.mkDerivation rec {
     description = "Ncurses toolkit for creating text-mode graphical user interfaces";
     homepage = "https://keep.imfreedom.org/libgnt/libgnt/";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ony ];
   };
 }

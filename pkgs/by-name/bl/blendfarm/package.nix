@@ -136,6 +136,6 @@ buildDotnetModule rec {
     license = with licenses; [ gpl3Plus ];
     maintainers = with lib.maintainers; [ gador ];
     mainProgram = "blendfarm-nix";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

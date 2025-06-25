@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
     homepage = "http://pages.cs.wisc.edu/~ghost/gsview/epstool.htm";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ asppsa ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "epstool";
   };
 }

@@ -23,6 +23,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://laszip.org";
     license = lib.licenses.lgpl2;
     maintainers = with lib.maintainers; [ michelk ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

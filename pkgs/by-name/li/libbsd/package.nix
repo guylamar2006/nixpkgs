@@ -56,7 +56,7 @@ stdenv.mkDerivation rec {
       isc
       mit
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     # See architectures defined in src/local-elf.h.
     badPlatforms = lib.platforms.microblaze;
     maintainers = with lib.maintainers; [ matthewbauer ];

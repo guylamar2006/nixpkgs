@@ -31,7 +31,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/Ruunyox/bklk";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ j0hax ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "bklk";
   };
 }

@@ -56,7 +56,7 @@ stdenv.mkDerivation rec {
     description = "Tools for manipulating BCF2/VCF/gVCF format, SNP and short indel sequence variants";
     license = lib.licenses.mit;
     homepage = "http://www.htslib.org/";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ mimame ];
   };
 }

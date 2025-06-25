@@ -31,6 +31,6 @@ stdenvNoCC.mkDerivation {
     '';
     license = lib.licenses.ofl;
     maintainers = with lib.maintainers; [ loicreynier ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

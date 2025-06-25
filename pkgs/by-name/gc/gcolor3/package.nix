@@ -53,6 +53,6 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.gnome.org/World/gcolor3";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -33,6 +33,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://www.ctrl.blog/entry/creative-commons-unicode-fallback-font.html";
     maintainers = with lib.maintainers; [ qyliss ];
     license = lib.licenses.publicDomain;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

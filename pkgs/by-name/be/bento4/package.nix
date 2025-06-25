@@ -47,6 +47,6 @@ stdenv.mkDerivation rec {
     homepage = "http://bento4.com";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ makefu ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

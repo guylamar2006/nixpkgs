@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     description = "Wordlist generator";
     mainProgram = "crunch";
     homepage = "https://sourceforge.net/projects/crunch-wordlist/";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = with licenses; [ gpl2Only ];
     maintainers = with lib.maintainers; [ lnl7 ];
   };

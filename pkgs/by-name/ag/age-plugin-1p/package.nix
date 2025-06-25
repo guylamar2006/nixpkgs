@@ -27,7 +27,7 @@ buildGoModule rec {
     mainProgram = "age-plugin-1p";
     homepage = "https://github.com/Enzime/age-plugin-1p";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ Enzime ];
   };
 }

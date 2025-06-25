@@ -60,6 +60,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/cowsql/cowsql";
     license = lib.licenses.lgpl3Only;
     teams = with lib.teams; [ lxc ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

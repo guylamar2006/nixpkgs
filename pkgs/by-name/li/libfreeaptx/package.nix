@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
     description = "Free Implementation of Audio Processing Technology codec (aptX)";
     license = lib.licenses.lgpl21Plus;
     homepage = "https://github.com/iamthehorker/libfreeaptx";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ kranzes ];
   };
 }

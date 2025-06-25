@@ -26,6 +26,6 @@ stdenv.mkDerivation rec {
     description = "Static and space-efficient trie data structure library";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ sifmelcara ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

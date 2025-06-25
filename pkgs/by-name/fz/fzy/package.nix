@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/jhawthorn/fzy";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ dywedir ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "fzy";
   };
 }

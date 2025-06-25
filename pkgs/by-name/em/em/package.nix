@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.publicDomain;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "em";
   };
 }

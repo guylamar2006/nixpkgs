@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     mainProgram = "btar";
     license = lib.licenses.gpl3Plus;
     homepage = "https://briantracy.xyz/writing/btar.html";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
   };
 }

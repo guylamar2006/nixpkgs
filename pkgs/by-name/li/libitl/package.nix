@@ -26,7 +26,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://www.arabeyes.org/ITL";
     license = lib.licenses.lgpl21Only;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ amyipdev ];
   };
 })

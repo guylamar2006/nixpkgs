@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
     description = "JPEG-LS library implementation in C++";
     maintainers = with lib.maintainers; [ bcdarwin ];
     license = lib.licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

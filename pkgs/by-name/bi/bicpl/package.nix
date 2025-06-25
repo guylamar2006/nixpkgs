@@ -34,7 +34,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/BIC-MNI/bicpl";
     description = "Brain Imaging Centre programming library";
     maintainers = with lib.maintainers; [ bcdarwin ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = with licenses; [
       hpndUc
       gpl3Plus

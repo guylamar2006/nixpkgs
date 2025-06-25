@@ -41,6 +41,6 @@ stdenv.mkDerivation rec {
     description = "Lightweight C++ GNU-style option parser library";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ spease ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

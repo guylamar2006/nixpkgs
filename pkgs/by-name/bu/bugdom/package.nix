@@ -79,6 +79,6 @@ stdenv.mkDerivation rec {
     license = with licenses; [ cc-by-sa-40 ];
     maintainers = with lib.maintainers; [ lux ];
     mainProgram = "Bugdom";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

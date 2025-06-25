@@ -77,7 +77,7 @@ stdenv.mkDerivation {
     description = "2D and 3D geometric modelling programming language for creating art with maths";
     homepage = "https://codeberg.org/doug-moen/curv";
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     broken = stdenv.hostPlatform.isDarwin;
     maintainers = with lib.maintainers; [ pbsds ];
     mainProgram = "curv";

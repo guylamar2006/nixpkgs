@@ -40,6 +40,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/flexible-collision-library/fcl";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ lopsided98 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

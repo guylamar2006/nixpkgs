@@ -27,7 +27,7 @@ stdenvNoCC.mkDerivation rec {
     description = "Names and keywords for Unicode characters from the Common Locale Data Repository";
     homepage = "https://cldr.unicode.org";
     license = lib.licenses.unicode-30;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ DeeUnderscore ];
   };
 }

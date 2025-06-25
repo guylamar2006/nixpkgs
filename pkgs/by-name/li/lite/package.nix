@@ -63,7 +63,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/rxi/lite";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ Br1ght0ne ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "lite";
   };
 }

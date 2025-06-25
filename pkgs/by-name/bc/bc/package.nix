@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
     description = "GNU software calculator";
     homepage = "https://www.gnu.org/software/bc/";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "bc";
   };
 }

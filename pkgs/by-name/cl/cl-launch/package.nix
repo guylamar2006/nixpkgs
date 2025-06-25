@@ -28,6 +28,6 @@ stdenv.mkDerivation rec {
     description = "Common Lisp launcher script";
     license = lib.licenses.llgpl21;
     maintainers = with lib.maintainers; [ raskin ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

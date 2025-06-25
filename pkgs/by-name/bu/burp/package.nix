@@ -62,6 +62,6 @@ stdenv.mkDerivation rec {
     homepage = "https://burp.grke.org";
     license = lib.licenses.agpl3Plus;
     maintainers = with lib.maintainers; [ arjan-s ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

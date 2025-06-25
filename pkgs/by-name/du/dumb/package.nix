@@ -33,6 +33,6 @@ stdenv.mkDerivation rec {
     description = "Module/tracker based music format parser and player library";
     license = lib.licenses.free; # Derivative of GPL
     maintainers = with lib.maintainers; [ Madouura ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

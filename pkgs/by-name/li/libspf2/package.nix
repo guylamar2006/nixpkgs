@@ -42,6 +42,6 @@ stdenv.mkDerivation rec {
     ];
     maintainers = with lib.maintainers; [ euxane ];
     teams = with lib.teams; [ helsinki-systems ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

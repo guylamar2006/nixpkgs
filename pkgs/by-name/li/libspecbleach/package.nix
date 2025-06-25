@@ -33,6 +33,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/lucianodato/libspecbleach";
     license = lib.licenses.lgpl2;
     maintainers = with lib.maintainers; [ magnetophon ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

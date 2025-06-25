@@ -71,6 +71,6 @@ stdenv.mkDerivation (finalAttrs: {
       pSub
       motiejus
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

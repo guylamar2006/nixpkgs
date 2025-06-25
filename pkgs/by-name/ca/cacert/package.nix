@@ -28,7 +28,7 @@ let
   meta = {
     homepage = "https://curl.haxx.se/docs/caextract.html";
     description = "Bundle of X.509 certificates of public Certificate Authorities (CA)";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       fpletz
       lukegb

@@ -23,7 +23,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/DIGImend/hidrd";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ euxane ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     broken = stdenv.hostPlatform.isDarwin; # never built on Hydra https://hydra.nixos.org/job/nixpkgs/trunk/hidrd.x86_64-darwin
     mainProgram = "hidrd-convert";
   };

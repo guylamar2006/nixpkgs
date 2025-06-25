@@ -29,7 +29,7 @@ rustPlatform.buildRustPackage rec {
       h7x4
       dandellion
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "lazymc";
   };
 }

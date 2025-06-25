@@ -58,7 +58,7 @@ stdenv.mkDerivation {
       bsd3
     ];
     homepage = "https://libvdwxc.materialsmodeling.org/";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ sheepforce ];
   };
 }

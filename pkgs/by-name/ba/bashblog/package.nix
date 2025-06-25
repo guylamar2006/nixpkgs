@@ -58,7 +58,7 @@ stdenv.mkDerivation {
     mainProgram = "bashblog";
     homepage = "https://github.com/cfenollosa/bashblog";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ];
   };
 }

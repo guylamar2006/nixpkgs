@@ -81,6 +81,6 @@ rustPlatform.buildRustPackage rec {
       uncenter
       aleksana
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

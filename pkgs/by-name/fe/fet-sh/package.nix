@@ -27,7 +27,7 @@ stdenvNoCC.mkDerivation rec {
     description = "Fetch written in posix shell without any external commands";
     homepage = "https://github.com/6gk/fet.sh";
     license = lib.licenses.isc;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ elkowar ];
     mainProgram = "fet.sh";
   };

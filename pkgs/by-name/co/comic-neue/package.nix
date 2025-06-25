@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
       Regular, and Bold weights with Oblique variants.
     '';
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
   };
 }

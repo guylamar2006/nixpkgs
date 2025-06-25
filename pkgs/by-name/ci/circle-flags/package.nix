@@ -32,6 +32,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     description = "Collection of 400+ minimal circular SVG country and state flags";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ bobby285271 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

@@ -70,6 +70,6 @@ stdenv.mkDerivation (finalAttrs: {
     ];
     maintainers = with lib.maintainers; [ al3xtjames ];
     mainProgram = "convmv";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

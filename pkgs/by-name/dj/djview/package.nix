@@ -73,7 +73,7 @@ stdenv.mkDerivation rec {
     mainProgram = "djview";
     homepage = "https://djvu.sourceforge.net/djview4.html";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       Anton-Latukha
       bryango

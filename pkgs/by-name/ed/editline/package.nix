@@ -78,6 +78,6 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Readline() replacement for UNIX without termcap (ncurses)";
     license = lib.licenses.bsdOriginal;
     maintainers = with lib.maintainers; [ oxalica ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

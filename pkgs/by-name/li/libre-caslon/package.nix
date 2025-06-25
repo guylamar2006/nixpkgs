@@ -45,6 +45,6 @@ stdenv.mkDerivation rec {
     homepage = "http://www.impallari.com/librecaslon";
     license = lib.licenses.ofl;
     maintainers = with lib.maintainers; [ cmfwyp ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

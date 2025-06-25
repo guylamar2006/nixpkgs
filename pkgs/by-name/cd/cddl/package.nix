@@ -41,6 +41,6 @@ bundlerApp {
       nicknovitski
       amesgen
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

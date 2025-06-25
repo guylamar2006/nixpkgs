@@ -28,6 +28,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     homepage = "https://github.com/bloc97/Anime4K";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ surfaceflinger ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

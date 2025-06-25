@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     description = "Tiling window manager with focus follows mouse for OSX";
     homepage = "https://github.com/koekeishiya/kwm";
     downloadPage = "https://github.com/koekeishiya/kwm/releases";
-    platforms = platforms.darwin;
+    platforms = lib.platforms.darwin;
     maintainers = with lib.maintainers; [ lnl7 ];
     mainProgram = "kwmc";
     license = lib.licenses.mit;

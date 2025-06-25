@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
     inherit (src.meta) homepage;
     description = "Kannada font";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ehmry ];
   };
 }

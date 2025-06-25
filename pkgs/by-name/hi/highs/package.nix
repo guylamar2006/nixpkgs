@@ -46,7 +46,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/ERGO-Code/HiGHS";
     description = "Linear optimization software";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "highs";
     maintainers = with lib.maintainers; [ silky ];
   };

@@ -64,6 +64,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ cafkafk ];
     mainProgram = "cbmbasic";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

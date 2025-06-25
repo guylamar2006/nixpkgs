@@ -27,6 +27,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     changelog = "https://github.com/isaozler/kode-mono/blob/main/CHANGELOG.md";
     license = lib.licenses.ofl;
     maintainers = with lib.maintainers; [ isaozler ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

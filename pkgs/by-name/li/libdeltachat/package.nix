@@ -91,6 +91,6 @@ stdenv.mkDerivation rec {
     changelog = "https://github.com/chatmail/core/blob/${src.tag}/CHANGELOG.md";
     license = lib.licenses.mpl20;
     maintainers = with lib.maintainers; [ dotlambda ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

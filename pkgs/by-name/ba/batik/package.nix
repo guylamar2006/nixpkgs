@@ -49,7 +49,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     description = "Java based toolkit for handling SVG";
     homepage = "https://xmlgraphics.apache.org/batik";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
   };
 })

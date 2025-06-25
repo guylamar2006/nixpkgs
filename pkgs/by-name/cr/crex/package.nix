@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
     homepage = "https://octobanana.com/software/crex";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ dtzWill ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "crex";
   };
 }

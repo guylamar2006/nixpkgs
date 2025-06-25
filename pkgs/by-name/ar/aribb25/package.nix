@@ -54,6 +54,6 @@ stdenv.mkDerivation {
     license = lib.licenses.isc;
     maintainers = with lib.maintainers; [ midchildan ];
     mainProgram = "b25";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

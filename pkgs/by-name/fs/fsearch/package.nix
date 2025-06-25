@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/cboxdoerfer/fsearch.git";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ artturin ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "fsearch";
     broken = stdenv.hostPlatform.isDarwin; # never built on Hydra https://hydra.nixos.org/job/nixpkgs/trunk/fsearch.x86_64-darwin
   };

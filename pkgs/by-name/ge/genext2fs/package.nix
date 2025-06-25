@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/bestouff/genext2fs";
     description = "Tool to generate ext2 filesystem images without requiring root privileges";
     license = lib.licenses.gpl2Only;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ bjornfor ];
     mainProgram = "genext2fs";
   };

@@ -54,7 +54,7 @@ stdenv.mkDerivation rec {
       gpl3Only
       mit
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin;
     maintainers = with lib.maintainers; [ devhell ];
   };

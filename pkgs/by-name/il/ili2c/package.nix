@@ -65,7 +65,7 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.lgpl21Plus;
     maintainers = with lib.maintainers; [ das-g ];
     teams = with lib.teams; [ geospatial ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "ili2c";
   };
 })

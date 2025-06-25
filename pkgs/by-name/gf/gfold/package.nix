@@ -34,7 +34,7 @@ rustPlatform.buildRustPackage {
     homepage = "https://github.com/nickgerace/gfold";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ sigmanificient ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "gfold";
   };
 }

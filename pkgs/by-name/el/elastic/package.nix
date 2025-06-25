@@ -56,7 +56,7 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.gnome.org/World/elastic/";
     mainProgram = "app.drey.Elastic";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ _0xMRTT ];
     teams = with lib.teams; [ gnome-circle ];
   };

@@ -35,7 +35,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/inavflight/blackbox-tools";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     broken = stdenv.hostPlatform.isDarwin; # never built on Hydra https://hydra.nixos.org/job/nixpkgs/trunk/inav-blackbox-tools.x86_64-darwin
   };
 }

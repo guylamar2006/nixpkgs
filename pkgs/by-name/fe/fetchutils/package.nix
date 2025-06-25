@@ -35,7 +35,7 @@ stdenvNoCC.mkDerivation {
     description = "Collection of small shell utilities to fetch system information";
     homepage = "https://github.com/lptstr/fetchutils";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ moni ];
   };
 }

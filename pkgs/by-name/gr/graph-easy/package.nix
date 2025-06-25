@@ -15,7 +15,7 @@ perlPackages.buildPerlPackage {
   meta = {
     description = "Render/convert graphs in/from various formats";
     license = lib.licenses.gpl1Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ jensbin ];
     mainProgram = "graph-easy";
   };

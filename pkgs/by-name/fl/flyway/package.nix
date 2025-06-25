@@ -44,7 +44,7 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ cmcdragonkai ];
   };
 })

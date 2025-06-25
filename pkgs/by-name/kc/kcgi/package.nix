@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     homepage = "https://kristaps.bsd.lv/kcgi";
     description = "Minimal CGI and FastCGI library for C/C++";
     license = lib.licenses.isc;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ leenaars ];
     mainProgram = "kfcgi";
   };

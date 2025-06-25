@@ -49,6 +49,6 @@ stdenvForCppNetlib.mkDerivation rec {
     description = "Collection of open-source libraries for high level network programming";
     homepage = "https://cpp-netlib.org";
     license = lib.licenses.boost;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

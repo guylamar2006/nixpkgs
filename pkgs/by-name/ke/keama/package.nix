@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
 
     homepage = "https://gitlab.isc.org/isc-projects/dhcp/-/wikis/kea-migration-assistant";
     license = lib.licenses.mpl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ blitz ];
     mainProgram = "keama";
   };

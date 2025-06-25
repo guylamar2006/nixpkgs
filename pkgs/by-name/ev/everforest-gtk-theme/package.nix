@@ -40,6 +40,6 @@ stdenvNoCC.mkDerivation {
     homepage = "https://github.com/Fausto-Korpsvart/Everforest-GTK-Theme";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ jn-sena ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

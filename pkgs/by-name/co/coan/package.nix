@@ -45,6 +45,6 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://coan2.sourceforge.net/";
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

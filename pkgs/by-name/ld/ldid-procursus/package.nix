@@ -57,7 +57,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Put real or fake signatures in a Mach-O binary";
     homepage = "https://github.com/ProcursusTeam/ldid";
     maintainers = with lib.maintainers; [ keto ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.agpl3Only;
   };
 })

@@ -64,7 +64,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://www.gnu.org/software/help2man/";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ pSub ];
   };
 }

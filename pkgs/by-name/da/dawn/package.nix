@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     description = "Vectorized 3D PostScript processor with analytical hidden line/surface removal";
     license = lib.licenses.unfree;
     homepage = "https://geant4.kek.jp/~tanaka/DAWN/About_DAWN.html";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ veprbl ];
   };
 }

@@ -42,6 +42,6 @@ stdenv.mkDerivation rec {
     description = "Interactive spell-checking program for Unix";
     homepage = "https://www.cs.hmc.edu/~geoff/ispell.html";
     license = lib.licenses.free;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

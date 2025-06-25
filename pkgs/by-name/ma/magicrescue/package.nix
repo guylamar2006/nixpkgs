@@ -36,7 +36,7 @@ stdenv.mkDerivation {
     mainProgram = "magicrescue";
     homepage = "https://github.com/jbj/magicrescue";
     maintainers = with lib.maintainers; [ d3vil0p3r ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.gpl2Plus;
   };
 }

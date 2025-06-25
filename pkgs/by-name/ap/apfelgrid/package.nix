@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
     mainProgram = "apfelgrid-config";
     license = lib.licenses.mit;
     homepage = "https://nhartland.github.io/APFELgrid/";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ veprbl ];
   };
 }

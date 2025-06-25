@@ -120,6 +120,6 @@ stdenv.mkDerivation rec {
     mainProgram = "exaile";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ ryneeverett ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

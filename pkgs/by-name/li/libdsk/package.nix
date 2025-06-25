@@ -18,6 +18,6 @@ stdenv.mkDerivation rec {
     homepage = "http://www.seasip.info/Unix/LibDsk/";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

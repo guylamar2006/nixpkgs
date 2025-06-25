@@ -137,7 +137,7 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.lgpl21Plus;
     maintainers = with lib.maintainers; [ dotlambda ];
     teams = with lib.teams; [ gnome ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     pkgConfigModules = [ "libadwaita-1" ];
   };
 })

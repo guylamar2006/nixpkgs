@@ -19,6 +19,6 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "clzip";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

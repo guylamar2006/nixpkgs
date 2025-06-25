@@ -53,7 +53,7 @@ stdenv.mkDerivation rec {
     description = "Exif Jpeg header manipulation tool";
     license = lib.licenses.publicDomain;
     maintainers = with lib.maintainers; [ rycee ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "jhead";
   };
 }

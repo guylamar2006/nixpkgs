@@ -45,6 +45,6 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/rtbrick/bngblaster/releases/tag/${finalAttrs.version}";
     license = lib.licenses.bsd3;
     teams = with lib.teams; [ wdz ];
-    badPlatforms = platforms.darwin;
+    badplatforms = lib.platforms.darwin;
   };
 })

@@ -40,6 +40,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "http://www.impallari.com/dosis";
     license = lib.licenses.ofl;
     maintainers = with lib.maintainers; [ cmfwyp ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

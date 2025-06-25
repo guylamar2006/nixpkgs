@@ -20,7 +20,7 @@ bundlerApp {
     changelog = "https://github.com/gettalong/hexapdf/blob/master/CHANGELOG.md";
     license = lib.licenses.agpl3Only;
     maintainers = with lib.maintainers; [ bbenno ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "hexapdf";
   };
 }

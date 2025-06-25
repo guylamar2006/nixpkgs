@@ -50,6 +50,6 @@ stdenv.mkDerivation rec {
     homepage = "https://scottmcpeak.com/elkhound/";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ peterhoeg ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

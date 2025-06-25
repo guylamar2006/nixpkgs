@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "http://contribs.martymac.org/";
     license = lib.licenses.bsd2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ bjornfor ];
   };
 }

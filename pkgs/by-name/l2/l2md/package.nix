@@ -32,6 +32,6 @@ stdenv.mkDerivation {
     homepage = "https://git.kernel.org/pub/scm/linux/kernel/git/dborkman/l2md.git";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ yoctocell ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

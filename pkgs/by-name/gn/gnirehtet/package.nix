@@ -64,6 +64,6 @@ rustPlatform.buildRustPackage rec {
     ];
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ symphorien ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

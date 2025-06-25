@@ -166,7 +166,7 @@ stdenv'.mkDerivation (finalAttrs: {
     license = lib.licenses.gpl3Plus;
     mainProgram = "mesonlsp";
     maintainers = with lib.maintainers; [ paveloom ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     # ../src/liblog/log.cpp:41:7: error: call to 'format' is ambiguous
     broken = stdenv.hostPlatform.isDarwin && stdenv.hostPlatform.isx86_64;
   };

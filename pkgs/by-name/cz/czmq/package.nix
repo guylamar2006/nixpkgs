@@ -22,6 +22,6 @@ stdenv.mkDerivation rec {
     description = "High-level C Binding for ZeroMQ";
     mainProgram = "zmakecert";
     license = lib.licenses.mpl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -33,7 +33,7 @@ stdenv.mkDerivation {
     homepage = "http://www.gnufoo.org/contacts/contacts.html";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ jwiegley ];
-    platforms = platforms.darwin;
-    hydraPlatforms = platforms.darwin;
+    platforms = lib.platforms.darwin;
+    hydraplatforms = lib.platforms.darwin;
   };
 }

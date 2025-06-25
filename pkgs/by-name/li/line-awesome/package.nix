@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
     homepage = "https://icons8.com/line-awesome";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ puzzlewolf ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

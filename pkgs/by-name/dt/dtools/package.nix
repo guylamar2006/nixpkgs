@@ -44,6 +44,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/dlang/tools";
     license = lib.licenses.boost;
     maintainers = with lib.maintainers; [ jtbx ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

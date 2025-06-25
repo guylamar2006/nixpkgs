@@ -48,7 +48,7 @@ stdenvNoCC.mkDerivation rec {
       cc-by-sa-40
       gpl3
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ romildo ];
   };
 }

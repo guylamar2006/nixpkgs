@@ -108,7 +108,7 @@ stdenv.mkDerivation rec {
     homepage = "https://exiv2.org";
     description = "Library and command-line utility to manage image metadata";
     mainProgram = "exiv2";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ wegank ];
   };

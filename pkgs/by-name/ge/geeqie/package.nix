@@ -184,6 +184,6 @@ stdenv.mkDerivation rec {
       pSub
       markus1189
     ];
-    platforms = platforms.gnu ++ platforms.linux;
+    platforms = lib.platforms.gnu ++ platforms.linux;
   };
 }

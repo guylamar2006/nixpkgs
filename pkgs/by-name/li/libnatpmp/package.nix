@@ -40,6 +40,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ orivej ];
     mainProgram = "natpmpc";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

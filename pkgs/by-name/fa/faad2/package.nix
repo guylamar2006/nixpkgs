@@ -42,6 +42,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ codyopel ];
     mainProgram = "faad";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

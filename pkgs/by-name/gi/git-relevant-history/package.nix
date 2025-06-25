@@ -25,7 +25,7 @@ python3.pkgs.buildPythonApplication {
     description = "Extract only relevant history from git repo";
     homepage = "https://github.com/rainlabs-eu/git-relevant-history";
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ bendlas ];
     mainProgram = "git-relevant-history";
   };

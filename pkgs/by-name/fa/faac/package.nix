@@ -36,6 +36,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/knik0/faac";
     license = lib.licenses.unfreeRedistributable;
     maintainers = with lib.maintainers; [ codyopel ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

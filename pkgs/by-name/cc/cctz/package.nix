@@ -33,6 +33,6 @@ stdenv.mkDerivation rec {
     description = "C++ library for translating between absolute and civil times";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ orivej ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.kokkonen.net/tjko/projects.html";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ aristid ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "jpegoptim";
   };
 }

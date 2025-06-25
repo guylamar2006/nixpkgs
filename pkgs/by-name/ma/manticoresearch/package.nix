@@ -123,6 +123,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.gpl2;
     mainProgram = "searchd";
     maintainers = with lib.maintainers; [ jdelStrother ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
     description = "Collection of tools for inspecting and visualizing disk usage";
     license = lib.licenses.gpl2Only;
 
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "duc";
   };

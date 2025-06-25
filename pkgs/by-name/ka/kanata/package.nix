@@ -58,7 +58,7 @@ rustPlatform.buildRustPackage rec {
       bmanuel
       linj
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "kanata";
   };
 }

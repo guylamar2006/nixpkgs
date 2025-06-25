@@ -34,6 +34,6 @@ stdenvNoCC.mkDerivation rec {
     '';
     license = lib.licenses.ofl;
     maintainers = with lib.maintainers; [ rycee ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

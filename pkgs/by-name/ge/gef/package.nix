@@ -84,7 +84,7 @@ stdenv.mkDerivation rec {
     mainProgram = "gef";
     homepage = "https://github.com/hugsy/gef";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ freax13 ];
   };
 }

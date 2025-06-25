@@ -51,6 +51,6 @@ stdenv.mkDerivation (attrs: {
     homepage = "https://github.com/sbmlteam/libsbml";
     license = lib.licenses.lgpl21Only;
     maintainers = with lib.maintainers; [ kupac ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

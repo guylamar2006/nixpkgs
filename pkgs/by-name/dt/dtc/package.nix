@@ -93,7 +93,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://git.kernel.org/pub/scm/utils/dtc/dtc.git";
     license = lib.licenses.gpl2Plus; # dtc itself is GPLv2, libfdt is dual GPL/BSD
     maintainers = with lib.maintainers; [ dezgeg ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "dtc";
   };
 })

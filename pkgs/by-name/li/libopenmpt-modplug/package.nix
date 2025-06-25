@@ -41,6 +41,6 @@ stdenv.mkDerivation rec {
     homepage = "https://lib.openmpt.org/libopenmpt/";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ OPNA2608 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
       bouk
       lillycham
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "gltfpack";
   };
 }

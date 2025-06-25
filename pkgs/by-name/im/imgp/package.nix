@@ -38,7 +38,7 @@ python3Packages.buildPythonApplication rec {
     mainProgram = "imgp";
     homepage = "https://github.com/jarun/imgp";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ sikmir ];
   };
 }

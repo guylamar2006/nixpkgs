@@ -39,6 +39,6 @@ stdenv.mkDerivation rec {
     mainProgram = "mktemp";
     homepage = "https://www.mktemp.org";
     license = lib.licenses.isc;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

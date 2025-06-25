@@ -36,7 +36,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     homepage = "https://brill.com/page/BrillFont/brill-typeface";
     downloadPage = "https://brill.com/page/419382";
     license = lib.licenses.unfree;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ trespaul ];
   };
 })

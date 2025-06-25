@@ -36,6 +36,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ stephenwithph ];
     teams = with lib.teams; [ geospatial ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

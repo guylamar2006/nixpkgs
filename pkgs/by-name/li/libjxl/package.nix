@@ -170,6 +170,6 @@ stdenv.mkDerivation rec {
     description = "JPEG XL image format reference implementation";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ nh2 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

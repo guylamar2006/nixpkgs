@@ -125,6 +125,6 @@ stdenv.mkDerivation {
     homepage = "https://jogamp.org/";
     changelog = "https://jogamp.org/deployment/jogamp-current/archive/ChangeLogs/";
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

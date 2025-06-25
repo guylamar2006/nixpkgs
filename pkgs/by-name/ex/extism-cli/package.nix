@@ -38,6 +38,6 @@ buildGoModule rec {
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ zshipko ];
     mainProgram = "extism";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

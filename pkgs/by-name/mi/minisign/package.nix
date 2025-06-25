@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     homepage = "https://jedisct1.github.io/minisign/";
     license = lib.licenses.isc;
     maintainers = with lib.maintainers; [ joachifm ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "minisign";
   };
 }

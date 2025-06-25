@@ -60,6 +60,6 @@ stdenv.mkDerivation (finalAttrs: {
       nim65s
       wegank
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/isabelle-prover/isabelle-linter";
     maintainers = with lib.maintainers; [ jvanbruegge ];
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

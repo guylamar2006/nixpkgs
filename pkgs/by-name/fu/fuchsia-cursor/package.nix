@@ -73,7 +73,7 @@ lib.checkListOfEnum "${pname}: theme variants" [ "Fuchsia" "Fuchsia-Pop" "Fuchsi
       description = "First OpenSource port of FuchsiaOS's cursors for Linux and Windows";
       homepage = "https://github.com/ful1e5/fuchsia-cursor";
       maintainers = with lib.maintainers; [ d3vil0p3r ];
-      platforms = platforms.all;
+      platforms = lib.platforms.all;
       license = lib.licenses.gpl3Plus;
     };
   }

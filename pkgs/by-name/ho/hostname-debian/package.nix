@@ -30,6 +30,6 @@ stdenv.mkDerivation rec {
     homepage = "https://tracker.debian.org/pkg/hostname";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ posch ];
-    platforms = platforms.gnu;
+    platforms = lib.platforms.gnu;
   };
 }

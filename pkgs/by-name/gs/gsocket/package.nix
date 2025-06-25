@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     description = "Connect like there is no firewall, securely";
     homepage = "https://www.gsocket.io";
     license = lib.licenses.bsd2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ msm ];
   };
 }

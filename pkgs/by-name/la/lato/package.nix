@@ -43,7 +43,7 @@ stdenvNoCC.mkDerivation {
     '';
 
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ chris-martin ];
   };
 }

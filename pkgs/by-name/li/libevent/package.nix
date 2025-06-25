@@ -85,6 +85,6 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://libevent.org/";
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

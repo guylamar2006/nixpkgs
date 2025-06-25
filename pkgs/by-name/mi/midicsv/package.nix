@@ -24,6 +24,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.fourmilab.ch/webtools/midicsv/";
     license = lib.licenses.publicDomain;
     maintainers = with lib.maintainers; [ orivej ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

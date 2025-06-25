@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/EHfive/ldacBT";
     license = lib.licenses.asl20;
     # libldac code detects & #error's out on non-LE byte order
-    platforms = platforms.littleEndian;
+    platforms = lib.platforms.littleEndian;
     maintainers = with lib.maintainers; [ ];
   };
 }

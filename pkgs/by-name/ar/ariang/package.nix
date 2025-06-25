@@ -36,6 +36,6 @@ buildNpmPackage rec {
     homepage = "http://ariang.mayswind.net/";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ stunkymonkey ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

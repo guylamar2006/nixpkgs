@@ -47,7 +47,7 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/TimothyGu/libilbc/blob/v${finalAttrs.version}/NEWS.md";
     maintainers = with lib.maintainers; [ jopejoe1 ];
     pkgConfigModules = [ "lilbc" ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.bsd3;
   };
 })

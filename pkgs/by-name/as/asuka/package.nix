@@ -33,7 +33,7 @@ rustPlatform.buildRustPackage rec {
     mainProgram = "asuka";
     homepage = "https://git.sr.ht/~julienxx/asuka";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ sikmir ];
   };
 }

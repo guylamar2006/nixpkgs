@@ -42,7 +42,7 @@ stdenv.mkDerivation {
     description = "JSON parser designed for maximum convenience within the shell";
     mainProgram = "jshon";
     license = lib.licenses.free;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ rushmorem ];
   };
 }

@@ -33,6 +33,6 @@ stdenv.mkDerivation rec {
     mainProgram = "pth-config";
     homepage = "https://www.gnu.org/software/pth";
     license = lib.licenses.lgpl21Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

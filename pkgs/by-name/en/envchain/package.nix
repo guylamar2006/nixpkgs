@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
     description = "Set environment variables with macOS keychain or D-Bus secret service";
     homepage = "https://github.com/sorah/envchain";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "envchain";
   };

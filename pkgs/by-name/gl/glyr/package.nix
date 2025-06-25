@@ -36,6 +36,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.lgpl3;
     maintainers = with lib.maintainers; [ sternenseemann ];
     mainProgram = "glyrc";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

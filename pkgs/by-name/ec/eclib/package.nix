@@ -52,6 +52,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/JohnCremona/eclib";
     license = lib.licenses.gpl2Plus;
     teams = with lib.teams; [ sage ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

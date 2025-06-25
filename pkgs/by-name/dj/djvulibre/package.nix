@@ -53,6 +53,6 @@ stdenv.mkDerivation rec {
     homepage = "https://djvu.sourceforge.net";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ Anton-Latukha ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

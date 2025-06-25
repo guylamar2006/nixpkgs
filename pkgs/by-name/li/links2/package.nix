@@ -75,6 +75,6 @@ stdenv.mkDerivation (finalAttrs: {
     maintainers = with lib.maintainers; [ raskin ];
     mainProgram = "links";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

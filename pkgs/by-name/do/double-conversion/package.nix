@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
     description = "Binary-decimal and decimal-binary routines for IEEE doubles";
     homepage = "https://github.com/google/double-conversion";
     license = lib.licenses.bsd3;
-    platforms = platforms.unix ++ platforms.windows;
+    platforms = lib.platforms.unix ++ platforms.windows;
     maintainers = with lib.maintainers; [ abbradar ];
   };
 }

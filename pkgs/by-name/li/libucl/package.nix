@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
     description = "Universal configuration library parser";
     homepage = "https://github.com/vstakhov/libucl";
     license = lib.licenses.bsd2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ jpotier ];
   };
 }

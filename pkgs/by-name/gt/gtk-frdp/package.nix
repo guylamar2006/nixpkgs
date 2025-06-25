@@ -53,6 +53,6 @@ stdenv.mkDerivation {
     description = "RDP viewer widget for GTK";
     teams = with lib.teams; [ gnome ];
     license = lib.licenses.lgpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

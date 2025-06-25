@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     description = "Unicode string library";
     homepage = "https://libs.suckless.org/libgrapheme/";
     license = lib.licenses.isc;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ sikmir ];
   };
 }

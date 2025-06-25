@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "GNU Chess engine";
     maintainers = with lib.maintainers; [ raskin ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.gpl3Plus;
   };
 }

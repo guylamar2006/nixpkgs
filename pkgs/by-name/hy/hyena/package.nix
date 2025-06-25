@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
       a smart job/task scheduler, a user-query/search parser, and much more. It's particularly
       useful for Gtk# applications, though only the Hyena.Gui assembly requires Gtk#.
     '';
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ obadz ];
     license = lib.licenses.mit;
   };

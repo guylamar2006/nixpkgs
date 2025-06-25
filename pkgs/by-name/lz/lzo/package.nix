@@ -39,6 +39,6 @@ stdenv.mkDerivation rec {
     homepage = "http://www.oberhumer.com/opensource/lzo";
     license = lib.licenses.gpl2Plus;
 
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -28,6 +28,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "http://rtega.be/chmn/index.php?subpage=68";
     license = [ licenses.arphicpl ];
     maintainers = with lib.maintainers; [ johnazoidberg ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

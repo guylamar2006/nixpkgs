@@ -53,7 +53,7 @@ stdenv.mkDerivation rec {
     description = "Minimal I2P router written in C++";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ edwtjo ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "i2pd";
   };
 }

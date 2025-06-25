@@ -65,7 +65,7 @@ stdenv.mkDerivation rec {
     description = "Software Defined Radio application";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ lasandell ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "CubicSDR";
   };
 }

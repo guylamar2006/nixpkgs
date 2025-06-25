@@ -65,6 +65,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/libsixel/libsixel";
     maintainers = with lib.maintainers; [ hzeller ];
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

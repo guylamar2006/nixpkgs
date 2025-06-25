@@ -78,6 +78,6 @@ stdenv.mkDerivation rec {
     downloadPage = "https://www.scorchworks.com/K40whisperer/k40whisperer.html#download";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ fooker ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

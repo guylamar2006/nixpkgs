@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     homepage = "https://empty.sourceforge.net";
     description = "Simple tool to automate interactive terminal applications";
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     longDescription = ''
       The empty utility provides an interface to execute and/or interact with
       processes under pseudo-terminal sessions (PTYs). This tool is definitely

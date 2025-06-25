@@ -64,7 +64,7 @@ stdenv.mkDerivation {
     homepage = "https://midimonster.net";
     description = "Multi-protocol translation tool";
     license = lib.licenses.bsd2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ keldu ];
     mainProgram = "midimonster";
   };

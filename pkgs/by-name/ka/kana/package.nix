@@ -66,6 +66,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl3Plus;
     mainProgram = "kana";
     maintainers = with lib.maintainers; [ aleksana ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -92,7 +92,7 @@ stdenv.mkDerivation rec {
       synthetica
     ];
     broken = stdenv.hostPlatform.isDarwin;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "jconsole";
   };
 }

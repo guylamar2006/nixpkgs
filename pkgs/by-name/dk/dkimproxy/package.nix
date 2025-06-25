@@ -39,6 +39,6 @@ stdenv.mkDerivation rec {
     homepage = "https://dkimproxy.sourceforge.net/";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ekleog ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

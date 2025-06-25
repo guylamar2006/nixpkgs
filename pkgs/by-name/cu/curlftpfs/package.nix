@@ -56,6 +56,6 @@ stdenv.mkDerivation rec {
     mainProgram = "curlftpfs";
     homepage = "https://curlftpfs.sourceforge.net";
     license = lib.licenses.gpl2Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

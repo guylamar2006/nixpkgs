@@ -63,7 +63,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
   meta = {
     description = "Helper for screenshots within Hyprland, based on grimshot";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     teams = [ lib.teams.hyprland ];
     mainProgram = "grimblast";
   };

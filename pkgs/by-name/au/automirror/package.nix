@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/schlomo/automirror";
     description = "Automatic Display Mirror";
     license = lib.licenses.gpl3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "automirror";
   };
 }

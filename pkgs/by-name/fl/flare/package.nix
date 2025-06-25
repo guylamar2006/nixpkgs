@@ -31,6 +31,6 @@ buildEnv {
       licenses.gpl3
       licenses.cc-by-sa-30
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

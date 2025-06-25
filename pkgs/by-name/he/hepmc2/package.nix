@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     description = "HepMC package is an object oriented event record written in C++ for High Energy Physics Monte Carlo Generators";
     license = lib.licenses.lgpl21;
     homepage = "http://hepmc.web.cern.ch/hepmc/";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ veprbl ];
   };
 }

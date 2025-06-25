@@ -33,6 +33,6 @@ stdenv.mkDerivation {
       bsd2
     ];
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

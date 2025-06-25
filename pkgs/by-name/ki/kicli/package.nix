@@ -24,7 +24,7 @@ buildGoModule rec {
     description = "CLI interface to the Kimai time tracking project";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ poelzi ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "kicli";
   };
 }

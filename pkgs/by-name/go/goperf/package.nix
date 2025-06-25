@@ -35,7 +35,7 @@ buildGoModule rec {
     description = "Tools and packages for analyzing Go benchmark results";
     homepage = "https://cs.opensource.google/go/x/perf";
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ pbsds ];
   };
 }

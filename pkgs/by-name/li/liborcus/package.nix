@@ -62,6 +62,6 @@ stdenv.mkDerivation rec {
     changelog = "https://gitlab.com/orcus/orcus/-/blob/${src.rev}/CHANGELOG";
     license = lib.licenses.mpl20;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

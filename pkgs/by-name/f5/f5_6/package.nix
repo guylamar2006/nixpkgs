@@ -29,7 +29,7 @@ stdenvNoCC.mkDerivation {
   meta = {
     homepage = "http://dotcolon.net/font/f5_6/";
     description = "Weighted decorative font";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       leenaars
       minijackson

@@ -31,7 +31,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://cleveraudio.org/";
     pkgConfigModules = [ "clap" ];
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ris ];
   };
 })

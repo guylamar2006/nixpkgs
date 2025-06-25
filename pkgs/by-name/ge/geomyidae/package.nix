@@ -24,6 +24,6 @@ stdenv.mkDerivation rec {
     homepage = "gopher://bitreich.org/1/scm/geomyidae";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ athas ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

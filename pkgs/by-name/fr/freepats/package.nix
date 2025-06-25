@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://freepats.zenvoid.org/";
     license = lib.licenses.gpl2;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ bjornfor ];
   };
 }

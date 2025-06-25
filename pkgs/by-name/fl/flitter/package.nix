@@ -34,7 +34,7 @@ rustPlatform.buildRustPackage rec {
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ fgaz ];
     homepage = "https://github.com/alexozer/flitter";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "flitter";
     broken = stdenv.hostPlatform.isDarwin;
   };

@@ -64,6 +64,6 @@ stdenv.mkDerivation rec {
     changelog = "https://github.com/ggerganov/imtui/blob/${src.rev}/CHANGELOG.md";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -36,6 +36,6 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.com/jallbrit/cbonsai";
     license = with licenses; [ gpl3Only ];
     maintainers = with lib.maintainers; [ manveru ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

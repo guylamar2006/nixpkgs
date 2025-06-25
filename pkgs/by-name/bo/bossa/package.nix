@@ -86,6 +86,6 @@ stdenv.mkDerivation rec {
     '';
     homepage = "http://www.shumatech.com/web/products/bossa";
     license = lib.licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

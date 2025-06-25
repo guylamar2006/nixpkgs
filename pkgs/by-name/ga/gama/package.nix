@@ -36,6 +36,6 @@ stdenv.mkDerivation rec {
     description = "Tools for adjustment of geodetic networks";
     homepage = "https://www.gnu.org/software/gama/";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

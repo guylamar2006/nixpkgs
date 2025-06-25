@@ -65,7 +65,7 @@ stdenv.mkDerivation rec {
     homepage = "http://lame.sourceforge.net";
     license = lib.licenses.lgpl2;
     maintainers = with lib.maintainers; [ codyopel ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "lame";
   };
 }

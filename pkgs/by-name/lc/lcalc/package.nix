@@ -39,6 +39,6 @@ stdenv.mkDerivation rec {
     mainProgram = "lcalc";
     license = with licenses; [ gpl2 ];
     teams = with lib.teams; [ sage ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -57,6 +57,6 @@ stdenv.mkDerivation rec {
     homepage = "https://boxes.thomasjensen.com";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ waiting-for-dev ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

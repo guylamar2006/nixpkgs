@@ -48,7 +48,7 @@ let
       homepage = "https://www.gnu.org/software/auctex";
       description = "Extensible package for writing and formatting TeX files in GNU Emacs and XEmacs";
       license = lib.licenses.gpl3Plus;
-      platforms = platforms.unix;
+      platforms = lib.platforms.unix;
     };
   });
 

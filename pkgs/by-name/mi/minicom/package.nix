@@ -66,6 +66,6 @@ stdenv.mkDerivation rec {
       download.
     '';
     maintainers = with lib.maintainers; [ peterhoeg ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

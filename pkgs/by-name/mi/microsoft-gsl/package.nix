@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/Microsoft/GSL";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       thoughtpolice
       yuriaisaka

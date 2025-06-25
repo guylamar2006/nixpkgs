@@ -40,6 +40,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ dotlambda ];
     teams = with lib.teams; [ geospatial ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

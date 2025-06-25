@@ -318,7 +318,7 @@ buildPythonApplication rec {
       "https://sw.kovidgoyal.net/kitty/changelog/"
       "https://github.com/kovidgoyal/kitty/blob/v${version}/docs/changelog.rst"
     ];
-    platforms = platforms.darwin ++ platforms.linux;
+    platforms = lib.platforms.darwin ++ platforms.linux;
     mainProgram = "kitty";
     maintainers = with lib.maintainers; [
       tex

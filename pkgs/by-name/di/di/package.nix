@@ -20,6 +20,6 @@ stdenv.mkDerivation rec {
     homepage = "https://diskinfo-di.sourceforge.io/";
     license = lib.licenses.zlib;
     maintainers = with lib.maintainers; [ manveru ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

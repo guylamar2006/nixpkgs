@@ -94,7 +94,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://www.cyrusimap.org/sasl";
     description = "Library for adding authentication support to connection-based protocols";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.bsdOriginal;
   };
 }

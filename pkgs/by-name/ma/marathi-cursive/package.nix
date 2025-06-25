@@ -27,6 +27,6 @@ stdenvNoCC.mkDerivation rec {
     description = "Modi script font with Graphite and OpenType support";
     maintainers = with lib.maintainers; [ mathnerd314 ];
     license = lib.licenses.mplus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

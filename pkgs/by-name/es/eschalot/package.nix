@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     description = "Tor hidden service name generator";
     homepage = src.meta.homepage;
     license = lib.licenses.isc;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ dotlambda ];
   };
 }

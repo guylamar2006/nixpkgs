@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
     description = "Sorts FAT partition table, for devices that don't do sorting of files";
     maintainers = with lib.maintainers; [ kovirobi ];
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "fatsort";
   };
 }

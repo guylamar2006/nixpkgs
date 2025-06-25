@@ -24,7 +24,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/stephank/dumpnar";
     description = "Minimal tool to produce a Nix NAR archive";
     license = lib.licenses.lgpl2Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ stephank ];
     mainProgram = "dumpnar";
   };

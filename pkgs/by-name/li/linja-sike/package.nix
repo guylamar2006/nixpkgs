@@ -19,7 +19,7 @@ fetchurl {
     homepage = "https://docs.google.com/document/d/1d8kUIAVlB-JNgK3LWr_zVCuUOZTh2hF7CfC6xQgxsBs/edit?usp=sharing";
     downloadPage = "https://wyub.github.io/tokipona/linjasike";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ somasis ];
   };
 }

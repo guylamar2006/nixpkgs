@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.asl20;
     homepage = "https://github.com/jumper149/blugon";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ jumper149 ];
     mainProgram = "blugon";
   };

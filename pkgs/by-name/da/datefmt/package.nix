@@ -21,7 +21,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = {
     homepage = "https://jb55.com/datefmt";
     description = "Tool that formats timestamps in text streams";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ jb55 ];
     mainProgram = "datefmt";

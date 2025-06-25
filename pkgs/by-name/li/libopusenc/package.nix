@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     description = "Library for encoding .opus audio files and live streams";
     license = lib.licenses.bsd3;
     homepage = "https://www.opus-codec.org/";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ pmiddend ];
   };
 }

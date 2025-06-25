@@ -21,6 +21,6 @@ stdenv.mkDerivation rec {
     mainProgram = "dctool";
     maintainers = with lib.maintainers; [ mguentner ];
     license = lib.licenses.lgpl21;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

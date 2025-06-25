@@ -43,6 +43,6 @@ stdenv.mkDerivation rec {
     homepage = "https://developer.gnome.org/gdl/";
     teams = with lib.teams; [ gnome ];
     license = lib.licenses.gpl2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

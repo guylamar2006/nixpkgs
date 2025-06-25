@@ -47,6 +47,6 @@ stdenv.mkDerivation (finalAttrs: {
     description = "libjaylink is a shared library written in C to access SEGGER J-Link and compatible devices";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ felixsinger ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

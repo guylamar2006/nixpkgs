@@ -99,6 +99,6 @@ stdenv.mkDerivation rec {
     homepage = "http://0pointer.de/lennart/projects/libcanberra/";
     license = lib.licenses.lgpl2Plus;
     maintainers = with lib.maintainers; [ RossComputerGuy ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

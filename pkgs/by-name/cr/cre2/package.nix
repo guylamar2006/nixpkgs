@@ -40,6 +40,6 @@ stdenv.mkDerivation rec {
     homepage = "http://marcomaggi.github.io/docs/cre2.html";
     description = "C Wrapper for RE2";
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

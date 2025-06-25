@@ -28,6 +28,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/adobe/bin2c";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ shadowrz ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

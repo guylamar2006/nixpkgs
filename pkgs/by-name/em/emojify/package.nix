@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/mrowa44/emojify";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ snowflake ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "emojify";
   };
 }

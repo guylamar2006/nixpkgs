@@ -52,6 +52,6 @@ stdenv.mkDerivation rec {
     '';
     maintainers = with lib.maintainers; [ OPNA2608 ];
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

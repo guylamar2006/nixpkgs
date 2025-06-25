@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Bash unit testing enterprise edition framework for professionals";
     maintainers = with lib.maintainers; [ pamplemousse ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.gpl3Plus;
     mainProgram = "bash_unit";
   };

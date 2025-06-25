@@ -133,6 +133,6 @@ stdenvNoCC.mkDerivation rec {
     changelog = "https://gitlab.com/limitland/comixcursors/-/blob/HEAD/NEWS";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ DerickEddington ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

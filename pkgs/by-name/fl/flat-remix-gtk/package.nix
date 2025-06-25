@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
     description = "GTK application theme inspired by material design";
     homepage = "https://drasite.com/flat-remix-gtk";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ mkg20001 ];
   };
 }

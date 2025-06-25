@@ -59,6 +59,6 @@ stdenv.mkDerivation rec {
     mainProgram = "gobby-0.5";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

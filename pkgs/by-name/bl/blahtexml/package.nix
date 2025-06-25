@@ -74,6 +74,6 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ xworld21 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

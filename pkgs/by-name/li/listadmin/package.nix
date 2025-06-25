@@ -57,7 +57,7 @@ stdenvNoCC.mkDerivation rec {
     '';
     homepage = "https://sourceforge.net/projects/listadmin/";
     license = lib.licenses.publicDomain;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ nomeata ];
     mainProgram = "listadmin";
   };

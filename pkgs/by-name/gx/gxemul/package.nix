@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "gxemul";
   };
 }

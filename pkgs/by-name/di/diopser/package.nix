@@ -101,6 +101,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/robbert-vdh/diopser";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ magnetophon ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

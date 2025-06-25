@@ -32,6 +32,6 @@ stdenv.mkDerivation rec {
     homepage = "https://libcddb.sourceforge.net/";
     license = lib.licenses.lgpl2Plus;
     mainProgram = "cddb_query";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

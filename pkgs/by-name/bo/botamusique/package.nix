@@ -159,7 +159,7 @@ stdenv.mkDerivation rec {
     description = "Bot to play youtube / soundcloud / radio / local music on Mumble";
     homepage = "https://github.com/azlux/botamusique";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "botamusique";
   };

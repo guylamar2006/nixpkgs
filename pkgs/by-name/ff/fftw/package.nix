@@ -98,7 +98,7 @@ stdenv.mkDerivation (finalAttrs: {
       }
       .${precision}
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     # quad-precision requires libquadmath from gfortran, but libquadmath is not supported on aarch64
     badPlatforms = lib.optionals (precision == "quad-precision") platforms.aarch64;
   };

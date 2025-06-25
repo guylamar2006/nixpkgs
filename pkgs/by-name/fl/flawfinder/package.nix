@@ -24,6 +24,6 @@ python3.pkgs.buildPythonApplication rec {
     homepage = "https://dwheeler.com/flawfinder/";
     license = with licenses; [ gpl2Only ];
     maintainers = with lib.maintainers; [ fab ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

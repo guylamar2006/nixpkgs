@@ -69,7 +69,7 @@ stdenv.mkDerivation rec {
     mainProgram = "fast-downward";
     homepage = "https://www.fast-downward.org/";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ abbradar ];
   };
 }

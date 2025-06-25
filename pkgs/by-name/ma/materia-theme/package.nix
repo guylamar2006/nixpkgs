@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
     description = "Material Design theme for GNOME/GTK based desktop environments";
     homepage = "https://github.com/nana-4/materia-theme";
     license = lib.licenses.gpl2Only;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ mounium ];
   };
 }

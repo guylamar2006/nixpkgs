@@ -85,6 +85,6 @@ stdenv.mkDerivation rec {
       asl20
     ];
     maintainers = with lib.maintainers; [ mindavi ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

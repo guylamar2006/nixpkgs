@@ -29,6 +29,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://github.com/impallari/Libre-Franklin";
     license = lib.licenses.ofl;
     maintainers = with lib.maintainers; [ cmfwyp ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

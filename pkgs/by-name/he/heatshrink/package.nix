@@ -44,7 +44,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/atomicobject/heatshrink";
     license = lib.licenses.isc;
     maintainers = with lib.maintainers; [ fgaz ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "heatshrink";
   };
 })

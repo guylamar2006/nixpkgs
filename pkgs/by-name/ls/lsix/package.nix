@@ -36,7 +36,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     description = "Shows thumbnails in terminal using sixel graphics";
     homepage = "https://github.com/hackerb9/lsix";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       justinlime
       kidonng

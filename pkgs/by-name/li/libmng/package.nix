@@ -36,6 +36,6 @@ stdenv.mkDerivation rec {
     homepage = "http://www.libmng.com";
     license = lib.licenses.zlib;
     maintainers = with lib.maintainers; [ marcweber ];
-    platforms = platforms.unix ++ platforms.windows;
+    platforms = lib.platforms.unix ++ platforms.windows;
   };
 }

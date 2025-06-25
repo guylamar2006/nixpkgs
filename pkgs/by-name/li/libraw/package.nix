@@ -56,6 +56,6 @@ stdenv.mkDerivation rec {
       cddl
       lgpl2Plus
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

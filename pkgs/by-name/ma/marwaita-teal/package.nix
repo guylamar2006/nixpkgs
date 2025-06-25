@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
     description = "Manjaro Style of Marwaita GTK theme";
     homepage = "https://www.pling.com/p/1351213/";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ romildo ];
   };
 }

@@ -27,7 +27,7 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://github.com/bulletmark/edir";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ guyonvarch ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "edir";
   };
 }

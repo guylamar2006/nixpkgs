@@ -86,6 +86,6 @@ stdenv.mkDerivation rec {
     homepage = "https://ccid.apdu.fr/";
     license = lib.licenses.lgpl21Plus;
     maintainers = with lib.maintainers; [ anthonyroussel ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

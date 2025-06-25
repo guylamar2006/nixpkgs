@@ -33,7 +33,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/svanderburg/libilbm";
     changelog = "https://github.com/svanderburg/libilbm/blob/master/ChangeLog";
     maintainers = with lib.maintainers; [ _414owen ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.mit;
   };
 }

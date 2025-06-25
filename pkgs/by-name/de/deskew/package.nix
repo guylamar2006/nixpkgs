@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
       mpl11
     ];
     maintainers = with lib.maintainers; [ ryantm ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "deskew";
   };
 

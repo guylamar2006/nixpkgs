@@ -30,6 +30,6 @@ stdenvNoCC.mkDerivation {
     homepage = "https://github.com/aclements/latexrun";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ lucus16 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

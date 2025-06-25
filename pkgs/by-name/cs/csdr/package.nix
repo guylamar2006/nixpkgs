@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/jketterl/csdr";
     description = "Simple DSP library and command-line tool for Software Defined Radio";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin;
     teams = with lib.teams; [ c3d2 ];
   };

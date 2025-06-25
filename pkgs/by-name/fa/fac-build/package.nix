@@ -50,7 +50,7 @@ rustPlatform.buildRustPackage rec {
     '';
     homepage = "https://physics.oregonstate.edu/~roundyd/fac";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ dpercy ];
     mainProgram = "fac";
   };

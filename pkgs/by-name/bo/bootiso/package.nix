@@ -68,7 +68,7 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://github.com/jsamr/bootiso";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ muscaln ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "bootiso";
   };
 }

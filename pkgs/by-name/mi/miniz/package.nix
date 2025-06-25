@@ -42,7 +42,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/richgel999/miniz";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ astro ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     pkgConfigModules = [ "miniz" ];
   };
 })

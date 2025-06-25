@@ -38,6 +38,6 @@ stdenv.mkDerivation {
       ptrhlm
       stephen-huan
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

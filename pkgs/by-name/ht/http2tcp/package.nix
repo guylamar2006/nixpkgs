@@ -43,6 +43,6 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://www.linta.de/~aehlig/http2tcp/";
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

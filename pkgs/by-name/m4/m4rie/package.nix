@@ -41,6 +41,6 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.gpl2Plus;
     teams = with lib.teams; [ sage ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

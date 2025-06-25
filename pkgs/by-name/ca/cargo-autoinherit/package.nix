@@ -25,7 +25,7 @@ rustPlatform.buildRustPackage rec {
       asl20 # OR
       mit
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ matthiasbeyer ];
     mainProgram = "cargo-autoinherit";
   };

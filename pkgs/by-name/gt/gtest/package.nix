@@ -61,7 +61,7 @@ stdenv.mkDerivation rec {
     description = "Google's framework for writing C++ tests";
     homepage = "https://github.com/google/googletest";
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ivan-tkatchev ];
   };
 }

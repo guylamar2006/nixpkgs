@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/${owner}/bicgl";
     description = "Brain Imaging Centre graphics library";
     maintainers = with lib.maintainers; [ bcdarwin ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.hpndUc;
   };
 }

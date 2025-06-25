@@ -42,7 +42,7 @@ buildGoModule rec {
     description = "Feature-packed proxy & relay utility optimized for lossy, unstable connections";
     homepage = "https://github.com/apernet/hysteria";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ oluceps ];
     mainProgram = "hysteria";
   };

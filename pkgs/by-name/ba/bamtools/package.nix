@@ -38,6 +38,6 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/pezmaster31/bamtools/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ natsukium ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

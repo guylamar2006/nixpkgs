@@ -94,7 +94,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://leanprover.github.io/";
     changelog = "https://github.com/leanprover/lean4/blob/${finalAttrs.src.tag}/RELEASES.md";
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       danielbritten
       jthulhu

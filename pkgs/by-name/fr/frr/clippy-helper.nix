@@ -61,6 +61,6 @@ stdenv.mkDerivation {
       lgpl21Plus
     ];
     maintainers = with lib.maintainers; [ thillux ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

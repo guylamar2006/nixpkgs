@@ -49,6 +49,6 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.free;
     maintainers = with lib.maintainers; [ raskin ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

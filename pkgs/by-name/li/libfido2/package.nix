@@ -74,6 +74,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/Yubico/libfido2";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ prusnak ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

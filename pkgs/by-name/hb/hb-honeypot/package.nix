@@ -33,7 +33,7 @@ stdenv.mkDerivation {
     mainProgram = "hb-honeypot";
     homepage = "https://github.com/D3vil0p3r/hb-honeypot";
     maintainers = with lib.maintainers; [ d3vil0p3r ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.gpl3Plus;
   };
 }

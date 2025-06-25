@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
     description = "Continuous delivery server specializing in advanced workflow modeling and visualization";
     homepage = "http://www.go.cd";
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     sourceProvenance = with sourceTypes; [
       binaryBytecode
       binaryNativeCode

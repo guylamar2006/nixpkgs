@@ -55,6 +55,6 @@ stdenv.mkDerivation rec {
     description = "CK LRZIP compression program (LZMA + RZIP)";
     maintainers = with lib.maintainers; [ ];
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

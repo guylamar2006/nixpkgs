@@ -30,7 +30,7 @@ stdenvNoCC.mkDerivation {
     description = "Sharp, readable, vector-y version of Monocraft";
     homepage = "https://github.com/IdreesInc/Miracode";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ coca ];
   };
 }

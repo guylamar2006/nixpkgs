@@ -58,6 +58,6 @@ replaceVarsWith {
     '';
     license = [ licenses.mit ];
     maintainers = with lib.maintainers; [ artturin ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

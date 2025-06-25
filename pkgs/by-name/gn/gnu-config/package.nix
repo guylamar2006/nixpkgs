@@ -67,6 +67,6 @@ stdenv.mkDerivation {
       dezgeg
       emilytrau
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

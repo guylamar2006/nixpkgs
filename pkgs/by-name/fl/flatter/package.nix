@@ -48,7 +48,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/keeganryan/flatter";
     license = lib.licenses.lgpl3Only;
     mainProgram = "flatter";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ josephsurin ];
   };
 }

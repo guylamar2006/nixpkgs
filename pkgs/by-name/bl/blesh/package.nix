@@ -64,6 +64,6 @@ stdenvNoCC.mkDerivation rec {
       aiotter
       matthiasbeyer
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

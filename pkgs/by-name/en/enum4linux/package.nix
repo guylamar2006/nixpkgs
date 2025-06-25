@@ -50,6 +50,6 @@ stdenv.mkDerivation rec {
     homepage = "https://labs.portcullis.co.uk/tools/enum4linux/";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ fishi0x01 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

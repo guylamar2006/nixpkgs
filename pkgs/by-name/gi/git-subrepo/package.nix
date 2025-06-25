@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
     description = "Git submodule alternative";
     mainProgram = "git-subrepo";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ryantrinkle ];
   };
 }

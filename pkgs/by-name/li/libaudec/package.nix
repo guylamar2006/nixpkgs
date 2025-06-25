@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.zrythm.org";
     license = lib.licenses.agpl3Plus;
     mainProgram = "audec";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

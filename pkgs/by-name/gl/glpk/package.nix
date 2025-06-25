@@ -78,6 +78,6 @@ stdenv.mkDerivation rec {
 
     teams = with lib.teams; [ sage ];
     mainProgram = "glpsol";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

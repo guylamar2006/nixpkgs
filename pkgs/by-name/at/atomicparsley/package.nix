@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
     description = "CLI program for reading, parsing and setting metadata into MPEG-4 files";
     homepage = "https://github.com/wez/atomicparsley";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ pjones ];
     mainProgram = "AtomicParsley";
   };

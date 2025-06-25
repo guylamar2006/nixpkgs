@@ -118,7 +118,7 @@ stdenv.mkDerivation rec {
     description = "Companion library to APR, the Apache Portable Runtime";
     mainProgram = "apu-1-config";
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.asl20;
   };
 }

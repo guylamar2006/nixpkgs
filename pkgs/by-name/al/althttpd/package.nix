@@ -28,7 +28,7 @@ stdenv.mkDerivation {
     homepage = "https://sqlite.org/althttpd/";
     license = lib.licenses.publicDomain;
     maintainers = with lib.maintainers; [ siraben ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "althttpd";
   };
 }

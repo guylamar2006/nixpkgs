@@ -44,6 +44,6 @@ stdenv.mkDerivation rec {
       objects across a network.
     '';
     license = lib.licenses.bsd2;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

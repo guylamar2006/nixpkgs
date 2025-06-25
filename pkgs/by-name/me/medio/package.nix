@@ -34,7 +34,7 @@ stdenvNoCC.mkDerivation {
       on the proportions of the font Tenderness (from the same designer),
       but with hairline serifs in the style of a Didone.
     '';
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       leenaars
       minijackson

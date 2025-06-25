@@ -31,6 +31,6 @@ stdenv.mkDerivation rec {
     homepage = "https://njw.me.uk/getxbook/";
     license = lib.licenses.isc;
     maintainers = with lib.maintainers; [ obadz ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

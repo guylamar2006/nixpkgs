@@ -26,6 +26,6 @@ stdenv.mkDerivation rec {
       sander
       raskin
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -68,6 +68,6 @@ stdenv.mkDerivation (finalAttrs: {
     }/NEWS";
     license = lib.licenses.lgpl3Plus;
     maintainers = with lib.maintainers; [ jtojnar ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

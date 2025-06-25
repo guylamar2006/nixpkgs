@@ -24,6 +24,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/fumiama/base16384";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ aleksana ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

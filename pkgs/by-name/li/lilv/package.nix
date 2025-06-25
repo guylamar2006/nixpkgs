@@ -80,6 +80,6 @@ stdenv.mkDerivation rec {
     description = "C library to make the use of LV2 plugins";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

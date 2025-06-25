@@ -19,6 +19,6 @@ stdenv.mkDerivation rec {
     description = "Development framework for C providing high performance and highly flexible algorithms";
     homepage = "https://github.com/atheme/libmowgli-2";
     license = lib.licenses.isc;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

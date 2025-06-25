@@ -57,6 +57,6 @@ stdenv.mkDerivation rec {
     homepage = "https://ario-player.sourceforge.net/";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ garrison ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

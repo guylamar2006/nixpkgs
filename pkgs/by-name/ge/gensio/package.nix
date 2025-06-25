@@ -43,6 +43,6 @@ stdenv.mkDerivation rec {
       sarcasticadmin
     ];
     mainProgram = "gensiot";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

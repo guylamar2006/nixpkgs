@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = lib.licenses.gpl2;
     maintainers = with lib.maintainers; [ bzizou ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

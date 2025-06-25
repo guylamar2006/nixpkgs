@@ -62,6 +62,6 @@ stdenv.mkDerivation {
     description = "C++ Library for creating GUIs";
     mainProgram = "CEGUISampleFramework-0.9999";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

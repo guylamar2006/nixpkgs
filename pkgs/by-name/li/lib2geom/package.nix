@@ -111,6 +111,6 @@ stdenv.mkDerivation (finalAttrs: {
       licenses.mpl11
     ];
     maintainers = with lib.maintainers; [ jtojnar ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

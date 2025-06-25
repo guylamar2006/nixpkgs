@@ -32,6 +32,6 @@ stdenvNoCC.mkDerivation rec {
     # License (LPPL), version 1.3c or later." - GUST website
     license = lib.licenses.lppl13c;
     maintainers = with lib.maintainers; [ siddharthist ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

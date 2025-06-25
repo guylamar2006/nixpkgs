@@ -50,7 +50,7 @@ stdenv.mkDerivation {
       lazy code generation and a library of useful words.
     '';
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ fgaz ];
   };
 }

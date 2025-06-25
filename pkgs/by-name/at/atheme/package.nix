@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
     description = "Set of services for IRC networks";
     homepage = "https://atheme.github.io/";
     license = lib.licenses.isc;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ leo60228 ];
   };
 }

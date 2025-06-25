@@ -62,6 +62,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ Thra11 ];
     mainProgram = "libpostal_data";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -18,7 +18,7 @@ stdenv.mkDerivation rec {
     mainProgram = "direvent";
     homepage = "https://www.gnu.org.ua/software/direvent/";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ puffnfresh ];
   };
 }

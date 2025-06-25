@@ -81,6 +81,6 @@ stdenv.mkDerivation rec {
       lovek323
       eleanor
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

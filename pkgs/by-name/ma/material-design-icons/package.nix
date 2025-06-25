@@ -40,7 +40,7 @@ stdenvNoCC.mkDerivation rec {
     '';
     homepage = "https://materialdesignicons.com";
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       vlaci
       dixslyf

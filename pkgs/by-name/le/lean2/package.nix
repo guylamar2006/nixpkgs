@@ -58,7 +58,7 @@ stdenv.mkDerivation {
     description = "Automatic and interactive theorem prover (version with HoTT support)";
     homepage = "http://leanprover.github.io";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       thoughtpolice
     ];

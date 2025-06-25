@@ -27,6 +27,6 @@ stdenvNoCC.mkDerivation rec {
     description = "Garamond Libre font family";
     maintainers = with lib.maintainers; [ drupol ];
     license = lib.licenses.x11;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -144,7 +144,7 @@ stdenv.mkDerivation {
       system and is in violation of the license of the PoDoFo library.
     '';
     license = lib.licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ rnhmjoj ];
   };
 }

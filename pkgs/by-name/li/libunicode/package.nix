@@ -47,7 +47,7 @@ stdenv.mkDerivation (final: {
     description = "Modern C++20 Unicode library";
     mainProgram = "unicode-query";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ moni ];
   };
 })

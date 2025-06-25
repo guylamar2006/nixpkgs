@@ -61,7 +61,7 @@ python3Packages.buildPythonApplication rec {
     '';
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ sepi ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     broken = stdenv.hostPlatform.isDarwin; # never built on Hydra https://hydra.nixos.org/job/nixpkgs/trunk/frescobaldi.x86_64-darwin
     mainProgram = "frescobaldi";
   };

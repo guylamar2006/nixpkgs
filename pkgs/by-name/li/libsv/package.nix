@@ -23,6 +23,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/uael/sv";
     license = lib.licenses.unlicense;
     maintainers = with lib.maintainers; [ sigmanificient ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

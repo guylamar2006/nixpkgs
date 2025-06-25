@@ -48,6 +48,6 @@ stdenv.mkDerivation rec {
     mainProgram = "ffmsindex";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ wegank ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

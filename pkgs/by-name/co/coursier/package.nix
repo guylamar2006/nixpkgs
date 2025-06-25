@@ -75,6 +75,6 @@ stdenv.mkDerivation rec {
       adelbertc
       nequissimus
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
     description = "Open source SDR platform";
     homepage = "https://greatscottgadgets.com/hackrf/";
     license = lib.licenses.gpl2;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ sjmackenzie ];
   };
 }

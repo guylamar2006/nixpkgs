@@ -96,6 +96,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://kaldi-asr.org";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ mic92 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

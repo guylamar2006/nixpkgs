@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
     description = "Another main loop";
     inherit (src.meta) homepage;
     license = lib.licenses.isc;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ primeos ];
     broken = stdenv.hostPlatform.isDarwin;
   };

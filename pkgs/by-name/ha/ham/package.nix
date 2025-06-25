@@ -51,6 +51,6 @@ perlPackages.buildPerlPackage {
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ aw ];
     mainProgram = "ham";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

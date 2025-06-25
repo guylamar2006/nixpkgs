@@ -102,7 +102,7 @@ stdenv.mkDerivation (finalAttrs: {
       johnrtitor
       onny
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 
 })

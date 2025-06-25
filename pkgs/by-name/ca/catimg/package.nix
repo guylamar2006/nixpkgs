@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/posva/catimg";
     description = "Insanely fast image printing in your terminal";
     maintainers = with lib.maintainers; [ ryantm ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "catimg";
   };
 

@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://www.gnu.org/software/cim/";
     license = lib.licenses.gpl2;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     badPlatforms = [ "aarch64-darwin" ];
     maintainers = with lib.maintainers; [ pbsds ];
   };

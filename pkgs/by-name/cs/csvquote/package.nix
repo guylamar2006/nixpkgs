@@ -47,6 +47,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/dbro/csvquote";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ figsoda ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

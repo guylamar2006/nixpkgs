@@ -23,7 +23,7 @@ stdenv.mkDerivation {
     homepage = "http://acme.com/software/micro_httpd/";
     description = "Really small HTTP server";
     license = lib.licenses.bsd2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "micro_httpd";
   };

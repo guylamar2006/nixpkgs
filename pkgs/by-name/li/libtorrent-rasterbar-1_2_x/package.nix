@@ -97,6 +97,6 @@ stdenv.mkDerivation {
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ ];
     broken = stdenv.hostPlatform.isDarwin;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

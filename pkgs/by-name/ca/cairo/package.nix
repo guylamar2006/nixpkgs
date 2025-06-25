@@ -157,7 +157,7 @@ stdenv.mkDerivation (
         "cairo-ps"
         "cairo-svg"
       ] ++ lib.optional gobjectSupport "cairo-gobject";
-      platforms = platforms.all;
+      platforms = lib.platforms.all;
     };
   }
 )

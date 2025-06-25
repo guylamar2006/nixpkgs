@@ -67,6 +67,6 @@ stdenv.mkDerivation rec {
       codyopel
       raskin
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

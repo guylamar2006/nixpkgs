@@ -27,7 +27,7 @@ stdenvNoCC.mkDerivation {
     description = "Typeface designed to offer greater legibility and readability for low vision readers";
     homepage = "https://brailleinstitute.org/freefont";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ zhaofengli ];
   };
 }

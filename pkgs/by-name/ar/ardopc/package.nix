@@ -47,6 +47,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ oliver-koss ];
     mainProgram = "ardopc";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

@@ -46,6 +46,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.artistic2;
     homepage = "https://bowtie-bio.sourceforge.net";
     maintainers = with lib.maintainers; [ prusnak ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

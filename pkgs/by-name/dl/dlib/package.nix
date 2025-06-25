@@ -94,6 +94,6 @@
     homepage = "http://www.dlib.net";
     license = lib.licenses.boost;
     maintainers = with lib.maintainers; [ christopherpoole ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

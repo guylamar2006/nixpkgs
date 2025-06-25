@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.kokkonen.net/tjko/projects.html";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ bjornfor ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "jpeginfo";
   };
 }

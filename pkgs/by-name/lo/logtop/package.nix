@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.bsd2;
     homepage = "https://github.com/JulienPalard/logtop";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ starcraft66 ];
     mainProgram = "logtop";
   };

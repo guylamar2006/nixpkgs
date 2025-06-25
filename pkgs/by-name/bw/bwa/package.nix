@@ -47,6 +47,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl3Plus;
     homepage = "https://bio-bwa.sourceforge.net/";
     maintainers = with lib.maintainers; [ luispedro ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

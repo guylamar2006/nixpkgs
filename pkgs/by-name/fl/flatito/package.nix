@@ -38,7 +38,7 @@ buildRubyGem rec {
     homepage = "https://github.com/ceritium/flatito";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ rucadi ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "flatito";
   };
 }

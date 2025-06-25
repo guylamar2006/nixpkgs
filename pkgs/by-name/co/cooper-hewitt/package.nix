@@ -26,7 +26,7 @@ stdenvNoCC.mkDerivation {
     homepage = "https://www.cooperhewitt.org/open-source-at-cooper-hewitt/cooper-hewitt-the-typeface-by-chester-jenkins/";
     description = "Contemporary sans serif, with characters composed of modified-geometric curves and arches";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
   };
 }

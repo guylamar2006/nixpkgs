@@ -28,7 +28,7 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://github.com/skosch/Crimson";
     description = "Font family inspired by beautiful oldstyle typefaces";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ rycee ];
   };
 }

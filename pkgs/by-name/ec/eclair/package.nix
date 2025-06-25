@@ -37,6 +37,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/ACINQ/eclair";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ prusnak ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

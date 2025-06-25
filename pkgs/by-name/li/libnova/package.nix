@@ -26,6 +26,6 @@ stdenv.mkDerivation rec {
     homepage = "http://libnova.sf.net";
     license = lib.licenses.gpl2;
     maintainers = with lib.maintainers; [ hjones2199 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

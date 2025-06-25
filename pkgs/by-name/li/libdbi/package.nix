@@ -17,6 +17,6 @@ stdenv.mkDerivation rec {
     homepage = "https://libdbi.sourceforge.net/";
     description = "DB independent interface to DB";
     license = lib.licenses.lgpl21;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

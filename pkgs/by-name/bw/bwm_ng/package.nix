@@ -44,7 +44,7 @@ stdenv.mkDerivation rec {
     mainProgram = "bwm-ng";
     homepage = "http://www.gropp.org/?id=projects&sub=bwm-ng";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ];
     longDescription = ''
       bwm-ng supports:

@@ -37,7 +37,7 @@ stdenvNoCC.mkDerivation {
     '';
     homepage = "https://displaay.net/typeface/azeret/azeret-mono/";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ _21eleven ];
   };
 }

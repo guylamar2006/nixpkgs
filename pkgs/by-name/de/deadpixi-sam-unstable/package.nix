@@ -52,6 +52,6 @@ stdenv.mkDerivation {
     description = "Updated version of the sam text editor";
     license = lib.licenses.lpl-102;
     maintainers = with lib.maintainers; [ ramkromberg ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

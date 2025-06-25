@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     description = "Updates the copyright information in a set of files";
     mainProgram = "copyright-update";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ rycee ];
   };
 }

@@ -48,6 +48,6 @@ stdenv.mkDerivation rec {
     '';
     maintainers = with lib.maintainers; [ izorkin ];
     license = lib.licenses.lgpl3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

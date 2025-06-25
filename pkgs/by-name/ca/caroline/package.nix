@@ -40,6 +40,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/dcharles525/Caroline";
     maintainers = with lib.maintainers; [ grindhold ];
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

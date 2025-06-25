@@ -59,6 +59,6 @@ stdenvNoCC.mkDerivation {
     homepage = "https://www.kernel.org/";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ phip1611 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

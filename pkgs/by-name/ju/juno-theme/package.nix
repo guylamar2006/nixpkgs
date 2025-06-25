@@ -44,7 +44,7 @@ stdenv.mkDerivation rec {
     description = "GTK themes inspired by epic vscode themes";
     homepage = "https://github.com/EliverLara/Juno";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ gvolpe ];
   };
 }

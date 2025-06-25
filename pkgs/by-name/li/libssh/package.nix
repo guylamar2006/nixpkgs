@@ -62,6 +62,6 @@ stdenv.mkDerivation rec {
     homepage = "https://libssh.org";
     license = lib.licenses.lgpl2Plus;
     maintainers = with lib.maintainers; [ sander ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

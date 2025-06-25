@@ -38,7 +38,7 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "mac-robber";
     homepage = "https://www.sleuthkit.org/mac-robber/";
     maintainers = with lib.maintainers; [ d3vil0p3r ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.gpl2Only;
   };
 })

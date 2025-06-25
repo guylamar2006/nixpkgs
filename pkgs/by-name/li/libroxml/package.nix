@@ -19,6 +19,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.lgpl3;
     maintainers = with lib.maintainers; [ mpickering ];
     mainProgram = "roxml";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

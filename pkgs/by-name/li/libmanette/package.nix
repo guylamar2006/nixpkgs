@@ -92,6 +92,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://gnome.pages.gitlab.gnome.org/libmanette/";
     license = lib.licenses.lgpl21Plus;
     teams = with lib.teams; [ gnome ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

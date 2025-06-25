@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.jacoco.org/jacoco";
     changelog = "https://www.jacoco.org/jacoco/trunk/doc/changes.html";
     license = lib.licenses.epl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ figsoda ];
   };
 }

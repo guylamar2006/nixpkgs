@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     description = "Mass snmp scanner";
     homepage = "http://s-tech.elsat.net.pl";
     license = lib.licenses.gpl2Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ bycEEE ];
     mainProgram = "braa";
   };

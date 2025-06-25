@@ -25,6 +25,6 @@ stdenv.mkDerivation rec {
     description = "Guile bindings for the OpenGL graphics API";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ vyp ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

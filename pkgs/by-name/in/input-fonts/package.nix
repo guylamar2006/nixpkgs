@@ -109,6 +109,6 @@ stdenv.mkDerivation rec {
       jtojnar
       romildo
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

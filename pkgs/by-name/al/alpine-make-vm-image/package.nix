@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
     description = "Make customized Alpine Linux disk image for virtual machines";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ wegank ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "alpine-make-vm-image";
   };
 }

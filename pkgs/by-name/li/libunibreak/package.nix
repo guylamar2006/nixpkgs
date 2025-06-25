@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/adah1972/libunibreak";
     description = "Implementation of line breaking and word breaking algorithms as in the Unicode standard";
     license = lib.licenses.zlib;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ coroa ];
   };
 }

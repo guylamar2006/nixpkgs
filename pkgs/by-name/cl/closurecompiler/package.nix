@@ -33,6 +33,6 @@ stdenv.mkDerivation rec {
     homepage = "https://developers.google.com/closure/compiler/";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

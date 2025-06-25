@@ -148,8 +148,8 @@ stdenv.mkDerivation rec {
       rnhmjoj
       markus1189
     ];
-    platforms = platforms.all;
-    badPlatforms = platforms.darwin;
+    platforms = lib.platforms.all;
+    badplatforms = lib.platforms.darwin;
     mainProgram = "imv";
   };
 }

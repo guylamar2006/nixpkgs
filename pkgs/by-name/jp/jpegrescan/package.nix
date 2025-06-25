@@ -49,7 +49,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/kud/jpegrescan";
     license = lib.licenses.publicDomain;
     maintainers = with lib.maintainers; [ ramkromberg ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "jpegrescan";
   };
 }

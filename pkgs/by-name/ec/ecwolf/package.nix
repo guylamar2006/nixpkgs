@@ -113,6 +113,6 @@ stdenv.mkDerivation (finalAttrs: {
       jayman2000
       sander
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

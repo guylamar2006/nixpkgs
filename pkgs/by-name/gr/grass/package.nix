@@ -167,7 +167,7 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ mpickering ];
     teams = with lib.teams; [ geospatial ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "grass";
   };
 })

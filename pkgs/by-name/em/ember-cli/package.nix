@@ -37,7 +37,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     description = "Ember.js command line utility";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ jfvillablanca ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "ember";
   };
 })

@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/jvm-profiling-tools/async-profiler";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ mschuwalow ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "async-profiler";
   };
 }

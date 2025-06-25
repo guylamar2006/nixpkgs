@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
     description = "gnuclad tries to help the environment by creating trees.  Its primary use will be generating cladogram trees for the GNU/Linux distro timeline project";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ mog ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "gnuclad";
   };
 }

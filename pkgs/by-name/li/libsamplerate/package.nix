@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
     homepage = "https://libsndfile.github.io/libsamplerate/";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ lovek323 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     # Linker is unhappy with the `.def` file.
     broken = stdenv.hostPlatform.isMinGW;
   };

@@ -60,6 +60,6 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "gnome-mines";
     teams = with lib.teams; [ gnome ];
     license = lib.licenses.gpl3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

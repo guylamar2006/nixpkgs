@@ -57,7 +57,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://lxi-tools.github.io/";
     license = lib.licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ vq ];
   };
 })

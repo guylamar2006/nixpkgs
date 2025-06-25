@@ -27,6 +27,6 @@ rustPlatform.buildRustPackage {
     homepage = "https://lnx.rs/";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ happysalada ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

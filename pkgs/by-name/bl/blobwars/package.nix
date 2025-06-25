@@ -60,6 +60,6 @@ stdenv.mkDerivation rec {
       free
     ];
     maintainers = with lib.maintainers; [ iblech ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -61,7 +61,7 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.com/ipcalc/ipcalc";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ peterhoeg ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "ipcalc";
   };
 }

@@ -28,6 +28,6 @@ stdenv.mkDerivation {
       raskin
     ];
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

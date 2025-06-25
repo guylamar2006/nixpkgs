@@ -20,6 +20,6 @@ stdenv.mkDerivation rec {
     description = "Logging framework for C++ patterned after Apache log4j";
     mainProgram = "log4cpp-config";
     license = lib.licenses.lgpl21Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

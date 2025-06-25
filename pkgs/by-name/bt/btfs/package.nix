@@ -39,6 +39,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/johang/btfs";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ rnhmjoj ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

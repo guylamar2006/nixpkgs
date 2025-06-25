@@ -42,6 +42,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://chromium.googlesource.com/breakpad";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ berberman ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

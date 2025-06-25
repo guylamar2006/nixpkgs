@@ -132,7 +132,7 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/harfbuzz/harfbuzz/raw/${finalAttrs.version}/NEWS";
     maintainers = with lib.maintainers; [ ];
     license = lib.licenses.mit;
-    platforms = platforms.unix ++ platforms.windows;
+    platforms = lib.platforms.unix ++ platforms.windows;
     pkgConfigModules = [
       "harfbuzz"
       "harfbuzz-gobject"

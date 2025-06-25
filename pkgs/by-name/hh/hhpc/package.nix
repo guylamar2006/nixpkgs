@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Hides the mouse pointer in X11";
     maintainers = with lib.maintainers; [ nico202 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.bsd3;
     mainProgram = "hhpc";
   };

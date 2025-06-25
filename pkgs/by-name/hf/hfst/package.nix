@@ -51,6 +51,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/hfst/hfst";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ lurkki ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

@@ -49,6 +49,6 @@ stdenv.mkDerivation (finalAttrs: {
       offline
     ];
     pkgConfigModules = [ "libsass" ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

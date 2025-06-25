@@ -25,6 +25,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/GPUOpen-LibrariesAndSDKs/AMF";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ devusb ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

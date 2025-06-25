@@ -32,6 +32,6 @@ stdenv.mkDerivation rec {
     description = "Library to compute the homfly polynomial of knots and links";
     license = lib.licenses.unlicense;
     teams = with lib.teams; [ sage ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

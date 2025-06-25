@@ -41,7 +41,7 @@ buildDotnetModule (finalAttrs: {
     homepage = "https://github.com/VUISIS/formula-dotnet";
     license = lib.licenses.mspl;
     maintainers = with lib.maintainers; [ siraben ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "formula";
   };
 })

@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
        * William Stein's database of interesting curves
     '';
     license = lib.licenses.gpl2;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     teams = with lib.teams; [ sage ];
   };
 }

@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/chneukirchen/lr";
     description = "List files recursively";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ vikanezrimaya ];
     mainProgram = "lr";
   };

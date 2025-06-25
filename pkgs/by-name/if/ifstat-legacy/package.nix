@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
     description = "Report network interfaces bandwith just like vmstat/iostat do for other system counters - legacy version";
     homepage = "http://gael.roualland.free.fr/ifstat/";
     maintainers = with lib.maintainers; [ peterhoeg ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.gpl2Plus;
     mainProgram = "ifstat-legacy";
   };

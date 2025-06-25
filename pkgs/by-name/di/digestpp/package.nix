@@ -28,6 +28,6 @@ stdenvNoCC.mkDerivation {
     homepage = "https://github.com/kerukuro/digestpp";
     license = lib.licenses.unlicense;
     maintainers = with lib.maintainers; [ ambroisie ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

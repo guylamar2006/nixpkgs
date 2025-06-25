@@ -50,6 +50,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/nfc-tools/libnfc";
     license = lib.licenses.lgpl3Plus;
     maintainers = with lib.maintainers; [ offline ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

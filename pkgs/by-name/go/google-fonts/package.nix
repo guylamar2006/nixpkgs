@@ -77,7 +77,7 @@ stdenvNoCC.mkDerivation {
       ofl
       ufl
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     hydraPlatforms = [ ];
     maintainers = with lib.maintainers; [ manveru ];
     sourceProvenance = [ sourceTypes.binaryBytecode ];

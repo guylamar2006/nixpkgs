@@ -22,6 +22,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/PapirusDevelopmentTeam/materia-kde";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ diffumist ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

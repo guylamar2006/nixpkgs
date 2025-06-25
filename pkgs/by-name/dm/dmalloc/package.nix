@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     homepage = "https://dmalloc.com";
     license = lib.licenses.isc;
     maintainers = with lib.maintainers; [ azahi ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "dmalloc";
   };
 }

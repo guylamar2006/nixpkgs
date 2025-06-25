@@ -34,7 +34,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/json-c/json-c/wiki";
     changelog = "https://github.com/json-c/json-c/blob/${finalAttrs.src.rev}/ChangeLog";
     maintainers = with lib.maintainers; [ lovek323 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.mit;
   };
 })

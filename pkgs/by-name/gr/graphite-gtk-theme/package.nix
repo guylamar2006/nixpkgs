@@ -127,7 +127,7 @@ lib.checkListOfEnum "${pname}: theme variants"
       description = "Flat Gtk+ theme based on Elegant Design";
       homepage = "https://github.com/vinceliuice/Graphite-gtk-theme";
       license = lib.licenses.gpl3Only;
-      platforms = platforms.unix;
+      platforms = lib.platforms.unix;
       maintainers = with lib.maintainers; [ romildo ];
     };
   }

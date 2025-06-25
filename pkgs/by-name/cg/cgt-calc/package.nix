@@ -43,6 +43,6 @@ python3Packages.buildPythonApplication rec {
     license = lib.licenses.mit;
     mainProgram = "cgt-calc";
     maintainers = with lib.maintainers; [ ambroisie ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

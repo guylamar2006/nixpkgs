@@ -35,7 +35,7 @@ stdenv.mkDerivation {
     homepage = "https://git.linuxtv.org/edid-decode.git";
     license = with licenses; [ mit ];
     maintainers = with lib.maintainers; [ Madouura ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "edid-decode";
   };
 }

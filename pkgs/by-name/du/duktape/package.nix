@@ -50,6 +50,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ fgaz ];
     mainProgram = "duk";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

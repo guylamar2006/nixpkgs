@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
       directly through the Git command line.
     '';
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "git-hub";
   };
 }

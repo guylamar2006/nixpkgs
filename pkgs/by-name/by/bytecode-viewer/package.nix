@@ -75,7 +75,7 @@ maven.buildMavenPackage rec {
       shard7
       d3vil0p3r
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     sourceProvenance = with sourceTypes; [
       fromSource
       binaryBytecode # deps

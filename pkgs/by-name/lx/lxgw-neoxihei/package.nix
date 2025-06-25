@@ -27,7 +27,7 @@ stdenvNoCC.mkDerivation rec {
     description = "Simplified Chinese sans-serif font derived from IPAex Gothic";
     homepage = "https://github.com/lxgw/LxgwNeoXiHei";
     license = lib.licenses.ipa;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ zendo ];
   };
 }

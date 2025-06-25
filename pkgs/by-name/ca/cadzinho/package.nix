@@ -62,7 +62,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/zecruel/CadZinho";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ sikmir ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "cadzinho";
   };
 }

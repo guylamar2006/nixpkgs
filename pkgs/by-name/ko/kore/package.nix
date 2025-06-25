@@ -75,7 +75,7 @@ stdenv.mkDerivation rec {
     description = "Easy to use web application framework for C";
     homepage = "https://kore.io";
     license = lib.licenses.isc;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ johnmh ];
   };
 }

@@ -41,6 +41,6 @@ buildPythonApplication rec {
     homepage = "https://github.com/Hamuko/cum";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

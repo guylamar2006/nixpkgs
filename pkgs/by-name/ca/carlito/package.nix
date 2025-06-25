@@ -31,7 +31,7 @@ stdenvNoCC.mkDerivation rec {
       of the tyPoland foundry and based upon his Lato font.
     '';
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
 
     # Reduce the priority of this package. The intent is that if you

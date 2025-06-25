@@ -34,7 +34,7 @@ buildRubyGem rec {
     homepage = "https://github.com/akerl/hss";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ nixy ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "hss";
   };
 }

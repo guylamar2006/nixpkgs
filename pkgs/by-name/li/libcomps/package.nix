@@ -65,6 +65,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/rpm-software-management/libcomps";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ katexochen ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

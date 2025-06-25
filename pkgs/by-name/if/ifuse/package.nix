@@ -41,7 +41,7 @@ stdenv.mkDerivation {
       devices.
     '';
     license = lib.licenses.lgpl21Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "ifuse";
   };

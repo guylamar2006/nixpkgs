@@ -145,7 +145,7 @@ rustPlatform.buildRustPackage {
       pyrox0
       n8henrie
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
 
     longDescription = ''
       Espanso detects when you type a keyword and replaces it while you're typing.

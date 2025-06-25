@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
     description = "Website permitting upload of a file in a simple way and giving a unique link to it";
     license = lib.licenses.agpl3Plus;
     homepage = "https://gitlab.com/mojo42/Jirafeau";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
   };
 }

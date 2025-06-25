@@ -49,6 +49,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://www.trna.se/ARAGORN/";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ bzizou ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

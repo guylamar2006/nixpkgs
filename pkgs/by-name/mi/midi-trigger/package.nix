@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
     description = "LV2 plugin which generates MIDI notes by detected audio signal peaks";
     maintainers = with lib.maintainers; [ unclechu ];
     license = lib.licenses.gpl3Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
     description = "C++ library to manipulate VCard standard format. Part of the Linphone project";
     homepage = "https://gitlab.linphone.org/BC/public/belcard";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ jluttine ];
   };
 }

@@ -78,7 +78,7 @@ stdenv.mkDerivation (finalAttrs: {
       compared to those, grenedalf is significantly more scalable, more user
       friendly, and offers more settings and input file formats.
     '';
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ bzizou ];
   };

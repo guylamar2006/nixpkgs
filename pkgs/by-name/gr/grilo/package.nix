@@ -83,6 +83,6 @@ stdenv.mkDerivation rec {
     description = "Framework that provides access to various sources of multimedia content, using a pluggable system";
     teams = with lib.teams; [ gnome ];
     license = lib.licenses.lgpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

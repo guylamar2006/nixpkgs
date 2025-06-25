@@ -47,6 +47,6 @@ stdenv.mkDerivation rec {
       gpl3
     ];
     maintainers = with lib.maintainers; [ peterhoeg ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

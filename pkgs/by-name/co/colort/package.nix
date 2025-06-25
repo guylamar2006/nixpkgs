@@ -21,7 +21,7 @@ stdenv.mkDerivation {
     description = "Program for 'tinting' color values";
     homepage = "https://github.com/neeasade/colort";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ neeasade ];
     mainProgram = "colort";
   };

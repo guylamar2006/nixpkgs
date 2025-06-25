@@ -42,6 +42,6 @@ stdenv.mkDerivation (finalAttrs: {
     description = "HFST spell checker library and command line tool";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ lurkki ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

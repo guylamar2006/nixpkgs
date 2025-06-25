@@ -31,6 +31,6 @@ stdenv.mkDerivation {
     mainProgram = "among-sus";
     license = lib.licenses.agpl3Plus;
     maintainers = with lib.maintainers; [ eyjhb ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

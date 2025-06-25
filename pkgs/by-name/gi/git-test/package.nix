@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/spotify/git-test";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "git-test";
   };
 }

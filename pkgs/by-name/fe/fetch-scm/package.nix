@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
     description = "System information fetcher written in GNU Guile Scheme";
     homepage = "https://github.com/KikyTokamuro/fetch.scm";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ vel ];
     mainProgram = "fetch-scm";
   };

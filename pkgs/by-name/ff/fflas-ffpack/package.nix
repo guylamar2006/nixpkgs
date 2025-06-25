@@ -68,7 +68,7 @@ stdenv.mkDerivation rec {
     mainProgram = "fflas-ffpack-config";
     license = lib.licenses.lgpl21Plus;
     teams = with lib.teams; [ sage ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     homepage = "https://linbox-team.github.io/fflas-ffpack/";
   };
 }

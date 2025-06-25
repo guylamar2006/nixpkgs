@@ -27,7 +27,7 @@ stdenvNoCC.mkDerivation {
     description = "Sitelen pona font resembling the style found in Toki Pona: The Language of Good (lipu pu), by jan Sa";
     homepage = "https://jansa-tp.github.io/linja-pi-pu-lukin/";
     license = lib.licenses.unfree; # license is unspecified in repository
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ somasis ];
   };
 }

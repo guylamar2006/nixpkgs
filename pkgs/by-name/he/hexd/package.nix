@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/FireyFly/hexd";
     maintainers = with lib.maintainers; [ FireyFly ];
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "hexd";
   };
 }

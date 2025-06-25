@@ -73,6 +73,6 @@ stdenv.mkDerivation {
     homepage = "https://www.buzztrax.org/";
     license = lib.licenses.lgpl21Plus;
     maintainers = with lib.maintainers; [ bendlas ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

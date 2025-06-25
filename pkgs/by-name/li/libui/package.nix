@@ -66,6 +66,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/andlabs/libui";
     description = "Simple and portable (but not inflexible) GUI library in C that uses the native GUI technologies of each platform it supports";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

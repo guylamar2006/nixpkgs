@@ -56,6 +56,6 @@ stdenv.mkDerivation rec {
     description = "Required C library for client-side and queryable encryption in MongoDB";
     homepage = "https://github.com/mongodb/libmongocrypt";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

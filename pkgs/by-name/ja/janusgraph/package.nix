@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
     homepage = "https://janusgraph.org/";
     mainProgram = "janusgraph-server";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ners ];
   };
 }

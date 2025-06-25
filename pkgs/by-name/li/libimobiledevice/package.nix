@@ -80,7 +80,7 @@ stdenv.mkDerivation rec {
       devices to the Linux Desktop.
     '';
     license = lib.licenses.lgpl21Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ RossComputerGuy ];
   };
 }

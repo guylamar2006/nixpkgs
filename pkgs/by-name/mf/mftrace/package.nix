@@ -71,6 +71,6 @@ stdenv.mkDerivation (finalAttrs: {
       mit
     ];
     maintainers = with lib.maintainers; [ xworld21 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

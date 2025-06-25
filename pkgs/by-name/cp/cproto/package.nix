@@ -39,6 +39,6 @@ stdenv.mkDerivation rec {
     mainProgram = "cproto";
     homepage = "https://invisible-island.net/cproto/";
     license = lib.licenses.publicDomain;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

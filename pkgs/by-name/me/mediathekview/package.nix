@@ -58,6 +58,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl3Plus;
     mainProgram = "mediathek";
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

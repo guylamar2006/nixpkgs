@@ -93,6 +93,6 @@ stdenv.mkDerivation rec {
       lgpl21Plus
     ];
     maintainers = with lib.maintainers; [ thoughtpolice ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

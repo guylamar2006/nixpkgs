@@ -23,7 +23,7 @@ stdenv.mkDerivation {
     mainProgram = "fasttext";
     homepage = "https://fasttext.cc/";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ];
   };
 }

@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     description = "Simple async wrapper around CURL for C++";
     homepage = "https://nheko.im/nheko-reborn/coeurl";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ rnhmjoj ];
   };
 }

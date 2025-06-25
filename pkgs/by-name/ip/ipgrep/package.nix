@@ -38,6 +38,6 @@ python3Packages.buildPythonApplication rec {
     '';
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ leenaars ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

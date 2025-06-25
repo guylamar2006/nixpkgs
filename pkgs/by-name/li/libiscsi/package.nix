@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     description = "iscsi client library and utilities";
     homepage = "https://github.com/sahlberg/libiscsi";
     license = lib.licenses.lgpl2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ misuzu ];
   };
 }

@@ -41,6 +41,6 @@ stdenvNoCC.mkDerivation {
     license = lib.licenses.gpl2Plus;
     mainProgram = "maxfetch";
     maintainers = with lib.maintainers; [ jtbx ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -142,6 +142,6 @@ stdenv.mkDerivation (finalAttrs: {
       costrouc
       cpcloud
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

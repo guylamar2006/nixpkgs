@@ -85,6 +85,6 @@ stdenv.mkDerivation (finalAttrs: {
     ];
     changelog = "https://www.jenkins.io/changelog-stable/#v${finalAttrs.version}";
     mainProgram = "jenkins-cli";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

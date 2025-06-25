@@ -67,6 +67,6 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "gnome-text-editor";
     teams = with lib.teams; [ gnome ];
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

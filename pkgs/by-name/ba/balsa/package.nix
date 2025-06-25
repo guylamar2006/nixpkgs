@@ -74,7 +74,7 @@ stdenv.mkDerivation rec {
     homepage = "http://pawsa.fedorapeople.org/balsa/";
     description = "E-mail client for GNOME";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ romildo ];
   };
 }

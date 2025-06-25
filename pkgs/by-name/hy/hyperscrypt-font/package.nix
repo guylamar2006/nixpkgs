@@ -42,6 +42,6 @@ stdenvNoCC.mkDerivation rec {
     '';
     license = lib.licenses.ofl;
     maintainers = with lib.maintainers; [ leenaars ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

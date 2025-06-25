@@ -82,6 +82,6 @@ stdenv.mkDerivation (finalAttrs: {
     description = "C++14/17 based HTTP web application framework";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ urlordjames ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
     changelog = "https://github.com/fbdtemme/bencode/blob/${src.rev}/CHANGELOG.md";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     # Broken because the default stdenv on these targets doesn't support C++20.
     broken = with stdenv; isDarwin || (isLinux && isAarch64);
   };

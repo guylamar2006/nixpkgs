@@ -128,7 +128,7 @@ let
         ncsa
       ];
       maintainers = with lib.maintainers; [ thomasjm ];
-      platforms = platforms.unix;
+      platforms = lib.platforms.unix;
     };
   };
 

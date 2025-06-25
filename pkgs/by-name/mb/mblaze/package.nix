@@ -73,7 +73,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/leahneukirchen/mblaze";
     description = "Unix utilities for processing and interacting with mail messages which are stored in maildir folders";
     license = lib.licenses.cc0;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ajgrf ];
   };
 }

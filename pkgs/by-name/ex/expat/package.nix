@@ -77,7 +77,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://libexpat.github.io/";
     description = "Stream-oriented XML parser library written in C";
     mainProgram = "xmlwf";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.mit; # expat version
     pkgConfigModules = [ "expat" ];
   };

@@ -27,6 +27,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://pcaro.es/p/hermit";
     license = lib.licenses.ofl;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

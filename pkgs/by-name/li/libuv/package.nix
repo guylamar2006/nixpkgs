@@ -203,7 +203,7 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/libuv/libuv/blob/v${finalAttrs.version}/ChangeLog";
     pkgConfigModules = [ "libuv" ];
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = with licenses; [
       mit
       isc

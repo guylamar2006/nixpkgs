@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/etr/libhttpserver";
     license = lib.licenses.lgpl21Plus;
     maintainers = with lib.maintainers; [ pongo1231 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin; # configure: error: cannot find required auxiliary files: ltmain.sh
   };
 }

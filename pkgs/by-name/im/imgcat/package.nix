@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/eddieantonio/imgcat";
     license = lib.licenses.isc;
     maintainers = with lib.maintainers; [ jwiegley ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "imgcat";
   };
 }

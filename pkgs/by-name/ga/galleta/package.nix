@@ -54,7 +54,7 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "galleta";
     homepage = "https://sourceforge.net/projects/odessa/files/Galleta";
     maintainers = with lib.maintainers; [ d3vil0p3r ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.bsd3;
   };
 })

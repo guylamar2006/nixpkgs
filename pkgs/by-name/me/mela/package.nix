@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     mainProgram = "mela-config";
     license = lib.licenses.gpl3;
     homepage = "https://github.com/vbertone/MELA";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ veprbl ];
   };
 }

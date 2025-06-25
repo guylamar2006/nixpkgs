@@ -57,7 +57,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/dirkvdb/ffmpegthumbnailer";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ jagajaga ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "ffmpegthumbnailer";
   };
 }

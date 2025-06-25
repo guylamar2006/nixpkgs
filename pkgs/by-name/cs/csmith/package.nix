@@ -62,6 +62,6 @@ stdenv.mkDerivation rec {
       to find and report more than 400 previously unknown compiler bugs.
     '';
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

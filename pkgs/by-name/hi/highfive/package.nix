@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
     description = "Header-only C++ HDF5 interface";
     license = lib.licenses.boost;
     homepage = "https://bluebrain.github.io/HighFive/";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ robertodr ];
   };
 }

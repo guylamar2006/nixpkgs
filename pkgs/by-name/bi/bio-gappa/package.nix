@@ -51,7 +51,7 @@ stdenv.mkDerivation (finalAttrs: {
       tools such as EPA-ng, RAxML-EPA or pplacer, and usually stored in jplace
       files.
     '';
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ bzizou ];
     mainProgram = "gappa";

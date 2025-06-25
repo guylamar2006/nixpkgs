@@ -31,6 +31,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://commitmono.com/";
     license = lib.licenses.ofl;
     maintainers = with lib.maintainers; [ yoavlavi ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

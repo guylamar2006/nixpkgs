@@ -92,7 +92,7 @@ stdenv.mkDerivation (finalAttrs: {
       raskin
       offline
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "gvnccapture";
   };
 })

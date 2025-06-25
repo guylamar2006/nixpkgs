@@ -26,7 +26,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/drdnar/convfont";
     license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "convfont";
   };
 }

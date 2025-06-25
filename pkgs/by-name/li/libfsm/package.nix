@@ -64,7 +64,7 @@ stdenv.mkDerivation rec {
     description = "DFA regular expression library & friends";
     homepage = "https://github.com/katef/libfsm";
     license = lib.licenses.bsd2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ thoughtpolice ];
   };
 }

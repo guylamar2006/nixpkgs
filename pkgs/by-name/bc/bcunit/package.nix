@@ -27,6 +27,6 @@ stdenv.mkDerivation {
       raskin
       jluttine
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

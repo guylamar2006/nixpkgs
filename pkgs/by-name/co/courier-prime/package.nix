@@ -26,6 +26,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://github.com/quoteunquoteapps/CourierPrime";
     license = lib.licenses.ofl;
     maintainers = with lib.maintainers; [ austinbutler ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

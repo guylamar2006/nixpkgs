@@ -48,7 +48,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://cowsay.diamonds";
     changelog = "https://github.com/cowsay-org/cowsay/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       rob
       anthonyroussel

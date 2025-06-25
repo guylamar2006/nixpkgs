@@ -117,6 +117,6 @@ stdenv.mkDerivation {
     license = lib.licenses.gpl3Plus;
     mainProgram = "domination";
     maintainers = with lib.maintainers; [ fgaz ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

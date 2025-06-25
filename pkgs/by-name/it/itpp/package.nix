@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
     mainProgram = "itpp-config";
     homepage = "https://itpp.sourceforge.net/";
     license = lib.licenses.gpl3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ];
     broken = stdenv.hostPlatform.isDarwin; # never built on Hydra https://hydra.nixos.org/job/nixpkgs/trunk/itpp.x86_64-darwin
   };

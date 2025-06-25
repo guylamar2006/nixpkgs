@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/dCache/dcap";
     changelog = "https://github.com/dCache/dcap/blob/master/ChangeLog";
     license = lib.licenses.lgpl2Only;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "dccp";
     maintainers = with lib.maintainers; [ ShamrockLee ];
   };

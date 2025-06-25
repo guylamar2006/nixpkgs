@@ -25,6 +25,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/devnev/libxdg-basedir";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ nickcao ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -31,6 +31,6 @@ stdenv.mkDerivation rec {
     downloadPage = "https://us.metamath.org/#downloads";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ taneb ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

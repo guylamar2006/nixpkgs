@@ -26,6 +26,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/meelgroup/louvain-community";
     license = lib.licenses.lgpl3Only;
     maintainers = with lib.maintainers; [ t4ccer ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

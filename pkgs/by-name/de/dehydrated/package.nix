@@ -58,7 +58,7 @@ stdenv.mkDerivation rec {
     description = "Letsencrypt/acme client implemented as a shell-script";
     mainProgram = "dehydrated";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ pstn ];
   };
 }

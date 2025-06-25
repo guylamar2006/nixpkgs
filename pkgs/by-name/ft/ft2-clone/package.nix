@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     maintainers = with lib.maintainers; [ fgaz ];
     # From HOW-TO-COMPILE.txt:
     # > This code is NOT big-endian compatible
-    platforms = platforms.littleEndian;
+    platforms = lib.platforms.littleEndian;
     mainProgram = "ft2-clone";
   };
 }

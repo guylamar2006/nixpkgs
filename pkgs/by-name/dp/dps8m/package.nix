@@ -47,6 +47,6 @@ stdenv.mkDerivation rec {
       sarcasticadmin
     ];
     mainProgram = "dps8m";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

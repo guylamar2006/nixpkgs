@@ -41,7 +41,7 @@ stdenv.mkDerivation {
     '';
     homepage = "https://github.com/szechyjs/dsd";
     license = lib.licenses.gpl2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "dsd";
   };

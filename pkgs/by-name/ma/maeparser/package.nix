@@ -29,6 +29,6 @@ stdenv.mkDerivation rec {
     description = "Maestro file parser";
     maintainers = with lib.maintainers; [ rmcgibbo ];
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

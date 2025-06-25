@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
     mainProgram = "mkrom";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ siraben ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

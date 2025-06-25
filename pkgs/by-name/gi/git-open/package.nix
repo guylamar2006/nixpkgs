@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/paulirish/git-open";
     description = "Open the GitHub page or website for a repository in your browser";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ SuperSandro2000 ];
     mainProgram = "git-open";
   };

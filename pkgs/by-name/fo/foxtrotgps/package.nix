@@ -94,7 +94,7 @@ stdenv.mkDerivation {
     '';
     homepage = "https://www.foxtrotgps.org/";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ wucke13 ];
   };
 }

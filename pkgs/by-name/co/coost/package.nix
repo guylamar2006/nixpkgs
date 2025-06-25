@@ -48,6 +48,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/idealvin/coost";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ sigmanificient ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

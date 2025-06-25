@@ -23,6 +23,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/skywind3000/kcp";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

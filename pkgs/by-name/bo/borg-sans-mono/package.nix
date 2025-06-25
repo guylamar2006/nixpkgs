@@ -26,7 +26,7 @@ stdenvNoCC.mkDerivation {
     description = "Droid Sans Mono Slashed + Hasklig-style ligatures";
     homepage = "https://github.com/marnen/borg-sans-mono";
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ atila ];
   };
 }

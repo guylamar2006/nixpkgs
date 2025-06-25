@@ -37,6 +37,6 @@ stdenv.mkDerivation rec {
     homepage = "https://jimjag.github.io/epm/";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ pSub ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -78,7 +78,7 @@ stdenv.mkDerivation rec {
       bsd3 # or
       lgpl3Plus
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ToxicFrog ];
     longDescription = ''
       Blitz++ is a C++ class library for scientific computing which provides

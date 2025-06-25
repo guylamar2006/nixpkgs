@@ -40,7 +40,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     description = "Command line tool to mine and analyze data from version-control systems";
     mainProgram = "code-maat";
     homepage = "https://github.com/adamtornhill/code-maat";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ sir4ur0n ];
   };

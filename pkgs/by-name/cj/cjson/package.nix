@@ -33,6 +33,6 @@ stdenv.mkDerivation rec {
     description = "Ultralightweight JSON parser in ANSI C";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ matthiasbeyer ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

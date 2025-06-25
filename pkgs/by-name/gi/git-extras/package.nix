@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/tj/git-extras";
     description = "GIT utilities -- repo summary, repl, changelog population, author commit percentages and more";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ SuperSandro2000 ];
   };
 }

@@ -25,7 +25,7 @@ stdenv.mkDerivation {
   meta = {
     description = "Tool for visualizing and communicating the errors in rendered images";
     license = lib.licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ zmitchell ];
     mainProgram = "flip";
   };

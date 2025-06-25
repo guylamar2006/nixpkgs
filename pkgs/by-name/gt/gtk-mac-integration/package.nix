@@ -41,6 +41,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.lgpl21;
     homepage = "https://gitlab.gnome.org/GNOME/gtk-mac-integration";
     maintainers = with lib.maintainers; [ matthewbauer ];
-    platforms = platforms.darwin;
+    platforms = lib.platforms.darwin;
   };
 }

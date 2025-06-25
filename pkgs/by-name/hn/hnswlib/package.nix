@@ -64,6 +64,6 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/nmslib/hnswlib/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ natsukium ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

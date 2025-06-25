@@ -42,6 +42,6 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.gnome.org/Archive/goocanvasmm";
     license = lib.licenses.lgpl2;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

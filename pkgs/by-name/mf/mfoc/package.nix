@@ -42,6 +42,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl2Plus;
     homepage = "https://github.com/nfc-tools/mfoc";
     maintainers = with lib.maintainers; [ offline ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -49,6 +49,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/skaslev/gl3w";
     license = lib.licenses.unlicense;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

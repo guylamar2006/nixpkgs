@@ -34,7 +34,7 @@ stdenv.mkDerivation {
     homepage = "https://gitlab.com/fehlstart/fehlstart";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ mounium ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "fehlstart";
   };
 }

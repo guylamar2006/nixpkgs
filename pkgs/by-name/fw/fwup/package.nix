@@ -67,6 +67,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/fhunleth/fwup";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ georgewhewell ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

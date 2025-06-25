@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://libexif.github.io";
     description = "Utility to read and manipulate EXIF data in digital photographs";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.lgpl21Plus;
     mainProgram = "exif";
   };

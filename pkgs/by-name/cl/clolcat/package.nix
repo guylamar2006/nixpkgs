@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Much faster lolcat";
     homepage = "https://github.com/IchMageBaume/clolcat";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ felipeqq2 ];
     license = lib.licenses.wtfpl;
     mainProgram = "clolcat";

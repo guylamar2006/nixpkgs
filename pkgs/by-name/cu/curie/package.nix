@@ -28,7 +28,7 @@ stdenvNoCC.mkDerivation rec {
     description = "Upscaled version of scientifica";
     homepage = "https://github.com/NerdyPepper/curie";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ moni ];
   };
 }

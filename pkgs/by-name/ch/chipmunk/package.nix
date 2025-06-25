@@ -57,6 +57,6 @@ stdenv.mkDerivation rec {
     mainProgram = "chipmunk_demos";
     homepage = "http://chipmunk2d.net/";
     license = lib.licenses.mit;
-    platforms = platforms.unix; # supports Windows and MacOS as well, but those require more work
+    platforms = lib.platforms.unix; # supports Windows and MacOS as well, but those require more work
   };
 }

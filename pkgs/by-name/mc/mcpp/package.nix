@@ -31,6 +31,6 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "mcpp";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

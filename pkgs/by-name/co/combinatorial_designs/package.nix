@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
         Designs, 2ed.
     '';
     license = lib.licenses.publicDomain;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     teams = with lib.teams; [ sage ];
   };
 }

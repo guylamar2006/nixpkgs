@@ -74,6 +74,6 @@ maven.buildMavenPackage rec {
       wnklmnn
       tomasajt
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

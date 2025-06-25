@@ -33,6 +33,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/adamritter/fastgron";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ zowoq ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

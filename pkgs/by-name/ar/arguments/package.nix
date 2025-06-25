@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/${owner}/arguments";
     description = "Library for argument handling for MINC programs";
     maintainers = with lib.maintainers; [ bcdarwin ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.gpl2Plus;
   };
 }

@@ -36,6 +36,6 @@ python3.pkgs.buildPythonApplication {
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ katexochen ];
     mainProgram = "ci_edit";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

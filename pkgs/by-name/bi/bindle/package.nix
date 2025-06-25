@@ -42,6 +42,6 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://github.com/deislabs/bindle";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

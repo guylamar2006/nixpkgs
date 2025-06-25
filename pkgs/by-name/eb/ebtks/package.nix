@@ -37,7 +37,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/BIC-MNI/EBTKS";
     description = "Library for working with MINC files";
     maintainers = with lib.maintainers; [ bcdarwin ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.free;
   };
 }

@@ -55,7 +55,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "GNU implementation of the Unicode Bidirectional Algorithm (bidi)";
     mainProgram = "fribidi";
     license = lib.licenses.lgpl21;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     pkgConfigModules = [ "fribidi" ];
   };
 })

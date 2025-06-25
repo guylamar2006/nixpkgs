@@ -144,7 +144,7 @@ stdenv.mkDerivation (finalAttrs: {
       prominentretail
       lebensterben
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "lvim";
   };
 })

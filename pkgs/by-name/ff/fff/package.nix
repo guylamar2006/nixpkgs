@@ -46,6 +46,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/dylanaraps/fff";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

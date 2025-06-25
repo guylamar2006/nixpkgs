@@ -22,6 +22,6 @@ rustPlatform.buildRustPackage {
     homepage = "https://github.com/JachymPutta/dailies";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ JachymPutta ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

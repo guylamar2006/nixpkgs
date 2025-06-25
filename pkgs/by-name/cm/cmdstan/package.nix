@@ -94,6 +94,6 @@ stdenv.mkDerivation rec {
     homepage = "https://mc-stan.org/interfaces/cmdstan.html";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ wegank ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

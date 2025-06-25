@@ -65,6 +65,6 @@ stdenv.mkDerivation rec {
     homepage = "https://libspng.org/";
     license = with licenses; [ bsd2 ];
     maintainers = with lib.maintainers; [ humancalico ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

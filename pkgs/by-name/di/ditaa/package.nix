@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/stathissideris/ditaa";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = lib.licenses.lgpl3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ bjornfor ];
     mainProgram = "ditaa";
   };

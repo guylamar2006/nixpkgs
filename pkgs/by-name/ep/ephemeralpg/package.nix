@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
     description = "Run tests on an isolated, temporary PostgreSQL database";
     license = lib.licenses.isc;
     homepage = "https://eradman.com/ephemeralpg/";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       hrdinka
       medv

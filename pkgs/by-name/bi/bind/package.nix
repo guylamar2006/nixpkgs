@@ -164,7 +164,7 @@ stdenv.mkDerivation (finalAttrs: {
       lib.replaceStrings [ "." ] [ "-" ] finalAttrs.version
     }";
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
 
     outputsToInstall = [
       "out"

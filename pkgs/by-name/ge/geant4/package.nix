@@ -153,6 +153,6 @@ stdenv.mkDerivation rec {
       omnipotententity
       veprbl
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -70,7 +70,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.conserver.com/";
     description = "Application that allows multiple users to watch a serial console at the same time";
     license = lib.licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ sarcasticadmin ];
   };
 }

@@ -21,6 +21,6 @@ gccStdenv.mkDerivation rec {
     mainProgram = "pi";
     homepage = "https://www.ginac.de/CLN/";
     license = lib.licenses.gpl2;
-    platforms = platforms.unix; # Once had cygwin problems
+    platforms = lib.platforms.unix; # Once had cygwin problems
   };
 }

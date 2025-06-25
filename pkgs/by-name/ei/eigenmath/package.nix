@@ -49,6 +49,6 @@ stdenv.mkDerivation {
     homepage = "https://georgeweigt.github.io";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ nickcao ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

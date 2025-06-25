@@ -52,7 +52,7 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/AviSynth/AviSynthPlus/releases/tag/${finalAttrs.src.rev}";
     license = lib.licenses.gpl2Only;
     pkgConfigModules = [ "avisynth" ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ jopejoe1 ];
   };
 })

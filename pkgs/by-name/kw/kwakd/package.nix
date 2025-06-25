@@ -28,6 +28,6 @@ stdenv.mkDerivation {
     mainProgram = "kwakd";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ nicknovitski ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

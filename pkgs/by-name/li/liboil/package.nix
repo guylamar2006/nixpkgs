@@ -40,6 +40,6 @@ stdenv.mkDerivation rec {
     homepage = "https://liboil.freedesktop.org";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ lovek323 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

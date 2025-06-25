@@ -72,7 +72,7 @@ stdenv.mkDerivation rec {
       Mercurial and Bazaar and SVN. Gource can also parse logs produced
       by several third party tools for CVS repositories.
     '';
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ pSub ];
     mainProgram = "gource";
   };

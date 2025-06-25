@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
     description = "Collection of C++ and CMake utility libraries";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ womfoo ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 
 }

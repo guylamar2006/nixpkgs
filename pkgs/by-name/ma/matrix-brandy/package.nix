@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
     description = "Matrix Brandy BASIC VI for Linux, Windows, MacOSX";
     mainProgram = "brandy";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ fiq ];
   };
 }

@@ -28,7 +28,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     description = "Checks presence of various command line tools and their versions on the path";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ Freed-Wu ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "has";
   };
 })

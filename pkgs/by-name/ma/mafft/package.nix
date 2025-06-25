@@ -50,6 +50,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://mafft.cbrc.jp/alignment/software/";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ natsukium ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

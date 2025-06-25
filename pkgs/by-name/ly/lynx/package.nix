@@ -58,6 +58,6 @@ stdenv.mkDerivation rec {
     mainProgram = "lynx";
     maintainers = with lib.maintainers; [ ];
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -53,7 +53,7 @@ stdenv.mkDerivation {
     homepage = "https://chromium.googlesource.com/libyuv/libyuv";
     description = "Open source project that includes YUV scaling and conversion functionality";
     mainProgram = "yuvconvert";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ leixb ];
     license = lib.licenses.bsd3;
   };

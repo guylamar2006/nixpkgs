@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     description = "Extract page mode and named destinations as PDFmark from PDF";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ samueltardieu ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "extractpdfmark";
   };
 }

@@ -70,7 +70,7 @@ stdenv.mkDerivation {
     mainProgram = "gn";
     homepage = "https://gn.googlesource.com/gn";
     license = lib.licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       stesie
       matthewbauer

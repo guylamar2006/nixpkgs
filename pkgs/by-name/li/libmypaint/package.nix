@@ -58,6 +58,6 @@ stdenv.mkDerivation rec {
     description = "Library for making brushstrokes which is used by MyPaint and other projects";
     license = lib.licenses.isc;
     maintainers = with lib.maintainers; [ jtojnar ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

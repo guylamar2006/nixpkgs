@@ -34,6 +34,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.asl20;
     homepage = "https://compile-time.re";
     maintainers = with lib.maintainers; [ azahi ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

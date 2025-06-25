@@ -79,7 +79,7 @@ stdenv.mkDerivation rec {
     description = "suite of tools compiling mdoc and man";
     downloadPage = "http://mandoc.bsd.lv/snapshots/";
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       ramkromberg
       sternenseemann

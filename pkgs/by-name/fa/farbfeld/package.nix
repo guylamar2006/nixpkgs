@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     description = "Suckless image format with conversion tools";
     homepage = "https://tools.suckless.org/farbfeld/";
     license = lib.licenses.isc;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ pSub ];
   };
 }

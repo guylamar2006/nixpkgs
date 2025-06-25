@@ -66,7 +66,7 @@ buildGoModule rec {
     homepage = "https://ipfs.io/";
     changelog = "https://github.com/ipfs/kubo/releases/tag/${rev}";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "ipfs";
     maintainers = with lib.maintainers; [
       Luflosi

@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.com/git-latexdiff/git-latexdiff";
     maintainers = with lib.maintainers; [ ];
     license = lib.licenses.bsd3; # https://gitlab.com/git-latexdiff/git-latexdiff/issues/9
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "git-latexdiff";
   };
 }

@@ -88,7 +88,7 @@ stdenv.mkDerivation rec {
       lgpl21Plus
       mpl11
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ sikmir ];
   };
 }

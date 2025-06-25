@@ -36,6 +36,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/nfc-tools/mfoc-hardnested";
     changelog = "https://github.com/nfc-tools/mfoc-hardnested/blob/master/debian/changelog";
     maintainers = with lib.maintainers; [ azuwis ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

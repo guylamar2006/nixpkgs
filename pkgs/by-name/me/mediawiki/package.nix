@@ -43,7 +43,7 @@ stdenvNoCC.mkDerivation rec {
     description = "Collaborative editing software that runs Wikipedia";
     license = lib.licenses.gpl2Plus;
     homepage = "https://www.mediawiki.org/";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     teams = with lib.teams; [ c3d2 ];
   };
 }

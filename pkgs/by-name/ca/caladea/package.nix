@@ -35,7 +35,7 @@ stdenvNoCC.mkDerivation rec {
       Andrés Torresi at Huerta Tipográfica foundry.
     '';
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ rycee ];
 
     # Reduce the priority of this package. The intent is that if you

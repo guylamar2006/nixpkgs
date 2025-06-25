@@ -71,6 +71,6 @@ stdenvNoCC.mkDerivation rec {
       stunkymonkey
       christoph-heiss
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

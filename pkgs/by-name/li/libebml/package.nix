@@ -32,6 +32,6 @@ stdenv.mkDerivation rec {
     homepage = "https://dl.matroska.org/downloads/libebml/";
     license = lib.licenses.lgpl21;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

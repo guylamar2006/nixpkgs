@@ -27,6 +27,6 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ magnetophon ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

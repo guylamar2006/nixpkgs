@@ -28,6 +28,6 @@ stdenvNoCC.mkDerivation {
     description = "Icomoon feather font";
     license = lib.licenses.agpl3Plus;
     maintainers = with lib.maintainers; [ luftmensch-luftmensch ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

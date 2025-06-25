@@ -20,7 +20,7 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://github.com/MarkForged/GOMP";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ prusnak ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "gomp";
   };
 }

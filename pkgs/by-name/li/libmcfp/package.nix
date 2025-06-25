@@ -26,6 +26,6 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/mhekkel/libmcfp/blob/${finalAttrs.src.rev}/changelog";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ natsukium ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

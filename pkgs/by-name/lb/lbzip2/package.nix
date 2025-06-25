@@ -50,6 +50,6 @@ stdenv.mkDerivation rec {
     description = "Parallel bzip2 compression utility";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ abbradar ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

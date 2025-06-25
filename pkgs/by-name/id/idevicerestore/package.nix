@@ -60,7 +60,7 @@ stdenv.mkDerivation rec {
       This will download and restore a device to the latest firmware available.
     '';
     license = lib.licenses.lgpl21Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ nh2 ];
     mainProgram = "idevicerestore";
   };

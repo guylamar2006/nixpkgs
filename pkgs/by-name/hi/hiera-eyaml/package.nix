@@ -20,7 +20,7 @@ bundlerEnv {
       benley
       nicknovitski
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "eyaml";
   };
 }

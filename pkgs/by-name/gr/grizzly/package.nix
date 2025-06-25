@@ -24,7 +24,7 @@ buildGoModule rec {
     homepage = "https://grafana.github.io/grizzly/";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ nrhtr ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "grr";
   };
 }

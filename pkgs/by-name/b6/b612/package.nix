@@ -47,6 +47,6 @@ stdenvNoCC.mkDerivation rec {
       bsd3
     ];
     maintainers = with lib.maintainers; [ leenaars ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

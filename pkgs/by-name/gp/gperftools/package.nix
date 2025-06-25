@@ -56,7 +56,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://github.com/gperftools/gperftools";
     description = "Fast, multi-threaded malloc() and nifty performance analysis tools";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ vcunat ];
   };

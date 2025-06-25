@@ -73,6 +73,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.lgpl21;
     teams = with lib.teams; [ gnome ];
     mainProgram = "notify-send";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -70,6 +70,6 @@ mkYarnPackage rec {
     mainProgram = "grafana-image-renderer";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ ma27 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

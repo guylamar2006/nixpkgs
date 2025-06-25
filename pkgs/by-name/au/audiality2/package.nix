@@ -35,7 +35,7 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "a2play";
     homepage = "http://audiality.org";
     license = lib.licenses.zlib;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ fgaz ];
   };
 })

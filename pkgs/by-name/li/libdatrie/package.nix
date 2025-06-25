@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
     homepage = "https://linux.thai.net/~thep/datrie/datrie.html";
     description = "This is an implementation of double-array structure for representing trie";
     license = lib.licenses.lgpl21Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ];
     pkgConfigModules = [ "datrie-0.2" ];
   };

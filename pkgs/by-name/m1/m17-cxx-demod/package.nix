@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
     description = "M17 Demodulator in C++";
     homepage = "https://github.com/mobilinkd/m17-cxx-demod";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     teams = with lib.teams; [ c3d2 ];
     # never built on aarch64-darwin, x86_64-darwin since first introduction in nixpkgs
     broken = stdenv.hostPlatform.isDarwin;

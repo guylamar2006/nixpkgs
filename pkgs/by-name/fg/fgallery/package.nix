@@ -78,7 +78,7 @@ stdenv.mkDerivation rec {
     description = "Static photo gallery generator";
     homepage = "https://www.thregr.org/~wavexx/software/fgallery/";
     license = lib.licenses.gpl2Only;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ bjornfor ];
     mainProgram = "fgallery";
   };

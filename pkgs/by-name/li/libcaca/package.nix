@@ -83,6 +83,6 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.wtfpl;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

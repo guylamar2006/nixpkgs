@@ -35,7 +35,7 @@ stdenv.mkDerivation {
     description = "Simple root image setter";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ebzzry ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "deco";
   };
 

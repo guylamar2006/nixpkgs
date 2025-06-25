@@ -26,6 +26,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/repology/libversion";
     license = with licenses; [ mit ];
     maintainers = with lib.maintainers; [ ryantm ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

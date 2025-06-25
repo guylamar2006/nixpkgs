@@ -57,7 +57,7 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/hyperledger/besu/blob/${finalAttrs.version}/CHANGELOG.md";
     license = lib.licenses.asl20;
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ mmahut ];
   };
 })

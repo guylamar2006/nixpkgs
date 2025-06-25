@@ -37,6 +37,6 @@ stdenv.mkDerivation rec {
     homepage = "https://sourceforge.net/projects/libepubgen/";
     license = lib.licenses.mpl20;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

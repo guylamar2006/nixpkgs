@@ -38,6 +38,6 @@ stdenv.mkDerivation {
     '';
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

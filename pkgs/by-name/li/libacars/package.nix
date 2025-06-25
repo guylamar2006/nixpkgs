@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/szpajder/libacars";
     description = "Aircraft Communications Addressing and Reporting System (ACARS) message decoder";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ mafo ];
   };
 }

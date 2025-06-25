@@ -62,7 +62,7 @@ rustPlatform.buildRustPackage rec {
     description = "Image quantization library";
     longDescription = "Small, portable C library for high-quality conversion of RGBA images to 8-bit indexed-color (palette) images.";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ma9e ];
   };
 }

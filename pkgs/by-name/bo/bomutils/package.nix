@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://github.com/hogliux/bomutils";
     description = "Open source tools to create bill-of-materials files used in macOS installers";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ prusnak ];
   };

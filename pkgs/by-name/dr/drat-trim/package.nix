@@ -58,6 +58,6 @@ stdenv.mkDerivation {
     homepage = "https://www.cs.utexas.edu/~marijn/drat-trim/";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ kini ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

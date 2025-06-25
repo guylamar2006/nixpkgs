@@ -54,6 +54,6 @@ stdenv.mkDerivation {
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "irkerd";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

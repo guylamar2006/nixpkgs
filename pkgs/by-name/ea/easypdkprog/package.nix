@@ -36,6 +36,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/free-pdk/easy-pdk-programmer-software";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ david-sawatzke ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     description = "OS independent and secure pty/tty and utmp/wtmp/lastlog";
     homepage = "http://dist.schmorp.de/libptytty";
     maintainers = with lib.maintainers; [ rnhmjoj ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.gpl2;
     # pkgsMusl.pkgsStatic errors as:
     #   ln: failed to create symbolic link './include': File exists

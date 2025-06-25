@@ -51,6 +51,6 @@ stdenv.mkDerivation rec {
     description = "Haskell interpreter";
     maintainers = with lib.maintainers; [ joachifm ];
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

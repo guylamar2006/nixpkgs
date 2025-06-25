@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/avih/dejsonlz4";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ mt-caret ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "dejsonlz4";
   };
 }

@@ -22,6 +22,6 @@ python3Packages.buildPythonPackage rec {
       mit
     ];
     maintainers = with lib.maintainers; [ rnhmjoj ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

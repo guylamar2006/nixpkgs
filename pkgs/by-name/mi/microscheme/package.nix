@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
       microcontrollers, especially as found on Arduino boards.
     '';
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ardumont ];
   };
 }

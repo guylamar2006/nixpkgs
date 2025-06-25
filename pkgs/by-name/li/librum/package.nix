@@ -71,6 +71,6 @@ stdenv.mkDerivation rec {
       aleksana
       oluceps
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

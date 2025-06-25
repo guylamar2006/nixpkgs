@@ -60,6 +60,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/jirutka/esh";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ mnacamura ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

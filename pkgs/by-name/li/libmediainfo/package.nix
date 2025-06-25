@@ -54,7 +54,7 @@ stdenv.mkDerivation rec {
     homepage = "https://mediaarea.net/";
     changelog = "https://mediaarea.net/MediaInfo/ChangeLog";
     license = lib.licenses.bsd2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ devhell ];
   };
 }

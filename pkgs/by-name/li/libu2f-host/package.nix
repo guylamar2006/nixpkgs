@@ -42,6 +42,6 @@ stdenv.mkDerivation rec {
       lgpl21Plus
     ];
     mainProgram = "u2f-host";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

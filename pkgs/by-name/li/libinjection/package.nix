@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
     description = "SQL / SQLI tokenizer parser analyzer";
     homepage = "https://github.com/client9/libinjection";
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ thoughtpolice ];
   };
 }

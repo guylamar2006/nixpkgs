@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/grpc/grpc-node/tree/master/packages/grpc-tools";
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ nzhang-zh ];
   };
 }

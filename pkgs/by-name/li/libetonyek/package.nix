@@ -51,6 +51,6 @@ stdenv.mkDerivation rec {
     changelog = "https://github.com/LibreOffice/libetonyek/blob/${src.rev}/NEWS";
     license = lib.licenses.mpl20;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

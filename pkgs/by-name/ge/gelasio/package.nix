@@ -35,7 +35,7 @@ stdenvNoCC.mkDerivation {
     '';
     homepage = "https://github.com/SorkinType/Gelasio";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ colemickens ];
   };
 }

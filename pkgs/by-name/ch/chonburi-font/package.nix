@@ -39,7 +39,7 @@ stdenv.mkDerivation {
       is also ready to be matched with other non-Latin script.
     '';
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ toastal ];
   };
 }

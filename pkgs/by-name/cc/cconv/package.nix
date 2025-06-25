@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     mainProgram = "cconv";
     homepage = "https://github.com/xiaoyjy/cconv";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ redfish64 ];
   };
 }

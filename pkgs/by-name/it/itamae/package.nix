@@ -16,7 +16,7 @@ bundlerApp {
     homepage = "https://itamae.kitchen/";
     license = with licenses; mit;
     maintainers = with lib.maintainers; [ refi64 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "itamae";
   };
 }

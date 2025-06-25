@@ -22,6 +22,6 @@ bundlerApp {
       nicknovitski
       anthonyroussel
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

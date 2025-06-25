@@ -44,6 +44,6 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ sikmir ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

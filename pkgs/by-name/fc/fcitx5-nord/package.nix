@@ -29,6 +29,6 @@ stdenvNoCC.mkDerivation {
     homepage = "https://github.com/tonyfettes/fcitx5-nord";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ Cryolitia ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

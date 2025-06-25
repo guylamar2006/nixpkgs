@@ -30,6 +30,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/jiegec/jtag-remote-server";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ nickcao ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

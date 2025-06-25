@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/peterhoeg/dynamic-colors";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ peterhoeg ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "dynamic-colors";
   };
 }

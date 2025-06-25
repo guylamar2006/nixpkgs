@@ -69,6 +69,6 @@ stdenv.mkDerivation {
     homepage = "https://libregames.gitlab.io/jumpnbump/";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ iblech ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

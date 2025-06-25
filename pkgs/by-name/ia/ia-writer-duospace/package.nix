@@ -28,7 +28,7 @@ stdenvNoCC.mkDerivation {
     description = "iA Writer Duospace Typeface";
     homepage = "https://ia.net/topics/in-search-of-the-perfect-writing-font";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
   };
 }

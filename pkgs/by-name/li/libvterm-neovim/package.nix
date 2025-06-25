@@ -34,6 +34,6 @@ stdenv.mkDerivation rec {
     homepage = "http://www.leonerd.org.uk/code/libvterm/";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ rvolosatovs ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -27,6 +27,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/ros/console_bridge";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ lopsided98 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

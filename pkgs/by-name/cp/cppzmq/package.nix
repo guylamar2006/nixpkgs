@@ -31,6 +31,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.bsd2;
     description = "C++ binding for 0MQ";
     maintainers = with lib.maintainers; [ abbradar ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

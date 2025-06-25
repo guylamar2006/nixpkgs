@@ -63,6 +63,6 @@ stdenv.mkDerivation rec {
     homepage = "https://gr-framework.org";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ paveloom ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

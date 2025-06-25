@@ -146,6 +146,6 @@ stdenv.mkDerivation (finalAttrs: {
       techknowlogick
       kiike
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

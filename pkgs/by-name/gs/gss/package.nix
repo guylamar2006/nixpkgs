@@ -50,6 +50,6 @@ stdenv.mkDerivation rec {
     mainProgram = "gss";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

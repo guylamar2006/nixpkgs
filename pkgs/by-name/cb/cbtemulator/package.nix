@@ -68,6 +68,6 @@ buildGoModule rec {
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ flokli ];
     mainProgram = "cbtemulator";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

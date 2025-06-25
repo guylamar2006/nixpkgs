@@ -33,7 +33,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://peterbeerli.com/migrate-html5/index.html";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ bzizou ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "migrate-n";
   };
 })

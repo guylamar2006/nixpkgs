@@ -26,6 +26,6 @@ stdenvNoCC.mkDerivation {
     homepage = "https://github.com/catppuccin/qt5ct";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ pluiedev ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

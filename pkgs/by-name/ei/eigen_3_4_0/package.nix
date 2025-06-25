@@ -45,6 +45,6 @@ stdenv.mkDerivation rec {
       raskin
       pbsds
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

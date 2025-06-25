@@ -84,6 +84,6 @@ buildNpmPackage rec {
     homepage = "https://github.com/firecow/gitlab-ci-local";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ pineapplehunter ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

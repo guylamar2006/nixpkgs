@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     description = "Light-weight scripting library";
     license = lib.licenses.zlib;
     maintainers = with lib.maintainers; [ raskin ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     downloadPage = "https://www.angelcode.com/angelscript/downloads.html";
     homepage = "https://www.angelcode.com/angelscript/";
   };

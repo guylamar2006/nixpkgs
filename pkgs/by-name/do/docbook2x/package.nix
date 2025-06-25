@@ -93,6 +93,6 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.mit;
     homepage = "https://docbook2x.sourceforge.net/";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

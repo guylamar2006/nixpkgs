@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/discoteq/flock";
     maintainers = with lib.maintainers; [ matthewbauer ];
     mainProgram = "flock";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.isc;
   };
 }

@@ -46,7 +46,7 @@ let
       changelog = "https://github.com/Electrostatics/FETK/releases/tag/${finalAttrs.version}";
       license = lib.licenses.lgpl21Plus;
       maintainers = with lib.maintainers; [ natsukium ];
-      platforms = platforms.unix;
+      platforms = lib.platforms.unix;
     };
   });
 in
@@ -104,6 +104,6 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://github.com/Electrostatics/apbs/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ natsukium ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

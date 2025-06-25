@@ -26,7 +26,7 @@ stdenvNoCC.mkDerivation {
     homepage = "https://fontlibrary.org/en/font/minecraftia";
     description = "Cool Minecraft font";
     license = lib.licenses.cc-by-sa-30;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ gepbird ];
   };
 }

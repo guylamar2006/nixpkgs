@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
     description = "Small, flexible, terminal-based text editor";
     homepage = "https://github.com/adsr/mle";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ adsr ];
     mainProgram = "mle";
   };

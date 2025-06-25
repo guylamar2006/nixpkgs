@@ -68,7 +68,7 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ artuuge ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 
 }

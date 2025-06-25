@@ -44,7 +44,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://fnc.bsdbox.org";
     license = lib.licenses.isc;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ abbe ];
     mainProgram = "fnc";
   };

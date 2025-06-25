@@ -39,7 +39,7 @@ rustPlatform.buildRustPackage rec {
     description = "Approximation of groups usable with Fediverse software that implements the Mastodon client API";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ fgaz ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "fedigroups";
   };
 }

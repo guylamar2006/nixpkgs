@@ -81,7 +81,7 @@ stdenv.mkDerivation rec {
       gpl3Plus
       lgpl3Plus
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ nico202 ];
   };
 }

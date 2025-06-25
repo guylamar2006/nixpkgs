@@ -22,6 +22,6 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://github.com/DeterminateSystems/bootspec";
     license = lib.licenses.mit;
     teams = with lib.teams; [ determinatesystems ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
     description = "Color management engine";
     homepage = "http://www.littlecms.com/";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

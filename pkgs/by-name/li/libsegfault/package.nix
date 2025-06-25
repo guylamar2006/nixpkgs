@@ -41,6 +41,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/jonathanpoelen/libsegfault";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ jtojnar ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

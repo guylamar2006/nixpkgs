@@ -47,6 +47,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/lh3/bioawk";
     license = lib.licenses.hpnd;
     maintainers = with lib.maintainers; [ natsukium ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

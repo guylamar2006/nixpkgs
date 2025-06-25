@@ -53,6 +53,6 @@ stdenvNoCC.mkDerivation {
     maintainers = with lib.maintainers; [ loicreynier ];
     license = lib.licenses.unlicense;
     mainProgram = "gh-notify";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

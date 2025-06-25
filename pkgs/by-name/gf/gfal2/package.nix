@@ -142,7 +142,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://github.com/cern-fts/gfal2";
     license = lib.licenses.asl20;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ShamrockLee ];
     mainProgram = "gfal2";
   };

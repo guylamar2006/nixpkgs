@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
       mpl10
       w3c
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ eadwu ];
   };
 }

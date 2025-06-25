@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
     description = "Bunch of tools that revolve around fiddling with dates and times in the command line";
     homepage = "http://www.fresse.org/dateutils/";
     license = lib.licenses.bsd3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ paperdigits ];
   };
 }

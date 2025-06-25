@@ -57,6 +57,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/tdf/libcmis";
     license = lib.licenses.gpl2;
     mainProgram = "cmis-client";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

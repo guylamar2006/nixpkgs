@@ -50,7 +50,7 @@ pypy2Packages.buildPythonApplication rec {
       makefu
       viraptor
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.asl20;
   };
 }

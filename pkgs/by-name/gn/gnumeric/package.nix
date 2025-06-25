@@ -79,7 +79,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "GNOME Office Spreadsheet";
     license = lib.licenses.gpl2Plus;
     homepage = "http://projects.gnome.org/gnumeric/";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ vcunat ];
   };
 })

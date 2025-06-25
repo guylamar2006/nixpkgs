@@ -55,6 +55,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ r-burns ];
     mainProgram = "s3";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

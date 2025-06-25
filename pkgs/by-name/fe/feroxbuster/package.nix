@@ -48,7 +48,7 @@ rustPlatform.buildRustPackage rec {
     changelog = "https://github.com/epi052/feroxbuster/releases/tag/v${src.tag}";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ fab ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "feroxbuster";
   };
 }

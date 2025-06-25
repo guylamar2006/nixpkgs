@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/Vifon/deer";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ vyp ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

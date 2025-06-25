@@ -28,6 +28,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.lgpl21Plus;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "dc1394_reset_bus";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

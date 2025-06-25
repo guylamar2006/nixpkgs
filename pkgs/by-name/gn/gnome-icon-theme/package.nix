@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     description = "Collection of icons for the GNOME 2 desktop";
     homepage = "https://download.gnome.org/sources/gnome-icon-theme/";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ romildo ];
     broken = stdenv.hostPlatform.isDarwin; # never built on Hydra https://hydra.nixos.org/job/nixpkgs/trunk/gnome-icon-theme.x86_64-darwin
   };

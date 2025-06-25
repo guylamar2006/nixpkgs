@@ -50,6 +50,6 @@ stdenvNoCC.mkDerivation {
       maintainers.hawkw
       maintainers.rycee
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

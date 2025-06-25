@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
     homepage = "https://git.decadent.org.uk/gitweb/?p=ministat.git";
     license = lib.licenses.beerware;
     maintainers = with lib.maintainers; [ dezgeg ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "ministat";
   };
 }

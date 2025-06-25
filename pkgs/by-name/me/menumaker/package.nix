@@ -20,7 +20,7 @@ python3Packages.buildPythonApplication rec {
     mainProgram = "mmaker";
     homepage = "https://menumaker.sourceforge.net";
     license = lib.licenses.bsd2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ romildo ];
   };
 }

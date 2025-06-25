@@ -29,7 +29,7 @@ stdenv.mkDerivation {
     homepage = "https://davidkebo.com/cudd";
     description = "Binary Decision Diagram (BDD) library";
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ chessai ];
   };
 }

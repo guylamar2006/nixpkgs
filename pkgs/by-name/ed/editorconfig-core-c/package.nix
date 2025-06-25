@@ -54,7 +54,7 @@ stdenv.mkDerivation (finalAttrs: {
       bsd3
     ];
     maintainers = with lib.maintainers; [ dochang ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "editorconfig";
   };
 })

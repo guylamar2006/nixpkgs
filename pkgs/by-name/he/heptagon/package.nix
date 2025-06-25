@@ -60,6 +60,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ wegank ];
     mainProgram = "heptc";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

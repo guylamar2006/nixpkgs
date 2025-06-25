@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/trummerschlunk/master_me";
     description = "automatic mastering plugin for live streaming, podcasts and internet radio";
     maintainers = with lib.maintainers; [ magnetophon ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     broken = stdenv.hostPlatform.isDarwin; # error: no type or protocol named 'NSPasteboardType'
     license = lib.licenses.gpl3Plus;
     mainProgram = "master_me";

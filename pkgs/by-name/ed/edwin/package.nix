@@ -26,7 +26,7 @@ stdenvNoCC.mkDerivation rec {
     description = "Text font for musical scores";
     homepage = "https://github.com/MuseScoreFonts/Edwin";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ moni ];
   };
 }

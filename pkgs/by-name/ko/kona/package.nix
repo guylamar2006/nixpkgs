@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/kevinlawler/kona/";
     maintainers = with lib.maintainers; [ raskin ];
     mainProgram = "k";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.isc;
   };
 }

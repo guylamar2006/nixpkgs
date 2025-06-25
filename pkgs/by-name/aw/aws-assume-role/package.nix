@@ -39,6 +39,6 @@ buildGoModule rec {
     license = lib.licenses.bsd2;
     mainProgram = "assume-role";
     maintainers = with lib.maintainers; [ averyvigolo ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

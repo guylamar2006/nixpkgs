@@ -30,6 +30,6 @@ buildGoModule rec {
     mainProgram = "arduinoOTA";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ poelzi ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

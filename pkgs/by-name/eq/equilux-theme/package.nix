@@ -53,7 +53,7 @@ stdenv.mkDerivation rec {
     inherit (src.meta) homepage;
     description = "Material Design theme for GNOME/GTK based desktop environments";
     license = lib.licenses.gpl2;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ fpletz ];
   };
 }

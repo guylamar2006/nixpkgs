@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     description = "Argument Parser for Modern C++";
     homepage = "https://github.com/p-ranav/argparse";
     maintainers = with lib.maintainers; [ _2gn ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.mit;
   };
 }

@@ -58,7 +58,7 @@ stdenv.mkDerivation rec {
       use the installer from the <link xlink:href="https://osxfuse.github.io/">
       project website</link>.
     '';
-    platforms = platforms.darwin;
+    platforms = lib.platforms.darwin;
     maintainers = with lib.maintainers; [ midchildan ];
 
     # macFUSE as a whole includes code with restrictions on commercial

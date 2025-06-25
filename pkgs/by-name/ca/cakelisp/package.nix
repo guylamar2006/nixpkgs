@@ -55,7 +55,7 @@ stdenv.mkDerivation {
     mainProgram = "cakelisp";
     homepage = "https://macoy.me/code/macoy/cakelisp";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.darwin ++ platforms.linux;
+    platforms = lib.platforms.darwin ++ platforms.linux;
     maintainers = with lib.maintainers; [ sbond75 ];
     # never built on aarch64-darwin since first introduction in nixpkgs
     broken = stdenv.hostPlatform.isDarwin && stdenv.hostPlatform.isAarch64;

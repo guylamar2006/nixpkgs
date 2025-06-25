@@ -73,7 +73,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Censor private information";
     homepage = "https://gitlab.gnome.org/World/obfuscate";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "obfuscate";
     maintainers = with lib.maintainers; [ fgaz ];
     teams = with lib.teams; [ gnome-circle ];

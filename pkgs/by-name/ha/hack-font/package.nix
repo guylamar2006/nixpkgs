@@ -42,6 +42,6 @@ stdenvNoCC.mkDerivation rec {
     */
     license = lib.licenses.free;
     maintainers = with lib.maintainers; [ dywedir ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

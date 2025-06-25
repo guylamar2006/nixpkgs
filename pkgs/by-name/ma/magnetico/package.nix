@@ -40,7 +40,7 @@ buildGoModule rec {
     description = "Autonomous (self-hosted) BitTorrent DHT search engine suite";
     homepage = "https://maxwell.eurofusion.eu/git/rnhmjoj/magnetico";
     license = lib.licenses.agpl3Only;
-    badPlatforms = platforms.darwin;
+    badplatforms = lib.platforms.darwin;
     maintainers = with lib.maintainers; [ rnhmjoj ];
   };
 }

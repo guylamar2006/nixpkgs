@@ -74,7 +74,7 @@ lib.checkListOfEnum "${pname}: color variants" [ "standard" "light" "dark" ] col
       description = "Stylish flat Design theme for GTK based desktop environments";
       homepage = "https://vinceliuice.github.io/theme-matcha";
       license = lib.licenses.gpl3Only;
-      platforms = platforms.unix;
+      platforms = lib.platforms.unix;
       maintainers = with lib.maintainers; [ romildo ];
     };
   }

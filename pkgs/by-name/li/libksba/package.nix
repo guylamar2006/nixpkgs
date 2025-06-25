@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.gnupg.org";
     description = "CMS and X.509 access library";
     mainProgram = "ksba-config";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
     license = lib.licenses.lgpl3;
   };

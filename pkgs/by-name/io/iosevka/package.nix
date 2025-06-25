@@ -144,7 +144,7 @@ buildNpmPackage rec {
       terminals, and preparing technical documents.
     '';
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       ttuegel
       rileyinman

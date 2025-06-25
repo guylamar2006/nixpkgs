@@ -59,7 +59,7 @@ stdenv.mkDerivation {
     homepage = "https://www.darlinghq.org/";
     description = "FUSE module for .dmg files (containing an HFS+ filesystem)";
     mainProgram = "darling-dmg";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ Luflosi ];
   };

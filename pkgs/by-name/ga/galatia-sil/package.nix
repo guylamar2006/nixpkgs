@@ -29,7 +29,7 @@ stdenvNoCC.mkDerivation rec {
       Galatia SIL, designed to support Biblical Polytonic Greek, is a Unicode 3.1 font released under the SIL Open Font License. The font supports precomposed characters rather than decomposed characters. Thus, you must use a keyboard that outputs NFC encoding (precomposed).
     '';
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ kmein ];
   };
 }

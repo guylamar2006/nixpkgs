@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     homepage = "https://anthy.osdn.jp/";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 
   postFixup = lib.optionalString (stdenv.buildPlatform.canExecute stdenv.hostPlatform) ''

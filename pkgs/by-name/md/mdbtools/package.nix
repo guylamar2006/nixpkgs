@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
       lgpl2
     ];
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     inherit (src.meta) homepage;
   };
 }

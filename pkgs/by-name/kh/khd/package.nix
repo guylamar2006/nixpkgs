@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     description = "Simple modal hotkey daemon for OSX";
     homepage = "https://github.com/koekeishiya/khd";
     downloadPage = "https://github.com/koekeishiya/khd/releases";
-    platforms = platforms.darwin;
+    platforms = lib.platforms.darwin;
     maintainers = with lib.maintainers; [ lnl7 ];
     license = lib.licenses.mit;
   };

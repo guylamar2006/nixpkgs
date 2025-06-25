@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
     mainProgram = "kpack";
     license = lib.licenses.lgpl2Only;
     maintainers = with lib.maintainers; [ siraben ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

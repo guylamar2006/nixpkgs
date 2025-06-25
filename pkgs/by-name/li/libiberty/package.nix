@@ -42,6 +42,6 @@ stdenv.mkDerivation {
       abbradar
       ericson2314
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

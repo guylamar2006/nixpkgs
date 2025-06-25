@@ -34,6 +34,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/coin-or/Cgl";
     license = lib.licenses.epl20;
     maintainers = with lib.maintainers; [ wegank ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

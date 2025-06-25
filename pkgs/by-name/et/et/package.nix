@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     description = "Minimal libnotify-based (egg) timer";
     homepage = "https://github.com/oxzi/et";
     license = lib.licenses.gpl3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ oxzi ];
   };
 }

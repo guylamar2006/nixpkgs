@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "PoW algorithm for Ethereum 1.0 based on Dagger-Hashimoto";
     homepage = "https://github.com/ethereum/ethash";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ];
     license = lib.licenses.asl20;
   };

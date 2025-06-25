@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
     changelog = "https://github.com/scipr-lab/libff/blob/develop/CHANGELOG.md";
     homepage = "https://github.com/scipr-lab/libff";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ arturcygan ];
   };
 }

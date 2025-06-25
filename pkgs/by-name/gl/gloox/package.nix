@@ -38,6 +38,6 @@ stdenv.mkDerivation rec {
     homepage = "http://camaya.net/gloox";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

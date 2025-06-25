@@ -75,6 +75,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/svanderburg/libnixxml";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ tomberek ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

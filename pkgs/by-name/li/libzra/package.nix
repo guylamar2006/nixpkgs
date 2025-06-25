@@ -27,7 +27,7 @@ stdenv.mkDerivation {
   meta = {
     homepage = "https://github.com/zraorg/ZRA";
     description = "Library for ZStandard random access";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
     license = lib.licenses.bsd3;
   };

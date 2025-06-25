@@ -49,6 +49,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/ImagingDataCommons/libdicom";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ lromor ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

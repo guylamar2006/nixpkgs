@@ -103,7 +103,7 @@ stdenv.mkDerivation (finalAttrs: {
       binaryBytecode # deps
     ];
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "jadx-gui";
     maintainers = with lib.maintainers; [ emilytrau ];
   };

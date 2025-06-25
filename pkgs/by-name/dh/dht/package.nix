@@ -24,6 +24,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/transmission/dht";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ emilytrau ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

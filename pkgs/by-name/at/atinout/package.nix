@@ -32,7 +32,7 @@ stdenv.mkDerivation {
   meta = {
     homepage = "https://atinout.sourceforge.net";
     description = "Tool for talking to modems";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ bendlas ];
     mainProgram = "atinout";

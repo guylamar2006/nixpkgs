@@ -76,7 +76,7 @@ ocamlPackages.buildDunePackage rec {
     homepage = "https://github.com/darrenldl/docfd";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ chewblacka ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "docfd";
   };
 }

@@ -66,7 +66,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/sagb/alttab";
     description = "X11 window switcher designed for minimalistic window managers or standalone X11 session";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "alttab";
   };

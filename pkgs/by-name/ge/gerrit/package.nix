@@ -56,6 +56,6 @@ stdenv.mkDerivation rec {
       zimbatm
       felixsinger
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

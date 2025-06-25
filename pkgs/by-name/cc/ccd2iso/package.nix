@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
     homepage = "https://sourceforge.net/projects/ccd2iso/";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "ccd2iso";
   };
 }

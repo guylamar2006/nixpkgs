@@ -41,7 +41,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/alperakcan/fuse-ext2";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ emilytrau ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "fuse-ext2";
   };
 })

@@ -80,7 +80,7 @@ stdenv.mkDerivation rec {
     homepage = "https://libgd.github.io/";
     description = "Dynamic image creation library";
     license = lib.licenses.free; # some custom license
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ];
   };
 }

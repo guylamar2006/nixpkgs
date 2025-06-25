@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
     mainProgram = "apache-directory-server";
     homepage = "https://directory.apache.org/apacheds/";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ners ];
   };
 }

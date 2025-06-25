@@ -54,7 +54,7 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.asl20;
     homepage = "http://clmathlibraries.github.io/clFFT/";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ chessai ];
   };
 }

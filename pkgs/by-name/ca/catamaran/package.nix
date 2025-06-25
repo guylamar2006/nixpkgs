@@ -36,7 +36,7 @@ stdenvNoCC.mkDerivation {
       The catamaran concept is a relative newcomer for Western boat designers, been used since time immemorial among the Dravidian people, in South India.)
     '';
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
   };
 }

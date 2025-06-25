@@ -37,6 +37,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/clf/celf";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ bcdarwin ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -46,6 +46,6 @@ stdenv.mkDerivation rec {
       shell
       thoughtpolice
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

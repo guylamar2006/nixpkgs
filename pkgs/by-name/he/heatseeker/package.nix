@@ -36,6 +36,6 @@ rustPlatform.buildRustPackage rec {
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "hs";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

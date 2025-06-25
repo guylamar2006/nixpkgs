@@ -33,6 +33,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ versality ];
     mainProgram = "keylight";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

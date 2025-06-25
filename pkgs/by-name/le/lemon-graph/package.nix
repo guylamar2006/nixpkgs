@@ -29,6 +29,6 @@ stdenv.mkDerivation rec {
     description = "Efficient library for combinatorial optimization tasks on graphs and networks";
     license = lib.licenses.boost;
     maintainers = with lib.maintainers; [ trepetti ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

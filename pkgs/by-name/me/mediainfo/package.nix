@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://mediaarea.net/";
     license = lib.licenses.bsd2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ devhell ];
     mainProgram = "mediainfo";
   };

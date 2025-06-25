@@ -17,7 +17,7 @@ stdenv.mkDerivation rec {
     description = "Simple commandline torrent creator";
     homepage = "https://mathr.co.uk/blog/torrent.html";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "buildtorrent";
   };
 }

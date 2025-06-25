@@ -105,7 +105,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/Gargaj/Foxotron";
     license = lib.licenses.unlicense;
     maintainers = with lib.maintainers; [ OPNA2608 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "Foxotron";
   };
 }

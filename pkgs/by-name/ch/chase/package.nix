@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
     homepage = "https://qa.debian.org/developer.php?login=rotty%40debian.org";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ polyrod ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "chase";
   };
 }

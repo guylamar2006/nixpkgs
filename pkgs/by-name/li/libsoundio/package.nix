@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     description = "Cross platform audio input and output";
     homepage = "http://libsound.io/";
     license = lib.licenses.mit;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ andrewrk ];
   };
 }

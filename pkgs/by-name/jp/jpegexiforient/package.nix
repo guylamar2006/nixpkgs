@@ -25,7 +25,7 @@ stdenv.mkDerivation {
     # Website doesn't mention any license, but I think it's safe to assume this
     # to be free since it's from IJG, the current maintainers of libjpeg
     license = lib.licenses.free;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "jpegexiforient";
   };

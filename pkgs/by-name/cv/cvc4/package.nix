@@ -70,7 +70,7 @@ stdenv.mkDerivation rec {
     mainProgram = "cvc4";
     homepage = "http://cvc4.cs.stanford.edu/web/";
     license = lib.licenses.gpl3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       vbgl
       thoughtpolice

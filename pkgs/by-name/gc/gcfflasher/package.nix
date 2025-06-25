@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
     license = lib.licenses.bsd3;
     homepage = "https://github.com/dresden-elektronik/gcfflasher";
     maintainers = with lib.maintainers; [ fleaz ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "GCFFlasher";
   };
 }

@@ -89,7 +89,7 @@ stdenv.mkDerivation rec {
       asl20
       bsd3
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ zhaofengli ];
   };
 }

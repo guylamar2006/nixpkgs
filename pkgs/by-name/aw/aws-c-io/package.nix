@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     description = "AWS SDK for C module for IO and TLS";
     homepage = "https://github.com/awslabs/aws-c-io";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ orivej ];
   };
 }

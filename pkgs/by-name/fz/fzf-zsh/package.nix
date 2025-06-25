@@ -38,6 +38,6 @@ stdenv.mkDerivation {
     description = "wrap fzf to use in oh-my-zsh";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

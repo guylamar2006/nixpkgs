@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "http://libpipeline.nongnu.org";
     description = "C library for manipulating pipelines of subprocesses in a flexible and convenient way";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.gpl3;
   };
 }

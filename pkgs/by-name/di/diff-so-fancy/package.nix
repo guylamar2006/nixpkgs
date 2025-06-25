@@ -57,7 +57,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/so-fancy/diff-so-fancy";
     description = "Good-looking diffs filter for git";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     longDescription = ''
       diff-so-fancy builds on the good-lookin' output of git contrib's
       diff-highlight to upgrade your diffs' appearances.

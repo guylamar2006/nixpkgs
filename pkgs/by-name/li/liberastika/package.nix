@@ -27,7 +27,7 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://sourceforge.net/projects/lib-ka/";
 
     license = lib.licenses.gpl2;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
   };
 }

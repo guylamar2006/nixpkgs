@@ -45,6 +45,6 @@ stdenv.mkDerivation {
     homepage = "https://www.kaoriya.net/software/cmigemo";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ cohei ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

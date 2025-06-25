@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     maintainers = with lib.maintainers; [
       raskin
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.mit;
     homepage = "http://minisat.se/";
   };

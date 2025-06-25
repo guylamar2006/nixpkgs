@@ -58,7 +58,7 @@ stdenv.mkDerivation rec {
     description = "Library providing ability to interpret and import visio diagrams into various applications";
     homepage = "https://wiki.documentfoundation.org/DLP/Libraries/libvisio";
     license = lib.licenses.mpl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ nickcao ];
   };
 }

@@ -28,6 +28,6 @@ stdenv.mkDerivation rec {
       orivej
       artuuge
     ];
-    platforms = platforms.x86;
+    platforms = lib.platforms.x86;
   };
 }

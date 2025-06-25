@@ -45,7 +45,7 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://www.musicpd.org/download/libmpd/${finalAttrs.version}/README";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ doronbehar ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     # Getting DARWIN_NULL related errors
     broken = stdenv.hostPlatform.isDarwin;
   };

@@ -74,7 +74,7 @@ stdenv.mkDerivation (finalAttrs: {
       gpl2
       free
     ]; # source + bundles libs + art
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin;
     maintainers = with lib.maintainers; [ iblech ];
     homepage = "https://www.nongnu.org/enigma/";

@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     description = "Git command to recommit HEAD with a new set of parents";
     maintainers = with lib.maintainers; [ ];
     license = lib.licenses.gpl2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "git-reparent";
   };
 }

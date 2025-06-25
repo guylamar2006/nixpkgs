@@ -31,6 +31,6 @@ stdenv.mkDerivation rec {
     homepage = "https://unix4lyfe.org/darkhttpd/";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ bobvanderlinden ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -34,6 +34,6 @@ clangStdenv.mkDerivation (finalAttrs: {
       dblsaiko
       matthewbauer
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

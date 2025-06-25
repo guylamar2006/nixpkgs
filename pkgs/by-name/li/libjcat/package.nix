@@ -82,6 +82,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/hughsie/libjcat";
     license = lib.licenses.lgpl21Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

@@ -49,6 +49,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/libui-ng/libui-ng";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

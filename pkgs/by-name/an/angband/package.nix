@@ -44,6 +44,6 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "angband";
     maintainers = with lib.maintainers; [ kenran ];
     license = lib.licenses.gpl2Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

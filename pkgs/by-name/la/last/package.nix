@@ -43,6 +43,6 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.com/mcfrith/last";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ jbedo ];
-    platforms = platforms.x86_64;
+    platforms = lib.platforms.x86_64;
   };
 }

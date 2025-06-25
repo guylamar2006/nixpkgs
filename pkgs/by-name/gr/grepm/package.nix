@@ -36,7 +36,7 @@ stdenv.mkDerivation {
     description = "Wrapper for grepmail utilizing mutt";
     homepage = "https://www.barsnick.net/sw/grepm.html";
     license = lib.licenses.free;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ romildo ];
     mainProgram = "grepm";
   };

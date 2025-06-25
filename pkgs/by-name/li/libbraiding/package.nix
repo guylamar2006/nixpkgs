@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.gpl3;
     teams = with lib.teams; [ sage ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

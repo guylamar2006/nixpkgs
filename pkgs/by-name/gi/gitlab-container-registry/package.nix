@@ -41,6 +41,6 @@ buildGoModule rec {
       gitlab
       cyberus
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

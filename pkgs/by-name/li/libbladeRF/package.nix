@@ -77,6 +77,6 @@ stdenv.mkDerivation rec {
     description = "Supporting library of the BladeRF SDR opensource hardware";
     license = lib.licenses.lgpl21;
     maintainers = with lib.maintainers; [ markuskowa ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

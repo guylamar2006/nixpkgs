@@ -28,6 +28,6 @@ python3Packages.buildPythonApplication {
     homepage = "https://github.com/DennisMitchell/jellylanguage";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ tckmn ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

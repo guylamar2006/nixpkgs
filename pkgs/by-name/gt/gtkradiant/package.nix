@@ -281,6 +281,6 @@ stdenv.mkDerivation rec {
       lgpl21Only
     ];
     maintainers = with lib.maintainers; [ astro ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

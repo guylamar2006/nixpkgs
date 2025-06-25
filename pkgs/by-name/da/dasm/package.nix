@@ -33,6 +33,6 @@ stdenv.mkDerivation rec {
     homepage = "https://dasm-assembler.github.io";
     license = lib.licenses.gpl2;
     maintainers = with lib.maintainers; [ jwatt ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

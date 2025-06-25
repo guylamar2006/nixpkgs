@@ -32,6 +32,6 @@ stdenv.mkDerivation rec {
     homepage = "http://math.rutgers.edu/~asbuch/lrcalc/";
     license = lib.licenses.gpl2Plus;
     teams = with lib.teams; [ sage ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

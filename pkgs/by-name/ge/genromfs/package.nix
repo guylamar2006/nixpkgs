@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
     description = "Tool for creating romfs file system images";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ nickcao ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "genromfs";
   };
 }

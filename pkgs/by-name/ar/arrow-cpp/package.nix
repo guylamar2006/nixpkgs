@@ -303,7 +303,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Cross-language development platform for in-memory data";
     homepage = "https://arrow.apache.org/docs/cpp/";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       tobim
       veprbl

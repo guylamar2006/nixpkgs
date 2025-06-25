@@ -28,6 +28,6 @@ stdenv.mkDerivation rec {
     homepage = "https://sourceforge.net/projects/opencore-amr/";
     license = lib.licenses.fraunhofer-fdk;
     maintainers = with lib.maintainers; [ codyopel ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

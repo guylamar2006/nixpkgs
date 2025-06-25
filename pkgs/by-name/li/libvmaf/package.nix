@@ -65,6 +65,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.bsd2Patent;
     maintainers = with lib.maintainers; [ cfsmp3 ];
     mainProgram = "vmaf";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
     description = "Tool to convert Xfig files to other formats";
     homepage = "https://mcj.sourceforge.net/";
     license = lib.licenses.xfig;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ lesuisse ];
   };
 }

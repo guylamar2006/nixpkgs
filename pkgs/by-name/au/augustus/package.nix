@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
     mainProgram = "augustus";
     homepage = "https://github.com/Keriew/augustus";
     license = lib.licenses.agpl3Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       Thra11
       matteopacini

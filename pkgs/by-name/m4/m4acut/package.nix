@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
       zlib
     ];
     maintainers = with lib.maintainers; [ chkno ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "m4acut";
   };
 }

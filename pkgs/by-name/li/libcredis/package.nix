@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     mainProgram = "credis-test";
     homepage = "https://code.google.com/archive/p/credis/";
     license = lib.licenses.bsd3; # from homepage
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ bjornfor ];
   };
 }

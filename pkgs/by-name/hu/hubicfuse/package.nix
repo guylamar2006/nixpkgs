@@ -56,7 +56,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://github.com/TurboGit/hubicfuse";
     description = "FUSE-based filesystem to access hubic cloud storage";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ jpierre03 ];
   };

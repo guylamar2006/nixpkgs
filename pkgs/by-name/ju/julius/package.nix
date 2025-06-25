@@ -59,6 +59,6 @@ stdenv.mkDerivation rec {
       Thra11
       matteopacini
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

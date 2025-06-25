@@ -59,7 +59,7 @@ buildGoModule rec {
     description = "Docker-based local PHP+Node.js web development environments";
     homepage = "https://ddev.com/";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "ddev";
     maintainers = with lib.maintainers; [ remyvv ];
   };

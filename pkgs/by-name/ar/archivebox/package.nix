@@ -116,6 +116,6 @@ python.pkgs.buildPythonApplication rec {
       siraben
       viraptor
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -64,7 +64,7 @@ rustPlatform.buildRustPackage rec {
     description = "Fast and minimalistic image viewer";
     homepage = "https://arturkovacs.github.io/emulsion-website/";
     maintainers = with lib.maintainers; [ magnetophon ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.mit;
     mainProgram = "emulsion";
   };

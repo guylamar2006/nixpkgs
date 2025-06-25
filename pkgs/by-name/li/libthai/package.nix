@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     homepage = "https://linux.thai.net/projects/libthai/";
     description = "Set of Thai language support routines";
     license = lib.licenses.lgpl21Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ crertel ];
     pkgConfigModules = [ "libthai" ];
   };

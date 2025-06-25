@@ -27,7 +27,7 @@ let
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ tboerger ];
     mainProgram = "dockutil";
-    platforms = platforms.darwin;
+    platforms = lib.platforms.darwin;
   };
 
   buildFromSource = swiftPackages.stdenv.mkDerivation (finalAttrs: {

@@ -96,7 +96,7 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl3Plus;
 
     maintainers = with lib.maintainers; [ matthewbauer ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
 
     /**
       The `logger` binary from `util-linux` is preferred over `inetutils`.

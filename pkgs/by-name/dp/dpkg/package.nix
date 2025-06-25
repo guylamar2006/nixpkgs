@@ -111,7 +111,7 @@ stdenv.mkDerivation rec {
     description = "Debian package manager";
     homepage = "https://wiki.debian.org/Teams/Dpkg";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin;
     maintainers = with lib.maintainers; [ siriobalmelli ];
   };

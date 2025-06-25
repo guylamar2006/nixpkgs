@@ -34,6 +34,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.gnu.org/software/gnushogi/";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ ciil ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

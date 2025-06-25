@@ -29,6 +29,6 @@ stdenv.mkDerivation rec {
     description = "Compiler to generate binary data parsers in C++ / C# / Go / Java / JavaScript / Lua / Perl / PHP / Python / Ruby ";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ qubasa ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

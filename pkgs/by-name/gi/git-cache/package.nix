@@ -26,7 +26,7 @@ stdenv.mkDerivation {
     license = lib.licenses.wtfpl;
     description = "Program to add and manage a system-wide or user-wide cache for remote git repositories";
     mainProgram = "git-cache";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ maxhearnden ];
   };
 }

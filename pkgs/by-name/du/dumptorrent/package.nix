@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
     homepage = "https://sourceforge.net/projects/dumptorrent/";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ zohl ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "dumptorrent";
   };
 }

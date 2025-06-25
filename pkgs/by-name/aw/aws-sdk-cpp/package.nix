@@ -161,7 +161,7 @@ stdenv.mkDerivation rec {
     description = "C++ interface for Amazon Web Services";
     homepage = "https://github.com/aws/aws-sdk-cpp";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ orivej ];
     # building ec2 runs out of memory: cc1plus: out of memory allocating 33554372 bytes after a total of 74424320 bytes
     broken = stdenv.buildPlatform.is32bit && ((builtins.elem "ec2" apis) || (builtins.elem "*" apis));

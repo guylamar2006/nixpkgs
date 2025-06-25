@@ -65,6 +65,6 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.gnome.org/pwithnall/libglib-testing";
     license = lib.licenses.lgpl21Plus;
     maintainers = with lib.maintainers; [ jtojnar ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

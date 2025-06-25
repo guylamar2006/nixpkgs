@@ -49,6 +49,6 @@ stdenv.mkDerivation rec {
     changelog = "https://git.build2.org/cgit/libbpkg/log";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ r-burns ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

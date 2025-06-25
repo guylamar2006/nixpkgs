@@ -43,6 +43,6 @@ stdenv.mkDerivation rec {
     homepage = "https://snowballstem.org/";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ fpletz ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

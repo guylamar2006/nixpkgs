@@ -47,8 +47,8 @@ stdenv.mkDerivation rec {
     description = "Map editor for the classic DOOM games, and a few related games such as Heretic and Hexen";
     mainProgram = "eureka";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.all;
-    badPlatforms = platforms.darwin;
+    platforms = lib.platforms.all;
+    badplatforms = lib.platforms.darwin;
     maintainers = with lib.maintainers; [ neonfuz ];
   };
 }

@@ -161,7 +161,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.gnu.org/software/groff/";
     description = "GNU Troff, a typesetting package that reads plain text and produces formatted output";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ pSub ];
 
     longDescription = ''

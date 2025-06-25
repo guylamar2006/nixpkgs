@@ -24,7 +24,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/j0hax/beats";
     license = lib.licenses.gpl3Only;
     description = "Swatch Internet Time implemented as a C program";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ j0hax ];
     mainProgram = "beats";
   };

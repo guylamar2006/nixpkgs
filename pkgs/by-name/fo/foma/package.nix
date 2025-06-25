@@ -53,6 +53,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/mhulden/foma";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ tckmn ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

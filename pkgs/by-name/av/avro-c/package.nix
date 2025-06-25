@@ -40,6 +40,6 @@ stdenv.mkDerivation rec {
     homepage = "https://avro.apache.org/";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ lblasc ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

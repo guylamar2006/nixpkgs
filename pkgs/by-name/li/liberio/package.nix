@@ -34,6 +34,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/EttusResearch/liberio";
     license = lib.licenses.gpl2;
     maintainers = with lib.maintainers; [ doronbehar ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

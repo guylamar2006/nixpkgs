@@ -92,6 +92,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ c4605 ];
     mainProgram = "asdf";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

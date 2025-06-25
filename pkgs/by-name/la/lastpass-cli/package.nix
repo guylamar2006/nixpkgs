@@ -54,7 +54,7 @@ stdenv.mkDerivation rec {
     description = "Stores, retrieves, generates, and synchronizes passwords securely";
     homepage = "https://github.com/lastpass/lastpass-cli";
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ vinylen ];
   };
 }

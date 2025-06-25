@@ -36,6 +36,6 @@ stdenv.mkDerivation rec {
     homepage = "https://dbmx.net/kyotocabinet";
     description = "Library of routines for managing a database";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

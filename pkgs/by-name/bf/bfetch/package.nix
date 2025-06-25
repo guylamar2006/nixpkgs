@@ -28,7 +28,7 @@ stdenvNoCC.mkDerivation {
     description = "SuperB general-purpose fetch displayer written in portable sh";
     homepage = "https://github.com/NNBnh/bfetch";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ moni ];
     mainProgram = "bfetch";
   };

@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
     vertex coloring and derivative computation";
     homepage = "https://cscapes.cs.purdue.edu/coloringpage/software.htm#functionalities";
     license = lib.licenses.lgpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ edwtjo ];
   };
 }

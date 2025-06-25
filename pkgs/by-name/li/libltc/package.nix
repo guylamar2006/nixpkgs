@@ -17,6 +17,6 @@ stdenv.mkDerivation rec {
     homepage = "http://x42.github.io/libltc/";
     description = "POSIX-C Library for handling Linear/Logitudinal Time Code (LTC)";
     license = lib.licenses.lgpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

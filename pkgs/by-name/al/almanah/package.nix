@@ -72,7 +72,7 @@ stdenv.mkDerivation rec {
     mainProgram = "almanah";
     homepage = "https://gitlab.gnome.org/GNOME/almanah";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     teams = with lib.teams; [ gnome ];
   };
 }

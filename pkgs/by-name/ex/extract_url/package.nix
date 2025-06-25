@@ -46,6 +46,6 @@ stdenv.mkDerivation rec {
     mainProgram = "extract_url";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ qyliss ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

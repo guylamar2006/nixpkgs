@@ -89,6 +89,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/confluentinc/libserdes";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ liff ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

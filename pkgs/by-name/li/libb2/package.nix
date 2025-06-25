@@ -37,7 +37,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "BLAKE2 family of cryptographic hash functions";
     homepage = "https://blake2.net/";
     pkgConfigModules = [ "libb2" ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       dfoxfranke
       dotlambda

@@ -35,6 +35,6 @@ stdenv.mkDerivation {
     changelog = "https://github.com/bitcoin-core/btcdeb/releases";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ akru ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

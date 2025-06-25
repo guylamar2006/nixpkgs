@@ -27,6 +27,6 @@ stdenvNoCC.mkDerivation rec {
     description = "High-quality typeface family for Latin, Cyrillic, and Greek";
     maintainers = with lib.maintainers; [ ];
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

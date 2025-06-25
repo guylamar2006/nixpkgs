@@ -83,7 +83,7 @@ buildGoModule rec {
     maintainers = with lib.maintainers; [
       mmahut
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "blockbook";
   };
 }

@@ -39,6 +39,6 @@ stdenv.mkDerivation rec {
     description = "C client library for Couchbase";
     homepage = "https://github.com/couchbase/libcouchbase";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

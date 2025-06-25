@@ -49,6 +49,6 @@ stdenv.mkDerivation {
     license = lib.licenses.gpl2Plus;
     mainProgram = "apfs-fuse";
     maintainers = with lib.maintainers; [ ealasu ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

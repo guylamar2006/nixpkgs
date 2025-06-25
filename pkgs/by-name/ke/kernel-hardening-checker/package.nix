@@ -19,7 +19,7 @@ python3Packages.buildPythonApplication rec {
     description = "Tool for checking the security hardening options of the Linux kernel";
     homepage = "https://github.com/a13xp0p0v/kernel-hardening-checker";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ erdnaxe ];
     mainProgram = "kernel-hardening-checker";
   };

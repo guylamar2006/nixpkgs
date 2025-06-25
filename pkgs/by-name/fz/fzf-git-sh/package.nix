@@ -63,6 +63,6 @@ stdenv.mkDerivation rec {
     description = "Bash and zsh key bindings for Git objects, powered by fzf";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ deejayem ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

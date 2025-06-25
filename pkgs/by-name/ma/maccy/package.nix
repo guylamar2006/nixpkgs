@@ -36,6 +36,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
       emilytrau
       baongoc124
     ];
-    platforms = platforms.darwin;
+    platforms = lib.platforms.darwin;
   };
 })

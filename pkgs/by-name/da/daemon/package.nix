@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ sander ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "daemon";
   };
 }

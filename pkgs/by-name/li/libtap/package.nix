@@ -33,6 +33,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.shlomifish.org/open-source/projects/libtap/";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

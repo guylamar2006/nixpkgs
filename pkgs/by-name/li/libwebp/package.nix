@@ -85,7 +85,7 @@ stdenv.mkDerivation rec {
     description = "Tools and library for the WebP image format";
     homepage = "https://developers.google.com/speed/webp/";
     license = lib.licenses.bsd3;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ajs124 ];
   };
 }

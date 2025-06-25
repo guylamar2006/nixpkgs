@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
     description = "Blog compiler";
     license = lib.licenses.bsd3;
     homepage = "https://blogc.rgm.io";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ sikmir ];
   };
 }

@@ -125,7 +125,7 @@ stdenv.mkDerivation rec {
       binaryBytecode # source bundles dependencies as jars
     ];
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       flokli
       r3dl3g

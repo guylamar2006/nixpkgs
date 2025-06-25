@@ -72,7 +72,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/ReinhardPrix/FreedroidClassic";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ iblech ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     # Builds but fails to render to the screen at runtime.
     broken = stdenv.hostPlatform.isDarwin;
   };

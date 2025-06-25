@@ -34,6 +34,6 @@ stdenv.mkDerivation rec {
     homepage = "https://ihp.digitallyinduced.com";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ mpscholten ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

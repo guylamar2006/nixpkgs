@@ -74,6 +74,6 @@ stdenv.mkDerivation {
     '';
     homepage = "https://github.com/drotiro/boxfs2";
     license = lib.licenses.gpl3;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

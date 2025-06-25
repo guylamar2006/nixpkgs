@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
       athas
       r-burns
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "clinfo";
   };
 }

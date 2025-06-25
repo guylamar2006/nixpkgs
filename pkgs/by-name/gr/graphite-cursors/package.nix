@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
     description = "Graphite cursor theme";
     homepage = "https://github.com/vinceliuice/Graphite-cursors";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ oluceps ];
   };
 }

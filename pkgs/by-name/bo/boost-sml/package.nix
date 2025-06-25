@@ -34,6 +34,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/boost-ext/sml";
     license = lib.licenses.boost;
     maintainers = with lib.maintainers; [ prtzl ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

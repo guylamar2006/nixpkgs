@@ -38,6 +38,6 @@ stdenv.mkDerivation rec {
     description = "MIDI instrument patch files support library";
     license = lib.licenses.lgpl21;
     maintainers = with lib.maintainers; [ orivej ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

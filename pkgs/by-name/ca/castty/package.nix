@@ -32,7 +32,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/dhobsd/castty";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ iblech ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "castty";
   };
 }

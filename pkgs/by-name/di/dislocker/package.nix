@@ -47,6 +47,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/aorimn/dislocker";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ elitak ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

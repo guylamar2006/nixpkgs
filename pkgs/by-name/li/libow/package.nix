@@ -52,6 +52,6 @@ stdenv.mkDerivation rec {
     homepage = "https://owfs.org/";
     license = lib.licenses.gpl2;
     maintainers = with lib.maintainers; [ disserman ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

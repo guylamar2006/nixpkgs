@@ -49,6 +49,6 @@ stdenv.mkDerivation rec {
       isc
     ];
     maintainers = with lib.maintainers; [ raphaelr ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

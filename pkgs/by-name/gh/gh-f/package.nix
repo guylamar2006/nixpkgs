@@ -52,6 +52,6 @@ stdenvNoCC.mkDerivation rec {
     maintainers = with lib.maintainers; [ loicreynier ];
     license = lib.licenses.unlicense;
     mainProgram = "gh-f";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

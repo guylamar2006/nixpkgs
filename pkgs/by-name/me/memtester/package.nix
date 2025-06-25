@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     homepage = "http://pyropus.ca/software/memtester/";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ dezgeg ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "memtester";
   };
 }

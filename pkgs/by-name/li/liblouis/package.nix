@@ -84,6 +84,6 @@ stdenv.mkDerivation (finalAttrs: {
       gpl3Plus # tools
     ];
     maintainers = with lib.maintainers; [ jtojnar ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

@@ -77,6 +77,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://libvnc.github.io/";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ raskin ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

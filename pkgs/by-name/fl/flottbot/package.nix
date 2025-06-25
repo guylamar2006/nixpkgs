@@ -39,6 +39,6 @@ buildGoModule rec {
     maintainers = with lib.maintainers; [ bryanhonof ];
     sourceProvenance = [ sourceTypes.fromSource ];
     mainProgram = "flottbot";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

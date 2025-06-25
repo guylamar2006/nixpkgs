@@ -37,7 +37,7 @@ buildGoModule rec {
     '';
     homepage = "https://github.com/google/licenseclassifier";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ tnias ];
   };
 }

@@ -53,6 +53,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/danielgtaylor/jpeg-archive";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ srghma ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

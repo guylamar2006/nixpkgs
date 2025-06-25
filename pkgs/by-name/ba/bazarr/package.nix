@@ -68,6 +68,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ d-xo ];
     mainProgram = "bazarr";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

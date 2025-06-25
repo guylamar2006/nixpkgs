@@ -96,7 +96,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://gitlab.gnome.org/GNOME/dconf";
     license = lib.licenses.lgpl21Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     badPlatforms = [
       # Mandatory libdconfsettings shared library.
       lib.systems.inspect.platformPatterns.isStatic

@@ -149,7 +149,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
 
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "evince";
     teams = [
       teams.gnome

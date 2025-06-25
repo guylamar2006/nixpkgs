@@ -70,6 +70,6 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://simonrepp.com/faircamp/";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ fgaz ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

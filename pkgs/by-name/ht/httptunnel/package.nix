@@ -25,6 +25,6 @@ stdenv.mkDerivation {
     homepage = "http://www.gnu.org/software/httptunnel/httptunnel.html";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ koral ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

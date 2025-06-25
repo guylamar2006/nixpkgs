@@ -89,7 +89,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
       shyim
       martinjlowm
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     sourceProvenance = with lib.sourceTypes; [
       binaryBytecode
       binaryNativeCode

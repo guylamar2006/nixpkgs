@@ -40,6 +40,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.mcrl2.org/";
     license = lib.licenses.boost;
     maintainers = with lib.maintainers; [ moretea ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

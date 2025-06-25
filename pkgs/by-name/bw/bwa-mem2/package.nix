@@ -88,7 +88,7 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.mit;
     homepage = "https://github.com/bwa-mem2/bwa-mem2/";
     changelog = "https://github.com/bwa-mem2/bwa-mem2/blob/${finalAttrs.src.rev}/NEWS.md";
-    platforms = platforms.x86_64;
+    platforms = lib.platforms.x86_64;
     maintainers = with lib.maintainers; [ apraga ];
   };
 })

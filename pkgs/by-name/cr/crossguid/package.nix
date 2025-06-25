@@ -41,6 +41,6 @@ stdenv.mkDerivation {
     license = lib.licenses.mit;
     homepage = "https://github.com/graeme-hill/crossguid";
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

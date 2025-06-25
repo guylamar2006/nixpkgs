@@ -49,6 +49,6 @@ stdenv.mkDerivation rec {
     homepage = "http://bftpd.sf.net/";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ raskin ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

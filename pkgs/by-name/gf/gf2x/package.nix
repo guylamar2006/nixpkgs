@@ -46,6 +46,6 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.inria.fr/gf2x/gf2x/";
     license = lib.licenses.gpl2Plus;
     teams = with lib.teams; [ sage ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

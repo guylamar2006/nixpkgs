@@ -24,6 +24,6 @@ rustPlatform.buildRustPackage rec {
     license = lib.licenses.asl20;
     mainProgram = "minesweep";
     maintainers = with lib.maintainers; [ aleksana ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

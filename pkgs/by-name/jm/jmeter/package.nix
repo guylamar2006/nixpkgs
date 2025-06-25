@@ -65,6 +65,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ bryanasdev000 ];
     priority = 1;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

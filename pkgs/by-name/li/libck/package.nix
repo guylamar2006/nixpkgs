@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
       bsd2
     ];
     homepage = "https://concurrencykit.org/";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       chessai
       thoughtpolice

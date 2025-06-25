@@ -90,7 +90,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/google/glog";
     license = lib.licenses.bsd3;
     description = "Library for application-level logging";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       nh2
       r-burns

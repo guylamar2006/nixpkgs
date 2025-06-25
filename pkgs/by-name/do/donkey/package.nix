@@ -49,6 +49,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://devel.ringlet.net/security/donkey";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ raboof ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

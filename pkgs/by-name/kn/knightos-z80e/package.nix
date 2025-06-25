@@ -34,6 +34,6 @@ stdenv.mkDerivation rec {
     description = "Z80 calculator emulator and debugger";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ siraben ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

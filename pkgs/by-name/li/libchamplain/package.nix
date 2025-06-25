@@ -92,6 +92,6 @@ stdenv.mkDerivation rec {
       teams.gnome
       teams.pantheon
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

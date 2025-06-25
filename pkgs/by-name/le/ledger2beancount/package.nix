@@ -62,7 +62,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/beancount/ledger2beancount";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ pablovsky ];
   };
 }

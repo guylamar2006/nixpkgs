@@ -69,7 +69,7 @@ perlPackages.buildPerlPackage rec {
     mainProgram = "get_iplayer";
     license = lib.licenses.gpl3Plus;
     homepage = "https://github.com/get-iplayer/get_iplayer";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       rika
       chewblacka

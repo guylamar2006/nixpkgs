@@ -34,7 +34,7 @@ python3.pkgs.buildPythonApplication rec {
     homepage = "https://gitless.com/";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ cransom ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "gl";
   };
 }

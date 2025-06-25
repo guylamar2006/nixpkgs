@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     description = "MOD playing library";
     homepage = "https://modplug-xmms.sourceforge.net/";
     license = lib.licenses.publicDomain;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ raskin ];
   };
 }

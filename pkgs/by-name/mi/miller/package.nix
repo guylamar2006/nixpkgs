@@ -35,6 +35,6 @@ buildGoModule rec {
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ mstarzyk ];
     mainProgram = "mlr";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

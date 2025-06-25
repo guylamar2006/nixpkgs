@@ -37,6 +37,6 @@ stdenv.mkDerivation rec {
     mainProgram = "bashmount";
     maintainers = with lib.maintainers; [ koral ];
     license = lib.licenses.gpl2Only;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

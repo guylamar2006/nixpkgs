@@ -80,6 +80,6 @@ stdenv.mkDerivation (finalAttrs: {
       iquerejeta
       yvan-sraka
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

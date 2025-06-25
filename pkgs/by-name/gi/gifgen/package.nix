@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ snowflake ];
     mainProgram = "gifgen";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

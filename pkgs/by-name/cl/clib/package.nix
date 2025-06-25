@@ -25,6 +25,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/clibs/clib";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ jb55 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

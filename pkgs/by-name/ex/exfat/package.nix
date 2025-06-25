@@ -29,6 +29,6 @@ stdenv.mkDerivation rec {
     inherit (src.meta) homepage;
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ dywedir ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -126,7 +126,7 @@ stdenv.mkDerivation rec {
     homepage = "https://easyrpg.org/";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = lib.optionalString stdenv.hostPlatform.isDarwin "EasyRPG Player";
   };
 }

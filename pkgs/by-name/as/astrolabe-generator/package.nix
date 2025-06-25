@@ -38,6 +38,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "AstrolabeGenerator";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

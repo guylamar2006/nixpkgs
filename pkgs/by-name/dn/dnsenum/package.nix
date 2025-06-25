@@ -41,6 +41,6 @@ stdenv.mkDerivation rec {
     mainProgram = "dnsenum";
     maintainers = with lib.maintainers; [ c0bw3b ];
     license = lib.licenses.gpl2Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

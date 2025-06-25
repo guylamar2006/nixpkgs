@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
     description = "Yet another *nix distro fetching program, but less complex";
     homepage = "https://github.com/q60/disfetch";
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ vel ];
     mainProgram = "disfetch";
   };

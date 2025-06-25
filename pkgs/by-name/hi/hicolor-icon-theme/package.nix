@@ -34,7 +34,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     description = "Default fallback theme used by implementations of the icon theme specification";
     homepage = "https://www.freedesktop.org/wiki/Software/icon-theme/";
     changelog = "https://gitlab.freedesktop.org/xdg/default-icon-theme/-/blob/${finalAttrs.src.rev}/NEWS";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.gpl2Only;
     pkgConfigModules = [ "default-icon-theme" ];
     maintainers = with lib.maintainers; [ jopejoe1 ];

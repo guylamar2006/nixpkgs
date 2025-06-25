@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
       interleaving data container developed by Monty at Xiph.Org, originally to
       support the Ogg Vorbis audio format but now used for many free codecs
       including Dirac, FLAC, Speex and Theora.'';
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.bsd3;
   };
 }

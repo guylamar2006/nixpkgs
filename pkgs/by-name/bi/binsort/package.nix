@@ -32,6 +32,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "http://neoscientists.org/~tmueller/binsort/";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ numinit ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

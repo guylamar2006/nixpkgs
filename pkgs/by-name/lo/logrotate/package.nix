@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     description = "Rotates and compresses system logs";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ tobim ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "logrotate";
   };
 }

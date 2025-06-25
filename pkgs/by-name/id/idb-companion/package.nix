@@ -28,7 +28,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Powerful command line tool for automating iOS simulators and devices";
     homepage = "https://github.com/facebook/idb";
     license = lib.licenses.mit;
-    platforms = platforms.darwin;
+    platforms = lib.platforms.darwin;
     mainProgram = "idb_companion";
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
     maintainers = with lib.maintainers; [ siddarthkay ];

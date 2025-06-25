@@ -44,6 +44,6 @@ stdenvNoCC.mkDerivation rec {
       licenses.free
     ];
     maintainers = with lib.maintainers; [ mathnerd314 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

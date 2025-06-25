@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.hznet.de/tools.html#gen6dns";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ majiir ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

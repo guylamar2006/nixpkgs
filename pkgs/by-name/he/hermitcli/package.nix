@@ -29,7 +29,7 @@ buildGoModule rec {
     description = "Manages isolated, self-bootstrapping sets of tools in software projects";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ cbrewster ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "hermit";
   };
 }

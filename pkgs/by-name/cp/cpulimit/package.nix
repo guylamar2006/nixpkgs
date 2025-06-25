@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://github.com/opsengine/cpulimit";
     description = "CPU usage limiter";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.gpl2Plus;
     mainProgram = "cpulimit";
     maintainers = with lib.maintainers; [ jsoo1 ];

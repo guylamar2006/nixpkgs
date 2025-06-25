@@ -84,7 +84,7 @@ stdenv.mkDerivation rec {
     description = "Interactive process viewer, with vim-style keybindings";
     homepage = "https://aur.archlinux.org/packages/htop-vim";
     license = lib.licenses.gpl2Only;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ thiagokokada ];
     mainProgram = "htop";
   };

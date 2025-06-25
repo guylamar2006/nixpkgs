@@ -40,6 +40,6 @@ stdenv.mkDerivation {
     changelog = "https://git.savannah.gnu.org/gitweb/?p=gnulib.git;a=blob;f=ChangeLog";
     license = lib.licenses.gpl3Plus;
     mainProgram = "gnulib-tool";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

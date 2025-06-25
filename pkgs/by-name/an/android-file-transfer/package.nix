@@ -44,6 +44,6 @@ stdenv.mkDerivation rec {
     homepage = "https://whoozle.github.io/android-file-transfer-linux/";
     license = lib.licenses.lgpl21Plus;
     maintainers = with lib.maintainers; [ xaverdh ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

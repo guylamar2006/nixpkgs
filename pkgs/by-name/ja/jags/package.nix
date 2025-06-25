@@ -34,6 +34,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl2;
     homepage = "http://mcmc-jags.sourceforge.net";
     maintainers = with lib.maintainers; [ andres ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

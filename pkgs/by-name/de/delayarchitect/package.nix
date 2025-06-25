@@ -59,7 +59,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/jpcima/DelayArchitect";
     description = "Visual, musical editor for delay effects";
     maintainers = with lib.maintainers; [ magnetophon ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.gpl3Plus;
   };
 }

@@ -80,7 +80,7 @@ stdenv.mkDerivation rec {
     description = "C++ wrapper around the aws-c-* libraries";
     homepage = "https://github.com/awslabs/aws-crt-cpp";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ r-burns ];
   };
 }

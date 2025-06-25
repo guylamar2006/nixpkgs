@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     description = "C++ port of the Typesafe Config library";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ womfoo ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 
 }

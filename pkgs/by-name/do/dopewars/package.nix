@@ -50,6 +50,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ geri1701 ];
     mainProgram = "dopewars";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

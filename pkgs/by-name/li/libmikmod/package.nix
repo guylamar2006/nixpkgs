@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
       astsmtl
       lovek323
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
 
     longDescription = ''
       A library for playing tracker music module files supporting many formats,

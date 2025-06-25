@@ -52,6 +52,6 @@ python3Packages.buildPythonApplication rec {
     license = lib.licenses.gpl2;
     homepage = "https://github.com/eggnogdb/eggnog-mapper/wiki";
     maintainers = with lib.maintainers; [ luispedro ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

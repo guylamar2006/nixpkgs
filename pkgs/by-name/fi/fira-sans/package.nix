@@ -37,6 +37,6 @@ stdenvNoCC.mkDerivation rec {
       corresponding italic versions.
     '';
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

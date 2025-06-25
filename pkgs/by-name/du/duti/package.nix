@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
       matthewbauer
       n-hass
     ];
-    platforms = platforms.darwin;
+    platforms = lib.platforms.darwin;
     license = lib.licenses.publicDomain;
     homepage = "https://github.com/moretension/duti/";
   };

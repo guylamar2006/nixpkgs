@@ -37,6 +37,6 @@ stdenv.mkDerivation rec {
 
     license = lib.licenses.lgpl2Plus;
     mainProgram = "checkmk";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

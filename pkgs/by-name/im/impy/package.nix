@@ -40,6 +40,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/bcampbell/impy";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ fgaz ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

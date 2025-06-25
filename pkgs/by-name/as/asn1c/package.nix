@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     homepage = "http://lionet.info/asn1c/compiler.html";
     description = "Open Source ASN.1 Compiler";
     license = lib.licenses.bsd2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ numinit ];
   };
 }

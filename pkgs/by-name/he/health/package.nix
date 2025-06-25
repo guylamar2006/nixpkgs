@@ -66,6 +66,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl3Plus;
     mainProgram = "dev.Cogitri.Health";
     teams = [ lib.teams.gnome-circle ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

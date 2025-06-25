@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Reference implementation of the Dirfile Standards";
     license = lib.licenses.lgpl21Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ vbgl ];
     homepage = "https://getdata.sourceforge.net/";
   };

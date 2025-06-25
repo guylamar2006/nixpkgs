@@ -30,7 +30,7 @@ stdenv.mkDerivation {
   meta = {
     description = "Pseudorandom Number Sequence Test Program";
     homepage = "https://www.fourmilab.ch/random/";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.publicDomain;
     mainProgram = "ent";
   };

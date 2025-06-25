@@ -41,6 +41,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/ryantm/mmdoc";
     license = lib.licenses.cc0;
     maintainers = with lib.maintainers; [ ryantm ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

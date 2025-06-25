@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
       gpl3Plus
       lgpl3Plus
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ raskin ];
   };
 }

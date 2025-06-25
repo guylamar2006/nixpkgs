@@ -34,6 +34,6 @@ buildNpmPackage rec {
     downloadPage = "https://github.com/johman10/flood-for-transmission/releases";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ al3xtjames ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

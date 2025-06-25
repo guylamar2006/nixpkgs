@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
     description = "C99 implementation of the HTTP/1.1 and HTTP/2 specifications";
     homepage = "https://github.com/awslabs/aws-c-http";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ r-burns ];
   };
 }

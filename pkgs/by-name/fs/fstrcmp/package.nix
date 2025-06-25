@@ -48,6 +48,6 @@ stdenv.mkDerivation rec {
     downloadPage = "https://sourceforge.net/projects/fstrcmp/";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ sephalon ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

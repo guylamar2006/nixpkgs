@@ -19,6 +19,6 @@ bundlerApp rec {
     homepage = "https://github.com/maid/maid";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ alanpearce ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

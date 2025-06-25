@@ -31,6 +31,6 @@ stdenv.mkDerivation {
   meta = {
     description = "Tools for icon conversion specific to nix package manager";
     maintainers = with lib.maintainers; [ jraygauthier ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
 
   meta = {
     description = "C++ library for half precision floating point arithmetics";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
   };

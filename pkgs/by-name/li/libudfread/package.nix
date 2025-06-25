@@ -21,6 +21,6 @@ stdenv.mkDerivation rec {
     homepage = "https://code.videolan.org/videolan/libudfread";
     license = lib.licenses.lgpl21Plus;
     maintainers = with lib.maintainers; [ chkno ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

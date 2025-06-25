@@ -62,6 +62,6 @@ python3Packages.buildPythonApplication rec {
       gpl2Plus
       lgpl2Plus
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

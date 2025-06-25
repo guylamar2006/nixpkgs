@@ -69,6 +69,6 @@ stdenv.mkDerivation rec {
     mainProgram = "gnome-tetravex";
     teams = with lib.teams; [ gnome ];
     license = lib.licenses.gpl2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

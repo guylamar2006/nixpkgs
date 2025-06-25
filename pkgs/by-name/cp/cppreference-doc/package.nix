@@ -31,6 +31,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://en.cppreference.com";
     license = lib.licenses.cc-by-sa-30;
     maintainers = with lib.maintainers; [ panicgh ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

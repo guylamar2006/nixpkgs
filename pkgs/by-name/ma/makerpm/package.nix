@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     description = "Clean, simple RPM packager reimplemented completely from scratch";
     mainProgram = "makerpm";
     license = lib.licenses.free;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ivan-tkatchev ];
   };
 }

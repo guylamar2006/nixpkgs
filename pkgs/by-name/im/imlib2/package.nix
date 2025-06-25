@@ -123,7 +123,7 @@ stdenv.mkDerivation (finalAttrs: {
     changelog = "https://git.enlightenment.org/old/legacy-imlib2/raw/tag/v${finalAttrs.version}/ChangeLog";
     license = lib.licenses.imlib2;
     pkgConfigModules = [ "imlib2" ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ];
   };
 })

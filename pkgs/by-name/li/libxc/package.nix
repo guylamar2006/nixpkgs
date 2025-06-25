@@ -58,7 +58,7 @@ stdenv.mkDerivation rec {
     mainProgram = "xc-info";
     homepage = "https://www.tddft.org/programs/Libxc/";
     license = lib.licenses.mpl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ markuskowa ];
   };
 }

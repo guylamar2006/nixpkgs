@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
     description = "Marwaita GTK theme with Pop_os Linux style";
     homepage = "https://www.pling.com/p/1377894/";
     license = lib.licenses.gpl3Only;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ romildo ];
   };
 }

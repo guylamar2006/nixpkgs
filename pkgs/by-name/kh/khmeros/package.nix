@@ -27,6 +27,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "http://www.khmeros.info/";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ serge ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

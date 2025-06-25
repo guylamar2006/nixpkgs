@@ -40,6 +40,6 @@ stdenv.mkDerivation rec {
     mainProgram = "davtest.pl";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ emilytrau ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

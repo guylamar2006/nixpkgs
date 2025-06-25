@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/liquibase/liquibase-redshift/";
     description = "Amazon Redshift extension for Liquibase";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ sir4ur0n ];
   };
 }

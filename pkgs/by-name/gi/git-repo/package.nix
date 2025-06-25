@@ -71,7 +71,7 @@ stdenv.mkDerivation rec {
     homepage = "https://android.googlesource.com/tools/repo";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ otavio ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "repo";
   };
 }

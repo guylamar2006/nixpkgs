@@ -68,6 +68,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl3Plus;
     mainProgram = "metronome";
     maintainers = with lib.maintainers; [ aleksana ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

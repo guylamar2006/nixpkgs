@@ -30,6 +30,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/hfiguiere/exifprobe";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ siraben ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

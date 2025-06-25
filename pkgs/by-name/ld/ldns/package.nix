@@ -66,6 +66,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ dtzWill ];
     mainProgram = "drill";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

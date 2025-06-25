@@ -24,6 +24,6 @@ stdenv.mkDerivation rec {
     homepage = "http://fragglet.github.io/lhasa";
     maintainers = with lib.maintainers; [ sander ];
     mainProgram = "lha";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

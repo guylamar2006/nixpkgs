@@ -102,7 +102,7 @@ stdenv.mkDerivation (finalAttrs: {
       Font Manager is NOT a professional-grade font management solution.
     '';
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ romildo ];
   };
 })

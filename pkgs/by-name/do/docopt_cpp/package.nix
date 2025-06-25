@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
       mit
       boost
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
   };
 }

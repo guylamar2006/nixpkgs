@@ -39,6 +39,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/skystrife/cpptoml";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ photex ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

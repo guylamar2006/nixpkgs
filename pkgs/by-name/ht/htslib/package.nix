@@ -64,7 +64,7 @@ stdenv.mkDerivation rec {
     description = "C library for reading/writing high-throughput sequencing data";
     license = lib.licenses.mit;
     homepage = "http://www.htslib.org/";
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ mimame ];
   };
 }

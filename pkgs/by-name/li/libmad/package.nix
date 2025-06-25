@@ -89,6 +89,6 @@ stdenv.mkDerivation rec {
     description = "High-quality, fixed-point MPEG audio decoder supporting MPEG-1 and MPEG-2";
     license = lib.licenses.gpl2;
     maintainers = with lib.maintainers; [ lovek323 ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

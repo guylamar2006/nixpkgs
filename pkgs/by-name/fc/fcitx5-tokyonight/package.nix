@@ -39,6 +39,6 @@ stdenvNoCC.mkDerivation {
     homepage = "https://github.com/ch3n9w/fcitx5-Tokyonight";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ Guanran928 ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

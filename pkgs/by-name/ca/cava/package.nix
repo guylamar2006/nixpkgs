@@ -74,7 +74,7 @@ stdenv.mkDerivation rec {
       offline
       mirrexagon
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "cava";
   };
 }

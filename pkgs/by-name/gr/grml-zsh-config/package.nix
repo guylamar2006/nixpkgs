@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
       gpl2Plus
       gpl2Only
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       msteen
       rvolosatovs

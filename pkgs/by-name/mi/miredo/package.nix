@@ -36,6 +36,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.remlab.net/miredo/";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

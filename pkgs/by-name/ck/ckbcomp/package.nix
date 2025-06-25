@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     homepage = "https://salsa.debian.org/installer-team/console-setup";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ dezgeg ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "ckbcomp";
   };
 }

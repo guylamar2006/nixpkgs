@@ -28,7 +28,7 @@ stdenvNoCC.mkDerivation rec {
     description = "Iran Supreme Council of Information and Communication Technology (SCICT) standard Persian fonts series";
     # License information is unavailable.
     license = lib.licenses.unfree;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
   };
 }

@@ -41,7 +41,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "http://www.sndio.org";
     license = lib.licenses.isc;
     maintainers = with lib.maintainers; [ sna ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "aucatctl";
   };
 })

@@ -47,6 +47,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ arthsmn ];
     mainProgram = "apt-mirror";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 })

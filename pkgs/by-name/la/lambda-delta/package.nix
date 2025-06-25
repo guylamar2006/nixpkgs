@@ -34,6 +34,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/dseagrav/ld";
     license = lib.licenses.gpl2;
     maintainers = with lib.maintainers; [ siraben ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -130,7 +130,7 @@ stdenv.mkDerivation rec {
       mmlb
       SuperSandro2000
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "gitstatusd";
   };
 }

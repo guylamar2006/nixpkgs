@@ -74,7 +74,7 @@ stdenv.mkDerivation (finalAttrs: {
       felixsinger
       funkeleinhorn
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "flashprog";
   };
 })

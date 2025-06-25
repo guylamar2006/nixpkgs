@@ -25,7 +25,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "libgit2 bindings for C++";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })
 # TODO [ ken-matsui ]: tests

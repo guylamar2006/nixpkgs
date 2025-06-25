@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/ThomasHabets/arping";
     license = with licenses; [ gpl2Plus ];
     maintainers = with lib.maintainers; [ michalrus ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "arping";
   };
 }

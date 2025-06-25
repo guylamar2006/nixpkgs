@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/jiixyj/libebur128";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ andrewrk ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

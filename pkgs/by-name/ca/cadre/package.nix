@@ -19,6 +19,6 @@ bundlerApp {
       nyarly
       nicknovitski
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

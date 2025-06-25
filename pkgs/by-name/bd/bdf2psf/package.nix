@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ rnhmjoj ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "bdf2psf";
   };
 }

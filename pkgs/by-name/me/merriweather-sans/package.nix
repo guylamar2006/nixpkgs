@@ -29,7 +29,7 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://github.com/SorkinType/Merriweather-Sans";
     description = "Merriweather Sans is a low-contrast semi-condensed sans-serif text typeface family designed to be pleasant to read at very small sizes";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ emily ];
   };
 }

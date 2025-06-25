@@ -28,7 +28,7 @@ stdenvNoCC.mkDerivation {
     homepage = "https://github.com/BornaIz/Lalezar";
     description = "Multi-script display typeface for popular culture";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
   };
 }

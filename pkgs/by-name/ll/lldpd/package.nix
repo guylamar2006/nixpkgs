@@ -62,6 +62,6 @@ stdenv.mkDerivation rec {
     homepage = "https://lldpd.github.io/";
     license = lib.licenses.isc;
     maintainers = with lib.maintainers; [ fpletz ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

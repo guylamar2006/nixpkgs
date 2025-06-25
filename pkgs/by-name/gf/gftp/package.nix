@@ -56,7 +56,7 @@ stdenv.mkDerivation rec {
     description = "GTK-based multithreaded FTP client for *nix-based machines";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }
 # TODO: report the hardeningDisable to upstream

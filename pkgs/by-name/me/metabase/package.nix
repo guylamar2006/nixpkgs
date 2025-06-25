@@ -34,7 +34,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://metabase.com";
     sourceProvenance = with sourceTypes; [ binaryBytecode ];
     license = lib.licenses.agpl3Only;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       schneefux
       thoughtpolice

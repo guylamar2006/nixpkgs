@@ -31,7 +31,7 @@ stdenvNoCC.mkDerivation {
     homepage = "https://www.lexend.com";
     description = "Variable font family designed to aid in reading proficiency";
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ fufexan ];
   };
 }

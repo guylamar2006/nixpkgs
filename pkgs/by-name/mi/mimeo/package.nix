@@ -45,7 +45,7 @@ python3Packages.buildPythonApplication {
     homepage = "https://xyne.dev/projects/mimeo/";
     license = [ licenses.gpl2Only ];
     maintainers = with lib.maintainers; [ rycee ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "mimeo";
   };
 }

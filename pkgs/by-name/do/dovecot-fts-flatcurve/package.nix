@@ -38,6 +38,6 @@ stdenv.mkDerivation rec {
     description = "Dovecot FTS Flatcurve plugin (Xapian)";
     license = lib.licenses.lgpl21Only;
     maintainers = with lib.maintainers; [ euxane ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

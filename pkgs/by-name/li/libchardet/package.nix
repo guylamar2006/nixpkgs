@@ -30,6 +30,6 @@ stdenv.mkDerivation rec {
     homepage = "ftp://ftp.oops.org/pub/oops/libchardet/index.html";
     license = lib.licenses.mpl11;
     maintainers = with lib.maintainers; [ abbradar ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

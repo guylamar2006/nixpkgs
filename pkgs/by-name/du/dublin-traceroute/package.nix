@@ -55,7 +55,7 @@ stdenv.mkDerivation {
     homepage = "https://dublin-traceroute.net/";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ baloo ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "dublin-traceroute";
     broken = stdenv.hostPlatform.isDarwin;
   };

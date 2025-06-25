@@ -54,7 +54,7 @@ stdenv.mkDerivation rec {
       gpl2
       bsd2
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ bzizou ];
   };
 }

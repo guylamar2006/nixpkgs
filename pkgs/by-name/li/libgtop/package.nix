@@ -51,6 +51,6 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Library that reads information about processes and the running system";
     license = lib.licenses.gpl2Plus;
     teams = with lib.teams; [ gnome ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 })

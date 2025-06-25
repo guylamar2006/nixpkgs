@@ -40,7 +40,7 @@ stdenv.mkDerivation {
     description = "Implementation of the JPEG XR image codec standard";
     homepage = "https://jxrlib.codeplex.com";
     license = lib.licenses.bsd2;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ romildo ];
   };
 }

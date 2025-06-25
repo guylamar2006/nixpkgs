@@ -53,6 +53,6 @@ stdenv.mkDerivation rec {
     description = "Assembler and linker for the Z80";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ siraben ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

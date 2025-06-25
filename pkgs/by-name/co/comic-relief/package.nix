@@ -38,7 +38,7 @@ stdenvNoCC.mkDerivation rec {
       available in Comic Sans MS.
     '';
     license = lib.licenses.ofl;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ rycee ];
 
     # Reduce the priority of this package. The intent is that if you

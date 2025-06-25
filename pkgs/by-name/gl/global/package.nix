@@ -76,7 +76,7 @@ stdenv.mkDerivation rec {
       pSub
       peterhoeg
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     changelog = "https://cvs.savannah.gnu.org/viewvc/global/global/NEWS?view=markup&pathrev=VERSION-${
       lib.replaceStrings [ "." ] [ "_" ] version
     }";

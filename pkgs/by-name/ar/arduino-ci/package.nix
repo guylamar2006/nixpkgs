@@ -49,6 +49,6 @@ stdenv.mkDerivation rec {
     homepage = src.meta.homepage;
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ryantm ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -25,7 +25,7 @@ python3Packages.buildPythonApplication rec {
     description = "Identify the different types of hashes used to encrypt data and especially passwords";
     homepage = "https://github.com/blackploit/hash-identifier";
     license = lib.licenses.gpl3Plus;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ethancedwards8 ];
     mainProgram = "hash-identifier";
   };

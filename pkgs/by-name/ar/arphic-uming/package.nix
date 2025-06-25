@@ -37,6 +37,6 @@ stdenvNoCC.mkDerivation rec {
 
     license = lib.licenses.arphicpl;
     maintainers = with lib.maintainers; [ changlinli ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

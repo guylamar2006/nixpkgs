@@ -39,7 +39,7 @@ let
         description = "Data files for the Geant4 toolkit";
         homepage = "https://geant4.web.cern.ch/support/download";
         license = lib.licenses.g4sl;
-        platforms = platforms.all;
+        platforms = lib.platforms.all;
       };
     };
 in

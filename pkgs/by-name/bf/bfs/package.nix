@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/tavianator/bfs";
     license = lib.licenses.bsd0;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       yesbox
       cafkafk

@@ -39,7 +39,7 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "ext4fuse";
     homepage = "https://github.com/gerard/ext4fuse";
     maintainers = with lib.maintainers; [ felixalbrigtsen ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.gpl2Plus;
   };
 })

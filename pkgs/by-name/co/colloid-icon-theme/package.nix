@@ -92,7 +92,7 @@ lib.checkListOfEnum "colloid-icon-theme: scheme variants"
       description = "Colloid icon theme";
       homepage = "https://github.com/vinceliuice/colloid-icon-theme";
       license = lib.licenses.gpl3Only;
-      platforms = platforms.unix;
+      platforms = lib.platforms.unix;
       maintainers = with lib.maintainers; [ romildo ];
     };
   }

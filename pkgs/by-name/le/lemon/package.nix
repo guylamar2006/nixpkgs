@@ -46,6 +46,6 @@ stdenv.mkDerivation {
     '';
     homepage = "http://www.hwaci.com/sw/lemon/";
     license = lib.licenses.publicDomain;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

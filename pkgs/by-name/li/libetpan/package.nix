@@ -111,6 +111,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.etpan.org/libetpan.html";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ oxzi ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/viraptor/fm_tune";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ viraptor ];
     mainProgram = "fm_tune";
   };

@@ -20,7 +20,7 @@ python3Packages.buildPythonPackage {
     mainProgram = "gladtex";
     homepage = "https://humenda.github.io/GladTeX";
     license = lib.licenses.lgpl3Plus;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ pentane ];
   };
 }

@@ -40,6 +40,6 @@ stdenv.mkDerivation rec {
       publicDomain
       wtfpl
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

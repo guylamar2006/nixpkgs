@@ -40,6 +40,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/HOST-Oman/libraqm";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ sifmelcara ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

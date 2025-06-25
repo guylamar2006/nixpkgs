@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/mariuz/flamerobin";
     license = lib.licenses.bsdOriginal;
     maintainers = with lib.maintainers; [ uralbash ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "flamerobin";
   };
 }

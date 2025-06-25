@@ -44,6 +44,6 @@ stdenv.mkDerivation {
     mainProgram = "joomscan.pl";
     maintainers = with lib.maintainers; [ emilytrau ];
     license = lib.licenses.gpl3Only;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

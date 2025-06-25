@@ -26,7 +26,7 @@ stdenvNoCC.mkDerivation {
     description = "Emoji picker with support for bemenu/wofi/rofi/dmenu and wayland/X11";
     license = lib.licenses.mit;
     mainProgram = "bemoji";
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       laurent-f1z1
       MrSom3body

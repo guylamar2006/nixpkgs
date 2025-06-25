@@ -61,6 +61,6 @@ stdenv.mkDerivation rec {
       lgpl2Plus
     ]; # See https://sourceforge.net/p/ngspice/ngspice/ci/master/tree/COPYING
     maintainers = with lib.maintainers; [ bgamari ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

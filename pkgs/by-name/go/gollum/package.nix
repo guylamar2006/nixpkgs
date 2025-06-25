@@ -30,7 +30,7 @@ bundlerApp {
       nicknovitski
       bbenno
     ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "gollum";
   };
 }

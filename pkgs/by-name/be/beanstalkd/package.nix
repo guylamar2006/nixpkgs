@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     description = "Simple, fast work queue";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ zimbatm ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "beanstalkd";
   };
 }

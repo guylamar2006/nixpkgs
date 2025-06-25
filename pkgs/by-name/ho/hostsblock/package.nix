@@ -77,7 +77,7 @@ stdenv.mkDerivation {
     homepage = "http://gaenserich.github.io/hostsblock/";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ nicknovitski ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 
 }

@@ -97,7 +97,7 @@ stdenv.mkDerivation {
       lgpl2Only
       gpl2Only
     ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ bjornfor ];
   };
 }

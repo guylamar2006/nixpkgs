@@ -43,6 +43,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.mit;
     mainProgram = "iDSK";
     maintainers = with lib.maintainers; [ wegank ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }

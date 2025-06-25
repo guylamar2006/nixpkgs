@@ -98,7 +98,7 @@ resholve.mkDerivation rec {
     homepage = "https://git-ftp.github.io/";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ tweber ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     mainProgram = "git-ftp";
   };
 }

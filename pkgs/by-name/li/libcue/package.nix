@@ -36,6 +36,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/lipnitsk/libcue";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ astsmtl ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

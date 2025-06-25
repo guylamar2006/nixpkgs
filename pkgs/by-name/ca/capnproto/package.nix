@@ -74,7 +74,7 @@ clangStdenv.mkDerivation rec {
       Buffers, except faster.
     '';
     license = lib.licenses.mit;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     teams = [ lib.teams.lix ];
   };
 }

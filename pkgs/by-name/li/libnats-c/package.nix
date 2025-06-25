@@ -44,7 +44,7 @@ stdenv.mkDerivation rec {
     description = "C API for the NATS messaging system";
     homepage = "https://github.com/nats-io/nats.c";
     license = lib.licenses.asl20;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ thoughtpolice ];
   };
 }

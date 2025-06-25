@@ -54,7 +54,7 @@ stdenv.mkDerivation (finalAttrs: {
       back-end general-purpose library for processing and I/O
     '';
     maintainers = with lib.maintainers; [ tbenst ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     license = lib.licenses.gpl3Plus;
     homepage = "https://www.nitrc.org/projects/cmtk/";
   };

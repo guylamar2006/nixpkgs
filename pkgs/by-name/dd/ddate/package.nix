@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
     description = "Discordian version of the date program";
     license = lib.licenses.publicDomain;
     maintainers = with lib.maintainers; [ kovirobi ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     mainProgram = "ddate";
   };
 }

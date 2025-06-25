@@ -37,7 +37,7 @@ stdenvNoCC.mkDerivation {
       punctuation marks are heavily detailed as well.
     '';
     license = lib.licenses.unfree;
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ romildo ];
   };
 }

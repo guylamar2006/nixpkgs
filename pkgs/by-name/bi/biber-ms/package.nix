@@ -95,7 +95,7 @@ perlPackages.buildPerlModule {
   meta = {
     description = "Backend for BibLaTeX (multiscript version)";
     license = biberSource.meta.license;
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ xworld21 ];
     mainProgram = "biber-ms";
   };

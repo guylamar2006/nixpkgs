@@ -54,7 +54,7 @@ stdenv.mkDerivation {
     homepage = "https://github.com/BIC-MNI/minc-widgets";
     description = "Collection of Perl and shell scripts for processing MINC files";
     maintainers = with lib.maintainers; [ bcdarwin ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
     license = lib.licenses.free;
   };
 }

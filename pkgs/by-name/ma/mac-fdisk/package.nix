@@ -108,6 +108,6 @@ stdenv.mkDerivation {
     maintainers = with lib.maintainers; [ OPNA2608 ];
     # the toolchain that's being expected for Mac support (SCSI.h from Universal Headers 2.0, SIOUX.h from Metrowerks CoreWarrior) is ancient, unsure about BSDs
     platforms = lib.platforms.linux;
-    badPlatforms = platforms.aarch64; # missing some platform definitions
+    badplatforms = lib.platforms.aarch64; # missing some platform definitions
   };
 }

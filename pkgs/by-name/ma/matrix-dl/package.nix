@@ -30,6 +30,6 @@ python3Packages.buildPythonApplication rec {
     homepage = src.meta.homepage;
     license = lib.licenses.gpl1Plus;
     maintainers = with lib.maintainers; [ aw ];
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }

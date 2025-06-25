@@ -25,6 +25,6 @@ stdenv.mkDerivation rec {
     homepage = "http://www.quarkline.net/basez/";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ oaksoaj ];
-    platforms = platforms.all;
+    platforms = lib.platforms.all;
   };
 }
