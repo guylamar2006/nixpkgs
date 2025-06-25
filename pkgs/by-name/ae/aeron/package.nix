@@ -126,7 +126,7 @@ stdenv.mkDerivation {
     mainProgram = "${pname}-media-driver";
     maintainers = with lib.maintainers; [ vaci ];
     sourceProvenance = [
-      sourceTypes.binaryBytecode
+      lib.sourceTypes.binaryBytecode
     ];
   };
 }

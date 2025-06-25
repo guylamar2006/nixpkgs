@@ -120,8 +120,8 @@ stdenv.mkDerivation {
     mainProgram = "aeronmd";
     maintainers = with lib.maintainers; [ vaci ];
     sourceProvenance = [
-      sourceTypes.fromSource
-      sourceTypes.binaryBytecode
+      lib.sourceTypes.fromSource
+      lib.sourceTypes.binaryBytecode
     ];
   };
 }

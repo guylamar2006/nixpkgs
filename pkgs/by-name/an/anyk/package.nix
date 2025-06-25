@@ -146,7 +146,7 @@ stdenv.mkDerivation {
     license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ chpatrick ];
     platforms = openjdk.meta.platforms;
-    sourceProvenance = [ sourceTypes.binaryBytecode ];
+    sourceProvenance = lib.sourceTypes.binaryBytecode;
     mainProgram = "anyk";
   };
 }

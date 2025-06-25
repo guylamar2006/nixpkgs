@@ -80,6 +80,6 @@ stdenvNoCC.mkDerivation {
     platforms = lib.platforms.all;
     hydraPlatforms = [ ];
     maintainers = with lib.maintainers; [ manveru ];
-    sourceProvenance = [ sourceTypes.binaryBytecode ];
+    sourceProvenance = lib.sourceTypes.binaryBytecode;
   };
 }

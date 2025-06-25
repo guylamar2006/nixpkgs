@@ -50,7 +50,7 @@ stdenv.mkDerivation (attrs: {
     '';
     # https://learn.microsoft.com/en-us/nuget/resources/nuget-faq#what-is-the-license-for-nuget-exe-
     license = lib.licenses.mit;
-    sourceProvenance = [ sourceTypes.binaryBytecode ];
+    sourceProvenance = lib.sourceTypes.binaryBytecode;
     maintainers = with lib.maintainers; [ mdarocha ];
     inherit (mono.meta) platforms;
   };
