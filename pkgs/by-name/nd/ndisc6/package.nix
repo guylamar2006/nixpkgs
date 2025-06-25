@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
     "localstatedir=$(TMPDIR)"
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.remlab.net/ndisc6/";
     description = "Small collection of useful tools for IPv6 networking";
     maintainers = with lib.maintainers; [ ];

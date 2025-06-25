@@ -52,6 +52,6 @@ stdenv.mkDerivation rec {
 
     maintainers = with lib.maintainers; [ ];
 
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     substituteInPlace ./papirus-folders --replace "getent" "${getent}/bin/getent"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Tool to change papirus icon theme color";
     mainProgram = "papirus-folders";
     longDescription = ''

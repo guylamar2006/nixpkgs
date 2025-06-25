@@ -27,6 +27,6 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Filename pattern matching library functions for DOS, Windows, and Unix";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ hughobrien ];
-    platforms = with platforms; linux;
+    platforms = lib.platforms.linux;
   };
 })

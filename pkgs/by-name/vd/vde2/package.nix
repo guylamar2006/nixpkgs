@@ -37,10 +37,10 @@ stdenv.mkDerivation rec {
     wolfssl
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/virtualsquare/vde-2";
     description = "Virtual Distributed Ethernet, an Ethernet compliant virtual network";
     platforms = lib.platforms.unix;
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
   };
 }

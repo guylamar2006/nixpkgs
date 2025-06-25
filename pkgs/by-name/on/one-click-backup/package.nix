@@ -30,7 +30,7 @@ stdenv.mkDerivation (finalAttrs: {
     qt6.qtdeclarative
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Simple Program to backup folders to an external location by copying them";
     homepage = "https://gitlab.com/dev-nis/nis-one-click-backup-qt";
     changelog = "https://gitlab.com/dev-nis/nis-one-click-backup-qt/-/blob/${finalAttrs.version}/CHANGELOG.md";

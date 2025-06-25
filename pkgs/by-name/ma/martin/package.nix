@@ -57,7 +57,7 @@ rustPlatform.buildRustPackage rec {
   meta = {
     description = "Blazing fast and lightweight PostGIS vector tiles server";
     homepage = "https://martin.maplibre.org/";
-    license = with licenses; [
+    license = with lib.licenses; [
       mit # or
       asl20
     ];

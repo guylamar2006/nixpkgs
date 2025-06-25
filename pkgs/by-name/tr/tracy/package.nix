@@ -121,16 +121,16 @@ stdenv.mkDerivation rec {
       install -D -m 0444 icon/icon.svg $out/share/icons/hicolor/scalable/apps/tracy.svg
     '';
 
-  meta = with lib; {
+  meta = {
     description = "Real time, nanosecond resolution, remote telemetry frame profiler for games and other applications";
     homepage = "https://github.com/wolfpld/tracy";
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     mainProgram = "tracy";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       mpickering
       nagisa
       paveloom
     ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

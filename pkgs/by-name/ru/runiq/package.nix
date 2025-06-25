@@ -21,7 +21,7 @@ rustPlatform.buildRustPackage {
     ln -s ${./Cargo.lock} Cargo.lock
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Efficient way to filter duplicate lines from input, à la uniq";
     mainProgram = "runiq";
     homepage = "https://github.com/whitfin/runiq";

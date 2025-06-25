@@ -44,7 +44,7 @@ stdenv.mkDerivation rec {
     description = "Library to allow other programs to interact with the Discord desktop application";
     license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ tomodachi94 ];
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     platforms = [
       "x86_64-linux"
       "x86_64-darwin"

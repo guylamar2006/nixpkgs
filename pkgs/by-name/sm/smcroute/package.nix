@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     "--with-systemd=\$(out)/lib/systemd/system"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Static multicast routing daemon";
     homepage = "https://troglobit.com/smcroute.html";
     license = lib.licenses.gpl2Plus;

@@ -51,6 +51,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/atheme-legacy/libaosd";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ unode ];
-    platforms = with platforms; unix;
+    platforms = lib.platforms.unix;
   };
 }

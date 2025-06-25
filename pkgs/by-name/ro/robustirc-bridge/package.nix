@@ -24,7 +24,7 @@ buildGoModule rec {
 
   passthru.tests.robustirc-bridge = nixosTests.robustirc-bridge;
 
-  meta = with lib; {
+  meta = {
     description = "Bridge to robustirc.net-IRC-Network";
     mainProgram = "robustirc-bridge";
     homepage = "https://robustirc.net/";

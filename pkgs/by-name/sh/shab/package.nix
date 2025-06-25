@@ -46,7 +46,7 @@ let
       inherit render renderText;
     };
 
-    meta = with lib; {
+    meta = {
       description = "Bash templating language";
       mainProgram = "shab";
       homepage = "https://github.com/zimbatm/shab";

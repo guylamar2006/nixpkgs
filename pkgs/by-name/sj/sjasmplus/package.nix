@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://z00m128.github.io/sjasmplus/";
     description = "Z80 assembly language cross compiler. It is based on the SjASM source code by Sjoerd Mastijn";
     mainProgram = "sjasmplus";

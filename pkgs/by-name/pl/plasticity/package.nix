@@ -122,7 +122,7 @@ stdenv.mkDerivation rec {
     gappsWrapperArgs+=(--add-flags "--use-gl=egl")
   '';
 
-  meta = with lib; {
+  meta = {
     description = "CAD for artists";
     homepage = "https://www.plasticity.xyz";
     license = lib.licenses.unfree;

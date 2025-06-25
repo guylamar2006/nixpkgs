@@ -17,7 +17,7 @@ buildGoModule rec {
 
   vendorHash = "sha256-U5nZbo2iSKP3BnxT4lkR75QutcxZB5YLzXxT045TDaY=";
 
-  meta = with lib; {
+  meta = {
     description = "Dedicated SSH brute-forcing tool";
     mainProgram = "sshchecker";
     longDescription = ''
@@ -26,6 +26,6 @@ buildGoModule rec {
     '';
     homepage = "https://github.com/lazytools/sshchecker";
     license = lib.licenses.mit;
-    maintainers = with maintainers; [ fab ];
+    maintainers = with lib.maintainers; [ fab ];
   };
 }

@@ -36,7 +36,7 @@ buildNpmPackage rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Local file sharing in your browser";
     mainProgram = "pairdrop";
     longDescription = ''

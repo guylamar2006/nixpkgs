@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Show the set of running processes as a tree";
     homepage = "http://www.thp.uni-duisburg.de/pstree/";
     license = lib.licenses.gpl2;

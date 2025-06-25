@@ -29,7 +29,7 @@ rustPlatform.buildRustPackage rec {
 
   passthru.tests.version = testers.testVersion { package = sigi; };
 
-  meta = with lib; {
+  meta = {
     description = "Organizing CLI for people who don't love organizing";
     homepage = "https://github.com/sigi-cli/sigi";
     license = lib.licenses.gpl2;

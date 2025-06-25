@@ -18,11 +18,11 @@ rustPlatform.buildRustPackage {
   useFetchCargoVendor = true;
   cargoHash = "sha256-Kz/7BFBmTK8h6nO+jrSYh2p0GMlT1E0icmLXC+mJVmg=";
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/nonamescm/yex-lang";
     description = "Functional scripting language written in rust";
-    license = licenses.mit;
-    maintainers = with maintainers; [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
     mainProgram = "yex";
     platforms = lib.platforms.unix;
   };

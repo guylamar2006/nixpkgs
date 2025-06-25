@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "CLI software to monitor the power consumption of software and hardware components";
     homepage = "https://github.com/joular/powerjoular";
     maintainers = with lib.maintainers; [ julienmalka ];

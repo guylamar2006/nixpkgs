@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
     runHook postFixup
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/scanmem/scanmem";
     description = "Memory scanner for finding and poking addresses in executing processes";
     maintainers = with lib.maintainers; [ ];

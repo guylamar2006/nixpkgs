@@ -26,7 +26,7 @@ buildGoModule rec {
     mv $GOPATH/bin/{cli,netassert}
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/controlplaneio/netassert";
     changelog = "https://github.com/controlplaneio/netassert/blob/${src.rev}/CHANGELOG.md";
     description = "Command line utility to test network connectivity between kubernetes objects";

@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
   FFLAGS = [ "-std=legacy" ];
   FCFLAGS = [ "-std=legacy" ];
 
-  meta = with lib; {
+  meta = {
     description = "Fortran API to manipulate netcdf files";
     mainProgram = "nf-config";
     homepage = "https://www.unidata.ucar.edu/software/netcdf/";

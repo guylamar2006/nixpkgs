@@ -61,7 +61,7 @@ stdenv.mkDerivation rec {
       cp include/pa_mac_core.h $out/include/pa_mac_core.h
     '';
 
-  meta = with lib; {
+  meta = {
     description = "Portable cross-platform Audio API";
     homepage = "https://www.portaudio.com/";
     # Not exactly a bsd license, but alike

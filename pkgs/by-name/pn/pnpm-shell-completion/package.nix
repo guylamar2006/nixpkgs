@@ -27,7 +27,7 @@ rustPlatform.buildRustPackage rec {
       --zsh pnpm-shell-completion.plugin.zsh
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/g-plane/pnpm-shell-completion";
     description = "Complete your pnpm command fastly";
     license = lib.licenses.mit;

@@ -26,7 +26,7 @@ buildGoModule {
     homepage = "https://github.com/himananiito/livedl";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ wakira ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     broken = stdenv.hostPlatform.isDarwin; # build fails with go > 1.17
     mainProgram = "livedl";
   };

@@ -159,11 +159,11 @@ stdenv.mkDerivation rec {
     "strictoverflow"
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "http://www.nsnam.org";
     license = lib.licenses.gpl3;
     description = "Discrete time event network simulator";
-    platforms = with platforms; unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [
       teto
       rgrunbla

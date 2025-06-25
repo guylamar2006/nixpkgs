@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
     cp PosteRazor $out/bin
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "http://posterazor.sourceforge.net/";
     description = "Cuts a raster image into pieces which can afterwards be printed out and assembled to a poster";
     license = lib.licenses.gpl3Plus;

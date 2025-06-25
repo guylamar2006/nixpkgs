@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-jq8d+ndPOu07YO5PJ5YfWTeG70bZnr0i8vMwv7Dw5GY=";
 
-  meta = with lib; {
+  meta = {
     description = "CLI for organizing Tailwind CSS classes";
     mainProgram = "rustywind";
     homepage = "https://github.com/avencera/rustywind";

@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
     cp block.t.php $out
   '';
 
-  meta = with lib; {
+  meta = {
     description = "gettext for the smarty3 framework";
     license = lib.licenses.lgpl21;
     homepage = "https://github.com/kikimosha/smarty3-i18n";

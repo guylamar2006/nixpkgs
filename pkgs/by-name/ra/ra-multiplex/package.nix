@@ -27,7 +27,7 @@ rustPlatform.buildRustPackage rec {
       --suffix PATH : ${lib.makeBinPath [ rust-analyzer ]}
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Multiplexer for rust-analyzer";
     mainProgram = "ra-multiplex";
     homepage = "https://github.com/pr2502/ra-multiplex";

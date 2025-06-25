@@ -61,7 +61,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Set of programs to inspect and build Windows Installer (.MSI) files";
     homepage = "https://gitlab.gnome.org/GNOME/msitools";
-    license = with licenses; [
+    license = with lib.licenses; [
       # Library
       lgpl21Plus
       # Tools

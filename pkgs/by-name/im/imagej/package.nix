@@ -83,7 +83,7 @@ stdenv.mkDerivation rec {
       inspired by NIH Image for the Macintosh.
       It runs on any computer with a Java 1.4 or later virtual machine.
     '';
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.publicDomain;
     platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ yuriaisaka ];

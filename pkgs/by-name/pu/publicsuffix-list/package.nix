@@ -28,7 +28,7 @@ stdenvNoCC.mkDerivation {
 
   passthru.updateScript = unstableGitUpdater { };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://publicsuffix.org/";
     description = "Cross-vendor public domain suffix database";
     platforms = lib.platforms.all;

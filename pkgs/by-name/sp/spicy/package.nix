@@ -22,7 +22,7 @@ buildGoModule rec {
     "-w"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Nintendo 64 segment assembler";
     longDescription = ''
       An open-source version of the Nintendo64 sdk's mild.exe. Assembles

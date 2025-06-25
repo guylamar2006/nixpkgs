@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/michaeldfallen/git-radar";
     license = lib.licenses.mit;
     description = "Tool you can add to your prompt to provide at-a-glance information on your git repo";
-    platforms = with platforms; linux ++ darwin;
+    platforms = with lib.platforms; linux ++ darwin;
     maintainers = with lib.maintainers; [ kamilchm ];
     mainProgram = "git-radar";
   };

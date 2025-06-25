@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
     description = "ZBC device manipulation library";
     homepage = "https://github.com/westerndigitalcorporation/libzbc";
     maintainers = with lib.maintainers; [ ];
-    license = with licenses; [
+    license = with lib.licenses; [
       bsd2
       lgpl3Plus
     ];

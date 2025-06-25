@@ -54,7 +54,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Offers access to the Mediathek of different tv stations (ARD, ZDF, Arte, etc.)";
     homepage = "https://mediathekview.de/";
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.gpl3Plus;
     mainProgram = "mediathek";
     maintainers = with lib.maintainers; [ ];

@@ -31,11 +31,11 @@ stdenv.mkDerivation {
     openssl
   ];
 
-  meta = with lib; {
+  meta = {
     description = "SSLv3/TLS network protocol analyzer";
     homepage = "https://ssldump.sourceforge.net";
     license = "BSD-style";
-    maintainers = with maintainers; [ aycanirican ];
+    maintainers = with lib.maintainers; [ aycanirican ];
     platforms = lib.platforms.unix;
     mainProgram = "ssldump";
   };

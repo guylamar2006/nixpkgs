@@ -82,7 +82,7 @@ stdenv.mkDerivation rec {
       the Mesa drivers, the X drivers, libva and similar projects.
     '';
     license = lib.licenses.mit;
-    platforms = lib.subtractLists platforms.darwin platforms.unix;
+    platforms = lib.subtractLists lib.platforms.darwin lib.platforms.unix;
     maintainers = with lib.maintainers; [ primeos ];
   };
 }

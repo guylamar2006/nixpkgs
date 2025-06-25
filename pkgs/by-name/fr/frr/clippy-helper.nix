@@ -56,7 +56,7 @@ stdenv.mkDerivation {
       to support cross-compiling, because it needs to be compiled with the build system toolchain
       and not the target host one.
     '';
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl2Plus
       lgpl21Plus
     ];

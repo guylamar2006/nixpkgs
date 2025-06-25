@@ -28,13 +28,13 @@ stdenv.mkDerivation {
     sed -i /fetch_or_update_package$/d scripts/install-packages.sh
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Schema data of Rime Input Method Engine";
     longDescription = ''
       Rime-data provides schema data for Rime Input Method Engine.
     '';
     homepage = "https://rime.im";
-    license = with licenses; [
+    license = with lib.licenses; [
       # rime-array
       # rime-combo-pinyin
       # rime-double-pinyin

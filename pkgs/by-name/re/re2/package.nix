@@ -61,7 +61,7 @@ stdenv.mkDerivation (finalAttrs: {
     haskell-re2 = haskellPackages.re2;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Regular expression library";
     longDescription = ''
       RE2 is a fast, safe, thread-friendly alternative to backtracking regular

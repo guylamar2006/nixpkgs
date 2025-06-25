@@ -27,7 +27,7 @@ pypkgs.buildPythonApplication rec {
   # no tests from pypi
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Backup system trying to combine best a mirror and an incremental backup system";
     homepage = "https://rdiff-backup.net";
     license = lib.licenses.gpl2Only;

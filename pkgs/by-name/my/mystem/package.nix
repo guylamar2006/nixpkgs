@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Morphological analysis of Russian text";
     homepage = "https://yandex.ru/dev/mystem/";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unfreeRedistributable;
     maintainers = with lib.maintainers; [ abbradar ];
     platforms = [ "x86_64-linux" ];

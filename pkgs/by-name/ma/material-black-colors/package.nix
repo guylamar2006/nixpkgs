@@ -65,7 +65,7 @@ lib.checkListOfEnum "${pname}: color variants" colorVariantList colorVariants
       homepage = "https://github.com/rtlewis88/rtl88-Themes/tree/material-black-COLORS";
       maintainers = with lib.maintainers; [ d3vil0p3r ];
       platforms = lib.platforms.all;
-      license = with licenses; [
+      license = with lib.licenses; [
         gpl3Plus
         mit
       ];

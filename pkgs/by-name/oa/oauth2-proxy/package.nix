@@ -24,7 +24,7 @@ buildGoModule rec {
   # Taken from https://github.com/oauth2-proxy/oauth2-proxy/blob/master/Makefile
   ldflags = [ "-X main.VERSION=${version}" ];
 
-  meta = with lib; {
+  meta = {
     description = "Reverse proxy that provides authentication with Google, Github, or other providers";
     homepage = "https://github.com/oauth2-proxy/oauth2-proxy/";
     license = lib.licenses.mit;

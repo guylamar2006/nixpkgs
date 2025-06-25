@@ -99,7 +99,7 @@ stdenv.mkDerivation rec {
     mv $bin/bin/net-snmp-config $dev/bin
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Clients and server for the SNMP network monitoring protocol";
     homepage = "http://www.net-snmp.org/";
     license = lib.licenses.bsd3;

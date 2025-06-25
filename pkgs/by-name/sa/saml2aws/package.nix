@@ -36,7 +36,7 @@ buildGoModule rec {
       --zsh <($out/bin/saml2aws --completion-script-zsh)
   '';
 
-  meta = with lib; {
+  meta = {
     description = "CLI tool which enables you to login and retrieve AWS temporary credentials using a SAML IDP";
     mainProgram = "saml2aws";
     homepage = "https://github.com/Versent/saml2aws";

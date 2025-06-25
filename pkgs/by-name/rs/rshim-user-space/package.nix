@@ -64,7 +64,7 @@ stdenv.mkDerivation rec {
       }
   '';
 
-  meta = with lib; {
+  meta = {
     description = "user-space rshim driver for the BlueField SoC";
     longDescription = ''
       The rshim driver provides a way to access the rshim resources on the

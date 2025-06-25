@@ -25,7 +25,7 @@ buildGoModule rec {
 
   vendorHash = null;
 
-  meta = with lib; {
+  meta = {
     description = "CLI to render Go template text files";
     mainProgram = "renderizer";
     inherit (src.meta) homepage;

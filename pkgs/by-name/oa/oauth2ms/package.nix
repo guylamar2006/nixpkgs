@@ -32,7 +32,7 @@ stdenv.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/harishkrupo/oauth2ms";
     description = "XOAUTH2 compatible Office365 token fetcher";
     mainProgram = "oauth2ms";

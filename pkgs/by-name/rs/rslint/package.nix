@@ -25,7 +25,7 @@ rustPlatform.buildRustPackage rec {
     "rslint_lsp"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Fast, customizable, and easy to use JavaScript and TypeScript linter";
     homepage = "https://rslint.org";
     license = lib.licenses.mit;

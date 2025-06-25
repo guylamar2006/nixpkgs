@@ -134,7 +134,7 @@ buildBazelPackage {
   meta = {
     description = "Mozc - a Japanese Input Method Editor designed for multi-platform";
     homepage = "https://github.com/fcitx/mozc";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20 # abseil-cpp
       bsd3 # mozc, breakpad, gtest, gyp, japanese-usage-dictionary, protobuf
       mit # wil

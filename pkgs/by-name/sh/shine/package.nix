@@ -18,7 +18,7 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [ autoreconfHook ];
 
-  meta = with lib; {
+  meta = {
     description = "Fast fixed-point mp3 encoding library";
     mainProgram = "shineenc";
     homepage = "https://github.com/toots/shine";

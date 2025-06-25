@@ -7,13 +7,13 @@
 let
   pname = "postman";
   version = "11.50.5";
-  meta = with lib; {
+  meta = {
     homepage = "https://www.getpostman.com";
     changelog = "https://www.postman.com/release-notes/postman-app/#${
       replaceStrings [ "." ] [ "-" ] version
     }";
     description = "API Development Environment";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.postman;
     platforms = [
       "x86_64-linux"

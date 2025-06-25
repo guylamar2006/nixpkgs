@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "grml's zsh setup";
     homepage = "https://grml.org/zsh/";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl2Plus
       gpl2Only
     ];

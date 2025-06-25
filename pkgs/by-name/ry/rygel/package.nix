@@ -122,7 +122,7 @@ stdenv.mkDerivation (finalAttrs: {
     noGtk = rygel.override { withGtk = false; };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Home media solution (UPnP AV MediaServer) that allows you to easily share audio, video and pictures to other devices";
     homepage = "https://gitlab.gnome.org/GNOME/rygel";
     changelog = "https://gitlab.gnome.org/GNOME/rygel/-/blob/rygel-${finalAttrs.version}/NEWS?ref_type=tags";

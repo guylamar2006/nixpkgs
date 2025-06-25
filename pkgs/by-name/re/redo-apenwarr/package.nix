@@ -77,7 +77,7 @@ stdenv.mkDerivation rec {
     installShellCompletion --bash contrib/bash_completion.d/redo
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Smaller, easier, more powerful, and more reliable than make. An implementation of djb's redo";
     homepage = "https://github.com/apenwarr/redo";
     maintainers = with lib.maintainers; [

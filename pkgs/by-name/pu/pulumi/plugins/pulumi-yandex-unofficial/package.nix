@@ -18,7 +18,7 @@ mkPulumiPackage rec {
   ];
   __darwinAllowLocalNetworking = true;
   env.GOWORK = "off";
-  meta = with lib; {
+  meta = {
     description = "Unofficial Yandex Cloud Resource Provider";
     homepage = "https://github.com/Regrau/pulumi-yandex";
     license = lib.licenses.asl20;

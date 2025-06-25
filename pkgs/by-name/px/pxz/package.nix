@@ -39,7 +39,7 @@ stdenv.mkDerivation {
     package = pxz;
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://jnovy.fedorapeople.org/pxz/";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ pashev ];
@@ -52,6 +52,6 @@ stdenv.mkDerivation {
       on compression ratio
     '';
     mainProgram = "pxz";
-    platforms = with platforms; linux;
+    platforms = lib.platforms.linux;
   };
 }

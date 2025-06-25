@@ -55,6 +55,6 @@ rustPlatform.buildRustPackage rec {
     maintainers = with lib.maintainers; [ ];
     # networkmanager doesn't work on darwin
     # even though the `wifiscanner` crate would work
-    platforms = with platforms; linux; # ++ darwin;
+    platforms = lib.platforms.linux; # ++ darwin;
   };
 }

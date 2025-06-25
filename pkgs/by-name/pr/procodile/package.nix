@@ -11,10 +11,10 @@ bundlerApp {
 
   passthru.updateScript = bundlerUpdateScript "procodile";
 
-  meta = with lib; {
+  meta = {
     description = "Run processes in the background (and foreground) on Mac & Linux from a Procfile (for production and/or development environments)";
     homepage = "https://github.com/adamcooke/procodile";
-    license = with licenses; mit;
+    license = with lib.licenses; mit;
     maintainers = with lib.maintainers; [
       manveru
       nicknovitski

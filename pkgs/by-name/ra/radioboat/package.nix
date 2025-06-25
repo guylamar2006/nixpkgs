@@ -53,7 +53,7 @@ buildGoModule rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Terminal web radio client";
     mainProgram = "radioboat";
     homepage = "https://github.com/slashformotion/radioboat";

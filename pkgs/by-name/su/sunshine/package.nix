@@ -240,12 +240,12 @@ stdenv'.mkDerivation rec {
     updateScript = ./updater.sh;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Sunshine is a Game stream host for Moonlight";
     homepage = "https://github.com/LizardByte/Sunshine";
-    license = licenses.gpl3Only;
+    license = lib.licenses.gpl3Only;
     mainProgram = "sunshine";
-    maintainers = with maintainers; [ devusb ];
+    maintainers = with lib.maintainers; [ devusb ];
     platforms = lib.platforms.linux;
   };
 }

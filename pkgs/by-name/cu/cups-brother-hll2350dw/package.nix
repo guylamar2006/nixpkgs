@@ -98,7 +98,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "http://www.brother.com/";
     description = "Brother HL-L2350DW printer driver";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unfree;
     platforms = builtins.map (arch: "${arch}-linux") arches;
     downloadPage = "https://support.brother.com/g/b/downloadlist.aspx?c=us_ot&lang=en&prod=hll2350dw_us_eu_as&os=128";

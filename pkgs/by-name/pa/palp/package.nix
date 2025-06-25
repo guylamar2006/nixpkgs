@@ -57,7 +57,7 @@ stdenv.mkDerivation rec {
       done
     '';
 
-  meta = with lib; {
+  meta = {
     description = "Package for Analyzing Lattice Polytopes";
     longDescription = ''
       A Package for Analyzing Lattice Polytopes (PALP) is a set of C

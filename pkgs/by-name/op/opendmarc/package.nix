@@ -58,10 +58,10 @@ stdenv.mkDerivation rec {
     done
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Free open source software implementation of the DMARC specification";
     homepage = "http://www.trusteddomain.org/opendmarc/";
-    license = with licenses; [
+    license = with lib.licenses; [
       bsd3
       sendmail
     ];

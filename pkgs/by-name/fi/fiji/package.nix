@@ -86,7 +86,7 @@ stdenv.mkDerivation rec {
     description = "batteries-included distribution of ImageJ2, bundling a lot of plugins which facilitate scientific image analysis";
     mainProgram = "fiji";
     platforms = [ "x86_64-linux" ];
-    sourceProvenance = with sourceTypes; [
+    sourceProvenance = with lib.sourceTypes; [
       binaryBytecode
       binaryNativeCode
     ];

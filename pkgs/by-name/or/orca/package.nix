@@ -96,7 +96,7 @@ python3.pkgs.buildPythonApplication rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://orca.gnome.org/";
     changelog = "https://gitlab.gnome.org/GNOME/orca/-/blob/main/NEWS";
     description = "Screen reader";

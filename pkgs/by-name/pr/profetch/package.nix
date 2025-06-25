@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "System Information Fetcher Written in GNU/Prolog";
     homepage = "https://github.com/RustemB/profetch";
     license = lib.licenses.gpl3Only;

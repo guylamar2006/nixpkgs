@@ -23,7 +23,7 @@ buildPythonApplication rec {
   # Tests requires network access. Works fine without sandboxing
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Generate requirements.txt file for any project based on imports";
     homepage = "https://github.com/bndr/pipreqs";
     license = lib.licenses.asl20;

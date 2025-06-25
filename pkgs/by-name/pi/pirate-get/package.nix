@@ -21,7 +21,7 @@ buildPythonApplication rec {
     pyperclip
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Command line interface for The Pirate Bay";
     mainProgram = "pirate-get";
     homepage = "https://github.com/vikstrous/pirate-get";

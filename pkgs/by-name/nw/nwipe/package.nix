@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description = "Securely erase disks";
     mainProgram = "nwipe";
     homepage = "https://github.com/martijnvanbrummelen/nwipe";

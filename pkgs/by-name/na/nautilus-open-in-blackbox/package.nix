@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Extension for nautilus, which adds an context-entry for opening in blackbox";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ blankparticle ];

@@ -24,7 +24,7 @@ stdenvNoCC.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.theleagueofmoveabletype.com/orbitron";
     downloadPage = "https://www.theleagueofmoveabletype.com/orbitron/download";
     description = "Geometric sans-serif for display purposes by Matt McInerney";

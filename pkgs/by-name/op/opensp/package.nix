@@ -70,7 +70,7 @@ stdenv.mkDerivation rec {
 
   doCheck = false; # fails
 
-  meta = with lib; {
+  meta = {
     description = "Suite of SGML/XML processing tools";
     license = lib.licenses.mit;
     homepage = "https://openjade.sourceforge.net/";

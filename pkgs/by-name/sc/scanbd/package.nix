@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     description = "Scanner button daemon";
     longDescription = ''
       scanbd polls a scanner's buttons, looking for button presses, function

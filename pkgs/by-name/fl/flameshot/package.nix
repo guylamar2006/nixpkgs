@@ -125,6 +125,6 @@ stdenv.mkDerivation {
       oxalica
     ];
     license = lib.licenses.gpl3Plus;
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

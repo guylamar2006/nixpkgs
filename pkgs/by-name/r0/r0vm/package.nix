@@ -47,7 +47,7 @@ rustPlatform.buildRustPackage rec {
       ln -sf ${recursionZkr} ./risc0/circuit/recursion/src/recursion_zkr.zip
     '';
 
-  meta = with lib; {
+  meta = {
     description = "RISC Zero zero-knowledge VM";
     homepage = "https://github.com/risc0/risc0";
     changelog = "https://github.com/risc0/risc0/blob/${src.rev}/CHANGELOG.md";

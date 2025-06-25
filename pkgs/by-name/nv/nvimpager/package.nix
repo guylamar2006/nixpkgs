@@ -59,7 +59,7 @@ stdenv.mkDerivation rec {
     patchShebangs --update --host $out/bin/nvimpager
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Use neovim as pager";
     longDescription = ''
       Use neovim as a pager to view manpages, diffs, etc with nvim's syntax

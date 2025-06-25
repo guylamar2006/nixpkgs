@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Collection of lua filters for pandoc";
     homepage = "https://github.com/pandoc/lua-filters";
     license = lib.licenses.mit;

@@ -103,11 +103,11 @@ stdenvNoCC.mkDerivation (finalAttrs: {
   meta = {
     description = "Open-source alternative to Notion";
     homepage = "https://www.appflowy.io/";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.agpl3Only;
     changelog = "https://github.com/AppFlowy-IO/appflowy/releases/tag/${finalAttrs.version}";
     maintainers = with lib.maintainers; [ darkonion0 ];
-    platforms = [ "x86_64-linux" ] ++ platforms.darwin;
+    platforms = [ "x86_64-linux" ] ++ lib.platforms.darwin;
     mainProgram = "appflowy";
   };
 })

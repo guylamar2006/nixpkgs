@@ -23,7 +23,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/rastikerdar/samim-font";
     description = "Persian (Farsi) Font - فونت (قلم) فارسی صمیم";
     license = lib.licenses.ofl;

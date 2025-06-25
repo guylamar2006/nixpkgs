@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Alert on system resource saturation";
     longDescription = ''
       psi-notify can alert you when resources on your machine are becoming

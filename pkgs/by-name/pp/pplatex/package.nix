@@ -33,7 +33,7 @@ stdenv.mkDerivation (finalAttrs: {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Tool to reformat the output of latex and friends into readable messages";
     mainProgram = "pplatex";
     homepage = "https://github.com/stefanhepp/pplatex";

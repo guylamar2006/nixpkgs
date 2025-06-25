@@ -31,7 +31,7 @@ rustPlatform.buildRustPackage rec {
     tests.version = testers.testVersion { package = pgcat; };
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/postgresml/pgcat";
     description = "PostgreSQL pooler with sharding, load balancing and failover support";
     changelog = "https://github.com/postgresml/pgcat/releases";

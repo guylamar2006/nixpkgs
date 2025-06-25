@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
     description = "Google App Engine SDK for Go";
     version = version;
     homepage = "https://cloud.google.com/appengine/docs/go/";
-    sourceProvenance = with sourceTypes; [
+    sourceProvenance = with lib.sourceTypes; [
       fromSource
       binaryNativeCode # includes golang toolchain binaries
     ];

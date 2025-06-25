@@ -37,6 +37,6 @@ buildGoModule rec {
     homepage = "https://github.com/fatih/motion";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ kalbasit ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

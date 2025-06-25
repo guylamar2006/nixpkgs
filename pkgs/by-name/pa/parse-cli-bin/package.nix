@@ -13,7 +13,7 @@ stdenv.mkDerivation rec {
     sha256 = "1iyfizbbxmr87wjgqiwqds51irgw6l3vm9wn89pc3zpj2zkyvf5h";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Parse Command Line Interface";
     mainProgram = "parse";
     homepage = "https://parse.com";

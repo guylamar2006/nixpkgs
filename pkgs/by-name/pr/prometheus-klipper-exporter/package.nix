@@ -28,7 +28,7 @@ buildGoModule rec {
     updateScript = nix-update-script { };
   };
 
-  meta = with lib; {
+  meta = {
     description = " Prometheus Exporter for Klipper ";
     homepage = "https://github.com/scross01/prometheus-klipper-exporter";
     license = lib.licenses.mit;

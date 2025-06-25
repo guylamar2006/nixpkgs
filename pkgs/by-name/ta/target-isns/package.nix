@@ -32,12 +32,12 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [ cmake ];
 
-  meta = with lib; {
+  meta = {
     description = "iSNS client for the Linux LIO iSCSI target";
     mainProgram = "target-isns";
     homepage = "https://github.com/open-iscsi/target-isns";
     maintainers = with lib.maintainers; [ markuskowa ];
-    license = licenses.gpl2Only;
+    license = lib.licenses.gpl2Only;
     platforms = lib.platforms.linux;
   };
 }

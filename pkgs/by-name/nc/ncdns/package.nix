@@ -105,7 +105,7 @@ buildGoModule {
 
   passthru.tests.ncdns = nixosTests.ncdns;
 
-  meta = with lib; {
+  meta = {
     description = "Namecoin to DNS bridge daemon";
     homepage = "https://github.com/namecoin/ncdns";
     license = lib.licenses.gpl3Plus;

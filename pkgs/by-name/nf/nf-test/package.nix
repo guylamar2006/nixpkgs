@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     command = "nf-test version";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Simple test framework for Nextflow pipelines";
     homepage = "https://www.nf-test.com/";
     changelog = "https://github.com/askimed/nf-test/releases";

@@ -104,7 +104,7 @@ buildGoModule rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Free, open source game management panel";
     homepage = "https://www.pufferpanel.com/";
     license = lib.licenses.asl20;

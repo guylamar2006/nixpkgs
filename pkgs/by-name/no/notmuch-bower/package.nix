@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/wangp/bower";
     description = "Curses terminal client for the Notmuch email system";
     mainProgram = "bower";

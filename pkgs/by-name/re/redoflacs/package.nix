@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
       }
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Parallel BASH commandline FLAC compressor, verifier, organizer, analyzer, and retagger";
     mainProgram = "redoflacs";
     homepage = src.meta.homepage;

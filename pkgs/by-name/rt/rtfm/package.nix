@@ -114,7 +114,7 @@ crystal.buildCrystalPackage {
     '';
   };
 
-  meta = with lib; {
+  meta = {
     description = "Dash/docset reader with built in documentation for Crystal and GTK APIs";
     homepage = "https://github.com/hugopl/rtfm/";
     license = lib.licenses.mit;

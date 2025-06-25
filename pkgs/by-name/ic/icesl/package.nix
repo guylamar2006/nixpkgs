@@ -76,7 +76,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "GPU-accelerated procedural modeler and slicer for 3D printing";
     homepage = "https://icesl.loria.fr/";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.inria-icesl;
     platforms = [
       "i686-linux"

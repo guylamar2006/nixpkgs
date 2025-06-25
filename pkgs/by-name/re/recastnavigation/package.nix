@@ -48,7 +48,7 @@ stdenv.mkDerivation {
     libGLU
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/recastnavigation/recastnavigation";
     description = "Navigation-mesh Toolset for Games";
     mainProgram = "RecastDemo";

@@ -77,7 +77,7 @@ stdenv.mkDerivation rec {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     description = "Tools for remote synchronization and `shell archives'";
     longDescription = ''
       GNU shar makes so-called shell archives out of many files, preparing

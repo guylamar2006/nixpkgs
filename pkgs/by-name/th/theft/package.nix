@@ -36,12 +36,12 @@ stdenv.mkDerivation rec {
       --replace "/usr/local" "$out"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "C library for property-based testing";
     homepage = "https://github.com/silentbicycle/theft/";
     platforms = lib.platforms.unix;
-    license = licenses.isc;
-    maintainers = with maintainers; [
+    license = lib.licenses.isc;
+    maintainers = with lib.maintainers; [
       kquick
       thoughtpolice
     ];

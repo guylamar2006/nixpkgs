@@ -36,7 +36,7 @@ rustPlatform.buildRustPackage rec {
 
   doCheck = false; # requires multiple dbs to be installed
 
-  meta = with lib; {
+  meta = {
     description = "Seed your development database with real data";
     mainProgram = "replibyte";
     homepage = "https://github.com/Qovery/replibyte";

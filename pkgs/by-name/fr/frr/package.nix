@@ -249,7 +249,7 @@ stdenv.mkDerivation (finalAttrs: {
       infrastructure, web 2.0 businesses, hyperscale services, and Fortune 500
       private clouds.
     '';
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl2Plus
       lgpl21Plus
     ];
@@ -258,7 +258,7 @@ stdenv.mkDerivation (finalAttrs: {
       thillux
     ];
     # adapt to platforms stated in http://docs.frrouting.org/en/latest/overview.html#supported-platforms
-    platforms = (platforms.linux ++ platforms.freebsd ++ platforms.netbsd ++ platforms.openbsd);
+    platforms = (platforms.linux ++ lib.platforms.freebsd ++ lib.platforms.netbsd ++ lib.platforms.openbsd);
   };
 
   passthru.tests = { inherit (nixosTests) frr; };

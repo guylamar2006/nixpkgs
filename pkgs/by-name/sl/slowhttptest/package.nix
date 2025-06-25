@@ -18,7 +18,7 @@ stdenv.mkDerivation rec {
 
   buildInputs = [ openssl ];
 
-  meta = with lib; {
+  meta = {
     description = "Application Layer DoS attack simulator";
     homepage = "https://github.com/shekyan/slowhttptest";
     license = lib.licenses.asl20;

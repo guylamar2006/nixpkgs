@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     libGL
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/fragglet/sdl-sopwith";
     description = "Classic biplane shoot ‘em-up game";
     license = lib.licenses.gpl2Plus;

@@ -32,7 +32,7 @@ buildPythonApplication rec {
     ${python.interpreter} -m doctest pylint_exit.py
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Utility to handle pylint exit codes in an OS-friendly way";
     license = lib.licenses.mit;
     homepage = "https://github.com/jongracecox/pylint-exit";

@@ -45,7 +45,7 @@ stdenv.mkDerivation (finalAttrs: {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     mainProgram = "pulseaudio-control";
     description = "Polybar module to control PulseAudio devices, also known as Pavolume";
     homepage = "https://github.com/marioortizmanero/polybar-pulseaudio-control";

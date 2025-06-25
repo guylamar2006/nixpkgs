@@ -204,7 +204,7 @@ stdenv.mkDerivation rec {
     maintainers = with lib.maintainers; [ OPNA2608 ];
     # Building Ren'Py6 from source would allow more, but too much of a hassle
     platforms = lib.platforms.x86;
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     # Needs different srcDetails & installPhase
     broken = stdenv.hostPlatform.isWindows;
   };

@@ -65,7 +65,7 @@ rustPlatform.buildRustPackage rec {
 
   setupHook = ./setup-hook.sh;
 
-  meta = with lib; {
+  meta = {
     description = "Collection of engines that power the core stack for Prisma";
     homepage = "https://www.prisma.io/";
     license = lib.licenses.asl20;

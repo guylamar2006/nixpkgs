@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Fast regular expression grep for source code with incremental index updates";
     mainProgram = "qgrep";
     homepage = "https://github.com/zeux/qgrep";

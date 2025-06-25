@@ -68,7 +68,7 @@ stdenv.mkDerivation (finalAttrs: {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Cycle accurate Mega Drive emulator";
     longDescription = ''
       Cycle accurate Mega Drive core. The goal of this project is to emulate Sega Mega Drive chipset as accurately as

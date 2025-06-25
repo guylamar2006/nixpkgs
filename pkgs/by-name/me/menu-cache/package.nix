@@ -39,6 +39,6 @@ stdenv.mkDerivation rec {
     homepage = "https://blog.lxde.org/tag/menu-cache/";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ttuegel ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

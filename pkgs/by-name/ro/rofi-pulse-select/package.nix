@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [ makeWrapper ];
 
-  meta = with lib; {
+  meta = {
     description = "Rofi-based interface to select source/sink (aka input/output) with PulseAudio";
     mainProgram = "rofi-pulse-select";
     homepage = "https://gitlab.com/DamienCassou/rofi-pulse-select";

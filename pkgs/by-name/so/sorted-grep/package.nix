@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
 
   doInstallCheck = true;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://sgrep.sourceforge.net/";
     description = "Sgrep (sorted grep) searches sorted input files for lines that match a search key";
     mainProgram = "sgrep";

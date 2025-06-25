@@ -20,7 +20,7 @@ buildGoModule rec {
 
   subPackages = [ "." ];
 
-  meta = with lib; {
+  meta = {
     description = "Tool to extract useful data from documents";
     mainProgram = "sammler";
     homepage = "https://github.com/redcode-labs/Sammler";

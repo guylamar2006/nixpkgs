@@ -33,7 +33,7 @@ buildGoModule rec {
       }"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "kernel {module, exploit} development tool";
     mainProgram = "out-of-tree";
     homepage = "https://out-of-tree.io";

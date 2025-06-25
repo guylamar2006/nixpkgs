@@ -58,6 +58,6 @@ stdenv.mkDerivation {
     homepage = "https://enblend.sourceforge.net/";
     description = "Blends away the seams in a panoramic image mosaic using a multiresolution spline";
     license = lib.licenses.gpl2Plus;
-    platforms = with platforms; linux;
+    platforms = lib.platforms.linux;
   };
 }

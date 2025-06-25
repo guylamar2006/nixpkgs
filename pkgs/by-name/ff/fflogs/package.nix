@@ -33,6 +33,6 @@ appimageTools.wrapType2 {
     mainProgram = "fflogs";
     platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ keysmashes ];
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
   };
 }

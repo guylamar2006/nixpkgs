@@ -20,7 +20,7 @@ stdenv.mkDerivation (finalAttrs: {
   doCheck = true;
   checkTarget = "test";
 
-  meta = with lib; {
+  meta = {
     homepage = "https://icl.utk.edu/papi/";
     description = "Library providing access to various hardware performance counters";
     license = lib.licenses.bsdOriginal;

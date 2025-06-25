@@ -37,7 +37,7 @@ stdenvNoCC.mkDerivation rec {
     done
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/PhrozenByte/rmtrash";
     description = "trash-put made compatible with GNUs rm and rmdir";
     longDescription = ''

@@ -254,7 +254,7 @@ goBuild (finalAttrs: {
     homepage = "https://github.com/ollama/ollama";
     changelog = "https://github.com/ollama/ollama/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.mit;
-    platforms = if (rocmRequested || cudaRequested) then platforms.linux else platforms.unix;
+    platforms = if (rocmRequested || cudaRequested) then lib.platforms.linux else lib.platforms.unix;
     mainProgram = "ollama";
     maintainers = with lib.maintainers; [
       abysssol

@@ -83,7 +83,7 @@ stdenv.mkDerivation rec {
     install -Dm0644 ../misc/conf_examples/Logger.xml $out/share/examples/edge_conf/Logger.xml
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Open-source streaming video service with sub-second latency";
     mainProgram = "OvenMediaEngine";
     homepage = "https://ovenmediaengine.com";

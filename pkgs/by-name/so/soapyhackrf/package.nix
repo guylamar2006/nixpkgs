@@ -34,7 +34,7 @@ stdenv.mkDerivation {
 
   cmakeFlags = [ "-DSoapySDR_DIR=${soapysdr}/share/cmake/SoapySDR/" ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/pothosware/SoapyHackRF";
     description = "SoapySDR plugin for HackRF devices";
     license = lib.licenses.mit;

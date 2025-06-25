@@ -23,7 +23,7 @@ buildGoModule rec {
     "-X main.Version=${version}"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Vault CLI";
     mainProgram = "safe";
     homepage = "https://github.com/starkandwayne/safe";

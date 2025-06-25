@@ -20,7 +20,7 @@ buildGoModule rec {
 
   subPackages = [ "." ];
 
-  meta = with lib; {
+  meta = {
     description = "Friends don't let friends leak secrets on their terminal window";
     homepage = "https://github.com/SpectralOps/senv";
     license = lib.licenses.mit;

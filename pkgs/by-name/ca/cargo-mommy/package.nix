@@ -20,7 +20,7 @@ rustPlatform.buildRustPackage rec {
     description = "Cargo wrapper that encourages you after running commands";
     mainProgram = "cargo-mommy";
     homepage = "https://github.com/Gankra/cargo-mommy";
-    license = with licenses; [
+    license = with lib.licenses; [
       mit
       asl20
     ];

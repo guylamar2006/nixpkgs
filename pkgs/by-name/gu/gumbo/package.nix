@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     description = "C99 HTML parsing algorithm";
     homepage = "https://codeberg.org/gumbo-parser/gumbo-parser";
     maintainers = with lib.maintainers; [ nico202 ];
-    platforms = with platforms; linux ++ darwin;
+    platforms = with lib.platforms; linux ++ darwin;
     license = lib.licenses.asl20;
   };
 }

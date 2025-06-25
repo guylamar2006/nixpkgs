@@ -42,7 +42,7 @@ stdenv.mkDerivation {
     pkg-config
   ];
 
-  meta = with lib; {
+  meta = {
     description = "ONC RPC portmapper";
     license = lib.licenses.bsd3;
     platforms = lib.platforms.unix;

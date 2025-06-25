@@ -44,7 +44,7 @@ pypkgs.buildPythonApplication rec {
     runHook postCheck
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Wrapper for LaTeX and friends";
     longDescription = ''
       Rubber is a program whose purpose is to handle all tasks related

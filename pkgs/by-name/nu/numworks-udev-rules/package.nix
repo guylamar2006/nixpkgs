@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
     install -Dm 644 "${udevRules}" "$out/lib/udev/rules.d/50-numworks-calculator.rules"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Udev rules for Numworks calculators";
     homepage = "https://numworks.com";
     license = lib.licenses.gpl3Plus;

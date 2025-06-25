@@ -61,6 +61,6 @@ stdenv.mkDerivation rec {
     homepage = "https://libdatachannel.org/";
     license = lib.licenses.mpl20;
     maintainers = with lib.maintainers; [ erdnaxe ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

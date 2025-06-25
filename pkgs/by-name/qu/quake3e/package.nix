@@ -83,7 +83,7 @@ stdenv.mkDerivation {
     })
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/ec-/Quake3e";
     description = "Improved Quake III Arena engine";
     license = lib.licenses.gpl2Plus;

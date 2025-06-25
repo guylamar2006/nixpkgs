@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-Hv/lQhxRJvvMB5LC5K7k9SmuUCfaVZJynWIz8QOeL9A=";
 
-  meta = with lib; {
+  meta = {
     description = "Minimal X screenshot utility";
     homepage = "https://github.com/neXromancers/shotgun";
     license = lib.licenses.mpl20;

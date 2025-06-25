@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Convert ascii art diagrams into proper bitmap graphics";
     homepage = "https://github.com/stathissideris/ditaa";
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.lgpl3;
     platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ bjornfor ];

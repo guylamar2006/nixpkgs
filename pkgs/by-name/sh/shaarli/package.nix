@@ -58,7 +58,7 @@ stdenv.mkDerivation rec {
     cp -R ./* $out
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Personal, minimalist, super-fast, database free, bookmarking service";
     license = lib.licenses.gpl3Plus;
     homepage = "https://github.com/shaarli/Shaarli";

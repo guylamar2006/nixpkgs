@@ -46,10 +46,10 @@ stdenv.mkDerivation (finalAttrs: {
     rm -r $out/share/
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Bittorrent plugin for VLC";
     homepage = "https://github.com/johang/vlc-bittorrent";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ kintrix ];
   };

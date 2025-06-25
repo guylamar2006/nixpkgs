@@ -33,7 +33,7 @@ python3.pkgs.buildPythonApplication {
   # Project has no tests
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Tools for offensive security of NetBackup infrastructures";
     homepage = "https://github.com/airbus-seclab/nbutools";
     license = lib.licenses.gpl2Only;

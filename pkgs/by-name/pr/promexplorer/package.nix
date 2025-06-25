@@ -15,7 +15,7 @@ buildNimPackage (finalAttrs: {
 
   lockFile = ./lock.json;
 
-  meta = with lib; {
+  meta = {
     description = "Simple tool to explore prometheus exporter metrics";
     homepage = "https://github.com/marcusramberg/promexplorer";
     license = lib.licenses.mit;

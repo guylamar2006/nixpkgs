@@ -64,7 +64,7 @@ stdenv.mkDerivation rec {
     # macFUSE as a whole includes code with restrictions on commercial
     # redistribution. However, the build artifacts that we actually touch for
     # this derivation are distributed under a free license.
-    license = with licenses; [
+    license = with lib.licenses; [
       lgpl2Plus # libfuse
     ];
   };

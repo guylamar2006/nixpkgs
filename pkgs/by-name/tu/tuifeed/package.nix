@@ -18,11 +18,11 @@ rustPlatform.buildRustPackage rec {
 
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Terminal feed reader with a fancy UI";
     mainProgram = "tuifeed";
     homepage = "https://github.com/veeso/tuifeed";
     license = lib.licenses.mit;
-    maintainers = with maintainers; [ devhell ];
+    maintainers = with lib.maintainers; [ devhell ];
   };
 }

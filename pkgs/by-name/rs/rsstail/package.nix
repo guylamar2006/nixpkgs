@@ -28,7 +28,7 @@ stdenv.mkDerivation (final: {
   # just runs cppcheck linter
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Monitor RSS feeds for new entries";
     mainProgram = "rsstail";
     longDescription = ''

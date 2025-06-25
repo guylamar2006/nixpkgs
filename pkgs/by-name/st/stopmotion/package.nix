@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     libxml2
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Create stop-motion animation movies";
     homepage = "http://linuxstopmotion.org/";
     license = lib.licenses.gpl2Plus;

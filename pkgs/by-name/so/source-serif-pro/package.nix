@@ -28,7 +28,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://adobe-fonts.github.io/source-serif/";
     description = "Typeface for setting text in many sizes, weights, and languages. Designed to complement Source Sans";
     license = lib.licenses.ofl;

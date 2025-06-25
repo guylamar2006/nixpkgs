@@ -28,7 +28,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   passthru.updateScript = nix-update-script { };
 
-  meta = with lib; {
+  meta = {
     description = "Corral is a dependency management tool for ponylang (ponyc)";
     homepage = "https://www.ponylang.io";
     changelog = "https://github.com/ponylang/corral/blob/${finalAttrs.version}/CHANGELOG.md";

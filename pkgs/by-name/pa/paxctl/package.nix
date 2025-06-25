@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
     "MANDIR=share/man/man1"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Tool for controlling PaX flags on a per binary basis";
     mainProgram = "paxctl";
     homepage = "https://pax.grsecurity.net";

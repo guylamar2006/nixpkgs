@@ -60,7 +60,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Real-cugan converter ncnn version, runs fast on intel / amd / nvidia / apple-silicon GPU with vulkan";
     homepage = "https://github.com/nihui/realcugan-ncnn-vulkan";
     license = lib.licenses.mit;

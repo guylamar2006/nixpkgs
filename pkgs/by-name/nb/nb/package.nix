@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
     updateScript = nix-update-script { };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Command line note-taking, bookmarking, archiving, and knowledge base application";
     longDescription = ''
       `nb` creates notes in text-based formats like Markdown, Emacs Org mode,

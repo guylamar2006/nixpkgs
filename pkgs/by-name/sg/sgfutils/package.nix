@@ -38,7 +38,7 @@ stdenv.mkDerivation {
       --prefix PATH : ${lib.makeBinPath [ imagemagick ]} \
       --set-default FONTCONFIG_FILE ${makeFontsConf { fontDirectories = [ ]; }}
   '';
-  meta = with lib; {
+  meta = {
     homepage = "https://homepages.cwi.nl/~aeb/go/sgfutils/html/sgfutils.html";
     description = "Command line utilities that help working with SGF files";
     longDescription = ''

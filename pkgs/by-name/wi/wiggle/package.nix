@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     patchShebangs .
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://blog.neil.brown.name/category/wiggle/";
     description = "Tool for applying patches with conflicts";
     mainProgram = "wiggle";
@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
       possible. Also, wiggle will (in some cases) detect changes that have
       already been applied, and will ignore them.
     '';
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
   };

@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
       tadfisher
       SubhrajyotiSen
     ];
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     mainProgram = "ktlint";
   };
 }

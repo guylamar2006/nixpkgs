@@ -23,7 +23,7 @@ rustPlatform.buildRustPackage rec {
     mainProgram = "cargo-temp";
     homepage = "https://github.com/yozhgoor/cargo-temp";
     changelog = "https://github.com/yozhgoor/cargo-temp/releases/tag/${src.rev}";
-    license = with licenses; [
+    license = with lib.licenses; [
       mit # or
       asl20
     ];

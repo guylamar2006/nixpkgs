@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "C++11 port of docopt";
     homepage = "https://github.com/docopt/docopt.cpp";
-    license = with licenses; [
+    license = with lib.licenses; [
       mit
       boost
     ];

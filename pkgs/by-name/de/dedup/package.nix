@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Data deduplication program";
     homepage = "https://git.2f30.org/dedup/file/README.html";
-    license = with licenses; [
+    license = with lib.licenses; [
       bsd0
       isc
     ];

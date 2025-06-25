@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     cp  par.1 $out/share/man/man1
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "http://www.nicemice.net/par/";
     description = "Paragraph reflow for email";
     mainProgram = "par";

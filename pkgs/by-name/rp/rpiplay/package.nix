@@ -52,7 +52,7 @@ stdenv.mkDerivation {
     gst_all_1.gst-plugins-ugly
   ];
 
-  meta = with lib; {
+  meta = {
     broken = stdenv.hostPlatform.isDarwin;
     homepage = "https://github.com/FD-/RPiPlay";
     description = "Open-source implementation of an AirPlay mirroring server";

@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-84dVBNvo45zG7s/tMY3O0Zv69CdcvjZCZX8siie6QnI=";
 
-  meta = with lib; {
+  meta = {
     description = "Temporary edit external crates that your project depends on";
     mainProgram = "rhack";
     homepage = "https://github.com/nakabonne/rhack";

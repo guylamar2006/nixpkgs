@@ -96,10 +96,10 @@ buildDotnetModule rec {
 
   passthru.updateScript = ./update.sh;
 
-  meta = with lib; {
+  meta = {
     description = "Open source singing synthesis platform and UTAU successor";
     homepage = "http://www.openutau.com/";
-    sourceProvenance = with sourceTypes; [
+    sourceProvenance = with lib.sourceTypes; [
       fromSource
       # deps
       binaryBytecode

@@ -25,7 +25,7 @@ python3.pkgs.buildPythonApplication rec {
 
   pythonImportsCheck = [ "puncia" ];
 
-  meta = with lib; {
+  meta = {
     description = "CLI utility for Subdomain Center & Exploit Observer";
     homepage = "https://github.com/ARPSyndicate/puncia";
     changelog = "https://github.com/ARPSyndicate/puncia/releases/tag/${src.tag}";

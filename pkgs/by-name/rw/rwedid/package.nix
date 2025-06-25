@@ -38,7 +38,7 @@ rustPlatform.buildRustPackage rec {
     echo 'SUBSYSTEM=="i2c-dev",KERNEL=="i2c-[0-9]*", ATTRS{class}=="0x030000", TAG+="uaccess"' > $out/etc/udev/rules.d/60-rwedid.rules
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Read and write EDID data over an I2C bus";
     longDescription = ''
       To install udev rules, you also have to add `services.udev.packages = [ pkgs.rwedid ]` into your configuration.

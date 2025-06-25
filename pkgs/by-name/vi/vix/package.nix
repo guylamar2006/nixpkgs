@@ -25,10 +25,10 @@ stdenv.mkDerivation {
 
   buildInputs = [ SDL ];
 
-  meta = with lib; {
+  meta = {
     description = "Visual Interface heXadecimal dump";
     homepage = "http://actinid.org/vix/";
-    license = licenses.gpl3;
+    license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ ehmry ];
     mainProgram = "vix";
     # sys/io.h missing on other platforms

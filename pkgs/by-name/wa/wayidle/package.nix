@@ -18,10 +18,10 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-rpmMUrVobYa9mGERJnhGsvebzWbuL+51VeuXKUIFdwg=";
 
-  meta = with lib; {
+  meta = {
     description = "Execute a program when a Wayland compositor reports being N seconds idle";
     homepage = "https://git.sr.ht/~whynothugo/wayidle";
-    license = licenses.isc;
+    license = lib.licenses.isc;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "wayidle";
     platforms = lib.platforms.linux;

@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     "-Wno-error"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Library for generating, refining and rendering 2-Dimensional Constrained Delaunay Triangulations";
     mainProgram = "p2tc";
     homepage = "https://code.google.com/archive/p/poly2tri-c/";

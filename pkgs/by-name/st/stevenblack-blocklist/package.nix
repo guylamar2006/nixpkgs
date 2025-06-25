@@ -56,11 +56,11 @@ stdenvNoCC.mkDerivation (finalAttrs: {
 
   passthru.updateScript = nix-update-script { };
 
-  meta = with lib; {
+  meta = {
     description = "Unified hosts file with base extensions";
     homepage = "https://github.com/StevenBlack/hosts";
     license = lib.licenses.mit;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       moni
       Guanran928
       frontear

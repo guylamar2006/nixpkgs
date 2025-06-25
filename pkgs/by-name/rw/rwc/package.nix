@@ -17,7 +17,7 @@ stdenv.mkDerivation rec {
 
   makeFlags = [ "PREFIX=$(out)" ];
 
-  meta = with lib; {
+  meta = {
     description = "Report when files are changed";
     license = lib.licenses.publicDomain;
     platforms = lib.platforms.linux;

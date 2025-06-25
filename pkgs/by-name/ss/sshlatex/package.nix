@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
       wrapProgram $out/bin/sshlatex --prefix PATH : "${binPath}"
     '';
 
-  meta = with lib; {
+  meta = {
     description = "Collection of hacks to efficiently run LaTeX via ssh";
     longDescription = ''
       sshlatex is a tool which uploads LaTeX source files to a remote, runs

@@ -11,7 +11,7 @@ bundlerApp {
 
   passthru.updateScript = bundlerUpdateScript "rufo";
 
-  meta = with lib; {
+  meta = {
     description = "Ruby formatter";
     homepage = "https://github.com/ruby-formatter/rufo";
     license = lib.licenses.mit;

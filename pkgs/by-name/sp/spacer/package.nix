@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-WNqzOZ38ogeeEYB6B58+C2VptJ/HNj5+DpWvvHBhTAQ=";
 
-  meta = with lib; {
+  meta = {
     description = "CLI tool to insert spacers when command output stops";
     homepage = "https://github.com/samwho/spacer";
     changelog = "https://github.com/samwho/spacer/releases/tag/${src.rev}";

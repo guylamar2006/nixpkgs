@@ -85,7 +85,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Performance-portable, length-agnostic SIMD with runtime dispatch";
     homepage = "https://github.com/google/highway";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       bsd3
     ];

@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
   '';
   makeFlags = [ "prefix=$(out)" ];
 
-  meta = with lib; {
+  meta = {
     description = "Single-shot nREPL client";
     mainProgram = "rep";
     homepage = "https://github.com/eraserhd/rep";

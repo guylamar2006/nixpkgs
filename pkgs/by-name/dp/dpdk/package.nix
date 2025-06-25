@@ -105,7 +105,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Set of libraries and drivers for fast packet processing";
     homepage = "http://dpdk.org/";
-    license = with licenses; [
+    license = with lib.licenses; [
       lgpl21
       gpl2Only
       bsd2

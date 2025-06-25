@@ -31,7 +31,7 @@ buildGoModule rec {
   # There are no tests for cmd/serf.
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Service orchestration and management tool";
     mainProgram = "serf";
     longDescription = ''

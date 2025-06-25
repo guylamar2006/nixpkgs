@@ -31,7 +31,7 @@ buildGoModule rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Copy/paste anything over the network";
     homepage = "https://github.com/jedisct1/piknik";
     changelog = "https://github.com/jedisct1/piknik/blob/${src.rev}/ChangeLog";

@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     udns
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/dlundquist/sniproxy";
     description = "Transparent TLS and HTTP layer 4 proxy with SNI support";
     license = lib.licenses.bsd2;

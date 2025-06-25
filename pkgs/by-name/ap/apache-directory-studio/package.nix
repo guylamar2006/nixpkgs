@@ -77,7 +77,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Eclipse-based LDAP browser and directory client";
     homepage = "https://directory.apache.org/studio/";
-    sourceProvenance = with sourceTypes; [
+    sourceProvenance = with lib.sourceTypes; [
       binaryBytecode
       binaryNativeCode
     ];

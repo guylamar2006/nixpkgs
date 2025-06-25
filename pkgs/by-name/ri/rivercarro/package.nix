@@ -36,7 +36,7 @@ stdenv.mkDerivation (finalAttrs: {
     ln -s ${callPackage ./deps.nix { }} $ZIG_GLOBAL_CACHE_DIR/p
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://git.sr.ht/~novakane/rivercarro";
     description = "Layout generator for river Wayland compositor, fork of rivertile";
     longDescription = ''

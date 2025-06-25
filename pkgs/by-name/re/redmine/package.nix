@@ -64,7 +64,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   passthru.tests.redmine = nixosTests.redmine;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.redmine.org/";
     changelog = "https://www.redmine.org/projects/redmine/wiki/changelog";
     platforms = lib.platforms.linux;

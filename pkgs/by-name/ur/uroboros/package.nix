@@ -18,10 +18,10 @@ buildGoModule rec {
 
   vendorHash = "sha256-FJTmnkPMXolNijRc4ZqCsi/ykReTE2WOC5LP/wHog9Y=";
 
-  meta = with lib; {
+  meta = {
     description = "Tool for monitoring and profiling single processes";
     homepage = "https://github.com/evilsocket/uroboros";
     license = lib.licenses.gpl3Only;
-    maintainers = with maintainers; [ fab ];
+    maintainers = with lib.maintainers; [ fab ];
   };
 }

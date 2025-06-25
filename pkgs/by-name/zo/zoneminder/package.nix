@@ -241,10 +241,10 @@ stdenv.mkDerivation rec {
     ln -s $out/share/zoneminder/www $out/share/zoneminder/www/zm
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Video surveillance software system";
     homepage = "https://zoneminder.com";
-    license = licenses.gpl3;
+    license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
   };

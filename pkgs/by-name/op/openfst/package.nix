@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [ autoreconfHook ];
 
-  meta = with lib; {
+  meta = {
     description = "Library for working with finite-state transducers";
     longDescription = ''
       Library for constructing, combining, optimizing, and searching weighted finite-state transducers (FSTs).

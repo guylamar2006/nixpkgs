@@ -20,7 +20,7 @@ rustPlatform.buildRustPackage rec {
     description = "Tool for creating Android packages";
     mainProgram = "cargo-apk";
     homepage = "https://github.com/rust-windowing/android-ndk-rs";
-    license = with licenses; [
+    license = with lib.licenses; [
       mit
       asl20
     ];

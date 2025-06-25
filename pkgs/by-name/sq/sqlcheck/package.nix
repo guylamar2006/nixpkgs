@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     inherit (src.meta) homepage;
     description = "Automatically identify anti-patterns in SQL queries";
     mainProgram = "sqlcheck";

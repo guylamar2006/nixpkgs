@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     tests.nifi = nixosTests.nifi;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Easy to use, powerful, and reliable system to process and distribute data";
     longDescription = ''
       Apache NiFi supports powerful and scalable directed graphs of data routing,
@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
     license = lib.licenses.asl20;
     homepage = "https://nifi.apache.org";
     platforms = [ "x86_64-linux" ];
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     maintainers = with lib.maintainers; [ izorkin ];
   };
 }

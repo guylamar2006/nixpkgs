@@ -27,7 +27,7 @@ buildGoModule rec {
     runHook postInstallCheck
   '';
 
-  meta = with lib; {
+  meta = {
     # Doesn't build with Go >=1.21
     # https://github.com/norouter/norouter/issues/165
     broken = true;

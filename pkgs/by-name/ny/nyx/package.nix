@@ -20,7 +20,7 @@ buildPythonApplication rec {
   # ./run_tests.py returns `TypeError: testFailure() takes exactly 1 argument`
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Command-line monitor for Tor";
     mainProgram = "nyx";
     homepage = "https://nyx.torproject.org/";

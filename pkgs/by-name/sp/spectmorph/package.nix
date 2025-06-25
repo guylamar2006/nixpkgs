@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
 
   dontWrapQtApps = true;
 
-  meta = with lib; {
+  meta = {
     description = "Allows to analyze samples of musical instruments, and to combine them (morphing) to construct hybrid sounds";
     homepage = "https://spectmorph.org";
     license = lib.licenses.gpl3;

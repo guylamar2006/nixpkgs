@@ -19,7 +19,7 @@ rustPlatform.buildRustPackage rec {
 
   passthru.updateScript = nix-update-script { };
 
-  meta = with lib; {
+  meta = {
     description = "Protoc plugin that generates Cargo crates and include files for `protoc-gen-prost`";
     mainProgram = "protoc-gen-prost-crate";
     homepage = "https://github.com/neoeinstein/protoc-gen-prost";

@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
     mv $out/bin/uncompress $out/bin/uncompress-ncompress
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "http://ncompress.sourceforge.net/";
     license = lib.licenses.publicDomain;
     description = "Fast, simple LZW file compressor";

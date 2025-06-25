@@ -68,7 +68,7 @@ stdenv.mkDerivation {
     nix-serve-ssh = nixosTests.nix-serve-ssh;
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/edolstra/nix-serve";
     description = "Utility for sharing a Nix store as a binary cache";
     maintainers = with lib.maintainers; [ eelco ];

@@ -11,7 +11,7 @@ bundlerApp {
 
   passthru.updateScript = bundlerUpdateScript "neocities";
 
-  meta = with lib; {
+  meta = {
     description = "CLI and library for interacting with the Neocities API";
     homepage = "https://github.com/neocities/neocities-ruby";
     license = lib.licenses.mit;

@@ -62,7 +62,7 @@ rustPlatform.buildRustPackage rec {
     mainProgram = "erg";
     homepage = "https://github.com/erg-lang/erg";
     changelog = "https://github.com/erg-lang/erg/releases/tag/${src.rev}";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       mit
     ];

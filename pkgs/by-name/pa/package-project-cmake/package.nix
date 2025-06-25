@@ -28,7 +28,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/TheLartians/PackageProject.cmake";
     description = "CMake script for packaging C/C++ projects";
     longDescription = ''

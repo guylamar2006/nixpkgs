@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-7+58CMm9nPg9tVXphUcIufFGONOxjAlSWBseq5fbM44=";
 
-  meta = with lib; {
+  meta = {
     description = "Annotate output with relative durations between lines";
     mainProgram = "rtss";
     homepage = "https://github.com/Freaky/rtss";

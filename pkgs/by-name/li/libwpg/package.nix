@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://libwpg.sourceforge.net";
     description = "C++ library to parse WPG";
-    license = with licenses; [
+    license = with lib.licenses; [
       lgpl21
       mpl20
     ];

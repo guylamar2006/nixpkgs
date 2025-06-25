@@ -94,7 +94,7 @@ let
       inherit plugins withPlugins;
     };
 
-    meta = with lib; {
+    meta = {
       description = "Autoscaling daemon for Nomad";
       mainProgram = "nomad-autoscaler";
       homepage = "https://github.com/hashicorp/nomad-autoscaler";

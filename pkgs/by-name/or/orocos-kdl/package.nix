@@ -24,7 +24,7 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [ cmake ];
   propagatedBuildInputs = [ eigen ];
 
-  meta = with lib; {
+  meta = {
     description = "Kinematics and Dynamics Library";
     homepage = "https://www.orocos.org/kdl.html";
     license = lib.licenses.lgpl21Only;

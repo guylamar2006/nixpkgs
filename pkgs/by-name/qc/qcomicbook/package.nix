@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
       --replace "Exec=qcomicbook" "Exec=$out/bin/qcomicbook"
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/stolowski/QComicBook";
     description = "Comic book reader in Qt5";
     mainProgram = "qcomicbook";

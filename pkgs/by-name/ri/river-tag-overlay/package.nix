@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
     "PREFIX="
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Pop-up showing tag status";
     homepage = "https://sr.ht/~leon_plickat/river-tag-overlay";
     license = lib.licenses.gpl3Only;

@@ -76,10 +76,10 @@ rustPlatform.buildRustPackage rec {
     }
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Rust library with higher level APIs on top of the core ostree API";
     homepage = "https://github.com/ostreedev/ostree-rs-ext";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       mit
     ];

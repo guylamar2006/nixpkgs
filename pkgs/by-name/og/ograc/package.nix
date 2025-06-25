@@ -16,7 +16,7 @@ rustPlatform.buildRustPackage {
   useFetchCargoVendor = true;
   cargoHash = "sha256-rWU8rOGLUrSkXLkHib8qkkiOZvuGbSJ4knFrHuD+R44=";
 
-  meta = with lib; {
+  meta = {
     description = "like cargo, but backwards";
     mainProgram = "ograc";
     homepage = "https://crates.io/crates/ograc";

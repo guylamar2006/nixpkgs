@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     mainProgram = "fstl";
     homepage = "https://github.com/fstl-app/fstl";
     license = lib.licenses.mit;
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     maintainers = with lib.maintainers; [ tweber ];
   };
 }

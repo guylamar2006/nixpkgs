@@ -38,10 +38,10 @@ stdenv.mkDerivation {
     install -D -t $out/doc/p4d -m 0644 *.txt
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Perforce Helix Core Server";
     homepage = "https://www.perforce.com";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unfree;
     mainProgram = "p4d";
     platforms = builtins.attrNames srcs;

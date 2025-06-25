@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
 
   postPatch = ''substituteInPlace Makefile --replace "\$(DESTDIR)/usr" "$out"'';
 
-  meta = with lib; {
+  meta = {
     description = "CLI PulseAudio Volume Control";
     homepage = "https://github.com/falconindy/ponymix";
     mainProgram = "ponymix";

@@ -106,7 +106,7 @@ maven.buildMavenPackage rec {
     })
   ];
 
-  meta = with lib; {
+  meta = {
     description = pkgDescription;
     homepage = "https://github.com/developersu/ns-usbloader";
     license = lib.licenses.gpl3Only;

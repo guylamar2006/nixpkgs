@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     hamlib
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Amateur radio logging program";
     longDescription = ''
       Xlog is an amateur radio logging program.
@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://www.nongnu.org/xlog";
     maintainers = with lib.maintainers; [ mafo ];
-    license = licenses.gpl3;
+    license = lib.licenses.gpl3;
     platforms = lib.platforms.unix;
     mainProgram = "xlog";
   };

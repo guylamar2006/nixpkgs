@@ -54,7 +54,7 @@ rustPlatform.buildRustPackage rec {
 
   doInstallCheck = true;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/WhatAmISupposedToPutHere/tiny-dfr";
     description = "Most basic dynamic function row daemon possible";
     license = [

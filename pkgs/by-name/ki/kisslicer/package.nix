@@ -58,7 +58,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Convert STL files into Gcode";
     homepage = "http://www.kisslicer.com";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ cransom ];
     platforms = [ "x86_64-linux" ];

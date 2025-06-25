@@ -30,7 +30,7 @@ rustPlatform.buildRustPackage rec {
     mainProgram = "elf2uf2-rs";
     homepage = "https://github.com/JoNil/elf2uf2-rs";
     license = lib.licenses.bsd0;
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     maintainers = with lib.maintainers; [
       polygon
       moni

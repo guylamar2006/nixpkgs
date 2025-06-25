@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
     cp osx-cpu-temp $out/bin
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Outputs current CPU temperature for OSX";
     homepage = "https://github.com/lavoiesl/osx-cpu-temp";
     license = lib.licenses.gpl2Plus;

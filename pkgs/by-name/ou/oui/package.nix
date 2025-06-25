@@ -17,7 +17,7 @@ buildGoModule rec {
 
   vendorHash = "sha256-TLVw4tnfvgK2h/Xj5LNNjDG4WQ83Bw8yBhZc16Tjmws=";
 
-  meta = with lib; {
+  meta = {
     description = "MAC Address CLI Toolkit";
     homepage = "https://github.com/thatmattlove/oui";
     license = lib.licenses.bsd3;

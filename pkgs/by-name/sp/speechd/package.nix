@@ -144,7 +144,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description =
       "Common interface to speech synthesis" + lib.optionalString libsOnly " - client libraries only";
     homepage = "https://devel.freebsoft.org/speechd";
@@ -154,7 +154,7 @@ stdenv.mkDerivation (finalAttrs: {
       jtojnar
     ];
     # TODO: remove checks for `withPico` once PR #375450 is merged
-    platforms = if withAlsa || withPico then platforms.linux else platforms.unix;
+    platforms = if withAlsa || withPico then lib.platforms.linux else lib.platforms.unix;
     mainProgram = "speech-dispatcher";
   };
 })

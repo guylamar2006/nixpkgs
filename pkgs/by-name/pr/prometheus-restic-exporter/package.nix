@@ -38,7 +38,7 @@ stdenvNoCC.mkDerivation rec {
     restic-exporter = nixosTests.prometheus-exporters.restic;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Prometheus exporter for the Restic backup system";
     homepage = "https://github.com/ngosang/restic-exporter";
     changelog = "https://github.com/ngosang/restic-exporter/blob/${src.rev}/CHANGELOG.md";

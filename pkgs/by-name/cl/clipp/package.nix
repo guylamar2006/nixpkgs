@@ -29,6 +29,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/muellan/clipp";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ xbreak ];
-    platforms = with platforms; all;
+    platforms = lib.platforms.all;
   };
 }

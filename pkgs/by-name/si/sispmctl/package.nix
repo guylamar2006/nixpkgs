@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
     libusb-compat-0_1
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://sispmctl.sourceforge.net/";
     description = "USB controlled powerstrips management software";
     license = lib.licenses.gpl2Plus;

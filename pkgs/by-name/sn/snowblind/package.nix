@@ -25,7 +25,7 @@ stdenv.mkDerivation {
     rm $out/share/themes/*/{COPYING,CREDITS}
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Smooth blue theme based on Materia Design";
     homepage = "https://www.opencode.net/ju1464/Snowblind";
     license = lib.licenses.gpl3;

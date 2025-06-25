@@ -79,6 +79,6 @@ stdenv.mkDerivation rec {
     homepage = "http://groovy-lang.org/";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ pSub ];
-    platforms = with platforms; unix;
+    platforms = lib.platforms.unix;
   };
 }

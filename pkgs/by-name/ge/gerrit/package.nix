@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.gerritcodereview.com/index.md";
     license = lib.licenses.asl20;
     description = "Web based code review and repository management for the git version control system";
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     maintainers = with lib.maintainers; [
       flokli
       zimbatm

@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     libbsd
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/resurrecting-open-source-projects/scrot";
     description = "Command-line screen capture utility";
     mainProgram = "scrot";

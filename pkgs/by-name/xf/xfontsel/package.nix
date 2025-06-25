@@ -42,11 +42,11 @@ stdenv.mkDerivation rec {
       --set XAPPLRESDIR $out/share/X11/app-defaults
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.x.org/";
     description = "Allows testing the fonts available in an X server";
     mainProgram = "xfontsel";
-    license = with licenses; [
+    license = with lib.licenses; [
       x11
       smlnj
       mit

@@ -23,6 +23,6 @@ stdenv.mkDerivation rec {
     maintainers = with lib.maintainers; [ pSub ];
     homepage = "https://github.com/williamh/dotconf";
     license = lib.licenses.lgpl21Plus;
-    platforms = with platforms; unix;
+    platforms = lib.platforms.unix;
   };
 }

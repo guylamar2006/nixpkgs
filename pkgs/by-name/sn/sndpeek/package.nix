@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
     mv sndpeek $out/bin
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Real-time 3D animated audio display/playback";
     longDescription = ''
       sndpeek is just what it sounds (and looks) like:

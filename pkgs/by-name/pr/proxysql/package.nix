@@ -215,7 +215,7 @@ stdenv.mkDerivation (finalAttrs: {
     sed -i s_/usr/bin/proxysql_$out/bin/proxysql_ $out/lib/systemd/system/*.service
   '';
 
-  meta = with lib; {
+  meta = {
     broken = stdenv.hostPlatform.isDarwin;
     description = "High-performance MySQL proxy";
     mainProgram = "proxysql";

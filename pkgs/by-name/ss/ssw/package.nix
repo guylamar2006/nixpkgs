@@ -18,7 +18,7 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [ pkg-config ];
   buildInputs = [ gtk3 ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.gnu.org/software/ssw/";
     license = lib.licenses.gpl3;
     description = "GNU Spread Sheet Widget";

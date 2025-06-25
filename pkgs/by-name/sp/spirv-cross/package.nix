@@ -27,7 +27,7 @@ stdenv.mkDerivation (finalAttrs: {
       --replace '=''${prefix}//' '=/'
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Tool designed for parsing and converting SPIR-V to other shader languages";
     homepage = "https://github.com/KhronosGroup/SPIRV-Cross";
     changelog = "https://github.com/KhronosGroup/SPIRV-Cross/releases/tag/${finalAttrs.version}";

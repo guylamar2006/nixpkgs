@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Steam Locomotive runs across your terminal when you type 'sl'";
     homepage = "http://www.tkl.iis.u-tokyo.ac.jp/~toyoda/index_e.html";
     license = rec {

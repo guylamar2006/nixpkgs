@@ -18,7 +18,7 @@ stdenv.mkDerivation rec {
     cp '${./Makefile}' Makefile
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Implementation of the redo build system in portable C with zero dependencies";
     homepage = "https://github.com/leahneukirchen/redo-c";
     license = lib.licenses.cc0;

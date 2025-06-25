@@ -52,7 +52,7 @@ buildGoModule rec {
     installManPage docs/*.[1-9]
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/containers/oci-seccomp-bpf-hook";
     description = ''
       OCI hook to trace syscalls and generate a seccomp profile

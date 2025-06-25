@@ -20,7 +20,7 @@ buildGoModule {
 
   vendorHash = null;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/mgmeyers/pdfannots2json";
     license = lib.licenses.agpl3Only;
     description = "Tool to convert PDF annotations to JSON";

@@ -24,7 +24,7 @@ buildGoModule rec {
     "-X github.com/styrainc/regal/pkg/version.Commit=${version}"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Linter and language server for Rego";
     mainProgram = "regal";
     homepage = "https://github.com/StyraInc/regal";

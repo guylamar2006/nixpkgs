@@ -380,7 +380,7 @@ stdenv.mkDerivation (finalAttrs: {
       "gobject-2.0"
       "gthread-2.0"
     ];
-    platforms = lib.platforms.unix ++ platforms.windows;
+    platforms = lib.platforms.unix ++ lib.platforms.windows;
 
     longDescription = ''
       GLib provides the core application building blocks for libraries

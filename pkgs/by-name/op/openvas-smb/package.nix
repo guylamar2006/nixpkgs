@@ -61,7 +61,7 @@ stdenv.mkDerivation rec {
     cp ${heimdalConfigHeader} include/heim_threads.h
   '';
 
-  meta = with lib; {
+  meta = {
     description = "SMB module for Greenbone Community Edition";
     homepage = "https://github.com/greenbone/openvas-smb";
     license = lib.licenses.gpl2Only;

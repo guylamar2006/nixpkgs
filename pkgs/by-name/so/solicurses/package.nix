@@ -32,7 +32,7 @@ stdenv.mkDerivation {
     install -D SoliCurses.out $out/bin/solicurses
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Version of Solitaire written in C++ using the ncurses library";
     mainProgram = "solicurses";
     homepage = "https://github.com/KaylaPP/SoliCurses";

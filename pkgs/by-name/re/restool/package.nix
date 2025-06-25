@@ -62,7 +62,7 @@ stdenv.mkDerivation rec {
     done
   '';
 
-  meta = with lib; {
+  meta = {
     description = "DPAA2 Resource Management Tool";
     longDescription = ''
       restool is a user space application providing the ability to dynamically

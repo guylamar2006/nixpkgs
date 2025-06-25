@@ -51,7 +51,7 @@ stdenv.mkDerivation {
   meta = {
     description = "Very high level general-purpose programming language";
     maintainers = with lib.maintainers; [ yurrriq ];
-    platforms = with platforms; linux ++ darwin ++ freebsd ++ netbsd ++ openbsd ++ cygwin ++ illumos;
+    platforms = with lib.platforms; linux ++ darwin ++ freebsd ++ netbsd ++ openbsd ++ cygwin ++ illumos;
     license = lib.licenses.publicDomain;
     homepage = "https://www.cs.arizona.edu/icon/";
   };

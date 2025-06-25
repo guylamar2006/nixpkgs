@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "semi-random text typer";
     mainProgram = "randtype";
     homepage = "https://benkibbey.wordpress.com/randtype/";

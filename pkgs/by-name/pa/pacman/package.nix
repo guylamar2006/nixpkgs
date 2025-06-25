@@ -129,7 +129,7 @@ stdenv.mkDerivation (final: {
       }
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Simple library-based package manager";
     homepage = "https://archlinux.org/pacman/";
     changelog = "https://gitlab.archlinux.org/pacman/pacman/-/raw/v${final.version}/NEWS";

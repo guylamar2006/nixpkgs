@@ -37,7 +37,7 @@ stdenv.mkDerivation (finalAttrs: {
     pt2-clone-opens = nixosTests.pt2-clone;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Highly accurate clone of the classic ProTracker 2.3D software for Amiga";
     homepage = "https://16-bits.org/pt2.php";
     license = lib.licenses.bsd3;

@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     --replace '`git describe --dirty --always --tags`' '${version}'
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Command-line tool for isolation, routing and drilling of PCBs";
     longDescription = ''
       pcb2gcode is a command-line software for the isolation, routing and drilling of PCBs.

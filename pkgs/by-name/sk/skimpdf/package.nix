@@ -25,11 +25,11 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Skim is a PDF reader and note-taker for OS X";
     homepage = "https://skim-app.sourceforge.io/";
     license = lib.licenses.bsd0;
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     mainProgram = "Skim.app";
     maintainers = with lib.maintainers; [ YvesStraten ];
     platforms = lib.platforms.darwin;

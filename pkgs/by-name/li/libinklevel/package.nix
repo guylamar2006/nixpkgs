@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://libinklevel.sourceforge.net/";
     license = lib.licenses.gpl2;
-    platforms = lib.platforms.linux ++ platforms.freebsd;
+    platforms = lib.platforms.linux ++ lib.platforms.freebsd;
     maintainers = with lib.maintainers; [ samb96 ];
   };
 }

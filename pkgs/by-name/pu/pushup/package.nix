@@ -32,7 +32,7 @@ buildGoModule rec {
     wrapProgram $out/bin/${meta.mainProgram} --prefix PATH : ${lib.makeBinPath [ go ]}
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Web framework for Go";
     homepage = "https://pushup.adhoc.dev/";
     license = lib.licenses.mit;

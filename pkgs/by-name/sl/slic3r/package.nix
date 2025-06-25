@@ -120,7 +120,7 @@ stdenv.mkDerivation rec {
     cp "$desktopItem"/share/applications/* "$out/share/applications/"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "G-code generator for 3D printers";
     mainProgram = "slic3r";
     longDescription = ''

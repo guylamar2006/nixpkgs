@@ -52,10 +52,10 @@ stdenv.mkDerivation rec {
     libsoup_2_4
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Project for mocking web service APIs which use HTTP or HTTPS";
     homepage = "https://gitlab.freedesktop.org/pwithnall/uhttpmock/";
-    license = licenses.lgpl21Plus;
+    license = lib.licenses.lgpl21Plus;
     maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
   };

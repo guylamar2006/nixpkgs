@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
   # With pkgsLLVM: tests/test-winmsgcond.c:53: assertion 'wmc_end(&wmc, pos + 1, &chg) == pos' failed
   doCheck = !stdenv.hostPlatform.isDarwin && !stdenv.hostPlatform.useLLVM;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.gnu.org/software/screen/";
     description = "Window manager that multiplexes a physical terminal";
     license = lib.licenses.gpl3Plus;

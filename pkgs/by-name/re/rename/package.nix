@@ -14,7 +14,7 @@ perlPackages.buildPerlPackage rec {
     rev = "v${version}";
     sha256 = "SK6wS3IxjCftuDiiZU27TFnn9GVd137zmzvGH88cNLI=";
   };
-  meta = with lib; {
+  meta = {
     description = "Rename files according to a Perl rewrite expression";
     homepage = "https://github.com/pstray/rename";
     maintainers = with lib.maintainers; [

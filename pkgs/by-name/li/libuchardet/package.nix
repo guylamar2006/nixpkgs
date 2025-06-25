@@ -31,6 +31,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.freedesktop.org/wiki/Software/uchardet/";
     license = lib.licenses.mpl11;
     maintainers = with lib.maintainers; [ ];
-    platforms = with platforms; unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
       }
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Collection of image builders";
     homepage = "https://github.com/nix-community/nixos-generators";
     license = lib.licenses.mit;

@@ -36,7 +36,7 @@ stdenvNoCC.mkDerivation rec {
     rev-prefix = "Serif";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Beautiful and free fonts for CJK languages";
     homepage = "https://www.google.com/get/noto/help/cjk/";
     longDescription = ''

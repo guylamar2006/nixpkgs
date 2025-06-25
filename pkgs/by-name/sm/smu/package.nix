@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
     "PREFIX=${placeholder "out"}"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "simple markup - markdown like syntax";
     mainProgram = "smu";
     homepage = "https://github.com/Gottox/smu";

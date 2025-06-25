@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
     rev-prefix = "v";
   };
 
-  meta = with lib; {
+  meta = {
     description = "ELF utils that can check files for security relevant properties";
     longDescription = ''
       A suite of ELF tools to aid auditing systems. Contains

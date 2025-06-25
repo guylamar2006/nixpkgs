@@ -46,6 +46,6 @@ stdenv.mkDerivation {
     description = "Portable Scriptable Network and Serial Communication Software";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ pSub ];
-    platforms = with platforms; linux;
+    platforms = lib.platforms.linux;
   };
 }

@@ -26,6 +26,6 @@ stdenv.mkDerivation rec {
     homepage = "http://oldhome.schmorp.de/marc/fcrackzip.html";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ nico202 ];
-    platforms = with platforms; unix;
+    platforms = lib.platforms.unix;
   };
 }

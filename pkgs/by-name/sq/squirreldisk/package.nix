@@ -103,11 +103,11 @@ rustPlatform.buildRustPackage rec {
       makeWrapper "$out/Applications/SquirrelDisk.app/Contents/MacOS/SquirrelDisk" "$out/bin/squirrel-disk"
     '';
 
-  meta = with lib; {
+  meta = {
     description = "Cross-platform disk usage analysis tool";
     homepage = "https://www.squirreldisk.com/";
     license = lib.licenses.agpl3Only;
-    maintainers = with maintainers; [ peret ];
+    maintainers = with lib.maintainers; [ peret ];
     mainProgram = "squirrel-disk";
   };
 }

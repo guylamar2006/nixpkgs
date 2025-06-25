@@ -28,11 +28,11 @@ stdenv.mkDerivation rec {
     wrapProgram "$out/bin/riemann" --prefix PATH : "${jre}/bin"
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "http://riemann.io/";
     description = "Network monitoring system";
     mainProgram = "riemann";
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.epl10;
     platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ crimeminister ];

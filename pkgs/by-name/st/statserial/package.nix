@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     cp statserial.1 $out/share/man/man1
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://sites.google.com/site/tranter/software";
     description = "Display serial port modem status lines";
     license = lib.licenses.gpl2Plus;
@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
     '';
 
     platforms = lib.platforms.unix;
-    maintainers = with maintainers; [ rps ];
+    maintainers = with lib.maintainers; [ rps ];
     mainProgram = "statserial";
   };
 }

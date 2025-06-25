@@ -22,13 +22,13 @@ buildNimPackage {
     cp tridactyl.json "$out/lib/mozilla/native-messaging-hosts/"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Native messenger for Tridactyl, a vim-like Firefox webextension";
     mainProgram = "native_main";
     homepage = "https://github.com/tridactyl/native_messenger";
-    license = licenses.bsd2;
+    license = lib.licenses.bsd2;
     platforms = lib.platforms.all;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       timokau
       dit7ya
       kiike

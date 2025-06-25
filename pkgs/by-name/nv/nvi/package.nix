@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
   configureScript = "../dist/configure";
   configureFlags = [ "vi_cv_path_preserve=/tmp" ];
 
-  meta = with lib; {
+  meta = {
     description = "Berkeley Vi Editor";
     license = lib.licenses.free;
     platforms = lib.platforms.unix;

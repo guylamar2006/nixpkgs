@@ -30,7 +30,7 @@ python3Packages.buildPythonApplication rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Scan a file to look for certain PDF keywords";
     homepage = "https://blog.didierstevens.com/programs/pdf-tools/";
     license = lib.licenses.free;

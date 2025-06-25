@@ -31,7 +31,7 @@ perlPackages.buildPerlPackage rec {
       together.
     '';
     homepage = "http://www.gson.org/egypt/";
-    license = with licenses; [
+    license = with lib.licenses; [
       artistic1
       gpl1Plus
     ];

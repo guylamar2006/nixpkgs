@@ -26,7 +26,7 @@ stdenvNoCC.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "http://dotcolon.net/font/seshat/";
     description = "Roman body font designed for main text by Sora Sagano";
     longDescription = ''

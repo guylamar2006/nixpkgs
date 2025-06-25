@@ -96,7 +96,7 @@ stdenv.mkDerivation rec {
   '';
 
   meta = {
-    sourceProvenance = with sourceTypes; [
+    sourceProvenance = with lib.sourceTypes; [
       binaryBytecode
       binaryNativeCode
     ];

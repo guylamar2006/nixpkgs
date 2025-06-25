@@ -69,7 +69,7 @@ stdenv.mkDerivation (finalAttrs: {
     echo "v${finalAttrs.version}" > version.txt
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/rnpgp/rnp";
     description = "High performance C++ OpenPGP library, fully compliant to RFC 4880";
     license = lib.licenses.bsd2;

@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     protobuf
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Libphonenumber command-line wrapper";
     mainProgram = "pn";
     homepage = "https://github.com/Orange-OpenSource/pn";

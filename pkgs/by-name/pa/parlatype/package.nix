@@ -64,7 +64,7 @@ stdenv.mkDerivation rec {
 
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "GNOME audio player for transcription";
     mainProgram = "parlatype";
     longDescription = ''

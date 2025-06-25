@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
     bzip2
   ];
 
-  meta = with lib; {
+  meta = {
     description = "PGP packet visualizer";
     mainProgram = "pgpdump";
     longDescription = ''

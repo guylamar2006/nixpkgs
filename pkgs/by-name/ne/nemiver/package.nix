@@ -80,7 +80,7 @@ stdenv.mkDerivation rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://gitlab.gnome.org/Archive/nemiver";
     description = "Easy to use standalone C/C++ debugger";
     mainProgram = "nemiver";

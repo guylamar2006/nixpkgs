@@ -30,7 +30,7 @@ stdenv.mkDerivation (finalAttrs: {
     mkdir -p $out/bin
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Utilities for analyzing application performance";
     homepage = "https://0x.tools";
     license = lib.licenses.gpl2Plus;

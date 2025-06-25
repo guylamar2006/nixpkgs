@@ -37,7 +37,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   prePatch = "patchShebangs .";
 
-  meta = with lib; {
+  meta = {
     description = "Powerful image viewer with minimal UI";
     homepage = "https://www.pberndt.com/Programme/Linux/pqiv";
     license = lib.licenses.gpl3Plus;

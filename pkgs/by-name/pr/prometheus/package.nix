@@ -131,7 +131,7 @@ buildGoModule (finalAttrs: {
 
   passthru.tests = { inherit (nixosTests) prometheus; };
 
-  meta = with lib; {
+  meta = {
     description = "Service monitoring system and time series database";
     homepage = "https://prometheus.io";
     license = lib.licenses.asl20;

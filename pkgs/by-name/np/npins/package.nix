@@ -46,7 +46,7 @@ rustPlatform.buildRustPackage rec {
     wrapProgram $out/bin/npins --prefix PATH : "${runtimePath}"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Simple and convenient dependency pinning for Nix";
     mainProgram = "npins";
     homepage = "https://github.com/andir/npins";

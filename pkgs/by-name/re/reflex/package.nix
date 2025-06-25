@@ -22,7 +22,7 @@ buildGoModule rec {
     "-w"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Small tool to watch a directory and rerun a command when certain files change";
     mainProgram = "reflex";
     homepage = "https://github.com/cespare/reflex";

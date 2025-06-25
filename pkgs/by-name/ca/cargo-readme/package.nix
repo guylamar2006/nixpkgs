@@ -28,7 +28,7 @@ rustPlatform.buildRustPackage rec {
     description = "Generate README.md from docstrings";
     mainProgram = "cargo-readme";
     homepage = "https://github.com/livioribeiro/cargo-readme";
-    license = with licenses; [
+    license = with lib.licenses; [
       mit
       asl20
     ];

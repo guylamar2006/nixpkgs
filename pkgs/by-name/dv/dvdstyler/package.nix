@@ -129,7 +129,7 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = with platforms; linux;
+    platforms = lib.platforms.linux;
     mainProgram = "dvdstyler";
   };
 }

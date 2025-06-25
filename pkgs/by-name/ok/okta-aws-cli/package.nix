@@ -24,7 +24,7 @@ buildGoModule rec {
     "-w"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "CLI for having Okta as the IdP for AWS CLI operations";
     homepage = "https://github.com/okta/okta-aws-cli";
     license = lib.licenses.asl20;

@@ -43,7 +43,7 @@ stdenv.mkDerivation {
       runHook postInstallCheck
     '';
 
-  meta = with lib; {
+  meta = {
     description = "RISC-V ISA Simulator";
     homepage = "https://github.com/riscv/riscv-isa-sim";
     license = lib.licenses.bsd3;

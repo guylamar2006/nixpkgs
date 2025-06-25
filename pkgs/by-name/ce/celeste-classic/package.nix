@@ -45,6 +45,6 @@ stdenvNoCC.mkDerivation {
     platforms = lib.platforms.linux;
     mainProgram = outbin;
     maintainers = with lib.maintainers; [ mrtnvgr ];
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
   };
 }

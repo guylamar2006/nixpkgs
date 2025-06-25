@@ -19,7 +19,7 @@ python3Packages.buildPythonApplication rec {
     $out/bin/sftpman help
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/spantaleev/sftpman";
     description = "Application that handles sshfs/sftp file systems mounting";
     license = lib.licenses.gpl3;

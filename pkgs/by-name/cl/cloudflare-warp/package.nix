@@ -147,7 +147,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Replaces the connection between your device and the Internet with a modern, optimized, protocol";
     homepage = "https://pkg.cloudflareclient.com/";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unfree;
     mainProgram = "warp-cli";
     maintainers = with lib.maintainers; [

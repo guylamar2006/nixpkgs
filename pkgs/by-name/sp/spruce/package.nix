@@ -17,7 +17,7 @@ buildGoModule rec {
 
   vendorHash = null;
 
-  meta = with lib; {
+  meta = {
     description = "BOSH template merge tool";
     mainProgram = "spruce";
     homepage = "https://github.com/geofffranks/spruce";

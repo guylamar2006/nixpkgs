@@ -21,6 +21,6 @@ stdenv.mkDerivation rec {
     homepage = "https://bvi.sourceforge.net/download.html";
     license = lib.licenses.gpl2;
     maintainers = with lib.maintainers; [ pSub ];
-    platforms = with platforms; linux ++ darwin;
+    platforms = with lib.platforms; linux ++ darwin;
   };
 }

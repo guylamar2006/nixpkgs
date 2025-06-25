@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     wrapProgram $out/bin/spotify-tray --set GDK_BACKEND x11
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/tsmetana/spotify-tray";
     description = "Adds a tray icon to the Spotify Linux client application";
     license = lib.licenses.gpl3Only;

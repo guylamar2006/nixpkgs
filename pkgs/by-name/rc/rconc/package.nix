@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage {
   useFetchCargoVendor = true;
   cargoHash = "sha256-fkGSIPaq3SvbA9iP10sVb7gtBxo7XmHw+fz0Gt8AMXo=";
 
-  meta = with lib; {
+  meta = {
     description = "Simple cross-platform RCON client written in rust";
     homepage = "https://github.com/klemens/rconc";
     license = lib.licenses.gpl3Only;

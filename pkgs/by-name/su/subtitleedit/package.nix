@@ -83,7 +83,7 @@ stdenv.mkDerivation rec {
 
   passthru.updateScript = nix-update-script { };
 
-  meta = with lib; {
+  meta = {
     description = "Subtitle editor";
     longDescription = ''
       With Subtitle Edit you can easily adjust a subtitle if it is out of sync with
@@ -94,7 +94,7 @@ stdenv.mkDerivation rec {
     homepage = "https://nikse.dk/subtitleedit";
     license = lib.licenses.gpl3Plus;
     platforms = lib.platforms.all;
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    maintainers = with maintainers; [ paveloom ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
+    maintainers = with lib.maintainers; [ paveloom ];
   };
 }

@@ -33,10 +33,10 @@ stdenv.mkDerivation rec {
     inherit fcft tmux arrow-cpp;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Clean C library for processing UTF-8 Unicode data";
     homepage = "https://juliastrings.github.io/utf8proc/";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [
       maintainers.ftrvxmtrx

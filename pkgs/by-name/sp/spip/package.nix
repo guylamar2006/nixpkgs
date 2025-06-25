@@ -58,7 +58,7 @@ stdenv.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Random forest model for splice prediction in genomics";
     license = lib.licenses.mit;
     homepage = "https://github.com/raphaelleman/SPiP";

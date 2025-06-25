@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
     "--boost-libs=${boost186.out}/lib"
   ] ++ lib.optional (!withWebSocket) "--without-websocket";
 
-  meta = with lib; {
+  meta = {
     homepage = "https://named-data.net/";
     description = "Named Data Networking (NDN) Forwarding Daemon";
     license = lib.licenses.gpl3Plus;

@@ -140,7 +140,7 @@ stdenv.mkDerivation rec {
     '';
 
     platforms = lib.platforms.unix;
-    license = with licenses; [
+    license = with lib.licenses; [
       mit
       bsd3
       publicDomain

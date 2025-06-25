@@ -80,7 +80,7 @@ stdenv.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Portable Wayland compositor in Objective-C";
     homepage = "https://github.com/owl-compositor/owl";
     license = lib.licenses.gpl3Plus;

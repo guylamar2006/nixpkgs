@@ -76,7 +76,7 @@ stdenv.mkDerivation rec {
       This module contains JavaScript bindings based on gobject-introspection.
     '';
 
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl2Plus
       lgpl2Plus
       mit

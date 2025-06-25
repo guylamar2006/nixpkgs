@@ -76,11 +76,11 @@ stdenv.mkDerivation rec {
     djvulibre
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Document viewer capable of displaying multiple and single page
 document formats like PDF and Postscript";
     homepage = "https://github.com/linuxmint/xreader";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = lib.platforms.linux;
     teams = with lib.teams; [ cinnamon ];
   };

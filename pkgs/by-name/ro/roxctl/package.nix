@@ -42,7 +42,7 @@ buildGoModule rec {
     command = "roxctl version";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Command-line client of the StackRox Kubernetes Security Platform";
     mainProgram = "roxctl";
     license = lib.licenses.asl20;

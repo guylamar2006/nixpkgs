@@ -67,7 +67,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/RobertBeckebans/RBDOOM-3-BFG";
     description = "Doom 3 BFG Edition with modern engine features";
     mainProgram = "RBDoom3BFG";

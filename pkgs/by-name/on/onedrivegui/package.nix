@@ -95,7 +95,7 @@ python3Packages.buildPythonApplication rec {
       --add-flags $out/${python3Packages.python.sitePackages}/OneDriveGUI.py
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/bpozdena/OneDriveGUI";
     description = "Simple GUI for Linux OneDrive Client, with multi-account support";
     mainProgram = "onedrivegui";

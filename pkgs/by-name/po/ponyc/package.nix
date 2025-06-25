@@ -161,7 +161,7 @@ stdenv.mkDerivation (rec {
 
   passthru.tests.pony-corral = pony-corral;
 
-  meta = with lib; {
+  meta = {
     description = "Pony is an Object-oriented, actor-model, capabilities-secure, high performance programming language";
     homepage = "https://www.ponylang.org";
     license = lib.licenses.bsd2;

@@ -78,7 +78,7 @@ stdenv.mkDerivation rec {
     cp -r CLAP/Odin2.clap $out/lib/clap
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Odin 2 Synthesizer Plugin";
     homepage = "https://thewavewarden.com/odin2";
     license = lib.licenses.gpl3;

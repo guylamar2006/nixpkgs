@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/Y-Vladimir/SmartDeblur";
     description = "Tool for restoring blurry and defocused images";
     mainProgram = "SmartDeblur";

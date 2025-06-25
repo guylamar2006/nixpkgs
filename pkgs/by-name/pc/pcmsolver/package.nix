@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
   # Requires files, that are not installed.
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "API for the Polarizable Continuum Model";
     mainProgram = "run_pcm";
     homepage = "https://pcmsolver.readthedocs.io/en/stable/";

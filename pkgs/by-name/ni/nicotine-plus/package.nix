@@ -56,7 +56,7 @@ python3Packages.buildPythonApplication {
   ];
 
   doCheck = false;
-  meta = with lib; {
+  meta = {
     description = "Graphical client for the SoulSeek peer-to-peer system";
     longDescription = ''
       Nicotine+ aims to be a pleasant, free and open source (FOSS) alternative

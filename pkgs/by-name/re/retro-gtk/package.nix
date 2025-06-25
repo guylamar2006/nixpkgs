@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
     libsamplerate
   ];
 
-  meta = with lib; {
+  meta = {
     description = "GTK Libretro frontend framework";
     mainProgram = "retro-demo";
     longDescription = ''

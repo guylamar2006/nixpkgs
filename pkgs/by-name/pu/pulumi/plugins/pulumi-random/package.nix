@@ -15,7 +15,7 @@ mkPulumiPackage rec {
     "-X github.com/pulumi/${repo}/provider/v4/pkg/version.Version=v${version}"
   ];
   __darwinAllowLocalNetworking = true;
-  meta = with lib; {
+  meta = {
     description = "Pulumi provider that safely enables randomness for resources";
     mainProgram = "pulumi-resource-random";
     homepage = "https://github.com/pulumi/pulumi-random";

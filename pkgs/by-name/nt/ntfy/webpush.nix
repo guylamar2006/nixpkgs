@@ -31,7 +31,7 @@ buildPythonPackage rec {
   # no tests, just a script
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "cloudbell webpush notification support for ntfy";
     homepage = "https://dschep.github.io/ntfy-webpush/";
     license = lib.licenses.mit;

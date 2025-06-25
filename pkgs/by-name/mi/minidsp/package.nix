@@ -30,7 +30,7 @@ rustPlatform.buildRustPackage rec {
     description = "Control interface for some MiniDSP products";
     homepage = "https://github.com/mrene/minidsp-rs";
     license = lib.licenses.asl20;
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     maintainers = with lib.maintainers; [
       maintainers.adamcstephens
       maintainers.mrene

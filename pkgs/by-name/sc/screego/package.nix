@@ -74,7 +74,7 @@ buildGo123Module rec {
 
   __darwinAllowLocalNetworking = true;
 
-  meta = with lib; {
+  meta = {
     description = "Screen sharing for developers";
     homepage = "https://screego.net";
     license = lib.licenses.gpl3Only;

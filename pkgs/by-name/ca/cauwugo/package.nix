@@ -32,7 +32,7 @@ rustPlatform.buildRustPackage rec {
     description = "Alternative cargo frontend that implements dynamic shell completion for usual cargo commands";
     mainProgram = "cauwugo";
     homepage = "https://github.com/pacak/bpaf/tree/master/bpaf_cauwugo";
-    license = with licenses; [
+    license = with lib.licenses; [
       mit # or
       asl20
     ];

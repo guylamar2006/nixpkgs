@@ -179,7 +179,7 @@ stdenv.mkDerivation rec {
     done
   '';
 
-  meta = with lib; {
+  meta = {
     changelog = "https://github.com/openvinotoolkit/openvino/releases/tag/${src.tag}";
     description = "OpenVINO™ Toolkit repository";
     longDescription = ''

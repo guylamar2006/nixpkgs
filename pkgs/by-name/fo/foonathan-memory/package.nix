@@ -66,6 +66,6 @@ stdenv.mkDerivation (finalAttrs: {
 
     license = lib.licenses.zlib;
     maintainers = with lib.maintainers; [ panicgh ];
-    platforms = with platforms; unix ++ windows;
+    platforms = with lib.platforms; unix ++ windows;
   };
 })

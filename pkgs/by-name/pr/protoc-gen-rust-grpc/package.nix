@@ -17,7 +17,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-7PTe7popLS0zYYKv+K4629GkNG1wR/fhGi14a/4pkS0=";
 
-  meta = with lib; {
+  meta = {
     description = "Protobuf plugin for generating Rust code for gRPC";
     homepage = "https://github.com/stepancheg/grpc-rust";
     license = lib.licenses.mit;

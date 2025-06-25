@@ -35,7 +35,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   makeFlags = [ "PREFIX=$(out)" ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/kolunmi/sandbar";
     description = "DWM-like bar for the river wayland compositor";
     license = lib.licenses.gpl3Plus;

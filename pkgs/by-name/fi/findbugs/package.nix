@@ -43,8 +43,8 @@ stdenv.mkDerivation rec {
     description = "Static analysis tool to find bugs in Java programs automatically";
     homepage = "https://findbugs.sourceforge.net/";
     maintainers = with lib.maintainers; [ pSub ];
-    platforms = with platforms; unix;
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    platforms = lib.platforms.unix;
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.lgpl3;
   };
 }

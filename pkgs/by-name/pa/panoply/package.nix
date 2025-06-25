@@ -33,7 +33,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "netCDF, HDF and GRIB Data Viewer";
     homepage = "https://www.giss.nasa.gov/tools/panoply";
     platforms = lib.platforms.linux;

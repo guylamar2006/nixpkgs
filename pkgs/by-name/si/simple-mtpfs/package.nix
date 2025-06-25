@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     libmtp
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Simple MTP fuse filesystem driver";
     homepage = "https://github.com/phatina/simple-mtpfs";
     license = lib.licenses.gpl2Plus;

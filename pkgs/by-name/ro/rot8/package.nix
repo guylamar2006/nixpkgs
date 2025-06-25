@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-MZz8IZDux9VEDDLQjkT96smNsygY1vYG2QBw3Q09hqw=";
 
-  meta = with lib; {
+  meta = {
     description = "screen rotation daemon for X11 and wlroots";
     homepage = "https://github.com/efernau/rot8";
     license = lib.licenses.mit;

@@ -22,7 +22,7 @@ rustPlatform.buildRustPackage rec {
     description = "Command line tool for comparing benchmarks run by Criterion";
     mainProgram = "critcmp";
     homepage = "https://github.com/BurntSushi/critcmp";
-    license = with licenses; [
+    license = with lib.licenses; [
       mit
       unlicense
     ];

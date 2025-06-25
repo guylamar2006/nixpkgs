@@ -29,10 +29,10 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "http://vollkorn-typeface.com/";
     description = "Free and healthy typeface for bread and butter use";
-    license = licenses.ofl;
+    license = lib.licenses.ofl;
     platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ schmittlauch ];
   };

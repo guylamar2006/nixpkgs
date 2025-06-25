@@ -148,7 +148,7 @@ stdenv.mkDerivation (
         when available (e.g., through the X Render Extension).
       '';
       homepage = "http://cairographics.org/";
-      license = with licenses; [
+      license = with lib.licenses; [
         lgpl2Plus
         mpl10
       ];

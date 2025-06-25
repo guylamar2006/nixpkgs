@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     description = "Tool for making JavaScript download and run faster";
     mainProgram = "closure-compiler";
     homepage = "https://developers.google.com/closure/compiler/";
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.asl20;
     platforms = lib.platforms.all;
   };

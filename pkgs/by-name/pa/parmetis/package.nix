@@ -28,7 +28,7 @@ stdenv.mkDerivation {
     make config metis_path=metis gklib_path=metis/GKlib prefix=$out
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Parallel Graph Partitioning and Fill-reducing Matrix Ordering";
     longDescription = ''
       MPI-based parallel library that implements a variety of algorithms for

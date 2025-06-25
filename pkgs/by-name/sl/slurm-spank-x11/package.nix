@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
     install -m 755 x11.so $out/lib
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/hautreux/slurm-spank-x11";
     description = "Plugin for SLURM to allow for interactive X11 sessions";
     mainProgram = "slurm-spank-x11";

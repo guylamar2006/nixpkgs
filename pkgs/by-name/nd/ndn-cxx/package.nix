@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
     runHook postCheck
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://named-data.net/";
     description = "Named Data Networking (NDN) or Content Centric Networking (CCN) abstraction";
     longDescription = ''

@@ -97,7 +97,7 @@ python3Packages.buildPythonApplication rec {
     ]
   );
 
-  meta = with lib; {
+  meta = {
     description = "Collection of more than 1000 solitaire card games";
     mainProgram = "pysol.py";
     homepage = "https://pysolfc.sourceforge.io";

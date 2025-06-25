@@ -46,12 +46,12 @@ stdenv.mkDerivation rec {
   # Fix GCC 14 build
   env.NIX_CFLAGS_COMPILE = "-Wno-error=implicit-function-declaration -Wno-error=incompatible-pointer-types";
 
-  meta = with lib; {
+  meta = {
     description = "Emulator for IBM PC computers and clones";
     mainProgram = "pcem";
     homepage = "https://pcem-emulator.co.uk/";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ terin ];
-    platforms = lib.platforms.linux ++ platforms.windows;
+    platforms = lib.platforms.linux ++ lib.platforms.windows;
   };
 }

@@ -56,7 +56,7 @@ buildGoModule {
 
   passthru.tests = { inherit (nixosTests) pam-ussh; };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/uber/pam-ussh";
     description = "PAM module to authenticate using SSH certificates";
     license = lib.licenses.mit;

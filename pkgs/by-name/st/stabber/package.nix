@@ -38,12 +38,12 @@ stdenv.mkDerivation {
     libmicrohttpd
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Stubbed XMPP Server";
     mainProgram = "stabber";
     homepage = "https://github.com/profanity-im/stabber";
     license = lib.licenses.gpl3;
     platforms = lib.platforms.unix;
-    maintainers = with maintainers; [ hschaeidt ];
+    maintainers = with lib.maintainers; [ hschaeidt ];
   };
 }

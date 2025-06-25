@@ -24,7 +24,7 @@ stdenv.mkDerivation rec {
   ];
   installFlags = [ "DESTDIR=\"\"" ];
 
-  meta = with lib; {
+  meta = {
     description = "Test various memory protection measures";
     mainProgram = "paxtest";
     license = lib.licenses.gpl2Only;

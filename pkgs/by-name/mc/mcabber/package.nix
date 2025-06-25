@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
     mainProgram = "mcabber";
     license = lib.licenses.gpl2;
     maintainers = with lib.maintainers; [ pSub ];
-    platforms = with platforms; linux;
+    platforms = lib.platforms.linux;
     downloadPage = "http://mcabber.com/files/";
   };
 }

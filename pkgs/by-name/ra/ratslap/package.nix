@@ -56,7 +56,7 @@ stdenv.mkDerivation (finalAttrs: {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Configure G300 and G300s Logitech mice";
     longDescription = ''
       A tool to configure Logitech mice on Linux. Supports remapping

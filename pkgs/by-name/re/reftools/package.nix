@@ -21,7 +21,7 @@ buildGoModule {
 
   excludedPackages = "cmd/fillswitch/test-fixtures";
 
-  meta = with lib; {
+  meta = {
     description = "Refactoring tools for Go";
     homepage = "https://github.com/davidrjenni/reftools";
     license = lib.licenses.bsd2;

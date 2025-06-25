@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     sha256 = "sha256-sWBqYoeCEAIM5Gug+w4b4WZ8SwFrywqJVzo0nt69diA=";
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/alexpevzner/sane-airscan";
     description = "Scanner Access Now Easy - Apple AirScan (eSCL) driver";
     mainProgram = "airscan-discover";

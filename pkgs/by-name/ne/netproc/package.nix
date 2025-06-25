@@ -20,7 +20,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   installFlags = [ "prefix=$(out)" ];
 
-  meta = with lib; {
+  meta = {
     description = "Tool to monitor network traffic based on processes";
     homepage = "https://github.com/berghetti/netproc";
     license = lib.licenses.gpl3;

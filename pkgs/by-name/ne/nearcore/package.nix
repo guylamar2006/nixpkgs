@@ -54,7 +54,7 @@ rustPlatform.buildRustPackage rec {
   # fat LTO requires ~3.4GB RAM
   requiredSystemFeatures = [ "big-parallel" ];
 
-  meta = with lib; {
+  meta = {
     description = "Reference client for NEAR Protocol";
     homepage = "https://github.com/near/nearcore";
     license = lib.licenses.gpl3;

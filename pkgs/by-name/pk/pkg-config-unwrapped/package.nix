@@ -70,7 +70,7 @@ stdenv.mkDerivation rec {
 
   postInstall = ''rm -f "$out"/bin/*-pkg-config''; # clean the duplicate file
 
-  meta = with lib; {
+  meta = {
     description = "Tool that allows packages to find out information about other packages";
     homepage = "http://pkg-config.freedesktop.org/wiki/";
     platforms = lib.platforms.all;

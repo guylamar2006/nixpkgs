@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     "PREFIX="
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Small ncurses-based file browser";
     homepage = "https://git.2f30.org/noice/";
     license = lib.licenses.bsd2;

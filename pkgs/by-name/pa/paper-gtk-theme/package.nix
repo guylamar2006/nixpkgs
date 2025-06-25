@@ -27,7 +27,7 @@ stdenv.mkDerivation {
 
   preferLocalBuild = true;
 
-  meta = with lib; {
+  meta = {
     description = "Modern desktop theme suite featuring a mostly flat with a minimal use of shadows for depth";
     homepage = "https://snwh.org/paper";
     license = lib.licenses.gpl3;

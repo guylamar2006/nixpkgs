@@ -26,7 +26,7 @@ stdenvNoCC.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "http://dotcolon.net/font/penna/";
     description = "Geometric sans serif designed by Sora Sagano";
     longDescription = ''

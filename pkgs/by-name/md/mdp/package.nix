@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     description = "Command-line based markdown presentation tool";
     maintainers = with lib.maintainers; [ matthiasbeyer ];
     license = lib.licenses.gpl3;
-    platforms = with platforms; unix;
+    platforms = lib.platforms.unix;
     mainProgram = "mdp";
   };
 }

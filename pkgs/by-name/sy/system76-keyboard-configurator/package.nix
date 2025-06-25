@@ -47,12 +47,12 @@ rustPlatform.buildRustPackage rec {
     cp -r data/icons $out/share
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Keyboard configuration application for System76 keyboards and laptops";
     mainProgram = "system76-keyboard-configurator";
     homepage = "https://github.com/pop-os/keyboard-configurator";
     license = lib.licenses.gpl3Only;
-    maintainers = with maintainers; [ mirrexagon ];
+    maintainers = with lib.maintainers; [ mirrexagon ];
     platforms = lib.platforms.linux;
   };
 }

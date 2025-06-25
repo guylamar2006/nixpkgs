@@ -39,7 +39,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     description = "Family of header-only, very fast and memory-friendly hashmap and btree containers";
     homepage = "https://github.com/greg7mdp/parallel-hashmap";
     changelog = "https://github.com/greg7mdp/parallel-hashmap/releases/tag/v${finalAttrs.version}";

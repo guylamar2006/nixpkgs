@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
     cp -R . "$out/Applications/Pika.app"
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://superhighfives.com/pika";
     description = "Open-source colour picker app for macOS";
     platforms = lib.platforms.darwin;

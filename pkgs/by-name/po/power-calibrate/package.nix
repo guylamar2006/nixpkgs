@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
     "BASHDIR=${placeholder "out"}/share/bash-completion/completions"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Tool to calibrate power consumption";
     mainProgram = "power-calibrate";
     homepage = "https://github.com/ColinIanKing/power-calibrate";

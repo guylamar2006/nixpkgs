@@ -35,7 +35,7 @@ stdenv.mkDerivation {
     description = "Brain Imaging Centre programming library";
     maintainers = with lib.maintainers; [ bcdarwin ];
     platforms = lib.platforms.unix;
-    license = with licenses; [
+    license = with lib.licenses; [
       hpndUc
       gpl3Plus
     ];

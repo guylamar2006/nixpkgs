@@ -51,7 +51,7 @@ python3Packages.buildPythonPackage rec {
     wrapPythonProgramsIn "$out/lib/open-fprintd" "$out $pythonPath"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Fprintd replacement which allows you to have your own backend as a standalone service";
     homepage = "https://github.com/uunicorn/open-fprintd";
     license = lib.licenses.gpl2Only;

@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
 
   buildInputs = [ ncurses ];
 
-  meta = with lib; {
+  meta = {
     description = "Portable OpenBSD ksh, based on the Public Domain Korn Shell (pdksh)";
     mainProgram = "oksh";
     homepage = "https://github.com/ibara/oksh";

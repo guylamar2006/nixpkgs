@@ -50,7 +50,7 @@ stdenvNoCC.mkDerivation rec {
 
   dontFixup = true;
 
-  meta = with lib; {
+  meta = {
     description = "Various data formats for the SPDX License List";
     homepage = "https://github.com/spdx/license-list-data";
     license = lib.licenses.cc0;

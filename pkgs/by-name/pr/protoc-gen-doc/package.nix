@@ -17,7 +17,7 @@ buildGoModule rec {
 
   vendorHash = "sha256-K0rZBERSKob5ubZW28QpbcPhgFKOOASkd9UyC9f8gyQ=";
 
-  meta = with lib; {
+  meta = {
     description = "Documentation generator plugin for Google Protocol Buffers";
     mainProgram = "protoc-gen-doc";
     longDescription = ''

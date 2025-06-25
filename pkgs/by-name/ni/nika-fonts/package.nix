@@ -23,7 +23,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/font-store/NikaFont/";
     description = "Persian/Arabic Open Source Font";
     license = lib.licenses.ofl;

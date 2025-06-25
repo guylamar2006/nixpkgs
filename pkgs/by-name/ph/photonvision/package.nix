@@ -57,7 +57,7 @@ stdenv.mkDerivation rec {
     starts-web-server = nixosTests.photonvision;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Free, fast, and easy-to-use computer vision solution for the FIRST Robotics Competition";
     homepage = "https://photonvision.org/";
     license = lib.licenses.gpl3;

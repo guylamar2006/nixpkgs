@@ -92,7 +92,7 @@ stdenv.mkDerivation {
       Capable of doing *fast* incremental backups of virtual machine images.
     '';
 
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     maintainers = with lib.maintainers; [ rnhmjoj ];
     # bespoke ./configure does not like cross
     broken = stdenv.buildPlatform != stdenv.hostPlatform;

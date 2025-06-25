@@ -74,7 +74,7 @@ stdenv.mkDerivation (finalAttrs: {
     version = finalAttrs.version;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Store and access data published by OwnTracks apps";
     homepage = "https://github.com/owntracks/recorder";
     changelog = "https://github.com/owntracks/recorder/blob/master/Changelog";

@@ -275,7 +275,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Level editor for idTech games";
     homepage = "https://icculus.org/gtkradiant/";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl2Only
       bsdOriginal
       lgpl21Only

@@ -43,6 +43,6 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ davidak ];
-    platforms = with platforms; all;
+    platforms = lib.platforms.all;
   };
 }

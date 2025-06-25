@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
   '';
   installFlags = [ "PREFIX=${placeholder "out"}" ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://rgbds.gbdev.io/";
     description = "Free assembler/linker package for the Game Boy and Game Boy Color";
     license = lib.licenses.mit;

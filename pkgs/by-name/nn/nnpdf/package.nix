@@ -54,7 +54,7 @@ stdenv.mkDerivation rec {
     "-DCOMPILE_evolvefit=ON"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Open-source machine learning framework for global analyses of parton distributions";
     mainProgram = "evolven3fit";
     homepage = "https://docs.nnpdf.science/";

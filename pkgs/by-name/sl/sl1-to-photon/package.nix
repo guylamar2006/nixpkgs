@@ -31,7 +31,7 @@ python312Packages.buildPythonApplication rec {
     install -D -m 0755 SL1_to_Photon.py $out/bin/${pname}
   '';
 
-  meta = with lib; {
+  meta = {
     maintainers = with lib.maintainers; [ cab404 ];
     license = lib.licenses.gpl3Plus;
     description = "Tool for converting Slic3r PE's SL1 files to Photon files for the Anycubic Photon 3D-Printer";

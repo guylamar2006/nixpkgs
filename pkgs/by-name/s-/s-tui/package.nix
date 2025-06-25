@@ -27,7 +27,7 @@ python3Packages.buildPythonPackage rec {
     tests = testers.testVersion { package = s-tui; };
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://amanusk.github.io/s-tui/";
     description = "Stress-Terminal UI monitoring tool";
     license = lib.licenses.gpl2Plus;

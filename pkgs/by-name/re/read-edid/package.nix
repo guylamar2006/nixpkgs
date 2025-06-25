@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
 
   cmakeFlags = [ "-DCLASSICBUILD=${if stdenv.hostPlatform.isx86 then "ON" else "OFF"}" ];
 
-  meta = with lib; {
+  meta = {
     description = "Tool for reading and parsing EDID data from monitors";
     homepage = "http://www.polypux.org/projects/read-edid/";
     license = lib.licenses.bsd2; # Quoted: "This is an unofficial license. Let's call it BSD-like."

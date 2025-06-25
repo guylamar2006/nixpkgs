@@ -17,7 +17,7 @@ stdenvNoCC.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Wordlist from the Norwegian Scrabble Federation";
     homepage = "https://www2.scrabbleforbundet.no/";
     downloadPage = "https://www2.scrabbleforbundet.no/?p=4881#more-4881";

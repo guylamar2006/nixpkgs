@@ -18,7 +18,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://www.gnu.org/software/gnu-pw-mgr/";
     description = "Password manager designed to make it easy to reconstruct difficult passwords";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl3Plus
       lgpl3Plus
     ];

@@ -40,10 +40,10 @@ stdenv.mkDerivation rec {
     install -D rslsync "$out/bin/rslsync"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Automatically sync files via secure, distributed technology";
     homepage = "https://www.resilio.com/";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unfreeRedistributable;
     platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [

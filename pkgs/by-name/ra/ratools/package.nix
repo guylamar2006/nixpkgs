@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     install -vD man/* -t $out/share/man/man8
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Fast, dynamic, multi-threading framework for IPv6 Router Advertisements";
     homepage = "https://github.com/danrl/ratools";
     license = lib.licenses.asl20;

@@ -51,11 +51,11 @@ stdenv.mkDerivation rec {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/cisco/libsrtp";
     description = "Secure RTP (SRTP) Reference Implementation";
     license = lib.licenses.bsd3;
     platforms = lib.platforms.all;
-    maintainers = with maintainers; [ r-burns ];
+    maintainers = with lib.maintainers; [ r-burns ];
   };
 }

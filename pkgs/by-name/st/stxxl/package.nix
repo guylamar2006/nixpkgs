@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     inherit parallelSupport;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Implementation of the C++ standard template library STL for external memory (out-of-core) computations";
     homepage = "https://github.com/stxxl/stxxl";
     license = lib.licenses.boost;

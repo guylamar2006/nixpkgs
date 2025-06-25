@@ -43,7 +43,7 @@ python3Packages.buildPythonApplication {
     snapper
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Graphical interface for snapper";
     mainProgram = "snapper-gui";
     longDescription = ''

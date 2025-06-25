@@ -22,7 +22,7 @@ python3.pkgs.buildPythonApplication rec {
     cp -r examples $out/share/doc/perfect-hash
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Minimal perfect hash function generator";
     mainProgram = "perfect-hash";
     longDescription = ''

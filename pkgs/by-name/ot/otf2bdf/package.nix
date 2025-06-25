@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     cp otf2bdf.man $out/share/man/man1/otf2bdf.1
   '';
 
-  meta = with lib; {
+  meta = {
     #homepage = "http://sofia.nmsu.edu/~mleisher/Software/otf2bdf/";  # timeout
     homepage = "https://github.com/jirutka/otf2bdf";
     description = "OpenType to BDF font converter";

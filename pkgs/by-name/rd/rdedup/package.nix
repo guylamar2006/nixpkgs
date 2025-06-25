@@ -32,7 +32,7 @@ rustPlatform.buildRustPackage rec {
     xz
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Data deduplication with compression and public key encryption";
     mainProgram = "rdedup";
     homepage = "https://github.com/dpc/rdedup";

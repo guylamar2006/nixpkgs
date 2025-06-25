@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/rmyorston/pdpmake";
     description = "Public domain POSIX make";
     license = lib.licenses.unlicense;

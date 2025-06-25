@@ -21,7 +21,7 @@ python3Packages.buildPythonPackage rec {
     jsmin
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Non-official desktop client for Slack";
     homepage = "https://github.com/raelgc/scudcloud";
     license = lib.licenses.mit;

@@ -32,7 +32,7 @@ stdenv.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://justine.lol/cosmopolitan/";
     description = "Actually Portable Python using Cosmopolitan";
     platforms = lib.platforms.x86_64;

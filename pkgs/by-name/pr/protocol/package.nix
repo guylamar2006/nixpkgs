@@ -21,7 +21,7 @@ python3.pkgs.buildPythonApplication {
       --replace "scripts=['protocol', 'constants.py', 'specs.py']" "scripts=['protocol'], py_modules=['constants', 'specs']"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "ASCII Header Generator for Network Protocols";
     homepage = "https://github.com/luismartingarcia/protocol";
     license = lib.licenses.gpl3Plus;

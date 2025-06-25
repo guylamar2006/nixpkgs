@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
     description = "Java-based solution for accessing, manipulating, and outputting XML data from Java code";
     homepage = "http://www.jdom.org";
     platforms = lib.platforms.unix;
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.bsdOriginal;
   };
 }

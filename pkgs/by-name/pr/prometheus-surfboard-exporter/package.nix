@@ -24,7 +24,7 @@ buildGoModule rec {
 
   passthru.tests = { inherit (nixosTests.prometheus-exporters) surfboard; };
 
-  meta = with lib; {
+  meta = {
     description = "Arris Surfboard signal metrics exporter";
     mainProgram = "surfboard_exporter";
     homepage = "https://github.com/ipstatic/surfboard_exporter";

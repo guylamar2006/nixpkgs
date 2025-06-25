@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
   # `make install` fails on case-insensitive file systems (e.g. APFS by
   # default) because this target exists
 
-  meta = with lib; {
+  meta = {
     description = "POSIX Process Control in C++";
     longDescription = ''
       PStreams allows you to run another program from your C++ application and

@@ -22,10 +22,10 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [ cmake ];
 
-  meta = with lib; {
+  meta = {
     description = "Tiny but valid init for containers";
     homepage = "https://github.com/krallin/tini";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = lib.platforms.linux;
     mainProgram = "tini";
   };

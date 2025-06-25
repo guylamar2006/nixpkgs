@@ -36,10 +36,10 @@ rustPlatform.buildRustPackage rec {
     cp -R crates/capi/include $out
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Rust symbol demangling";
     homepage = "https://github.com/alexcrichton/rustc-demangle";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       mit
     ];

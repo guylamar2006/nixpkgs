@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
       --replace '--hostname=host ' ""
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Force programs to exclusively use tor network";
     mainProgram = "orjail";
     homepage = "https://github.com/orjail/orjail";

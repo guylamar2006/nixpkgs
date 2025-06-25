@@ -25,12 +25,12 @@ stdenv.mkDerivation rec {
   ];
   buildInputs = [ ncurses ] ++ lib.optionals stdenv.hostPlatform.isDarwin [ gettext ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://yash.osdn.jp/index.html.en";
     description = "Yet another POSIX-compliant shell";
     mainProgram = "yash";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [ qbit ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ qbit ];
     platforms = lib.platforms.all;
   };
 

@@ -59,7 +59,7 @@ stdenv.mkDerivation rec {
     cp -r ../doc/. $doc/share/doc/${pname}
   '';
 
-  meta = with lib; {
+  meta = {
     description = "C-library for generating multi page PostScript documents";
     homepage = "https://pslib.sourceforge.net/";
     changelog = "https://sourceforge.net/p/pslib/git/ci/master/tree/pslib/ChangeLog";

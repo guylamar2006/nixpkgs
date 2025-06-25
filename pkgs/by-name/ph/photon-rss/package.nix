@@ -22,7 +22,7 @@ buildGoModule {
 
   vendorHash = "sha256-n9XNqXIoqn+f0xKCenJWXUYXtQhtbNBar68onWH/WV4=";
 
-  meta = with lib; {
+  meta = {
     description = "RSS/Atom reader with the focus on speed, usability and a bit of unix philosophy";
     mainProgram = "photon";
     homepage = "https://sr.ht/~ghost08/photon";

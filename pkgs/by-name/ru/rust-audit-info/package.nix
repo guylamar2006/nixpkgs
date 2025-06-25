@@ -16,11 +16,11 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-TvbFhFtdQ6fBNjIMgzQDVnK+IZThUJmht7r2zSmcllE=";
 
-  meta = with lib; {
+  meta = {
     description = "Command-line tool to extract the dependency trees embedded in binaries by cargo-auditable";
     mainProgram = "rust-audit-info";
     homepage = "https://github.com/rust-secure-code/cargo-auditable/tree/master/rust-audit-info";
-    license = with licenses; [
+    license = with lib.licenses; [
       mit # or
       asl20
     ];

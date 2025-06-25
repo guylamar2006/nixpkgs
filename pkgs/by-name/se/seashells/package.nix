@@ -17,7 +17,7 @@ python3Packages.buildPythonApplication rec {
   doCheck = false; # there are no tests
   pythonImportsCheck = [ "seashells" ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://seashells.io/";
     description = "Pipe command-line programs to seashells.io";
     mainProgram = "seashells";

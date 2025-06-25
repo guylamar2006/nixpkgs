@@ -40,7 +40,7 @@ python3Packages.buildPythonPackage {
     gtk3
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://kryogenix.org/code/pick/";
     license = lib.licenses.mit;
     platforms = lib.platforms.linux;

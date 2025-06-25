@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
 
   makeFlags = [ "AR:=$(AR)" ];
 
-  meta = with lib; {
+  meta = {
     description = "Roaring Penguin Point-to-Point over Ethernet tool";
     platforms = lib.platforms.linux;
     homepage = "https://github.com/dfskoll/rp-pppoe";

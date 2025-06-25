@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     description = "Viewer for .msg files (MS Outlook)";
     mainProgram = "msgviewer";
     homepage = "https://www.washington.edu/alpine/";
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ peterhoeg ];
     platforms = lib.platforms.all;

@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
         --replace-fail "T * const other_pos = other._data;" "T const * other_pos = other._data;"
     '';
 
-  meta = with lib; {
+  meta = {
     description = "Implements double cryptographic ratchet and Megolm ratchet";
     homepage = "https://gitlab.matrix.org/matrix-org/olm";
     license = lib.licenses.asl20;

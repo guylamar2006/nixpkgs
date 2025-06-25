@@ -24,7 +24,7 @@ buildGoModule rec {
     "-w"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Generator of an implementation of the service interface for ent protobuff";
     mainProgram = "protoc-gen-entgrpc";
     downloadPage = "https://github.com/ent/contrib/";

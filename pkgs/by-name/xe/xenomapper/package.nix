@@ -17,10 +17,10 @@ python3.pkgs.buildPythonApplication rec {
 
   propagatedBuildInputs = with python3.pkgs; [ statistics ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/genomematt/xenomapper";
     description = "Utility for post processing mapped reads that have been aligned to a primary genome and a secondary genome and binning reads into species specific, multimapping in each species, unmapped and unassigned bins";
-    license = licenses.gpl3;
+    license = lib.licenses.gpl3;
     platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ jbedo ];
   };

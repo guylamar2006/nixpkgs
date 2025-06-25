@@ -80,7 +80,7 @@ python3Packages.buildPythonApplication rec {
       dotlambda
     ];
     teams = [ lib.teams.lumiguide ];
-    platforms = with platforms; linux ++ darwin;
+    platforms = with lib.platforms; linux ++ darwin;
     mainProgram = "esptool.py";
   };
 }

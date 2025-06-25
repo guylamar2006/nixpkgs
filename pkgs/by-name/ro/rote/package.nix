@@ -18,7 +18,7 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description = "Our Own Terminal Emulation Library";
     mainProgram = "rote-config";
     longDescription = ''

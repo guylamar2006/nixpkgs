@@ -34,6 +34,6 @@ stdenv.mkDerivation rec {
       See the kernel documentation for further details.
     '';
     license = lib.licenses.mit;
-    platforms = with platforms; freebsd ++ linux;
+    platforms = with lib.platforms; freebsd ++ linux;
   };
 }

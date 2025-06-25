@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
     git
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Library to parse and emit YAML, and do it fast";
     homepage = "https://github.com/biojppm/rapidyaml";
     license = lib.licenses.mit;

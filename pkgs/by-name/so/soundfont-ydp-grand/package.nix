@@ -17,7 +17,7 @@ stdenv.mkDerivation {
     install -Dm644 YDP-GrandPiano-*.sf2 $out/share/soundfonts/YDP-GrandPiano.sf2
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Acoustic grand piano soundfont";
     homepage = "https://freepats.zenvoid.org/Piano/acoustic-grand-piano.html";
     license = lib.licenses.cc-by-30;

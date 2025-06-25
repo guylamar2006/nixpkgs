@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     description = "Microsoft Authentication Library cross platform Dbus client for talking to microsoft-identity-broker";
     homepage = "https://github.com/AzureAD/microsoft-authentication-library-for-cpp";
     license = lib.licenses.unfree;
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     platforms = [ "x86_64-linux" ];
     maintainers = with lib.maintainers; [ rhysmdnz ];
   };

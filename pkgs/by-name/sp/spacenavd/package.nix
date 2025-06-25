@@ -31,7 +31,7 @@ stdenv.mkDerivation (finalAttrs: {
       --replace-fail "/usr/local/bin/spacenavd" "$out/bin/spacenavd"
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://spacenav.sourceforge.net/";
     description = "Device driver and SDK for 3Dconnexion 3D input devices";
     longDescription = "A free, compatible alternative, to the proprietary 3Dconnexion device driver and SDK, for their 3D input devices (called 'space navigator', 'space pilot', 'space traveller', etc)";

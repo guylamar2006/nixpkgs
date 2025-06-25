@@ -25,7 +25,7 @@ buildGoModule rec {
     rm $out/bin/dists
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Command line client for the Scalingo PaaS";
     mainProgram = "scalingo";
     homepage = "https://doc.scalingo.com/platform/cli/start";

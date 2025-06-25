@@ -62,7 +62,7 @@ stdenv.mkDerivation rec {
 
   passthru.updateScript = unstableGitUpdater { };
 
-  meta = with lib; {
+  meta = {
     description = "Graphical processor simulator and assembly editor for the RISC-V ISA";
     homepage = "https://github.com/mortbopet/Ripes";
     license = lib.licenses.mit;

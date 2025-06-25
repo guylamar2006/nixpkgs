@@ -18,7 +18,7 @@ stdenv.mkDerivation rec {
 
   buildInputs = [ ncurses ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/p-gen/smenu";
     description = "Terminal selection utility";
     longDescription = ''

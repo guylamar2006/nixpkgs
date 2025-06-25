@@ -29,7 +29,7 @@ buildGoModule rec {
   meta = {
     homepage = "https://github.com/hashicorp/consul-template/";
     description = "Generic template rendering and notifications with Consul";
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     license = lib.licenses.mpl20;
     maintainers = with lib.maintainers; [
       cpcloud

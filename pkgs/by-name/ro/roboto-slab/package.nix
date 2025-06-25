@@ -24,7 +24,7 @@ stdenv.mkDerivation {
   outputHashMode = "recursive";
   outputHash = "0g663npi5lkvwcqafd4cjrm90ph0nv1lig7d19xzfymnj47qpj8x";
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.google.com/fonts/specimen/Roboto+Slab";
     description = "Roboto Slab Typeface by Google";
     longDescription = ''

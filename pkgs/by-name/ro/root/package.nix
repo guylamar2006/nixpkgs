@@ -254,7 +254,7 @@ stdenv.mkDerivation rec {
 
   setupHook = ./setup-hook.sh;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://root.cern/";
     description = "Data analysis framework";
     platforms = lib.platforms.unix;

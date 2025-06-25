@@ -59,7 +59,7 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description = "HTTP client library based on APR";
     homepage = "https://serf.apache.org/";
     license = lib.licenses.asl20;
@@ -67,6 +67,6 @@ stdenv.mkDerivation rec {
       orivej
       raskin
     ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

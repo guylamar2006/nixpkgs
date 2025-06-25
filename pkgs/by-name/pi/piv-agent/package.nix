@@ -33,7 +33,7 @@ buildGoModule rec {
 
   buildInputs = lib.optionals (!stdenv.hostPlatform.isDarwin) [ pcsclite ];
 
-  meta = with lib; {
+  meta = {
     description = "SSH and GPG agent which you can use with your PIV hardware security device (e.g. a Yubikey)";
     homepage = "https://github.com/smlx/piv-agent";
     license = lib.licenses.asl20;

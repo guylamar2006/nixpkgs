@@ -25,11 +25,11 @@ buildGoModule rec {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     description = "Convert ssh private keys to PGP";
     mainProgram = "ssh-to-pgp";
     homepage = "https://github.com/Mic92/ssh-to-pgp";
     license = lib.licenses.mit;
-    maintainers = with maintainers; [ mic92 ];
+    maintainers = with lib.maintainers; [ mic92 ];
   };
 }

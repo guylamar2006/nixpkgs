@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     wrapProgram "$out/bin/determine_maximum_mpps.sh" --prefix PATH : $out/bin
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://git.kernel.org/pub/scm/utils/rt-tests/rt-tests.git";
     description = "Suite of real-time tests - cyclictest, hwlatdetect, pip_stress, pi_stress, pmqtest, ptsematest, rt-migrate-test, sendme, signaltest, sigwaittest, svsematest";
     platforms = lib.platforms.linux;

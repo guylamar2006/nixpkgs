@@ -38,10 +38,10 @@ python3Packages.buildPythonApplication rec {
     rev-prefix = "v";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Display unicode character properties";
     homepage = "https://github.com/garabik/unicode";
-    license = licenses.gpl3;
+    license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ woffs ];
     platforms = lib.platforms.all;
   };

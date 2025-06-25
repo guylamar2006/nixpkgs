@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
       --replace '\$'{prefix}/'$'{CMAKE_INSTALL_INCLUDEDIR} '$'{CMAKE_INSTALL_FULL_INCLUDEDIR}
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "http://dev.zuckschwerdt.org/openobex/";
     description = "Open source implementation of the Object Exchange (OBEX) protocol";
     platforms = lib.platforms.linux;

@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description = "Sound editor";
     homepage = "https://ccrma.stanford.edu/software/snd/";
     platforms = lib.platforms.unix;

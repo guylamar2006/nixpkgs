@@ -56,7 +56,7 @@ rustPlatform.buildRustPackage rec {
 
   desktopItems = [ "satty.desktop" ];
 
-  meta = with lib; {
+  meta = {
     description = "Screenshot annotation tool inspired by Swappy and Flameshot";
     homepage = "https://github.com/gabm/Satty";
     license = lib.licenses.mpl20;

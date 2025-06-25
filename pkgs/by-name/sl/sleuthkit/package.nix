@@ -101,7 +101,7 @@ stdenv.mkDerivation (finalAttrs: {
     rm -rf */.libs
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Forensic/data recovery tool";
     homepage = "https://www.sleuthkit.org/";
     changelog = "https://github.com/sleuthkit/sleuthkit/blob/${finalAttrs.src.rev}/NEWS.txt";
@@ -110,7 +110,7 @@ stdenv.mkDerivation (finalAttrs: {
       gfrascadorio
     ];
     platforms = lib.platforms.unix;
-    sourceProvenance = with sourceTypes; [
+    sourceProvenance = with lib.sourceTypes; [
       fromSource
       binaryBytecode # dependencies
     ];

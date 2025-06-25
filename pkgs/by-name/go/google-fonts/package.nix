@@ -72,7 +72,7 @@ stdenvNoCC.mkDerivation {
   meta = {
     homepage = "https://fonts.google.com";
     description = "Font files available from Google Fonts";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       ofl
       ufl

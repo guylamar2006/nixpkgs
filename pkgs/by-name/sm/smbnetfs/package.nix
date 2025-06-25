@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     libsecret
   ];
 
-  meta = with lib; {
+  meta = {
     description = "FUSE FS for mounting Samba shares";
     maintainers = with lib.maintainers; [ raskin ];
     platforms = lib.platforms.linux;

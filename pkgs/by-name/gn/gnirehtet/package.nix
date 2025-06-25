@@ -58,7 +58,7 @@ rustPlatform.buildRustPackage rec {
       This relies on adb, make sure you have the required permissions/udev rules.
     '';
     homepage = "https://github.com/Genymobile/gnirehtet";
-    sourceProvenance = with sourceTypes; [
+    sourceProvenance = with lib.sourceTypes; [
       fromSource
       binaryBytecode # gnirehtet.apk
     ];

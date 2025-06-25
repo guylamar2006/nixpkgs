@@ -24,11 +24,11 @@ stdenv.mkDerivation rec {
     xorgproto
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Tiny screen magnifier for X11";
     homepage = "https://gitlab.com/amiloradovsky/magnify";
-    license = licenses.mit; # or GPL2+, optionally
-    maintainers = with maintainers; [ amiloradovsky ];
+    license = lib.licenses.mit; # or GPL2+, optionally
+    maintainers = with lib.maintainers; [ amiloradovsky ];
     mainProgram = "magnify";
     platforms = lib.platforms.all;
   };

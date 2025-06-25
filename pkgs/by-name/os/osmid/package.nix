@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/llloret/osmid";
     description = "Lightweight, portable, easy to use tool to convert MIDI to OSC and OSC to MIDI";
     license = lib.licenses.mit;

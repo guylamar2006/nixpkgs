@@ -87,7 +87,7 @@ let
     meta = {
       description = "Well known password manager";
       homepage = "https://www.enpass.io/";
-      sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+      sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
       license = lib.licenses.unfree;
       platforms = [
         "x86_64-linux"

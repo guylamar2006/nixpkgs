@@ -39,7 +39,7 @@ python3'.pkgs.buildPythonApplication rec {
     ordered-set
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Simple pythonic programming language for Smart Contracts on Cardano";
     homepage = "https://opshin.dev";
     license = lib.licenses.mit;

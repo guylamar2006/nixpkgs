@@ -45,7 +45,7 @@ stdenv.mkDerivation (finalAttrs: {
     privacy_networkd = nixosTests.networking.networkd.privacy;
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "http://www.litech.org/radvd/";
     changelog = "https://github.com/radvd-project/radvd/blob/${finalAttrs.src.rev}/CHANGES";
     description = "IPv6 Router Advertisement Daemon";

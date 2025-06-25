@@ -86,7 +86,7 @@ stdenv.mkDerivation rec {
       documents written in LinuxDoc DTD sgml source.
     '';
     homepage = "https://gitlab.com/agmartin/linuxdoc-tools";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl3Plus
       mit
       sgmlug

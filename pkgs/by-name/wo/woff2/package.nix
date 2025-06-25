@@ -45,10 +45,10 @@ stdenv.mkDerivation rec {
     sed 's@^if (NOT BUILD_SHARED_LIBS)$@if (TRUE)@g' -i CMakeLists.txt
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Webfont compression reference code";
     homepage = "https://github.com/google/woff2";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ hrdinka ];
     platforms = lib.platforms.unix;
   };

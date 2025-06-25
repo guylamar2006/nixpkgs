@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Library for scientific data visualization";
     homepage = "https://mathgl.sourceforge.net/";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl3
       lgpl3
     ];

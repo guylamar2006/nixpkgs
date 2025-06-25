@@ -157,7 +157,7 @@ stdenv.mkDerivation rec {
     description = "Official launcher for Minecraft, a sandbox-building game";
     homepage = "https://minecraft.net";
     maintainers = with lib.maintainers; [ ryantm ];
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unfree;
     platforms = [ "x86_64-linux" ];
     # "minecraft-launcher will fail on NixOS for minecraft versions >1.19

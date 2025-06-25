@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.rockbox.org";
     description = "Open source firmware for digital music players";
     license = lib.licenses.gpl2Plus;

@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     sed -i "s:DESTINATION .*uhd/modules:DESTINATION $out/lib/uhd/modules:" CMakeLists.txt
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/pothosware/SoapyAirspy";
     description = "SoapySDR plugin for UHD devices";
     license = lib.licenses.gpl3Only;

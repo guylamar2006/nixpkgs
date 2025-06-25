@@ -18,7 +18,7 @@ stdenv.mkDerivation {
   patches = [ ./fix-output-in-verbose-mode.patch ];
   nativeBuildInputs = [ autoreconfHook ];
 
-  meta = with lib; {
+  meta = {
     description = "Delete files securely";
     longDescription = ''
       srm (secure rm) is a command-line compatible rm(1) which
@@ -28,7 +28,7 @@ stdenv.mkDerivation {
     '';
     homepage = "https://srm.sourceforge.net";
     license = lib.licenses.mit;
-    maintainers = with maintainers; [ edwtjo ];
+    maintainers = with lib.maintainers; [ edwtjo ];
     platforms = lib.platforms.unix;
   };
 }

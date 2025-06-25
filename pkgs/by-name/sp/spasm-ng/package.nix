@@ -47,7 +47,7 @@ stdenv.mkDerivation {
     wrapProgram $out/bin/spasm --add-flags "-I $out/include"
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/alberthdev/spasm-ng";
     description = "Z80 assembler with extra features to support development for TI calculators";
     mainProgram = "spasm";

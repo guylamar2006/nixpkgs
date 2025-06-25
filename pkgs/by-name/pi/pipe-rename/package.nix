@@ -29,7 +29,7 @@ rustPlatform.buildRustPackage rec {
     patchShebangs tests/editors/env-editor.py
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Rename your files using your favorite text editor";
     homepage = "https://github.com/marcusbuffett/pipe-rename";
     license = lib.licenses.mit;

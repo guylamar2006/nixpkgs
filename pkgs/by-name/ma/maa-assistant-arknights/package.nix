@@ -82,6 +82,6 @@ stdenv.mkDerivation (finalAttr: {
     homepage = "https://github.com/MaaAssistantArknights/MaaAssistantArknights";
     license = lib.licenses.agpl3Only;
     maintainers = with lib.maintainers; [ Cryolitia ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 })

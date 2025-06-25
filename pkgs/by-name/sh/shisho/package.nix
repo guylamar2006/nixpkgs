@@ -44,7 +44,7 @@ rustPlatform.buildRustPackage rec {
     runHook postInstallCheck
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://docs.shisho.dev/shisho/";
     changelog = "https://docs.shisho.dev/changelog/";
     description = "Lightweight static analyzer for several programming languages";

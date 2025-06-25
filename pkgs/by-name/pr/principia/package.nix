@@ -57,7 +57,7 @@ stdenv.mkDerivation (finalAttrs: {
     (lib.cmakeFeature "CMAKE_INSTALL_BINDIR" "bin")
   ];
 
-  meta = with lib; {
+  meta = {
     changelog = "https://principia-web.se/wiki/Changelog#${
       lib.replaceStrings [ "." ] [ "-" ] finalAttrs.version
     }";

@@ -34,7 +34,7 @@ rustPlatform.buildRustPackage rec {
     description = "Show the weather in the terminal, in style";
     homepage = "https://github.com/gourlaysama/girouette";
     changelog = "https://github.com/gourlaysama/girouette/blob/${src.rev}/CHANGELOG.md";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       mit
     ];

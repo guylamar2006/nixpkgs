@@ -18,7 +18,7 @@ stdenv.mkDerivation {
     cp -R * "$out/share/pari/"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "PARI database needed to compute Galois group in degrees 8 through 11";
     homepage = "http://pari.math.u-bordeaux.fr/";
     license = lib.licenses.gpl2Plus;

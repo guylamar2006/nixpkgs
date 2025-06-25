@@ -26,9 +26,9 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/OpenSC/pkcs11-helper";
-    license = with licenses; [
+    license = with lib.licenses; [
       bsd3
       gpl2Only
     ];

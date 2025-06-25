@@ -29,7 +29,7 @@ stdenv.mkDerivation {
     glibmm
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/PiyushXCoder/powermode-indicator";
     description = "Tray tool for power profiles management";
     license = lib.licenses.mit;

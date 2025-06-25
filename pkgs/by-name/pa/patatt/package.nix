@@ -17,7 +17,7 @@ python3Packages.buildPythonApplication rec {
     pynacl
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://git.kernel.org/pub/scm/utils/patatt/patatt.git/about/";
     license = lib.licenses.mit0;
     description = "Add cryptographic attestation to patches sent via email";

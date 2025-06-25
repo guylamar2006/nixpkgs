@@ -16,7 +16,7 @@ stdenv.mkDerivation rec {
     sha256 = "sha256-QeBbv5lwqL2ARjB+RGyBHeuibaxugffBLhC9lYs+5tE=";
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/Hibou57/PostiATS-Utilities";
     license = lib.licenses.bsd2;
     platforms = lib.platforms.linux;

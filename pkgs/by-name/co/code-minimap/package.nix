@@ -25,7 +25,7 @@ rustPlatform.buildRustPackage rec {
   meta = {
     description = "High performance code minimap render";
     homepage = "https://github.com/wfxr/code-minimap";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20 # or
       mit
     ];

@@ -66,9 +66,9 @@ stdenv.mkDerivation {
     cp -r tests/devkeys* $out/share/vboot/
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Chrome OS partitioning and kernel signing tools";
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ ];
   };

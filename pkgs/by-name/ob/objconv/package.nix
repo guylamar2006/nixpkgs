@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     mv objconv-instructions.pdf $out/doc/objconv
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Object and executable file converter, modifier and disassembler";
     mainProgram = "objconv";
     homepage = "https://www.agner.org/optimize/";

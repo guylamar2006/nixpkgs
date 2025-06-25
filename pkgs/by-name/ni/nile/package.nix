@@ -43,7 +43,7 @@ python3Packages.buildPythonApplication {
 
   pythonImportsCheck = [ "nile" ];
 
-  meta = with lib; {
+  meta = {
     description = "Unofficial Amazon Games client";
     mainProgram = "nile";
     homepage = "https://github.com/imLinguin/nile";

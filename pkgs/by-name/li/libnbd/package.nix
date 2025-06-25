@@ -87,11 +87,11 @@ lib.throwIf (buildOcamlBindings && !lib.versionAtLeast ocamlPackages.ocaml.versi
         - Bindings in several programming languages.
         - Shell (nbdsh) for command line and scripting.
       '';
-      license = with licenses; lgpl21Plus;
+      license = with lib.licenses; lgpl21Plus;
       maintainers = with lib.maintainers; [
         humancalico
       ];
-      platforms = with platforms; linux;
+      platforms = lib.platforms.linux;
     };
   }
 # TODO: package the 1.6-stable version too

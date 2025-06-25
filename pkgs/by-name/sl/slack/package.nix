@@ -83,11 +83,11 @@ let
     }
     .${system} or throwSystem;
 
-  meta = with lib; {
+  meta = {
     description = "Desktop client for Slack";
     homepage = "https://slack.com";
     changelog = "https://slack.com/release-notes";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [
       mmahut

@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
 
   preConfigure = "./autogen.sh";
 
-  meta = with lib; {
+  meta = {
     description = "Disk overwrite utility";
     homepage = "https://github.com/chaos/scrub";
     changelog = "https://raw.githubusercontent.com/chaos/scrub/master/NEWS";

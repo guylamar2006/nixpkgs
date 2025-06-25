@@ -77,7 +77,7 @@ buildGoModule {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Experimental fast photo viewer";
     homepage = "https://github.com/SmilyOrg/photofield";
     license = lib.licenses.mit;

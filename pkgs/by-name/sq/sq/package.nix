@@ -47,7 +47,7 @@ buildGoModule rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Swiss army knife for data";
     mainProgram = "sq";
     homepage = "https://sq.io/";

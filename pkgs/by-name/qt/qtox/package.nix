@@ -66,7 +66,7 @@ stdenv.mkDerivation rec {
     "-DTIMESTAMP=1"
   ];
 
-  meta = with lib; {
+  meta = {
     broken = stdenv.hostPlatform.isDarwin;
     description = "Qt Tox client";
     mainProgram = "qtox";

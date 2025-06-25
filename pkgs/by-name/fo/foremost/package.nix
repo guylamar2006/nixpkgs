@@ -44,7 +44,7 @@ stdenv.mkDerivation rec {
     homepage = "https://foremost.sourceforge.net/";
     license = lib.licenses.publicDomain;
     maintainers = with lib.maintainers; [ jiegec ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     mainProgram = "foremost";
   };
 }

@@ -91,11 +91,11 @@ stdenv.mkDerivation rec {
     done;
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://safenet.gemalto.com/multi-factor-authentication/security-applications/authentication-client-token-management";
     description = "Safenet Authentication Client";
     platforms = [ "x86_64-linux" ];
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ wldhx ];
   };

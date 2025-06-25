@@ -26,7 +26,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Japanese font based on Rounded M+ and Noto Sans Japanese";
     homepage = "http://jikasei.me/font/rounded-mgenplus/";
     license = lib.licenses.ofl;

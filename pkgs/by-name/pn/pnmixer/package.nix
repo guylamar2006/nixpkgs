@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     pcre
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/nicklan/pnmixer";
     description = "ALSA volume mixer for the system tray";
     license = lib.licenses.gpl3;

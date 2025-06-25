@@ -29,7 +29,7 @@ rustPlatform.buildRustPackage rec {
   meta = {
     description = "Analyzer of executables using a terminal user interface";
     homepage = "https://github.com/orhun/binsider";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20 # or
       mit
     ];

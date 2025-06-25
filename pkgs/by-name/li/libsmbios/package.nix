@@ -62,7 +62,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://github.com/dell/libsmbios";
     description = "Library to obtain BIOS information";
-    license = with licenses; [
+    license = with lib.licenses; [
       osl21
       gpl2Plus
     ];

@@ -22,7 +22,7 @@ rustPlatform.buildRustPackage rec {
     description = "JSON Query Language CLI tool built with Rust";
     homepage = "https://github.com/yamafaktory/jql";
     changelog = "https://github.com/yamafaktory/jql/releases/tag/${src.rev}";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       mit
     ];

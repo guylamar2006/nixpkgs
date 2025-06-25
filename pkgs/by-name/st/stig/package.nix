@@ -47,7 +47,7 @@ python3Packages.buildPythonApplication rec {
     version = "stig version ${version}";
   };
 
-  meta = with lib; {
+  meta = {
     description = "TUI and CLI for the BitTorrent client Transmission";
     homepage = "https://github.com/rndusr/stig";
     license = lib.licenses.gpl3Plus;

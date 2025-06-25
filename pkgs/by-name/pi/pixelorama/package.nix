@@ -73,7 +73,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   passthru.updateScript = nix-update-script { };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://orama-interactive.itch.io/pixelorama";
     description = "Free & open-source 2D sprite editor, made with the Godot Engine!";
     changelog = "https://github.com/Orama-Interactive/Pixelorama/blob/${finalAttrs.src.rev}/CHANGELOG.md";

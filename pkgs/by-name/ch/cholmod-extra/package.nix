@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     description = "Set of additional routines for SuiteSparse CHOLMOD Module";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ jluttine ];
-    platforms = with platforms; unix;
+    platforms = lib.platforms.unix;
   };
 
 }

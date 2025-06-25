@@ -117,7 +117,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://hmcl.huangyuhui.net";
     description = "Minecraft Launcher which is multi-functional, cross-platform and popular";
     mainProgram = "hmcl";
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ daru-san ];
     inherit (hmclJdk.meta) platforms;

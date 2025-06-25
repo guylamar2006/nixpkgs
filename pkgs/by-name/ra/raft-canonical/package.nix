@@ -56,7 +56,7 @@ stdenv.mkDerivation rec {
     inherit lxd-lts;
   };
 
-  meta = with lib; {
+  meta = {
     description = ''
       Fully asynchronous C implementation of the Raft consensus protocol
     '';

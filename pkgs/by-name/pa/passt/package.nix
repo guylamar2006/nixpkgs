@@ -42,7 +42,7 @@ stdenv.mkDerivation (finalAttrs: {
     };
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://passt.top/passt/about/";
     description = "Plug A Simple Socket Transport";
     longDescription = ''

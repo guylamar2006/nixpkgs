@@ -34,7 +34,7 @@ rustPlatform.buildRustPackage rec {
       --prefix PATH ":" "${lib.makeBinPath [ slurp ]}";
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Uncompromising screenshot GUI for Wayland compositors";
     homepage = "https://git.sr.ht/~whynothugo/shotman";
     license = lib.licenses.isc;

@@ -49,7 +49,7 @@ stdenv.mkDerivation (finalAttrs: {
       --prefix PATH : ${lib.makeBinPath runtimeDeps} --suffix PATH : ${lib.makeBinPath [ openssh ]}
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Install nixos everywhere via ssh";
     homepage = "https://github.com/nix-community/nixos-anywhere";
     mainProgram = "nixos-anywhere";

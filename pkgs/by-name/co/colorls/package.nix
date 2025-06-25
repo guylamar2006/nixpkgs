@@ -16,7 +16,7 @@ bundlerApp {
   meta = {
     description = "Prettified LS";
     homepage = "https://github.com/athityakumar/colorls";
-    license = with licenses; mit;
+    license = with lib.licenses; mit;
     maintainers = with lib.maintainers; [
       lukebfox
       nicknovitski

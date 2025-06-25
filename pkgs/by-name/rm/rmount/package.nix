@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     }
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/Luis-Hebendanz/rmount";
     description = "Remote mount utility which parses a json file";
     license = lib.licenses.mit;

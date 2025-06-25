@@ -91,7 +91,7 @@ stdenv.mkDerivation rec {
     cp -r LICENSE THIRD_PARTY_TF_C_LICENSES lib include $out
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://dl.photoprism.app/tensorflow/";
     description = "Libtensorflow version for usage with photoprism backend";
     platforms = [

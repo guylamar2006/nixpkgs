@@ -68,7 +68,7 @@ appimageTools.wrapType2 {
       libxcrypt-legacy
     ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.saleae.com/";
     description = "Software for Saleae logic analyzers";
     license = lib.licenses.unfree;

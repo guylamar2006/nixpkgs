@@ -42,7 +42,7 @@ stdenvNoCC.mkDerivation rec {
         --prefix PATH : ${lib.makeBinPath [ peco ]}
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Search-as-you-type cli frontend for the buku bookmarks manager using peco";
     homepage = "https://github.com/AndreiUlmeyda/oil";
     license = lib.licenses.gpl3Only;

@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
 
   env.NIX_CFLAGS_COMPILE = "-Wno-error=format-security";
 
-  meta = with lib; {
+  meta = {
     description = "Lightweight, cross-platform & full-featured shader IDE";
     homepage = "https://github.com/dfranx/SHADERed";
     license = lib.licenses.mit;

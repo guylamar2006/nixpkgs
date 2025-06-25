@@ -20,7 +20,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Boring crypto that simply works";
     homepage = "https://monocypher.org";
-    license = with licenses; [
+    license = with lib.licenses; [
       bsd2
       cc0
     ];

@@ -62,7 +62,7 @@ stdenv.mkDerivation {
     description = "LLVM-based D Compiler";
     homepage = "https://github.com/ldc-developers/ldc";
     # from https://github.com/ldc-developers/ldc/blob/master/LICENSE
-    license = with licenses; [
+    license = with lib.licenses; [
       bsd3
       boost
       mit

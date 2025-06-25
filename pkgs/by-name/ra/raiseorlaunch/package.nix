@@ -20,7 +20,7 @@ python3Packages.buildPythonApplication rec {
   doCheck = false;
   pythonImportsCheck = [ "raiseorlaunch" ];
 
-  meta = with lib; {
+  meta = {
     maintainers = with lib.maintainers; [ winpat ];
     description = "Run-or-raise-application-launcher for i3 window manager";
     mainProgram = "raiseorlaunch";

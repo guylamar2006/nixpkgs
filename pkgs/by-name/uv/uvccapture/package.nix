@@ -47,9 +47,9 @@ stdenv.mkDerivation rec {
     cp -v debian/uvccapture.1 "$out/share/man/man1/"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Capture image from USB webcam at a specified interval";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ bjornfor ];
     mainProgram = "uvccapture";

@@ -16,11 +16,11 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-9KLvVgmUun8tuAfxYMvAa5qpeXiOKe9JndZ81PmPpjA=";
 
-  meta = with lib; {
+  meta = {
     description = "Command line tool for debugging, ad hoc benchmarking and generating regular expressions";
     mainProgram = "regex-cli";
     homepage = "https://github.com/rust-lang/regex/tree/master/regex-cli";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       mit
     ];

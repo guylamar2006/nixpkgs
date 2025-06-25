@@ -50,7 +50,7 @@ python3.pkgs.buildPythonApplication rec {
     "tests/test_module_info.py"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Exploitation Framework for Embedded Devices";
     homepage = "https://github.com/threat9/routersploit";
     license = lib.licenses.bsd3;

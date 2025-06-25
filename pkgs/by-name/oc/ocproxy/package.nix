@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     ./autogen.sh
   '';
 
-  meta = with lib; {
+  meta = {
     description = "OpenConnect proxy";
     longDescription = ''
       ocproxy is a user-level SOCKS and port forwarding proxy for OpenConnect

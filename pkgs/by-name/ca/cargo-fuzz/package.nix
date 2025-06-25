@@ -24,7 +24,7 @@ rustPlatform.buildRustPackage rec {
     description = "Command line helpers for fuzzing";
     mainProgram = "cargo-fuzz";
     homepage = "https://github.com/rust-fuzz/cargo-fuzz";
-    license = with licenses; [
+    license = with lib.licenses; [
       mit
       asl20
     ];

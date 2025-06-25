@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://ink.sourceforge.net/";
     license = lib.licenses.gpl2Only;
-    platforms = lib.platforms.linux ++ platforms.freebsd;
+    platforms = lib.platforms.linux ++ lib.platforms.freebsd;
     maintainers = with lib.maintainers; [ samb96 ];
     mainProgram = "ink";
   };

@@ -50,7 +50,7 @@ stdenv.mkDerivation (finalAttrs: {
     install -Dm644 scalpel.conf -t $out/share/scalpel/
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/sleuthkit/scalpel";
     description = "Recover files based on their headers, footers and internal data structures, based on Foremost";
     mainProgram = "scalpel";

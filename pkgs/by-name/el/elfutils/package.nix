@@ -169,7 +169,7 @@ stdenv.mkDerivation rec {
     badPlatforms = [ lib.systems.inspect.platformPatterns.isStatic ];
     # licenses are GPL2 or LGPL3+ for libraries, GPL3+ for bins,
     # but since this package isn't split that way, all three are listed.
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl2Only
       lgpl3Plus
       gpl3Plus

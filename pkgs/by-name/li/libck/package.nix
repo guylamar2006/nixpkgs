@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     longDescription = ''
       Concurrency primitives, safe memory reclamation mechanisms and non-blocking data structures for the research, design and implementation of high performance concurrent systems.
     '';
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       bsd2
     ];

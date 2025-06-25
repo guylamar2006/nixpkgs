@@ -58,7 +58,7 @@ stdenv.mkDerivation (finalAttrs: {
       Checks the syntactical correctness of an INTERLIS data model.
     '';
     homepage = "https://www.interlis.ch/downloads/ili2c";
-    sourceProvenance = with sourceTypes; [
+    sourceProvenance = with lib.sourceTypes; [
       fromSource
       binaryBytecode # source bundles dependencies as jars
     ];

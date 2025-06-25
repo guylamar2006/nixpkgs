@@ -22,7 +22,7 @@ rustPlatform.buildRustPackage rec {
     updateScript = nix-update-script { };
   };
 
-  meta = with lib; {
+  meta = {
     description = "IDE support for Pest, via the LSP";
     homepage = "https://pest.rs";
     license = lib.licenses.asl20;

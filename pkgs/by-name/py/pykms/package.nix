@@ -92,7 +92,7 @@ pypkgs.buildPythonApplication rec {
 
   passthru.tests = { inherit (nixosTests) pykms; };
 
-  meta = with lib; {
+  meta = {
     description = "Windows KMS (Key Management Service) server written in Python";
     homepage = "https://github.com/Py-KMS-Organization/py-kms";
     license = lib.licenses.unlicense;

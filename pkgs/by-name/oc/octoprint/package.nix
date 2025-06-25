@@ -204,7 +204,7 @@ let
             };
           };
 
-          meta = with lib; {
+          meta = {
             homepage = "https://octoprint.org/";
             description = "Snappy web interface for your 3D printer";
             mainProgram = "octoprint";

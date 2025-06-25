@@ -151,12 +151,12 @@ stdenv.mkDerivation rec {
     "-DCMAKE_SKIP_BUILD_RPATH=ON"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Sound editor with graphical UI";
     mainProgram = "tenacity";
     homepage = "https://tenacityaudio.org/";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [ irenes ];
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [ irenes ];
     platforms = lib.platforms.linux;
   };
 }

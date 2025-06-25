@@ -48,7 +48,7 @@ in
         Xen guests
       '';
 
-      platforms = lib.platforms.gnu ++ platforms.linux;
+      platforms = lib.platforms.gnu ++ lib.platforms.linux;
     };
   }
 )

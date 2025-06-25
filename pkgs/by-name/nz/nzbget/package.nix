@@ -79,7 +79,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   passthru.tests = { inherit (nixosTests) nzbget; };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://nzbget.com/";
     changelog = "https://github.com/nzbgetcom/nzbget/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.gpl2Plus;
@@ -88,7 +88,7 @@ stdenv.mkDerivation (finalAttrs: {
       pSub
       devusb
     ];
-    platforms = with platforms; unix;
+    platforms = lib.platforms.unix;
     mainProgram = "nzbget";
   };
 })

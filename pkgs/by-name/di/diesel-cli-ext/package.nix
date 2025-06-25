@@ -20,7 +20,7 @@ rustPlatform.buildRustPackage rec {
   meta = {
     description = "Provides different tools for projects using the diesel_cli";
     homepage = "https://crates.io/crates/diesel_cli_ext";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       mit
     ];

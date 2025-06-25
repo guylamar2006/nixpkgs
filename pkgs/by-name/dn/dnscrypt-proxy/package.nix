@@ -32,6 +32,6 @@ buildGoModule rec {
       waynr
     ];
     mainProgram = "dnscrypt-proxy";
-    platforms = with platforms; unix;
+    platforms = lib.platforms.unix;
   };
 }

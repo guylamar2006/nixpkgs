@@ -18,11 +18,11 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-NAM/s3m+ZqgHoX6GESgJOxr88sy4+JieWB8u8aKbW7Y=";
 
-  meta = with lib; {
+  meta = {
     description = "Rust implementation of Tim Bray's topfew tool";
     homepage = "https://github.com/djc/topfew-rs";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ figsoda ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ figsoda ];
     mainProgram = "tf";
   };
 }

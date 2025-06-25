@@ -48,7 +48,7 @@ python3.pkgs.buildPythonApplication rec {
   # Upstream has no tests
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Better filter tool for Redump and No-Intro dats";
     homepage = "https://github.com/unexpectedpanda/retool";
     changelog = "https://github.com/unexpectedpanda/retool/blob/${src.tag}/changelog.md";

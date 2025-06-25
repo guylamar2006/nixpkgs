@@ -77,7 +77,7 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description = "Cross-platform gettext catalogs (.po files) editor";
     mainProgram = "poedit";
     homepage = "https://www.poedit.net/";

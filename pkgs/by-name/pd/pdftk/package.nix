@@ -56,10 +56,10 @@ stdenv.mkDerivation rec {
     cp ${src}/pdftk.1 $out/share/man/man1
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Command-line tool for working with PDFs";
     homepage = "https://gitlab.com/pdftk-java/pdftk";
-    sourceProvenance = with sourceTypes; [
+    sourceProvenance = with lib.sourceTypes; [
       fromSource
       binaryBytecode # deps
     ];

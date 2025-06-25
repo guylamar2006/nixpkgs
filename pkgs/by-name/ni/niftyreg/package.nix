@@ -20,7 +20,7 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [ cmake ];
   buildInputs = [ zlib ];
 
-  meta = with lib; {
+  meta = {
     homepage = "http://cmictig.cs.ucl.ac.uk/wiki/index.php/NiftyReg";
     description = "Medical image registration software";
     maintainers = with lib.maintainers; [ bcdarwin ];

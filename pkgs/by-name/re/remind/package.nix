@@ -54,7 +54,7 @@ tcl.mkTclDerivation rec {
     ignoredVersions = "-BETA";
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://dianne.skoll.ca/projects/remind/";
     description = "Sophisticated calendar and alarm program for the console";
     license = lib.licenses.gpl2Only;

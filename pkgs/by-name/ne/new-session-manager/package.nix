@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
 
   hardeningDisable = [ "format" ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://new-session-manager.jackaudio.org/";
     description = "Session manager designed for audio applications";
     maintainers = with lib.maintainers; [ _6AA4FD ];

@@ -99,7 +99,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   __structuredAttrs = true;
 
-  meta = with lib; {
+  meta = {
     description = "Authoritative DNS server";
     homepage = "https://www.powerdns.com";
     platforms = lib.platforms.unix;

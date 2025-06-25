@@ -20,7 +20,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/snar/bgpq3";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ b4dm4n ];
-    platforms = with platforms; unix;
+    platforms = lib.platforms.unix;
     mainProgram = "bgpq3";
   };
 }

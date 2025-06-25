@@ -31,6 +31,6 @@ buildGoModule rec {
     homepage = "https://github.com/marwan-at-work/mod";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ kalbasit ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

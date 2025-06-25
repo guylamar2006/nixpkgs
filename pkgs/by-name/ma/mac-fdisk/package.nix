@@ -101,7 +101,7 @@ stdenv.mkDerivation {
     description = "68K and PowerPC Mac disk partitioning utility, Adélie Linux version";
     # http://ftp.mklinux.apple.com:/pub/Other_Tools/ but that one's looong dead, link goes to the patch compilation we're using
     homepage = "https://git.adelielinux.org/adelie/packages/-/tree/master/user/mac-fdisk";
-    license = with licenses; [
+    license = with lib.licenses; [
       hpnd # original license statements seems to match this (in files that are shared with pdisk)
       gpl1Plus # fdisk.c
     ];

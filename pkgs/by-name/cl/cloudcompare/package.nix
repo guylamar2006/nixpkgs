@@ -155,6 +155,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ nh2 ];
     mainProgram = "CloudCompare";
-    platforms = with platforms; linux; # only tested here; might work on others
+    platforms = lib.platforms.linux; # only tested here; might work on others
   };
 }

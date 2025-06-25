@@ -53,7 +53,7 @@ stdenvNoCC.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Onion routing based messenger";
     mainProgram = "session-desktop";
     homepage = "https://getsession.org/";
@@ -63,6 +63,6 @@ stdenvNoCC.mkDerivation {
       cyewashish
     ];
     platforms = [ "x86_64-linux" ];
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
   };
 }

@@ -30,7 +30,7 @@ stdenv.mkDerivation {
 
   passthru.updateScript = unstableGitUpdater { };
 
-  meta = with lib; {
+  meta = {
     description = "Access Ryzen SMU information exposed by the ryzen_smu driver";
     homepage = "https://github.com/plasmin/ryzen_monitor_ng";
     changelog = "https://github.com/plasmin/ryzen_monitor_ng/blob/master/CHANGELOG.md";

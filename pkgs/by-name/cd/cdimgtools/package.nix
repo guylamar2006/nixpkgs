@@ -70,6 +70,6 @@ stdenv.mkDerivation {
     description = "Tools to inspect and manipulate CD/DVD optical disc images";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ hhm ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

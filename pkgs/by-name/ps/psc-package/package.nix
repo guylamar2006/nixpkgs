@@ -66,7 +66,7 @@ stdenv.mkDerivation rec {
         --zsh <($PSC_PACKAGE --zsh-completion-script $PSC_PACKAGE)
     '';
 
-  meta = with lib; {
+  meta = {
     description = "Package manager for PureScript based on package sets";
     mainProgram = "psc-package";
     license = lib.licenses.bsd3;

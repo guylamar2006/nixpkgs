@@ -21,7 +21,7 @@ rustPlatform.buildRustPackage {
   # no tests exist
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "LSP (Language Server Protocol) server for OpenSCAD";
     mainProgram = "openscad-lsp";
     homepage = "https://github.com/Leathong/openscad-LSP";

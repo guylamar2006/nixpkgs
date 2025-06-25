@@ -93,7 +93,7 @@ stdenv.mkDerivation {
   meta = {
     description = "Library to talk to FTDI chips using libusb";
     homepage = "https://www.intra2net.com/en/developer/libftdi/";
-    license = with licenses; [
+    license = with lib.licenses; [
       lgpl2Only
       gpl2Only
     ];

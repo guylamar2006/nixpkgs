@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
     "CC=${stdenv.cc.targetPrefix}cc"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Advanced terminal calculator";
     longDescription = ''
       Quich is a compact, fast, powerful and useful calculator for your terminal

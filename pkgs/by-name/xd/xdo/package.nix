@@ -26,11 +26,11 @@ stdenv.mkDerivation rec {
     xcbutil
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Small X utility to perform elementary actions on windows";
     homepage = "https://github.com/baskerville/xdo";
-    maintainers = with maintainers; [ meisternu ];
-    license = licenses.bsd2;
+    maintainers = with lib.maintainers; [ meisternu ];
+    license = lib.licenses.bsd2;
     platforms = lib.platforms.linux;
     mainProgram = "xdo";
   };

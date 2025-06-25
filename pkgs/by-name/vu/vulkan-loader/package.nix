@@ -73,11 +73,11 @@ stdenv.mkDerivation (finalAttrs: {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "LunarG Vulkan loader";
     homepage = "https://www.lunarg.com";
-    platforms = lib.platforms.unix ++ platforms.windows;
-    license = licenses.asl20;
+    platforms = lib.platforms.unix ++ lib.platforms.windows;
+    license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ ralith ];
     broken = finalAttrs.version != vulkan-headers.version;
     pkgConfigModules = [ "vulkan" ];

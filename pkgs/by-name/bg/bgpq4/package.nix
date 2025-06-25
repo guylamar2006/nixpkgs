@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/bgp/bgpq4";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ vincentbernat ];
-    platforms = with platforms; unix;
+    platforms = lib.platforms.unix;
     mainProgram = "bgpq4";
   };
 }

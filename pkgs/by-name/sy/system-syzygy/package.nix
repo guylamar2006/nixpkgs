@@ -42,12 +42,12 @@ rustPlatform.buildRustPackage rec {
     substituteAll ${desktopFile}/share/applications/system-syzygy.desktop $out/share/applications/system-syzygy.desktop
   '';
 
-  meta = with lib; {
+  meta = {
     broken = stdenv.hostPlatform.isDarwin;
     description = "Story and a puzzle game, where you solve a variety of puzzle";
     mainProgram = "syzygy";
     homepage = "https://mdsteele.games/syzygy";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ marius851000 ];
   };
 }

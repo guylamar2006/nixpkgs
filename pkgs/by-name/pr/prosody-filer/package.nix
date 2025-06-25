@@ -19,7 +19,7 @@ buildGoModule {
 
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/ThomasLeister/prosody-filer";
     maintainers = with lib.maintainers; [ abbradar ];
     license = lib.licenses.mit;

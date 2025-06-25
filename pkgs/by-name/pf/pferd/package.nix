@@ -27,7 +27,7 @@ python3Packages.buildPythonApplication rec {
     certifi
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/Garmelon/PFERD";
     description = "Tool for downloading course-related files from ILIAS";
     license = lib.licenses.mit;

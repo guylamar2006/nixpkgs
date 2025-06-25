@@ -40,7 +40,7 @@ stdenv.mkDerivation {
     cp find-safe-plugins $out/bin/
   '';
 
-  meta = with lib; {
+  meta = {
     broken = (stdenv.hostPlatform.isLinux && stdenv.hostPlatform.isAarch64);
     homepage = "https://github.com/cth103/plugin-torture";
     description = "Tool to test LADSPA and LV2 plugins";

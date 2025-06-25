@@ -36,7 +36,7 @@ python3Packages.buildPythonApplication {
   # Project has no tests
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Vulnerability fingerprinting and vulnerability finder for Wordpress blog engine";
     mainProgram = "plecost";
     homepage = "https://github.com/iniqua/plecost";

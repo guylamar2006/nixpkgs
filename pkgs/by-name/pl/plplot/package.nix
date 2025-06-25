@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     description = "Cross-platform scientific graphics plotting library";
     mainProgram = "pltek";
     homepage = "https://plplot.org";

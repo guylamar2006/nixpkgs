@@ -43,7 +43,7 @@ python3Packages.buildPythonApplication rec {
     installManPage *.1
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "http://www.coderholic.com/pyradio/";
     description = "Curses based internet radio player";
     mainProgram = "pyradio";

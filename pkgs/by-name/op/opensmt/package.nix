@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
     "-Dgoogletest_BINARY_DIR=./gtest-build"
   ];
 
-  meta = with lib; {
+  meta = {
     broken = (stdenv.hostPlatform.isLinux && stdenv.hostPlatform.isAarch64);
     description = "Satisfiability modulo theory (SMT) solver";
     mainProgram = "opensmt";

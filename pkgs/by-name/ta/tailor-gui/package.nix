@@ -56,7 +56,7 @@ stdenv.mkDerivation {
     gtk4
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Rust GUI for interacting with hardware from TUXEDO Computers";
     mainProgram = "tailor_gui";
     longDescription = ''
@@ -64,8 +64,8 @@ stdenv.mkDerivation {
       written in Rust.
     '';
     homepage = "https://github.com/AaronErhardt/tuxedo-rs";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [
       mrcjkb
       xaverdh
     ];

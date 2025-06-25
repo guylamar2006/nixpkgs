@@ -29,12 +29,12 @@ stdenv.mkDerivation {
     libsigrokdecode
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Command-line frontend for the sigrok signal analysis software suite";
     mainProgram = "sigrok-cli";
     homepage = "https://sigrok.org/";
     license = lib.licenses.gpl3Plus;
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     maintainers = with lib.maintainers; [
       bjornfor
       vifino

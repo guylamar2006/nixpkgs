@@ -107,9 +107,9 @@ clangStdenv.mkDerivation rec {
 
   passthru.tests.sogo = nixosTests.sogo;
 
-  meta = with lib; {
+  meta = {
     description = "Very fast and scalable modern collaboration suite (groupware)";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl2Only
       lgpl21Only
     ];

@@ -21,8 +21,8 @@ stdenv.mkDerivation rec {
     homepage = "https://packages.debian.org/source/sid/kmod";
     description = "Linux configuration file for modprobe";
     maintainers = with lib.maintainers; [ mathnerd314 ];
-    platforms = with platforms; linux;
-    license = with licenses; [
+    platforms = lib.platforms.linux;
+    license = with lib.licenses; [
       gpl2Plus
       lgpl21Plus
     ];

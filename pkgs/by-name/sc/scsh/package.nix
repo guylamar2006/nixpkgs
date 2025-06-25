@@ -34,12 +34,12 @@ stdenv.mkDerivation {
 
   passthru.updateScript = unstableGitUpdater { };
 
-  meta = with lib; {
+  meta = {
     description = "Scheme shell";
     homepage = "http://www.scsh.net/";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ joachifm ];
-    platforms = with platforms; unix;
+    platforms = lib.platforms.unix;
     mainProgram = "scsh";
   };
 }

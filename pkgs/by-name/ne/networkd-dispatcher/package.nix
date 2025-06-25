@@ -85,7 +85,7 @@ stdenv.mkDerivation rec {
     wrapPythonPrograms
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Dispatcher service for systemd-networkd connection status changes";
     mainProgram = "networkd-dispatcher";
     homepage = "https://gitlab.com/craftyguy/networkd-dispatcher";

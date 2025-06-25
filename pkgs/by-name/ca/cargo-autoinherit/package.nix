@@ -21,7 +21,7 @@ rustPlatform.buildRustPackage rec {
   meta = {
     description = "Automatically DRY up your Rust dependencies";
     homepage = "https://github.com/mainmatter/cargo-autoinherit";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20 # OR
       mit
     ];

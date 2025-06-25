@@ -32,7 +32,7 @@ stdenv.mkDerivation {
 
   passthru.tests.version = testers.testVersion { package = papertrail; };
 
-  meta = with lib; {
+  meta = {
     description = "Command-line client for Papertrail log management service";
     mainProgram = "papertrail";
     homepage = "https://github.com/papertrail/papertrail-cli/";

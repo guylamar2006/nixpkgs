@@ -23,7 +23,7 @@ buildGoModule rec {
       --replace '0.0.0-unknown' '${version}'
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/fgrosse/prox";
     description = "Process runner for Procfile-based applications";
     mainProgram = "prox";

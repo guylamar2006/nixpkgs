@@ -37,7 +37,7 @@ rustPlatform.buildRustPackage rec {
   # gpgconf: error creating socket directory
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Sequoia's reimplementation of the GnuPG interface";
     homepage = "https://gitlab.com/sequoia-pgp/sequoia-chameleon-gnupg";
     license = lib.licenses.gpl3Plus;

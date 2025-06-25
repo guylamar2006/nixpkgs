@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
     description = "Lightweight connector for espeak-ng and speakup";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ ethindp ];
-    platforms = with platforms; linux;
+    platforms = lib.platforms.linux;
     mainProgram = "espeakup";
   };
 }

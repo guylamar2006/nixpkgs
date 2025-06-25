@@ -127,7 +127,7 @@ buildGo123Module rec {
     updateScript = ./updater.sh;
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://pomerium.io";
     description = "Authenticating reverse proxy";
     mainProgram = "pomerium";

@@ -70,7 +70,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     homepage = "https://github.com/smirarab/ASTRAL";
     description = "Tool for estimating an unrooted species tree given a set of unrooted gene trees";
     mainProgram = "astral";
-    sourceProvenance = with sourceTypes; [
+    sourceProvenance = with lib.sourceTypes; [
       fromSource
       binaryBytecode # source bundles dependencies as jars
     ];

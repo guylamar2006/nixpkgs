@@ -19,7 +19,7 @@ rustPlatform.buildRustPackage rec {
   meta = {
     description = "Cargo subcommand to build and test all feature flag combinations";
     homepage = "https://github.com/frewsxcv/cargo-all-features";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20 # or
       mit
     ];

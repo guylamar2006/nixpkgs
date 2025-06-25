@@ -26,7 +26,7 @@ mkPulumiPackage rec {
 
   __darwinAllowLocalNetworking = true;
 
-  meta = with lib; {
+  meta = {
     description = "Native AWS Pulumi Provider";
     mainProgram = "pulumi-resource-aws-native";
     homepage = "https://github.com/pulumi/pulumi-aws-native";

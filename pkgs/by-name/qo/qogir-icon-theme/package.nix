@@ -66,7 +66,7 @@ lib.checkListOfEnum "${pname}: color variants" [ "standard" "dark" "all" ] color
 
     passthru.updateScript = gitUpdater { };
 
-    meta = with lib; {
+    meta = {
       description = "Flat colorful design icon theme";
       homepage = "https://github.com/vinceliuice/Qogir-icon-theme";
       license = lib.licenses.gpl3Only;

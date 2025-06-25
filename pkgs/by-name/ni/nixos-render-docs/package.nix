@@ -77,7 +77,7 @@ python.pkgs.buildPythonApplication rec {
         touch $out
       '';
 
-  meta = with lib; {
+  meta = {
     description = "Renderer for NixOS manual and option docs";
     mainProgram = "nixos-render-docs";
     license = lib.licenses.mit;

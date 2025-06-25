@@ -36,6 +36,6 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "coin-config";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 })

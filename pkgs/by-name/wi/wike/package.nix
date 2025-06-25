@@ -68,12 +68,12 @@ python3.pkgs.buildPythonApplication rec {
     updateScript = nix-update-script { };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Wikipedia Reader for the GNOME Desktop";
     homepage = "https://github.com/hugolabe/Wike";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     platforms = lib.platforms.linux;
-    maintainers = with maintainers; [ samalws ];
+    maintainers = with lib.maintainers; [ samalws ];
     teams = with lib.teams; [ gnome-circle ];
     mainProgram = "wike";
   };

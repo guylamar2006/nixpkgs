@@ -154,11 +154,11 @@ stdenv.mkDerivation rec {
     })
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Simple, configurable utility to show your web activity as playing status on Discord";
     homepage = "https://premid.app";
     downloadPage = "https://premid.app/downloads";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.mpl20;
     maintainers = with lib.maintainers; [ natto1784 ];
     platforms = [ "x86_64-linux" ];

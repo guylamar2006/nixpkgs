@@ -86,7 +86,7 @@ stdenv.mkDerivation {
   meta = {
     description = "Free, open source, turn-based space empire and galactic conquest (4X) computer game";
     homepage = "https://www.freeorion.org/";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl2Only
       cc-by-sa-30
     ];

@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
     })
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Audio based modem for ham radio supporting ax.25";
     longDescription = ''
       This software allows a standard PC soundcard to be used as a packet radio "modem". The whole processing is done on the main processor CPU.

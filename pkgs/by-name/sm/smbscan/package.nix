@@ -33,7 +33,7 @@ python3.pkgs.buildPythonApplication {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Tool to enumerate file shares";
     homepage = "https://github.com/jeffhacks/smbscan";
     license = lib.licenses.gpl3Only;

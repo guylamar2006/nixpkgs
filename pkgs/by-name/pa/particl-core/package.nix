@@ -65,7 +65,7 @@ stdenv.mkDerivation rec {
   preCheck = "patchShebangs test";
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     broken = (stdenv.hostPlatform.isLinux && stdenv.hostPlatform.isAarch64);
     description = "Privacy-Focused Marketplace & Decentralized Application Platform";
     longDescription = ''

@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
       --prefix LD_LIBRARY_PATH : $out/lib
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Top-like tool for viewing AMD Radeon GPU utilization";
     mainProgram = "radeontop";
     longDescription = ''

@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-3wZeRPG2VrpPlqRVmkrMskqzM6NGZoSGbgGBTJzKCgQ=";
 
-  meta = with lib; {
+  meta = {
     description = "Generate a color palette from an image using k-means clustering in the Oklab color space";
     homepage = "https://github.com/Ivordir/Okolors";
     license = lib.licenses.mit;

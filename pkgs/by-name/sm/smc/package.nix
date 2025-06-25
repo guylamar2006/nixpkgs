@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     chmod a+x "$out/bin/smc"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Generate state machine code from text input (state diagram)";
     longDescription = ''
       SMC (State Machine Compiler) takes a text input file describing states,
@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
       SMC can also generate GraphViz state diagrams from the input file.
     '';
     homepage = "https://smc.sourceforge.net/";
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.mpl11;
     platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ bjornfor ];

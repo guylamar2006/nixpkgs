@@ -24,7 +24,7 @@ stdenv.mkDerivation {
   ];
   buildInputs = [ ] ++ lib.optional stdenv.hostPlatform.isLinux systemd;
 
-  meta = with lib; {
+  meta = {
     description = "Brand new release of the Djbdns";
     longDescription = ''
       Djbdns is a fully‐fledged Domain Name System(DNS), originally written by the eminent author of qmail, Dr. D J Bernstein.
@@ -32,7 +32,7 @@ stdenv.mkDerivation {
     homepage = "http://pjp.dgplug.org/ndjbdns/";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 
 }

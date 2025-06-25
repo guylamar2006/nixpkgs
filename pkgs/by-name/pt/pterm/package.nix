@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "terminal emulator for the Cyber1 mainframe-based CYBIS system";
     homepage = "https://www.cyber1.org/";
     license = lib.licenses.zlib;

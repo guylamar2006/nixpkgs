@@ -17,7 +17,7 @@ stdenv.mkDerivation (finalAttrs: {
     ./darwin.diff
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Data recovery program for NTFS file systems";
     mainProgram = "scrounge-ntfs";
     homepage = "http://thewalter.net/stef/software/scrounge/";

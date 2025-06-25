@@ -44,7 +44,7 @@ stdenv.mkDerivation rec {
   mesonFlags = [ "-Dtests=disabled" ];
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "High quality software library for audio time-stretching and pitch-shifting";
     homepage = "https://breakfastquay.com/rubberband/";
     # commercial license available as well, see homepage. You'll get some more optimized routines

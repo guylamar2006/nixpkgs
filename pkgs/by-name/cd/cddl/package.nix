@@ -35,7 +35,7 @@ bundlerApp {
   meta = {
     description = "Parser, generator, and validator for CDDL";
     homepage = "https://rubygems.org/gems/cddl";
-    license = with licenses; mit;
+    license = with lib.licenses; mit;
     maintainers = with lib.maintainers; [
       fdns
       nicknovitski

@@ -77,7 +77,7 @@ stdenv.mkDerivation (finalAttrs: {
     "units"
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://docs.ctags.io/en/latest/";
     description = "Maintained ctags implementation";
     longDescription = ''
@@ -86,7 +86,7 @@ stdenv.mkDerivation (finalAttrs: {
       source files for programming languages. This index makes it easy for text
       editors and other tools to locate the indexed items.
     '';
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.all;
     mainProgram = "ctags";

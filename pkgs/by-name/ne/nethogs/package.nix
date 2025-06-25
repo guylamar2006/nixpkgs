@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     "sbin=$(out)/bin"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Small 'net top' tool, grouping bandwidth by process";
     longDescription = ''
       NetHogs is a small 'net top' tool. Instead of breaking the traffic down

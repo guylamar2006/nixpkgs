@@ -33,7 +33,7 @@ python3.pkgs.buildPythonApplication rec {
 
   pythonImportsCheck = [ "pysentation" ];
 
-  meta = with lib; {
+  meta = {
     description = "CLI for displaying Python presentations";
     homepage = "https://github.com/mimseyedi/pysentation";
     changelog = "https://github.com/mimseyedi/pysentation/releases/tag/${src.rev}";

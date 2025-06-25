@@ -37,7 +37,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Tool to read RFCs from the command line";
     longDescription = ''
       rfc is a little tool written in Bash to read RFCs from the command-line.

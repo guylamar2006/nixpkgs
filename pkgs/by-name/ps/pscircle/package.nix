@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     cairo
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://gitlab.com/mildlyparallel/pscircle";
     description = "Visualize Linux processes in a form of a radial tree";
     mainProgram = "pscircle";

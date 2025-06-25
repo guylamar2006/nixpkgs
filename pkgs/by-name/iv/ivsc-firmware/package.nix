@@ -38,7 +38,7 @@ stdenv.mkDerivation {
     description = "Firmware binaries for the Intel Vision Sensing Controller";
     homepage = "https://github.com/intel/ivsc-firmware";
     license = lib.licenses.issl;
-    sourceProvenance = with sourceTypes; [
+    sourceProvenance = with lib.sourceTypes; [
       binaryFirmware
     ];
     maintainers = with lib.maintainers; [ ];

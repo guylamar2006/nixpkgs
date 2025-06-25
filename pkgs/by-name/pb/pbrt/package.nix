@@ -32,7 +32,7 @@ stdenv.mkDerivation {
   ];
   buildInputs = [ zlib ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://pbrt.org/";
     description = "Renderer described in the third edition of the book 'Physically Based Rendering: From Theory To Implementation'";
     platforms = lib.platforms.linux;

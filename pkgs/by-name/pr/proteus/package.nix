@@ -66,7 +66,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Guitar amp and pedal capture plugin using neural networks";
     homepage = "https://github.com/GuitarML/Proteus";
     license = lib.licenses.gpl3;

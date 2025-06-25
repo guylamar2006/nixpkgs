@@ -40,7 +40,7 @@ buildGoModule rec {
     '';
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/m3ng9i/ran";
     description = "Ran is a simple web server for serving static files";
     mainProgram = "ran";

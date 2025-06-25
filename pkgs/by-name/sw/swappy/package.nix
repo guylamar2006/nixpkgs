@@ -53,10 +53,10 @@ stdenv.mkDerivation rec {
     "-Dc_args=-I${glib.dev}/include/gio-unix-2.0"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Wayland native snapshot editing tool, inspired by Snappy on macOS";
     homepage = "https://github.com/jtheoof/swappy";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     mainProgram = "swappy";
     maintainers = with lib.maintainers; [ matthiasbeyer ];
     platforms = lib.platforms.linux;

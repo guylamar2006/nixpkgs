@@ -25,7 +25,7 @@ rustPlatform.buildRustPackage {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     description = "Script interpolation engine for markdown documents";
     homepage = "https://github.com/terror/present/";
     license = lib.licenses.cc0;

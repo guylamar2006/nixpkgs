@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
       --replace \''${OPENVDB_INCLUDEDIR} $dev/include
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Open framework for voxel";
     mainProgram = "vdb_print";
     homepage = "https://www.openvdb.org";

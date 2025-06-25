@@ -23,7 +23,7 @@ multiStdenv.mkDerivation rec {
     sed -e s@/bin/bash@"${multiStdenv.shell}"@g -i src/*.sh
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Tool for creating static Linux binaries";
     mainProgram = "statifier";
     platforms = lib.platforms.linux;

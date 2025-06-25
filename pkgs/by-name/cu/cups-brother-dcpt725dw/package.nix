@@ -101,7 +101,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Brother DCP-T725DW printer driver";
     license = lib.licenses.unfree;
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     maintainers = with lib.maintainers; [ u2x1 ];
     platforms = [
       "x86_64-linux"

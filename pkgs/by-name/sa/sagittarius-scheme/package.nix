@@ -56,7 +56,7 @@ stdenv.mkDerivation rec {
     ]
   );
 
-  meta = with lib; {
+  meta = {
     description = "R6RS/R7RS Scheme system";
     longDescription = ''
       Sagittarius Scheme is a free Scheme implementation supporting

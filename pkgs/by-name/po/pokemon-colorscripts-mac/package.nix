@@ -38,7 +38,7 @@ stdenv.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Pokémon colorscripts for the terminal, compatible for mac";
     longDescription = ''
       Show colored sprites of pokémons in your terminal.

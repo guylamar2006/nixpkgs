@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     "INSTMANDIR=$(out)/man"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Game starring a fruit-eating snake";
     homepage = "https://shh.thathost.com/pub-unix/html/snake4.html";
     license = lib.licenses.artistic1;

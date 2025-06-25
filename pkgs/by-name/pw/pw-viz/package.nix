@@ -59,7 +59,7 @@ rustPlatform.buildRustPackage rec {
   # fixes error caused by https://gitlab.freedesktop.org/pipewire/pipewire-rs/-/issues/55
   env.NIX_CFLAGS_COMPILE = toString [ "-DPW_ENABLE_DEPRECATED" ];
 
-  meta = with lib; {
+  meta = {
     description = "Simple and elegant pipewire graph editor";
     homepage = "https://github.com/ax9d/pw-viz";
     license = lib.licenses.gpl3Only;

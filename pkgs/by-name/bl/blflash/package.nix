@@ -21,7 +21,7 @@ rustPlatform.buildRustPackage rec {
   meta = {
     description = "Bl602 serial flasher written in Rust";
     homepage = "https://github.com/spacemeowx2/blflash";
-    license = with licenses; [
+    license = with lib.licenses; [
       mit
       asl20
     ];

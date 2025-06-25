@@ -17,7 +17,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-v+cJ1Hw4cae/8A1MpHbIfGRVamI58byqfBLNCKKAHWk=";
 
-  meta = with lib; {
+  meta = {
     description = "Highly parallelized, blazing fast directory tree analyzer";
     homepage = "https://github.com/KSXGitHub/parallel-disk-usage";
     license = lib.licenses.asl20;

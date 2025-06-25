@@ -26,7 +26,7 @@ stdenv.mkDerivation (finalAttrs: {
   nativeBuildInputs = [ cmake ];
   buildInputs = [ openssl ];
 
-  meta = with lib; {
+  meta = {
     description = "RabbitMQ C AMQP client library";
     homepage = "https://github.com/alanxz/rabbitmq-c";
     license = lib.licenses.mit;

@@ -66,11 +66,11 @@ stdenv.mkDerivation {
     sed -e 's@for xosd_dir in@for xosd_dir in ${xosd} @' -i configure.ac
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Utility for switching between keyboard layouts";
     mainProgram = "xneur";
     homepage = "https://xneur.ru";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ raskin ];
     platforms = lib.platforms.linux;
   };

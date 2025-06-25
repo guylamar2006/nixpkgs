@@ -25,7 +25,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.stixfonts.org/";
     description = "Fonts for Scientific and Technical Information eXchange";
     license = lib.licenses.ofl;

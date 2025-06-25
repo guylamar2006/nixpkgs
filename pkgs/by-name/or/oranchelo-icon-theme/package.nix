@@ -44,7 +44,7 @@ stdenvNoCC.mkDerivation rec {
   '';
   dontCheckForBrokenSymlinks = true;
 
-  meta = with lib; {
+  meta = {
     description = "Oranchelo icon theme";
     homepage = "https://github.com/OrancheloTeam/oranchelo-icon-theme";
     license = lib.licenses.gpl3Only;

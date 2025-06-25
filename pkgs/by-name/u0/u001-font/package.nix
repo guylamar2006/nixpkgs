@@ -37,11 +37,11 @@ stdenvNoCC.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Univers-like typeface that comes with GhostPDL made by URW++";
     homepage = "https://fontlibrary.org/en/font/u001";
-    license = licenses.aladdin;
+    license = lib.licenses.aladdin;
     platforms = lib.platforms.all;
-    maintainers = with maintainers; [ toastal ];
+    maintainers = with lib.maintainers; [ toastal ];
   };
 }

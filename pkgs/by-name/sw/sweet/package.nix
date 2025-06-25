@@ -98,11 +98,11 @@ lib.checkListOfEnum "${pname}: color variants" colorVariantList colorVariants
       runHook postInstall
     '';
 
-    meta = with lib; {
+    meta = {
       description = "Light and dark colorful Gtk3.20+ theme";
       homepage = "https://github.com/EliverLara/Sweet";
-      license = licenses.gpl3Plus;
-      maintainers = with maintainers; [
+      license = lib.licenses.gpl3Plus;
+      maintainers = with lib.maintainers; [
         fuzen
         d3vil0p3r
       ];

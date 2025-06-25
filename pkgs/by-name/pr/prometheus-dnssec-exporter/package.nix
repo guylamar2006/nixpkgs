@@ -16,7 +16,7 @@ buildGoModule {
 
   vendorHash = "sha256-u7X8v7h1aL8B1el4jFzGRKHvnaK+Rz0OCitaC6xgyjw=";
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/chrj/prometheus-dnssec-exporter";
     description = "DNSSEC Exporter for Prometheus";
     license = lib.licenses.mit;

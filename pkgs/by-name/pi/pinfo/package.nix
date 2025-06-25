@@ -62,7 +62,7 @@ stdenv.mkDerivation rec {
     "--with-readline=${readline.dev}"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Viewer for info files";
     homepage = "https://github.com/baszoetekouw/pinfo";
     license = lib.licenses.gpl2Plus;

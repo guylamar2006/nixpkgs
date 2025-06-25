@@ -30,6 +30,6 @@ stdenv.mkDerivation rec {
     description = "Easy-to-use uinput library in C++";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = with platforms; linux;
+    platforms = lib.platforms.linux;
   };
 }

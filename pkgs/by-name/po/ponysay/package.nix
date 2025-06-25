@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Cowsay reimplemention for ponies";
     homepage = "https://github.com/erkin/ponysay";
     license = lib.licenses.gpl3;

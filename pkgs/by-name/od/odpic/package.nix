@@ -44,7 +44,7 @@ stdenv.mkDerivation {
     ''}
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Oracle ODPI-C library";
     homepage = "https://oracle.github.io/odpi/";
     maintainers = with lib.maintainers; [ mkazulak ];

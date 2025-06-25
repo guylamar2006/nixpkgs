@@ -50,7 +50,7 @@ buildEnv {
   meta = {
     homepage = "https://frogatto.com";
     description = description;
-    license = with licenses; [
+    license = with lib.licenses; [
       cc-by-30
       unfree
     ];

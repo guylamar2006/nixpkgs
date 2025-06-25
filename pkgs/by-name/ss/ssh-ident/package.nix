@@ -27,12 +27,12 @@ stdenvNoCC.mkDerivation {
     install -m 755 ssh-ident $out/bin/ssh-ident
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/ccontavalli/ssh-ident";
     description = "Start and use ssh-agent and load identities as necessary";
     license = lib.licenses.bsd2;
-    maintainers = with maintainers; [ telotortium ];
-    platforms = with platforms; unix;
+    maintainers = with lib.maintainers; [ telotortium ];
+    platforms = lib.platforms.unix;
     mainProgram = "ssh-ident";
   };
 }

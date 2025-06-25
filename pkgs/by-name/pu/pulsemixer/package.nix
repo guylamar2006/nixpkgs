@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
       --replace-fail "libpulse.so.0" "$libpulseaudio/lib/libpulse${stdenv.hostPlatform.extensions.sharedLibrary}"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Cli and curses mixer for pulseaudio";
     homepage = "https://github.com/GeorgeFilipkin/pulsemixer";
     license = lib.licenses.mit;

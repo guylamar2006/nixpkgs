@@ -32,7 +32,7 @@ stdenv.mkDerivation {
     libXmu
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://bitbucket.org/Coin3D/coin/wiki/Home";
     license = lib.licenses.bsd3;
     description = "GUI binding for using Open Inventor with Xt/Motif";

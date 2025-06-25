@@ -20,7 +20,7 @@ buildGoModule rec {
 
   passthru.tests.restic = nixosTests.restic-rest-server;
 
-  meta = with lib; {
+  meta = {
     changelog = "https://github.com/restic/rest-server/blob/${src.rev}/CHANGELOG.md";
     description = "High performance HTTP server that implements restic's REST backend API";
     mainProgram = "rest-server";

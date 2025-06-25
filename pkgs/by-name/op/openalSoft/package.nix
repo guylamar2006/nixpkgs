@@ -62,7 +62,7 @@ stdenv.mkDerivation rec {
     ];
   };
 
-  meta = with lib; {
+  meta = {
     description = "OpenAL alternative";
     homepage = "https://openal-soft.org/";
     license = lib.licenses.lgpl2;

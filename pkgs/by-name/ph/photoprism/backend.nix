@@ -43,7 +43,7 @@ buildGoModule rec {
   # https://github.com/tensorflow/tensorflow/issues/43847
   CGO_LDFLAGS = "-fuse-ld=gold";
 
-  meta = with lib; {
+  meta = {
     homepage = "https://photoprism.app";
     description = "Photoprism's backend";
     license = lib.licenses.agpl3Only;

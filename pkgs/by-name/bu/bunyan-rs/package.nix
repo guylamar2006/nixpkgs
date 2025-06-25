@@ -21,7 +21,7 @@ rustPlatform.buildRustPackage rec {
   meta = {
     description = "CLI to pretty print logs in bunyan format (Rust port of the original JavaScript bunyan CLI)";
     homepage = "https://github.com/LukeMathWalker/bunyan";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       mit
     ];

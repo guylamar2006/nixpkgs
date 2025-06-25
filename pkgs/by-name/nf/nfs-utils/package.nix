@@ -184,7 +184,7 @@ stdenv.mkDerivation rec {
     nfs4-kerberos = nixosTests.nfs4.kerberos;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Linux user-space NFS utilities";
 
     longDescription = ''

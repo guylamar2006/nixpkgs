@@ -141,14 +141,14 @@ stdenv.mkDerivation rec {
     '';
   };
 
-  meta = with lib; {
+  meta = {
     description = "Powerful cross-platform (Windows, Linux, and macOS) shell and scripting language based on .NET";
     homepage = "https://microsoft.com/PowerShell";
     license = lib.licenses.mit;
     mainProgram = "pwsh";
     maintainers = with lib.maintainers; [ wegank ];
     platforms = builtins.attrNames passthru.sources;
-    sourceProvenance = with sourceTypes; [
+    sourceProvenance = with lib.sourceTypes; [
       binaryBytecode
       binaryNativeCode
     ];

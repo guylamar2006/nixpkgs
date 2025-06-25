@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
 
   makeFlags = [ "PREFIX=$(out)" ];
 
-  meta = with lib; {
+  meta = {
     description = "Tool to read notifications from stdin and pop them up on the screen";
     longDescription = ''
       XNotify displays a notification on the screen. XNotify receives a
@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
       on the screen.
     '';
     homepage = "https://github.com/phillbush/xnotify";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
     mainProgram = "xnotify";

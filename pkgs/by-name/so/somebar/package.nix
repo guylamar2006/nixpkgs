@@ -44,7 +44,7 @@ stdenv.mkDerivation rec {
     cp ${configFile} src/config.hpp
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://git.sr.ht/~raphi/somebar";
     description = "dwm-like bar for dwl";
     license = lib.licenses.mit;

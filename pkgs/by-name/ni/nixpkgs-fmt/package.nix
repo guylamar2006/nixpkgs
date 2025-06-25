@@ -17,7 +17,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-aookq6n8/dMz+REDwtSghhzcUf66D3O9SKJKx3q7lsI=";
 
-  meta = with lib; {
+  meta = {
     description = "Nix code formatter for nixpkgs";
     homepage = "https://nix-community.github.io/nixpkgs-fmt";
     license = lib.licenses.asl20;

@@ -19,10 +19,10 @@ stdenv.mkDerivation rec {
   configureFlags = [ "--libdir=$(out)/lib" ];
   nativeBuildInputs = [ autoreconfHook ];
 
-  meta = with lib; {
+  meta = {
     description = "IPv4 to IPv6 interceptor";
     homepage = "https://github.com/andrewshadura/tnat64";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     longDescription = ''
       TNAT64 is an interceptor which redirects outgoing TCPv4 connections
       through NAT64, thus enabling an application running on an IPv6-only host

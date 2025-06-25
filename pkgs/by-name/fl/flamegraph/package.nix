@@ -45,7 +45,7 @@ stdenv.mkDerivation {
   '';
 
   meta = {
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       cddl
       gpl2Plus

@@ -132,7 +132,7 @@ stdenv.mkDerivation rec {
   hardeningDisable = lib.optionals debug [ "fortify" ];
   dontStrip = debug;
 
-  meta = with lib; {
+  meta = {
     description = "Framework for the simulation of distributed applications";
     longDescription = ''
       SimGrid is a toolkit that provides core functionalities for the

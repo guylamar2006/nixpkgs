@@ -95,7 +95,7 @@ stdenv.mkDerivation rec {
     ln -s spice-server $out/include/spice
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Complete open source solution for interaction with virtualized desktop devices";
     longDescription = ''
       The Spice project aims to provide a complete open source solution for interaction
@@ -110,6 +110,6 @@ stdenv.mkDerivation rec {
     maintainers = with lib.maintainers; [
       atemu
     ];
-    platforms = with platforms; linux ++ darwin;
+    platforms = with lib.platforms; linux ++ darwin;
   };
 }

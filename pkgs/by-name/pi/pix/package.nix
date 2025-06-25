@@ -98,7 +98,7 @@ stdenv.mkDerivation rec {
     gappsWrapperArgs+=(--prefix XDG_DATA_DIRS : "${shared-mime-info}/share")
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Generic image viewer from Linux Mint";
     mainProgram = "pix";
     homepage = "https://github.com/linuxmint/pix";

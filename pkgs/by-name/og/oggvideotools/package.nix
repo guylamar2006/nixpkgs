@@ -59,7 +59,7 @@ stdenv.mkDerivation rec {
     libvorbis
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Toolbox for manipulating and creating Ogg video files";
     homepage = "http://www.streamnik.de/oggvideotools.html";
     license = lib.licenses.gpl2Only;

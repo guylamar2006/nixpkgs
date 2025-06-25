@@ -21,7 +21,7 @@ rustPlatform.buildRustPackage rec {
   meta = {
     description = "Represent numbers in French language";
     homepage = "https://github.com/evenfurther/french-numbers";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20 # or
       mit
     ];

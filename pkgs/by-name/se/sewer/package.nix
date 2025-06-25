@@ -19,7 +19,7 @@ python3Packages.buildPythonApplication rec {
     tldextract
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/komuw/sewer";
     description = "ACME client";
     license = lib.licenses.mit;

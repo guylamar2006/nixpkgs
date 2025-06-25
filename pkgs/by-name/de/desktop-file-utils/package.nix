@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://www.freedesktop.org/wiki/Software/desktop-file-utils";
     description = "Command line utilities for working with .desktop files";
-    platforms = lib.platforms.linux ++ platforms.darwin ++ platforms.freebsd;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin ++ lib.platforms.freebsd;
     license = lib.licenses.gpl2Plus;
   };
 }

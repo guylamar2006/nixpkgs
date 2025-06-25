@@ -264,6 +264,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.gluster.org";
     license = lib.licenses.lgpl3Plus; # dual licese: choice of lgpl3Plus or gpl2
     maintainers = with lib.maintainers; [ raskin ];
-    platforms = with platforms; linux ++ freebsd;
+    platforms = with lib.platforms; linux ++ freebsd;
   };
 }

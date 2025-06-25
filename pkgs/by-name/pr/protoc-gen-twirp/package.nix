@@ -25,7 +25,7 @@ buildGoModule rec {
     "protoc-gen-twirp"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Simple RPC framework with protobuf service definitions";
     mainProgram = "protoc-gen-twirp";
     homepage = "https://github.com/twitchtv/twirp";

@@ -48,7 +48,7 @@ buildGoModule {
     "-w"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Public repository for SCION applications";
     homepage = "https://github.com/netsec-ethz/scion-apps";
     license = lib.licenses.asl20;

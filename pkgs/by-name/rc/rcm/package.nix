@@ -21,13 +21,13 @@ stdenv.mkDerivation rec {
     done
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/thoughtbot/rcm";
     description = "Management Suite for Dotfiles";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [
       malyn
     ];
-    platforms = with platforms; unix;
+    platforms = lib.platforms.unix;
   };
 }

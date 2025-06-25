@@ -113,7 +113,7 @@ stdenv.mkDerivation rec {
     fi
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.roomeqwizard.com/";
     license = lib.licenses.unfree;
     platforms = lib.platforms.all;

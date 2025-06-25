@@ -39,9 +39,9 @@ stdenv.mkDerivation rec {
       traversing lists to delete/free nodes.
     '';
     homepage = "https://github.com/troglobit/libite";
-    platforms = with platforms; linux ++ netbsd;
+    platforms = with lib.platforms; linux ++ netbsd;
     maintainers = with lib.maintainers; [ fpletz ];
-    license = with licenses; [
+    license = with lib.licenses; [
       mit
       isc
       bsd2

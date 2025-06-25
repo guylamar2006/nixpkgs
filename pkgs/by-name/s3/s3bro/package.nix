@@ -33,7 +33,7 @@ python3.pkgs.buildPythonApplication rec {
     "s3bro"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "s3 CLI tool";
     mainProgram = "s3bro";
     homepage = "https://github.com/rsavordelli/s3bro";

@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     description = "Library to send/receive data according to the Modbus protocol";
     homepage = "https://libmodbus.org/";
     license = lib.licenses.lgpl21Plus;
-    platforms = with platforms; unix ++ windows;
+    platforms = with lib.platforms; unix ++ windows;
     maintainers = with lib.maintainers; [ bjornfor ];
   };
 }

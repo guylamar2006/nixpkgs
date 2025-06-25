@@ -27,6 +27,6 @@ stdenv.mkDerivation rec {
     description = "Keycloak Social Login extension for Discord";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ mkg20001 ];
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
   };
 }

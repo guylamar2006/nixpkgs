@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-wRMMWeZDk9Xt3263pq20Qioy1x8egiPhuoPxmpNTq8M=";
 
-  meta = with lib; {
+  meta = {
     description = "Trim the excess padding found in Nintendo DS(i) ROMs";
     homepage = "https://github.com/Nemris/ndstrim";
     changelog = "https://github.com/Nemris/ndstrim/blob/${src.rev}/CHANGELOG.md";

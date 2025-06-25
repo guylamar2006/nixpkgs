@@ -50,7 +50,7 @@ rustPlatform.buildRustPackage rec {
     description = "Cargo extension to build & run your codspeed benchmarks";
     homepage = "https://github.com/CodSpeedHQ/codspeed-rust";
     changelog = "https://github.com/CodSpeedHQ/codspeed-rust/releases/tag/${src.rev}";
-    license = with licenses; [
+    license = with lib.licenses; [
       mit
       asl20
     ];

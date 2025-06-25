@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     mainProgram = "kcat";
     homepage = "https://github.com/edenhill/kcat";
     license = lib.licenses.bsd2;
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     maintainers = with lib.maintainers; [ nyarly ];
   };
 }

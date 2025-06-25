@@ -27,10 +27,10 @@ stdenv.mkDerivation {
       --set-default TS_SLOTS "$(${coreutils}/bin/nproc --all)"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Simple single node task scheduler";
     homepage = "https://vicerveza.homeunix.net/~viric/wsgi-bin/hgweb.wsgi/ts";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ sheepforce ];
     mainProgram = "ts";
     platforms = lib.platforms.unix;

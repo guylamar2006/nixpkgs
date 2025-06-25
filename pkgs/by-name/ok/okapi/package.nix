@@ -20,7 +20,7 @@ rustPlatform.buildRustPackage rec {
     cp -r include $out
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Okapi Library";
     longDescription = ''
       Collection of tools that support workflows for working

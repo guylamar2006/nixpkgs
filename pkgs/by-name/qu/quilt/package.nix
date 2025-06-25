@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
     wrapProgram $out/bin/quilt --prefix PATH : ${lib.makeBinPath buildInputs}
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://savannah.nongnu.org/projects/quilt";
     description = "Easily manage large numbers of patches";
 

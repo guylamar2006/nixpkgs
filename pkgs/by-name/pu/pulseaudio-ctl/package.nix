@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
       --prefix PATH : ${path}
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Control pulseaudio volume from the shell or mapped to keyboard shortcuts. No need for alsa-utils";
     mainProgram = "pulseaudio-ctl";
     homepage = "https://bbs.archlinux.org/viewtopic.php?id=124513";

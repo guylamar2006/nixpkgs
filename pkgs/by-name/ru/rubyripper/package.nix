@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
       }
   '';
 
-  meta = with lib; {
+  meta = {
     description = "High quality CD audio ripper";
     mainProgram = "rrip_cli";
     platforms = lib.platforms.linux;

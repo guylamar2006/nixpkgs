@@ -19,7 +19,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-nP5NPBnqEaGo1QvhdMHSPtDjJqOxF+TodvqmMgTfQ8M=";
 
-  meta = with lib; {
+  meta = {
     description = "Better rust version of pokeget";
     homepage = "https://github.com/talwat/pokeget-rs";
     license = lib.licenses.mit;

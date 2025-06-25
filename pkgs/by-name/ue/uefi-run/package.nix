@@ -18,10 +18,10 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-c9aooU60zN58/m8q4G/f8VOjq7oXUTqxqSUMp47YOcA=";
 
-  meta = with lib; {
+  meta = {
     description = "Directly run UEFI applications in qemu";
     homepage = "https://github.com/Richard-W/uefi-run";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
     mainProgram = "uefi-run";
   };

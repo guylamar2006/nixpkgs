@@ -102,7 +102,7 @@ stdenv.mkDerivation rec {
     done
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "http://www.uberent.com/pa/";
     description = "Next-generation RTS that takes the genre to a planetary scale";
     license = lib.licenses.unfree;

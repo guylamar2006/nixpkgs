@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
     (lib.mesonBool "gtk-doc" withDocs)
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Command-line utility and library for controlling media players that implement MPRIS";
     homepage = "https://github.com/acrisci/playerctl";
     license = lib.licenses.lgpl3;

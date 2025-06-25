@@ -66,7 +66,7 @@ stdenv.mkDerivation rec {
   meta = {
     inherit (src.meta) homepage;
     description = "Literate Programming in C/C++";
-    platforms = with platforms; unix;
+    platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ ];
     license = lib.licenses.abstyles;
   };

@@ -50,6 +50,6 @@ appimageTools.wrapType2 rec {
     ];
     platforms = [ "x86_64-linux" ];
     mainProgram = "ledger-live-desktop";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
   };
 }

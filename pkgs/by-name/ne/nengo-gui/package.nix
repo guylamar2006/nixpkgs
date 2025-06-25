@@ -21,7 +21,7 @@ python3Packages.buildPythonPackage rec {
   #   pyimgur
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Nengo interactive visualizer";
     homepage = "https://nengo.ai/";
     license = lib.licenses.unfreeRedistributable;

@@ -32,7 +32,7 @@ bundlerApp {
   meta = {
     description = "CBOR diagnostic utilities";
     homepage = "https://github.com/cabo/cbor-diag";
-    license = with licenses; asl20;
+    license = with lib.licenses; asl20;
     maintainers = with lib.maintainers; [
       fdns
       nicknovitski

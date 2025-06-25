@@ -74,7 +74,7 @@ python3.pkgs.buildPythonApplication rec {
     inherit seafile-server;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Web end of seafile server";
     homepage = "https://github.com/haiwen/seahub";
     license = lib.licenses.asl20;

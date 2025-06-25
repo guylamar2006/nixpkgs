@@ -105,7 +105,7 @@ stdenv.mkDerivation (finalAttrs: {
         --prefix PATH : "${i3}/bin"
     '');
 
-  meta = with lib; {
+  meta = {
     homepage = "https://polybar.github.io/";
     changelog = "https://github.com/polybar/polybar/releases/tag/${finalAttrs.version}";
     description = "Fast and easy-to-use tool for creating status bars";

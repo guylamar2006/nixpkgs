@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     boost
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/sembruk/osm2xmap";
     description = "Converter from OpenStreetMap data format to OpenOrienteering Mapper format";
     license = lib.licenses.gpl3;

@@ -120,7 +120,7 @@ stdenv.mkDerivation rec {
       Runtime Environment for plugins like Hibiscus (HBCI Online Banking),
       SynTAX (accounting) and JVerein (club management).
     '';
-    sourceProvenance = with sourceTypes; [
+    sourceProvenance = with lib.sourceTypes; [
       fromSource
       binaryBytecode # source bundles dependencies as jars
     ];

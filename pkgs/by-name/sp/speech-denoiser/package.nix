@@ -55,7 +55,7 @@ stdenv.mkDerivation {
       --replace "cc.find_library('rnnoise-nu',dirs: meson.current_source_dir() + '/rnnoise/.libs/',required : true)" "cc.find_library('rnnoise-nu', required : true)"
   '';
 
-  meta = with lib; {
+  meta = {
     broken = (stdenv.hostPlatform.isLinux && stdenv.hostPlatform.isAarch64);
     description = "Speech denoise lv2 plugin based on RNNoise library";
     homepage = "https://github.com/lucianodato/speech-denoiser";

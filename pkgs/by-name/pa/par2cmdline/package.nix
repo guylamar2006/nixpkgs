@@ -18,7 +18,7 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [ autoreconfHook ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/Parchive/par2cmdline";
     description = "PAR 2.0 compatible file verification and repair tool";
     longDescription = ''

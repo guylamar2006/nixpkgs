@@ -46,7 +46,7 @@ stdenv.mkDerivation {
       --prefix PATH : ${lib.makeBinPath runtime_bins}
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Command line tool for unpacking archives easily";
     homepage = "https://packages.qa.debian.org/u/unp.html";
     license = lib.licenses.gpl2Only;

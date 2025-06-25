@@ -38,12 +38,12 @@ stdenv.mkDerivation rec {
   # fixes: can't build x86_64-w64-mingw32 shared library unless -no-undefined is specified
   makeFlags = lib.optionals stdenv.hostPlatform.isWindows [ "LDFLAGS=-no-undefined" ];
 
-  meta = with lib; {
+  meta = {
     description = "OpenCL ICD Loader for ${opencl-headers.name}";
     mainProgram = "cllayerinfo";
     homepage = "https://github.com/OCL-dev/ocl-icd";
     license = lib.licenses.bsd2;
-    platforms = lib.platforms.unix ++ platforms.windows;
+    platforms = lib.platforms.unix ++ lib.platforms.windows;
     maintainers = with lib.maintainers; [ r-burns ];
   };
 }

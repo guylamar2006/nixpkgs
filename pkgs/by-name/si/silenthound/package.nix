@@ -34,7 +34,7 @@ python3.pkgs.buildPythonApplication {
   # Only script available
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Tool to enumerate an Active Directory Domain";
     homepage = "https://github.com/layer8secure/SilentHound";
     license = lib.licenses.mit;

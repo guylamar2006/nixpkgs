@@ -31,7 +31,7 @@ mkPulumiPackage rec {
   '';
   fetchSubmodules = true;
   __darwinAllowLocalNetworking = true;
-  meta = with lib; {
+  meta = {
     description = "Native Azure Pulumi Provider";
     mainProgram = "pulumi-resource-azure-native";
     homepage = "https://github.com/pulumi/pulumi-azure-native";

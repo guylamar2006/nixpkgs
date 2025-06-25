@@ -44,7 +44,7 @@ stdenv.mkDerivation rec {
     mkdir -p $out/bin
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Minimalistic database migration tool with MySQL, PostgreSQL and SQLite support";
     mainProgram = "shmig";
     homepage = "https://github.com/mbucc/shmig";

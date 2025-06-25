@@ -41,11 +41,11 @@ stdenv.mkDerivation rec {
     sh -c 'unset PATH; printf hello | ./txt2man'
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Convert flat ASCII text to man page format";
     homepage = "http://mvertes.free.fr/";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = lib.platforms.unix;
-    maintainers = with maintainers; [ bjornfor ];
+    maintainers = with lib.maintainers; [ bjornfor ];
   };
 }

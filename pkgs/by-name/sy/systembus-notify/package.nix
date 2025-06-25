@@ -57,11 +57,11 @@ stdenv.mkDerivation rec {
   # requires a running dbus instance
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "System bus notification daemon";
     homepage = "https://github.com/rfjakob/systembus-notify";
-    license = licenses.mit;
-    maintainers = with maintainers; [ peterhoeg ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ peterhoeg ];
     platforms = lib.platforms.linux;
     mainProgram = "systembus-notify";
   };

@@ -25,11 +25,11 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-/5zvbSlMzZHxnAwuu0Jd6WVVjxJtIAQpRwZZHgYyPbs=";
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/trunk-rs/trunk";
     description = "Build, bundle & ship your Rust WASM application to the web";
     mainProgram = "trunk";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       freezeboy
       ctron
     ];

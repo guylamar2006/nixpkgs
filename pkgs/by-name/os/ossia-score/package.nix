@@ -151,7 +151,7 @@ clangStdenv.mkDerivation (finalAttrs: {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://ossia.io/score/about.html";
     description = "Sequencer for audio-visual artists";
     longDescription = ''

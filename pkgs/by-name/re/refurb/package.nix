@@ -52,7 +52,7 @@ python3Packages.buildPythonApplication rec {
     "refurb"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Tool for refurbishing and modernizing Python codebases";
     mainProgram = "refurb";
     homepage = "https://github.com/dosisod/refurb";

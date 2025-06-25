@@ -36,12 +36,12 @@ buildPythonApplication rec {
     export TERM=''${TERM-linux}
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/scottkosty/vit";
     description = "Visual Interactive Taskwarrior";
     mainProgram = "vit";
-    maintainers = with maintainers; [ arcnmx ];
+    maintainers = with lib.maintainers; [ arcnmx ];
     platforms = lib.platforms.all;
-    license = licenses.mit;
+    license = lib.licenses.mit;
   };
 }

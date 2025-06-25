@@ -70,6 +70,6 @@ python3.pkgs.buildPythonApplication rec {
     changelog = "https://github.com/coursera-dl/coursera-dl/blob/${src.rev}/CHANGELOG.md";
     license = lib.licenses.lgpl3Plus;
     maintainers = with lib.maintainers; [ alexfmpe ];
-    platforms = lib.platforms.darwin ++ platforms.linux;
+    platforms = lib.platforms.darwin ++ lib.platforms.linux;
   };
 }

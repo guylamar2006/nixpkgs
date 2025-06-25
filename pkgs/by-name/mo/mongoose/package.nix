@@ -72,6 +72,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/DrTimothyAldenDavis/SuiteSparse/tree/dev/Mongoose";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ wegank ];
-    platforms = with platforms; unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Linux Kernel Stream Control Transmission Protocol Tools";
     homepage = "https://github.com/sctp/lksctp-tools/wiki";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl2Plus
       lgpl21
     ]; # library is lgpl21

@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description = "Optimized OpenType builder and inspector";
     homepage = "https://github.com/caryll/otfcc";
     license = lib.licenses.asl20;

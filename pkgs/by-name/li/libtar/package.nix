@@ -54,7 +54,7 @@ stdenv.mkDerivation rec {
     mainProgram = "libtar";
     homepage = "https://repo.or.cz/libtar";
     license = lib.licenses.bsd3;
-    platforms = with platforms; linux ++ darwin;
+    platforms = with lib.platforms; linux ++ darwin;
     maintainers = with lib.maintainers; [ bjornfor ];
   };
 }

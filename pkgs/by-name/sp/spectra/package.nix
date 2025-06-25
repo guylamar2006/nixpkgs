@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
 
   propagatedBuildInputs = [ eigen ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://spectralib.org/";
     description = "C++ library for large scale eigenvalue problems, built on top of Eigen";
     license = lib.licenses.mpl20;

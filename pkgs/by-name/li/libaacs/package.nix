@@ -40,6 +40,6 @@ stdenv.mkDerivation rec {
     mainProgram = "aacs_info";
     license = lib.licenses.lgpl21;
     maintainers = with lib.maintainers; [ abbradar ];
-    platforms = with platforms; linux;
+    platforms = lib.platforms.linux;
   };
 }

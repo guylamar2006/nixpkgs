@@ -51,6 +51,6 @@ stdenv.mkDerivation (finalAttrs: {
       pierron
       t4ccer
     ];
-    platforms = lib.platforms.linux ++ platforms.windows;
+    platforms = lib.platforms.linux ++ lib.platforms.windows;
   };
 })

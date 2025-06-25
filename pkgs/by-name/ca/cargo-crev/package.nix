@@ -49,7 +49,7 @@ rustPlatform.buildRustPackage rec {
     description = "Cryptographically verifiable code review system for the cargo (Rust) package manager";
     mainProgram = "cargo-crev";
     homepage = "https://github.com/crev-dev/cargo-crev";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       mit
       mpl20

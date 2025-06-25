@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
     libpulseaudio
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Pulseaudio command line mixer";
     longDescription = ''
       Features:

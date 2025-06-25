@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
 
   sourceRoot = "${src.name}/src";
 
-  meta = with lib; {
+  meta = {
     description = "Online and offline brute force attack against WPS";
     homepage = "https://github.com/t6x/reaver-wps-fork-t6x";
     license = lib.licenses.gpl2Plus;

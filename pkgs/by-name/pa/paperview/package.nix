@@ -26,7 +26,7 @@ stdenv.mkDerivation {
     "PREFIX=${placeholder "out"}"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "High performance X11 animated wallpaper setter";
     homepage = "https://github.com/glouw/paperview";
     platforms = lib.platforms.linux;

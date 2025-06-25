@@ -64,7 +64,7 @@ rustPlatform.buildRustPackage rec {
     description = "Modern cross-platform lsusb";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ h7x4 ];
-    platforms = lib.platforms.linux ++ platforms.darwin ++ platforms.windows;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin ++ lib.platforms.windows;
     mainProgram = "cyme";
   };
 }

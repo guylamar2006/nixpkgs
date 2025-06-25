@@ -59,7 +59,7 @@ stdenv.mkDerivation rec {
   # Required by Poppler
   CXXFLAGS = "-std=c++20";
 
-  meta = with lib; {
+  meta = {
     description = "Creates djvu files from PDF files";
     homepage = "https://jwilk.net/software/pdf2djvu";
     license = lib.licenses.gpl2Only;

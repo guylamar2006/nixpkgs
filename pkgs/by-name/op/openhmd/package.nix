@@ -57,7 +57,7 @@ stdenv.mkDerivation rec {
     install -D examples/opengl/openglexample $out/bin/openhmd-example-opengl
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "http://www.openhmd.net"; # https does not work
     description = "Library API and drivers immersive technology";
     longDescription = ''

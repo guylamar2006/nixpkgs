@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     scalp
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Optimization tools for the (P)MCM problem";
     homepage = "https://gitlab.com/kumm/pagsuite";
     maintainers = with lib.maintainers; [ wegank ];

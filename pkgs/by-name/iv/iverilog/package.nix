@@ -88,7 +88,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Icarus Verilog compiler";
     homepage = "https://steveicarus.github.io/iverilog";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl2Plus
       lgpl21Plus
     ];

@@ -24,7 +24,7 @@ rustPlatform.buildRustPackage rec {
     mainProgram = "leptosfmt";
     homepage = "https://github.com/bram209/leptosfmt";
     changelog = "https://github.com/bram209/leptosfmt/blob/${src.rev}/CHANGELOG.md";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       mit
     ];

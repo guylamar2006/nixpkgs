@@ -78,6 +78,6 @@ stdenv.mkDerivation rec {
     homepage = "https://gitlab.gnome.org/GNOME/easytag";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ matteopacini ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

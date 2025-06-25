@@ -29,7 +29,7 @@ buildGoModule rec {
   # tests fail on linux for some reason
   doCheck = stdenv.hostPlatform.isDarwin;
 
-  meta = with lib; {
+  meta = {
     description = "Simple CLI for interacting with Google API authentication";
     homepage = "https://github.com/google/oauth2l";
     license = lib.licenses.asl20;

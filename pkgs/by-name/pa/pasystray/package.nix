@@ -56,7 +56,7 @@ stdenv.mkDerivation rec {
     gsettings-desktop-schemas
   ];
 
-  meta = with lib; {
+  meta = {
     description = "PulseAudio system tray";
     homepage = "https://github.com/christophgysin/pasystray";
     license = lib.licenses.lgpl21Plus;

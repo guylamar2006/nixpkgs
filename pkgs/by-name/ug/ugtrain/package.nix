@@ -24,11 +24,11 @@ stdenv.mkDerivation rec {
     scanmem
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/ugtrain/ugtrain";
     description = "Universal Elite Game Trainer for CLI (Linux game trainer research project)";
-    maintainers = with maintainers; [ mtrsk ];
+    maintainers = with lib.maintainers; [ mtrsk ];
     platforms = lib.platforms.linux;
-    license = licenses.gpl3Only;
+    license = lib.licenses.gpl3Only;
   };
 }

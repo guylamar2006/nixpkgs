@@ -56,7 +56,7 @@ stdenv.mkDerivation rec {
     ./configure --prefix=$out
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Tools for maintaining UEFI signature databases";
     homepage = "http://jk.ozlabs.org/docs/sbkeysync-maintaing-uefi-key-databases";
     maintainers = with lib.maintainers; [

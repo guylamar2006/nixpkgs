@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
     inherit (nixosTests) firefox firefox-esr;
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://firefox-source-docs.mozilla.org/nspr/index.html";
     description = "Netscape Portable Runtime, a platform-neutral API for system-level and libc-like functions";
     maintainers = with lib.maintainers; [

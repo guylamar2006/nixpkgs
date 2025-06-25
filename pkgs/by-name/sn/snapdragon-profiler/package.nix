@@ -91,7 +91,7 @@ stdenv.mkDerivation rec {
   dontStrip = true; # Always needed on Mono
   dontPatchELF = true; # Certain libraries are to be deployed to the remote device, they should not be patched
 
-  meta = with lib; {
+  meta = {
     homepage = "https://developer.qualcomm.com/software/snapdragon-profiler";
     description = "Profiler for Android devices running Snapdragon chips";
     license = lib.licenses.unfree;

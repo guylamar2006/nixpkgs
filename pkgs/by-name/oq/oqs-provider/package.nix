@@ -50,7 +50,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   passthru.updateScript = nix-update-script { };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/open-quantum-safe/oqs-provider";
     description = "Open Quantum Safe provider for OpenSSL (3.x)";
     license = lib.licenses.mit;

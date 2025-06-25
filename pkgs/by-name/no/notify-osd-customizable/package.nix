@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
       --prefix XDG_DATA_DIRS : "$GSETTINGS_SCHEMAS_PATH"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Daemon that displays passive pop-up notifications";
     mainProgram = "notify-osd";
     homepage = "https://launchpad.net/notify-osd";

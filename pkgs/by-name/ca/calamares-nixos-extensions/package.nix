@@ -27,7 +27,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = {
     description = "Calamares modules for NixOS";
     homepage = "https://github.com/NixOS/calamares-nixos-extensions";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl3Plus
       bsd2
       cc-by-40

@@ -54,7 +54,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "VPN on steroids";
     homepage = "https://kronosnet.org/";
-    license = with licenses; [
+    license = with lib.licenses; [
       lgpl21Plus
       gpl2Plus
     ];

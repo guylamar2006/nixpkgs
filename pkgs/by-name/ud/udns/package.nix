@@ -49,10 +49,10 @@ stdenv.mkDerivation rec {
   # keep man3
   outputDevdoc = "out";
 
-  meta = with lib; {
+  meta = {
     homepage = "http://www.corpit.ru/mjt/udns.html";
     description = "Async-capable DNS stub resolver library";
-    license = licenses.lgpl21Plus;
+    license = lib.licenses.lgpl21Plus;
     maintainers = with lib.maintainers; [ womfoo ];
     platforms = lib.platforms.unix;
   };

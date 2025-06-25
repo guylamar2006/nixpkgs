@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
 
   passthru.tests.reproducible-html-manpage = callPackage ./test-reproducible-html.nix { };
 
-  meta = with lib; {
+  meta = {
     description = "markdown-based tool for building manpages";
     mainProgram = "ronn";
     homepage = "https://github.com/apjanke/ronn-ng";

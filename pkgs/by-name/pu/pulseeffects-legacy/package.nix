@@ -106,7 +106,7 @@ stdenv.mkDerivation {
     )
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Limiter, compressor, reverberation, equalizer and auto volume effects for Pulseaudio applications";
     mainProgram = "pulseeffects";
     homepage = "https://github.com/wwmm/pulseeffects";

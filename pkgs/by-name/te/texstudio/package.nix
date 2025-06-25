@@ -47,7 +47,7 @@ stdenv.mkDerivation (finalAttrs: {
     rm -d "$out/bin"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "TeX and LaTeX editor";
     longDescription = ''
       Fork of TeXMaker, this editor is a full fledged IDE for
@@ -56,9 +56,9 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://texstudio.org";
     changelog = "https://github.com/texstudio-org/texstudio/blob/${finalAttrs.version}/utilities/manual/source/CHANGELOG.md";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = lib.platforms.unix;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       ajs124
       cfouche
     ];

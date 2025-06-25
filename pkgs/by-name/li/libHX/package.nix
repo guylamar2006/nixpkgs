@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     '';
     maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl3
       lgpl21Plus
       wtfpl

@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     description = "FlatBuffers Compiler and Library in C for C";
     mainProgram = "flatcc";
     homepage = "https://github.com/dvidelabs/flatcc";
-    license = [ licenses.asl20 ];
+    license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ onny ];
   };
 }

@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
     $out/bin/nc -h 2> /dev/null
   '';
 
-  meta = with lib; {
+  meta = {
     description = "TCP/IP swiss army knife. OpenBSD variant";
     homepage = "https://salsa.debian.org/debian/netcat-openbsd";
     maintainers = with lib.maintainers; [ artturin ];

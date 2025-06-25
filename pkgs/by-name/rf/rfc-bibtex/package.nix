@@ -26,7 +26,7 @@ buildPythonApplication rec {
     "rfc_bibtex"
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/iluxonchik/rfc-bibtex/";
     description = "Generate Bibtex entries for IETF RFCs and Internet-Drafts";
     license = lib.licenses.mit;

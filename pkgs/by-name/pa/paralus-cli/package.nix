@@ -24,7 +24,7 @@ buildGoModule rec {
     "-X main.buildNum=${version}"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Command Line Interface tool for Paralus";
     longDescription = ''
       Paralus is a free, open source tool that enables controlled, audited access to Kubernetes infrastructure.

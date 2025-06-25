@@ -41,7 +41,7 @@ stdenv.mkDerivation {
     cp doc/netevent.rst $doc/share/doc/netevent/netevent.rst
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Share linux event devices with other machines";
     homepage = "https://github.com/Blub/netevent";
     license = lib.licenses.gpl2Only;

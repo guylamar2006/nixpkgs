@@ -163,7 +163,7 @@ stdenv.mkDerivation rec {
     ctestCheckHook
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Domain specific library for electronic structure calculations";
     homepage = "https://github.com/electronic-structure/SIRIUS";
     license = lib.licenses.bsd2;

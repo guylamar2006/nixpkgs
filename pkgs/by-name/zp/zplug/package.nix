@@ -27,10 +27,10 @@ stdenv.mkDerivation rec {
     cp -r $src/doc/man/* $out/share/man/
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Next-generation plugin manager for zsh";
     homepage = "https://github.com/zplug/zplug";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ s1341 ];
     mainProgram = "zplug-env";
     platforms = lib.platforms.all;

@@ -124,7 +124,7 @@ stdenv.mkDerivation (finalAttrs: {
     url = "https://github.com/Warzone2100/warzone2100";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Free RTS game, originally developed by Pumpkin Studios";
     mainProgram = "warzone2100";
     longDescription = ''
@@ -139,8 +139,8 @@ stdenv.mkDerivation (finalAttrs: {
       variety of possible units and tactics.
     '';
     homepage = "https://wz2100.net";
-    license = licenses.gpl2Plus;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl2Plus;
+    maintainers = with lib.maintainers; [
       astsmtl
       fgaz
     ];

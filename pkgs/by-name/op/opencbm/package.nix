@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
 
   doInstallCheck = true;
 
-  meta = with lib; {
+  meta = {
     description = "Kernel driver and development library to control serial CBM devices";
     longDescription = ''
       Win 7/8/10, and Linux/i386/AMD64 kernel driver and development library to

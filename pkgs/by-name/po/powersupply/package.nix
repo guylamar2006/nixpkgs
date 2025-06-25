@@ -52,7 +52,7 @@ python3.pkgs.buildPythonApplication rec {
 
   strictDeps = true;
 
-  meta = with lib; {
+  meta = {
     description = "Graphical app to display power status of mobile Linux platforms";
     homepage = "https://gitlab.com/MartijnBraam/powersupply";
     license = lib.licenses.mit;

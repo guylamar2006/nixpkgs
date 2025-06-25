@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description = "Store OpenPGP or GnuPG on paper";
     mainProgram = "paperkey";
     longDescription = ''

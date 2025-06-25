@@ -73,7 +73,7 @@ stdenv.mkDerivation rec {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.gnu.org/software/recutils/";
     description = "Tools and libraries to access human-editable, text-based databases";
     longDescription = ''

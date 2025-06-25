@@ -52,7 +52,7 @@ buildDotnetModule rec {
     updateScript = nix-update-script { };
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/mattpannella/pupdate";
     description = "Pupdate - A thing for updating your Analogue Pocket";
     license = lib.licenses.mit;

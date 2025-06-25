@@ -47,7 +47,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
 
   passthru.updateScript = ./update.sh;
 
-  meta = with lib; {
+  meta = {
     description = "CLI tool for managing Nordic Semiconductor devices";
     homepage = "https://www.nordicsemi.com/Products/Development-tools/nRF-Util";
     changelog = "https://docs.nordicsemi.com/bundle/nrfutil/page/guides/revision_history.html";

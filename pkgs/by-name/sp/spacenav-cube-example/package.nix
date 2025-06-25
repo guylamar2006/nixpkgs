@@ -27,7 +27,7 @@ stdenv.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://spacenav.sourceforge.net/";
     description = "Example application to test the spacenavd driver";
     license = lib.licenses.bsd3;

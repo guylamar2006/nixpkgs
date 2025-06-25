@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
 
   doInstallCheck = true;
 
-  meta = with lib; {
+  meta = {
     inherit (src.meta) homepage; # https://nvmexpress.org/
     description = "NVM-Express user space tooling for Linux";
     longDescription = ''

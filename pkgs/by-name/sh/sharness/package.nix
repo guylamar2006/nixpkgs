@@ -50,7 +50,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   passthru.SHARNESS_TEST_SRCDIR = finalAttrs.finalPackage + "/share/sharness";
 
-  meta = with lib; {
+  meta = {
     description = "Portable shell library to write, run and analyze automated tests adhering to Test Anything Protocol (TAP)";
     homepage = "https://github.com/chriscool/sharness";
     license = lib.licenses.gpl2Only;

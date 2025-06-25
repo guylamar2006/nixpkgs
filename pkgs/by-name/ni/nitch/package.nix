@@ -26,7 +26,7 @@ buildNimPackage {
     })
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Incredibly fast system fetch written in nim";
     homepage = "https://github.com/unxsh/nitch";
     license = lib.licenses.mit;

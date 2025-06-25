@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
     description = "Next Generation Spice (Electronic Circuit Simulator)";
     mainProgram = "ngspice";
     homepage = "http://ngspice.sourceforge.net";
-    license = with licenses; [
+    license = with lib.licenses; [
       bsd3
       gpl2Plus
       lgpl2Plus

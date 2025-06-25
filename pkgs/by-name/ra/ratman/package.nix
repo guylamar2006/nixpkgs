@@ -70,7 +70,7 @@ rustPlatform.buildRustPackage rec {
     cp -r ${dashboard} ratman/dashboard/dist
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Modular decentralised peer-to-peer packet router and associated tools";
     homepage = "https://git.irde.st/we/irdest";
     platforms = lib.platforms.unix;

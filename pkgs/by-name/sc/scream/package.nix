@@ -57,7 +57,7 @@ stdenv.mkDerivation rec {
     $out/bin/scream -h 2>&1 | grep -q Usage:
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Audio receiver for the Scream virtual network sound card";
     homepage = "https://github.com/duncanthrax/scream";
     license = lib.licenses.mspl;

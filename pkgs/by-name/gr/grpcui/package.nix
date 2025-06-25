@@ -32,7 +32,7 @@ buildGoModule rec {
     homepage = "https://github.com/fullstorydev/grpcui";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ pradyuman ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     mainProgram = "grpcui";
   };
 }

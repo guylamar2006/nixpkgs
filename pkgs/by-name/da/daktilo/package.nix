@@ -57,7 +57,7 @@ rustPlatform.buildRustPackage rec {
     description = "Turn your keyboard into a typewriter";
     homepage = "https://github.com/orhun/daktilo";
     changelog = "https://github.com/orhun/daktilo/blob/${src.rev}/CHANGELOG.md";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       mit
     ];

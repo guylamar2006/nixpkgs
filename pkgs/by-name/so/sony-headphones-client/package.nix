@@ -78,7 +78,7 @@ stdenv.mkDerivation rec {
     })
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Client recreating the functionality of the Sony Headphones app";
     homepage = "https://github.com/Plutoberth/SonyHeadphonesClient";
     license = lib.licenses.mit;

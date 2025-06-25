@@ -63,7 +63,7 @@ stdenv.mkDerivation rec {
     mv spectre $out/bin
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Stateless cryptographic identity algorithm";
     homepage = "https://spectre.app";
     license = lib.licenses.gpl3Plus;

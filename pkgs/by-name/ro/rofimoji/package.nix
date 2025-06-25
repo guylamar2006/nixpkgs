@@ -55,7 +55,7 @@ python3Packages.buildPythonApplication rec {
     installManPage src/picker/docs/rofimoji.1
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Simple emoji and character picker for rofi";
     mainProgram = "rofimoji";
     homepage = "https://github.com/fdw/rofimoji";

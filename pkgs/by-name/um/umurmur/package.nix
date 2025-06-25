@@ -47,9 +47,9 @@ stdenv.mkDerivation rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Minimalistic Murmur (Mumble server)";
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     homepage = "https://github.com/umurmur/umurmur";
     platforms = lib.platforms.all;
     # never built on aarch64-darwin since first introduction in nixpkgs

@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
 
   makeFlags = [ "PREFIX=$(out)" ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/jceb/srandrd";
     description = "Simple randr daemon";
     license = lib.licenses.mit;

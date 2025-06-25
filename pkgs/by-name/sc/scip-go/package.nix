@@ -24,7 +24,7 @@ buildGoModule rec {
 
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "SCIP (SCIP Code Intelligence Protocol) indexer for Golang";
     homepage = "https://github.com/sourcegraph/scip-go/tree/v${version}";
     license = lib.licenses.asl20;

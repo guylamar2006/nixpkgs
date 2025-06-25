@@ -64,7 +64,7 @@ stdenv.mkDerivation {
   cmakeFlags = [ "-DINSTALL_HELPER_SCRIPTS=OFF" ];
 
   meta = {
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     maintainers = with lib.maintainers; [
       flokli
       paperdigits

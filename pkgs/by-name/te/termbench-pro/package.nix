@@ -38,11 +38,11 @@ stdenv.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Terminal Benchmarking as CLI and library";
     mainProgram = "tb";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     platforms = lib.platforms.unix;
-    maintainers = with maintainers; [ moni ];
+    maintainers = with lib.maintainers; [ moni ];
   };
 }

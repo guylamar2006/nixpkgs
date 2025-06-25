@@ -24,7 +24,7 @@ stdenv.mkDerivation rec {
     install ssh_host_client.py $out/bin/pritunl-ssh-host
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Pritunl Zero SSH client";
     homepage = "https://github.com/pritunl/pritunl-zero-client";
     license = lib.licenses.unfree;

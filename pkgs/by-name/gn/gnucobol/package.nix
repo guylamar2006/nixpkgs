@@ -137,7 +137,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = {
     description = "Free/libre COBOL compiler";
     homepage = "https://gnu.org/software/gnucobol/";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl3Only
       lgpl3Only
     ];

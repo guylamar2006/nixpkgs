@@ -48,7 +48,7 @@ stdenv.mkDerivation (finalAttrs: {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     # Low maintenance mode, doesn't support up-to-date faiss
     # https://github.com/NixOS/nixpkgs/pull/330191#issuecomment-2252965866
     broken = lib.versionAtLeast faiss.version "1.8.0";

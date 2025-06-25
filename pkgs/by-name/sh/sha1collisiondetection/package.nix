@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     which
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Library and command line tool to detect SHA-1 collision";
     longDescription = ''
       This library and command line tool were designed as near drop-in

@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     ./0001-proper-pthread-return-value.patch
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Compute the perceptual hash of an image";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ imalsogreg ];

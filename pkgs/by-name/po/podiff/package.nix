@@ -19,7 +19,7 @@ stdenv.mkDerivation {
     mkdir -p $out/share/man/man1
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Finds differences in translations between two PO files, or revisions";
     mainProgram = "podiff";
     homepage = "http://puszcza.gnu.org.ua/software/podiff";

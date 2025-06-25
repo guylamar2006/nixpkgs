@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     clutter-gtk
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://gitlab.gnome.org/Archive/pinpoint";
     description = "Tool for making hackers do excellent presentations";
     license = lib.licenses.lgpl21;

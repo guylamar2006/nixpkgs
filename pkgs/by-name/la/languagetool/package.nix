@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
 
   meta = {
     homepage = "https://languagetool.org";
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.lgpl21Plus;
     maintainers = with lib.maintainers; [ edwtjo ];
     platforms = jre.meta.platforms;

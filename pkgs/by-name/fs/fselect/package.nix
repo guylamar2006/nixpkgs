@@ -31,7 +31,7 @@ rustPlatform.buildRustPackage rec {
   meta = {
     description = "Find files with SQL-like queries";
     homepage = "https://github.com/jhspetersson/fselect";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       mit
     ];

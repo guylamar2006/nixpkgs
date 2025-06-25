@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     mainProgram = "boot";
     homepage = "https://boot-clj.github.io/";
     license = lib.licenses.epl10;
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     maintainers = with lib.maintainers; [ ragge ];
   };
 }

@@ -39,7 +39,7 @@ stdenv.mkDerivation {
     cp ./netris $out/bin
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Free networked version of T*tris";
     mainProgram = "netris";
     license = lib.licenses.gpl2Plus;

@@ -180,7 +180,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://dovecot.org/";
     description = "Open source IMAP and POP3 email server written with security primarily in mind";
-    license = with licenses; [
+    license = with lib.licenses; [
       mit
       publicDomain
       lgpl21Only

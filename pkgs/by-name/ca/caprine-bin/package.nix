@@ -11,7 +11,7 @@ let
     homepage = "https://sindresorhus.com/caprine";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ShamrockLee ];
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
   };
   x86_64-appimage = callPackage ./build-from-appimage.nix {
     inherit pname version metaCommon;

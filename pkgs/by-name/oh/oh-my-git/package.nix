@@ -125,7 +125,7 @@ stdenv.mkDerivation rec {
     udev
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://ohmygit.org/";
     description = "Interactive Git learning game";
     mainProgram = "oh-my-git";

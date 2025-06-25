@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.openwall.com/pam/";
     description = "PAM for login service to provide per-user private directories";
     license = lib.licenses.bsd0;

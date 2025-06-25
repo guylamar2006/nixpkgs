@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage {
   useFetchCargoVendor = true;
   cargoHash = "sha256-t4tfQaFq4EV4ZWeU+IestSFiSAIeVQslTZhLbpKVoO4=";
 
-  meta = with lib; {
+  meta = {
     description = "Command-line utility that takes grep-formatted lines and performs a find-and-replace on them";
     homepage = "https://github.com/robenkleene/rep-grep";
     license = lib.licenses.mit;

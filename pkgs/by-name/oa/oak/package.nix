@@ -17,7 +17,7 @@ buildGoModule rec {
 
   vendorHash = "sha256-iQtb3zNa57nB6x4InVPw7FCmW7XPw5yuz0OcfASXPD8=";
 
-  meta = with lib; {
+  meta = {
     description = "Expressive, simple, dynamic programming language";
     mainProgram = "oak";
     homepage = "https://oaklang.org/";

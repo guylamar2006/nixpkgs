@@ -66,7 +66,7 @@ rustPlatform.buildRustPackage rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Electrical power consumption metrology agent";
     homepage = "https://github.com/hubblo-org/scaphandre";
     license = lib.licenses.asl20;

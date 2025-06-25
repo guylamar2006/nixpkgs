@@ -19,7 +19,7 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [ cmake ];
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description = "Processor counter monitor";
     homepage = "https://www.intel.com/software/pcm";
     license = lib.licenses.bsd3;

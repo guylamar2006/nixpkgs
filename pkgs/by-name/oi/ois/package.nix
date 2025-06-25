@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     "-DCMAKE_INSTALL_LIBDIR=lib"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Object-oriented C++ input system";
     maintainers = with lib.maintainers; [ raskin ];
     platforms = lib.platforms.unix;

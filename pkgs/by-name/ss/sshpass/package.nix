@@ -13,7 +13,7 @@ stdenv.mkDerivation rec {
     sha256 = "sha256-rREGwgPLtWGFyjutjGzK/KO0BkaWGU2oefgcjXvf7to=";
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://sourceforge.net/projects/sshpass/";
     description = "Non-interactive ssh password auth";
     license = lib.licenses.gpl2Plus;

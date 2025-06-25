@@ -23,7 +23,7 @@ crystal.buildCrystalPackage rec {
   # tries to execute git which fails spectacularly
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Dependency manager for the Crystal language";
     mainProgram = "shards";
     license = lib.licenses.asl20;

@@ -39,7 +39,7 @@ appimageTools.wrapType1 {
     cp -r ${deb}/usr/share $out
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Reference Image Viewer";
     homepage = "https://www.pureref.com";
     license = lib.licenses.unfree;

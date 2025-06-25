@@ -25,7 +25,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Tall and condensed bitmap font for geeks";
     homepage = "https://github.com/NerdyPepper/scientifica";
     license = lib.licenses.ofl;

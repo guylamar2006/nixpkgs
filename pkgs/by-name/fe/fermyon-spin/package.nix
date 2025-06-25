@@ -66,10 +66,10 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Framework for building, deploying, and running fast, secure, and composable cloud microservices with WebAssembly";
     homepage = "https://github.com/fermyon/spin";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.asl20;
     mainProgram = "spin";
     maintainers = with lib.maintainers; [ mglolenstine ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

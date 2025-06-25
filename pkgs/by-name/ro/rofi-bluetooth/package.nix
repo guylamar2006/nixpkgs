@@ -37,7 +37,7 @@ stdenv.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Rofi-based interface to connect to bluetooth devices and display status info";
     homepage = "https://github.com/nickclyde/rofi-bluetooth";
     license = lib.licenses.gpl3Only;

@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/dylanaraps/shfm";
     description = "POSIX-shell based file manager";
     license = lib.licenses.mit;

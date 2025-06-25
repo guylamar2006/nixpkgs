@@ -53,7 +53,7 @@ stdenv.mkDerivation rec {
       essentially independent workloads.
     '';
     license = lib.licenses.bsd2;
-    platforms = with platforms; linux ++ freebsd;
+    platforms = with lib.platforms; linux ++ freebsd;
     maintainers = with lib.maintainers; [ numinit ];
     mainProgram = "ioztat";
   };

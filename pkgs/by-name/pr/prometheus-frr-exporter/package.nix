@@ -24,7 +24,7 @@ buildGoModule {
     "-X github.com/prometheus/common/version.Branch=unknown"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Prometheus exporter for FRR version 3.0+";
     longDescription = ''
       Prometheus exporter for FRR version 3.0+ that collects metrics from the

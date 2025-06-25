@@ -40,7 +40,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Tool to run a PostreSQL query and output the result as CSV";
     homepage = "https://github.com/fphilipe/psql2csv";
     license = lib.licenses.mit;

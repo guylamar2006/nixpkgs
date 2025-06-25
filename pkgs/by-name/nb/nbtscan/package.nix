@@ -18,7 +18,7 @@ stdenv.mkDerivation {
 
   nativeBuildInputs = [ autoreconfHook ];
 
-  meta = with lib; {
+  meta = {
     description = "Scan networks searching for NetBIOS information";
     mainProgram = "nbtscan";
     homepage = "https://github.com/resurrecting-open-source-projects/nbtscan";

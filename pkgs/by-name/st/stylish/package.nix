@@ -44,7 +44,7 @@ stdenvNoCC.mkDerivation rec {
     }
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/thevinter/styli.sh";
     description = "Shell script to manage wallpapers";
     mainProgram = "styli.sh";
@@ -57,6 +57,6 @@ stdenvNoCC.mkDerivation rec {
       can set automatically your terminal colors.
     '';
     license = lib.licenses.mit;
-    maintainers = with maintainers; [ tchab ];
+    maintainers = with lib.maintainers; [ tchab ];
   };
 }

@@ -58,7 +58,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "ABI Generic Analysis and Instrumentation Library";
     homepage = "https://sourceware.org/libabigail/";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       llvm-exception
     ];

@@ -38,7 +38,7 @@ buildGoModule rec {
       --zsh <($out/bin/ory completion zsh)
   '';
 
-  meta = with lib; {
+  meta = {
     mainProgram = "ory";
     description = "Ory CLI";
     homepage = "https://www.ory.sh/cli";

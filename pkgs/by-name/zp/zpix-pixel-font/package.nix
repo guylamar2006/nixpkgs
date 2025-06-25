@@ -30,11 +30,11 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Pixel font supporting multiple languages like English, Chinese and Japanese";
     homepage = "https://github.com/SolidZORO/zpix-pixel-font/";
     changelog = "https://github.com/SolidZORO/zpix-pixel-font/blob/master/CHANGELOG.md";
-    license = licenses.unfree;
+    license =license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ adriangl ];
     platforms = lib.platforms.all;
   };

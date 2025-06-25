@@ -26,7 +26,7 @@ buildPythonPackage rec {
     ifaddr
   ] ++ lib.optionals (pythonOlder "3.5") [ typing ];
 
-  meta = with lib; {
+  meta = {
     description = "Pure python implementation of multicast DNS service discovery";
     homepage = "https://github.com/jstasiak/python-zeroconf";
     license = lib.licenses.lgpl21;

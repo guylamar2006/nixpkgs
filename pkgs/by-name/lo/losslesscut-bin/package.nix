@@ -14,7 +14,7 @@ let
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ ShamrockLee ];
     mainProgram = "losslesscut";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
   };
   x86_64-appimage = callPackage ./build-from-appimage.nix {
     inherit pname version metaCommon;

@@ -27,12 +27,12 @@ stdenv.mkDerivation rec {
     makeWrapper ${jre}/bin/java $out/bin/quantomatic --add-flags "-jar $out/libexec/quantomatic/quantomatic.jar"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Piece of software for reasoning about monoidal theories; in particular, quantum information processing";
     mainProgram = "quantomatic";
     license = lib.licenses.gpl3;
     homepage = "https://quantomatic.github.io/";
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     maintainers = with lib.maintainers; [ nickhu ];
     platforms = lib.platforms.all;
   };

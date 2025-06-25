@@ -48,10 +48,10 @@ stdenv.mkDerivation rec {
 
   env.NIX_CFLAGS_COMPILE = "-I${libxml2.dev}/include/libxml2";
 
-  meta = with lib; {
+  meta = {
     description = "Performance monitoring tool for Linux";
     homepage = "http://tiptop.gforge.inria.fr";
-    license = licenses.gpl2Only;
+    license = lib.licenses.gpl2Only;
     platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ ];
   };

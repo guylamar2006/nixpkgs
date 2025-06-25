@@ -39,7 +39,7 @@ rustPlatform.buildRustPackage {
     "--skip=handlers::test::test_handle_getservbyport_port_proto_aliases"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Name service non-caching daemon";
     mainProgram = "nsncd";
     longDescription = ''

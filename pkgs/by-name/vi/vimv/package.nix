@@ -21,12 +21,12 @@ stdenvNoCC.mkDerivation {
     patchShebangs $out/bin/vimv
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/thameera/vimv";
     description = "Batch-rename files using Vim";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = lib.platforms.all;
-    maintainers = with maintainers; [ kmein ];
+    maintainers = with lib.maintainers; [ kmein ];
     mainProgram = "vimv";
   };
 }

@@ -35,11 +35,11 @@ stdenv.mkDerivation rec {
     updateScript = unstableGitUpdater { hardcodeZeroVersion = true; };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Web-based news feed (RSS/Atom) aggregator";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     homepage = "https://tt-rss.org";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       gileri
       globin
       zohl

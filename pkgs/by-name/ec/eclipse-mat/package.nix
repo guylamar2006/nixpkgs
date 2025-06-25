@@ -126,7 +126,7 @@ stdenv.mkDerivation rec {
       run a report to automatically extract leak suspects.
     '';
     homepage = "https://www.eclipse.org/mat";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.epl20;
     maintainers = with lib.maintainers; [ ktor ];
     platforms = [ "x86_64-linux" ];

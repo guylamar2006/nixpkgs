@@ -40,6 +40,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.assimp.org/";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ ehmry ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

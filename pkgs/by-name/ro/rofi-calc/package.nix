@@ -45,11 +45,11 @@ stdenv.mkDerivation rec {
     sed "s|qalc_binary = \"qalc\"|qalc_binary = \"${libqalculate}/bin/qalc\"|" -i src/calc.c
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Do live calculations in rofi!";
     homepage = "https://github.com/svenstaro/rofi-calc";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ albakham ];
-    platforms = with platforms; linux;
+    platforms = lib.platforms.linux;
   };
 }

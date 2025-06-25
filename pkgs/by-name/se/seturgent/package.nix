@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     mv seturgent $out/bin
   '';
 
-  meta = with lib; {
+  meta = {
     platforms = lib.platforms.linux;
     description = "Set an application's urgency hint (or not)";
     mainProgram = "seturgent";

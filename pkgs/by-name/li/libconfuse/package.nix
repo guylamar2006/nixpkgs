@@ -61,6 +61,6 @@ stdenv.mkDerivation rec {
       quick to integrate with your code.
     '';
     license = lib.licenses.isc;
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

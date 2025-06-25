@@ -58,7 +58,7 @@ stdenv.mkDerivation rec {
     wrapProgram "$out/bin/sc-im" --prefix PATH : "${lib.makeBinPath [ gnuplot ]}"
   '';
 
-  meta = with lib; {
+  meta = {
     changelog = "https://github.com/andmarti1424/sc-im/blob/${src.rev}/CHANGES";
     homepage = "https://github.com/andmarti1424/sc-im";
     description = "Ncurses spreadsheet program for terminal";

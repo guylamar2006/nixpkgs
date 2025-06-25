@@ -83,7 +83,7 @@ stdenv.mkDerivation rec {
     description = "Advanced library supporting raster handling methods";
     homepage = "https://www.gaia-gis.it/fossil/librasterlite2";
     # They allow any of these
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl2Plus
       lgpl21Plus
       mpl11

@@ -53,7 +53,7 @@ stdenv.mkDerivation rec {
 
   passthru.updateScript = nix-update-script { };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/lainsce/notejot";
     description = "Stupidly-simple notes app";
     license = lib.licenses.gpl3Plus;

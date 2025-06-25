@@ -77,7 +77,7 @@ stdenv.mkDerivation rec {
     networkManagerPlugin = "VPN/nm-l2tp-service.name";
   };
 
-  meta = with lib; {
+  meta = {
     description = "L2TP plugin for NetworkManager";
     inherit (networkmanager.meta) platforms;
     homepage = "https://github.com/nm-l2tp/network-manager-l2tp";

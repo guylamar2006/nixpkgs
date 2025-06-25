@@ -36,7 +36,7 @@ python3.pkgs.buildPythonApplication rec {
     "nextinspace"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Print upcoming space-related events in your terminal";
     mainProgram = "nextinspace";
     homepage = "https://github.com/The-Kid-Gid/nextinspace";

@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [ autoreconfHook ];
 
-  meta = with lib; {
+  meta = {
     description = "Unlock GnuPG keys on login";
     longDescription = ''
       A PAM module that hands over your login password to gpg-agent. This can

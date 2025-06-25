@@ -17,7 +17,7 @@ stdenv.mkDerivation rec {
     "lib"
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.seasip.info/Unix/PSF";
     description = "Conversion tools for .PSF fonts";
     longDescription = ''

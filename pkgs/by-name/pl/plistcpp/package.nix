@@ -33,7 +33,7 @@ stdenv.mkDerivation {
     pugixml
   ];
 
-  meta = with lib; {
+  meta = {
     maintainers = with lib.maintainers; [ matthewbauer ];
     description = "CPP bindings for Plist";
     license = lib.licenses.mit;

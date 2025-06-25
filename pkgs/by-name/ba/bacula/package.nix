@@ -73,7 +73,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Enterprise ready, Network Backup Tool";
     homepage = "http://bacula.org/";
-    license = with licenses; [
+    license = with lib.licenses; [
       agpl3Only
       bsd2
     ];

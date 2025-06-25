@@ -110,7 +110,7 @@ stdenv.mkDerivation rec {
     description = "Lightweight high-performance web server";
     homepage = "http://www.lighttpd.net/";
     license = lib.licenses.bsd3;
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     maintainers = with lib.maintainers; [
       bjornfor
       brecht

@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     cp -a Shades-of-gray* $out/share/themes/
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Flat dark GTK theme with ergonomic contrasts";
     homepage = "https://github.com/WernerFP/Shades-of-gray-theme";
     license = lib.licenses.gpl3Plus;

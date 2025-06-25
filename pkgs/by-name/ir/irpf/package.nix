@@ -88,7 +88,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     homepage = "https://www.gov.br/receitafederal/pt-br";
     license = lib.licenses.unfree;
     platforms = lib.platforms.all;
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     maintainers = with lib.maintainers; [
       atila
       bryanasdev000

@@ -62,7 +62,7 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description = "Open Data Plane optimized for DPDK";
     homepage = "https://www.opendataplane.org";
     license = lib.licenses.bsd3;

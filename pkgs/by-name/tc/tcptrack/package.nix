@@ -35,11 +35,11 @@ stdenv.mkDerivation rec {
 
   env.NIX_CFLAGS_COMPILE = "-Wno-error=cpp";
 
-  meta = with lib; {
+  meta = {
     inherit (src.meta) homepage;
     description = "libpcap based program for live TCP connection monitoring";
     mainProgram = "tcptrack";
-    license = licenses.lgpl21;
+    license = lib.licenses.lgpl21;
     platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ bjornfor ];
   };

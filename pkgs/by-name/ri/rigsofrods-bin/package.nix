@@ -60,7 +60,7 @@ stdenv.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Free/libre soft-body physics simulator mainly targeted at simulating vehicle physics";
     homepage = "https://www.rigsofrods.org";
     license = lib.licenses.gpl3Plus;

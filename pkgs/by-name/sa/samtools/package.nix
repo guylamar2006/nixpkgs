@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     description = "Tools for manipulating SAM/BAM/CRAM format";
     license = lib.licenses.mit;
     homepage = "http://www.htslib.org/";

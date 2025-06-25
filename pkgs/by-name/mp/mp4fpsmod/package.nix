@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
       time codes of mp4.
     '';
     inherit (src.meta) homepage;
-    license = with licenses; [
+    license = with lib.licenses; [
       # All files are distributed as Public Domain, except for the followings:
       publicDomain
       mpl11 # mp4v2

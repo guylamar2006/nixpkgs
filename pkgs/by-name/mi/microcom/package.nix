@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     inherit (src.meta) homepage;
     license = lib.licenses.gpl2;
     maintainers = with lib.maintainers; [ emantor ];
-    platforms = with platforms; linux;
+    platforms = lib.platforms.linux;
     mainProgram = "microcom";
   };
 }

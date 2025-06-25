@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     broken = (stdenv.hostPlatform.isLinux && stdenv.hostPlatform.isAarch64);
     homepage = "https://github.com/jpcima/quadrafuzz";
     description = "Multi-band fuzz distortion plugin";

@@ -77,7 +77,7 @@ stdenv.mkDerivation rec {
     wrapPythonPrograms
   '';
 
-  meta = with lib; {
+  meta = {
     description = "SELinux sandbox utility";
     license = lib.licenses.gpl2Only;
     homepage = "https://selinuxproject.org";

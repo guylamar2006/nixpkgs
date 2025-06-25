@@ -52,7 +52,7 @@ flutter.buildFlutterApplication rec {
     })
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Elegant virtual machine manager for the desktop";
     homepage = "https://github.com/quickemu-project/quickgui";
     changelog = "https://github.com/quickemu-project/quickgui/releases/";

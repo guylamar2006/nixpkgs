@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   buildInputs = [ alsa-lib ];
   sourceRoot = "${src.name}/tools";
 
-  meta = with lib; {
+  meta = {
     description = "Tools to develop, test and debug SoF (Sund Open Firmware)";
     homepage = "https://thesofproject.github.io";
     license = lib.licenses.bsd3;

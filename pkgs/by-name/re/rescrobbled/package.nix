@@ -40,7 +40,7 @@ rustPlatform.buildRustPackage rec {
     install -Dm644 rescrobbled.service -t "$out/share/systemd/user"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "MPRIS music scrobbler daemon";
     homepage = "https://github.com/InputUsername/rescrobbled";
     license = lib.licenses.gpl3Plus;

@@ -17,7 +17,7 @@ buildGoModule rec {
 
   vendorHash = null;
 
-  meta = with lib; {
+  meta = {
     description = "Automatic Linux privilege escalation";
     longDescription = ''
       Automatically exploit low-hanging fruit to pop a root shell. Traitor packages
@@ -27,6 +27,6 @@ buildGoModule rec {
     homepage = "https://github.com/liamg/traitor";
     platforms = lib.platforms.linux;
     license = lib.licenses.mit;
-    maintainers = with maintainers; [ fab ];
+    maintainers = with lib.maintainers; [ fab ];
   };
 }

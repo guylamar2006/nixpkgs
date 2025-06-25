@@ -16,7 +16,7 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [ cmake ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://oscaf.sourceforge.net/";
     description = "Ontologies necessary for the Nepomuk semantic desktop";
     longDescription = ''

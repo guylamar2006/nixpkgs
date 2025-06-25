@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage {
   useFetchCargoVendor = true;
   cargoHash = "sha256-Pf8Jj8XGYbNOAyYEBdAysOK92S3S7bZHerQh/2UlrbQ=";
 
-  meta = with lib; {
+  meta = {
     description = "Simple CLI browser for the peertube federated video platform";
     homepage = "https://gitlab.com/peertube-viewer/peertube-viewer-rs";
     license = lib.licenses.agpl3Only;

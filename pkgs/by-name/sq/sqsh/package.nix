@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
 
   patchFlags = [ "-p0" ];
 
-  meta = with lib; {
+  meta = {
     description = "Command line tool for querying Sybase/MSSQL databases";
     mainProgram = "sqsh";
     longDescription = ''

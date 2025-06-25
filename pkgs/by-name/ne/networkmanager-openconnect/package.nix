@@ -75,7 +75,7 @@ stdenv.mkDerivation rec {
     networkManagerPlugin = "VPN/nm-openconnect-service.name";
   };
 
-  meta = with lib; {
+  meta = {
     description = "NetworkManager’s OpenConnect plugin";
     inherit (networkmanager.meta) maintainers teams platforms;
     license = lib.licenses.gpl2Plus;

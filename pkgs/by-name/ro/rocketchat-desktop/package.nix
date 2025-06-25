@@ -92,11 +92,11 @@ stdenv.mkDerivation rec {
       sed -i -e "s|Exec=.*$|Exec=$out/bin/rocketchat-desktop|" $out/share/applications/rocketchat-desktop.desktop
     '';
 
-  meta = with lib; {
+  meta = {
     description = "Official Desktop client for Rocket.Chat";
     mainProgram = "rocketchat-desktop";
     homepage = "https://github.com/RocketChat/Rocket.Chat.Electron";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
     platforms = [ "x86_64-linux" ];

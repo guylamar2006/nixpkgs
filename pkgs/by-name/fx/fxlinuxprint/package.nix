@@ -57,7 +57,7 @@ stdenv.mkDerivation rec {
       DocuPrint 3205 d/3208 d/3505 d/3508 d/4405 d/4408 d
     '';
     homepage = "https://onlinesupport.fujixerox.com";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;

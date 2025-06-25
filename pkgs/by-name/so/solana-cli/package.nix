@@ -119,7 +119,7 @@ rustPlatform.buildRustPackage rec {
   # If set, always finds OpenSSL in the system, even if the vendored feature is enabled.
   OPENSSL_NO_VENDOR = 1;
 
-  meta = with lib; {
+  meta = {
     description = "Web-Scale Blockchain for fast, secure, scalable, decentralized apps and marketplaces";
     homepage = "https://solana.com";
     license = lib.licenses.asl20;

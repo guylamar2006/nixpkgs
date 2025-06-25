@@ -21,7 +21,7 @@ stdenv.mkDerivation {
     makeFlags=( "PREFIX=$out" )
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Simple, stupid and slow HNCP daemon";
     homepage = "https://www.irif.univ-paris-diderot.fr/~jch/software/homenet/shncpd.html";
     license = lib.licenses.mit;

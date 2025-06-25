@@ -56,7 +56,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   makeFlags = [ "DESTDIR=$(out)" ];
 
-  meta = with lib; {
+  meta = {
     broken = stdenv.hostPlatform.isDarwin;
     homepage = "http://www.drpetter.se/project_sfxr.html";
     description = "Videogame sound effect generator";

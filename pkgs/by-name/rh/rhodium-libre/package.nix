@@ -24,7 +24,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "F/OSS/Libre font for Latin and Devanagari";
     homepage = "https://github.com/DunwichType/RhodiumLibre";
     license = lib.licenses.ofl;

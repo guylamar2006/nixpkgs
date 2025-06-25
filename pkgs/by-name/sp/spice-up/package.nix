@@ -59,7 +59,7 @@ stdenv.mkDerivation rec {
     updateScript = nix-update-script { };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Create simple and beautiful presentations";
     homepage = "https://github.com/Philip-Scott/Spice-up";
     maintainers = with lib.maintainers; [

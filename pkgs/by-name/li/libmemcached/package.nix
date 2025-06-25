@@ -38,6 +38,6 @@ stdenv.mkDerivation rec {
     homepage = "https://libmemcached.org";
     description = "Open source C/C++ client library and tools for the memcached server";
     license = lib.licenses.bsd3;
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

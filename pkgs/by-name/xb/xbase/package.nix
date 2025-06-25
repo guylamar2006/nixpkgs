@@ -30,10 +30,10 @@ stdenv.mkDerivation rec {
     })
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://sourceforge.net/projects/xdb/";
     description = "C++ class library formerly known as XDB";
     platforms = lib.platforms.linux;
-    license = licenses.lgpl2;
+    license = lib.licenses.lgpl2;
   };
 }

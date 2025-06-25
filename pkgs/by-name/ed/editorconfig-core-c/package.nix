@@ -49,7 +49,7 @@ stdenv.mkDerivation (finalAttrs: {
       editors, see the EditorConfig website.
     '';
     downloadPage = "https://github.com/editorconfig/editorconfig-core-c";
-    license = with licenses; [
+    license = with lib.licenses; [
       bsd2
       bsd3
     ];

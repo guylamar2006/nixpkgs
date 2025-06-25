@@ -115,9 +115,9 @@ stdenv.mkDerivation rec {
       models and sketches.
     '';
     homepage = "https://www.archimatetool.com/";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.mit;
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     maintainers = with lib.maintainers; [
       earldouglas
       paumr

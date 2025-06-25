@@ -24,7 +24,7 @@ stdenv.mkDerivation {
     flex
   ];
 
-  meta = with lib; {
+  meta = {
     description = "PIM for IPv6 sparse mode daemon";
     homepage = "https://github.com/troglobit/pim6sd";
     license = lib.licenses.bsd3;

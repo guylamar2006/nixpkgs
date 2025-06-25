@@ -69,6 +69,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.gpl2Plus;
     homepage = "http://www.linux-mtd.infradead.org/";
     maintainers = with lib.maintainers; [ skeuchel ];
-    platforms = with platforms; linux;
+    platforms = lib.platforms.linux;
   };
 }

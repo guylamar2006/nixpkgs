@@ -64,7 +64,7 @@ stdenv.mkDerivation rec {
       supported on a single jibri.
     '';
     homepage = "https://github.com/jitsi/jibri";
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.asl20;
     teams = with lib.teams; [ jitsi ];
     platforms = lib.platforms.linux;

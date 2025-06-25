@@ -25,7 +25,7 @@ stdenvNoCC.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Open Sans fonts";
     longDescription = ''
       Open Sans is a humanist sans serif typeface designed by Steve Matteson,

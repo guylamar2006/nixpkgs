@@ -64,6 +64,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.inet.no/dante/";
     maintainers = with lib.maintainers; [ arobyn ];
     license = lib.licenses.bsdOriginal;
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

@@ -45,7 +45,7 @@ buildGoModule rec {
 
   passthru.tests.soju = nixosTests.soju;
 
-  meta = with lib; {
+  meta = {
     description = "User-friendly IRC bouncer";
     longDescription = ''
       soju is a user-friendly IRC bouncer. soju connects to upstream IRC servers

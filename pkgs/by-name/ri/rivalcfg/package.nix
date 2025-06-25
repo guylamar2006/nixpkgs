@@ -38,7 +38,7 @@ python3Packages.buildPythonPackage rec {
     rm "$tmpudev"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Utility program that allows you to configure SteelSeries Rival gaming mice";
     homepage = "https://github.com/flozz/rivalcfg";
     license = lib.licenses.wtfpl;

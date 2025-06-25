@@ -44,7 +44,7 @@ python3.pkgs.buildPythonApplication rec {
     description = "Fix common misspellings in source code";
     mainProgram = "codespell";
     homepage = "https://github.com/codespell-project/codespell";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl2Only
       cc-by-sa-30
     ];

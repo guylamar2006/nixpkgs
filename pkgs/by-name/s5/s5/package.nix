@@ -25,12 +25,12 @@ buildGoModule rec {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     description = "cipher/decipher text within a file";
     mainProgram = "s5";
     homepage = "https://github.com/mvisonneau/s5";
     license = lib.licenses.asl20;
-    platforms = lib.platforms.unix ++ platforms.darwin;
+    platforms = lib.platforms.unix ++ lib.platforms.darwin;
     maintainers = with lib.maintainers; [ mvisonneau ];
   };
 }

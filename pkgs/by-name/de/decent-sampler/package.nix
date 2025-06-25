@@ -91,7 +91,7 @@ buildFHSEnv {
     # It claims to be free but we currently cannot find any license
     # that it is released under.
     license = lib.licenses.unfree;
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     platforms = [ "x86_64-linux" ];
     maintainers = with lib.maintainers; [
       adam248

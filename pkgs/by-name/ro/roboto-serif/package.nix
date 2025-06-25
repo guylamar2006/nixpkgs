@@ -28,7 +28,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Roboto family of fonts";
     longDescription = ''
       Google’s signature family of fonts, the default font on Android and

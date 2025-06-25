@@ -32,7 +32,7 @@ appimageTools.wrapType2 {
     homepage = "https://motrix.app";
     license = lib.licenses.mit;
     platforms = [ "x86_64-linux" ];
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     maintainers = with lib.maintainers; [ dit7ya ];
     mainProgram = "motrix";
   };

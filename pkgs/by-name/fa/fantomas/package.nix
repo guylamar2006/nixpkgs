@@ -10,7 +10,7 @@ buildDotnetGlobalTool {
     description = "F# source code formatter";
     homepage = "https://github.com/fsprojects/fantomas";
     license = lib.licenses.asl20;
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     maintainers = with lib.maintainers; [ mikaelfangel ];
     mainProgram = "fantomas";
   };

@@ -80,7 +80,7 @@ stdenv.mkDerivation rec {
     ln -s "$rules" "$out/etc/udev/rules.d/"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Free and Open On-Chip Debugging, In-System Programming and Boundary-Scan Testing";
     mainProgram = "openocd";
     longDescription = ''
@@ -98,6 +98,6 @@ stdenv.mkDerivation rec {
       bjornfor
       prusnak
     ];
-    platforms = lib.platforms.unix ++ platforms.windows;
+    platforms = lib.platforms.unix ++ lib.platforms.windows;
   };
 }

@@ -48,14 +48,14 @@ stdenv.mkDerivation rec {
 
   passthru.updateScript = nix-update-script { };
 
-  meta = with lib; {
+  meta = {
     description = "Dmenu rip-off with contextual completion";
     longDescription = ''
       XPrompt is a prompt for X. XPrompt features a text input field where the
       user can type in a text subject to tab-completion.
     '';
     homepage = "https://github.com/phillbush/xprompt";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
     mainProgram = "xprompt";

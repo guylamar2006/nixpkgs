@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     libgringotts
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Handy personal organizer";
     mainProgram = "osmo";
     homepage = "https://clayo.org/osmo/";

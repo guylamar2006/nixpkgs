@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   ];
   installFlags = [ "prefix=$(out)" ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/bartobri/no-more-secrets";
     description = ''
       A command line tool that recreates the famous data decryption

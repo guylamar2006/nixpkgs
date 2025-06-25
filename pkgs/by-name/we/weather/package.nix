@@ -44,11 +44,11 @@ stdenv.mkDerivation rec {
     installManPage weather.1 weatherrc.5
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "http://fungi.yuggoth.org/weather";
     description = "Quick access to current weather conditions and forecasts";
     mainProgram = "weather";
-    license = licenses.isc;
+    license = lib.licenses.isc;
     maintainers = with lib.maintainers; [ matthiasbeyer ];
     platforms = lib.platforms.unix;
   };

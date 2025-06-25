@@ -32,7 +32,7 @@ buildGoModule rec {
     installManPage *.1
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Tool for effortless deployment and configuration management";
     homepage = "https://spot.umputun.dev/";
     maintainers = with lib.maintainers; [ sikmir ];

@@ -47,7 +47,7 @@ stdenv.mkDerivation (finalAttrs: {
     installManPage recoverdm.1
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Recover damaged CD DVD and disks with bad sectors";
     mainProgram = "recoverdm";
     homepage = "https://salsa.debian.org/pkg-security-team/recoverdm";

@@ -29,7 +29,7 @@ buildGoModule {
   buildInputs = lib.optional withPcap libpcap;
   tags = lib.optional withPcap "pcap" ++ lib.optional withRawsocket "rawsocket";
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/macronut/phantomsocks";
     description = "Cross-platform proxy client/server for Linux/Windows/macOS";
     longDescription = ''

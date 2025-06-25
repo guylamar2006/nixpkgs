@@ -25,7 +25,7 @@ stdenv.mkDerivation (finalAttrs: {
     "-DSOL2_BUILD_LUA=FALSE"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Lua API wrapper with advanced features and top notch performance";
     longDescription = ''
       sol2 is a C++ library binding to Lua.

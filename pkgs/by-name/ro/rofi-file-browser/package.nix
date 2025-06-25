@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
 
   dontUseCmakeBuildDir = true;
 
-  meta = with lib; {
+  meta = {
     description = "Use rofi to quickly open files";
     homepage = "https://github.com/marvinkreis/rofi-file-browser-extended";
     license = lib.licenses.mit;

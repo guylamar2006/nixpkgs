@@ -59,7 +59,7 @@ stdenv.mkDerivation rec {
     ant runalltests
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/RealTimeGenomics/rtg-tools";
     description = "Useful utilities for dealing with VCF files and sequence data, especially vcfeval";
     license = lib.licenses.bsd2;

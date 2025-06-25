@@ -127,8 +127,8 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://libreswan.org";
     description = "Free software implementation of the VPN protocol based on IPSec and the Internet Key Exchange";
-    platforms = lib.platforms.linux ++ platforms.freebsd;
-    license = with licenses; [
+    platforms = lib.platforms.linux ++ lib.platforms.freebsd;
+    license = with lib.licenses; [
       gpl2Plus
       mpl20
     ];

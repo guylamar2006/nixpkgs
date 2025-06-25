@@ -114,7 +114,7 @@ stdenv.mkDerivation rec {
       puffnfresh
       fabiangd
     ];
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.mit;
     platforms = [ "x86_64-linux" ];
     mainProgram = "hyper";

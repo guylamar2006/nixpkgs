@@ -45,7 +45,7 @@ rustPlatform.buildRustPackage rec {
 
   NIX_WEB_BUILD_NIX_CLI_PATH = "${nixPackage}/bin/nix";
 
-  meta = with lib; {
+  meta = {
     description = "Web interface for the Nix store";
     homepage = "https://codeberg.org/gorgon/gorgon/src/branch/main/nix-web";
     license = lib.licenses.eupl12;

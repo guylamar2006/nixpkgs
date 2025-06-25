@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Command line tool for deskewing scanned text documents";
     homepage = "https://galfar.vevb.net/deskew";
-    license = with licenses; [
+    license = with lib.licenses; [
       mit
       mpl11
     ];

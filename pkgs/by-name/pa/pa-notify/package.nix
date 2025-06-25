@@ -32,7 +32,7 @@ stdenv.mkDerivation (finalAttrs: {
     libpulseaudio
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/ikrivosheev/pa-notify";
     description = "PulseAudio or PipeWire volume notification";
     license = lib.licenses.mit;

@@ -30,7 +30,7 @@ buildGoModule rec {
 
   passthru.tests = { inherit (nixosTests.prometheus-exporters) smartctl; };
 
-  meta = with lib; {
+  meta = {
     description = "Export smartctl statistics for Prometheus";
     mainProgram = "smartctl_exporter";
     homepage = "https://github.com/prometheus-community/smartctl_exporter";

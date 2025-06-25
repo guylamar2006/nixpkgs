@@ -30,7 +30,7 @@ buildGoModule {
     unset subPackages
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Static Analysis tool to detect potential Nil panics in Go code";
     homepage = "https://github.com/uber-go/nilaway";
     license = lib.licenses.asl20;

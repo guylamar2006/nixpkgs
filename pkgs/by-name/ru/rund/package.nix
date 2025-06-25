@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
     mv $NIX_BUILD_TOP/rund $out/bin
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Compiler-wrapper that runs and caches D programs";
     mainProgram = "rund";
     homepage = "https://github.com/dragon-lang/rund";

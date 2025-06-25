@@ -166,7 +166,7 @@ stdenvNoCC.mkDerivation rec {
     description = "Decentralized bitcoin exchange network";
     homepage = "https://bisq.network";
     mainProgram = "bisq2";
-    sourceProvenance = with sourceTypes; [
+    sourceProvenance = with lib.sourceTypes; [
       binaryBytecode
     ];
     license = lib.licenses.mit;

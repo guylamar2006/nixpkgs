@@ -24,7 +24,7 @@ buildGoModule rec {
     mv $out/bin/SNOWCRASH $out/bin/${pname}
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Polyglot payload generator";
     homepage = "https://github.com/redcode-labs/SNOWCRASH";
     license = lib.licenses.mit;

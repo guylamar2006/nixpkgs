@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     mkdir -p $out/bin
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Netgear Unbrick Utility";
     homepage = "https://github.com/jclehner/nmrpflash";
     license = lib.licenses.gpl3;

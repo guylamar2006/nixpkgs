@@ -24,7 +24,7 @@ stdenvNoCC.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Desktop/gui font for integrated use with the KDE desktop";
     longDescription = ''
       Oxygen Font is a font family originally aimed as a desktop/gui

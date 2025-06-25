@@ -75,7 +75,7 @@ stdenv.mkDerivation (finalAttrs: {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "High-quality network audio streaming";
     homepage = "https://sonobus.net/";
     license = lib.licenses.gpl3Plus;

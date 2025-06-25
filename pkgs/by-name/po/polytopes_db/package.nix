@@ -18,7 +18,7 @@ stdenv.mkDerivation rec {
     cp -R * "$out/share/reflexive_polytopes/"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Reflexive polytopes database";
     license = lib.licenses.gpl2;
     platforms = lib.platforms.all;

@@ -20,7 +20,7 @@ stdenv.mkDerivation rec {
     cp src/snabb $out/bin
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/SnabbCo/snabbswitch";
     description = "Simple and fast packet networking toolkit";
     longDescription = ''

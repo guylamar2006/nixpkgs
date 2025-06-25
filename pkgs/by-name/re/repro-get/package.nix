@@ -67,7 +67,7 @@ buildGoModule rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Reproducible apt/dnf/apk/pacman, with content-addressing";
     homepage = "https://github.com/reproducible-containers/repro-get";
     license = lib.licenses.asl20;

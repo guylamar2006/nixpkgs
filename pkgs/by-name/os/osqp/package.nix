@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [ cmake ];
 
-  meta = with lib; {
+  meta = {
     description = "Quadratic programming solver using operator splitting";
     homepage = "https://osqp.org";
     license = lib.licenses.asl20;

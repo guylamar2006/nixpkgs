@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
 
   installFlags = [ "PREFIX=$(out)" ];
 
-  meta = with lib; {
+  meta = {
     description = "Simple file manager";
     homepage = "https://github.com/afify/sfm";
     license = lib.licenses.isc;

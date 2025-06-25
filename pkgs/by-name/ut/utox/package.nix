@@ -64,11 +64,11 @@ stdenv.mkDerivation rec {
   doCheck = stdenv.buildPlatform.canExecute stdenv.hostPlatform;
   nativeCheckInputs = [ check ];
 
-  meta = with lib; {
+  meta = {
     description = "Lightweight Tox client";
     mainProgram = "utox";
     homepage = "https://github.com/uTox/uTox";
-    license = licenses.gpl3;
+    license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.all;
   };

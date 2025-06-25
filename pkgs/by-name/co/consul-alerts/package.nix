@@ -28,7 +28,7 @@ buildGoModule rec {
     description = "Extendable open source continuous integration server";
     homepage = "https://github.com/AcalephStorage/consul-alerts";
     # As per README
-    platforms = lib.platforms.linux ++ platforms.freebsd ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.freebsd ++ lib.platforms.darwin;
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ nh2 ];
   };

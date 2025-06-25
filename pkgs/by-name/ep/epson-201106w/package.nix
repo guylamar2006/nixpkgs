@@ -86,7 +86,7 @@ stdenv.mkDerivation {
           drivers = [ pkgs.epson-201106w ];
         };
     '';
-    license = with licenses; [
+    license = with lib.licenses; [
       lgpl21
       epson
     ];

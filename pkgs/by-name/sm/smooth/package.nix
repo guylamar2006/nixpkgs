@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
     zlib
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Smooth Class Library";
     mainProgram = "smooth-translator";
     license = lib.licenses.artistic2;

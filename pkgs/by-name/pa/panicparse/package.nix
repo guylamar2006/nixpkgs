@@ -19,7 +19,7 @@ buildGoModule rec {
 
   subPackages = [ "." ];
 
-  meta = with lib; {
+  meta = {
     description = "Crash your app in style (Golang)";
     homepage = "https://github.com/maruel/panicparse";
     license = lib.licenses.asl20;

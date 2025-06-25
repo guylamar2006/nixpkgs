@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
       --prefix PATH : "${lib.makeBinPath [ babashka ]}"
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/babashka/neil";
     description = "CLI to add common aliases and features to deps.edn-based projects";
     mainProgram = "neil";

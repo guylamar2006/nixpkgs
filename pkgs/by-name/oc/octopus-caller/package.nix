@@ -59,7 +59,7 @@ stdenv.mkDerivation rec {
     mv $out/octopus $out/bin
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Bayesian haplotype-based mutation calling";
     mainProgram = "octopus";
     license = lib.licenses.mit;

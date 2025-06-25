@@ -30,7 +30,7 @@ python3.pkgs.buildPythonApplication rec {
     "test_removal_command"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Simple command line interface for backup rotation";
     mainProgram = "rotate-backups";
     homepage = "https://github.com/xolox/python-rotate-backups";

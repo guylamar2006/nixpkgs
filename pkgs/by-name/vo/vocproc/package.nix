@@ -31,10 +31,10 @@ stdenv.mkDerivation rec {
     "INSTALL_DIR=$(out)/lib/lv2"
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://hyperglitch.com/dev/VocProc";
     description = "LV2 plugin for pitch shifting (with or without formant correction), vocoding, automatic pitch correction and harmonizing of singing voice (harmonizer)";
-    license = licenses.gpl2;
+    license = lib.licenses.gpl2;
     maintainers = with lib.maintainers; [ michalrus ];
     platforms = lib.platforms.linux;
   };

@@ -22,7 +22,7 @@ buildGoModule {
   # predeclared any requires go1.18 or later (-lang was set to go1.16; check go.mod)
   patches = [ ./gomod.patch ];
 
-  meta = with lib; {
+  meta = {
     description = "Prometheus exporter for SSL certificate";
     mainProgram = "node-cert-exporter";
     homepage = "https://github.com/amimof/node-cert-exporter";

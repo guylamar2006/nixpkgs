@@ -65,7 +65,7 @@ stdenv.mkDerivation rec {
 
   checkTarget = "test";
 
-  meta = with lib; {
+  meta = {
     description = "Text-to-speech engine";
     maintainers = with lib.maintainers; [ raskin ];
     platforms = lib.platforms.unix;

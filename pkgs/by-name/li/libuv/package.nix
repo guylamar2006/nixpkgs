@@ -204,7 +204,7 @@ stdenv.mkDerivation (finalAttrs: {
     pkgConfigModules = [ "libuv" ];
     maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.all;
-    license = with licenses; [
+    license = with lib.licenses; [
       mit
       isc
       bsd2

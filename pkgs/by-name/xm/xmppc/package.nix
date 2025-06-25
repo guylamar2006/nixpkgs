@@ -38,11 +38,11 @@ stdenv.mkDerivation rec {
     mkdir m4
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Command Line Interface Tool for XMPP";
     mainProgram = "xmppc";
     homepage = "https://codeberg.org/Anoxinon_e.V./xmppc";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ jugendhacker ];
   };

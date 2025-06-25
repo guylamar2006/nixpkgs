@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     libsForQt5.qtsvg
   ] ++ lib.optionals x11Support [ libsForQt5.qtx11extras ];
 
-  meta = with lib; {
+  meta = {
     description = "Practical and minimal image viewer";
     mainProgram = "qview";
     homepage = "https://interversehq.com/qview/";

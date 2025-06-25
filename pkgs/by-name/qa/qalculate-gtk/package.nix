@@ -38,7 +38,7 @@ stdenv.mkDerivation (finalAttrs: {
   ];
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description = "Ultimate desktop calculator";
     homepage = "http://qalculate.github.io";
     maintainers = with lib.maintainers; [

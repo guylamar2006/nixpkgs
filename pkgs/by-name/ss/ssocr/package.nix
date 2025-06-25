@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
 
   installFlags = [ "PREFIX=$(out)" ];
 
-  meta = with lib; {
+  meta = {
     description = "Seven Segment Optical Character Recognition";
     homepage = "https://github.com/auerswal/ssocr";
     license = lib.licenses.gpl3;

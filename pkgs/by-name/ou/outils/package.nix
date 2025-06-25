@@ -26,10 +26,10 @@ stdenv.mkDerivation rec {
 
   makeFlags = [ "PREFIX=$(out)" ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/leahneukirchen/outils";
     description = "Port of OpenBSD-exclusive tools such as `calendar`, `vis`, and `signify`";
-    license = with licenses; [
+    license = with lib.licenses; [
       beerware
       bsd2
       bsd3

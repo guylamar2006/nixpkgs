@@ -87,7 +87,7 @@ stdenv.mkDerivation rec {
 
   '';
 
-  meta = with lib; {
+  meta = {
     description = ''
       New programming language strongly inspired by Rebol, but with a
       broader field of usage thanks to its native-code compiler, from system

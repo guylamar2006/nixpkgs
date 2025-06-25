@@ -41,7 +41,7 @@ python3.pkgs.buildPythonApplication rec {
     version = "smassh - v${version}";
   };
 
-  meta = with lib; {
+  meta = {
     description = "TUI based typing test application inspired by MonkeyType";
     homepage = "https://github.com/kraanzu/smassh";
     changelog = "https://github.com/kraanzu/smassh/blob/main/CHANGELOG.md";

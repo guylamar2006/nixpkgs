@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
     install -Dm755 nullidentdmod $out/bin
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Simple identd that just replies with a random string or customized userid";
     mainProgram = "nullidentdmod";
     license = lib.licenses.gpl2Plus;

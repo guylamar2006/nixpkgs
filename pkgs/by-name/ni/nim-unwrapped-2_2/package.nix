@@ -172,7 +172,7 @@ stdenv.mkDerivation (finalAttrs: {
     inherit nimHost nimTarget;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Statically typed, imperative programming language";
     homepage = "https://nim-lang.org/";
     license = lib.licenses.mit;

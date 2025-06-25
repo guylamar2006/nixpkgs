@@ -39,6 +39,6 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "kdoctor";
     maintainers = with lib.maintainers; [ sironheart ];
     platforms = lib.platforms.darwin;
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
   };
 })

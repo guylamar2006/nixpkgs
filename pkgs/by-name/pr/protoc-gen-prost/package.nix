@@ -19,7 +19,7 @@ rustPlatform.buildRustPackage rec {
 
   passthru.updateScript = nix-update-script { };
 
-  meta = with lib; {
+  meta = {
     description = "Protocol Buffers compiler plugin powered by Prost";
     mainProgram = "protoc-gen-prost";
     homepage = "https://github.com/neoeinstein/protoc-gen-prost";

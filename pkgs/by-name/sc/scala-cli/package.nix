@@ -79,10 +79,10 @@ stdenv.mkDerivation {
         --zsh <(scala-cli completions zsh)
     '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://scala-cli.virtuslab.org";
     downloadPage = "https://github.com/VirtusLab/scala-cli/releases/v${version}";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.asl20;
     description = "Command-line tool to interact with the Scala language";
     mainProgram = "scala-cli";

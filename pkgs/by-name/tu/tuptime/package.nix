@@ -49,11 +49,11 @@ stdenv.mkDerivation rec {
 
   passthru.tests = nixosTests.tuptime;
 
-  meta = with lib; {
+  meta = {
     description = "Total uptime & downtime statistics utility";
     homepage = "https://github.com/rfrail3/tuptime";
     changelog = "https://github.com/rfrail3/tuptime/blob/master/CHANGELOG";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ evils ];
     mainProgram = "tuptime";

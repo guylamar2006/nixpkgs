@@ -23,7 +23,7 @@ rustPlatform.buildRustPackage rec {
     mainProgram = "cargo-cranky";
     homepage = "https://github.com/ericseppanen/cargo-cranky";
     changelog = "https://github.com/ericseppanen/cargo-cranky/releases/tag/${src.rev}";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       mit
     ];

@@ -22,7 +22,7 @@ buildGoModule rec {
     "-w"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Top for /proc/pressure";
     homepage = "https://github.com/jamespwilliams/psitop";
     license = lib.licenses.mit;

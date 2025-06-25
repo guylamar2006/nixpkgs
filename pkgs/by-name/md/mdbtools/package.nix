@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
 
   meta = {
     description = ".mdb (MS Access) format tools";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl2Plus
       lgpl2
     ];

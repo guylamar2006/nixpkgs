@@ -78,7 +78,7 @@ stdenv.mkDerivation rec {
       modes, BaseX offers a client/server architecture.
     '';
     homepage = "https://basex.org/";
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.bsd3;
     platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ bjornfor ];

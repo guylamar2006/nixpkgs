@@ -59,12 +59,12 @@ stdenv.mkDerivation rec {
     gtk2
   ];
 
-  meta = with lib; {
+  meta = {
     description = "GUI for chess engines";
     mainProgram = "xboard";
     homepage = "https://www.gnu.org/software/xboard/";
-    maintainers = with maintainers; [ raskin ];
+    maintainers = with lib.maintainers; [ raskin ];
     platforms = lib.platforms.unix;
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
   };
 }

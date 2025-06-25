@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Solarized versions of Numix GTK2 and GTK3 theme";
     longDescription = ''
       This is a fork of the Numix GTK theme that replaces the colors of the theme

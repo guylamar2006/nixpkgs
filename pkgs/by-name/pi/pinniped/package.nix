@@ -34,7 +34,7 @@ buildGoModule rec {
       --zsh <($out/bin/pinniped completion zsh)
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Tool to securely log in to your Kubernetes clusters";
     mainProgram = "pinniped";
     homepage = "https://pinniped.dev/";

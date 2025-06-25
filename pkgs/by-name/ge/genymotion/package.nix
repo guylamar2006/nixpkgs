@@ -121,7 +121,7 @@ stdenv.mkDerivation rec {
       suitable for application testing.
     '';
     homepage = "https://www.genymotion.com/";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unfree;
     platforms = [ "x86_64-linux" ];
     maintainers = with lib.maintainers; [ puffnfresh ];

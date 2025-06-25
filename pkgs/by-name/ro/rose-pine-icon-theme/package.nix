@@ -38,7 +38,7 @@ stdenvNoCC.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Rosé Pine icon theme for GTK";
     homepage = "https://github.com/rose-pine/gtk";
     license = lib.licenses.gpl3Only;

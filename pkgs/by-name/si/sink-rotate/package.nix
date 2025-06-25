@@ -31,7 +31,7 @@ rustPlatform.buildRustPackage {
       --prefix PATH : ${wireplumber}/bin/wpctl
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Command that rotates the default PipeWire audio sink";
     homepage = "https://github.com/mightyiam/sink-rotate";
     license = lib.licenses.mit;

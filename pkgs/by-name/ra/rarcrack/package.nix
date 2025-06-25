@@ -38,7 +38,7 @@ stdenv.mkDerivation {
     mkdir -p $out/bin
   '';
 
-  meta = with lib; {
+  meta = {
     description = "This program can crack zip,7z and rar file passwords";
     longDescription = ''
       If you forget your password for compressed archive (rar, 7z, zip), this program is the solution.
@@ -48,6 +48,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/jaredsburrows/Rarcrack";
     license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ davidak ];
-    platforms = with platforms; unix;
+    platforms = lib.platforms.unix;
   };
 }

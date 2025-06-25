@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     cp htdocs/index.html nuweb.w nuweb.pdf nuwebdoc.pdf README $out/share/doc/${pname}-${version}
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Simple literate programming tool";
     mainProgram = "nuweb";
     homepage = "https://nuweb.sourceforge.net";

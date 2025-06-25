@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
     cp src/*.js $out
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Set of JavaScript libraries to enhance the user interface of web sites";
     longDescription = ''
       script.aculo.us provides you with

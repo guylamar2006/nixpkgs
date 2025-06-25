@@ -71,7 +71,7 @@ stdenv.mkDerivation rec {
     updateScript = nix-update-script { };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Your little expandable text snippet helper";
     longDescription = ''
       Your little expandable text snippet helper.

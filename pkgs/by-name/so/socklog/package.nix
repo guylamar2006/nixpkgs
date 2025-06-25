@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     description = "System and kernel logging services";
     homepage = "https://smarden.org/socklog/";
     license = lib.licenses.publicDomain;

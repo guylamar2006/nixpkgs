@@ -82,7 +82,7 @@ stdenv.mkDerivation {
     cp -a *.ttf $out/share/fonts/truetype/
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://fonts.google.com/specimen/Rubik";
     description = "Rubik Font - is a 5 weight Roman + Italic family";
     longDescription = ''

@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
     runHook postConfigure
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Measure RDMA and IP performance";
     mainProgram = "qperf";
     homepage = "https://github.com/linux-rdma/qperf";

@@ -25,7 +25,7 @@ python3.pkgs.buildPythonApplication rec {
     colorama
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Automatically delete your old tweets, except for the ones you want to keep";
     homepage = "https://github.com/micahflee/semiphemeral";
     license = lib.licenses.mit;

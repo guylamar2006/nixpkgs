@@ -22,7 +22,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Cross-platform shared library for serial port access";
     homepage = "https://sigrok.org/";
     license = lib.licenses.gpl3Plus;
-    platforms = with lib; platforms.linux ++ platforms.darwin ++ platforms.windows;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin ++ lib.platforms.windows;
     maintainers = with lib.maintainers; [ bjornfor ];
   };
 })

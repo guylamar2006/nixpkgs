@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/fsaintjacques/semver-tool";
     description = "semver bash implementation";
     license = lib.licenses.asl20;

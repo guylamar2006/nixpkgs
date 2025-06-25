@@ -54,7 +54,7 @@ stdenv.mkDerivation rec {
     sqlite
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Ntfy client application to receive everyday's notifications";
     homepage = "https://github.com/ranfdev/Notify";
     license = lib.licenses.gpl3Plus;

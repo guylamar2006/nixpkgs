@@ -41,7 +41,7 @@ stdenv.mkDerivation (finalAttrs: {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/cloudinary/ssimulacra2";
     maintainers = with lib.maintainers; [ viraptor ];
     license = lib.licenses.bsd3;

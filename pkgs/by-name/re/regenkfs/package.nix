@@ -20,7 +20,7 @@ rustPlatform.buildRustPackage {
 
   buildFeatures = [ "c-undef" ];
 
-  meta = with lib; {
+  meta = {
     description = "Reimplementation of genkfs in Rust";
     homepage = "https://github.com/siraben/regenkfs";
     license = lib.licenses.mit;

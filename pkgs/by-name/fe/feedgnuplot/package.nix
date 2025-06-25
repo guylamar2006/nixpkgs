@@ -73,7 +73,7 @@ perlPackages.buildPerlPackage rec {
   meta = {
     description = "General purpose pipe-oriented plotting tool";
     homepage = "https://github.com/dkogan/feedgnuplot/";
-    license = with licenses; [
+    license = with lib.licenses; [
       artistic1
       gpl1Plus
     ];

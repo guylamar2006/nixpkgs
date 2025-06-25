@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
     updateScript = gitUpdater { rev-prefix = "ver."; };
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/BYVoid/OpenCC";
     license = lib.licenses.asl20;
     description = "Project for conversion between Traditional and Simplified Chinese";
@@ -53,6 +53,6 @@ stdenv.mkDerivation rec {
       Taiwan and Hong kong.
     '';
     maintainers = with lib.maintainers; [ sifmelcara ];
-    platforms = with platforms; linux ++ darwin;
+    platforms = with lib.platforms; linux ++ darwin;
   };
 }

@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     sed -i 's;/usr;$$PREFIX/;g' phototonic.pro
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Image viewer and organizer";
     mainProgram = "phototonic";
     homepage = "https://github.com/oferkv/phototonic";

@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     homepage = "http://memcached.org/";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ coconnor ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     mainProgram = "memcached";
   };
   passthru.tests = {

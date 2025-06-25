@@ -155,7 +155,7 @@ stdenv.mkDerivation rec {
     uefiCdrom = nixosTests.boot.uefiCdrom;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Graphical {,U}EFI boot manager";
     longDescription = ''
       rEFInd is a graphical boot manager for EFI- and UEFI-based

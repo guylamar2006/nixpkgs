@@ -120,7 +120,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = {
     description = "Active Directory reconnaissance and attack path management tool";
     homepage = "https://github.com/BloodHoundAD/BloodHound";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     changelog = "https://github.com/BloodHoundAD/BloodHound/releases/tag/v${finalAttrs.version}";
     downloadPage = "https://github.com/BloodHoundAD/BloodHound/releases";
     license = lib.licenses.gpl3Plus;

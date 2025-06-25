@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
 
   passthru.updateScript = ./update-bin.sh;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://urbit.org";
     description = "Operating function";
     platforms = [
@@ -41,8 +41,8 @@ stdenv.mkDerivation rec {
       "aarch64-darwin"
     ];
     maintainers = with lib.maintainers; [ matthew-levan ];
-    license = licenses.mit;
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    license = lib.licenses.mit;
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     mainProgram = "urbit";
   };
 }

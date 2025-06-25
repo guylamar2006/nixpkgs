@@ -31,7 +31,7 @@ python3Packages.buildPythonApplication rec {
     python3Packages.regex
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Replace strings in files";
     mainProgram = "rpl";
     homepage = "https://github.com/rrthomas/rpl";

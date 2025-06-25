@@ -43,11 +43,11 @@ stdenv.mkDerivation rec {
     export DYLD_LIBRARY_PATH=$(pwd)/lib/.libs
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://tatsuhiro-t.github.io/wslay/";
     description = "WebSocket library in C";
     license = lib.licenses.mit;
-    maintainers = with maintainers; [ pingiun ];
+    maintainers = with lib.maintainers; [ pingiun ];
     platforms = lib.platforms.unix;
   };
 }

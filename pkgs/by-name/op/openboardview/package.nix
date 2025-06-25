@@ -71,7 +71,7 @@ stdenv.mkDerivation rec {
     ignoredVersions = ''.*\.90\..*'';
   };
 
-  meta = with lib; {
+  meta = {
     description = "Linux SDL/ImGui edition software for viewing .brd files";
     mainProgram = "openboardview";
     homepage = "https://github.com/OpenBoardView/OpenBoardView";

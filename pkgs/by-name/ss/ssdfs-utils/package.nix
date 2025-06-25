@@ -38,11 +38,11 @@ stdenv.mkDerivation {
     updateScript = ./update.sh;
   };
 
-  meta = with lib; {
+  meta = {
     description = "SSDFS file system utilities";
     homepage = "https://github.com/dubeyko/ssdfs-tools";
     license = lib.licenses.bsd3Clear;
-    maintainers = with maintainers; [ ners ];
+    maintainers = with lib.maintainers; [ ners ];
     platforms = lib.platforms.linux;
   };
 }

@@ -31,6 +31,6 @@ stdenv.mkDerivation {
     description = "Lightweight C++ I/O library for POSIX operation systems";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ jappie ];
-    platforms = with platforms; linux;
+    platforms = lib.platforms.linux;
   };
 }

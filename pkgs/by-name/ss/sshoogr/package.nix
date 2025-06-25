@@ -24,7 +24,7 @@ stdenv.mkDerivation rec {
       --prefix JAVA_HOME : ${jdk}
   '';
 
-  meta = with lib; {
+  meta = {
     description = ''
       A Groovy-based DSL for working with remote SSH servers
     '';
@@ -38,6 +38,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/aestasit/sshoogr";
     license = lib.licenses.asl20;
     platforms = lib.platforms.all;
-    maintainers = with maintainers; [ moaxcp ];
+    maintainers = with lib.maintainers; [ moaxcp ];
   };
 }

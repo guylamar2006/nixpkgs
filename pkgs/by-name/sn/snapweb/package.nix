@@ -31,7 +31,7 @@ buildNpmPackage rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Web client for Snapcast";
     homepage = "https://github.com/badaix/snapweb";
     maintainers = with lib.maintainers; [ ettom ];

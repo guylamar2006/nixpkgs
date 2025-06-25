@@ -24,7 +24,7 @@ stdenv.mkDerivation rec {
     freeimage
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Texture packer and resource bundler";
     platforms = [
       "i686-linux"

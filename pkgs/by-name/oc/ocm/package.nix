@@ -50,7 +50,7 @@ buildGoModule rec {
     command = "ocm version";
   };
 
-  meta = with lib; {
+  meta = {
     description = "CLI for the Red Hat OpenShift Cluster Manager";
     mainProgram = "ocm";
     license = lib.licenses.asl20;

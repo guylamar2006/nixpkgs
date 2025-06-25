@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     ++ lib.optionals stdenv.hostPlatform.isWindows [ ./disable-cert-store.patch ];
   configureFlags = [ "--disable-examples" ];
 
-  meta = with lib; {
+  meta = {
     description = "High-level API for decoding and seeking in .opus files";
     homepage = "https://www.opus-codec.org/";
     license = lib.licenses.bsd3;

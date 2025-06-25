@@ -32,7 +32,7 @@ rustPlatform.buildRustPackage rec {
     installShellCompletion artifacts/nix-melt.{bash,fish} --zsh artifacts/_nix-melt
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Ranger-like flake.lock viewer";
     mainProgram = "nix-melt";
     homepage = "https://github.com/nix-community/nix-melt";

@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
 
   propagatedUserEnvPkgs = [ gtk-engine-murrine ];
 
-  meta = with lib; {
+  meta = {
     description = "Minimalistic GTK, gnome shell and Xfce themes";
     homepage = "https://github.com/lassekongo83/stilo-themes";
     license = lib.licenses.gpl3Only;

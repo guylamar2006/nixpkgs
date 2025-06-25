@@ -25,7 +25,7 @@ rustPlatform.buildRustPackage {
   meta = {
     description = "Emmet-like language that produces JSON, TOML, or YAML";
     homepage = "https://github.com/yoav-lavi/august";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       mit
     ];

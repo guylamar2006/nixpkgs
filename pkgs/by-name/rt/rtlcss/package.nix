@@ -20,7 +20,7 @@ buildNpmPackage rec {
 
   dontNpmBuild = true;
 
-  meta = with lib; {
+  meta = {
     description = "Framework for converting Left-To-Right (LTR) Cascading Style Sheets(CSS) to Right-To-Left (RTL)";
     mainProgram = "rtlcss";
     homepage = "https://rtlcss.com";

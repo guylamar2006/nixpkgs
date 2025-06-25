@@ -88,7 +88,7 @@ stdenv.mkDerivation {
     inherit (nixosTests) seafile;
   };
 
-  meta = with lib; {
+  meta = {
     description = "File syncing and sharing software with file encryption and group sharing, emphasis on reliability and high performance";
     homepage = "https://github.com/haiwen/seafile-server";
     license = lib.licenses.agpl3Plus;

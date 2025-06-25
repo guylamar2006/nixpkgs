@@ -191,7 +191,7 @@ stdenv.mkDerivation rec {
     ! test -e "$DESTDIR"
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/polkit-org/polkit";
     description = "Toolkit for defining and handling the policy that allows unprivileged processes to speak to privileged processes";
     license = lib.licenses.lgpl2Plus;

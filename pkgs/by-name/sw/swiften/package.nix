@@ -85,11 +85,11 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description = "XMPP library for C++, used by the Swift client";
     mainProgram = "swiften-config";
     homepage = "http://swift.im/swiften.html";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ twey ];
   };

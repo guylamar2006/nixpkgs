@@ -27,7 +27,7 @@ buildGoModule rec {
     inherit (nixosTests) nginx-sso;
   };
 
-  meta = with lib; {
+  meta = {
     description = "SSO authentication provider for the auth_request nginx module";
     homepage = "https://github.com/Luzifer/nginx-sso";
     license = lib.licenses.asl20;

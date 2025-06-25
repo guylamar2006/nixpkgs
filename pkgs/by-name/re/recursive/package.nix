@@ -18,7 +18,7 @@ stdenvNoCC.mkDerivation rec {
     install -D -t $out/share/fonts/truetype/ $(find $src -type f -name '*.ttf')
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://recursive.design/";
     description = "Variable font family for code & UI";
     license = lib.licenses.ofl;

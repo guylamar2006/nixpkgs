@@ -18,11 +18,11 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-P8QkAzZ7jR8U+WzMLo4kDwMrARLk+RQWOr/j+8GCN0A=";
 
-  meta = with lib; {
+  meta = {
     description = "Batch rename utility for developers";
     homepage = "https://github.com/yaa110/nomino";
     changelog = "https://github.com/yaa110/nomino/releases/tag/${src.rev}";
-    license = with licenses; [
+    license = with lib.licenses; [
       mit # or
       asl20
     ];

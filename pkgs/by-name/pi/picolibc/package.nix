@@ -215,7 +215,7 @@ stdenv.mkDerivation (finalAttrs: {
       '';
       homepage = "https://keithp.com/picolibc/";
       changelog = "https://github.com/picolibc/picolibc/releases/tag/${finalAttrs.version}";
-      license = [
+      license = with lib.licenses; [
         licenses.bsd2
         licenses.bsd3
       ];

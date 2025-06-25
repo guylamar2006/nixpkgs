@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description = "Utilities to save and restore used blocks on a partition";
     longDescription = ''
       Partclone provides utilities to save and restore used blocks on a

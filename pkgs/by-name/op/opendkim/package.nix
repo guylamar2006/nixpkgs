@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
       --prefix PATH : ${openssl.bin}/bin
   '';
 
-  meta = with lib; {
+  meta = {
     description = "C library for producing DKIM-aware applications and an open source milter for providing DKIM service";
     homepage = "http://www.opendkim.org/";
     maintainers = with lib.maintainers; [ abbradar ];

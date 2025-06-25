@@ -80,7 +80,7 @@ stdenv.mkDerivation rec {
   passthru.tests = {
     os-prober = nixosTests.os-prober;
   };
-  meta = with lib; {
+  meta = {
     description = "Utility to detect other OSs on a set of drives";
     homepage = "http://packages.debian.org/source/sid/os-prober";
     license = lib.licenses.gpl2Plus;

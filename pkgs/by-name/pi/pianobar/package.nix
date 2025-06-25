@@ -35,7 +35,7 @@ stdenv.mkDerivation {
   CC = "gcc";
   CFLAGS = "-std=c99";
 
-  meta = with lib; {
+  meta = {
     description = "Console front-end for Pandora.com";
     homepage = "https://6xq.net/pianobar/";
     platforms = lib.platforms.unix;

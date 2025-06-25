@@ -172,7 +172,7 @@ rustPlatform.buildRustPackage rec {
       description = "Simple, secure and fast identity management platform";
       homepage = "https://github.com/kanidm/kanidm";
       license = lib.licenses.mpl20;
-      platforms = lib.platforms.linux ++ platforms.darwin;
+      platforms = lib.platforms.linux ++ lib.platforms.darwin;
       maintainers = with lib.maintainers; [
         adamcstephens
         Flakebi

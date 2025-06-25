@@ -21,10 +21,10 @@ rustPlatform.buildRustPackage rec {
   # error: Found argument '--test-threads' which wasn't expected, or isn't valid in this context
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Simple static file serving command-line tool written in Rust";
     homepage = "https://github.com/weihanglo/sfz";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20 # or
       mit
     ];

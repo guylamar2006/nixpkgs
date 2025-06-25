@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     wrapProgram "$out/bin/sent" --prefix PATH : "${farbfeld}/bin"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Simple plaintext presentation tool";
     mainProgram = "sent";
     homepage = "https://tools.suckless.org/sent/";

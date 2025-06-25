@@ -71,6 +71,6 @@ stdenv.mkDerivation rec {
     mainProgram = "dhewm3";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ ];
-    platforms = with platforms; linux;
+    platforms = lib.platforms.linux;
   };
 }

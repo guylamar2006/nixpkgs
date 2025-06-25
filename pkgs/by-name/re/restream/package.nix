@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
         "$out/bin/restream"
     '';
 
-  meta = with lib; {
+  meta = {
     description = "reMarkable screen sharing over SSH";
     mainProgram = "restream";
     homepage = "https://github.com/rien/reStream";

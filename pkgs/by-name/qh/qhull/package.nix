@@ -19,7 +19,7 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [ cmake ] ++ lib.optional stdenv.hostPlatform.isDarwin fixDarwinDylibNames;
 
-  meta = with lib; {
+  meta = {
     homepage = "http://www.qhull.org/";
     description = "Compute the convex hull, Delaunay triangulation, Voronoi diagram and more";
     license = lib.licenses.qhull;

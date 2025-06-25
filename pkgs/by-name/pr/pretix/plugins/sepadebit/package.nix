@@ -55,7 +55,7 @@ buildPythonPackage rec {
     export DJANGO_SETTINGS_MODULE=pretix.testutils.settings
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Plugin to receive payments via SEPA direct debit";
     homepage = "https://github.com/pretix/pretix-sepadebit";
     license = lib.licenses.asl20;

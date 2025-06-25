@@ -30,7 +30,7 @@ stdenv.mkDerivation (finalAttrs: {
     install -Dm755 ./pixelnuke $out/bin/pixelnuke
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Multiplayer canvas (C implementation)";
     homepage = "https://cccgoe.de/wiki/Pixelflut";
     license = lib.licenses.unlicense;

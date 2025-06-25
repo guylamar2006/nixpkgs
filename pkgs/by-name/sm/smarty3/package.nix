@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
     cp -r libs/* $out
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Smarty 3 template engine";
     longDescription = ''
       Smarty is a template engine for PHP, facilitating the

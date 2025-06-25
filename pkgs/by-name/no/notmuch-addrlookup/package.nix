@@ -29,7 +29,7 @@ stdenv.mkDerivation {
 
   installPhase = "install -D notmuch-addrlookup $out/bin/notmuch-addrlookup";
 
-  meta = with lib; {
+  meta = {
     description = "Address lookup tool for Notmuch in C";
     homepage = "https://github.com/aperezdc/notmuch-addrlookup-c";
     maintainers = with lib.maintainers; [ mog ];

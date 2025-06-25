@@ -36,7 +36,7 @@ buildGoModule rec {
     ln -s $out/share/man/man1/{lyrebird,obfs4proxy}.1
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Circumvents censorship by transforming Tor traffic between clients and bridges";
     longDescription = ''
       Obfs4proxy is a tool that attempts to circumvent censorship by

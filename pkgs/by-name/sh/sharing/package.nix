@@ -24,7 +24,7 @@ buildNpmPackage rec {
 
   NODE_OPTIONS = "--openssl-legacy-provider";
 
-  meta = with lib; {
+  meta = {
     description = "Command-line tool to share directories and files to mobile devices";
     homepage = "https://github.com/parvardegr/sharing";
     license = lib.licenses.mit;

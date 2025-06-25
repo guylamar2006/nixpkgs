@@ -59,7 +59,7 @@ stdenv.mkDerivation rec {
       texts or fonts.
     '';
     homepage = "https://github.com/jindrapetrik/jpexs-decompiler";
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.gpl3;
     platforms = jdk8.meta.platforms;
     maintainers = with lib.maintainers; [

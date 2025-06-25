@@ -29,7 +29,7 @@ python3.pkgs.buildPythonApplication rec {
       --replace "/usr/share/locale" "${cinnamon-translations}/share/locale"
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/linuxmint/nemo-extensions/tree/master/nemo-emblems";
     description = "Change a folder or file emblem in Nemo";
     longDescription = ''

@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
     make check
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/fmang/opustags";
     description = "Ogg Opus tags editor";
     platforms = lib.platforms.all;

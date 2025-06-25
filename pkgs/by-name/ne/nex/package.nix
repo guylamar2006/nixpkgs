@@ -28,7 +28,7 @@ buildGoModule {
   # Checks failed on master before, but buildGoPackage had checks disabled.
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Lexer for Go";
     mainProgram = "nex";
     homepage = "https://github.com/blynn/nex";

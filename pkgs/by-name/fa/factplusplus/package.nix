@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     homepage = "http://owl.cs.manchester.ac.uk/tools/fact/";
     maintainers = with lib.maintainers; [ mgttlinger ];
     license = lib.licenses.gpl2Plus;
-    platforms = with platforms; linux ++ darwin ++ windows;
+    platforms = with lib.platforms; linux ++ darwin ++ windows;
     broken = !stdenv.hostPlatform.isLinux;
     mainProgram = "FaCT++";
   };

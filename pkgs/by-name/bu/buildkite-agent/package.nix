@@ -81,6 +81,6 @@ buildGoModule rec {
       jsoo1
       techknowlogick
     ];
-    platforms = with platforms; unix ++ darwin;
+    platforms = with lib.platforms; unix ++ darwin;
   };
 }

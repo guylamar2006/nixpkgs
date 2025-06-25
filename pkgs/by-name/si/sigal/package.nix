@@ -52,7 +52,7 @@ python3.pkgs.buildPythonApplication rec {
     "--prefix PATH : ${lib.makeBinPath [ ffmpeg ]}"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Yet another simple static gallery generator";
     mainProgram = "sigal";
     homepage = "http://sigal.saimon.org/";

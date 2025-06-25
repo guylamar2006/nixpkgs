@@ -364,10 +364,10 @@ stdenv.mkDerivation (self: {
         touch $out
       '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.freedesktop.org/wiki/Software/xdg-utils/";
     description = "Set of command line tools that assist applications with a variety of desktop integration tasks";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.all;
   };

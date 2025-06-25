@@ -44,7 +44,7 @@ stdenv.mkDerivation rec {
     description = "IBM's Software TPM 2.0, an implementation of the TCG TPM 2.0 specification";
     mainProgram = "tpm_server";
     homepage = "https://sourceforge.net/projects/ibmswtpm2/";
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     maintainers = with lib.maintainers; [ ];
     license = lib.licenses.bsd3;
   };

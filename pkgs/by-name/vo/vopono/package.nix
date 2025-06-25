@@ -16,10 +16,10 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-ZDnSI30pVyvBcVe8Yeug42LxPcdVK1axeBWcpaaXYJQ=";
 
-  meta = with lib; {
+  meta = {
     description = "Run applications through VPN connections in network namespaces";
     homepage = "https://github.com/jamesmcm/vopono";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ romildo ];
     mainProgram = "vopono";

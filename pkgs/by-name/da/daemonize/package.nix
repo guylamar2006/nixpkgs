@@ -19,7 +19,7 @@ stdenv.mkDerivation rec {
     description = "Runs a command as a Unix daemon";
     homepage = "http://software.clapper.org/daemonize/";
     license = lib.licenses.bsd3;
-    platforms = with platforms; linux ++ freebsd ++ darwin;
+    platforms = with lib.platforms; linux ++ freebsd ++ darwin;
     mainProgram = "daemonize";
   };
 }

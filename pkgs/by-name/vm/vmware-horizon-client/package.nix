@@ -154,11 +154,11 @@ stdenv.mkDerivation {
 
   passthru.updateScript = ./update.sh;
 
-  meta = with lib; {
+  meta = {
     inherit mainProgram;
     description = "Allows you to connect to your VMware Horizon virtual desktop";
     homepage = "https://www.vmware.com/go/viewclients";
-    license = licenses.unfree;
+    license =license = lib.licenses.unfree;
     platforms = [ "x86_64-linux" ];
     maintainers = with lib.maintainers; [ ];
   };

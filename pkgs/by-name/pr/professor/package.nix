@@ -62,7 +62,7 @@ stdenv.mkDerivation {
   doInstallCheck = true;
   installCheckTarget = "check";
 
-  meta = with lib; {
+  meta = {
     description = "Tuning tool for Monte Carlo event generators";
     homepage = "https://professor.hepforge.org/";
     license = lib.licenses.gpl3Only;

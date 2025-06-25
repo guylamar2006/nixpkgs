@@ -41,7 +41,7 @@ buildGoModule rec {
       --zsh <($out/bin/pathvector completion zsh)
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Declarative edge routing platform that automates route optimization and control plane configuration";
     homepage = "https://pathvector.io";
     license = lib.licenses.gpl3;

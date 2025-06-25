@@ -51,7 +51,7 @@ stdenv.mkDerivation {
     substituteInPlace $out/bin/pil --replace-fail /usr $out
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Pragmatic programming language";
     homepage = "https://picolisp.com/";
     license = lib.licenses.mit;

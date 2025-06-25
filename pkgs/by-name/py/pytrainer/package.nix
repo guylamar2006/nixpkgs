@@ -100,7 +100,7 @@ python.pkgs.buildPythonApplication rec {
       ${python.interpreter} -m unittest
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/pytrainer/pytrainer";
     description = "Application for logging and graphing sporting excursions";
     mainProgram = "pytrainer";

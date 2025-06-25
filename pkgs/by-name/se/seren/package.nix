@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     sha256 = "sha256-adI365McrJkvTexvnWjMzpHcJkLY3S/uWfE8u4yuqho=";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Simple ncurses VoIP program based on the Opus codec";
     mainProgram = "seren";
     longDescription = ''

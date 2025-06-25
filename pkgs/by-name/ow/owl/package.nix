@@ -27,7 +27,7 @@ stdenv.mkDerivation {
     libpcap
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Open Apple Wireless Direct Link (AWDL) implementation written in C";
     homepage = "https://owlink.org/";
     license = lib.licenses.gpl3Only;

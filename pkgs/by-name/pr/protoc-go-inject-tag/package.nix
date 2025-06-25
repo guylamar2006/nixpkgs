@@ -16,7 +16,7 @@ buildGoModule rec {
 
   vendorHash = "sha256-tMpcJ37yGr7i91Kwz57FmJ+u2x0CAus0+yWOR10fJLo=";
 
-  meta = with lib; {
+  meta = {
     description = "Inject custom tags to protobuf golang struct";
     homepage = "https://github.com/favadi/protoc-go-inject-tag/tree/v1.4.0";
     license = lib.licenses.bsd2;

@@ -16,7 +16,7 @@ stdenv.mkDerivation rec {
 
   makeFlags = [ "PREFIX=$(out)" ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://sortix.org/rw";
     description = "Block device and byte copying program similar to dd";
     longDescription = ''

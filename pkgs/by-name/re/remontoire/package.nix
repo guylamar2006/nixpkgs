@@ -48,7 +48,7 @@ stdenv.mkDerivation (finalAttrs: {
     patchShebangs build-aux/meson/postinstall.py
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Small GTK app for presenting keybinding hints";
     mainProgram = "remontoire";
     homepage = "https://github.com/regolith-linux/remontoire";

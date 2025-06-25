@@ -109,10 +109,10 @@ python3.pkgs.buildPythonApplication rec {
 
   passthru.updateScript = ./update.sh;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/z411/trackma";
     description = "Open multi-site list manager for Unix-like systems (ex-wMAL)";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ ];
   };

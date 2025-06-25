@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [ autoreconfHook ];
   configureFlags = [ "--enable-posix-api=yes" ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/kkos/oniguruma";
     description = "Regular expressions library";
     mainProgram = "onig-config";

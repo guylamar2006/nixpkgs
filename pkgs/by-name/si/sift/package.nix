@@ -38,7 +38,7 @@ buildGoModule rec {
     installShellCompletion --cmd sift --bash sift-completion.bash
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Fast and powerful alternative to grep";
     mainProgram = "sift";
     homepage = "https://sift-tool.org";

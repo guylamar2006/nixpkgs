@@ -73,7 +73,7 @@ stdenv.mkDerivation rec {
       a Miscellaneous section.
     '';
 
-    platforms = lib.platforms.gnu ++ platforms.linux;
+    platforms = lib.platforms.gnu ++ lib.platforms.linux;
     maintainers = with lib.maintainers; [ pSub ];
     mainProgram = "logstalgia";
   };

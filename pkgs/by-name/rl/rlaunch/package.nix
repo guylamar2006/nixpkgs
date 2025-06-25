@@ -33,7 +33,7 @@ rustPlatform.buildRustPackage rec {
     } $out/bin/rlaunch
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Lightweight application launcher for X11";
     homepage = "https://github.com/PonasKovas/rlaunch";
     license = lib.licenses.mit;

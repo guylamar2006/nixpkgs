@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
     "-Dsystemddir=${placeholder "out"}/lib/systemd"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "iSNS server and client for Linux";
     license = lib.licenses.lgpl21Only;
     homepage = "https://github.com/open-iscsi/open-isns";

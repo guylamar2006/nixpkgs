@@ -18,11 +18,11 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-L+MTU92SUohhQ5Oy2ziU/1f4IxFcrW2JGUSx7iPxl/I=";
 
-  meta = with lib; {
+  meta = {
     description = "SystemVerilog language server";
     mainProgram = "svls";
     homepage = "https://github.com/dalance/svls";
-    license = licenses.mit;
-    maintainers = with maintainers; [ trepetti ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ trepetti ];
   };
 }

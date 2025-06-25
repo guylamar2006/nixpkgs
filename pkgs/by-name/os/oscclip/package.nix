@@ -19,7 +19,7 @@ python3Packages.buildPythonApplication rec {
 
   nativeBuildInputs = with python3Packages; [ poetry-core ];
 
-  meta = with lib; {
+  meta = {
     description = "Program that allows to copy/paste from a terminal using osc-52 control sequences";
     longDescription = ''
       oscclip provides two commands: osc-copy and osc-paste. These commands allow to interact with the clipboard through the terminal directly.

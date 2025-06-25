@@ -23,7 +23,7 @@ rustPlatform.buildRustPackage rec {
     ./Cargo.lock.patch
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Replacement for rm with focus on safety, ergonomics and performance";
     homepage = "https://github.com/nivekuil/rip";
     license = lib.licenses.gpl3Plus;

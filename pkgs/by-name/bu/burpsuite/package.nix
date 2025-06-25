@@ -105,7 +105,7 @@ buildFHSEnv {
     changelog =
       "https://portswigger.net/burp/releases/professional-community-"
       + replaceStrings [ "." ] [ "-" ] version;
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.unfree;
     platforms = jdk.meta.platforms;
     hydraPlatforms = [ ];

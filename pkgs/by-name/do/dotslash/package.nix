@@ -39,7 +39,7 @@ rustPlatform.buildRustPackage rec {
       your developers seamlessly get the tools they need, ensuring consistent
       builds across platforms.
     '';
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20 # or
       mit
     ];

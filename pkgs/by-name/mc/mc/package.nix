@@ -104,7 +104,7 @@ stdenv.mkDerivation rec {
     homepage = "https://midnight-commander.org";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ sander ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     mainProgram = "mc";
   };
 }

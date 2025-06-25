@@ -159,7 +159,7 @@ stdenv.mkDerivation rec {
 
   passthru.tests.slurm = nixosTests.slurm;
 
-  meta = with lib; {
+  meta = {
     homepage = "http://www.schedmd.com/";
     description = "Simple Linux Utility for Resource Management";
     platforms = lib.platforms.linux;

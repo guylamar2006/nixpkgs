@@ -19,7 +19,7 @@ buildGoModule rec {
 
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Contributed tools and other packages on top of the Go proto package";
     homepage = "https://github.com/emicklei/proto-contrib";
     license = lib.licenses.mit;

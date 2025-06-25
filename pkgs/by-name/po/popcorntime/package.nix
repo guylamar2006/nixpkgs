@@ -94,11 +94,11 @@ stdenv.mkDerivation rec {
       ''${gappsWrapperArgs[@]}
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/popcorn-official/popcorn-desktop";
     description = "Application that streams movies and TV shows from torrents";
     platforms = [ "x86_64-linux" ];
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ onny ];
     mainProgram = "popcorntime";

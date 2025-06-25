@@ -16,7 +16,7 @@ stdenv.mkDerivation rec {
 
   buildInputs = [ ncurses ];
 
-  meta = with lib; {
+  meta = {
     description = ''Simulates the digital rain from "The Matrix"'';
     license = lib.licenses.gpl3Plus;
     longDescription = ''

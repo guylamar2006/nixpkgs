@@ -20,9 +20,9 @@ stdenv.mkDerivation {
     cp -p zdc zdu $out/bin
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://web.archive.org/web/20160316212948/http://cis.poly.edu/zdelta/";
     platforms = lib.platforms.all;
-    license = licenses.zlib;
+    license = lib.licenses.zlib;
   };
 }

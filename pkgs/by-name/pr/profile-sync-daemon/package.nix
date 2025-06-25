@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
       --replace "sudo " "/run/wrappers/bin/sudo "
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Syncs browser profile dirs to RAM";
     longDescription = ''
       Profile-sync-daemon (psd) is a tiny pseudo-daemon designed to manage your

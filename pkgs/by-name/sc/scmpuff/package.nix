@@ -30,7 +30,7 @@ buildGoModule rec {
     command = "scmpuff version";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Add numbered shortcuts to common git commands";
     homepage = "https://github.com/mroth/scmpuff";
     license = lib.licenses.mit;

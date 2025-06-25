@@ -142,7 +142,7 @@ stdenv.mkDerivation (finalAttrs: {
     )
   '';
 
-  meta = with lib; {
+  meta = {
     license = lib.licenses.gpl2Plus;
     homepage = "https://gitlab.com/Remmina/Remmina";
     changelog = "https://gitlab.com/Remmina/Remmina/-/blob/master/CHANGELOG.md#${
@@ -155,6 +155,6 @@ stdenv.mkDerivation (finalAttrs: {
       melsigl
       ryantm
     ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 })

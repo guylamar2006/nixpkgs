@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-PCSwhq4VXd/Hvvcfd2gZskXVD106Zw5PVCgMdlapWRs=";
 
-  meta = with lib; {
+  meta = {
     description = "Small extensible programming language designed for concise expression with little code";
     mainProgram = "passerine";
     homepage = "https://www.passerine.io/";

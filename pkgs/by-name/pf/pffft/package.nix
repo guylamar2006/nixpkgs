@@ -18,7 +18,7 @@ stdenv.mkDerivation {
 
   nativeBuildInputs = [ cmake ];
 
-  meta = with lib; {
+  meta = {
     description = "Pretty Fast FFT (PFFFT) library";
     homepage = "https://github.com/marton78/pffft";
     license = lib.licenses.bsd3;

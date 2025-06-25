@@ -23,6 +23,6 @@ buildGoModule {
     homepage = "https://github.com/sammiq/dec-decode";
     license = lib.licenses.unlicense;
     maintainers = with lib.maintainers; [ hughobrien ];
-    platforms = with platforms; linux ++ darwin;
+    platforms = with lib.platforms; linux ++ darwin;
   };
 }

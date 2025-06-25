@@ -116,7 +116,7 @@ stdenv.mkDerivation (finalAttrs: {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Library for laying out and rendering of text, with an emphasis on internationalization";
 
     longDescription = ''

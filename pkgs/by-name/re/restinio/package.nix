@@ -105,7 +105,7 @@ stdenv.mkDerivation (finalAttrs: {
       checkFlagsArray+=(ARGS="--exclude-regex '${excludeRegex}'")
     '';
 
-  meta = with lib; {
+  meta = {
     description = "Cross-platform, efficient, customizable, and robust asynchronous HTTP(S)/WebSocket server C++ library";
     homepage = "https://github.com/Stiffstream/restinio";
     changelog = "https://github.com/Stiffstream/restinio/releases/tag/${finalAttrs.src.rev}";

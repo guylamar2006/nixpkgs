@@ -152,7 +152,7 @@ mkPackage rec {
     description = "Mono version of Microsoft Build Engine, the build platform for .NET, and Visual Studio";
     mainProgram = "msbuild";
     homepage = "https://github.com/mono/msbuild";
-    sourceProvenance = with sourceTypes; [
+    sourceProvenance = with lib.sourceTypes; [
       fromSource
       binaryNativeCode # dependencies
     ];

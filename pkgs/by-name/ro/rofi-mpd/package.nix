@@ -25,7 +25,7 @@ python3Packages.buildPythonApplication rec {
   # upstream doesn't contain a test suite
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Rofi menu for interacting with MPD written in Python";
     mainProgram = "rofi-mpd";
     homepage = "https://github.com/JakeStanger/Rofi_MPD";

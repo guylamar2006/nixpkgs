@@ -39,7 +39,7 @@ let
       install -Dm644 client/play-regular.ttf -t $out/share/soldat
     '';
 
-    meta = with lib; {
+    meta = {
       description = "Opensoldat's base game content";
       license = lib.licenses.cc-by-40;
       platforms = lib.platforms.all;
@@ -101,7 +101,7 @@ stdenv.mkDerivation rec {
     done
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Opensoldat is a unique 2D (side-view) multiplayer action game";
     license = [
       licenses.mit

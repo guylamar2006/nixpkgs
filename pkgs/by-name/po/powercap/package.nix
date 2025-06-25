@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     "-DBUILD_SHARED_LIBS=On"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Tools and library to read/write to the Linux power capping framework (sysfs interface)";
     license = lib.licenses.bsd3;
     platforms = lib.platforms.linux;

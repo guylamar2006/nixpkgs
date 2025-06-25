@@ -67,11 +67,11 @@ stdenv.mkDerivation (finalAttrs: {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description = "librdkafka - Apache Kafka C/C++ client library";
     homepage = "https://github.com/confluentinc/librdkafka";
     license = lib.licenses.bsd2;
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     maintainers = with lib.maintainers; [ commandodev ];
   };
 })

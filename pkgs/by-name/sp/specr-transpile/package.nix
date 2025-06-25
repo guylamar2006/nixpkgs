@@ -16,11 +16,11 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-pMkvyMGfvLdj406xH/1+ZHE33iZDcmUUBjeSiIro0xY=";
 
-  meta = with lib; {
+  meta = {
     description = "Converts Specr lang code to Rust";
     mainProgram = "specr-transpile";
     homepage = "https://github.com/RalfJung/minirust-tooling";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       mit
     ];

@@ -39,7 +39,7 @@ stdenv.mkDerivation {
   meta = {
     description = "Assortment of scripts around Git";
     homepage = "https://github.com/da-x/misc-gitology";
-    license = [ licenses.bsd2 ];
+    license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ _9999years ];
   };
 

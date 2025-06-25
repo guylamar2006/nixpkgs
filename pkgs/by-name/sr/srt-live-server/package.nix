@@ -34,11 +34,11 @@ stdenv.mkDerivation rec {
     "PREFIX=$(out)"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "srt live server for low latency";
     license = lib.licenses.mit;
     homepage = "https://github.com/Edward-Wu/srt-live-server";
-    maintainers = with maintainers; [ shamilton ];
+    maintainers = with lib.maintainers; [ shamilton ];
     platforms = lib.platforms.linux;
   };
 }

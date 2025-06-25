@@ -34,7 +34,7 @@ stdenv.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Automated script for performing Padding Oracle attacks";
     homepage = "https://www.gdssecurity.com/l/t.php";
     mainProgram = "padBuster.pl";

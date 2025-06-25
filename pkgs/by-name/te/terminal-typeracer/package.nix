@@ -39,11 +39,11 @@ rustPlatform.buildRustPackage rec {
   OPENSSL_NO_VENDOR = 1;
   LIBGIT2_NO_VENDOR = 1;
 
-  meta = with lib; {
+  meta = {
     description = "Open source terminal based version of Typeracer written in rust";
     homepage = "https://gitlab.com/ttyperacer/terminal-typeracer";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ yoctocell ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ yoctocell ];
     mainProgram = "typeracer";
     platforms = lib.platforms.unix;
   };

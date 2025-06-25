@@ -84,7 +84,7 @@ stdenv.mkDerivation (finalAttrs: {
     packageName = "snapshot";
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://gitlab.gnome.org/GNOME/snapshot";
     description = "Take pictures and videos on your computer, tablet, or phone";
     teams = with lib.teams; [ gnome ];

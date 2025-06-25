@@ -118,7 +118,7 @@ python3.pkgs.buildPythonApplication rec {
       Command-line interface
     '';
     homepage = "https://github.com/obfusk/jiten";
-    license = with licenses; [
+    license = with lib.licenses; [
       agpl3Plus # code
       cc-by-sa-30 # jmdict/kanjidic
       unfreeRedistributable # pitch data & audio are non-commercial

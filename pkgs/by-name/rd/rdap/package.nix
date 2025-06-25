@@ -24,7 +24,7 @@ buildGoModule rec {
     "-X \"github.com/openrdap/rdap.version=OpenRDAP ${version}\""
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.openrdap.org/";
     description = "Command line client for the Registration Data Access Protocol (RDAP)";
     license = lib.licenses.mit;

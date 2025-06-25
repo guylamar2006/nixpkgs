@@ -29,7 +29,7 @@ rustPlatform.buildRustPackage rec {
     fi
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Over-engineered rewrite of pipes.sh in Rust";
     mainProgram = "pipes-rs";
     homepage = "https://github.com/lhvy/pipes-rs";

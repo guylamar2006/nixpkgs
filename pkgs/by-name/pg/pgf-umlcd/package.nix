@@ -24,7 +24,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/pgf-tikz/pgf-umlcd";
     description = "Some LaTeX macros for UML Class Diagrams";
     license = lib.licenses.gpl2Plus;

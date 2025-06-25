@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
   checkTarget = "test";
   nativeCheckInputs = lib.optionals stdenv.hostPlatform.isLinux [ util-linux ];
 
-  meta = with lib; {
+  meta = {
     description = "Encryption utility";
     mainProgram = "scrypt";
     homepage = "https://www.tarsnap.com/scrypt.html";

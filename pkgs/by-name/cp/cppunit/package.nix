@@ -22,6 +22,6 @@ stdenv.mkDerivation rec {
     description = "C++ unit testing framework";
     mainProgram = "DllPlugInTester";
     license = lib.licenses.lgpl21;
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

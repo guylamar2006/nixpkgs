@@ -43,12 +43,12 @@ stdenv.mkDerivation rec {
     zlib
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Channel scanner based on sigutils library";
     homepage = "https://github.com/BatchDrake/suscan";
-    license = licenses.gpl3;
+    license = lib.licenses.gpl3;
     platforms = lib.platforms.all;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       polygon
       oxapentane
     ];

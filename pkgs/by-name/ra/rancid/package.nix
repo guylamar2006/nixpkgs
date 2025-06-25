@@ -132,7 +132,7 @@ stdenv.mkDerivation (finalAttrs: {
     '') needsBin
   );
 
-  meta = with lib; {
+  meta = {
     description = "Really Awesome New Cisco confIg Differ";
     longDescription = ''
       RANCID monitors a device's configuration, including software and hardware

@@ -21,7 +21,7 @@ runCommand name
       };
     };
 
-    meta = with lib; {
+    meta = {
       description = "Convenient wrapper for the systemctl commands, borrow from Ubuntu";
       mainProgram = "service";
       license = lib.licenses.gpl2Plus;

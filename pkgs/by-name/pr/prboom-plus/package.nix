@@ -53,7 +53,7 @@ stdenv.mkDerivation rec {
       "${soundfont-fluid}/share/soundfonts/FluidR3_GM2-2.sf2"
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/coelckers/prboom-plus";
     description = "Advanced, Vanilla-compatible Doom engine based on PrBoom";
     license = lib.licenses.gpl2Plus;

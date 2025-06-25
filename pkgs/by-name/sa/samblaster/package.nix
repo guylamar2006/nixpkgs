@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
     cp samblaster $out/bin
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Tool for marking duplicates and extracting discordant/split reads from SAM/BAM files";
     mainProgram = "samblaster";
     maintainers = with lib.maintainers; [ jbedo ];

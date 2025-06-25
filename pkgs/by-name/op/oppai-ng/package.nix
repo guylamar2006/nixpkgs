@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     install -D liboppai.so $out/lib/liboppai.so
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Difficulty and pp calculator for osu!";
     homepage = "https://github.com/Francesco149/oppai-ng";
     license = lib.licenses.unlicense;

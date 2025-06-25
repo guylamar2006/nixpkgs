@@ -73,7 +73,7 @@ stdenv.mkDerivation rec {
     mv qosmic.app $out/Applications
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Cosmic recursive flame fractal editor";
     mainProgram = "qosmic";
     homepage = "https://github.com/bitsed/qosmic";

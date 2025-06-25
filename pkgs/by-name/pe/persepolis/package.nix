@@ -63,7 +63,7 @@ python3.pkgs.buildPythonApplication rec {
       yt-dlp
     ]);
 
-  meta = with lib; {
+  meta = {
     description = "Download manager GUI written in Python";
     mainProgram = "persepolis";
     homepage = "https://persepolisdm.github.io/";

@@ -53,7 +53,7 @@ stdenv.mkDerivation rec {
     description = "Reimplementation of the conda package manager";
     homepage = "https://github.com/mamba-org/mamba";
     license = lib.licenses.bsd3;
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     maintainers = with lib.maintainers; [ klchen0112 ];
     mainProgram = "mamba";
   };

@@ -43,7 +43,7 @@ stdenv.mkDerivation {
 
   passthru.updateScript = unstableGitUpdater { };
 
-  meta = with lib; {
+  meta = {
     description = "ELF prelinking utility to speed up dynamic linking";
     homepage = "https://wiki.yoctoproject.org/wiki/Cross-Prelink";
     license = lib.licenses.gpl2Plus;

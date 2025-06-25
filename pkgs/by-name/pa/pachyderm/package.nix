@@ -25,7 +25,7 @@ buildGoModule rec {
     "-X github.com/pachyderm/pachyderm/v${lib.versions.major version}/src/version.AppVersion=${version}"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Containerized Data Analytics";
     homepage = "https://www.pachyderm.com/";
     license = lib.licenses.asl20;

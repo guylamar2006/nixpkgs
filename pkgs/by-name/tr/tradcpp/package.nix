@@ -23,11 +23,11 @@ stdenv.mkDerivation rec {
     ./aarch64.patch
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Traditional (K&R-style) C macro preprocessor";
     mainProgram = "tradcpp";
     platforms = lib.platforms.all;
-    license = licenses.bsd2;
+    license = lib.licenses.bsd2;
   };
 
 }

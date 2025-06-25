@@ -37,7 +37,7 @@ buildGoModule rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Fast and flexible scripting for Go developers and DevOps";
     mainProgram = "risor";
     homepage = "https://github.com/risor-io/risor";

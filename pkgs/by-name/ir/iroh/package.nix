@@ -24,7 +24,7 @@ rustPlatform.buildRustPackage rec {
   meta = {
     description = "Efficient IPFS for the whole world right now";
     homepage = "https://iroh.computer";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       mit
     ];

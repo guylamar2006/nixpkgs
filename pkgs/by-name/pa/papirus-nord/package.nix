@@ -70,7 +70,7 @@ lib.checkListOfEnum "${pname}: accent colors" validAccents [ accent ]
       runHook postInstall
     '';
 
-    meta = with lib; {
+    meta = {
       description = "Nord version of Papirus Icon Theme";
       homepage = "https://github.com/Adapta-Projects/Papirus-Nord";
       license = lib.licenses.gpl2Plus;

@@ -31,6 +31,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.bsd2;
     mainProgram = "dumpasn1";
     maintainers = with lib.maintainers; [ katexochen ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 })

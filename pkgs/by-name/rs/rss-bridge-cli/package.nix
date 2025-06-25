@@ -29,7 +29,7 @@ in
   (oldAttrs: {
     version = rss-bridge.version;
 
-    meta = with lib; {
+    meta = {
       description = "Command-line interface for RSS-Bridge";
       homepage = "https://github.com/RSS-Bridge/rss-bridge";
       license = lib.licenses.unlicense;

@@ -23,7 +23,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://overpassfont.org/";
     description = "Font heavily inspired by Highway Gothic";
     license = lib.licenses.ofl;

@@ -37,7 +37,7 @@ buildGoModule rec {
     installManPage shfmt.1
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/mvdan/sh";
     description = "Shell parser and formatter";
     longDescription = ''

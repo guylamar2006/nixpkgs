@@ -23,11 +23,11 @@ stdenv.mkDerivation {
     cp tes3cmd $out/bin/tes3cmd
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Command line tool for examining and modifying plugins for the Elder Scrolls game Morrowind by Bethesda Softworks";
     mainProgram = "tes3cmd";
     homepage = "https://github.com/john-moonsugar/tes3cmd";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ marius851000 ];
     platforms = lib.platforms.linux;
   };

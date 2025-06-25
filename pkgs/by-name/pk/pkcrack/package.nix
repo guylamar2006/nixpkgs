@@ -39,7 +39,7 @@ stdenv.mkDerivation (finalAttrs: {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Breaking PkZip-encryption";
     homepage = "https://www.unix-ag.uni-kl.de/~conrad/krypto/pkcrack.html";
     license = {

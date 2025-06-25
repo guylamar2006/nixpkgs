@@ -63,7 +63,7 @@ stdenv.mkDerivation {
     version = testers.testVersion { package = quick-lint-js; };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Find bugs in Javascript programs";
     mainProgram = "quick-lint-js";
     homepage = "https://quick-lint-js.com";

@@ -27,7 +27,7 @@ buildGoModule rec {
     mv $out/bin/snicat $out/bin/sc
   '';
 
-  meta = with lib; {
+  meta = {
     description = "TLS & SNI aware netcat";
     homepage = "https://github.com/CTFd/snicat";
     license = lib.licenses.asl20;

@@ -43,7 +43,7 @@ buildPythonApplication rec {
     export HOME="$(mktemp -d)"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Tool that helps controlling nvim processes from a terminal";
     homepage = "https://github.com/mhinz/neovim-remote/";
     license = lib.licenses.mit;

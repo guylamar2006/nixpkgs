@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     ./CVE-2019-5544.patch
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "http://www.openslp.org/";
     description = "Open-source implementation of the IETF Service Location Protocol";
     maintainers = with lib.maintainers; [ ttuegel ];

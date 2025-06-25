@@ -23,7 +23,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/rastikerdar/shabnam-font";
     description = "Persian (Farsi) Font - فونت (قلم) فارسی شبنم";
     license = lib.licenses.ofl;

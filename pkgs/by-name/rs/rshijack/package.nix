@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-wRy+bSi6XxbbvxqE5PFWs4xW1zfkvTHyyGgRZCOU7cY=";
 
-  meta = with lib; {
+  meta = {
     description = "TCP connection hijacker";
     homepage = "https://github.com/kpcyrd/rshijack";
     license = lib.licenses.gpl3;

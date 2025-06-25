@@ -43,7 +43,7 @@ stdenv.mkDerivation {
       --prefix LD_LIBRARY_PATH ":" ${libGL}/lib
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Space battle game with gravity as the main theme";
     mainProgram = "nw";
     maintainers = with lib.maintainers; [ pSub ];

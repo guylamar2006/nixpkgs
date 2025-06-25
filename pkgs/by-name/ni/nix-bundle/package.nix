@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     ln -s $out/share/nix-bundle/nix-run.sh $out/bin/nix-run
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/matthewbauer/nix-bundle";
     description = "Create bundles from Nixpkgs attributes";
     longDescription = ''

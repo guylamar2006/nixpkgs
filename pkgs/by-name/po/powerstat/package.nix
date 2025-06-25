@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
     "BASHDIR=${placeholder "out"}/share/bash-completion/completions"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Laptop power measuring tool";
     mainProgram = "powerstat";
     homepage = "https://github.com/ColinIanKing/powerstat";

@@ -64,7 +64,7 @@ stdenv.mkDerivation rec {
     runHook postInstallCheck
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Linux version of the ProcDump Sysinternals tool";
     mainProgram = "procdump";
     homepage = "https://github.com/Microsoft/ProcDump-for-Linux";

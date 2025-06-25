@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://github.com/leahneukirchen/extrace";
     description = "Trace exec() calls system-wide";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl2Plus
       bsd2
     ];

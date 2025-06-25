@@ -20,7 +20,7 @@ stdenv.mkDerivation {
     cmake
   ];
 
-  meta = with lib; {
+  meta = {
     description = "C++ library for Quadratic Programming";
     longDescription = ''
       QuadProg++ is a C++ library for Quadratic Programming which implements

@@ -64,7 +64,7 @@ rustPlatform.buildRustPackage rec {
       --zsh <($out/bin/sheldon completions --shell zsh)
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Fast and configurable shell plugin manager";
     homepage = "https://github.com/rossmacarthur/sheldon";
     license = lib.licenses.mit;

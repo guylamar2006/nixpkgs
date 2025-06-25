@@ -28,7 +28,7 @@ buildPythonPackage rec {
 
   doCheck = false; # we will run tests in sagedoc.nix
 
-  meta = with lib; {
+  meta = {
     description = "Build system of the Sage documentation";
     homepage = "https://www.sagemath.org";
     license = lib.licenses.gpl2Plus;

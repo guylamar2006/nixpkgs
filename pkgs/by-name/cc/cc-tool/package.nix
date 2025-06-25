@@ -47,7 +47,7 @@ stdenv.mkDerivation {
     '';
     homepage = "https://github.com/dashesy/cc-tool";
     license = lib.licenses.gpl2;
-    platforms = with platforms; linux ++ darwin;
+    platforms = with lib.platforms; linux ++ darwin;
     maintainers = with lib.maintainers; [ CRTified ];
   };
 }

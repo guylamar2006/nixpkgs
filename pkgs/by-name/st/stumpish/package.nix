@@ -44,7 +44,7 @@ stdenv.mkDerivation {
     cp util/stumpish/stumpish $out/bin
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/stumpwm/stumpwm-contrib";
     description = "STUMPwm Interactive SHell";
     license = lib.licenses.gpl2;

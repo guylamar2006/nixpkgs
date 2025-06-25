@@ -115,7 +115,7 @@ stdenv.mkDerivation rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://gitlab.gnome.org/GNOME/rhythmbox";
     description = "Music playing application for GNOME";
     license = lib.licenses.gpl2Plus;

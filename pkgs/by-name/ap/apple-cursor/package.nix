@@ -37,7 +37,7 @@ stdenv.mkDerivation {
   meta = {
     description = "Opensource macOS Cursors";
     homepage = "https://github.com/ful1e5/apple_cursor";
-    license = [
+    license = with lib.licenses; [
       licenses.gpl3Only
       # Potentially a derivative work of copyrighted Apple designs
       licenses.unfree

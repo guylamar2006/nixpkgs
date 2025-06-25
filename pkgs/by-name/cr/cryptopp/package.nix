@@ -59,7 +59,7 @@ stdenv.mkDerivation rec {
       "https://raw.githubusercontent.com/weidai11/cryptopp/CRYPTOPP_${underscoredVersion}/History.txt"
       "https://github.com/weidai11/cryptopp/releases/tag/CRYPTOPP_${underscoredVersion}"
     ];
-    license = with licenses; [
+    license = with lib.licenses; [
       boost
       publicDomain
     ];

@@ -125,10 +125,10 @@ stdenv.mkDerivation {
         --replace-fail 'grep sse /proc/cpuinfo > /dev/null 2>&1' ':'
     '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://fpgasoftware.intel.com";
     description = "FPGA design and simulation software";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unfree;
     platforms = [ "x86_64-linux" ];
     maintainers = with lib.maintainers; [

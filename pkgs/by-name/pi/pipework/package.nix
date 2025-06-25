@@ -37,7 +37,7 @@ stdenv.mkDerivation {
         ]
       };
   '';
-  meta = with lib; {
+  meta = {
     description = "Software-Defined Networking tools for LXC";
     mainProgram = "pipework";
     homepage = "https://github.com/jpetazzo/pipework";

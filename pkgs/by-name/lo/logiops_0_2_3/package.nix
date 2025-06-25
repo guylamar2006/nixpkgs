@@ -38,6 +38,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/PixlOne/logiops";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = with platforms; linux;
+    platforms = lib.platforms.linux;
   };
 }

@@ -36,11 +36,11 @@ stdenv.mkDerivation rec {
     wxGTK32
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Software for using the ARRL Logbook of the World";
     mainProgram = "tqsl";
     homepage = "https://www.arrl.org/tqsl-download";
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ dpflug ];
   };

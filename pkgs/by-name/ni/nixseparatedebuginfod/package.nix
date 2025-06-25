@@ -42,7 +42,7 @@ rustPlatform.buildRustPackage rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Downloads and provides debug symbols and source code for nix derivations to gdb and other debuginfod-capable debuggers as needed";
     homepage = "https://github.com/symphorien/nixseparatedebuginfod";
     license = lib.licenses.gpl3Only;

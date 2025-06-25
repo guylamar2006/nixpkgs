@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description = "Front-end for libsass";
     homepage = "https://github.com/sass/sassc/";
     license = lib.licenses.mit;

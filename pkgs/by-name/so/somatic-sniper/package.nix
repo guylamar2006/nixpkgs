@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = false;
 
-  meta = with lib; {
+  meta = {
     description = "Identify single nucleotide positions that are different between tumor and normal";
     mainProgram = "bam-somaticsniper";
     license = lib.licenses.mit;

@@ -32,7 +32,7 @@ python3Packages.buildPythonApplication rec {
   doCheck = false;
   pythonImportsCheck = [ "onlykey.client" ];
 
-  meta = with lib; {
+  meta = {
     description = "OnlyKey client and command-line tool";
     mainProgram = "onlykey-cli";
     homepage = "https://github.com/trustcrypto/python-onlykey";

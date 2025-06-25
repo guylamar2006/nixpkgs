@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Remote TextMate 2 implemented as shell script";
     longDescription = ''
       TextMate 2 has a nice feature where it is possible to edit

@@ -127,7 +127,7 @@ buildDotnetModule rec {
 
   passthru.updateScript = ./updater.sh;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://ryujinx.app";
     changelog = "https://git.ryujinx.app/ryubing/ryujinx/-/wikis/changelog";
     description = "Experimental Nintendo Switch Emulator written in C# (community fork of Ryujinx)";

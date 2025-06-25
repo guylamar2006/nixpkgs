@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     export PKG_CONFIG_PATH="${dbus.dev}/lib/pkgconfig:$PKG_CONFIG_PATH"
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "http://wiki.muiline.com/obex-data-server";
     platforms = lib.platforms.linux;
     license = lib.licenses.gpl2Plus;

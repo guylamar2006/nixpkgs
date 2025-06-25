@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
     python3.pkgs.pygments
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Quick-and-dirty, literate-programming-style documentation generator for / in POSIX shell";
     mainProgram = "shocco";
     homepage = "https://rtomayko.github.io/shocco/";

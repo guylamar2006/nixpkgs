@@ -34,6 +34,6 @@ stdenv.mkDerivation rec {
     homepage = "http://analogdevicesinc.github.io/libad9361-iio/";
     license = lib.licenses.lgpl21Plus;
     maintainers = with lib.maintainers; [ sikmir ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

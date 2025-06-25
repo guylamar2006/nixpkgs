@@ -51,11 +51,11 @@ python3Packages.buildPythonApplication rec {
   # has no tests
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "WhatsApp desktop application written in Pyqt6 + PyQt6-WebEngine.";
     homepage = "https://rtosta.com/zapzap-web/";
     mainProgram = "zapzap";
-    license = licenses.gpl3Only;
+    license = lib.licenses.gpl3Only;
     changelog = "https://github.com/rafatosta/zapzap/releases/tag/${src.tag}";
     maintainers = with lib.maintainers; [ eymeric ];
   };

@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
 
   preInstall = ''export PREFIX="$out"'';
 
-  meta = with lib; {
+  meta = {
     platforms = lib.platforms.all;
     description = "convert opam file syntax to JSON";
     mainProgram = "opam2json";

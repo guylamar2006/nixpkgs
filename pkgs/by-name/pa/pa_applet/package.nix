@@ -47,7 +47,7 @@ stdenv.mkDerivation {
 
   postInstall = "";
 
-  meta = with lib; {
+  meta = {
     description = "";
     mainProgram = "pa-applet";
     license = lib.licenses.bsd2;

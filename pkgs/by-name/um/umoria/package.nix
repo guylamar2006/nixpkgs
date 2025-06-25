@@ -95,7 +95,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://umoria.org/";
     description = "Dungeons of Moria - the original roguelike";
     mainProgram = "umoria";
@@ -107,10 +107,10 @@ stdenv.mkDerivation rec {
     '';
     platforms = lib.platforms.unix;
     badPlatforms = [ "aarch64-darwin" ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       aciceri
       kenran
     ];
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
   };
 }

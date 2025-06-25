@@ -67,7 +67,7 @@ stdenv.mkDerivation rec {
       --replace '$'{prefix}/@CMAKE_INSTALL_INCLUDEDIR@ @CMAKE_INSTALL_FULL_INCLUDEDIR@
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/dankamongmen/notcurses";
     description = "Blingful TUIs and character graphics";
     longDescription = ''

@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
 
   installFlags = [ "PREFIX=$(out)" ];
 
-  meta = with lib; {
+  meta = {
     description = "OpenBSD signing tool";
     mainProgram = "signify";
     longDescription = ''

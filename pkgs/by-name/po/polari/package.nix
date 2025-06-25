@@ -82,7 +82,7 @@ stdenv.mkDerivation rec {
     updateScript = gnome.updateScript { packageName = "polari"; };
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://apps.gnome.org/Polari/";
     description = "IRC chat client designed to integrate with the GNOME desktop";
     mainProgram = "polari";

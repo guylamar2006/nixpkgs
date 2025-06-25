@@ -108,7 +108,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Implementation of the CraftOS-PC API written in C++ using SDL";
     homepage = "https://www.craftos-pc.cc";
-    license = with licenses; [
+    license = with lib.licenses; [
       mit
       free
     ];

@@ -34,7 +34,7 @@ rustPlatform.buildRustPackage rec {
     "--skip=subcommand::server::tests::status" # test fails if it built from source tarball
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Index, block explorer, and command-line wallet for Ordinals";
     homepage = "https://github.com/ordinals/ord";
     changelog = "https://github.com/ordinals/ord/blob/${src.rev}/CHANGELOG.md";

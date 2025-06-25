@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage {
   useFetchCargoVendor = true;
   cargoHash = "sha256-H+SZ+aUQReFJiN2MQHxaI0/bM1sXaSFVlIhedCKBQ0M=";
 
-  meta = with lib; {
+  meta = {
     description = "Reimplementation of mkrom in Rust";
     homepage = "https://github.com/siraben/remkrom";
     license = lib.licenses.mit;

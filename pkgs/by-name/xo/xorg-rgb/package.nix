@@ -18,11 +18,11 @@ stdenv.mkDerivation (finalAttrs: {
   nativeBuildInputs = [ pkg-config ];
   buildInputs = [ xorgproto ];
 
-  meta = with lib; {
+  meta = {
     description = "X11 colorname to RGB mapping database";
     mainProgram = "showrgb";
-    license = licenses.mit;
-    maintainers = with maintainers; [ raskin ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ raskin ];
     platforms = lib.platforms.linux;
     homepage = "https://xorg.freedesktop.org/";
   };

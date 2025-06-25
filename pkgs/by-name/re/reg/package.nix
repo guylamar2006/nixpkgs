@@ -33,7 +33,7 @@ buildGoModule rec {
   vendorHash = null;
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Docker registry v2 command line client and repo listing generator with security checks";
     homepage = "https://github.com/genuinetools/reg";
     license = lib.licenses.mit;

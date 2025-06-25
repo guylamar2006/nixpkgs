@@ -34,7 +34,7 @@ stdenvNoCC.mkDerivation rec {
     description = "Flix Programming Language";
     mainProgram = "flix";
     homepage = "https://github.com/flix/flix";
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ athas ];
     inherit (jre.meta) platforms;

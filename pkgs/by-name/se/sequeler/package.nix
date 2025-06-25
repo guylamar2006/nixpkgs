@@ -72,7 +72,7 @@ stdenv.mkDerivation rec {
     updateScript = nix-update-script { };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Friendly SQL Client";
     longDescription = ''
       Sequeler is a native Linux SQL client built in Vala and Gtk. It allows you

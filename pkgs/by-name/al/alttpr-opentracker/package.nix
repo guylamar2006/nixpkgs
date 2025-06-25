@@ -69,7 +69,7 @@ buildDotnetModule rec {
   meta = {
     description = "Tracking application for A Link to the Past Randomizer";
     homepage = "https://github.com/trippsc2/OpenTracker";
-    sourceProvenance = with sourceTypes; [
+    sourceProvenance = with lib.sourceTypes; [
       fromSource
       # deps
       binaryBytecode

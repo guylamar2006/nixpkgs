@@ -32,7 +32,7 @@ python3.pkgs.buildPythonApplication rec {
 
   pythonImportsCheck = [ "picosnitch" ];
 
-  meta = with lib; {
+  meta = {
     description = "Monitor network traffic per executable with hashing";
     mainProgram = "picosnitch";
     homepage = "https://github.com/elesiuta/picosnitch";

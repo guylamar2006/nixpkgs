@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
       --prefix PATH : "${openssl.bin}/bin"
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://sslmate.com";
     maintainers = with lib.maintainers; [ ];
     description = "Easy to buy, deploy, and manage your SSL certs";

@@ -24,7 +24,7 @@ stdenv.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Small program to automate tasks specific to certain directories";
     longDescription = ''
       It works by executing scripts in directories when you enter and leave them.

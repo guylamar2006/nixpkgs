@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
     "BASHDIR=${placeholder "out"}/share/bash-completion/completions"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Memory usage monitoring tool";
     mainProgram = "smemstat";
     homepage = "https://github.com/ColinIanKing/smemstat";

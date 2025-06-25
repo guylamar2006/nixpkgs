@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
 
   passthru.tests.nixos = nixosTests.neo4j;
 
-  meta = with lib; {
+  meta = {
     description = "Highly scalable, robust (fully ACID) native graph database";
     homepage = "https://neo4j.com/";
     license = lib.licenses.gpl3;

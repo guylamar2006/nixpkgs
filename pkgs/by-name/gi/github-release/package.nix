@@ -41,6 +41,6 @@ buildGoModule rec {
       ardumont
       j03
     ];
-    platforms = with platforms; unix;
+    platforms = lib.platforms.unix;
   };
 }

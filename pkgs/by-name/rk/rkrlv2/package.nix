@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     libsndfile
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Rakarrak effects ported to LV2";
     homepage = "https://github.com/ssj71/rkrlv2";
     license = lib.licenses.gpl2Only;

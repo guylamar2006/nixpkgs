@@ -32,12 +32,12 @@ rustPlatform.buildRustPackage rec {
       libseccomp
     ];
 
-  meta = with lib; {
+  meta = {
     description = "Secure multithreaded packet sniffer";
     homepage = "https://github.com/kpcyrd/sniffglue";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ xrelkd ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     mainProgram = "sniffglue";
   };
 }

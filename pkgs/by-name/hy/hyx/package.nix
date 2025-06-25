@@ -28,6 +28,6 @@ stdenv.mkDerivation rec {
     homepage = "https://yx7.cc/code/";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ fpletz ];
-    platforms = with platforms; linux ++ darwin;
+    platforms = with lib.platforms; linux ++ darwin;
   };
 }

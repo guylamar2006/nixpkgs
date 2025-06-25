@@ -37,7 +37,7 @@ buildGoModule rec {
 
   passthru.tests.smoke-test = nixosTests.shiori;
 
-  meta = with lib; {
+  meta = {
     description = "Simple bookmark manager built with Go";
     mainProgram = "shiori";
     homepage = "https://github.com/go-shiori/shiori";

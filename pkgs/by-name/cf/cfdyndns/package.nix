@@ -30,6 +30,6 @@ rustPlatform.buildRustPackage rec {
     maintainers = with lib.maintainers; [
       colemickens
     ];
-    platforms = with platforms; linux;
+    platforms =lib.platforms.linux;
   };
 }

@@ -18,12 +18,12 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-8EchpubKnixlvAyM2iSf4fE5wowJHT6/mDHIvLPnEok=";
 
-  meta = with lib; {
+  meta = {
     description = "Nerdfix helps you to find/fix obsolete nerd font icons in your project";
     mainProgram = "nerdfix";
     homepage = "https://github.com/loichyan/nerdfix";
     changelog = "https://github.com/loichyan/nerdfix/blob/${src.rev}/CHANGELOG.md";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       mit
     ];

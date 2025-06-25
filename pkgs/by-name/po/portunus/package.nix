@@ -23,7 +23,7 @@ buildGoModule rec {
 
   passthru.tests = { inherit (nixosTests) portunus; };
 
-  meta = with lib; {
+  meta = {
     description = "Self-contained user/group management and authentication service";
     homepage = "https://github.com/majewsky/portunus";
     license = lib.licenses.gpl3Plus;

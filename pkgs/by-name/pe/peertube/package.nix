@@ -193,7 +193,7 @@ stdenv.mkDerivation rec {
 
   passthru.tests.peertube = nixosTests.peertube;
 
-  meta = with lib; {
+  meta = {
     description = "Free software to take back control of your videos";
     longDescription = ''
       PeerTube aspires to be a decentralized and free/libre alternative to video

@@ -24,7 +24,7 @@ stdenvNoCC.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://pecita.eu/police-en.php";
     description = "Handwritten font with connected glyphs";
     license = lib.licenses.ofl;

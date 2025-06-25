@@ -225,7 +225,7 @@ stdenv.mkDerivation rec {
     description = "Free computer algebra system (CAS)";
     homepage = "https://www-fourier.ujf-grenoble.fr/~parisse/giac.html";
     license = lib.licenses.gpl3Plus;
-    platforms = lib.platforms.linux ++ (optionals (!enableGUI) platforms.darwin);
+    platforms = lib.platforms.linux ++ (optionals (!enableGUI) lib.platforms.darwin);
     maintainers = with lib.maintainers; [ symphorien ];
   };
 }

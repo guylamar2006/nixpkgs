@@ -27,7 +27,7 @@ buildGoModule rec {
     mainProgram = "assetfinder";
     maintainers = with lib.maintainers; [ shard7 ];
     platforms = lib.platforms.unix;
-    sourceProvenance = with sourceTypes; [
+    sourceProvenance = with lib.sourceTypes; [
       fromSource
       binaryNativeCode
     ];

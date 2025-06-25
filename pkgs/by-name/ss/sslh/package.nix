@@ -57,11 +57,11 @@ stdenv.mkDerivation rec {
     inherit (nixosTests) sslh;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Applicative Protocol Multiplexer (e.g. share SSH and HTTPS on the same port)";
     license = lib.licenses.gpl2Plus;
     homepage = "https://www.rutschle.net/tech/sslh/README.html";
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       koral
       fpletz
     ];

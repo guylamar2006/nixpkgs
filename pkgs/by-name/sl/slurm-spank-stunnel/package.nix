@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
     install -m 644 plugstack.conf $out/etc/slurm/plugstack.conf.d/stunnel.conf.example
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/stanford-rc/slurm-spank-stunnel";
     description = "Plugin for SLURM for SSH tunneling and port forwarding support";
     platforms = lib.platforms.linux;

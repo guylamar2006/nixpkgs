@@ -34,7 +34,7 @@ rustPlatform.buildRustPackage rec {
     updateScript = nix-update-script { };
   };
 
-  meta = with lib; {
+  meta = {
     description = "James Bond went on a new mission as a Secret Service provider";
     homepage = "https://github.com/bilelmoussaoui/oo7";
     changelog = "https://github.com/bilelmoussaoui/oo7/releases/tag/${src.rev}";

@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
 
   cmakeFlags = [ "-DSoapySDR_DIR=${soapysdr}/share/cmake/SoapySDR/" ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/pothosware/SoapyAirspy";
     description = "SoapySDR plugin for Airspy devices";
     license = lib.licenses.mit;

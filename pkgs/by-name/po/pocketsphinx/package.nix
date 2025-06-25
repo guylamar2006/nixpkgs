@@ -50,11 +50,11 @@ stdenv.mkDerivation (finalAttrs: {
     tests.pkg-config = testers.testMetaPkgConfig finalAttrs.finalPackage;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Small speech recognizer";
     homepage = "https://github.com/cmusphinx/pocketsphinx";
     changelog = "https://github.com/cmusphinx/pocketsphinx/blob/v${finalAttrs.version}/NEWS";
-    license = with licenses; [
+    license = with lib.licenses; [
       bsd2
       bsd3
       mit

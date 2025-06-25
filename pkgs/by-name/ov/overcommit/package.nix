@@ -27,7 +27,7 @@ bundlerApp {
     updateScript = bundlerUpdateScript "overcommit";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Tool to manage and configure Git hooks";
     homepage = "https://github.com/sds/overcommit";
     changelog = "https://github.com/sds/overcommit/blob/main/CHANGELOG.md";

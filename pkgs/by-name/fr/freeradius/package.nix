@@ -108,7 +108,7 @@ stdenv.mkDerivation rec {
     maintainers = with lib.maintainers; [
       sheenobu
     ];
-    platforms = with platforms; linux;
+    platforms = lib.platforms.linux;
   };
 }
 ## TODO: include windbind optionally (via samba?)

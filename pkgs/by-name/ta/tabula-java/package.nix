@@ -35,7 +35,7 @@ maven.buildMavenPackage rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Library for extracting tables from PDF files";
     longDescription = ''
       tabula-java is the table extraction engine that powers
@@ -43,7 +43,7 @@ maven.buildMavenPackage rec {
       programmatically extract tables from PDFs.
     '';
     homepage = "https://tabula.technology/";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ jakewaksbaum ];
     platforms = lib.platforms.all;
     mainProgram = "tabula-java";

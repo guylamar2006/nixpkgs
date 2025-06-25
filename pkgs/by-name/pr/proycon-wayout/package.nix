@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
     pango
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Takes text from standard input and outputs it to a desktop-widget on Wayland desktops";
     homepage = "https://git.sr.ht/~proycon/wayout";
     license = lib.licenses.gpl3;

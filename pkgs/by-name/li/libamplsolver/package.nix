@@ -44,7 +44,7 @@ stdenv.mkDerivation {
   meta = {
     description = "Library of routines that help solvers work with AMPL";
     homepage = "https://ampl.com/netlib/ampl/";
-    license = [ licenses.mit ];
+    license = lib.licenses.mit;
     platforms = lib.platforms.unix;
     maintainers = with lib.maintainers; [ aanderse ];
     # generates header at compile time

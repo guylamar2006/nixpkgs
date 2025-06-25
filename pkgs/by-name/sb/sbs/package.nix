@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
 
   makeFlags = [ "PREFIX=$(out)" ];
 
-  meta = with lib; {
+  meta = {
     description = "Simple background setter with 200 lines of code";
     homepage = "https://github.com/onur-ozkan/sbs";
     license = lib.licenses.gpl2Only;

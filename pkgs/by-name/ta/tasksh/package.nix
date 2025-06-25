@@ -18,11 +18,11 @@ stdenv.mkDerivation rec {
   buildInputs = [ readline ];
   nativeBuildInputs = [ cmake ];
 
-  meta = with lib; {
+  meta = {
     description = "REPL for taskwarrior";
     homepage = "http://tasktools.org";
-    license = licenses.mit;
-    maintainers = with maintainers; [ matthiasbeyer ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ matthiasbeyer ];
     platforms = lib.platforms.unix;
     mainProgram = "tasksh";
   };

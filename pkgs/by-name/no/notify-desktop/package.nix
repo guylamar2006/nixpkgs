@@ -25,7 +25,7 @@ stdenv.mkDerivation {
     install -m 755 bin/notify-desktop $out/bin/notify-desktop
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Little application that lets you send desktop notifications with one command";
     longDescription = ''
       It's basically clone of notify-send from libnotify,

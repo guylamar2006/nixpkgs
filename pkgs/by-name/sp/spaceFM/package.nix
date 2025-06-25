@@ -85,7 +85,7 @@ stdenv.mkDerivation rec {
   # Introduced because ifuse doesn't build due to CVEs in libplist
   # Revert when libplist builds again…
 
-  meta = with lib; {
+  meta = {
     description = "Multi-panel tabbed file manager";
     longDescription = ''
       Multi-panel tabbed file and desktop manager for Linux

@@ -39,7 +39,7 @@ rustPlatform.buildRustPackage rec {
         --zsh <($out/bin/qrtool --generate-completion zsh)
     '';
 
-  meta = with lib; {
+  meta = {
     maintainers = with lib.maintainers; [ philiptaron ];
     description = "Utility for encoding and decoding QR code images";
     license = lib.licenses.asl20;

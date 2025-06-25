@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [ cmake ];
 
-  meta = with lib; {
+  meta = {
     description = "'top' like tool for PostgreSQL";
     longDescription = ''
       pg_top allows you to:

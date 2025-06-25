@@ -24,7 +24,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "SN Pro Font Family";
     homepage = "https://github.com/supernotes/sn-pro";
     license = lib.licenses.ofl;

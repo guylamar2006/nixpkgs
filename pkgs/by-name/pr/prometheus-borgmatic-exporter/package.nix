@@ -39,7 +39,7 @@ python3Packages.buildPythonApplication rec {
     pytest-mock
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Prometheus exporter for Borgmatic";
     homepage = "https://github.com/maxim-mityutko/borgmatic-exporter";
     changelog = "https://github.com/maxim-mityutko/borgmatic-exporter/releases/tag/${src.tag}";

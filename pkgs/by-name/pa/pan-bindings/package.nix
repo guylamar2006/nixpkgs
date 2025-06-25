@@ -53,7 +53,7 @@ stdenv.mkDerivation {
     goDeps.go
   ];
 
-  meta = with lib; {
+  meta = {
     description = "SCION PAN Bindings for C, C++, and Python";
     homepage = "https://github.com/lschulz/pan-bindings";
     license = lib.licenses.asl20;

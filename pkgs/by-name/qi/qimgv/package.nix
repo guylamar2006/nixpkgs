@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
     "--prefix LD_LIBRARY_PATH : ${placeholder "out"}/lib"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Qt5 image viewer with optional video support";
     mainProgram = "qimgv";
     homepage = "https://github.com/easymodo/qimgv";

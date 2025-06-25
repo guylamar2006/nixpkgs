@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Scripts to save Google Chrome's bookmarks and history as HTML bookmarks files";
     homepage = "https://github.com/bdesham/chrome-export";
-    license = [ licenses.isc ];
+    license = lib.licenses.isc;
     maintainers = with lib.maintainers; [ bdesham ];
     platforms = python3.meta.platforms;
   };

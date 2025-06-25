@@ -47,6 +47,6 @@ stdenv.mkDerivation {
       viraptor
     ];
     mainProgram = "kal";
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

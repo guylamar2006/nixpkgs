@@ -29,7 +29,7 @@ stdenvNoCC.mkDerivation {
     tagPrefix = "v";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Assets needed for RetroArch";
     homepage = "https://libretro.com";
     license = lib.licenses.mit;

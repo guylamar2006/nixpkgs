@@ -31,7 +31,7 @@ stdenv.mkDerivation {
     volk
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Small signal processing utility library";
     homepage = "https://github.com/BatchDrake/sigutils";
     license = lib.licenses.gpl3;

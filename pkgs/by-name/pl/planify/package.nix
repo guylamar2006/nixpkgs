@@ -69,7 +69,7 @@ stdenv.mkDerivation rec {
     webkitgtk_6_0
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Task manager with Todoist support designed for GNU/Linux";
     homepage = "https://github.com/alainm23/planify";
     license = lib.licenses.gpl3Plus;

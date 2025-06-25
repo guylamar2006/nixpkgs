@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Losslessly & gaplessly cut m4a (AAC in MP4) files";
     homepage = "https://github.com/nu774/m4acut";
-    license = with licenses; [
+    license = with lib.licenses; [
       bsdOriginal
       zlib
     ];

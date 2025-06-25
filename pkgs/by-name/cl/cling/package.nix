@@ -123,7 +123,7 @@ let
       description = "Interactive C++ Interpreter";
       mainProgram = "cling";
       homepage = "https://root.cern/cling/";
-      license = with licenses; [
+      license = with lib.licenses; [
         lgpl21
         ncsa
       ];

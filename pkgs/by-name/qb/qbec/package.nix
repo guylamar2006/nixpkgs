@@ -28,7 +28,7 @@ buildGoModule rec {
     "-X github.com/splunk/qbec/internal/commands.goVersion=${lib.getVersion go}"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Configure kubernetes objects on multiple clusters using jsonnet https://qbec.io";
     homepage = "https://github.com/splunk/qbec";
     license = lib.licenses.asl20;

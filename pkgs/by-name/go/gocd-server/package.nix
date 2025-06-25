@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
     homepage = "http://www.go.cd";
     license = lib.licenses.asl20;
     platforms = lib.platforms.all;
-    sourceProvenance = with sourceTypes; [
+    sourceProvenance = with lib.sourceTypes; [
       binaryBytecode
       binaryNativeCode
     ];

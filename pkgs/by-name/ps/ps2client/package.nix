@@ -23,7 +23,7 @@ stdenv.mkDerivation {
     make PREFIX=$out install
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Desktop clients to interact with ps2link and ps2netfs";
     homepage = "https://github.com/ps2dev/ps2client";
     license = lib.licenses.bsd3;

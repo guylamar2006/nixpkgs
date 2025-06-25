@@ -23,11 +23,11 @@ stdenvNoCC.mkDerivation rec {
 
   passthru.updateScript = directoryListingUpdater { };
 
-  meta = with lib; {
+  meta = {
     description = "Wireless regulatory database for CRDA";
     homepage = "http://wireless.kernel.org/en/developers/Regulatory/";
-    license = licenses.isc;
+    license = lib.licenses.isc;
     platforms = lib.platforms.all;
-    maintainers = with maintainers; [ fpletz ];
+    maintainers = with lib.maintainers; [ fpletz ];
   };
 }

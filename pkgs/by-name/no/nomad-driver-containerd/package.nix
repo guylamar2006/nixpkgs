@@ -46,7 +46,7 @@ buildGoModule rec {
     "-w"
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.github.com/Roblox/nomad-driver-containerd";
     description = "Containerd task driver for Nomad";
     mainProgram = "nomad-driver-containerd";

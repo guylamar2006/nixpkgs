@@ -147,7 +147,7 @@ stdenv.mkDerivation {
         -change @rpath/libLLVMSPIRVLib.dylib $out/lib/libLLVMSPIRVLib.dylib
     '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/KhronosGroup/SPIRV-LLVM-Translator";
     description = "Tool and a library for bi-directional translation between SPIR-V and LLVM IR";
     mainProgram = "llvm-spirv";

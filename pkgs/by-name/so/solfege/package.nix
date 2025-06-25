@@ -83,7 +83,7 @@ python3Packages.buildPythonApplication rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description = "Ear training program";
     homepage = "https://www.gnu.org/software/solfege/";
     license = lib.licenses.gpl3Only;

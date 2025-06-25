@@ -42,6 +42,6 @@ stdenv.mkDerivation rec {
     homepage = "http://www.andre-simon.de/doku/ansifilter/en/ansifilter.html";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ Adjective-Object ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

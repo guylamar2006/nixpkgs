@@ -26,7 +26,7 @@ let
 
     doCheck = false;
 
-    meta = with lib; {
+    meta = {
       description = "Simple and easy way to embed static files into Go binaries";
       homepage = "https://github.com/gobuffalo/packr";
       license = lib.licenses.mit;
@@ -58,7 +58,7 @@ let
 
     doCheck = false;
 
-    meta = with lib; {
+    meta = {
       description = "Simple and easy way to embed static files into Go binaries";
       homepage = "https://github.com/gobuffalo/packr";
       license = lib.licenses.mit;

@@ -27,7 +27,7 @@ stdenv.mkDerivation {
     flex -o src/NSPlistLexer.cpp <(tail --lines=+17 src/NSPlistLexer.l)
   '';
 
-  meta = with lib; {
+  meta = {
     maintainers = with lib.maintainers; [ matthewbauer ];
     description = "Parses .plist files";
     license = lib.licenses.mit;

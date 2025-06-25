@@ -40,6 +40,6 @@ stdenv.mkDerivation rec {
       pSub
       frlan
     ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

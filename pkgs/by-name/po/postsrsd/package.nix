@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     libconfuse
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/roehling/postsrsd";
     description = "Postfix Sender Rewriting Scheme daemon";
     mainProgram = "postsrsd";

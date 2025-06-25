@@ -32,10 +32,10 @@ stdenv.mkDerivation rec {
   preInstall = ''
     mkdir -p $out/share/{app-install/desktop,applications,info,pixmaps}
   '';
-  meta = with lib; {
+  meta = {
     homepage = "https://sourceforge.net/projects/xzgv/";
     description = "Picture viewer for X with a thumbnail-based selector";
-    license = licenses.gpl2;
+    license = lib.licenses.gpl2;
     maintainers = with lib.maintainers; [ womfoo ];
     platforms = lib.platforms.linux;
     mainProgram = "xzgv";

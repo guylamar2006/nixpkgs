@@ -49,7 +49,7 @@ stdenv.mkDerivation {
     "-Wno-dev"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Distributed parallelization of 3D volume mesh adaptation";
     homepage = "http://www.mmgtools.org/";
     platforms = lib.platforms.unix;

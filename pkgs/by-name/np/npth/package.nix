@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
     musl = pkgsCross.musl64.npth;
   };
 
-  meta = with lib; {
+  meta = {
     description = "New GNU Portable Threads Library";
     longDescription = ''
       This is a library to provide the GNU Pth API and thus a non-preemptive

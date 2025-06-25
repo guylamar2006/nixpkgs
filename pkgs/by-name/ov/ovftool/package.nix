@@ -330,10 +330,10 @@ stdenv.mkDerivation (final: {
       set +x
     '';
 
-  meta = with lib; {
+  meta = {
     description = "VMware tools for working with OVF, OVA, and VMX images";
     homepage = "https://developer.vmware.com/web/tool/ovf-tool/";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [
       numinit

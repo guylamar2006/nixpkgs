@@ -136,7 +136,7 @@ stdenv.mkDerivation rec {
     inherit compat28 compat30 unicode;
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.wxwidgets.org/";
     description = "Cross-Platform C++ GUI Library";
     longDescription = ''
@@ -149,8 +149,8 @@ stdenv.mkDerivation rec {
       multithreading, image loading and saving in a variety of popular formats,
       database support, HTML viewing and printing, and much more.
     '';
-    license = licenses.wxWindows;
-    maintainers = with maintainers; [
+    license = lib.licenses.wxWindows;
+    maintainers = with lib.maintainers; [
       tfmoraes
       fliegendewurst
     ];

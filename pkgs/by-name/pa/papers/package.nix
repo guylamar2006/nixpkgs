@@ -126,7 +126,7 @@ stdenv.mkDerivation (finalAttrs: {
     moveToOutput "share/doc" "$devdoc"
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://wiki.gnome.org/Apps/papers";
     changelog = "https://gitlab.gnome.org/GNOME/Incubator/papers/-/blob/${finalAttrs.version}/NEWS?ref_type=tags";
     description = "GNOME's document viewer";

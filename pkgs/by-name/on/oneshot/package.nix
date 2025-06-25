@@ -46,7 +46,7 @@ buildGoModule rec {
     command = "oneshot version";
   };
 
-  meta = with lib; {
+  meta = {
     description = "First-come first-served single-fire HTTP server";
     homepage = "https://www.oneshot.uno/";
     license = lib.licenses.mit;

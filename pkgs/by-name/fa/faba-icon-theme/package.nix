@@ -44,7 +44,7 @@ stdenvNoCC.mkDerivation rec {
   meta = {
     description = "Sexy and modern icon theme with Tango influences";
     homepage = "https://snwh.org/moka";
-    license = with licenses; [
+    license = with lib.licenses; [
       cc-by-sa-40
       gpl3
     ];

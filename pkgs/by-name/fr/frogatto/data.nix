@@ -23,7 +23,7 @@ stdenv.mkDerivation {
   meta = {
     homepage = "https://github.com/frogatto/frogatto";
     description = "Data files to the frogatto game";
-    license = with licenses; [
+    license = with lib.licenses; [
       cc-by-30
       unfree
     ];

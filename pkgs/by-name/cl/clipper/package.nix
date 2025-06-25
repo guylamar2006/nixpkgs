@@ -32,6 +32,6 @@ stdenv.mkDerivation rec {
     homepage = "https://sourceforge.net/projects/polyclipping";
     license = lib.licenses.boost;
     maintainers = with lib.maintainers; [ mpickering ];
-    platforms = with platforms; unix;
+    platforms = lib.platforms.unix;
   };
 }

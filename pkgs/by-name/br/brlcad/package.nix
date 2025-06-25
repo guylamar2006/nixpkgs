@@ -57,7 +57,7 @@ stdenv.mkDerivation rec {
     homepage = "https://brlcad.org";
     description = "BRL-CAD is a powerful cross-platform open source combinatorial solid modeling system";
     changelog = "https://github.com/BRL-CAD/brlcad/releases/tag/${lib.removePrefix "refs/tags/" src.rev}";
-    license = with licenses; [
+    license = with lib.licenses; [
       lgpl21
       bsd2
     ];

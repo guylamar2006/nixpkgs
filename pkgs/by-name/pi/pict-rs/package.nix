@@ -45,7 +45,7 @@ rustPlatform.buildRustPackage rec {
 
   passthru.tests = { inherit (nixosTests) pict-rs; };
 
-  meta = with lib; {
+  meta = {
     broken = stdenv.hostPlatform.isDarwin;
     description = "Simple image hosting service";
     mainProgram = "pict-rs";

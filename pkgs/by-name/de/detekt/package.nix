@@ -41,6 +41,6 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.asl20;
     platforms = jre_headless.meta.platforms;
     maintainers = with lib.maintainers; [ mdr ];
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
   };
 })

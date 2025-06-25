@@ -43,7 +43,7 @@ rustPlatform.buildRustPackage rec {
     rm -r $out/bin/compile-files $out/bin/mdbook-prql $out/lib
   '';
 
-  meta = with lib; {
+  meta = {
     description = "CLI for the PRQL compiler - a simple, powerful, pipelined SQL replacement";
     homepage = "https://github.com/prql/prql";
     changelog = "https://github.com/prql/prql/blob/${src.rev}/CHANGELOG.md";

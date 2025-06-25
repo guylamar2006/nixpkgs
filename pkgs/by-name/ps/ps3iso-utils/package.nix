@@ -28,7 +28,7 @@ stdenv.mkDerivation {
 
   passthru.updateScript = unstableGitUpdater { };
 
-  meta = with lib; {
+  meta = {
     description = "Estwald's PS3ISO utilities";
     homepage = "https://github.com/bucanero/ps3iso-utils";
     license = lib.licenses.gpl3Only;

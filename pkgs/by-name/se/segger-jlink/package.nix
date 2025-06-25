@@ -157,7 +157,7 @@ stdenv.mkDerivation {
 
   passthru.updateScript = ./update.py;
 
-  meta = with lib; {
+  meta = {
     description = "J-Link Software and Documentation pack";
     homepage = "https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack";
     changelog = "https://www.segger.com/downloads/jlink/ReleaseNotes_JLink.html";

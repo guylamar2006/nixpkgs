@@ -131,7 +131,7 @@ stdenv.mkDerivation (finalAttrs: {
     };
   };
 
-  meta = with lib; {
+  meta = {
     changelog = "https://gitlab.freedesktop.org/upower/power-profiles-daemon/-/releases/${finalAttrs.version}";
     homepage = "https://gitlab.freedesktop.org/upower/power-profiles-daemon";
     description = "Makes user-selected power profiles handling available over D-Bus";

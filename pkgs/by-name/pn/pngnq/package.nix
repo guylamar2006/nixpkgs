@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
     zlib
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://pngnq.sourceforge.net/";
     description = "PNG quantizer";
     license = lib.licenses.bsd3;

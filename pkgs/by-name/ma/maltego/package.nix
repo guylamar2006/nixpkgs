@@ -85,7 +85,7 @@ stdenv.mkDerivation (finalAttrs: {
       d3vil0p3r
     ];
     platforms = lib.platforms.unix;
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.unfree;
   };
 })

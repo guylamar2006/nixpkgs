@@ -35,7 +35,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   checkTarget = "run_test";
 
-  meta = with lib; {
+  meta = {
     description = "Allow SML programs to call Futhark programs";
     homepage = "https://github.com/diku-dk/smlfut";
     license = lib.licenses.gpl3Plus;

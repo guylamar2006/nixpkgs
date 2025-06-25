@@ -28,7 +28,7 @@ stdenv.mkDerivation {
     install -D nx2elf $out/bin/nx2elf
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/shuffle2/nx2elf";
     description = "Convert Nintendo Switch executable files to ELFs";
     license = lib.licenses.unfree; # No license specified upstream

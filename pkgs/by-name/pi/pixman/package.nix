@@ -92,7 +92,7 @@ stdenv.mkDerivation (finalAttrs: {
     };
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://pixman.org";
     description = "Low-level library for pixel manipulation";
     license = lib.licenses.mit;

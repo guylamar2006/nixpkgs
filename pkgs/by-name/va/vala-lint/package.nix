@@ -53,14 +53,14 @@ stdenv.mkDerivation {
     };
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/vala-lang/vala-lint";
     description = "Check Vala code files for code-style errors";
     longDescription = ''
       Small command line tool and library for checking Vala code files for code-style errors.
       Based on the elementary Code-Style guidelines.
     '';
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = lib.platforms.linux;
     teams = with lib.teams; [ pantheon ];
     mainProgram = "io.elementary.vala-lint";

@@ -46,7 +46,7 @@ stdenv.mkDerivation (finalAttrs: {
     makeWrapper $out/{Applications/qalculate-qt.app/Contents/MacOS,bin}/qalculate-qt
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Ultimate desktop calculator";
     homepage = "http://qalculate.github.io";
     maintainers = with lib.maintainers; [ _4825764518 ];

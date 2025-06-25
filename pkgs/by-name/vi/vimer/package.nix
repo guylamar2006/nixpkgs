@@ -21,13 +21,13 @@ stdenv.mkDerivation rec {
     chmod +x $out/bin/vimer
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/susam/vimer";
     description = ''
       A convenience wrapper for gvim/mvim --remote(-tab)-silent to open files
       in an existing instance of GVim or MacVim.
     '';
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ matthiasbeyer ];
     platforms = lib.platforms.all;
     mainProgram = "vimer";

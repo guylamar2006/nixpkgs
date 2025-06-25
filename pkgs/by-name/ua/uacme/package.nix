@@ -34,11 +34,11 @@ stdenv.mkDerivation rec {
     openssl
   ];
 
-  meta = with lib; {
+  meta = {
     description = "ACMEv2 client written in plain C with minimal dependencies";
     homepage = "https://github.com/ndilieto/uacme";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ malte-v ];
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [ malte-v ];
     platforms = lib.platforms.unix;
     broken = stdenv.hostPlatform.isDarwin;
   };

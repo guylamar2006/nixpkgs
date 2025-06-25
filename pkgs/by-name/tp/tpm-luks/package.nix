@@ -40,7 +40,7 @@ stdenv.mkDerivation {
     rm -r $out/nix
   '';
 
-  meta = with lib; {
+  meta = {
     description = "LUKS key storage in TPM NVRAM";
     homepage = "https://github.com/shpedoikal/tpm-luks/";
     maintainers = with lib.maintainers; [ ];

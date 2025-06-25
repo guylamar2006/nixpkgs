@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
     timidity
   ];
 
-  meta = with lib; {
+  meta = {
     description = "SDL2 sound library";
     mainProgram = "playsound";
     platforms = lib.platforms.unix;

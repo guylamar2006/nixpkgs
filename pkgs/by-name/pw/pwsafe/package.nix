@@ -103,7 +103,7 @@ stdenv.mkDerivation rec {
     url = src.gitRepoUrl;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Password database utility";
     longDescription = ''
       Password Safe is a password database utility. Like many other

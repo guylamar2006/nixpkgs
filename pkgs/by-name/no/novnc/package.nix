@@ -40,10 +40,10 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "VNC client web application";
     homepage = "https://novnc.com";
-    license = with licenses; [
+    license = with lib.licenses; [
       mpl20
       ofl
       bsd3

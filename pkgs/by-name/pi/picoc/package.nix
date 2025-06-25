@@ -44,7 +44,7 @@ stdenv.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Very small C interpreter for scripting";
     mainProgram = "picoc";
     longDescription = ''

@@ -36,7 +36,7 @@ stdenv.mkDerivation (attrs: {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Package manager for the .NET platform";
     mainProgram = "nuget";
     homepage = "https://www.mono-project.com/";

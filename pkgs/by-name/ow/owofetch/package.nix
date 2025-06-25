@@ -20,7 +20,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-0ON1h8+ruLOvBR7Q/hOIW6j+BjfPAAuYA2wrUYj59Ow=";
 
-  meta = with lib; {
+  meta = {
     description = "Alternative to *fetch, uwuifies all stats";
     homepage = "https://github.com/netthier/owofetch-rs";
     license = lib.licenses.gpl3Only;

@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
     gtkmm3
   ];
 
-  meta = with lib; {
+  meta = {
     description = "PulseAudio Preferences";
     mainProgram = "paprefs";
 

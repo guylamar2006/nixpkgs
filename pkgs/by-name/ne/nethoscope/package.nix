@@ -45,7 +45,7 @@ rustPlatform.buildRustPackage rec {
     fi
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Listen to your network traffic";
     longDescription = ''
       Employ your built-in wetware pattern recognition and

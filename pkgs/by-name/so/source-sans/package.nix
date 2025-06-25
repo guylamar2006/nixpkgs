@@ -23,7 +23,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://adobe-fonts.github.io/source-sans/";
     description = "Sans serif font family for user interface environments";
     license = lib.licenses.ofl;

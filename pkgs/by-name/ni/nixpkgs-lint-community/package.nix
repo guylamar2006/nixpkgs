@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-wK2ZMqxgSLGhM7TsztFkZHB2+WnT+8Tjd3UrFdIvGpI=";
 
-  meta = with lib; {
+  meta = {
     description = "Fast semantic linter for Nix using tree-sitter";
     mainProgram = "nixpkgs-lint";
     homepage = "https://github.com/nix-community/nixpkgs-lint";

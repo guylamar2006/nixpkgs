@@ -25,10 +25,10 @@ stdenv.mkDerivation rec {
   ];
   buildInputs = [ libxmp ] ++ lib.optionals stdenv.hostPlatform.isLinux [ alsa-lib ];
 
-  meta = with lib; {
+  meta = {
     description = "Extended module player";
     homepage = "https://xmp.sourceforge.net/";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     platforms = lib.platforms.unix;
     mainProgram = "xmp";
   };

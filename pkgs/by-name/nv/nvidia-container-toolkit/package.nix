@@ -122,7 +122,7 @@ buildGoModule rec {
         --subst-var-by glibcbin ${lib.getBin glibc}
     '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://gitlab.com/nvidia/container-toolkit/container-toolkit";
     description = "NVIDIA Container Toolkit";
     license = lib.licenses.asl20;

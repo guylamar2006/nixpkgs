@@ -17,11 +17,11 @@ stdenv.mkDerivation rec {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     description = "Tiny Racket for Scripting";
     mainProgram = "zuo";
     homepage = "https://github.com/racket/zuo";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [ ];
   };

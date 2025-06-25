@@ -22,7 +22,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Most over-engineered cursor theme";
     homepage = "https://github.com/phisch/phinger-cursors";
     platforms = lib.platforms.unix;

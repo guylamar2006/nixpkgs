@@ -38,7 +38,7 @@ stdenvNoCC.mkDerivation rec {
        --prefix PERL5PATH : "${perlPackages.makePerlPath [ perlPackages.GetoptLong ]}"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Utilities to manage schema in .schema and .ldif format";
     homepage = "https://www.fusiondirectory.org/schema2ldif-project-and-components/";
     license = lib.licenses.bsd3;

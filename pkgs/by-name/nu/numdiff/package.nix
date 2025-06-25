@@ -16,7 +16,7 @@ stdenv.mkDerivation rec {
 
   buildInputs = [ libintl ];
 
-  meta = with lib; {
+  meta = {
     description = ''
       A little program that can be used to compare putatively similar files
       line by line and field by field, ignoring small numeric differences

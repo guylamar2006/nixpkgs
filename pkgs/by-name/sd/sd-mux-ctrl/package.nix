@@ -36,7 +36,7 @@ stdenv.mkDerivation {
       --bash ../etc/bash_completion.d/sd-mux-ctrl
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Tool for controlling multiple sd-mux devices";
     homepage = "https://git.tizen.org/cgit/tools/testlab/sd-mux";
     license = lib.licenses.asl20;

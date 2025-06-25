@@ -79,10 +79,10 @@ stdenv.mkDerivation rec {
     ln -s ${lib.getLib libffi}/lib/libffi.so $out/lib64/libffi.so.6
   '';
 
-  meta = with lib; {
+  meta = {
     description = "High-performance remote display protocol";
     homepage = "https://aws.amazon.com/hpc/dcv/";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unfree;
     platforms = [ "x86_64-linux" ];
     maintainers = with lib.maintainers; [ rmcgibbo ];

@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     homepage = "http://hexfiend.com/";
     changelog = "https://hexfiend.github.io/HexFiend/ReleaseNotes.html";
     license = lib.licenses.bsd2;
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     maintainers = with lib.maintainers; [ eliandoran ];
     platforms = lib.platforms.darwin;
   };

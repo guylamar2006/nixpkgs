@@ -98,7 +98,7 @@ stdenv.mkDerivation (finalAttrs: {
     command = "env HOME=$TMPDIR nextflow -version";
   };
 
-  meta = with lib; {
+  meta = {
     description = "DSL for data-driven computational pipelines";
     longDescription = ''
       Nextflow is a bioinformatics workflow manager that enables the development of portable and reproducible workflows.

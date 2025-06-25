@@ -28,7 +28,7 @@ stdenv.mkDerivation {
   meta = {
     description = "Tiny collection of programs used for ECDSA (keygen, sign, verify)";
     homepage = "https://github.com/freifunk-gluon/ecdsautils/";
-    license = with licenses; [
+    license = with lib.licenses; [
       mit
       bsd2
     ];

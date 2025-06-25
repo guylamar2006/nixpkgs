@@ -131,6 +131,6 @@ stdenv.mkDerivation (finalAttrs: {
       katexochen
     ];
     mainProgram = "dnf5";
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 })

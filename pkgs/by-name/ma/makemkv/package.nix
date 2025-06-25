@@ -125,8 +125,8 @@ libsForQt5.mkDerivation {
       can always download the latest version from makemkv.com that will reset the
       expiration date.
     '';
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = [
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
+    license = with lib.licenses; [
       licenses.unfree
       licenses.lgpl21
     ];

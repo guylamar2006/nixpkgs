@@ -33,7 +33,7 @@ rustPlatform.buildRustPackage rec {
     installManPage safe-rm.1
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Tool intended to prevent the accidental deletion of important files";
     homepage = "https://launchpad.net/safe-rm";
     license = lib.licenses.gpl3Plus;

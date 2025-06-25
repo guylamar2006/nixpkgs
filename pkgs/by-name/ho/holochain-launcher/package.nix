@@ -56,7 +56,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/holochain/launcher";
     maintainers = with lib.maintainers; [ steveej ];
     license = lib.licenses.cal10;
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     platforms = lib.platforms.linux;
   };
 }

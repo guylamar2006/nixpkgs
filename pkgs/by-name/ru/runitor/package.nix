@@ -33,7 +33,7 @@ buildGoModule rec {
   # Unit tests require binding to local addresses for listening sockets.
   __darwinAllowLocalNetworking = true;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://bdd.fi/x/runitor";
     description = "Command runner with healthchecks.io integration";
     longDescription = ''

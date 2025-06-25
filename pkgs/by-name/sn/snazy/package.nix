@@ -37,7 +37,7 @@ rustPlatform.buildRustPackage rec {
     runHook postInstallCheck
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Snazzy json log viewer";
     mainProgram = "snazy";
     longDescription = ''

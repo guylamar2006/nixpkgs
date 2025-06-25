@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     description = "Console text editor for Unix that you already know how to use";
     homepage = "https://hisham.hm/dit/";
     license = lib.licenses.gpl2;
-    platforms = with platforms; linux;
+    platforms = with lib.platforms.linux;
     maintainers = with lib.maintainers; [ davidak ];
     mainProgram = "dit";
   };

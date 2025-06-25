@@ -24,7 +24,7 @@ rustPlatform.buildRustPackage rec {
   meta = {
     description = "Backup a folder to AWS S3, once or periodically";
     homepage = "https://github.com/beeb/awsbck";
-    license = with licenses; [
+    license = with lib.licenses; [
       mit
       asl20
     ];

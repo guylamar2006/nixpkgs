@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     (lib.cmakeBool "CMAKE_SKIP_RPATH" true)
   ];
 
-  meta = with lib; {
+  meta = {
     description = "OpenCL device simulator and debugger";
     homepage = "https://github.com/jrprice/oclgrind";
     license = lib.licenses.bsd3;

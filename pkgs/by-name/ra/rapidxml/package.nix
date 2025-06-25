@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
     cp * $out/include/${pname}
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Fast XML DOM-style parser in C++";
     homepage = "https://rapidxml.sourceforge.net/";
     license = lib.licenses.boost;

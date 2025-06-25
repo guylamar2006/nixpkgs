@@ -227,7 +227,7 @@ stdenv.mkDerivation (self: {
     rm -rf $out/bin/__pycache__
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Retargetable machine-code decompiler based on LLVM";
     homepage = "https://retdec.com";
     license = lib.licenses.mit;

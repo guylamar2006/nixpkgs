@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Discord music bot that's easy to set up and run yourself";
     homepage = "https://github.com/jagrosh/MusicBot";
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ ];
     inherit (jre_headless.meta) platforms;

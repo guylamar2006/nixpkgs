@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
     make sysconfigdir=$out/etc/conf.d install
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Makes applications run faster by prefetching binaries and shared objects";
     homepage = "https://sourceforge.net/projects/preload";
     license = lib.licenses.gpl2Only;

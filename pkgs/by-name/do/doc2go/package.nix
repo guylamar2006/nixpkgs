@@ -46,7 +46,7 @@ buildGoModule rec {
       from your Go code. It is a self-hosted static alternative to
       https://pkg.go.dev/ and https://godocs.io/.
     '';
-    license = with licenses; [
+    license = with lib.licenses; [
       # general project license
       asl20
       # internal/godoc/synopsis*.go adapted from golang source

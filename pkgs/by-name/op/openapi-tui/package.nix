@@ -25,7 +25,7 @@ rustPlatform.buildRustPackage rec {
   nativeBuildInputs = [ pkg-config ];
   buildInputs = [ openssl ];
 
-  meta = with lib; {
+  meta = {
     description = "Terminal UI to list, browse and run APIs defined with openapi spec";
     homepage = "https://github.com/zaghaghi/openapi-tui";
     license = lib.licenses.mit;

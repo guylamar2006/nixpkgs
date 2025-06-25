@@ -16,7 +16,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   buildInputs = [ pam ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/ColumPaget/pam_honeycreds";
     description = "PAM module that sends warnings when fake passwords are used";
     license = lib.licenses.gpl3Only;

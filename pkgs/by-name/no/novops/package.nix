@@ -49,7 +49,7 @@ rustPlatform.buildRustPackage rec {
       --zsh <($out/bin/novops completion zsh)
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Cross-platform secret & config manager for development and CI environments";
     homepage = "https://github.com/PierreBeucher/novops";
     license = lib.licenses.lgpl3;

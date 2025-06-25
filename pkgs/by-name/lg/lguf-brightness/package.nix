@@ -36,6 +36,6 @@ stdenv.mkDerivation {
     license = lib.licenses.lgpl21Plus;
     maintainers = with lib.maintainers; [ periklis ];
     mainProgram = "lguf_brightness";
-    platforms = with platforms; linux ++ darwin;
+    platforms = with lib.platforms; linux ++ darwin;
   };
 }

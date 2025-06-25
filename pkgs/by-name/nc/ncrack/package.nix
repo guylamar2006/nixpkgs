@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     zlib
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Network authentication tool";
     mainProgram = "ncrack";
     homepage = "https://nmap.org/ncrack/";

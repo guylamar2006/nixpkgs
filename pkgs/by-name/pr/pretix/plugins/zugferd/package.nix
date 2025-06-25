@@ -44,7 +44,7 @@ buildPythonPackage rec {
 
   pythonImportsCheck = [ "pretix_zugferd" ];
 
-  meta = with lib; {
+  meta = {
     description = "Annotate pretix' invoices with ZUGFeRD data";
     homepage = "https://github.com/pretix/pretix-zugferd";
     license = lib.licenses.asl20;

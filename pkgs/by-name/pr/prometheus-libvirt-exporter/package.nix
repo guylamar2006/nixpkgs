@@ -25,7 +25,7 @@ buildGoModule rec {
 
   nativeBuildInputs = [ pkg-config ];
 
-  meta = with lib; {
+  meta = {
     description = "Prometheus metrics exporter for libvirt";
     homepage = "https://github.com/Tinkoff/libvirt-exporter";
     license = lib.licenses.asl20;

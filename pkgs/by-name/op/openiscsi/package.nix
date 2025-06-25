@@ -63,7 +63,7 @@ stdenv.mkDerivation rec {
 
   passthru.tests = { inherit (nixosTests) iscsi-root; };
 
-  meta = with lib; {
+  meta = {
     description = "High performance, transport independent, multi-platform implementation of RFC3720";
     license = lib.licenses.gpl2Plus;
     homepage = "https://www.open-iscsi.com";

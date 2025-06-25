@@ -47,7 +47,7 @@ stdenv.mkDerivation rec {
 
   patches = [ ./parallel-build.patch ];
 
-  meta = with lib; {
+  meta = {
     description = "Brute force attack against Wifi Protected Setup";
     homepage = "https://code.google.com/archive/p/reaver-wps/";
     license = lib.licenses.gpl2Plus;

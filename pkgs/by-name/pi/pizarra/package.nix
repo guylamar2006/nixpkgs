@@ -48,7 +48,7 @@ rustPlatform.buildRustPackage rec {
       --replace "Icon=/usr/share/icons/hicolor/scalable/apps/pizarra.svg" "Icon=pizarra"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Simple blackboard written in GTK";
     mainProgram = "pizarra";
     longDescription = ''

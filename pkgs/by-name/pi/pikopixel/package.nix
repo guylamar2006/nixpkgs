@@ -36,7 +36,7 @@ clangStdenv.mkDerivation rec {
       PikoPixel.app/Resources/PikoPixel.desktop > $out/share/applications/PikoPixel.desktop
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Application for drawing and editing pixel-art images";
     mainProgram = "PikoPixel";
     homepage = "https://twilightedge.com/mac/pikopixel/";

@@ -75,9 +75,9 @@ stdenv.mkDerivation rec {
     cp -r themes/* $themes
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Nix based static site generator";
-    maintainers = with maintainers; [ ];
+    maintainers = with lib.maintainers; [ ];
     homepage = "https://styx-static.github.io/styx-site/";
     downloadPage = "https://github.com/styx-static/styx/";
     platforms = lib.platforms.all;

@@ -37,7 +37,7 @@ buildGoModule rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Allows ephemeral and batch jobs to expose metrics to Prometheus";
     mainProgram = "pushgateway";
     homepage = "https://github.com/prometheus/pushgateway";

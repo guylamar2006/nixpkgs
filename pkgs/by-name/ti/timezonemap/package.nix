@@ -67,10 +67,10 @@ stdenv.mkDerivation {
     sed "s|/usr/share/libtimezonemap|$out/share/libtimezonemap|g" -i ./src/tz.h
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://launchpad.net/timezonemap";
     description = "GTK+3 Timezone Map Widget";
-    license = licenses.gpl2;
+    license = lib.licenses.gpl2;
     platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ mkg20001 ];
   };

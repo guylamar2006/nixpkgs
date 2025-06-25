@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     description = "McCabe-style function complexity and line counting for C and C++";
     homepage = "https://people.debian.org/~bame/pmccabe/";
     license = lib.licenses.gpl2Plus;

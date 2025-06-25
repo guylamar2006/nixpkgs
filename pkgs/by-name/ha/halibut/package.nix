@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.chiark.greenend.org.uk/~sgtatham/halibut/";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ pSub ];
-    platforms = with platforms; unix;
+    platforms = lib.platforms.unix;
     mainProgram = "halibut";
   };
 }

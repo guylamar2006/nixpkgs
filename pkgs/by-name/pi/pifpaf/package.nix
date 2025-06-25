@@ -37,7 +37,7 @@ python3Packages.buildPythonApplication rec {
 
   pythonImportsCheck = [ "pifpaf" ];
 
-  meta = with lib; {
+  meta = {
     description = "Suite of tools and fixtures to manage daemons for testing";
     mainProgram = "pifpaf";
     homepage = "https://github.com/jd/pifpaf";

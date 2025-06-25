@@ -28,10 +28,10 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://software.intel.com/content/www/us/en/develop/articles/intelr-memory-latency-checker.html";
     description = "Intel Memory Latency Checker";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ basvandijk ];
-    platforms = with platforms; linux;
+    platforms = lib.platforms.linux;
     mainProgram = "mlc";
   };
 }

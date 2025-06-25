@@ -55,7 +55,7 @@ buildGoModule rec {
     gappsWrapperArgs+=(--prefix XDG_DATA_DIRS : "$out/share")
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/nwg-piotr/nwg-menu";
     description = "MenuStart plugin for nwg-panel";
     mainProgram = "nwg-menu";

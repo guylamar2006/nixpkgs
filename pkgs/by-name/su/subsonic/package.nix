@@ -31,11 +31,11 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "http://subsonic.org";
     description = "Personal media streamer";
     license = lib.licenses.unfree;
-    maintainers = with maintainers; [ telotortium ];
+    maintainers = with lib.maintainers; [ telotortium ];
     platforms = lib.platforms.unix;
   };
 }

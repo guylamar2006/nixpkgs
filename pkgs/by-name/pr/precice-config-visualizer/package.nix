@@ -22,7 +22,7 @@ python3Packages.buildPythonApplication {
 
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/precice/config-visualizer";
     description = "Small python tool for visualizing the preCICE xml configuration";
     license = lib.licenses.gpl3Only;

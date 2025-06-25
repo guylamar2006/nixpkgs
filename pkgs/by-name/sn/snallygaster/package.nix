@@ -31,7 +31,7 @@ python3Packages.buildPythonApplication rec {
     "--ignore=tests/test_codingstyle.py"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Tool to scan for secret files on HTTP servers";
     homepage = "https://github.com/hannob/snallygaster";
     license = lib.licenses.bsd0;

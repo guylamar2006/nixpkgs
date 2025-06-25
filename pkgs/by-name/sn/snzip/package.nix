@@ -29,7 +29,7 @@ stdenv.mkDerivation (finalAttrs: {
     snappy
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Compression/decompression tool based on snappy";
     homepage = "https://github.com/kubo/snzip";
     maintainers = with lib.maintainers; [ doronbehar ];

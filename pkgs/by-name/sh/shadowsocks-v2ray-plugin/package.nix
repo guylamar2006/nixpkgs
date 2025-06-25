@@ -21,7 +21,7 @@ buildGoModule rec {
 
   vendorHash = "sha256-3/1te41U4QQTMeoA1y43QMfJyiM5JhaLE0ORO8ZO7W8=";
 
-  meta = with lib; {
+  meta = {
     description = "Yet another SIP003 plugin for shadowsocks, based on v2ray";
     homepage = "https://github.com/shadowsocks/v2ray-plugin/";
     license = lib.licenses.mit;

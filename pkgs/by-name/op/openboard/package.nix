@@ -108,7 +108,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   propagatedBuildInputs = [ importer ];
 
-  meta = with lib; {
+  meta = {
     description = "Interactive whiteboard application";
     homepage = "https://openboard.ch/";
     license = lib.licenses.gpl3Plus;

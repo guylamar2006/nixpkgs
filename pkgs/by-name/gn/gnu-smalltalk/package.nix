@@ -85,7 +85,7 @@ stdenv.mkDerivation rec {
       language, well-versed to scripting tasks.
     '';
     homepage = "http://smalltalk.gnu.org/";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl2
       lgpl2
     ];

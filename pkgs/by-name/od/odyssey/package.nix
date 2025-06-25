@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
     install -Dm755 -t $out/bin sources/odyssey
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Scalable PostgreSQL connection pooler";
     homepage = "https://github.com/yandex/odyssey";
     license = lib.licenses.bsd3;

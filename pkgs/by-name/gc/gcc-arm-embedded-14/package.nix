@@ -91,7 +91,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Pre-built GNU toolchain from ARM Cortex-M & Cortex-R processors";
     homepage = "https://developer.arm.com/open-source/gnu-toolchain/gnu-rm";
-    license = with licenses; [
+    license = with lib.licenses; [
       bsd2
       gpl2
       gpl3
@@ -109,6 +109,6 @@ stdenv.mkDerivation rec {
       "x86_64-darwin"
       "aarch64-darwin"
     ];
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
   };
 }

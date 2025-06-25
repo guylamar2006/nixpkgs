@@ -28,7 +28,7 @@ buildPythonApplication rec {
 
   pythonImportsCheck = [ "pew" ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/berdario/pew";
     description = "Tools to manage multiple virtualenvs written in pure python";
     mainProgram = "pew";

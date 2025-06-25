@@ -29,6 +29,6 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/xitop/clex";
     license = lib.licenses.gpl2Plus;
-    platforms = with platforms; linux ++ darwin;
+    platforms = with lib.platforms; linux ++ darwin;
   };
 }

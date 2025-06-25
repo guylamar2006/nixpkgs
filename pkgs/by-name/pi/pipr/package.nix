@@ -25,7 +25,7 @@ rustPlatform.buildRustPackage rec {
     wrapProgram "$out/bin/pipr" --prefix PATH : ${lib.makeBinPath [ bubblewrap ]}
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Commandline-tool to interactively write shell pipelines";
     mainProgram = "pipr";
     homepage = "https://github.com/ElKowar/pipr";

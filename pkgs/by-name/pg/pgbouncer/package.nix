@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     pgbouncer = nixosTests.pgbouncer;
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.pgbouncer.org/";
     mainProgram = "pgbouncer";
     description = "Lightweight connection pooler for PostgreSQL";

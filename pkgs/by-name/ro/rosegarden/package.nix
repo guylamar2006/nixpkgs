@@ -79,7 +79,7 @@ stdenv.mkDerivation rec {
     "-DLILV_INCLUDE_DIR=${lilv.dev}/include/lilv-0"
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.rosegardenmusic.com/";
     description = "Music composition and editing environment";
     mainProgram = "rosegarden";

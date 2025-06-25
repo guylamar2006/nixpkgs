@@ -49,10 +49,10 @@ stdenvNoCC.mkDerivation {
     jdupes -l -r $out/share/icons
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Modern icon theme designed around bold colours and simple geometric shapes";
     homepage = "https://snwh.org/paper";
-    license = with licenses; [
+    license = with lib.licenses; [
       cc-by-sa-40
       lgpl3
     ];

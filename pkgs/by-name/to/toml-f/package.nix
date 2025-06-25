@@ -37,9 +37,9 @@ stdenv.mkDerivation rec {
   # tftest-build fails on aarch64-linux
   doCheck = !stdenv.hostPlatform.isAarch64;
 
-  meta = with lib; {
+  meta = {
     description = "TOML parser implementation for data serialization and deserialization in Fortran";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       mit
     ];

@@ -23,7 +23,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "http://www.impallari.com/quattrocentosans/";
     description = "Classic, elegant and sober sans-serif typeface";
     license = lib.licenses.ofl;

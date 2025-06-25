@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
     installManPage pastebinit.1
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://stgraber.org/category/pastebinit/";
     description = "Software that lets you send anything you want directly to a pastebin from the command line";
     maintainers = with lib.maintainers; [

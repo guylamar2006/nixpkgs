@@ -126,7 +126,7 @@ stdenv.mkDerivation (finalAttrs: {
     command = "p4 -V";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Perforce Helix Core command-line client and APIs";
     homepage = "https://www.perforce.com";
     license = lib.licenses.bsd2;

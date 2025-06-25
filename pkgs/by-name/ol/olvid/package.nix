@@ -106,7 +106,7 @@ stdenv.mkDerivation (finalAttrs: {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Secure french messenger";
     homepage = "https://www.olvid.io";
     license = lib.licenses.agpl3Only;

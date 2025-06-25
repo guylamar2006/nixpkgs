@@ -114,7 +114,7 @@ stdenv.mkDerivation {
 
   inherit passthru;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/intel/opencl-clang/";
     description = "Clang wrapper library with an OpenCL-oriented API and the ability to compile OpenCL C kernels to SPIR-V modules";
     license = lib.licenses.ncsa;

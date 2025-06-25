@@ -52,7 +52,7 @@ buildGoModule rec {
     command = "weed version";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Simple and highly scalable distributed file system";
     homepage = "https://github.com/chrislusf/seaweedfs";
     maintainers = with lib.maintainers; [

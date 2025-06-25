@@ -65,7 +65,7 @@ python3.pkgs.buildPythonApplication rec {
 
   pythonImportsCheck = [ "sigma.cli" ];
 
-  meta = with lib; {
+  meta = {
     description = "Sigma command line interface";
     homepage = "https://github.com/SigmaHQ/sigma-cli";
     changelog = "https://github.com/SigmaHQ/sigma-cli/releases/tag/${src.tag}";

@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     description = "Tracing tools (kernel + user space) for Linux";
     mainProgram = "lttng";
     homepage = "https://lttng.org/";
-    license = with licenses; [
+    license = with lib.licenses; [
       lgpl21Only
       gpl2Only
     ];

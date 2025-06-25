@@ -22,7 +22,7 @@ buildGoModule rec {
     opensmtpd-rspamd-integration = nixosTests.opensmtpd-rspamd;
   };
 
-  meta = with lib; {
+  meta = {
     description = "OpenSMTPD filter integration for the Rspamd daemon";
     homepage = "https://github.com/poolpOrg/filter-rspamd";
     license = lib.licenses.isc;

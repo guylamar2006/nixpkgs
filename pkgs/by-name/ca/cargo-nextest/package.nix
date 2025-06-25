@@ -35,7 +35,7 @@ rustPlatform.buildRustPackage rec {
     mainProgram = "cargo-nextest";
     homepage = "https://github.com/nextest-rs/nextest";
     changelog = "https://nexte.st/CHANGELOG.html";
-    license = with licenses; [
+    license = with lib.licenses; [
       mit
       asl20
     ];

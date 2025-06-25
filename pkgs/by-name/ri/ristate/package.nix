@@ -21,7 +21,7 @@ rustPlatform.buildRustPackage {
 
   passthru.updateScript = nix-update-script { extraArgs = [ "--version=branch" ]; };
 
-  meta = with lib; {
+  meta = {
     description = "River-status client written in Rust";
     homepage = "https://gitlab.com/snakedye/ristate";
     license = lib.licenses.mit;

@@ -18,10 +18,10 @@ stdenv.mkDerivation (finalAttrs: {
 
   buildInputs = [ ghostscript_headless ];
 
-  meta = with lib; {
+  meta = {
     description = "Unicode text to postscript converter";
     homepage = "https://github.com/arsv/u2ps";
-    license = licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     longDescription = ''
       U2ps is a text to postscript converter similar to a2ps,
       with emphasis on Unicode support.

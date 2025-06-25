@@ -90,7 +90,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Manga & Anime Downloader";
     homepage = "https://sourceforge.net/projects/hakuneko/";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unlicense;
     maintainers = with lib.maintainers; [
       nloomans

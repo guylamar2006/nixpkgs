@@ -18,7 +18,7 @@ stdenv.mkDerivation rec {
     cp -R config legal lib library plugins LICENCE.txt NOTICE.txt README.txt RELEASE_NOTES.txt $out
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://serviio.org";
     description = "UPnP Media Streaming Server";
     longDescription = ''

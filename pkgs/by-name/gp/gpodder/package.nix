@@ -89,7 +89,7 @@ python3Packages.buildPythonApplication rec {
     '';
     homepage = "http://gpodder.org/";
     license = lib.licenses.gpl3;
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     maintainers = with lib.maintainers; [ mic92 ];
   };
 }

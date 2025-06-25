@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
     rm -rf $out/usr/
   '';
 
-  meta = with lib; {
+  meta = {
     description = "User-space tools for LinuxPPS";
     homepage = "http://linuxpps.org/";
     license = lib.licenses.gpl2Plus;

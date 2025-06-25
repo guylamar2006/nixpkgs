@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     }";
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Risk of Rain 2 Mod Manager in Bash";
     homepage = "https://github.com/foldex/r2mod_cli";
     license = lib.licenses.gpl3Only;

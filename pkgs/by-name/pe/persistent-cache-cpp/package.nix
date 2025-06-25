@@ -104,7 +104,7 @@ stdenv.mkDerivation (finalAttrs: {
     updateScript = gitUpdater { };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Cache of key-value pairs with persistent storage for C++ 11";
     longDescription = ''
       A persistent cache for arbitrary (possibly large amount of data, such as

@@ -64,7 +64,7 @@ stdenv.mkDerivation rec {
     homepage = "http://azsky2.html.xdomain.jp/soft/azpainter.html";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ dtzWill ];
-    platforms = with platforms; linux ++ darwin;
+    platforms = with lib.platforms; linux ++ darwin;
     mainProgram = "azpainter";
   };
 }

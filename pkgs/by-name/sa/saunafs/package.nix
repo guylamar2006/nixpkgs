@@ -76,7 +76,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   passthru.tests = nixosTests.saunafs;
 
-  meta = with lib; {
+  meta = {
     description = "Distributed POSIX file system";
     homepage = "https://saunafs.com";
     platforms = lib.platforms.linux;

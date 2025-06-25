@@ -62,7 +62,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   passthru.tests.version = testers.testVersion { package = finalAttrs.finalPackage; };
 
-  meta = with lib; {
+  meta = {
     description = "Parser generator for C";
     longDescription = ''
       PackCC is a parser generator for C. Its main features are as follows:

@@ -27,7 +27,7 @@ stdenv.mkDerivation {
     libsForQt5.qtbase
     libsForQt5.qtx11extras
   ];
-  meta = with lib; {
+  meta = {
     description = "Simple creation and editing of screenshots";
     mainProgram = "qScreenshot";
     homepage = "https://sourceforge.net/projects/qscreenshot/";

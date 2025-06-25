@@ -31,7 +31,7 @@ stdenv.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "libusb tool for flashing chinese ST-Link dongles";
     homepage = "https://github.com/jeanthom/stlink-tool";
     license = lib.licenses.mit;

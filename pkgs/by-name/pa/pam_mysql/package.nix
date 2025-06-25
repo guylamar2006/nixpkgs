@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     inherit (nixosTests) auth-mysql;
   };
 
-  meta = with lib; {
+  meta = {
     description = "PAM authentication module against a MySQL database";
     homepage = "https://github.com/NigelCunningham/pam-MySQL";
     license = lib.licenses.gpl2Plus;

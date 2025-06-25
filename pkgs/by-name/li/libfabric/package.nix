@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://ofiwg.github.io/libfabric/";
     description = "Open Fabric Interfaces";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl2
       bsd2
     ];

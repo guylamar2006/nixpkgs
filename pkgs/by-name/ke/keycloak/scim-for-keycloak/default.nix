@@ -24,7 +24,7 @@ maven.buildMavenPackage rec {
   meta = {
     homepage = "https://github.com/Captain-P-Goldfish/scim-for-keycloak";
     description = "Third party module that extends Keycloak with SCIM functionality";
-    sourceProvenance = with sourceTypes; [
+    sourceProvenance = with lib.sourceTypes; [
       fromSource
       binaryBytecode # dependencies
     ];

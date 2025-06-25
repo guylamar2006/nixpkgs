@@ -41,14 +41,14 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description = "X-windows application that will let it snow on the root, in between and on windows";
     mainProgram = "xsnow";
     homepage = "https://ratrabbit.nl/ratrabbit/xsnow/";
     changelog = "https://ratrabbit.nl/ratrabbit/xsnow/changelog/index.html";
     downloadPage = "https://ratrabbit.nl/ratrabbit/xsnow/downloads/index.html";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [
       robberer
       griffi-gh
     ];

@@ -87,12 +87,12 @@ stdenv.mkDerivation rec {
 
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Tunnel TCP connections over the Tox protocol";
     mainProgram = "tuntox";
     homepage = "https://github.com/gjedeer/tuntox";
-    license = licenses.gpl3;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [
       willcohen
     ];
     platforms = lib.platforms.unix;

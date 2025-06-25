@@ -17,7 +17,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-zMQw3Q9t6JSMDt7xHMGTgAu9LW6MhG+Rrjpp5IEs/qQ=";
 
-  meta = with lib; {
+  meta = {
     description = "Rust tool to monitor Nix processes";
     homepage = "https://github.com/DieracDelta/nix-btm";
     license = lib.licenses.mit;

@@ -34,7 +34,7 @@ buildGoModule rec {
 
   buildInputs = lib.optional stdenv.hostPlatform.isLinux alsa-lib;
 
-  meta = with lib; {
+  meta = {
     description = "Tool for shell commands execution, visualization and alerting";
     homepage = "https://sampler.dev";
     license = lib.licenses.gpl3;

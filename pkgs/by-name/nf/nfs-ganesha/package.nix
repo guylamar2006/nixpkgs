@@ -78,7 +78,7 @@ stdenv.mkDerivation rec {
     install -Dm755 $src/src/tools/mount.9P $tools/bin/mount.9P
   '';
 
-  meta = with lib; {
+  meta = {
     description = "NFS server that runs in user space";
     homepage = "https://github.com/nfs-ganesha/nfs-ganesha/wiki";
     maintainers = with lib.maintainers; [ markuskowa ];

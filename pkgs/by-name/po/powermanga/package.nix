@@ -41,7 +41,7 @@ stdenv.mkDerivation (finalAttrs: {
     "scoredir=$(TMPDIR)"
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://linux.tlk.fr/games/Powermanga/";
     downloadPage = "https://linux.tlk.fr/games/Powermanga/download/";
     description = "Arcade 2D shoot-em-up game";

@@ -21,7 +21,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   cmakeFlags = [ "-DBUILD_SHARED_LIBS=${if enableStatic then "OFF" else "ON"}" ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/AmokHuginnsson/replxx";
     changelog = "https://github.com/AmokHuginnsson/replxx/releases/tag/release-${finalAttrs.version}";
     description = "Readline and libedit replacement that supports UTF-8, syntax highlighting, hints and Windows and is BSD licensed";

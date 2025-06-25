@@ -65,7 +65,7 @@ stdenv.mkDerivation rec {
     mv "$out/lib/libXrApiLayer"* "$layers/lib"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Khronos OpenXR loader";
     homepage = "https://www.khronos.org/openxr";
     platforms = lib.platforms.linux;

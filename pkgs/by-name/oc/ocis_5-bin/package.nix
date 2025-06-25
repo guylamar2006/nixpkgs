@@ -57,7 +57,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   passthru.updateScript = ./update.py;
 
-  meta = with lib; {
+  meta = {
     description = "ownCloud Infinite Scale Stack";
     homepage = "https://owncloud.dev/ocis/";
     changelog = "https://github.com/owncloud/ocis/releases/tag/v${finalAttrs.version}";
@@ -72,10 +72,10 @@ stdenv.mkDerivation (finalAttrs: {
     ];
 
     platforms =
-      (lib.intersectLists platforms.linux (
+      (lib.intersectLists lib.platforms.linux (
         lib.platforms.arm ++ lib.platforms.aarch64 ++ lib.platforms.x86
       ))
-      ++ (lib.intersectLists platforms.darwin (lib.platforms.aarch64 ++ lib.platforms.x86_64));
+      ++ (lib.intersectLists lib.platforms.darwin (lib.platforms.aarch64 ++ lib.platforms.x86_64));
 
     sourceProvenance = [ sourceTypes.binaryNativeCode ];
     mainProgram = "ocis";

@@ -89,7 +89,7 @@ stdenv.mkDerivation rec {
 
   NIX_CFLAGS_LINK = "-lopenal";
 
-  meta = with lib; {
+  meta = {
     description = "Compatible client of Ace of Spades 0.75";
     mainProgram = "openspades";
     homepage = "https://github.com/yvt/openspades/";

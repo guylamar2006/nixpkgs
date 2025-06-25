@@ -16,7 +16,7 @@ stdenv.mkDerivation rec {
 
   buildInputs = [ expat ];
 
-  meta = with lib; {
+  meta = {
     description = "Relax NG Compact Syntax validator";
     homepage = "http://www.davidashen.net/rnv.html";
     license = lib.licenses.bsd3;

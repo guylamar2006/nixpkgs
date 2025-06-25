@@ -44,7 +44,7 @@ stdenv.mkDerivation rec {
       A program that reformats Java source code to comply with Google Java Style.
     '';
     homepage = "https://github.com/google/google-java-format";
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ emptyflask ];
     platforms = lib.platforms.all;

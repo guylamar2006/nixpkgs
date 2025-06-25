@@ -49,7 +49,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://strophe.im/libstrophe/";
     changelog = "https://github.com/strophe/libstrophe/blob/${src.rev}/ChangeLog";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl3Only
       mit
     ];

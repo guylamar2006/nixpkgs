@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage {
   useFetchCargoVendor = true;
   cargoHash = "sha256-lSeO/GaJPZ8zosOIJRXVIEuPXaBg1GBvKBIuXtu1xZg=";
 
-  meta = with lib; {
+  meta = {
     description = "Command-line utility that takes find-formatted lines and batch renames them";
     homepage = "https://github.com/robenkleene/ren-find";
     license = lib.licenses.mit;

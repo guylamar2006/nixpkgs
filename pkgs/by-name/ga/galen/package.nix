@@ -33,9 +33,9 @@ stdenv.mkDerivation rec {
     homepage = "https://galenframework.com";
     description = "Automated layout testing for websites";
     mainProgram = "galen";
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

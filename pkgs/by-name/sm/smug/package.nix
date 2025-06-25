@@ -33,7 +33,7 @@ buildGoModule rec {
     installShellCompletion completion/smug.{bash,fish}
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/ivaaaan/smug";
     description = "Smug - tmux session manager";
     license = lib.licenses.mit;

@@ -155,7 +155,7 @@ stdenv.mkDerivation {
     '';
 
   passthru.updateScript = nix-update-script { };
-  meta = with lib; {
+  meta = {
     description = "Pritunl OpenVPN client";
     homepage = "https://client.pritunl.com/";
     license = lib.licenses.unfree;

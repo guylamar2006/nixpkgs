@@ -24,7 +24,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Customized version of Source Code Pro";
     longDescription = ''
       Office Code Pro is a customized version of Source Code Pro, the monospaced

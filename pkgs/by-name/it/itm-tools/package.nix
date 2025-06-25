@@ -34,7 +34,7 @@ rustPlatform.buildRustPackage {
   meta = {
     description = "Tools for analyzing ITM traces";
     homepage = "https://github.com/japaric/itm-tools";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       mit
     ];

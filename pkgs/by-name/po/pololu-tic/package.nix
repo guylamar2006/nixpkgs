@@ -38,7 +38,7 @@ stdenv.mkDerivation (finalAttrs: {
     qt5.qtbase
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/pololu/pololu-tic-software";
     description = "Pololu Tic stepper motor controller software";
     platforms = lib.platforms.all;

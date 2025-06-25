@@ -96,7 +96,7 @@ stdenv.mkDerivation rec {
     inherit (nixosTests) pacemaker;
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://clusterlabs.org/pacemaker/";
     description = "Pacemaker is an open source, high availability resource manager suitable for both small and large clusters";
     license = lib.licenses.gpl2Plus;

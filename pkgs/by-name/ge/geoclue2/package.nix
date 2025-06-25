@@ -124,7 +124,7 @@ stdenv.mkDerivation (finalAttrs: {
       raskin
       mimame
     ];
-    platforms = with platforms; linux ++ darwin;
+    platforms = with lib.platforms; linux ++ darwin;
     license = lib.licenses.lgpl2Plus;
   };
 })

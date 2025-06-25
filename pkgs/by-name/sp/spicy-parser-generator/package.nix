@@ -56,7 +56,7 @@ stdenv.mkDerivation rec {
     done
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/zeek/spicy";
     description = "C++ parser generator for dissecting protocols & files";
     longDescription = ''

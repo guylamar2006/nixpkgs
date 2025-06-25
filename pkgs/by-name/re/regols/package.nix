@@ -17,7 +17,7 @@ buildGoModule rec {
 
   vendorHash = "sha256-yJYWVQq6pbLPdmK4BVse6moMkurlmt6TBd6/vYM1xcU=";
 
-  meta = with lib; {
+  meta = {
     description = "OPA Rego language server";
     mainProgram = "regols";
     homepage = "https://github.com/kitagry/regols";

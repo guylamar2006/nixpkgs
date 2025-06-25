@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     cp quantumminigolf "$out/bin"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Quantum mechanics-based minigolf-like game";
     mainProgram = "quantumminigolf";
     license = lib.licenses.gpl2Plus;

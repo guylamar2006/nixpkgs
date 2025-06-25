@@ -28,7 +28,7 @@ buildPythonPackage rec {
 
   doCheck = false; # no tests
 
-  meta = with lib; {
+  meta = {
     description = "";
     homepage = "https://github.com/pretix/pretix-plugin-build";
     license = lib.licenses.asl20;

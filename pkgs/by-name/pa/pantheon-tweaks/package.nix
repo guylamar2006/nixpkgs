@@ -59,7 +59,7 @@ stdenv.mkDerivation rec {
     updateScript = nix-update-script { };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Unofficial system customization app for Pantheon";
     longDescription = ''
       Unofficial system customization app for Pantheon

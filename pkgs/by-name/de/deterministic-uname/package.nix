@@ -56,7 +56,7 @@ replaceVarsWith {
       not intercept these calls, builds made on different kernels will produce
       different results.
     '';
-    license = [ licenses.mit ];
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ artturin ];
     platforms = lib.platforms.all;
   };

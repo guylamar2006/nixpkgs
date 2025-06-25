@@ -25,7 +25,7 @@ buildGoModule rec {
 
   subPackages = [ "cmd/pulumictl" ];
 
-  meta = with lib; {
+  meta = {
     description = "Swiss Army Knife for Pulumi Development";
     mainProgram = "pulumictl";
     homepage = "https://github.com/pulumi/pulumictl";

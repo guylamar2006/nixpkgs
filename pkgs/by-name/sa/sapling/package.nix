@@ -184,7 +184,7 @@ python311Packages.buildPythonApplication {
   # Expose isl to nix repl as sapling.isl.
   passthru.isl = isl;
 
-  meta = with lib; {
+  meta = {
     description = "Scalable, User-Friendly Source Control System";
     homepage = "https://sapling-scm.com";
     license = lib.licenses.gpl2Only;

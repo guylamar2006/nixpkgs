@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     description = "Tool environment for safe floating-point code development";
     mainProgram = "sollya";
     homepage = "https://www.sollya.org/";

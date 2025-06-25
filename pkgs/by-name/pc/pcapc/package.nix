@@ -20,7 +20,7 @@ stdenv.mkDerivation rec {
 
   makeFlags = [ "PREFIX=${placeholder "out"}" ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://gitlab.com/post-factum/pcapc";
     description = "Compile libpcap filter expressions into BPF opcodes";
     license = lib.licenses.gpl3Only;

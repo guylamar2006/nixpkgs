@@ -45,6 +45,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/libinotify-kqueue/libinotify-kqueue";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = with platforms; darwin ++ freebsd ++ netbsd ++ openbsd;
+    platforms = with lib.platforms; darwin ++ freebsd ++ netbsd ++ openbsd;
   };
 }

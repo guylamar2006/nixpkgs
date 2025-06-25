@@ -39,7 +39,7 @@ stdenv.mkDerivation (finalAttrs: {
     openal
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://gitlab.com/OpenRGBDevelopers/OpenRGBEffectsPlugin";
     description = "Effects plugin for OpenRGB";
     license = lib.licenses.gpl2Plus;

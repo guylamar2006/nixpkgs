@@ -24,7 +24,7 @@ buildNpmPackage {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://photoprism.app";
     description = "Photoprism's frontend";
     license = lib.licenses.agpl3Only;

@@ -19,7 +19,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   passthru.updateScript = unstableGitUpdater { };
 
-  meta = with lib; {
+  meta = {
     description = "C code for Natural Neighbours interpolation of 2D scattered data";
     homepage = "https://github.com/sakov/nn-c/";
     platforms = lib.platforms.unix;

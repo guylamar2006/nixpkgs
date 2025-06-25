@@ -46,7 +46,7 @@ python3.pkgs.buildPythonApplication rec {
     homepage = "https://github.com/evdenis/cvehound";
     changelog = "https://github.com/evdenis/cvehound/blob/${src.rev}/ChangeLog";
     # See https://github.com/evdenis/cvehound/issues/22
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl2Only
       gpl3Plus
     ];

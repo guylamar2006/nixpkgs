@@ -94,10 +94,10 @@ let
       rm -r $out/usr
     '';
 
-    meta = with lib; {
+    meta = {
       description = "Launcher for RuneScape 3, the current main RuneScape";
       homepage = "https://www.runescape.com/";
-      sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+      sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
       license = lib.licenses.unfree;
       maintainers = with lib.maintainers; [ grburst ];
       platforms = [ "x86_64-linux" ];
@@ -145,7 +145,7 @@ buildFHSEnv {
       --replace "/usr/bin/runescape-launcher" "RuneScape"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "RuneScape Game Client (NXT) - Launcher for RuneScape 3";
     homepage = "https://www.runescape.com/";
     license = lib.licenses.unfree;

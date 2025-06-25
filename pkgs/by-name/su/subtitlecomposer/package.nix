@@ -44,7 +44,7 @@ stdenv.mkDerivation rec {
       sonnet
     ]);
 
-  meta = with lib; {
+  meta = {
     homepage = "https://apps.kde.org/subtitlecomposer";
     description = "Open source text-based subtitle editor";
     longDescription = ''
@@ -54,8 +54,8 @@ stdenv.mkDerivation rec {
     '';
     changelog = "https://invent.kde.org/multimedia/subtitlecomposer/-/blob/master/ChangeLog";
     license = lib.licenses.gpl2Plus;
-    maintainers = with maintainers; [ kugland ];
+    maintainers = with lib.maintainers; [ kugland ];
     mainProgram = "subtitlecomposer";
-    platforms = with platforms; linux ++ freebsd ++ windows;
+    platforms = with lib.platforms; linux ++ freebsd ++ windows;
   };
 }

@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "GTK theme with skeuomorphism design";
     homepage = "https://www.pling.com/p/1363834/";
     license = lib.licenses.gpl3Only;

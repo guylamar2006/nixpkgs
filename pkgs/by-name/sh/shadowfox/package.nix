@@ -35,7 +35,7 @@ buildGoModule rec {
     "-X main.tag=v${version}"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Universal dark theme for Firefox while adhering to the modern design principles set by Mozilla";
     homepage = "https://overdodactyl.github.io/ShadowFox/";
     license = lib.licenses.mit;

@@ -94,7 +94,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://www.nongnu.org/avrdude/";
     license = lib.licenses.gpl2Plus;
-    platforms = with platforms; linux ++ darwin;
+    platforms = with lib.platforms; linux ++ darwin;
     maintainers = with lib.maintainers; [ bjornfor ];
   };
 })

@@ -125,7 +125,7 @@ stdenv.mkDerivation (finalAttrs: {
     updateScript = nix-update-script { };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Tools used to test a PC/SC driver, card or reader";
     homepage = "https://pcsc-tools.apdu.fr/";
     changelog = "https://github.com/LudovicRousseau/pcsc-tools/releases/tag/${finalAttrs.version}";

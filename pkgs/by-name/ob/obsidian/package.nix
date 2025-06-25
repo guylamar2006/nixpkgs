@@ -14,7 +14,7 @@ let
   pname = "obsidian";
   version = "1.8.10";
   appname = "Obsidian";
-  meta = with lib; {
+  meta = {
     description = "Powerful knowledge base that works on top of a local folder of plain text Markdown files";
     homepage = "https://obsidian.md";
     downloadPage = "https://github.com/obsidianmd/obsidian-releases/releases";

@@ -58,7 +58,7 @@ stdenv.mkDerivation rec {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     description = "VHDL compiler and simulator";
     mainProgram = "nvc";
     homepage = "https://www.nickg.me.uk/nvc/";

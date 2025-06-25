@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
     })
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://rzip.samba.org/";
     description = "Compression program";
     maintainers = with lib.maintainers; [ ];

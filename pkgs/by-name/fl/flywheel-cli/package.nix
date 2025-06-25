@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
     description = "Library and command line interface for interacting with a Flywheel site";
     mainProgram = "fw";
     homepage = "https://gitlab.com/flywheel-io/public/python-cli";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ rbreslow ];
     platforms = [

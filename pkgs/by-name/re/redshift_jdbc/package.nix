@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/aws/amazon-redshift-jdbc-driver/";
     description = "JDBC 4.2 driver for Amazon Redshift allowing Java programs to connect to a Redshift database";
     license = lib.licenses.asl20;

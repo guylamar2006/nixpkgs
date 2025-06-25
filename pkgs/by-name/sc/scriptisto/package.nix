@@ -27,7 +27,7 @@ rustPlatform.buildRustPackage rec {
     installManPage man/*
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Language-agnostic \"shebang interpreter\" that enables you to write scripts in compiled languages";
     mainProgram = "scriptisto";
     homepage = "https://github.com/igor-petruk/scriptisto";

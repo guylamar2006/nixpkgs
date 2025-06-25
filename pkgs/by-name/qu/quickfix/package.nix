@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
     substituteInPlace Makefile --replace 'UnitTest++' ' '
   '';
 
-  meta = with lib; {
+  meta = {
     description = "QuickFIX C++ Fix Engine Library";
     homepage = "http://www.quickfixengine.org";
     license = lib.licenses.free; # similar to BSD 4-clause

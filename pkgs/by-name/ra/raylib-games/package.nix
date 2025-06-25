@@ -52,7 +52,7 @@ stdenv.mkDerivation {
     runHook postBuild
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Collection of games made with raylib";
     homepage = "https://www.raylib.com/games.html";
     license = lib.licenses.zlib;

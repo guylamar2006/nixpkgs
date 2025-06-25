@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     sed -i 's,^Requires: bluetooth,Requires:,' $out/lib/pkgconfig/obexftp.pc
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "http://dev.zuckschwerdt.org/openobex/wiki/ObexFtp";
     description = "Library and tool to access files on OBEX-based devices (such as Bluetooth phones)";
     platforms = lib.platforms.linux;

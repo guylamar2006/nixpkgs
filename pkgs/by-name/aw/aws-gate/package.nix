@@ -60,7 +60,7 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://github.com/xen0l/aws-gate";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ tirimia ];
-    platforms = with platforms; linux ++ darwin;
+    platforms = with lib.platforms; linux ++ darwin;
     mainProgram = "aws-gate";
   };
 }

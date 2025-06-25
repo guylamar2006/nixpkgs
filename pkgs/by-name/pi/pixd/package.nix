@@ -17,7 +17,7 @@ stdenv.mkDerivation rec {
 
   makeFlags = [ "PREFIX=$(out)" ];
 
-  meta = with lib; {
+  meta = {
     description = "Colourful visualization tool for binary files";
     homepage = "https://github.com/FireyFly/pixd";
     maintainers = with lib.maintainers; [ FireyFly ];

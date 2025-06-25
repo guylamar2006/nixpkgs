@@ -71,7 +71,7 @@ rustPlatform.buildRustPackage rec {
     description = "Simple CLI for MAA by Rust";
     homepage = "https://github.com/MaaAssistantArknights/maa-cli";
     license = lib.licenses.agpl3Only;
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     maintainers = with lib.maintainers; [ Cryolitia ];
     mainProgram = "maa";
   };

@@ -49,7 +49,7 @@ stdenv.mkDerivation {
 
   doCheck = true;
 
-  meta = with lib; {
+  meta = {
     description = "PIC-like markup language for diagrams in technical documentation";
     homepage = "https://pikchr.org";
     license = lib.licenses.bsd0;

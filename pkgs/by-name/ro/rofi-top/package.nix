@@ -42,7 +42,7 @@ stdenv.mkDerivation {
     rofi-unwrapped
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Plugin for rofi that emulates top behaviour";
     homepage = "https://github.com/davatorium/rofi-top";
     license = lib.licenses.mit;

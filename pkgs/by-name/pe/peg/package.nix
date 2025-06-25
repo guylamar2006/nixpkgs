@@ -20,7 +20,7 @@ stdenv.mkDerivation rec {
 
   preBuild = "makeFlagsArray+=( PREFIX=$out )";
 
-  meta = with lib; {
+  meta = {
     homepage = "http://piumarta.com/software/peg/";
     description = "Tools for generating recursive-descent parsers: programs that perform pattern matching on text";
     platforms = lib.platforms.all;

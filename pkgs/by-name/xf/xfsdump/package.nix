@@ -50,10 +50,10 @@ stdenv.mkDerivation rec {
     patchShebangs ./install-sh
   '';
 
-  meta = with lib; {
+  meta = {
     description = "XFS filesystem incremental dump utility";
     homepage = "https://git.kernel.org/pub/scm/fs/xfs/xfsdump-dev.git/tree/doc/CHANGES";
-    license = licenses.gpl2Only;
+    license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ lunik1 ];
     platforms = lib.platforms.linux;
   };

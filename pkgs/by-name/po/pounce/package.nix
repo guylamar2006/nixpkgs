@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     "PREFIX=$(out)"
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://code.causal.agency/june/pounce";
     description = "Simple multi-client TLS-only IRC bouncer";
     license = lib.licenses.gpl3;

@@ -64,7 +64,7 @@ python3Packages.buildPythonApplication rec {
 
   pythonImportsCheck = [ "radian" ];
 
-  meta = with lib; {
+  meta = {
     description = "21 century R console";
     mainProgram = "radian";
     homepage = "https://github.com/randy3k/radian";

@@ -32,12 +32,12 @@ stdenv.mkDerivation (finalAttrs: {
 
   preferLocalBuild = true;
 
-  meta = with lib; {
+  meta = {
     description = "Database schema discovery and comprehension tool";
     mainProgram = "schemacrawler";
     homepage = "https://www.schemacrawler.com/";
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
-    license = with licenses; [
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
+    license = with lib.licenses; [
       epl10
       gpl3Only
       lgpl3Only

@@ -46,7 +46,7 @@ buildNpmPackage rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Auto-tiler that uses KWin 6.0+ tiling functionality";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [

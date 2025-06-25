@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
     cp sensible-browser sensible-editor sensible-pager sensible-terminal $out/bin/
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Collection of utilities used by programs to sensibly select and spawn an appropriate browser, editor, or pager";
     longDescription = ''
       The specific utilities included are:

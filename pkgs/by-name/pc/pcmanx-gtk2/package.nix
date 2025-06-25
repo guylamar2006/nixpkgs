@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     cd libltdl; autoreconf; cd ..
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://pcman.ptt.cc";
     license = lib.licenses.gpl2;
     description = "Telnet BBS browser with GTK interface";

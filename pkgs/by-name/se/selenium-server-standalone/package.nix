@@ -37,10 +37,10 @@ stdenv.mkDerivation rec {
       --add-flags "org.openqa.grid.selenium.GridLauncherV3"
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "http://www.seleniumhq.org/";
     description = "Selenium Server for remote WebDriver";
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [
       coconnor

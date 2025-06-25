@@ -24,11 +24,11 @@ buildNpmPackage (finalAttrs: {
 
   passthru.updateScript = nix-update-script { };
 
-  meta = with lib; {
+  meta = {
     description = "Node.js agentic AI workflow orchestrator";
     homepage = "https://task-master.dev";
     changelog = "https://github.com/eyaltoledano/claude-task-master/blob/${finalAttrs.src.tag}/CHANGELOG.md";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     mainProgram = "task-master-ai";
     maintainers = with lib.maintainers; [ repparw ];
     platforms = lib.platforms.all;

@@ -34,7 +34,7 @@ stdenv.mkDerivation {
     rofi-unwrapped
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Plugin for rofi that emulates blezz behaviour";
     homepage = "https://github.com/davatorium/rofi-blezz";
     license = lib.licenses.mit;

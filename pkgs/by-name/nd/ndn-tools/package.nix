@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
     runHook postCheck
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://named-data.net/";
     description = "Named Data Networking (NDN) Essential Tools";
     license = lib.licenses.gpl3Plus;

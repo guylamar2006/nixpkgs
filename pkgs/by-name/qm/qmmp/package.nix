@@ -107,7 +107,7 @@ stdenv.mkDerivation rec {
     libsamplerate
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Qt-based audio player that looks like Winamp";
     mainProgram = "qmmp";
     homepage = "https://qmmp.ylsoftware.com/";

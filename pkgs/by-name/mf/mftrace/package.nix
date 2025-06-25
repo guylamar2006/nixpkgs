@@ -66,7 +66,7 @@ stdenv.mkDerivation (finalAttrs: {
       TTF (TrueType) font.
     '';
     homepage = "https://lilypond.org/mftrace/";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl2Only
       mit
     ];

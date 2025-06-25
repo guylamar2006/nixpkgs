@@ -45,6 +45,6 @@ stdenv.mkDerivation rec {
     homepage = "http://lpg.ticalc.org/prj_tilp/";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ siraben ];
-    platforms = with platforms; linux ++ darwin;
+    platforms = with lib.platforms; linux ++ darwin;
   };
 }

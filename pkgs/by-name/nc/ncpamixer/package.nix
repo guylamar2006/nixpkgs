@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
     make PREFIX=$out USE_WIDE=1 RELEASE=1 build/Makefile
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Terminal mixer for PulseAudio inspired by pavucontrol";
     homepage = "https://github.com/fulhax/ncpamixer";
     license = lib.licenses.mit;

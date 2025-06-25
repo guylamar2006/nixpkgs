@@ -23,7 +23,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/deepestblue/sampradaya";
     description = "Unicode-compliant Grantha font";
     maintainers = with lib.maintainers; [ mathnerd314 ];

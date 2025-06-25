@@ -58,7 +58,7 @@ stdenv.mkDerivation (finalAttrs: {
     zstd
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://openslide.org";
     description = "C library that provides a simple interface to read whole-slide images";
     license = lib.licenses.lgpl21;

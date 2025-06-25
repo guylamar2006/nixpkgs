@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
     poppler
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Edit metadata found in PDFs";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ leenaars ];

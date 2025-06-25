@@ -61,7 +61,7 @@ buildDotnetModule rec {
       --add-flags "$pkg/tasks/net472/vbc.exe"
   '';
 
-  meta = with lib; {
+  meta = {
     description = ".NET C# and Visual Basic compiler";
     homepage = "https://github.com/dotnet/roslyn";
     mainProgram = "csc";

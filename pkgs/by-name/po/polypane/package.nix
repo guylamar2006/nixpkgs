@@ -29,7 +29,7 @@ appimageTools.wrapType2 {
       $out/share/icons/hicolor/512x512/apps/${pname}.png
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Browser with unified devtools targeting responsability and accessibility";
     longDescription = ''
       The stand-alone browser for ambitious developers that want to build responsive,

@@ -25,7 +25,7 @@ rustPlatform.buildRustPackage rec {
 
   buildInputs = lib.optionals stdenv.hostPlatform.isLinux [ openssl ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/azur1s/octofetch";
     description = "Github user information on terminal";
     license = lib.licenses.mit;

@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     description = "Molecular metadynamics library";
     homepage = "https://github.com/plumed/plumed2";
     license = lib.licenses.lgpl3Only;

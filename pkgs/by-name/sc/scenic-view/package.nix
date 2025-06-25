@@ -70,7 +70,7 @@ stdenv.mkDerivation rec {
 
   desktopItems = [ desktopItem ];
 
-  meta = with lib; {
+  meta = {
     broken = stdenv.hostPlatform.isDarwin;
     description = "JavaFx application to visualize and modify the scenegraph of running JavaFx applications";
     mainProgram = "scenic-view";
@@ -80,7 +80,7 @@ stdenv.mkDerivation rec {
       This lets you find bugs and get things pixel perfect without having to do the compile-check-compile dance.
     '';
     homepage = "https://github.com/JonathanGiles/scenic-view/";
-    sourceProvenance = with sourceTypes; [
+    sourceProvenance = with lib.sourceTypes; [
       fromSource
       binaryBytecode # deps
     ];

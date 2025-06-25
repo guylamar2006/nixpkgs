@@ -32,7 +32,7 @@ buildGoModule rec {
     version = "v${version}";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Development workflow tool for working with AWS CloudFormation";
     mainProgram = "rain";
     homepage = "https://github.com/aws-cloudformation/rain";

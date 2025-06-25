@@ -22,7 +22,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "http://www.impallari.com/quattrocento/";
     description = "Classic, elegant, sober and strong serif typeface";
     license = lib.licenses.ofl;

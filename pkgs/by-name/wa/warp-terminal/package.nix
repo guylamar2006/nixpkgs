@@ -106,12 +106,12 @@ let
     '';
   });
 
-  meta = with lib; {
+  meta = {
     description = "Rust-based terminal";
     homepage = "https://www.warp.dev";
-    license = licenses.unfree;
+    license =license = lib.licenses.unfree;
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       emilytrau
       imadnyc
       donteatoreo

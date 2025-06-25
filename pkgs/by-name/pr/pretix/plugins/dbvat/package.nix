@@ -29,7 +29,7 @@ buildPythonPackage rec {
     "pretix_dbvat"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Plugin for using Deutsche Bahn (DB) Event Discount (Veranstaltungsrabatt)";
     homepage = "https://github.com/pretix/pretix-dbvat";
     license = lib.licenses.asl20;

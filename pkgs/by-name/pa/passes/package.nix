@@ -52,7 +52,7 @@ stdenv.mkDerivation (finalAttrs: {
     zint
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Digital pass manager";
     mainProgram = "passes";
     homepage = "https://github.com/pablo-s/passes";

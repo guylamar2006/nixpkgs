@@ -56,7 +56,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.gnu.org/software/apl/";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ kovirobi ];
-    platforms = with platforms; linux ++ darwin;
+    platforms = with lib.platforms; linux ++ darwin;
     mainProgram = "apl";
 
     longDescription = ''

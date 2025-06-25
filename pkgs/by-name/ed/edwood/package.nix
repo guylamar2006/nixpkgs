@@ -42,7 +42,7 @@ buildGoModule rec {
   meta = {
     description = "Go version of Plan9 Acme Editor";
     homepage = "https://github.com/rjkroege/edwood";
-    license = with licenses; [
+    license = with lib.licenses; [
       mit
       bsd3
     ];

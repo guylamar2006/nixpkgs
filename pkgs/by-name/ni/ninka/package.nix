@@ -37,7 +37,7 @@ perlPackages.buildPerlPackage {
     perl Makefile.PL
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Sentence based license detector";
     mainProgram = "ninka";
     homepage = "http://ninka.turingmachine.org/";

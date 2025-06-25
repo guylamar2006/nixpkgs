@@ -50,7 +50,7 @@ stdenv.mkDerivation (finalAttrs: {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = ''
       CLI which makes it easy to create spring-based applications
     '';
@@ -67,7 +67,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://spring.io/projects/spring-boot";
     changelog = "https://github.com/spring-projects/spring-boot/releases/tag/v${finalAttrs.version}";
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     mainProgram = "spring";
     license = lib.licenses.asl20;
     platforms = lib.platforms.all;

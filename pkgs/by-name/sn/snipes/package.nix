@@ -47,7 +47,7 @@ stdenv.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Modern port of the classic 1982 text-mode game Snipes";
     mainProgram = "snipes";
     homepage = "https://www.vogons.org/viewtopic.php?f=7&t=49073";

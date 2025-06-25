@@ -88,7 +88,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = {
     description = "Library for passing menu structures across DBus";
     homepage = "https://launchpad.net/dbusmenu";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl3
       lgpl21
       lgpl3

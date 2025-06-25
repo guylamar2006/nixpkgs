@@ -35,7 +35,7 @@ stdenv.mkDerivation rec {
   buildInputs =
     if stdenv.hostPlatform.isDarwin then [ libsForQt5.qtsvg ] else [ libsForQt5.qtx11extras ];
 
-  meta = with lib; {
+  meta = {
     description = "Qt Visual Graph Editor";
     mainProgram = "qvgeapp";
     homepage = "https://github.com/ArsMasiuk/qvge";

@@ -24,7 +24,7 @@ appimageTools.wrapType2 {
     cp -r ${appimageContents}/usr/share/icons $out/share
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Notion Desktop builds with Notion Enhancer for Windows, MacOS and Linux";
     homepage = "https://github.com/notion-enhancer/desktop";
     license = lib.licenses.unfree;

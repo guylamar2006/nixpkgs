@@ -22,7 +22,7 @@ rustPlatform.buildRustPackage rec {
     description = "Tool to execute Rust code carefully, with extra checking along the way";
     mainProgram = "cargo-careful";
     homepage = "https://github.com/RalfJung/cargo-careful";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       mit
     ];

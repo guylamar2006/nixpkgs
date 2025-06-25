@@ -37,10 +37,10 @@ stdenv.mkDerivation rec {
 
   propagatedBuildInputs = [ libcdio ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.gnu.org/software/vcdimager/";
     description = "Full-featured mastering suite for authoring, disassembling and analyzing Video CDs and Super Video CDs";
     platforms = lib.platforms.unix;
-    license = licenses.gpl2;
+    license = lib.licenses.gpl2;
   };
 }

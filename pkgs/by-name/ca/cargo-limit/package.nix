@@ -26,7 +26,7 @@ rustPlatform.buildRustPackage rec {
   meta = {
     description = "Cargo subcommand \"limit\": reduces the noise of compiler messages";
     homepage = "https://github.com/alopatindev/cargo-limit";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20 # or
       mit
     ];

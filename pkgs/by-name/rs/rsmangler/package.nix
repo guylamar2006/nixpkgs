@@ -35,7 +35,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     version = "rsmangler v ${lib.versions.majorMinor finalAttrs.version}";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Perform various manipulations on the wordlists";
     homepage = "https://github.com/digininja/RSMangler";
     license = lib.licenses.cc-by-sa-20;

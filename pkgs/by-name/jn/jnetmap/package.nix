@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     description = "Graphical network monitoring and documentation tool";
     mainProgram = "jnetmap";
     homepage = "http://www.rakudave.ch/jnetmap/";
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.gpl3Plus;
     # Upstream supports macOS and Windows too.
     platforms = lib.platforms.linux;

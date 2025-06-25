@@ -29,7 +29,7 @@ buildGoModule rec {
     mv $out/bin/NTrace-core $out/bin/nexttrace
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Open source visual route tracking CLI tool";
     homepage = "https://mtr.moe";
     license = lib.licenses.gpl3Only;

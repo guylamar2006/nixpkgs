@@ -44,6 +44,6 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    platforms = with platforms; unix;
+    platforms = lib.platforms.unix;
   };
 }

@@ -25,7 +25,7 @@ rustPlatform.buildRustPackage rec {
 
   nativeBuildInputs = [ protobuf ];
 
-  meta = with lib; {
+  meta = {
     description = "Protobuf plugin for generating Rust code";
     mainProgram = "protoc-gen-rust";
     homepage = "https://github.com/stepancheg/rust-protobuf";

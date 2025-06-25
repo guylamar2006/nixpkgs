@@ -17,7 +17,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-NUoBaaoPDpt19Avxyl6G9mmbcinm24aAvq6Z9Orb9a8=";
 
-  meta = with lib; {
+  meta = {
     description = "Emacs centric fork of parinfer-rust";
     mainProgram = "parinfer-rust";
     homepage = "https://github.com/justinbarclay/parinfer-rust-emacs";

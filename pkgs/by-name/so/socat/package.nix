@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
     musl = buildPackages.pkgsMusl.socat;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Utility for bidirectional data transfer between two independent data channels";
     homepage = "http://www.dest-unreach.org/socat/";
     platforms = lib.platforms.unix;

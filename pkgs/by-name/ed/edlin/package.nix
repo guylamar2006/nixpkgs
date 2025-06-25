@@ -27,7 +27,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "FreeDOS line editor";
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ ];
-    platforms = with platforms; unix;
+    platforms = lib.platforms.unix;
     mainProgram = "edlin";
   };
 })

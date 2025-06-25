@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     mainProgram = "zbd";
     homepage = "https://github.com/westerndigitalcorporation/libzbd";
     maintainers = with lib.maintainers; [ ];
-    license = with licenses; [
+    license = with lib.licenses; [
       lgpl3Plus
       gpl3Plus
     ];

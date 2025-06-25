@@ -62,7 +62,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "Library supporting deferred execution for GNOME and GTK";
     homepage = "https://gitlab.gnome.org/GNOME/libdex";
     teams = with lib.teams; [ gnome ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     license = lib.licenses.lgpl21Plus;
   };
 })

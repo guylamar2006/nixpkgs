@@ -22,7 +22,7 @@ buildGoModule rec {
   # some tests require a running podman service
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.github.com/hashicorp/nomad-driver-podman";
     description = "Podman task driver for Nomad";
     mainProgram = "nomad-driver-podman";

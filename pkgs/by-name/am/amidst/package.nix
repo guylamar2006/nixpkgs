@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/toolbox4minecraft/amidst";
     description = "Advanced Minecraft Interface and Data/Structure Tracking";
     mainProgram = "amidst";
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;

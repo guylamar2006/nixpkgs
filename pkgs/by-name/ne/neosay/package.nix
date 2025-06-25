@@ -22,7 +22,7 @@ buildGoModule rec {
     "-w"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Pipe stdin to matrix";
     mainProgram = "neosay";
     homepage = "https://github.com/donuts-are-good/neosay";

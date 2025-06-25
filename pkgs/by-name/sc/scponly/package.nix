@@ -35,7 +35,7 @@ stdenv.mkDerivation {
 
   passthru.shellPath = "/bin/scponly";
 
-  meta = with lib; {
+  meta = {
     description = "Shell that only permits scp and sftp-server";
     mainProgram = "scponly";
     homepage = "https://github.com/scponly/scponly";

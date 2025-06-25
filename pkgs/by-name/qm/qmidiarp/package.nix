@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
       qttools
     ]);
 
-  meta = with lib; {
+  meta = {
     description = "Advanced MIDI arpeggiator";
     mainProgram = "qmidiarp";
     longDescription = ''

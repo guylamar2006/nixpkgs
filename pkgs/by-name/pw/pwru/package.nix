@@ -35,7 +35,7 @@ buildGoModule rec {
     TARGET_GOARCH="$GOARCH" GOOS= GOARCH= go generate
   '';
 
-  meta = with lib; {
+  meta = {
     description = "eBPF-based Linux kernel networking debugger";
     homepage = "https://github.com/cilium/pwru";
     license = lib.licenses.asl20;

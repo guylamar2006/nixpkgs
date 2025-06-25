@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Common functions found on BSD systems";
     homepage = "https://libbsd.freedesktop.org/";
-    license = with licenses; [
+    license = with lib.licenses; [
       beerware
       bsd2
       bsd3

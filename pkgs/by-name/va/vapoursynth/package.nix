@@ -102,12 +102,12 @@ stdenv.mkDerivation rec {
     runHook postInstallCheck
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Video processing framework with the future in mind";
     homepage = "http://www.vapoursynth.com/";
-    license = licenses.lgpl21;
+    license = lib.licenses.lgpl21;
     platforms = lib.platforms.all;
-    maintainers = with maintainers; [
+    maintainers = with lib.maintainers; [
       rnhmjoj
       sbruder
       snaki

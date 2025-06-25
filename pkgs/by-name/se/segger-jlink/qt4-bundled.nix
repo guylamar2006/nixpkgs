@@ -40,7 +40,7 @@ stdenv.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Bundled QT4 libraries for the J-Link Software and Documentation pack";
     homepage = "https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack";
     license = lib.licenses.lgpl21;

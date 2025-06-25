@@ -115,7 +115,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "CUPS drivers for several Kyocera printers";
     homepage = "https://www.kyoceradocumentsolutions.com";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ steveej ];
     platforms = [

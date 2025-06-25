@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     cp -pv packagers-readme/*.desktop $out/share/applications
   '';
 
-  meta = with lib; {
+  meta = {
     description = "VirtualBox client with remote management";
     homepage = "http://remotebox.knobgoblin.org.uk/";
     license = lib.licenses.gpl2Plus;

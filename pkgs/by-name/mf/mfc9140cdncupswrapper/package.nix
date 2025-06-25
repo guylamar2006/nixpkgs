@@ -68,7 +68,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Brother MFC-9140CDN CUPS wrapper driver";
     homepage = "http://www.brother.com/";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.gpl2Plus;
     platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ hexa ];

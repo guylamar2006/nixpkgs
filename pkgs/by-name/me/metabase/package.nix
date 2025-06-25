@@ -32,7 +32,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = {
     description = "Business Intelligence and Embedded Analytics tool";
     homepage = "https://metabase.com";
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.agpl3Only;
     platforms = lib.platforms.all;
     maintainers = with lib.maintainers; [

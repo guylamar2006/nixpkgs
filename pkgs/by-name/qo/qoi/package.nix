@@ -45,7 +45,7 @@ stdenv.mkDerivation (finalAttrs: {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "'Quite OK Image Format' for fast, lossless image compression";
     mainProgram = "qoiconv";
     homepage = "https://qoiformat.org/";

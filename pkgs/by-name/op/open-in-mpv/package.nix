@@ -26,7 +26,7 @@ buildGoModule rec {
     install -Dm444 -t $out/share/applications scripts/open-in-mpv.desktop
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Simple web extension to open videos in mpv";
     longDescription = ''
       To function the browser extension must be installed and open-in-mpv must be set as the default scheme-handler for mpv:// eg.:

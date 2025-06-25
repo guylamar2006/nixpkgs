@@ -26,7 +26,7 @@ python3Packages.buildPythonApplication rec {
     sh
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/siriobalmelli/replacement";
     description = "Tool to execute yaml templates and output text";
     mainProgram = "replacement";

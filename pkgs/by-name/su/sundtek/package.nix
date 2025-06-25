@@ -51,12 +51,12 @@ stdenv.mkDerivation {
 
   preferLocalBuild = true;
 
-  meta = with lib; {
+  meta = {
     description = "Sundtek MediaTV driver";
     maintainers = with lib.maintainers; [ simonvandel ];
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     platforms = lib.platforms.unix;
-    license = licenses.unfree;
+    license = lib.licenses.unfree;
     homepage = "https://support.sundtek.com/index.php/topic,1573.0.html";
   };
 }

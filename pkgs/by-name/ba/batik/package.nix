@@ -50,6 +50,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     homepage = "https://xmlgraphics.apache.org/batik";
     license = lib.licenses.asl20;
     platforms = lib.platforms.unix;
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
   };
 })

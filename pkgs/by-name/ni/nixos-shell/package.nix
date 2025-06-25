@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
 
   installFlags = [ "PREFIX=${placeholder "out"}" ];
 
-  meta = with lib; {
+  meta = {
     description = "Spawns lightweight nixos vms in a shell";
     inherit (src.meta) homepage;
     license = lib.licenses.mit;

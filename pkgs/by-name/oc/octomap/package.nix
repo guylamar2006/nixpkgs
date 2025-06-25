@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     "-Wno-error=deprecated-declarations"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Probabilistic, flexible, and compact 3D mapping library for robotic systems";
     homepage = "https://octomap.github.io/";
     license = lib.licenses.bsd3;

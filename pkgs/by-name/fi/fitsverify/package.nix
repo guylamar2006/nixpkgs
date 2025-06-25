@@ -40,7 +40,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
     homepage = "https://heasarc.gsfc.nasa.gov/docs/software/ftools/fitsverify/";
     license = lib.licenses.mit;
-    platforms = with platforms; linux;
+    platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ panicgh ];
   };
 })

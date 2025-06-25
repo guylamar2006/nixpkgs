@@ -89,7 +89,7 @@ stdenv.mkDerivation rec {
     portaudio
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Karaoke, band and dancing game";
     mainProgram = "performous";
     homepage = "https://performous.org/";

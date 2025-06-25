@@ -97,12 +97,12 @@ stdenv.mkDerivation (finalAttrs: {
     runHook postCheck
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://valkey.io/";
     description = "High-performance data structure server that primarily serves key/value workloads";
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     platforms = lib.platforms.all;
-    maintainers = with maintainers; [ ];
+    maintainers = with lib.maintainers; [ ];
     changelog = "https://github.com/valkey-io/valkey/releases/tag/${finalAttrs.version}";
     mainProgram = "valkey-cli";
   };

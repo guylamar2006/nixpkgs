@@ -23,7 +23,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Unicode font for glyphs above the Unicode Basic Multilingual Plane";
     homepage = "https://unifoundry.com/unifont/";
 

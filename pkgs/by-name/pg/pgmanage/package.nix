@@ -39,7 +39,7 @@ stdenv.mkDerivation {
 
   passthru.tests.sign-in = nixosTests.pgmanage;
 
-  meta = with lib; {
+  meta = {
     description = "Fast replacement for PGAdmin";
     longDescription = ''
       At the heart of pgManage is a modern, fast, event-based C-binary, built in

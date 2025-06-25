@@ -90,8 +90,8 @@ stdenv.mkDerivation {
         };
     '';
 
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-    license = with licenses; [
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
+    license = with lib.licenses; [
       mit
       eapl
     ];

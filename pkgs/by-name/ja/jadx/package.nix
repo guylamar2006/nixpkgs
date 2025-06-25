@@ -98,7 +98,7 @@ stdenv.mkDerivation (finalAttrs: {
       Command line and GUI tools for produce Java source code from Android Dex
       and Apk files.
     '';
-    sourceProvenance = with sourceTypes; [
+    sourceProvenance = with lib.sourceTypes; [
       fromSource
       binaryBytecode # deps
     ];

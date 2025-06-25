@@ -59,7 +59,7 @@ rustPlatform.buildRustPackage rec {
     cargo make --profile release install
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Cross platform application for controlling settings of Soundcore headphones";
     homepage = "https://github.com/Oppzippy/OpenSCQ30";
     changelog = "https://github.com/Oppzippy/OpenSCQ30/blob/${src.rev}/CHANGELOG.md";

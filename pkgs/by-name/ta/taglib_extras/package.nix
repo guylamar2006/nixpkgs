@@ -34,10 +34,10 @@ stdenv.mkDerivation rec {
     sed -i -e 's/STRLESS/VERSION_LESS/g' cmake/modules/FindTaglib.cmake
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Additional taglib plugins";
     mainProgram = "taglib-extras-config";
     platforms = lib.platforms.unix;
-    license = licenses.lgpl2;
+    license = lib.licenses.lgpl2;
   };
 }

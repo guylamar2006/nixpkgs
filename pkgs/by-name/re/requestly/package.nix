@@ -23,9 +23,9 @@ appimageTools.wrapType2 {
     cp -r ${appimageContents}/usr/share/icons $out/share
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Intercept & Modify HTTP Requests";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     homepage = "https://requestly.io";
     license = lib.licenses.agpl3Only;
     maintainers = with lib.maintainers; [ dit7ya ];

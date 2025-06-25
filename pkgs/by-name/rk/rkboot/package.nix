@@ -34,7 +34,7 @@ stdenv.mkDerivation {
     fi
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Rockchip proprietary SPL bootloader blobs";
     homepage = "https://github.com/rockchip-linux/rkbin";
     license = lib.licenses.unfreeRedistributable;

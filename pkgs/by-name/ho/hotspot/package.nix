@@ -98,7 +98,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/KDAB/hotspot";
     changelog = "https://github.com/KDAB/hotspot/releases/tag/v${version}";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl2Only
       gpl3Only
     ];

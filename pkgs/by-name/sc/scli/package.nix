@@ -57,7 +57,7 @@ python3.pkgs.buildPythonApplication rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Simple terminal user interface for Signal";
     mainProgram = "scli";
     homepage = "https://github.com/isamert/scli";

@@ -66,7 +66,7 @@ rustPlatform.buildRustPackage {
       --replace-fail 'env!("WORKER_BINARY_PATH")' '"${workerPackage}/bin/nix-inspect"'
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Interactive TUI for inspecting nix configs and other expressions";
     homepage = "https://github.com/bluskript/nix-inspect";
     license = lib.licenses.mit;

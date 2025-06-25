@@ -84,7 +84,7 @@ buildGoModule rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     changelog = "https://github.com/containers/skopeo/releases/tag/${src.rev}";
     description = "Command line utility for various operations on container images and image repositories";
     mainProgram = "skopeo";

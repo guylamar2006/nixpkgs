@@ -33,7 +33,7 @@ buildDotnetModule rec {
   meta = {
     description = ".NET Core global tool to display and update outdated NuGet packages in a project";
     homepage = "https://github.com/dotnet-outdated/dotnet-outdated";
-    sourceProvenance = with sourceTypes; [
+    sourceProvenance = with lib.sourceTypes; [
       fromSource
       # deps
       binaryBytecode

@@ -96,7 +96,7 @@ stdenv.mkDerivation (finalAttrs: {
   passthru.tests.version = testers.testVersion { package = finalAttrs.finalPackage; };
   passthru.tests.photoprism = nixosTests.photoprism;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://photoprism.app";
     description = "Personal Photo Management powered by Go and Google TensorFlow";
     inherit (libtensorflow.meta) platforms;

@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
       'AC_CHECK_DECLS(fdatasync)' ""
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/archiecobbs/s3backer";
     description = "FUSE-based single file backing store via Amazon S3";
     license = lib.licenses.gpl2Plus;

@@ -20,10 +20,10 @@ stdenv.mkDerivation rec {
 
   installPhase = "install -D -t $out/bin xkbmon";
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/xkbmon/xkbmon";
     description = "Command-line keyboard layout monitor for X11";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ romildo ];
     mainProgram = "xkbmon";

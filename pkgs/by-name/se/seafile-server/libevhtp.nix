@@ -26,7 +26,7 @@ stdenv.mkDerivation {
     "-DEVHTP_BUILD_SHARED=ON"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Create extremely-fast and secure embedded HTTP servers with ease";
     homepage = "https://github.com/criticalstack/libevhtp";
     license = lib.licenses.bsd3;

@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
     description = "Modern user interface for hashicorp Consul & Nomad";
     platforms = [ "x86_64-linux" ];
     maintainers = with lib.maintainers; [ numkem ];
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.mit;
     mainProgram = "hashi-ui";
   };

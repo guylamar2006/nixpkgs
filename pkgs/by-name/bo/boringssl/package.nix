@@ -81,7 +81,7 @@ buildGoModule {
     mainProgram = "bssl";
     homepage = "https://boringssl.googlesource.com";
     maintainers = with lib.maintainers; [ thoughtpolice ];
-    license = with licenses; [
+    license = with lib.licenses; [
       openssl
       isc
       mit

@@ -45,12 +45,12 @@ stdenv.mkDerivation {
     chmod 0755 $out/bin/steamcmd
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://developer.valvesoftware.com/wiki/SteamCMD";
     description = "Steam command-line tools";
     mainProgram = "steamcmd";
     platforms = lib.platforms.linux;
     license = lib.licenses.unfreeRedistributable;
-    maintainers = with maintainers; [ tadfisher ];
+    maintainers = with lib.maintainers; [ tadfisher ];
   };
 }

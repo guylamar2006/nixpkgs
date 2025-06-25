@@ -77,7 +77,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = {
     description = "Extendable open source continuous integration server";
     homepage = "https://jenkins.io/";
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [
       earldouglas

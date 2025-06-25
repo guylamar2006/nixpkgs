@@ -55,7 +55,7 @@ stdenv.mkDerivation (finalAttrs: {
     updateScript = nix-update-script { };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Experimental pxtone editor where you can collaborate with friends";
     mainProgram = "ptcollab";
     homepage = "https://yuxshao.github.io/ptcollab/";

@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [ cmake ];
   buildInputs = [ fuse ];
 
-  meta = with lib; {
+  meta = {
     inherit (src.meta) homepage;
     description = "Transparent encryption filesystem";
     longDescription = ''
@@ -34,7 +34,7 @@ stdenv.mkDerivation rec {
       automatically updated to contain the encrypted and authenticated
       contents.
     '';
-    license = with licenses; [
+    license = with lib.licenses; [
       bsd2
       mit
     ];

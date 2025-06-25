@@ -33,10 +33,10 @@ stdenv.mkDerivation rec {
     "man"
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://openipmi.sourceforge.io/";
     description = "User-level library that provides a higher-level abstraction of IPMI and generic services";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl2Only
       lgpl2Only
     ];

@@ -82,7 +82,7 @@ stdenv.mkDerivation (finalAttrs: {
     "--enable-hyphenator"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Analysis for Finnish text";
     homepage = "https://github.com/flammie/omorfi";
     license = lib.licenses.gpl3;

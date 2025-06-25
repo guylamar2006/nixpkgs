@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/coin-or/Clp";
     description = "Open-source linear programming solver written in C++";
     mainProgram = "clp";
-    platforms = lib.platforms.darwin ++ platforms.linux;
+    platforms = lib.platforms.darwin ++ lib.platforms.linux;
     maintainers = with lib.maintainers; [ vbgl ];
   };
 }

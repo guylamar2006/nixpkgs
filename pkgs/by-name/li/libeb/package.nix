@@ -35,6 +35,6 @@ stdenv.mkDerivation rec {
     '';
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ ];
-    platforms = with platforms; unix;
+    platforms = lib.platforms.unix;
   };
 }

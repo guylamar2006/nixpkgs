@@ -26,7 +26,7 @@ stdenv.mkDerivation (finalAttrs: {
     mkdir -p $out/bin
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://sourceforge.net/projects/spooftooph";
     description = "Automate spoofing or clone Bluetooth device Name, Class, and Address";
     mainProgram = "spooftooph";

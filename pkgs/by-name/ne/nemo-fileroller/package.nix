@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
 
   PKG_CONFIG_LIBNEMO_EXTENSION_EXTENSIONDIR = "${placeholder "out"}/${nemo.extensiondir}";
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/linuxmint/nemo-extensions/tree/master/nemo-fileroller";
     description = "Nemo file roller extension";
     license = lib.licenses.gpl2Plus;

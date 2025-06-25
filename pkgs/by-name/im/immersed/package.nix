@@ -36,7 +36,7 @@ let
       pandapip1
     ];
     platforms = builtins.attrNames sources;
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
   };
 
 in

@@ -44,6 +44,6 @@ stdenv.mkDerivation rec {
     maintainers = with lib.maintainers; [
       edwtjo
     ];
-    platforms = with platforms; unix;
+    platforms = lib.platforms.unix;
   };
 }

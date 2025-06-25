@@ -50,7 +50,7 @@ appimageTools.wrapType2 {
       --delete-original $out/p3x-onenote.desktop
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/patrikx3/onenote";
     description = "Linux Electron Onenote - A Linux compatible version of OneNote";
     license = lib.licenses.mit;

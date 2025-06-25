@@ -42,6 +42,6 @@ stdenv.mkDerivation rec {
     inherit (src.meta) homepage;
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ emantor ];
-    platforms = with platforms; linux ++ darwin;
+    platforms = with lib.platforms; linux ++ darwin;
   };
 }

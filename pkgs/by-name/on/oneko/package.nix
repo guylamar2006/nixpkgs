@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
     "install.man"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Creates a cute cat chasing around your mouse cursor";
     longDescription = ''
       Oneko changes your mouse cursor into a mouse

@@ -52,10 +52,10 @@ rustPlatform.buildRustPackage rec {
     export HOME=$TMPDIR
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Create beautiful image of your source code";
     homepage = "https://github.com/Aloxaf/silicon";
-    license = with licenses; [
+    license = with lib.licenses; [
       mit # or
       asl20
     ];

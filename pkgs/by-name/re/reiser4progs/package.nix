@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     cp ./libmisc/.libs/libmisc.a $out/lib/libreiser4misc.a.la
   '';
 
-  meta = with lib; {
+  meta = {
     inherit version;
     homepage = "https://sourceforge.net/projects/reiser4/";
     description = "Reiser4 utilities";

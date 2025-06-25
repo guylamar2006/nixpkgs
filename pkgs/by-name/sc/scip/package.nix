@@ -38,7 +38,7 @@ buildGoModule rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     description = "SCIP Code Intelligence Protocol CLI";
     mainProgram = "scip";
     homepage = "https://github.com/sourcegraph/scip";

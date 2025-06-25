@@ -38,6 +38,6 @@ stdenv.mkDerivation rec {
       qknight
     ];
     platforms = lib.platforms.all;
-    hydraPlatforms = with platforms; unix;
+    hydraPlatforms = lib.platforms.unix;
   };
 }

@@ -22,7 +22,7 @@ stdenv.mkDerivation {
 
   installFlags = [ "INSTALL_PATH=$(out)/lib/lv2" ];
 
-  meta = with lib; {
+  meta = {
     description = "Mono rhythmic tremolo LV2 Audio Plugin";
     homepage = "https://github.com/Houston4444/plujain-ramp";
     license = lib.licenses.gpl2Only;

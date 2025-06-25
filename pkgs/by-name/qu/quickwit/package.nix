@@ -139,7 +139,7 @@ rustPlatform.buildRustPackage rec {
     "--skip=io::tests::test_controlled_writer_limited_sync"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Sub-second search & analytics engine on cloud storage";
     homepage = "https://quickwit.io/";
     license = lib.licenses.agpl3Only;

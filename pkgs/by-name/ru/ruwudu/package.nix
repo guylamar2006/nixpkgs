@@ -23,7 +23,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://software.sil.org/ruwudu/";
     description = "Arabic script font for a style of writing used in Niger, West Africa";
     license = lib.licenses.ofl;

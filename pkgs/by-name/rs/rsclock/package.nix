@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-Bnec98FEG2aWUa2IoBOLy0K6mqggcSwOBL3S5+0mSkU=";
 
-  meta = with lib; {
+  meta = {
     description = "Simple terminal clock written in Rust";
     homepage = "https://github.com/valebes/rsClock";
     license = lib.licenses.mit;

@@ -21,7 +21,7 @@ buildGoModule rec {
     rm $out/bin/plugin*
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Protocol Buffer companion tool. Track your .proto files and prevent changes to messages and services which impact API compatibility. https://protolock.dev";
     mainProgram = "protolock";
     homepage = "https://github.com/nilslice/protolock";

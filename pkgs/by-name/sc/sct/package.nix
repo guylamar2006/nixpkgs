@@ -28,7 +28,7 @@ stdenv.mkDerivation {
 
   makeFlags = [ "PREFIX=$(out)" ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.umaxx.net/";
     description = "Minimal utility to set display colour temperature";
     maintainers = with lib.maintainers; [
@@ -36,6 +36,6 @@ stdenv.mkDerivation {
       somasis
     ];
     license = lib.licenses.publicDomain;
-    platforms = with platforms; linux ++ freebsd ++ openbsd;
+    platforms = with lib.platforms; linux ++ freebsd ++ openbsd;
   };
 }

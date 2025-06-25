@@ -39,7 +39,7 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/libusb/hidapi";
     maintainers = with lib.maintainers; [ prusnak ];
     # You can choose between GPLv3, BSD or HIDAPI license (even more liberal)
-    license = with licenses; [
+    license = with lib.licenses; [
       bsd3 # or
       gpl3Only
     ];

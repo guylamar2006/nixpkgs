@@ -32,10 +32,10 @@ stdenv.mkDerivation {
     libXi
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Allows the keyboard, mouse on one X display to be used to control another X display";
     homepage = "https://github.com/dottedmag/x2x";
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     platforms = lib.platforms.linux;
     mainProgram = "x2x";
   };

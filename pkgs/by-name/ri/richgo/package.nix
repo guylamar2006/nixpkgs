@@ -17,7 +17,7 @@ buildGoModule rec {
 
   vendorHash = "sha256-jIzBN5T5+eTFCYOdS5hj3yTGOfU8NTrFmnIu+dDjVeU=";
 
-  meta = with lib; {
+  meta = {
     description = "Enrich `go test` outputs with text decorations";
     mainProgram = "richgo";
     homepage = "https://github.com/kyoh86/richgo";

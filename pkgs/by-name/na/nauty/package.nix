@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
 
   checkTarget = "checks";
 
-  meta = with lib; {
+  meta = {
     description = "Programs for computing automorphism groups of graphs and digraphs";
     license = lib.licenses.asl20;
     teams = with lib.teams; [ sage ];

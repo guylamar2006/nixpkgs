@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Nordic Semiconductor nRF5 Software Development Kit";
     homepage = "https://www.nordicsemi.com/Products/Development-software/nRF5-SDK";
     license = lib.licenses.unfree;

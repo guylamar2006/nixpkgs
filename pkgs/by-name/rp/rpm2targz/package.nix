@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
 
   installFlags = [ "prefix=$(out)" ];
 
-  meta = with lib; {
+  meta = {
     description = "Convert a .rpm file to a .tar.gz archive";
     homepage = "http://slackware.com/config/packages.php";
     license = lib.licenses.bsd1;

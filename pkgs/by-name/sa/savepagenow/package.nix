@@ -23,7 +23,7 @@ python3Packages.buildPythonApplication rec {
   # requires network access
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = "Simple Python wrapper for archive.org's \"Save Page Now\" capturing service";
     homepage = "https://github.com/pastpages/savepagenow";
     license = lib.licenses.mit;

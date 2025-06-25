@@ -37,7 +37,7 @@ let
     inherit pname version src;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Fully open source & end-to-end encrypted note taking alternative to Evernote";
     longDescription = ''
       Notesnook is a free (as in speech) & open source note taking app

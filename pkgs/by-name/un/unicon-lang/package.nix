@@ -55,12 +55,12 @@ stdenv.mkDerivation {
     cp -r bin $out/
   '';
 
-  meta = with lib; {
+  meta = {
     broken = (stdenv.hostPlatform.isLinux && stdenv.hostPlatform.isAarch64);
     description = "Very high level, goal-directed, object-oriented, general purpose applications language";
     maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
-    license = licenses.gpl2;
+    license = lib.licenses.gpl2;
     homepage = "http://unicon.org";
   };
 }

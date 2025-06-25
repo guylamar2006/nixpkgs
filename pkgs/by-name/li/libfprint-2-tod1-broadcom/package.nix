@@ -86,6 +86,6 @@ stdenv.mkDerivation {
     license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ pitkling ];
     platforms = [ "x86_64-linux" ];
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
   };
 }

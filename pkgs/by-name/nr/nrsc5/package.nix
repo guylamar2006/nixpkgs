@@ -67,7 +67,7 @@ stdenv.mkDerivation {
     "-DUSE_FAAD2=ON"
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/theori-io/nrsc5";
     description = "HD-Radio decoder for RTL-SDR";
     platforms = lib.platforms.linux;

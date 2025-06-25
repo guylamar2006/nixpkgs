@@ -23,7 +23,7 @@ python3Packages.buildPythonApplication rec {
   doCheck = false;
   pythonImportsCheck = [ "snowmachine" ];
 
-  meta = with lib; {
+  meta = {
     description = "Python script that will make your terminal snow";
     homepage = "https://github.com/sontek/snowmachine";
     mainProgram = "snowmachine";

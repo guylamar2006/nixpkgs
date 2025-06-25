@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
       --replace gcc cc
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Simulator daemon for autonomous sailing boats";
     homepage = "https://github.com/sails-simulator/sailsd";
     license = lib.licenses.gpl3;

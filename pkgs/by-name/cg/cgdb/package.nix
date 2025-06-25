@@ -41,7 +41,7 @@ stdenv.mkDerivation (finalAttrs: {
 
     license = lib.licenses.gpl2Plus;
 
-    platforms = with platforms; linux ++ cygwin;
+    platforms = with lib.platforms; linux ++ cygwin;
     maintainers = with lib.maintainers; [ ];
   };
 })

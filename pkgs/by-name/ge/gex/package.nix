@@ -43,7 +43,7 @@ rustPlatform.buildRustPackage rec {
     description = "Git Explorer: cross-platform git workflow improvement tool inspired by Magit";
     homepage = "https://github.com/Piturnah/gex";
     changelog = "https://github.com/Piturnah/gex/releases/tag/${src.rev}";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20 # or
       mit
     ];

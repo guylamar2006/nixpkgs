@@ -20,7 +20,7 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [ cmake ];
   buildInputs = [ ncurses ];
 
-  meta = with lib; {
+  meta = {
     description = "Space Invaders clone based on ncurses";
     mainProgram = "ninvaders";
     homepage = "https://ninvaders.sourceforge.net/";

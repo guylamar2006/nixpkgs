@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [ makeWrapper ];
 
-  meta = with lib; {
+  meta = {
     description = "Rofi-based interface to enable VPN connections with NetworkManager";
     homepage = "https://gitlab.com/DamienCassou/rofi-vpn";
     license = lib.licenses.gpl3Plus;

@@ -155,10 +155,10 @@ stdenv.mkDerivation rec {
     exec ./check "$@"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Torture test suite for filesystems";
     homepage = "https://git.kernel.org/pub/scm/fs/xfs/xfstests-dev.git/";
-    license = licenses.gpl2Only;
+    license = lib.licenses.gpl2Only;
     maintainers = with lib.maintainers; [ dezgeg ];
     platforms = lib.platforms.linux;
     mainProgram = "xfstests-check";

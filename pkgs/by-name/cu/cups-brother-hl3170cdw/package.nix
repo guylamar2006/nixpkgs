@@ -149,11 +149,11 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://www.brother.com/";
     description = "Brother ${model} printer driver";
-    sourceProvenance = with sourceTypes; [
+    sourceProvenance = with lib.sourceTypes; [
       binaryNativeCode
       fromSource
     ];
-    license = with licenses; [
+    license = with lib.licenses; [
       unfree
       gpl2Plus
     ];

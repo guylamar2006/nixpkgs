@@ -57,10 +57,10 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.zamaudio.com/?p=976";
     description = "Collection of LV2/LADSPA/VST/JACK audio plugins by ZamAudio";
-    license = licenses.gpl2Plus;
+    license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ magnetophon ];
     platforms = lib.platforms.linux;
     # tries to run dpf/utils/lv2_ttl_generator (built for host)

@@ -51,7 +51,7 @@ buildNpmPackage rec {
       --add-flags $out/lib/node_modules/pocket-casts/main.js
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Pocket Casts webapp, packaged for the Linux Desktop";
     homepage = "https://github.com/felicianotech/pocket-casts-desktop-app";
     license = lib.licenses.mit;

@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
     cp rp-${if stdenv.hostPlatform.isDarwin then "osx" else "lin"} $out/bin/rp
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Fast C++ ROP gadget finder for PE/ELF/Mach-O x86/x64/ARM/ARM64 binaries";
     homepage = "https://github.com/0vercl0k/rp";
     license = lib.licenses.mit;

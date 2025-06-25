@@ -20,7 +20,7 @@ stdenv.mkDerivation rec {
     zig_0_13.hook
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Compare the performance of multiple commands with a colorful terminal user interface";
     homepage = "https://github.com/andrewrk/poop";
     changelog = "https://github.com/andrewrk/poop/releases/tag/${src.rev}";

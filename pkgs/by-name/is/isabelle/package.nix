@@ -238,7 +238,7 @@ stdenv.mkDerivation (finalAttrs: {
       formulas in a logical calculus.
     '';
     homepage = "https://isabelle.in.tum.de/";
-    sourceProvenance = with sourceTypes; [
+    sourceProvenance = with lib.sourceTypes; [
       fromSource
       binaryNativeCode # source bundles binary dependencies
     ];

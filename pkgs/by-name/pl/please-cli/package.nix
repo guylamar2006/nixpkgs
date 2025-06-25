@@ -40,7 +40,7 @@ stdenv.mkDerivation (finalAttrs: {
     version = "v${finalAttrs.version}";
   };
 
-  meta = with lib; {
+  meta = {
     description = "AI helper script to create CLI commands based on GPT prompts";
     homepage = "https://github.com/TNG/please-cli";
     license = lib.licenses.asl20;

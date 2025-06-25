@@ -66,8 +66,8 @@ stdenv.mkDerivation (finalAttrs: {
     downloadPage = "http://downloads.digitalcorpora.org/downloads/bulk_extractor/";
     changelog = "https://github.com/simsong/bulk_extractor/blob/${finalAttrs.src.rev}/ChangeLog";
     maintainers = with lib.maintainers; [ d3vil0p3r ];
-    platforms = with platforms; unix ++ windows;
-    license = with licenses; [
+    platforms = with lib.platforms; unix ++ windows;
+    license = with lib.licenses; [
       mit
       cpl10
       gpl3Only

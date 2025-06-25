@@ -86,11 +86,11 @@ stdenv.mkDerivation rec {
       wrapProgram $out/bin/wl-present --prefix PATH ":" ${wl-present-binpath}
     '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/Ferdi265/wl-mirror";
     description = "Simple Wayland output mirror client";
-    license = licenses.gpl3;
-    maintainers = with maintainers; [ synthetica ];
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ synthetica ];
     platforms = lib.platforms.linux;
   };
 }

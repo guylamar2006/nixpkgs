@@ -37,7 +37,7 @@ appimageTools.wrapType2 {
     changelog = "https://cables.gl/changelog";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ rubikcubed ];
-    platforms = with platforms; linux ++ darwin ++ windows;
+    platforms = with lib.platforms; linux ++ darwin ++ windows;
     broken = !(stdenv.hostPlatform.isLinux && stdenv.hostPlatform.isx86_64);
     mainProgram = "cables";
   };

@@ -92,7 +92,7 @@ stdenv.mkDerivation (finalAttrs: {
     "-lXrandr"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Multi-platform GUI application to effortlessly visualize MIDI activity";
     homepage = "https://github.com/gbevin/ShowMIDI";
     license = lib.licenses.gpl3Only;

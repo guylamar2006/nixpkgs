@@ -79,7 +79,7 @@ maven.buildMavenPackage rec {
       If you run NixOS, it can be enabled with `services.pcscd.enable = true;`.
     '';
     homepage = "https://github.com/martinpaljak/GlobalPlatformPro";
-    sourceProvenance = with sourceTypes; [
+    sourceProvenance = with lib.sourceTypes; [
       fromSource
       binaryBytecode # deps
     ];

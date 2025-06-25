@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
       "-DREDIS_PLUS_PLUS_BUILD_STATIC=OFF"
     ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/sewenew/redis-plus-plus";
     description = "Redis client written in C++";
     license = lib.licenses.asl20;

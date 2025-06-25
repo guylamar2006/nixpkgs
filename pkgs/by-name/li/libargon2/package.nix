@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
       recommends using Argon2 rather than legacy algorithms.
     '';
     homepage = "https://www.argon2.com/";
-    license = with licenses; [
+    license = with lib.licenses; [
       asl20
       cc0
     ];

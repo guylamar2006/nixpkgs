@@ -36,7 +36,7 @@ stdenv.mkDerivation {
     wayland
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://hg.sr.ht/~scoopta/rootbar";
     description = "Bar for Wayland WMs";
     mainProgram = "rootbar";

@@ -82,11 +82,11 @@ stdenv.mkDerivation rec {
     done
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Official Khronos Vulkan validation layers";
     homepage = "https://github.com/KhronosGroup/Vulkan-ValidationLayers";
     platforms = lib.platforms.all;
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ ralith ];
   };
 }

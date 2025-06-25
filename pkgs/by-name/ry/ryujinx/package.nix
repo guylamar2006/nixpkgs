@@ -104,7 +104,7 @@ buildDotnetModule rec {
     popd
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://ryujinx.org/";
     changelog = "https://github.com/Ryujinx/Ryujinx/wiki/Changelog";
     description = "Experimental Nintendo Switch Emulator written in C#";

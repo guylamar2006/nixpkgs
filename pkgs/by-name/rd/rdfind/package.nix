@@ -16,7 +16,7 @@ stdenv.mkDerivation rec {
 
   buildInputs = [ nettle ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://rdfind.pauldreik.se/";
     description = "Removes or hardlinks duplicate files very swiftly";
     license = lib.licenses.gpl2Plus;

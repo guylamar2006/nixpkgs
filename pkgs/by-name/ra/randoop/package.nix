@@ -23,10 +23,10 @@ stdenv.mkDerivation rec {
     cp README.txt $out/doc
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Automatic test generation for Java";
     homepage = "https://randoop.github.io/randoop/";
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ pSub ];
     platforms = lib.platforms.linux;

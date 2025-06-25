@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     installManPage nuttcp.8
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Network performance measurement tool";
     longDescription = ''
       nuttcp is a network performance measurement tool intended for use by

@@ -17,7 +17,7 @@ buildGoModule rec {
 
   vendorHash = "sha256-1yQScWjlqYvFmuqG4TLmImlCjFPrLcYcmZ1a3QUnSXY=";
 
-  meta = with lib; {
+  meta = {
     description = "Realtime API Gateway used with NATS to build REST, real time, and RPC APIs";
     homepage = "https://resgate.io";
     license = lib.licenses.mit;

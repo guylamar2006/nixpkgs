@@ -80,7 +80,7 @@ python3Packages.buildPythonApplication rec {
     "solaar.gtk"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Linux devices manager for the Logitech Unifying Receiver";
     longDescription = ''
       Solaar is a Linux manager for many Logitech keyboards, mice, and trackpads that

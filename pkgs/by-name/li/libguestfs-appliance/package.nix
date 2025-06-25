@@ -25,7 +25,7 @@ stdenvNoCC.mkDerivation rec {
   meta = {
     description = "VM appliance disk image used in libguestfs package";
     homepage = "https://libguestfs.org";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl2Plus
       lgpl2Plus
     ];

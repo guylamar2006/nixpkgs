@@ -43,11 +43,11 @@ stdenv.mkDerivation {
   '';
   passthru.scriptName = "wlprop.sh";
 
-  meta = with lib; {
+  meta = {
     description = "Xprop clone for wlroots based compositors";
     homepage = "https://gist.github.com/crispyricepc/f313386043395ff06570e02af2d9a8e0";
-    license = licenses.mit;
-    maintainers = with maintainers; [ ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.linux;
     mainProgram = "wlprop";
   };

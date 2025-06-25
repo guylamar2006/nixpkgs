@@ -105,7 +105,7 @@ stdenv.mkDerivation rec {
     };
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://gitlab.gnome.org/GNOME/seahorse";
     description = "Application for managing encryption keys and passwords in the GnomeKeyring";
     mainProgram = "seahorse";

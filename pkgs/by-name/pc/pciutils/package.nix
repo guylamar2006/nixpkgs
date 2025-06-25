@@ -64,7 +64,7 @@ stdenv.mkDerivation rec {
     rev-prefix = "v";
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://mj.ucw.cz/sw/pciutils/";
     description = "Collection of programs for inspecting and manipulating configuration of PCI devices";
     license = lib.licenses.gpl2Plus;

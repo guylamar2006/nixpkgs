@@ -19,7 +19,7 @@ rustPlatform.buildRustPackage {
   useFetchCargoVendor = true;
   cargoHash = "sha256-oXOf9G0BMSbFFAsmRaAZzaquFva1i1gJ4ISqJkqSx4k=";
 
-  meta = with lib; {
+  meta = {
     description = "Simple CLI pomodoro timer using desktop notifications written in Rust";
     homepage = "https://github.com/SanderJSA/Pomodoro";
     license = lib.licenses.mit;

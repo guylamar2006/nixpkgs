@@ -125,6 +125,6 @@ stdenv.mkDerivation (finalAttrs: rec {
     mainProgram = "ida";
     maintainers = with lib.maintainers; [ msanft ];
     platforms = [ "x86_64-linux" ]; # Right now, the installation script only supports Linux.
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
   };
 })

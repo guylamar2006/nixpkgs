@@ -23,7 +23,7 @@ buildGoModule rec {
     "-X main.version=v${version}"
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/FairwindsOps/pluto";
     description = "Find deprecated Kubernetes apiVersions";
     mainProgram = "pluto";

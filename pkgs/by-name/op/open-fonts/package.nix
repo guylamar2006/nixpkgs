@@ -22,7 +22,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Collection of beautiful free and open source fonts";
     homepage = "https://github.com/kiwi0fruit/open-fonts";
     license = lib.licenses.mit;

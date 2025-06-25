@@ -18,7 +18,7 @@ stdenv.mkDerivation rec {
     patchShebangs tests contrib/tests
   '';
 
-  meta = with lib; {
+  meta = {
     description = "C Library for reading, writing and updating ESRI Shapefiles";
     homepage = "http://shapelib.maptools.org/";
     license = lib.licenses.gpl2;

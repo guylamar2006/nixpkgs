@@ -41,7 +41,7 @@ buildGoModule rec {
     homepage = "https://github.com/isacikgoz/gitbatch";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ teto ];
-    platforms = with platforms; linux;
+    platforms = lib.platforms.linux;
     mainProgram = "gitbatch";
   };
 }

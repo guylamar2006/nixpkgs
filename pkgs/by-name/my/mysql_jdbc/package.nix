@@ -36,6 +36,6 @@ stdenv.mkDerivation rec {
     maintainers = with lib.maintainers; [ ];
     platforms = lib.platforms.unix;
     license = lib.licenses.gpl2Only;
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
   };
 }

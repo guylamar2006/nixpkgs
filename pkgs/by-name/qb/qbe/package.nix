@@ -32,7 +32,7 @@ stdenv.mkDerivation (finalAttrs: {
     tests.can-run-hello-world = callPackage ./test-can-run-hello-world.nix { };
   };
 
-  meta = with lib; {
+  meta = {
     homepage = "https://c9x.me/compile/";
     description = "Small compiler backend written in C";
     maintainers = with lib.maintainers; [ fgaz ];

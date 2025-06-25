@@ -59,7 +59,7 @@ stdenv.mkDerivation (finalAttrs: {
     lapack
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Library for fast updating of qr and cholesky decompositions";
     homepage = "https://github.com/mpimd-csc/qrupdate-ng";
     license = lib.licenses.gpl3Plus;

@@ -53,7 +53,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Sound measurement application for tuning audio systems in real-time";
     homepage = "https://opensoundmeter.com/";
     license = lib.licenses.gpl3Plus;

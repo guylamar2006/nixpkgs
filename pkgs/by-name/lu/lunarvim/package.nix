@@ -138,7 +138,7 @@ stdenv.mkDerivation (finalAttrs: {
     description = "IDE layer for Neovim";
     homepage = "https://www.lunarvim.org/";
     changelog = "https://github.com/LunarVim/LunarVim/blob/${finalAttrs.src.rev}/CHANGELOG.md";
-    sourceProvenance = with sourceTypes; [ fromSource ];
+    sourceProvenance = with lib.sourceTypes; [ fromSource ];
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [
       prominentretail

@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
     "--with-bash-completion-dir=yes"
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://redwax.eu/rt/";
     description = "Universal certificate conversion tool";
     mainProgram = "redwax-tool";

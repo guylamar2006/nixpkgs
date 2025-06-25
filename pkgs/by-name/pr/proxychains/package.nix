@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     "install-config"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Proxifier for SOCKS proxies";
     homepage = "https://proxychains.sourceforge.net";
     license = lib.licenses.gpl2Plus;

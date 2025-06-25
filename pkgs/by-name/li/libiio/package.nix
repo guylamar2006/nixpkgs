@@ -96,7 +96,7 @@ stdenv.mkDerivation rec {
     description = "API for interfacing with the Linux Industrial I/O Subsystem";
     homepage = "https://github.com/analogdevicesinc/libiio";
     license = lib.licenses.lgpl21Plus;
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     maintainers = with lib.maintainers; [ thoughtpolice ];
   };
 }

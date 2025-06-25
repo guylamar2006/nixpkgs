@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
 
   passthru.updateScript = gitUpdater { };
 
-  meta = with lib; {
+  meta = {
     description = "C++ library to look for standard platform directories so that you do not need to write platform-specific code";
     homepage = "https://github.com/sago007/PlatformFolders";
     license = lib.licenses.mit;

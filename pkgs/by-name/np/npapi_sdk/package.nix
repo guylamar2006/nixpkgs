@@ -15,7 +15,7 @@ stdenv.mkDerivation rec {
     sha256 = "0xxfcsjmmgbbyl9zwpzdshbx27grj5fnzjfmldmm9apws2yk9gq1";
   };
 
-  meta = with lib; {
+  meta = {
     description = "Bundle of NPAPI headers by Mozilla";
 
     homepage = "https://bitbucket.org/mgorny/npapi-sdk"; # see also https://github.com/mozilla/npapi-sdk

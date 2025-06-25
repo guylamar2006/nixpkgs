@@ -60,7 +60,7 @@ stdenvNoCC.mkDerivation (self: {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Lexical network of the English language";
     longDescription = ''
       Open English WordNet is a lexical network of the English language grouping

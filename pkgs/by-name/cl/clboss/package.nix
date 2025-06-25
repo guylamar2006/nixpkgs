@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/ZmnSCPxj/clboss";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ prusnak ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     mainProgram = "clboss";
   };
 }

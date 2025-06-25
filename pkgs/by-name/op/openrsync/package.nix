@@ -18,7 +18,7 @@ stdenv.mkDerivation {
   # Uses oconfigure
   prefixKey = "PREFIX=";
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.openrsync.org/";
     description = "BSD-licensed implementation of rsync";
     mainProgram = "openrsync";

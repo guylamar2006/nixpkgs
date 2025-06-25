@@ -22,7 +22,7 @@ buildGoModule {
     "-w"
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/brianstrauch/solitaire-tui";
     description = "Klondike solitaire for the terminal";
     mainProgram = "solitaire-tui";

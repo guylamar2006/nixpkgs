@@ -63,7 +63,7 @@ stdenv.mkDerivation (finalAttrs: {
     "CC=cc"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Dump password hashes from a Windows NT/2k/XP installation";
     mainProgram = "samdump2";
     homepage = "https://sourceforge.net/projects/ophcrack/files/samdump2";

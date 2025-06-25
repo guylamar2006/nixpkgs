@@ -70,7 +70,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = {
     description = "Puzzle game inspired by Oxyd on the Atari ST and Rock'n'Roll on the Amiga";
     mainProgram = "enigma";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl2
       free
     ]; # source + bundles libs + art

@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
     install -Dm755 snow -t $out/bin
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Conceal messages in ASCII text by appending whitespace to the end of lines";
     mainProgram = "snow";
     homepage = "http://www.darkside.com.au/snow/";

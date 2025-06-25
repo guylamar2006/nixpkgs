@@ -115,7 +115,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.thekelleys.org.uk/dnsmasq/doc.html";
     license = lib.licenses.gpl2Only;
     mainProgram = "dnsmasq";
-    platforms = with platforms; linux ++ darwin;
+    platforms = with lib.platforms; linux ++ darwin;
     maintainers = with lib.maintainers; [
       fpletz
       globin

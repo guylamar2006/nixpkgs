@@ -55,10 +55,10 @@ buildNpmPackage {
       > $out/share/applications/webtorrent-desktop.desktop
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Streaming torrent app for Mac, Windows, and Linux";
     homepage = "https://webtorrent.io/desktop";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ bendlas ];
     mainProgram = "WebTorrent";
   };

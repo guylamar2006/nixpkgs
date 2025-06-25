@@ -18,7 +18,7 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [ cmake ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/odygrd/quill";
     changelog = "https://github.com/odygrd/quill/blob/master/CHANGELOG.md";
     downloadPage = "https://github.com/odygrd/quill";

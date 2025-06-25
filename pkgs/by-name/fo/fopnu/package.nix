@@ -46,7 +46,7 @@ stdenvNoCC.mkDerivation rec {
     description = "P2P file sharing system";
     homepage = "https://fopnu.com";
     license = lib.licenses.unfree;
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     mainProgram = "fopnu";
     maintainers = with lib.maintainers; [ paveloom ];
     platforms = [ "x86_64-linux" ];

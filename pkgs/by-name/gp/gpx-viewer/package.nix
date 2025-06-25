@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
     description = "Simple tool to visualize tracks and waypoints stored in a gpx file";
     mainProgram = "gpx-viewer";
     changelog = "https://github.com/DaveDavenport/gpx-viewer/blob/${src.rev}/NEWS";
-    platforms = with platforms; linux;
+    platforms = lib.platforms.linux;
     license = lib.licenses.gpl2Plus;
     maintainers = with lib.maintainers; [ dotlambda ];
   };

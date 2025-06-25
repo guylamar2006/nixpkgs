@@ -30,7 +30,7 @@ appimageTools.wrapType2 {
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
     platforms = [ "x86_64-linux" ];
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     mainProgram = "listen1";
   };
 }

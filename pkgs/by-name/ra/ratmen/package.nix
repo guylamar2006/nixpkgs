@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
   makeFlags = [
     "PREFIX=$(out)"
   ];
-  meta = with lib; {
+  meta = {
     description = "Minimalistic X11 menu creator";
     license = lib.licenses.free; # 9menu derivative with 9menu license
     maintainers = with lib.maintainers; [ raskin ];

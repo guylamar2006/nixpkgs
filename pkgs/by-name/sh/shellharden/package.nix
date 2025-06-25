@@ -20,7 +20,7 @@ rustPlatform.buildRustPackage rec {
 
   postPatch = "patchShebangs moduletests/run";
 
-  meta = with lib; {
+  meta = {
     description = "Corrective bash syntax highlighter";
     mainProgram = "shellharden";
     longDescription = ''

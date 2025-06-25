@@ -19,7 +19,7 @@ buildGoModule rec {
 
   doCheck = false; # tests want to talk to oauth2c.us.authz.cloudentity.io
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/cloudentity/oauth2c";
     description = "User-friendly OAuth2 CLI";
     mainProgram = "oauth2c";
@@ -31,6 +31,6 @@ buildGoModule rec {
     '';
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ flokli ];
-    platforms = lib.platforms.darwin ++ platforms.linux;
+    platforms = lib.platforms.darwin ++ lib.platforms.linux;
   };
 }

@@ -171,11 +171,11 @@ stdenv.mkDerivation (finalAttrs: {
     inherit cudaPackages;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Lightning fast C++/CUDA neural network framework";
     homepage = "https://github.com/NVlabs/tiny-cuda-nn";
-    license = licenses.bsd3;
-    maintainers = with maintainers; [ connorbaker ];
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ connorbaker ];
     platforms = lib.platforms.linux;
     badPlatforms = [
       # g++: error: unrecognized command-line option '-mf16c'

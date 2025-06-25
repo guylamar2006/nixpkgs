@@ -47,7 +47,7 @@ stdenvNoCC.mkDerivation rec {
 
   passthru.updateScript = gitUpdater { };
 
-  meta = with lib; {
+  meta = {
     description = "Numix icon theme (circle version)";
     homepage = "https://numixproject.github.io";
     license = lib.licenses.gpl3Only;

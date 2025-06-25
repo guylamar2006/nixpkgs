@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
     gtk2
   ];
 
-  meta = with lib; {
+  meta = {
     description = "PDF converter to SVG format";
     homepage = "http://www.cityinthesky.co.uk/opensource/pdf2svg";
     license = lib.licenses.gpl2Plus;

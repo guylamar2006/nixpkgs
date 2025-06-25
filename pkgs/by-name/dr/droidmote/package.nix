@@ -60,7 +60,7 @@ stdenv.mkDerivation {
   meta = {
     description = "Control your computer from your couch";
     homepage = "https://www.videomap.it/";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ atila ];
     platforms = lib.attrNames srcs;

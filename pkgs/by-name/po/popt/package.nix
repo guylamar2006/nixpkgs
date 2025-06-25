@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
 
   doCheck = false; # fails
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/rpm-software-management/popt";
     description = "Command line option parsing library";
     maintainers = with lib.maintainers; [ qyliss ];

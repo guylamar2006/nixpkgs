@@ -31,7 +31,7 @@ stdenv.mkDerivation {
 
   makeFlags = [ "PREFIX=$(out)" ];
 
-  meta = with lib; {
+  meta = {
     description = "FIFO based tox client";
     mainProgram = "ratox";
     homepage = "http://ratox.2f30.org/";

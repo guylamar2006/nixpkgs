@@ -32,7 +32,7 @@ python3.pkgs.buildPythonApplication rec {
     "shot_scraper"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Command-line utility for taking automated screenshots of websites";
     homepage = "https://github.com/simonw/shot-scraper";
     changelog = "https://github.com/simonw/shot-scraper/releases/tag/${src.tag}";

@@ -24,7 +24,7 @@ stdenv.mkDerivation rec {
 
   buildInputs = [ curl ];
 
-  meta = with lib; {
+  meta = {
     description = "Formatted C++17 stdlib man pages (cppreference)";
     longDescription = "stdman is a tool that parses archived HTML
       files from cppreference and generates groff-formatted manual

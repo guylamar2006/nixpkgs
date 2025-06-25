@@ -42,11 +42,11 @@ stdenv.mkDerivation rec {
     wrapPythonPrograms
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Native messaging host to integrate uGet Download Manager with web browsers";
     mainProgram = "uget-integrator";
     homepage = "https://github.com/ugetdm/uget-integrator";
-    license = licenses.gpl3;
+    license = lib.licenses.gpl3;
     platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ romildo ];
   };

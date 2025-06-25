@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage rec {
   useFetchCargoVendor = true;
   cargoHash = "sha256-hub64iZNVw/BJjibtDnJ3boIU27DEbYSlMLhFFVJ9ps=";
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/3andne/restls";
     changelog = "https://github.com/3andne/restls/releases/tag/${src.rev}";
     description = "Perfect Impersonation of TLS";

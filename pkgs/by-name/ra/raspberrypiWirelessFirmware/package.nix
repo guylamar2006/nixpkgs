@@ -53,7 +53,7 @@ stdenvNoCC.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Firmware for builtin Wifi/Bluetooth devices in the Raspberry Pi 3+ and Zero W";
     homepage = "https://github.com/RPi-Distro/firmware-nonfree";
     license = lib.licenses.unfreeRedistributableFirmware;

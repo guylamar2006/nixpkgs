@@ -55,7 +55,7 @@ stdenv.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Print out system statistics with pride flags";
     longDescription = ''
       Pridefetch prints your system statistics (similarly to neofetch, screenfetch or pfetch) along with a pride flag.

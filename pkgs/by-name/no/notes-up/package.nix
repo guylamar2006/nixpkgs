@@ -63,7 +63,7 @@ stdenv.mkDerivation rec {
     updateScript = nix-update-script { };
   };
 
-  meta = with lib; {
+  meta = {
     description = "Markdown notes editor and manager designed for elementary OS";
     homepage = "https://github.com/Philip-Scott/Notes-up";
     license = lib.licenses.gpl2Only;

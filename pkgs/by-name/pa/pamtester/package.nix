@@ -19,7 +19,7 @@ stdenv.mkDerivation rec {
 
   buildInputs = [ pam ];
 
-  meta = with lib; {
+  meta = {
     description = "Utility program to test the PAM facility";
     mainProgram = "pamtester";
     homepage = "https://pamtester.sourceforge.net/";

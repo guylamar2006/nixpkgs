@@ -53,7 +53,7 @@ stdenv.mkDerivation (finalAttrs: {
     hardcodeZeroVersion = true;
   };
 
-  meta = with lib; {
+  meta = {
     description = "Open-source alternative of Discord desktop's \"app.asar\"";
     homepage = "https://openasar.dev";
     license = lib.licenses.agpl3Only;

@@ -51,7 +51,7 @@ stdenv.mkDerivation {
     libsForQt5.qwt
   ] ++ lib.optionals stdenv.hostPlatform.isLinux [ bluez ];
 
-  meta = with lib; {
+  meta = {
     description = "Qt based source measure unit GUI for sigrok";
     mainProgram = "smuview";
     longDescription = "SmuView is a GUI for sigrok that supports power supplies, electronic loads and all sorts of measurement devices like multimeters, LCR meters and so on";

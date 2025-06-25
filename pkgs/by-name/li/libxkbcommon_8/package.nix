@@ -100,7 +100,7 @@ stdenv.mkDerivation (finalAttrs: {
       ttuegel
     ];
     mainProgram = "xkbcli";
-    platforms = with platforms; unix;
+    platforms = lib.platforms.unix;
     pkgConfigModules = [
       "xkbcommon"
       "xkbcommon-x11"

@@ -80,7 +80,7 @@ stdenv.mkDerivation rec {
       --replace "/usr/bin/file" "${file}/bin/file"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Elegant, simple, clean dock";
     mainProgram = "plank";
     homepage = "https://launchpad.net/plank";

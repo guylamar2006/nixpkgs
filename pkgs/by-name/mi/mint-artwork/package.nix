@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://github.com/linuxmint/mint-artwork";
     description = "Artwork for the cinnamon desktop";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl3Plus
       cc-by-40
     ]; # from debian/copyright

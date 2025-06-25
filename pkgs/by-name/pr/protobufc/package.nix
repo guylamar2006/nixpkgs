@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
 
   env.PROTOC = lib.getExe buildPackages.protobuf_25;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/protobuf-c/protobuf-c/";
     description = "C bindings for Google's Protocol Buffers";
     license = lib.licenses.bsd2;

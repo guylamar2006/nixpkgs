@@ -33,7 +33,7 @@ rustPlatform.buildRustPackage rec {
     mainProgram = "cargo-info";
     homepage = "https://gitlab.com/imp/cargo-info";
     changelog = "https://gitlab.com/imp/cargo-info/-/blob/${src.rev}/CHANGELOG.md";
-    license = with licenses; [
+    license = with lib.licenses; [
       mit
       asl20
     ];

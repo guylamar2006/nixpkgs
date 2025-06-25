@@ -26,7 +26,7 @@ appimageTools.wrapType2 {
     cp -r ${appimageContents}/usr/share/icons $out/share
   '';
 
-  meta = with lib; {
+  meta = {
     description = "GUI front-end for Neo4j";
     homepage = "https://neo4j.com/";
     license = lib.licenses.unfree;

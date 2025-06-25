@@ -39,7 +39,7 @@ python3Packages.buildPythonApplication {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/simone36050/PosteID-seed-extractor";
     description = "Extract OTP seed instead of using PosteID app";
     mainProgram = "posteid-seed-extractor";

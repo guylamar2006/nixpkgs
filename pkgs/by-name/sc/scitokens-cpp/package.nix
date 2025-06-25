@@ -33,7 +33,7 @@ stdenv.mkDerivation {
     sqlite
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/scitokens/scitokens-cpp/";
     description = "C++ implementation of the SciTokens library with a C library interface";
     platforms = lib.platforms.unix;

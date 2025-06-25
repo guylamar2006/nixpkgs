@@ -134,7 +134,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Open source version of Mellanox Firmware Tools (MFT)";
     homepage = "https://github.com/Mellanox/mstflint";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl2Only
       bsd2
     ];

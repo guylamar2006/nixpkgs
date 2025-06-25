@@ -101,7 +101,7 @@ stdenv.mkDerivation rec {
     )
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Screenshot and annotation tool";
     mainProgram = "shutter";
     homepage = "https://shutter-project.org/";

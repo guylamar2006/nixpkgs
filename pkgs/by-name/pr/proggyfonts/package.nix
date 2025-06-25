@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.upperbounds.net";
     description = "Set of fixed-width screen fonts that are designed for code listings";
     license = lib.licenses.mit;

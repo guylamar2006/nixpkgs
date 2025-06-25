@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Set of HEP-specific foundation and utility classes such as random generators, physics vectors, geometry and linear algebra";
     homepage = "https://cern.ch/clhep";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl3Only
       lgpl3Only
     ];

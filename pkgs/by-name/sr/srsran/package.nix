@@ -68,11 +68,11 @@ stdenv.mkDerivation rec {
     rm $out/lib/*.a
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.srslte.com/";
     description = "Open-source 4G and 5G software radio suite";
     license = lib.licenses.agpl3Plus;
-    platforms = with platforms; linux;
-    maintainers = with maintainers; [ hexagonal-sun ];
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ hexagonal-sun ];
   };
 }

@@ -62,6 +62,6 @@ stdenv.mkDerivation rec {
     description = "Rime Input Method Engine, the core library";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ vonfry ];
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

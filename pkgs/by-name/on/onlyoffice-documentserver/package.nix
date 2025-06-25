@@ -155,7 +155,7 @@ let
       };
     };
 
-    meta = with lib; {
+    meta = {
       description = "ONLYOFFICE Document Server is an online office suite comprising viewers and editors";
       mainProgram = "documentserver-prepare4shutdown.sh";
       longDescription = ''

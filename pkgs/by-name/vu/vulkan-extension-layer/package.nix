@@ -59,11 +59,11 @@ stdenv.mkDerivation rec {
     done
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Layers providing Vulkan features when native support is unavailable";
     homepage = "https://github.com/KhronosGroup/Vulkan-ExtensionLayer/";
     platforms = lib.platforms.linux;
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ ];
   };
 }

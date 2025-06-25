@@ -25,7 +25,7 @@ rustPlatform.buildRustPackage rec {
     installManPage packaging/man/pazi.1
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Autojump \"zap to directory\" helper";
     homepage = "https://github.com/euank/pazi";
     license = lib.licenses.gpl3;

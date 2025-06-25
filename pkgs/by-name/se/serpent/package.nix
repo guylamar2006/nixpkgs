@@ -28,7 +28,7 @@ stdenv.mkDerivation {
     mv serpent $out/bin
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Compiler for the Serpent language for Ethereum";
     mainProgram = "serpent";
     longDescription = ''

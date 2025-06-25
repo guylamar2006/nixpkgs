@@ -36,7 +36,7 @@ stdenv.mkDerivation {
   dontPatchELF = true;
   dontStrip = true;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/nickjj/rolespec";
     description = "Test library for testing Ansible roles";
     mainProgram = "rolespec";

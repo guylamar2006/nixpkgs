@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
     cp -a ../presets/* "$out/lib/lv2"
   '';
 
-  meta = with lib; {
+  meta = {
     broken = (stdenv.hostPlatform.isLinux && stdenv.hostPlatform.isAarch64);
     homepage = "http://openavproductions.com/sorcer/";
     description = "Wavetable LV2 plugin synth, targeted at the electronic / dubstep genre";

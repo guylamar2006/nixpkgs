@@ -64,7 +64,7 @@ stdenvNoCC.mkDerivation rec {
     description = "GUI tool for experimenting with formal languages topics";
     homepage = "https://www.jflap.org/";
     license = lib.licenses.unfree;
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     maintainers = with lib.maintainers; [
       grnnja
       yuu

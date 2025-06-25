@@ -34,7 +34,7 @@ runCommand name
       url = "https://postgrey.schweikert.ch/pub/${name}.tar.gz";
       sha256 = "1xx51xih4711vrvc6d57il9ccallbljj5zhgqdb07jzmz11rakgz";
     };
-    meta = with lib; {
+    meta = {
       description = "Postfix policy server to provide greylisting";
       homepage = "https://postgrey.schweikert.ch/";
       platforms = postfix.meta.platforms;

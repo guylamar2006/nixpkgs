@@ -66,7 +66,7 @@ stdenv.mkDerivation rec {
     xz
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Simulation construction toolkit";
     homepage = "https://wiki.flightgear.org/SimGear";
     maintainers = with lib.maintainers; [ raskin ];

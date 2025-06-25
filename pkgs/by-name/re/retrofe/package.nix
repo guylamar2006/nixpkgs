@@ -99,11 +99,11 @@ stdenv.mkDerivation {
       --run 'export RETROFE_PATH=''${RETROFE_PATH:-$PWD}'
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Frontend for arcade cabinets and media PCs";
     homepage = "http://retrofe.nl/";
     license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ hrdinka ];
-    platforms = with platforms; linux;
+    platforms = lib.platforms.linux;
   };
 }

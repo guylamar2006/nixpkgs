@@ -48,6 +48,6 @@ stdenv.mkDerivation rec {
     homepage = "http://www.mp3blaster.org/";
     license = lib.licenses.gpl2;
     maintainers = with lib.maintainers; [ earldouglas ];
-    platforms = with platforms; linux ++ darwin;
+    platforms = with lib.platforms; linux ++ darwin;
   };
 }

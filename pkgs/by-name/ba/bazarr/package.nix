@@ -64,7 +64,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Subtitle manager for Sonarr and Radarr";
     homepage = "https://www.bazarr.media/";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ d-xo ];
     mainProgram = "bazarr";

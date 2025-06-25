@@ -87,7 +87,7 @@ py.pkgs.buildPythonApplication rec {
 
   pythonImportsCheck = [ "prowler" ];
 
-  meta = with lib; {
+  meta = {
     description = "Security tool for AWS, Azure and GCP to perform Cloud Security best practices assessments";
     homepage = "https://github.com/prowler-cloud/prowler";
     changelog = "https://github.com/prowler-cloud/prowler/releases/tag/${src.tag}";

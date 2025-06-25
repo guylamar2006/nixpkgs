@@ -167,7 +167,7 @@ stdenv.mkDerivation rec {
   meta = {
     homepage = "https://xiph.org/paranoia";
     description = "Tool and library for reading digital audio from CDs";
-    license = with licenses; [
+    license = with lib.licenses; [
       gpl2Plus
       lgpl21Plus
     ];

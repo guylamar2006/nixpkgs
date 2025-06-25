@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
       it's faster (10-720x), simpler (dedicated to just removing things), and
       beautiful (can use Scala instead of bash to script customizations).
     '';
-    sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ changlinli ];
     mainProgram = "bfg";

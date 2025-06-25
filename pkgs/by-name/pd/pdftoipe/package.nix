@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
     install -D pdftoipe $out/bin/pdftoipe
   '';
 
-  meta = with lib; {
+  meta = {
     description = "Program that tries to convert arbitrary PDF documents to Ipe files";
     homepage = "https://github.com/otfried/ipe-tools";
     changelog = "https://github.com/otfried/ipe-tools/releases";

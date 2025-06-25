@@ -20,7 +20,7 @@ stdenv.mkDerivation rec {
     libkrb5
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.eyrie.org/~eagle/software/pam-krb5/";
     description = "PAM module allowing PAM-aware applications to authenticate users by performing an AS exchange with a Kerberos KDC";
     longDescription = ''

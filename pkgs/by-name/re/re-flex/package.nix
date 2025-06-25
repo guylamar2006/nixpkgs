@@ -26,7 +26,7 @@ stdenv.mkDerivation rec {
     cmake
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://www.genivia.com/doc/reflex/html";
     description = "Regex-centric, fast lexical analyzer generator for C++ with full Unicode support";
     license = lib.licenses.bsd3;

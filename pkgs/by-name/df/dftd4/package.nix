@@ -68,7 +68,7 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Generally Applicable Atomic-Charge Dependent London Dispersion Correction";
     mainProgram = "dftd4";
-    license = with licenses; [
+    license = with lib.licenses; [
       lgpl3Plus
       gpl3Plus
     ];

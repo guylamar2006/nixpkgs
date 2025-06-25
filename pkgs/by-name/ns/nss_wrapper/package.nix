@@ -20,7 +20,7 @@ stdenv.mkDerivation rec {
     pkg-config
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Wrapper for the user, group and hosts NSS API";
     mainProgram = "nss_wrapper.pl";
     homepage = "https://git.samba.org/?p=nss_wrapper.git;a=summary;";

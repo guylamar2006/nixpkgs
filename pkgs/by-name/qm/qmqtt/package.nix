@@ -31,7 +31,7 @@ stdenv.mkDerivation rec {
     qt5.qtbase
   ];
 
-  meta = with lib; {
+  meta = {
     description = "MQTT client for Qt";
     homepage = "https://github.com/emqx/qmqtt";
     license = lib.licenses.epl10;

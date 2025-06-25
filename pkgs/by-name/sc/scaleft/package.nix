@@ -48,10 +48,10 @@ stdenv.mkDerivation rec {
     version = "sft version ${version}";
   };
 
-  meta = with lib; {
+  meta = {
     description = "ScaleFT provides Zero Trust software which you can use to secure your internal servers and services";
     homepage = "https://www.scaleft.com";
-    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ jloyet ];
     platforms = [ "x86_64-linux" ];

@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
     mainProgram = "ccls";
     homepage = "https://github.com/MaskRay/ccls";
     license = lib.licenses.asl20;
-    platforms = lib.platforms.linux ++ platforms.darwin;
+    platforms = lib.platforms.linux ++ lib.platforms.darwin;
     maintainers = with lib.maintainers; [
       mic92
       tobim
