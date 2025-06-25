@@ -21,7 +21,9 @@ assert
   let
     inherit (stdenv.hostPlatform) isLinux is64bit;
     inherit (lib) intersectLists platforms concatStringsSep;
-    workingPlatforms = intersectLists lib.platforms.linux (with platforms; x86_64 ++ aarch64 ++ riscv64);
+    workingPlatforms = intersectLists lib.platforms.linux (
+      with platforms; x86_64 ++ aarch64 ++ riscv64
+    );
   in
   (enableCrossCompilation -> !(isLinux && is64bit))
   -> builtins.throw ''

@@ -113,6 +113,9 @@ stdenv.mkDerivation {
     mainProgram = binName;
     maintainers = with lib.maintainers; [ adamcstephens ];
     platforms =
-      if (audioBackend == "pulse") then lib.platforms.linux else lib.platforms.linux ++ lib.platforms.darwin;
+      if (audioBackend == "pulse") then
+        lib.platforms.linux
+      else
+        lib.platforms.linux ++ lib.platforms.darwin;
   };
 }

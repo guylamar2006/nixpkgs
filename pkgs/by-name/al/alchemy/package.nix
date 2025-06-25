@@ -40,7 +40,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "http://al.chemy.org/";
     sourceProvenance = with lib.sourceTypes; [ binaryBytecode ];
-    license =lib. licenses.gpl3Plus;
+    license = lib.licenses.gpl3Plus;
     maintainers = with lib.maintainers; [ maintainers.marcweber ];
     platforms = lib.platforms.linux;
     mainProgram = "alchemy";

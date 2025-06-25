@@ -258,7 +258,9 @@ stdenv.mkDerivation (finalAttrs: {
       thillux
     ];
     # adapt to platforms stated in http://docs.frrouting.org/en/latest/overview.html#supported-platforms
-    platforms = (platforms.linux ++ lib.platforms.freebsd ++ lib.platforms.netbsd ++ lib.platforms.openbsd);
+    platforms = (
+      platforms.linux ++ lib.platforms.freebsd ++ lib.platforms.netbsd ++ lib.platforms.openbsd
+    );
   };
 
   passthru.tests = { inherit (nixosTests) frr; };
