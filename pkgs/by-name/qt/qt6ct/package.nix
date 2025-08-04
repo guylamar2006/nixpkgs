@@ -2,12 +2,8 @@
   cmake,
   fetchFromGitLab,
   lib,
-  qtbase,
-  qtsvg,
-  qttools,
-  qtwayland,
   stdenv,
-  wrapQtAppsHook,
+  qt6Packages,
 }:
 
 stdenv.mkDerivation (finalAttrs: {
@@ -24,11 +20,13 @@ stdenv.mkDerivation (finalAttrs: {
 
   nativeBuildInputs = [
     cmake
+  ]
+  ++ (with qt6Packages; [
     qttools
     wrapQtAppsHook
-  ];
+  ]);
 
-  buildInputs = [
+  buildInputs = with qt6Packages; [
     qtbase
     qtsvg
     qtwayland
@@ -36,7 +34,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   postPatch = ''
     substituteInPlace src/qt6ct-qtplugin/CMakeLists.txt src/qt6ct-style/CMakeLists.txt \
-      --replace-fail "\''${PLUGINDIR}" "$out/${qtbase.qtPluginPrefix}"
+      --replace-fail "\''${PLUGINDIR}" "$out/${qt6Packages.qtbase.qtPluginPrefix}"
   '';
 
   meta = {

@@ -91,8 +91,6 @@ makeScopeWithSplicing' {
       qmlbox2d = callPackage ../development/libraries/qmlbox2d { };
       packagekit-qt = callPackage ../tools/package-management/packagekit/qt.nix { };
 
-      qt6ct = callPackage ../tools/misc/qt6ct { };
-
       qt6gtk2 = callPackage ../tools/misc/qt6gtk2 { };
 
       qtforkawesome = callPackage ../development/libraries/qtforkawesome { };
