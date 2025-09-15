@@ -3594,8 +3594,6 @@ with pkgs;
     docbook-xsl = docbook_xsl;
   };
 
-  metasploit = callPackage ../tools/security/metasploit { };
-
   mtr = callPackage ../tools/networking/mtr { };
 
   mtr-gui = callPackage ../tools/networking/mtr { withGtk = true; };
