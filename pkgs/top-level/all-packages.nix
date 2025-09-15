@@ -1776,8 +1776,6 @@ with pkgs;
 
   apprise = with python3Packages; toPythonApplication apprise;
 
-  asmrepl = callPackage ../development/interpreters/asmrepl { };
-
   avahi = callPackage ../development/libraries/avahi { };
 
   avahi-compat = callPackage ../development/libraries/avahi {
