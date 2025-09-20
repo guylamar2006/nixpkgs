@@ -1,20 +1,16 @@
 {
   lib,
-  buildPythonApplication,
+  python3,
   fetchFromGitHub,
   gobject-introspection,
   gtk3,
   libappindicator,
   libpulseaudio,
   librsvg,
-  pycairo,
-  pygobject3,
-  six,
   wrapGAppsHook3,
-  xlib,
 }:
 
-buildPythonApplication {
+python3.pkgs.buildPythonApplication {
   pname = "hushboard";
   version = "unstable-2021-03-17";
   format = "setuptools";
@@ -23,10 +19,10 @@ buildPythonApplication {
     owner = "stuartlangridge";
     repo = "hushboard";
     rev = "c16611c539be111891116a737b02c5fb359ad1fc";
-    sha256 = "06jav6j0bsxhawrq31cnls8zpf80fpwk0cak5s82js6wl4vw2582";
+    hash = "sha256-AhXBN6HcaCmQLlMxMPl1ALn7kaaWhYEzV7DrBaTZSho=";
   };
 
-  nativeBuildInputs = [
+  nativeBuildInputs = with python3.pkgs; [
     wrapGAppsHook3
     gobject-introspection
   ];
@@ -37,7 +33,7 @@ buildPythonApplication {
     libpulseaudio
   ];
 
-  propagatedBuildInputs = [
+  dependencies = with python3.pkgs; [
     pycairo
     pygobject3
     six
@@ -65,12 +61,12 @@ buildPythonApplication {
   # There are no tests
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     homepage = "https://kryogenix.org/code/hushboard/";
-    license = licenses.mit;
+    license = lib.licenses.mit;
     description = "Mute your microphone while typing";
     mainProgram = "hushboard";
-    platforms = platforms.linux;
-    maintainers = with maintainers; [ keysmashes ];
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ keysmashes ];
   };
 }
