@@ -4101,8 +4101,6 @@ with pkgs;
     };
   };
 
-  scfbuild = python3.pkgs.callPackage ../tools/misc/scfbuild { };
-
   segger-jlink-headless = callPackage ../by-name/se/segger-jlink/package.nix { headless = true; };
 
   selectdefaultapplication = libsForQt5.callPackage ../applications/misc/selectdefaultapplication { };
