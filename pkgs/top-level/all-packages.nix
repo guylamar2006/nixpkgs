@@ -4244,8 +4244,6 @@ with pkgs;
       themes = lib.recurseIntoAttrs (getPackagesWithPrefix "theme");
     };
 
-  thinkpad-scripts = python3.pkgs.callPackage ../tools/misc/thinkpad-scripts { };
-
   tiled = libsForQt5.callPackage ../applications/editors/tiled { };
 
   tinc = callPackage ../tools/networking/tinc { };
