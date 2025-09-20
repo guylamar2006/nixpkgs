@@ -10064,8 +10064,6 @@ with pkgs;
 
   public-inbox = perlPackages.callPackage ../servers/mail/public-inbox { };
 
-  spf-engine = python3.pkgs.callPackage ../servers/mail/spf-engine { };
-
   pypiserver = with python3Packages; toPythonApplication pypiserver;
 
   qremotecontrol-server = libsForQt5.callPackage ../servers/misc/qremotecontrol-server { };
