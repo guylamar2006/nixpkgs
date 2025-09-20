@@ -6354,10 +6354,6 @@ with pkgs;
 
   ### DEVELOPMENT / TOOLS / LANGUAGE-SERVERS
 
-  fortran-language-server =
-    python3.pkgs.callPackage ../development/tools/language-servers/fortran-language-server
-      { };
-
   inherit (callPackages ../development/tools/language-servers/nixd { }) nixf nixt nixd;
 
   antlr2 = callPackage ../development/tools/parsing/antlr/2.7.7.nix { };
