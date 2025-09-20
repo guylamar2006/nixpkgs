@@ -1,12 +1,10 @@
 {
   lib,
-  buildPythonApplication,
+  python3,
   fetchPypi,
-  pyserial,
-  pyudev,
 }:
 
-buildPythonApplication rec {
+python3.pkgs.buildPythonApplication rec {
   pname = "rshell";
   version = "0.0.36";
   format = "setuptools";
@@ -16,15 +14,15 @@ buildPythonApplication rec {
     hash = "sha256-SmbYNSB0eVUOWdDdPoMAPQTE7KeKTkklD4h+0t1LC/U=";
   };
 
-  propagatedBuildInputs = [
+  dependencies = with python3.pkgs; [
     pyserial
     pyudev
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/dhylands/rshell";
     description = "Remote Shell for MicroPython";
-    license = licenses.mit;
-    maintainers = with maintainers; [ c0deaddict ];
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ c0deaddict ];
   };
 }
