@@ -8828,8 +8828,6 @@ with pkgs;
     };
   };
 
-  rshell = python3.pkgs.callPackage ../development/embedded/rshell { };
-
   schroedinger = callPackage ../development/libraries/schroedinger { };
 
   SDL = SDL_compat;
