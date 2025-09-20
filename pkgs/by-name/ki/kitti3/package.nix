@@ -1,19 +1,17 @@
 {
-  buildPythonApplication,
+  python3,
   fetchFromGitHub,
-  poetry-core,
-  i3ipc,
   lib,
 }:
 
-buildPythonApplication rec {
+python3.pkgs.buildPythonApplication rec {
   pname = "kitti3";
   version = "unstable-2021-09-11";
   format = "pyproject";
 
   src = fetchFromGitHub {
     owner = "LandingEllipse";
-    repo = pname;
+    repo = "kitti3";
     rev = "f9f94c8b9f8b61a9d085206ada470cfe755a2a92";
     hash = "sha256-bcIzbDpIe2GKS9EcVqpjwz0IG2ixNMn06OIQpZ7PeH0=";
   };
@@ -24,19 +22,19 @@ buildPythonApplication rec {
     ./kitti3-fix-build-system.patch
   ];
 
-  nativeBuildInputs = [
+  nativeBuildInputs = with python3.pkgs; [
     poetry-core
   ];
 
-  propagatedBuildInputs = [
+  dependencies = with python3.pkgs; [
     i3ipc
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/LandingEllipse/kitti3";
     description = "Kitty drop-down service for sway & i3wm";
     mainProgram = "kitti3";
-    license = licenses.bsd3;
+    license = lib.licenses.bsd3;
     maintainers = [ ];
   };
 }
