@@ -3566,8 +3566,6 @@ with pkgs;
 
   minijail = callPackage ../tools/system/minijail { };
 
-  minijail-tools = python3.pkgs.callPackage ../tools/system/minijail/tools.nix { };
-
   mir-qualia = callPackage ../tools/text/mir-qualia {
     pythonPackages = python3Packages;
   };
