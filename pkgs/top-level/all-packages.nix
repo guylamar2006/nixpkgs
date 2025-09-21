@@ -1235,8 +1235,6 @@ with pkgs;
 
   forgejo-lts = callPackage ../by-name/fo/forgejo/lts.nix { };
 
-  gita = python3Packages.callPackage ../applications/version-management/gita { };
-
   github-cli = gh;
 
   git-annex-metadata-gui =
