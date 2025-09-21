@@ -1,29 +1,23 @@
 {
   lib,
-  annexremote,
-  buildPythonApplication,
-  drivelib,
+  python3,
   fetchPypi,
-  gitpython,
-  humanfriendly,
-  tenacity,
-  setuptools,
-  distutils,
 }:
 
-buildPythonApplication rec {
+python3.pkgs.buildPythonApplication rec {
   pname = "git-annex-remote-googledrive";
   version = "1.3.2";
   pyproject = true;
 
   src = fetchPypi {
     inherit pname version;
-    sha256 = "0rwjcdvfgzdlfgrn1rrqwwwiqqzyh114qddrbfwd46ld5spry6r1";
+    hash = "sha256-IRufry6NGtK4W7k1TEKA/mMcOec452Dzc7T953Zjkmc=
+";
   };
 
-  build-system = [ setuptools ];
+  build-system = with python3.pkgs; [ setuptools ];
 
-  propagatedBuildInputs = [
+  dependencies = with python3.pkgs; [
     annexremote
     drivelib
     gitpython
@@ -40,11 +34,11 @@ buildPythonApplication rec {
     "git_annex_remote_googledrive"
   ];
 
-  meta = with lib; {
+  meta = {
     description = "Git-annex special remote for Google Drive";
     homepage = "https://github.com/Lykos153/git-annex-remote-googledrive";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ gravndal ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ gravndal ];
     mainProgram = "git-annex-remote-googledrive";
   };
 }

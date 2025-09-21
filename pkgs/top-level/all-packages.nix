@@ -1252,10 +1252,6 @@ with pkgs;
       ;
   };
 
-  git-annex-remote-googledrive =
-    python3Packages.callPackage ../applications/version-management/git-annex-remote-googledrive
-      { };
-
   git-credential-manager = callPackage ../applications/version-management/git-credential-manager { };
 
   git-recent = callPackage ../applications/version-management/git-recent {
