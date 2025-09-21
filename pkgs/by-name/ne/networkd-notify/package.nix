@@ -9,15 +9,15 @@
 
 python3.pkgs.buildPythonApplication rec {
   pname = "networkd-notify";
-  version = "unstable-2022-11-29";
+  version = "unstable-2025-03-15";
   # There is no setup.py, just a single Python script.
   format = "other";
 
   src = fetchFromGitLab {
     owner = "wavexx";
     repo = "networkd-notify";
-    rev = "c2f3e71076a0f51c097064b1eb2505a361c7cc0e";
-    hash = "sha256-fanP1EWERT2Jy4OnMo8OMdR9flginYUgMw+XgmDve3o=";
+    rev = "5d3425bb24fe4b5e34167707b185840dd96acffd";
+    hash = "sha256-4nDYcdnI9R3oBxjGRaGX7QQMlApHwN7Hd0Y6TEMlF4Y=";
   };
 
   nativeBuildInputs = with python3.pkgs; [
