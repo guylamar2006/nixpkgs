@@ -1,22 +1,18 @@
 {
   lib,
-  buildPythonApplication,
+  python3,
   fetchFromGitHub,
   replaceVars,
   writeShellScript,
-  steam-run,
+  steam,
   fetchpatch2,
-  setuptools-scm,
-  vdf,
-  pillow,
   winetricks,
   yad,
-  pytestCheckHook,
   nix-update-script,
   extraCompatPaths ? "",
 }:
 
-buildPythonApplication rec {
+python3.pkgs.buildPythonApplication rec {
   pname = "protontricks";
   version = "1.13.0";
   pyproject = true;
@@ -31,9 +27,9 @@ buildPythonApplication rec {
   patches = [
     # Use steam-run to run Proton binaries
     (replaceVars ./steam-run.patch {
-      steamRun = lib.getExe steam-run;
+      steamRun = lib.getExe steam.run;
       bash = writeShellScript "steam-run-bash" ''
-        exec ${lib.getExe steam-run} bash "$@"
+        exec ${lib.getExe steam.run} bash "$@"
       '';
     })
 
@@ -45,9 +41,9 @@ buildPythonApplication rec {
     })
   ];
 
-  build-system = [ setuptools-scm ];
+  build-system = with python3.pkgs; [ setuptools-scm ];
 
-  dependencies = [
+  dependencies = with python3.pkgs; [
     vdf
     pillow
   ];
@@ -64,7 +60,7 @@ buildPythonApplication rec {
   ]
   ++ lib.optional (extraCompatPaths != "") "--set STEAM_EXTRA_COMPAT_TOOLS_PATHS ${extraCompatPaths}";
 
-  nativeCheckInputs = [ pytestCheckHook ];
+  nativeCheckInputs = with python3.pkgs; [ pytestCheckHook ];
 
   # From 1.6.0 release notes (https://github.com/Matoking/protontricks/releases/tag/1.6.0):
   # In most cases the script is unnecessary and should be removed as part of the packaging process.
@@ -76,12 +72,12 @@ buildPythonApplication rec {
 
   passthru.updateScript = nix-update-script { };
 
-  meta = with lib; {
+  meta = {
     description = "Simple wrapper for running Winetricks commands for Proton-enabled games";
     homepage = "https://github.com/Matoking/protontricks";
     changelog = "https://github.com/Matoking/protontricks/blob/${src.tag}/CHANGELOG.md";
-    license = licenses.gpl3Only;
-    maintainers = with maintainers; [ kira-bruneau ];
+    license = lib.licenses.gpl3Only;
+    maintainers = with lib.maintainers; [ kira-bruneau ];
     platforms = [
       "x86_64-linux"
       "i686-linux"
