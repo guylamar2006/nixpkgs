@@ -1,26 +1,12 @@
 {
   lib,
   stdenv,
-  buildPythonApplication,
+  python3,
   fetchFromGitHub,
-  poetry-core,
-  fido2,
-  nitrokey,
-  pyside6,
-  usb-monitor,
-  qt6,
+  qt6Packages,
 }:
 
-let
-  inherit (qt6)
-    wrapQtAppsHook
-    qtbase
-    qtwayland
-    qtsvg
-    ;
-in
-
-buildPythonApplication rec {
+python3.pkgs.buildPythonApplication rec {
   pname = "nitrokey-app2";
   version = "2.4.1";
   pyproject = true;
@@ -32,23 +18,25 @@ buildPythonApplication rec {
     hash = "sha256-nzhhtnKKOHA+Cw1y+BpYsyQklzkDnmFRKGIfaJ/dmaQ=";
   };
 
-  nativeBuildInputs = [
+  nativeBuildInputs = with qt6Packages; [
     wrapQtAppsHook
   ];
 
-  buildInputs = [
-    qtbase
-  ]
-  ++ lib.optionals stdenv.hostPlatform.isLinux [
-    qtwayland
-    qtsvg
-  ];
+  buildInputs =
+    with qt6Packages;
+    [
+      qtbase
+    ]
+    ++ lib.optionals stdenv.hostPlatform.isLinux [
+      qtwayland
+      qtsvg
+    ];
 
-  build-system = [
+  build-system = with python3.pkgs; [
     poetry-core
   ];
 
-  dependencies = [
+  dependencies = with python3.pkgs; [
     fido2
     nitrokey
     pyside6
@@ -72,12 +60,12 @@ buildPythonApplication rec {
     makeWrapperArgs+=("''${qtWrapperArgs[@]}")
   '';
 
-  meta = with lib; {
+  meta = {
     description = "This application allows to manage Nitrokey 3 devices";
     homepage = "https://github.com/Nitrokey/nitrokey-app2";
     changelog = "https://github.com/Nitrokey/nitrokey-app2/releases/tag/${src.tag}";
-    license = licenses.asl20;
-    maintainers = with maintainers; [
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [
       _999eagle
       panicgh
     ];
