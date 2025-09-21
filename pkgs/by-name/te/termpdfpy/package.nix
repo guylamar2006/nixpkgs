@@ -1,19 +1,11 @@
 {
   lib,
-  buildPythonApplication,
+  python3,
   fetchFromGitHub,
   bibtool,
-  pybtex,
-  pymupdf,
-  pynvim,
-  pyperclip,
-  roman,
-  pdfrw,
-  pagelabels,
-  setuptools,
 }:
 
-buildPythonApplication {
+python3.pkgs.buildPythonApplication {
   pname = "termpdf.py";
   version = "2022-03-28";
   format = "setuptools";
@@ -22,11 +14,13 @@ buildPythonApplication {
     owner = "dsanson";
     repo = "termpdf.py";
     rev = "e7bd0824cb7d340b8dba7d862e696dba9cb5e5e2";
-    sha256 = "HLQZBaDoZFVBs4JfJcwhrLx8pxdEI56/iTpUjT5pBhk=";
+    hash = "sha256-HLQZBaDoZFVBs4JfJcwhrLx8pxdEI56/iTpUjT5pBhk=";
   };
 
-  propagatedBuildInputs = [
+  dependencies = [
     bibtool
+  ]
+  ++ (with python3.pkgs; [
     pybtex
     pymupdf
     pyperclip
@@ -35,19 +29,19 @@ buildPythonApplication {
     pdfrw
     pynvim
     setuptools
-  ];
+  ]);
 
   # upstream doesn't contain tests
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     description = ''
       A graphical pdf (and epub, cbz, ...) reader that works
       inside the kitty terminal.
     '';
     mainProgram = "termpdf.py";
     homepage = "https://github.com/dsanson/termpdf.py";
-    maintainers = with maintainers; [ teto ];
-    license = licenses.mit;
+    maintainers = with lib.maintainers; [ teto ];
+    license = lib.licenses.mit;
   };
 }
