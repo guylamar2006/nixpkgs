@@ -1,19 +1,12 @@
 {
   lib,
   fetchPypi,
-  buildPythonApplication,
-  poetry-core,
-  colorama,
-  packaging,
-  pydantic,
-  requests,
-  pygobject3,
-  tqdm,
+  python3,
   gobject-introspection,
   wrapGAppsNoGuiHook,
 }:
 
-buildPythonApplication rec {
+python3.pkgs.buildPythonApplication rec {
   pname = "gnome-extensions-cli";
   version = "0.10.6";
   format = "pyproject";
@@ -26,16 +19,18 @@ buildPythonApplication rec {
 
   nativeBuildInputs = [
     gobject-introspection
-    poetry-core
     wrapGAppsNoGuiHook
-  ];
+  ]
+  ++ (with python3.pkgs; [
+    poetry-core
+  ]);
 
   pythonRelaxDeps = [
     "more-itertools"
     "packaging"
   ];
 
-  propagatedBuildInputs = [
+  dependencies = with python3.pkgs; [
     colorama
     packaging
     pydantic
@@ -48,11 +43,11 @@ buildPythonApplication rec {
     "gnome_extensions_cli"
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/essembeh/gnome-extensions-cli";
     description = "Command line tool to manage your GNOME Shell extensions";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ dylanmtaylor ];
-    platforms = platforms.linux;
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ dylanmtaylor ];
+    platforms = lib.platforms.linux;
   };
 }
