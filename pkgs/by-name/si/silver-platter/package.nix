@@ -1,24 +1,17 @@
 {
-  buildPythonApplication,
+  python3,
   lib,
   stdenv,
   fetchFromGitHub,
   pkg-config,
-  setuptools,
-  setuptools-rust,
   rustPlatform,
   cargo,
   rustc,
-  breezy,
-  dulwich,
-  jinja2,
   libiconv,
   openssl,
-  pyyaml,
-  ruamel-yaml,
 }:
 
-buildPythonApplication rec {
+python3.pkgs.buildPythonApplication rec {
   pname = "silver-platter";
   version = "0.5.20";
   pyproject = true;
@@ -26,7 +19,7 @@ buildPythonApplication rec {
   src = fetchFromGitHub {
     owner = "jelmer";
     repo = "silver-platter";
-    rev = version;
+    tag = version;
     hash = "sha256-k+C4jrC4FO/yy9Eb6x4lv1zyyp/eGkpMcDqZ0KoxfBs=";
   };
 
@@ -35,7 +28,7 @@ buildPythonApplication rec {
     hash = "sha256-hZQfzaLvHSN/hGR5vn+/2TRH6GwDTTp+UcnePXY7JlM=";
   };
 
-  propagatedBuildInputs = [
+  dependencies = with python3.pkgs; [
     setuptools
     breezy
     dulwich
@@ -43,13 +36,16 @@ buildPythonApplication rec {
     pyyaml
     ruamel-yaml
   ];
-  nativeBuildInputs = [
-    setuptools-rust
-    rustPlatform.cargoSetupHook
-    cargo
-    rustc
-  ]
-  ++ lib.optionals stdenv.hostPlatform.isLinux [ pkg-config ];
+  nativeBuildInputs =
+    (with python3.pkgs; [
+      setuptools-rust
+    ])
+    ++ [
+      rustPlatform.cargoSetupHook
+      cargo
+      rustc
+    ]
+    ++ lib.optionals stdenv.hostPlatform.isLinux [ pkg-config ];
   buildInputs =
     lib.optionals stdenv.hostPlatform.isLinux [ openssl ]
     ++ lib.optionals stdenv.hostPlatform.isDarwin [ libiconv ];

@@ -1273,8 +1273,6 @@ with pkgs;
 
   qgit = qt5.callPackage ../applications/version-management/qgit { };
 
-  silver-platter = python3Packages.callPackage ../applications/version-management/silver-platter { };
-
   svn-all-fast-export =
     libsForQt5.callPackage ../applications/version-management/svn-all-fast-export
       { };
