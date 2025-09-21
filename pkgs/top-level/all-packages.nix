@@ -15037,8 +15037,6 @@ with pkgs;
     waylandSupport = true;
   };
 
-  qmake2cmake = python3Packages.callPackage ../tools/misc/qmake2cmake { };
-
   qtrvsim = libsForQt5.callPackage ../applications/science/computer-architecture/qtrvsim { };
 
   sail-riscv = callPackage ../applications/virtualization/sail-riscv {
