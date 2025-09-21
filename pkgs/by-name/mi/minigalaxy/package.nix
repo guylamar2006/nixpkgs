@@ -8,7 +8,7 @@
   libnotify,
   nix-update-script,
   python3Packages,
-  steam-run,
+  steam,
   replaceVars,
   unzip,
   webkitgtk_4_1,
@@ -30,7 +30,7 @@ python3Packages.buildPythonApplication rec {
 
   patches = [
     (replaceVars ./inject-launcher-steam-run.diff {
-      steamrun = lib.getExe steam-run;
+      steamrun = lib.getExe steam.run;
     })
   ];
 
