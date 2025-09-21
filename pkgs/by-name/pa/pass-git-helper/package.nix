@@ -1,15 +1,10 @@
 {
   lib,
-  buildPythonApplication,
+  python3,
   fetchFromGitHub,
-  pyxdg,
-  pytestCheckHook,
-  pytest-cov-stub,
-  pytest-mock,
-  setuptools,
 }:
 
-buildPythonApplication rec {
+python3.pkgs.buildPythonApplication rec {
   pname = "pass-git-helper";
   version = "4.0.0";
   pyproject = true;
@@ -18,28 +13,28 @@ buildPythonApplication rec {
     owner = "languitar";
     repo = "pass-git-helper";
     tag = "v${version}";
-    sha256 = "sha256-SAMndgcxBa7wymXbOwRGcoogFfzpFFIZ0tF4NSCXpjw=";
+    hash = "sha256-SAMndgcxBa7wymXbOwRGcoogFfzpFFIZ0tF4NSCXpjw=";
   };
 
-  build-system = [ setuptools ];
+  build-system = with python3.pkgs; [ setuptools ];
 
-  dependencies = [ pyxdg ];
+  dependencies = with python3.pkgs; [ pyxdg ];
 
   env.HOME = "$TMPDIR";
 
   pythonImportsCheck = [ "passgithelper" ];
 
-  nativeCheckInputs = [
+  nativeCheckInputs = with python3.pkgs; [
     pytestCheckHook
     pytest-cov-stub
     pytest-mock
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/languitar/pass-git-helper";
     description = "Git credential helper interfacing with pass, the standard unix password manager";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [
+    license = lib.licenses.gpl3Plus;
+    maintainers = with lib.maintainers; [
       hmenke
     ];
     mainProgram = "pass-git-helper";
