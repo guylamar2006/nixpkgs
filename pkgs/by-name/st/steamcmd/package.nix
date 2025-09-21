@@ -2,7 +2,7 @@
   lib,
   stdenv,
   fetchurl,
-  steam-run,
+  steam,
   bash,
   coreutils,
   steamRoot ? "~/.local/share/Steam",
@@ -26,7 +26,7 @@ stdenv.mkDerivation {
 
   buildInputs = [
     bash
-    steam-run
+    steam
   ];
 
   dontBuild = true;
@@ -41,16 +41,16 @@ stdenv.mkDerivation {
       --subst-var out \
       --subst-var-by coreutils ${coreutils} \
       --subst-var-by steamRoot "${steamRoot}" \
-      --subst-var-by steamRun ${steam-run}
+      --subst-var-by steamRun ${steam.run}
     chmod 0755 $out/bin/steamcmd
   '';
 
-  meta = with lib; {
+  meta = {
     homepage = "https://developer.valvesoftware.com/wiki/SteamCMD";
     description = "Steam command-line tools";
     mainProgram = "steamcmd";
-    platforms = platforms.linux;
-    license = licenses.unfreeRedistributable;
-    maintainers = with maintainers; [ tadfisher ];
+    platforms = lib.platforms.linux;
+    license = lib.licenses.unfreeRedistributable;
+    maintainers = with lib.maintainers; [ tadfisher ];
   };
 }
