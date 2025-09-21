@@ -5,7 +5,7 @@
   fetchFromGitHub,
   butler,
   electron,
-  steam-run,
+  steam,
   makeWrapper,
   copyDesktopItems,
   makeDesktopItem,
@@ -25,7 +25,7 @@ let
     fetchFromGitHub {
       owner = "itchio";
       repo = "itch";
-      rev = "v${version}";
+      tag = "v${version}";
       hash = "sha256-jugg+hdP0y0OkFhdQuEI9neWDuNf2p3+DQuwxe09Zck=";
       sparseCheckout = [ sparseCheckout ];
     }
@@ -84,7 +84,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
   '';
 
   postFixup = ''
-    makeWrapper ${steam-run}/bin/steam-run $out/bin/itch \
+    makeWrapper ${steam.run}/bin/steam-run $out/bin/itch \
       --add-flags ${electron}/bin/electron \
       --add-flags $out/share/itch/resources/app \
       --add-flags "\''${NIXOS_OZONE_WL:+\''${WAYLAND_DISPLAY:+--ozone-platform-hint=auto --enable-features=WaylandWindowDecorations --enable-wayland-ime=true}}" \
