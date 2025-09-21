@@ -1334,8 +1334,6 @@ with pkgs;
 
   firebird-emu = libsForQt5.callPackage ../applications/emulators/firebird-emu { };
 
-  fusesoc = python3Packages.callPackage ../tools/package-management/fusesoc { };
-
   gcdemu = callPackage ../applications/emulators/cdemu/gui.nix { };
 
   gensgs = pkgsi686Linux.callPackage ../applications/emulators/gens-gs { };

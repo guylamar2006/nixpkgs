@@ -1,19 +1,12 @@
 {
-  buildPythonPackage,
+  python3,
   fetchPypi,
   lib,
   iverilog,
   verilator,
   gnumake,
-  edalize,
-  fastjsonschema,
-  pyparsing,
-  pyyaml,
-  simplesat,
-  ipyxact,
-  setuptools-scm,
 }:
-buildPythonPackage rec {
+python3.pkgs.buildPythonPackage rec {
   pname = "fusesoc";
   version = "2.2.1";
   format = "setuptools";
@@ -23,9 +16,9 @@ buildPythonPackage rec {
     hash = "sha256-M36bXBgY8hR33AVDlHoH8PZJG2Bi0KOEI07IMns7R4w=";
   };
 
-  nativeBuildInputs = [ setuptools-scm ];
+  nativeBuildInputs = with python3.pkgs; [ setuptools-scm ];
 
-  propagatedBuildInputs = [
+  dependencies = with python3.pkgs; [
     edalize
     fastjsonschema
     pyparsing
@@ -46,11 +39,11 @@ buildPythonPackage rec {
     }"
   ];
 
-  meta = with lib; {
+  meta = {
     homepage = "https://github.com/olofk/fusesoc";
     description = "Package manager and build tools for HDL code";
-    maintainers = with maintainers; [ genericnerdyusername ];
-    license = licenses.bsd3;
+    maintainers = with lib.maintainers; [ genericnerdyusername ];
+    license = lib.licenses.bsd3;
     mainProgram = "fusesoc";
   };
 }
