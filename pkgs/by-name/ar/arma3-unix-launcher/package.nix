@@ -11,7 +11,7 @@
   nlohmann_json,
   qt5,
   spdlog,
-  steam-run,
+  steam,
   replaceVars,
   buildDayZLauncher ? false,
 }:
@@ -56,7 +56,7 @@ stdenv.mkDerivation (finalAttrs: {
 
     # use steam-run when running the game directly
     (replaceVars ./steam-run.patch {
-      steamRun = lib.getExe steam-run;
+      steamRun = lib.getExe steam.run;
     })
   ];
 
