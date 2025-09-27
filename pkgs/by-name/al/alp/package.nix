@@ -40,7 +40,7 @@ buildGoModule rec {
   '';
 
   passthru.tests = {
-    test-version = runCommand "${pname}-test" { } ''
+    test-version = runCommand "alp-test" { } ''
       ${alp}/bin/alp version > $out
       cat $out | grep '${version}'
     '';

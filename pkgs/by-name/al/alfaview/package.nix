@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
   version = "9.23.1";
 
   src = fetchurl {
-    url = "https://assets.alfaview.com/stable/linux/deb/${pname}_${version}.deb";
+    url = "https://assets.alfaview.com/stable/linux/deb/alfaview_${version}.deb";
     hash = "sha256-T1RsG/8uuPtma7TCNww4V6tKzPK0Ds8zmdjk2duhMEw=";
   };
 

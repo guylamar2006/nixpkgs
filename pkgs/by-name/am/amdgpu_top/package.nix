@@ -45,7 +45,7 @@ rustPlatform.buildRustPackage rec {
   '';
 
   postFixup = ''
-    patchelf --set-rpath "${lib.makeLibraryPath buildInputs}" $out/bin/${pname}
+    patchelf --set-rpath "${lib.makeLibraryPath buildInputs}" $out/bin/amdgpu_top
   '';
 
   passthru.updateScript = nix-update-script { };
