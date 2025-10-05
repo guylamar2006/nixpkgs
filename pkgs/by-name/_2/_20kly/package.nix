@@ -19,9 +19,7 @@ python3Packages.buildPythonApplication rec {
 
   patchPhase = ''
     substituteInPlace lightyears \
-      --replace \
-        "LIGHTYEARS_DIR = \".\"" \
-        "LIGHTYEARS_DIR = \"$out/share\""
+      --replace-fail "LIGHTYEARS_DIR = \".\"" "LIGHTYEARS_DIR = \"$out/share\""
   '';
 
   propagatedBuildInputs = with python3Packages; [
