@@ -2279,8 +2279,6 @@ self: super: with self; {
 
   build = callPackage ../development/python-modules/build { };
 
-  buildcatrust = callPackage ../development/python-modules/buildcatrust { };
-
   buildstream-plugins = callPackage ../development/python-modules/buildstream-plugins { };
 
   bump-my-version = callPackage ../development/python-modules/bump-my-version { };

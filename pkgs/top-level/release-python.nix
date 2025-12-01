@@ -56,7 +56,7 @@ let
         jobs.nixos-render-docs.x86_64-linux # Used in nixos manual
         jobs.remarshal_0_17.x86_64-linux # Used in pkgs.formats.yaml_1_1
         jobs.python312Packages.afdko.x86_64-linux # Used in noto-fonts-color-emoji
-        jobs.python312Packages.buildcatrust.x86_64-linux # Used in pkgs.cacert
+        jobs.buildcatrust.x86_64-linux # Used in pkgs.cacert
         jobs.python312Packages.colorama.x86_64-linux # Used in nixos test-driver
         jobs.python312Packages.ptpython.x86_64-linux # Used in nixos test-driver
         jobs.python312Packages.requests.x86_64-linux # Almost ubiquous package
