@@ -8146,10 +8146,6 @@ with pkgs;
   };
   cassandra = cassandra_4;
 
-  apache-jena-fuseki = callPackage ../servers/nosql/apache-jena/fuseki-binary.nix {
-    java = jre;
-  };
-
   inherit (callPackages ../servers/asterisk { })
     asterisk
     asterisk-stable
