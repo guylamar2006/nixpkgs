@@ -1663,8 +1663,6 @@ with pkgs;
     inherit (haskellPackages) ghcWithPackages diagrams-builder;
   };
 
-  dialogbox = libsForQt5.callPackage ../tools/misc/dialogbox { };
-
   ding = callPackage ../applications/misc/ding {
     aspellDicts_de = aspellDicts.de;
     aspellDicts_en = aspellDicts.en;

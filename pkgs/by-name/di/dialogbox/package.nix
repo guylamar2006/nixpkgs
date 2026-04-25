@@ -2,9 +2,7 @@
   stdenv,
   lib,
   fetchFromGitHub,
-  qmake,
-  wrapQtAppsHook,
-  qtbase,
+  libsForQt5,
 }:
 
 stdenv.mkDerivation {
@@ -19,12 +17,12 @@ stdenv.mkDerivation {
   };
 
   nativeBuildInputs = [
-    qmake
-    wrapQtAppsHook
+    libsForQt5.qmake
+    libsForQt5.wrapQtAppsHook
   ];
 
   buildInputs = [
-    qtbase
+    libsForQt5.qtbase
   ];
 
   installPhase = ''
