@@ -2,13 +2,10 @@
   lib,
   stdenv,
   fetchFromGitHub,
-  qmake,
-  qtbase,
-  qttools,
   replaceVars,
   libGLU,
   zlib,
-  wrapQtAppsHook,
+  libsForQt5,
   fetchpatch,
 }:
 
@@ -28,7 +25,7 @@ stdenv.mkDerivation {
     ./external-lib-paths.patch
     ./zlib.patch
     (replaceVars ./qttools-bins.patch {
-      qttools = "${qttools.dev}/bin";
+      qttools = "${libsForQt5.qttools.dev}/bin";
     })
     (fetchpatch {
       name = "qt512-build-fix.patch";
@@ -39,14 +36,14 @@ stdenv.mkDerivation {
   ++ (lib.optional stdenv.hostPlatform.isAarch64 ./no-sse-on-arm.patch);
 
   buildInputs = [
-    qtbase
-    qttools
+    libsForQt5.qtbase
+    libsForQt5.qttools
     libGLU
     zlib
   ];
   nativeBuildInputs = [
-    qmake
-    wrapQtAppsHook
+    libsForQt5.qmake
+    libsForQt5.wrapQtAppsHook
   ];
 
   preConfigure = ''

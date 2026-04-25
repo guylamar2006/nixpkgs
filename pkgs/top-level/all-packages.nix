@@ -2933,8 +2933,6 @@ with pkgs;
 
   pgbadger = perlPackages.callPackage ../tools/misc/pgbadger { };
 
-  nifskope = libsForQt5.callPackage ../tools/graphics/nifskope { };
-
   nsjail = callPackage ../tools/security/nsjail {
     protobuf = protobuf_21;
   };
