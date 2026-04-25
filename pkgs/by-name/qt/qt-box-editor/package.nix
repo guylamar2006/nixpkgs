@@ -2,10 +2,7 @@
   lib,
   stdenv,
   fetchFromGitHub,
-  qmake,
-  wrapQtAppsHook,
-  qtbase,
-  qtsvg,
+  libsForQt5,
   leptonica,
   tesseract4,
 }:
@@ -22,13 +19,13 @@ stdenv.mkDerivation {
   };
 
   nativeBuildInputs = [
-    qmake
-    wrapQtAppsHook
+    libsForQt5.qmake
+    libsForQt5.wrapQtAppsHook
   ];
 
   buildInputs = [
-    qtbase
-    qtsvg
+    libsForQt5.qtbase
+    libsForQt5.qtsvg
     leptonica
     tesseract4
   ];

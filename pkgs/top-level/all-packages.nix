@@ -3172,8 +3172,6 @@ with pkgs;
     opensslSupport = false;
   };
 
-  qt-box-editor = libsForQt5.callPackage ../applications/misc/qt-box-editor { };
-
   recoll = libsForQt5.callPackage ../applications/search/recoll { };
 
   recoll-nox = recoll.override { withGui = false; };
