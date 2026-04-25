@@ -4,8 +4,7 @@
   fetchzip,
   autoreconfHook,
   pkg-config,
-  wrapQtAppsHook,
-  qtbase,
+  libsForQt5,
 }:
 
 stdenv.mkDerivation {
@@ -20,16 +19,16 @@ stdenv.mkDerivation {
   nativeBuildInputs = [
     autoreconfHook
     pkg-config
-    wrapQtAppsHook
+    libsForQt5.wrapQtAppsHook
   ];
 
   buildInputs = [
-    qtbase
+    libsForQt5.qtbase
   ];
 
   makeFlags = [
-    "MOC=${qtbase.dev}/bin/moc"
-    "UIC=${qtbase.dev}/bin/uic"
+    "MOC=${libsForQt5.qtbase.dev}/bin/moc"
+    "UIC=${libsForQt5.qtbase.dev}/bin/uic"
   ];
 
   meta = {

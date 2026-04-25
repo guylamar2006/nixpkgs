@@ -2942,8 +2942,6 @@ with pkgs;
 
   nwdiag = with python3Packages; toPythonApplication nwdiag;
 
-  ofono-phonesim = libsForQt5.callPackage ../development/tools/ofono-phonesim { };
-
   ola = callPackage ../applications/misc/ola {
     protobuf = protobuf_21;
   };
