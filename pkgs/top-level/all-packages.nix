@@ -2215,8 +2215,6 @@ with pkgs;
 
   Fabric = with python3Packages; toPythonApplication fabric;
 
-  chewing-editor = libsForQt5.callPackage ../applications/misc/chewing-editor { };
-
   fcitx5 = callPackage ../tools/inputmethods/fcitx5 { };
 
   fcitx5-bamboo = callPackage ../tools/inputmethods/fcitx5/fcitx5-bamboo.nix { };

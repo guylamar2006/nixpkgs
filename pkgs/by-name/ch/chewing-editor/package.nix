@@ -6,9 +6,7 @@
   cmake,
   pkg-config,
   libchewing,
-  qt5,
-  qtbase,
-  qttools,
+  libsForQt5,
 }:
 
 stdenv.mkDerivation (finalAttrs: {
@@ -29,13 +27,13 @@ stdenv.mkDerivation (finalAttrs: {
   nativeBuildInputs = [
     cmake
     pkg-config
-    qt5.wrapQtAppsHook
+    libsForQt5.wrapQtAppsHook
   ];
   buildInputs = [
     gtest
     libchewing
-    qtbase
-    qttools
+    libsForQt5.qtbase
+    libsForQt5.qttools
   ];
 
   meta = {
