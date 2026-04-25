@@ -6,20 +6,9 @@
   zlib,
   libusb1,
   libGL,
-  qmake,
   wrapGAppsHook3,
-  wrapQtAppsHook,
 
-  qttools,
-  qtbase,
-  qt3d,
-  qtsvg,
-  qtserialport,
-  qtdeclarative,
-  qtquickcontrols,
-  qtquickcontrols2,
-  qtgraphicaleffects,
-  qtwayland,
+  libsForQt5,
   nix-update-script,
 }:
 let
@@ -43,10 +32,10 @@ stdenv.mkDerivation {
 
   nativeBuildInputs = [
     pkg-config
-    qmake
-    qttools
+    libsForQt5.qmake
+    libsForQt5.qttools
     wrapGAppsHook3
-    wrapQtAppsHook
+    libsForQt5.wrapQtAppsHook
   ];
 
   buildInputs = [
@@ -54,17 +43,17 @@ stdenv.mkDerivation {
     libusb1
     libGL
 
-    qtbase
-    qt3d
-    qtsvg
-    qtserialport
-    qtdeclarative
-    qtquickcontrols
-    qtquickcontrols2
-    qtgraphicaleffects
+    libsForQt5.qtbase
+    libsForQt5.qt3d
+    libsForQt5.qtsvg
+    libsForQt5.qtserialport
+    libsForQt5.qtdeclarative
+    libsForQt5.qtquickcontrols
+    libsForQt5.qtquickcontrols2
+    libsForQt5.qtgraphicaleffects
   ]
   ++ lib.optionals (stdenv.hostPlatform.isLinux) [
-    qtwayland
+    libsForQt5.qtwayland
   ];
 
   qmakeFlags = [
