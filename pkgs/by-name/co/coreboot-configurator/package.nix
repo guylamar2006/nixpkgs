@@ -14,9 +14,7 @@
   yaml-cpp,
   nvramtool,
   systemd,
-  qtbase,
-  qtsvg,
-  wrapQtAppsHook,
+  libsForQt5,
 }:
 
 stdenv.mkDerivation {
@@ -35,12 +33,12 @@ stdenv.mkDerivation {
     meson
     ninja
     pkg-config
-    wrapQtAppsHook
+    libsForQt5.wrapQtAppsHook
   ];
   buildInputs = [
     yaml-cpp
-    qtbase
-    qtsvg
+    libsForQt5.qtbase
+    libsForQt5.qtsvg
   ];
 
   postPatch = ''
