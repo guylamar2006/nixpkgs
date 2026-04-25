@@ -4,15 +4,20 @@
   fetchurl,
   cmake,
   pkg-config,
-  wrapQtAppsHook,
-  qtbase,
-  qt5,
+  libsForQt5,
   libGLU,
   libGL,
-  libglut ? null,
-  openal ? null,
-  SDL2 ? null,
+  withGlut ? false,
+  libglut,
+  withOpenAL ? false,
+  openal,
+  withSdl ? true,
+  SDL2,
 }:
+
+let
+  inherit (lib) optionals;
+in
 
 stdenv.mkDerivation rec {
   pname = "yabause";
@@ -26,17 +31,18 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [
     cmake
     pkg-config
-    wrapQtAppsHook
+    libsForQt5.wrapQtAppsHook
   ];
+
   buildInputs = [
-    qtbase
-    qt5.qtmultimedia
+    libsForQt5.qtbase
+    libsForQt5.qtmultimedia
     libGLU
     libGL
-    libglut
-    openal
-    SDL2
-  ];
+  ]
+  ++ optionals withSdl [ SDL2 ]
+  ++ optionals withGlut [ libglut ]
+  ++ optionals withOpenAL [ openal ];
 
   patches = [
     ./linkage-rwx-linux-elf.patch
