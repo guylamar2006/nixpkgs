@@ -4,12 +4,9 @@
   fetchFromGitHub,
   pkg-config,
   cmake,
-  qttools,
-  wrapQtAppsHook,
   libx11,
   libxtst,
-  qtbase,
-  qtx11extras,
+  libsForQt5,
 }:
 stdenv.mkDerivation rec {
   pname = "qjoypad";
@@ -30,14 +27,14 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [
     pkg-config
     cmake
-    qttools
-    wrapQtAppsHook
+    libsForQt5.qttools
+    libsForQt5.wrapQtAppsHook
   ];
   buildInputs = [
     libx11
     libxtst
-    qtbase
-    qtx11extras
+    libsForQt5.qtbase
+    libsForQt5.qtx11extras
   ];
 
   meta = {
