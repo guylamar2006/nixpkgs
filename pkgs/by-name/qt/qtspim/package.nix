@@ -2,10 +2,7 @@
   lib,
   stdenv,
   fetchsvn,
-  wrapQtAppsHook,
-  qtbase,
-  qttools,
-  qmake,
+  libsForQt5,
   bison,
   flex,
 }:
@@ -24,7 +21,7 @@ stdenv.mkDerivation {
 
     substituteInPlace QtSpim.pro --replace /usr/lib/qtspim/lib $out/lib
     substituteInPlace menu.cpp \
-      --replace /usr/lib/qtspim/bin/assistant ${qttools.dev}/bin/assistant \
+      --replace /usr/lib/qtspim/bin/assistant ${libsForQt5.qttools.dev}/bin/assistant \
       --replace /usr/lib/qtspim/help/qtspim.qhc $out/share/help/qtspim.qhc
     substituteInPlace ../Setup/qtspim_debian_deployment/qtspim.desktop \
       --replace /usr/bin/qtspim qtspim \
@@ -32,14 +29,14 @@ stdenv.mkDerivation {
   '';
 
   nativeBuildInputs = [
-    wrapQtAppsHook
-    qttools
-    qmake
+    libsForQt5.wrapQtAppsHook
+    libsForQt5.qttools
+    libsForQt5.qmake
     bison
     flex
   ];
-  buildInputs = [ qtbase ];
-  env.QT_PLUGIN_PATH = "${qtbase}/${qtbase.qtPluginPrefix}";
+  buildInputs = [ libsForQt5.qtbase ];
+  env.QT_PLUGIN_PATH = "${libsForQt5.qtbase}/${libsForQt5.qtbase.qtPluginPrefix}";
 
   qmakeFlags = [
     "QtSpim.pro"

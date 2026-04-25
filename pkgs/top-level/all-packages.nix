@@ -3146,8 +3146,6 @@ with pkgs;
   mpi = openmpi; # this attribute should used to build MPI applications
   openmodelica = recurseIntoAttrs (callPackage ../applications/science/misc/openmodelica { });
 
-  qtspim = libsForQt5.callPackage ../development/tools/misc/qtspim { };
-
   quota = if stdenv.hostPlatform.isLinux then linuxquota else unixtools.quota;
 
   radeon-profile = libsForQt5.callPackage ../tools/misc/radeon-profile { };
