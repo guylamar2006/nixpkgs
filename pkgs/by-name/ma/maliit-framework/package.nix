@@ -4,8 +4,6 @@
   fetchFromGitHub,
   fetchpatch,
 
-  qtbase,
-
   at-spi2-atk,
   at-spi2-core,
   libepoxy,
@@ -25,7 +23,7 @@
   pkg-config,
   wayland-protocols,
   wayland-scanner,
-  wrapQtAppsHook,
+  libsForQt5,
 }:
 
 stdenv.mkDerivation {
@@ -61,11 +59,11 @@ stdenv.mkDerivation {
     pkg-config
     wayland-protocols
     wayland-scanner
-    wrapQtAppsHook
+    libsForQt5.wrapQtAppsHook
   ];
 
   cmakeFlags = [
-    "-DQT5_PLUGINS_INSTALL_DIR=${placeholder "out"}/${qtbase.qtPluginPrefix}"
+    "-DQT5_PLUGINS_INSTALL_DIR=${placeholder "out"}/${libsForQt5.qtbase.qtPluginPrefix}"
   ];
 
   meta = {
