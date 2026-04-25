@@ -2855,8 +2855,6 @@ with pkgs;
     }
   );
 
-  mytetra = libsForQt5.callPackage ../applications/office/mytetra { };
-
   nerd-fonts = recurseIntoAttrs (callPackage ../data/fonts/nerd-fonts { });
 
   maple-mono = recurseIntoAttrs (callPackage ../data/fonts/maple-font { });

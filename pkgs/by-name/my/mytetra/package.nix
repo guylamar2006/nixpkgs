@@ -2,10 +2,8 @@
   lib,
   stdenv,
   fetchFromGitHub,
-  qmake,
-  qtsvg,
   makeWrapper,
-  wrapQtAppsHook,
+  libsForQt5,
   xdg-utils,
 }:
 
@@ -21,11 +19,11 @@ stdenv.mkDerivation rec {
   };
 
   nativeBuildInputs = [
-    qmake
+    libsForQt5.qmake
     makeWrapper
-    wrapQtAppsHook
+    libsForQt5.wrapQtAppsHook
   ];
-  buildInputs = [ qtsvg ];
+  buildInputs = [ libsForQt5.qtsvg ];
 
   hardeningDisable = [ "format" ];
 
