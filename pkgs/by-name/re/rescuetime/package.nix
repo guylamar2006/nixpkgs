@@ -3,9 +3,8 @@
   lib,
   fetchurl,
   dpkg,
-  wrapQtAppsHook,
+  libsForQt5,
   patchelf,
-  qt5,
   libxtst,
   libxext,
   libx11,
@@ -39,7 +38,7 @@ stdenv.mkDerivation rec {
   inherit src;
   nativeBuildInputs = [
     dpkg
-    wrapQtAppsHook
+    libsForQt5.wrapQtAppsHook
   ];
   # avoid https://github.com/NixOS/patchelf/issues/99
   dontStrip = true;
@@ -52,7 +51,7 @@ stdenv.mkDerivation rec {
       --interpreter "$(cat $NIX_CC/nix-support/dynamic-linker)" \
       --set-rpath "${
         lib.makeLibraryPath [
-          qt5.qtbase
+          libsForQt5.qtbase
           libxtst
           libxext
           libx11

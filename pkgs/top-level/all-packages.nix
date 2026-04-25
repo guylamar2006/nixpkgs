@@ -3178,8 +3178,6 @@ with pkgs;
 
   reptor = with python3.pkgs; toPythonApplication reptor;
 
-  rescuetime = libsForQt5.callPackage ../applications/misc/rescuetime { };
-
   inherit (callPackage ../development/misc/resholve { })
     resholve
     ;
