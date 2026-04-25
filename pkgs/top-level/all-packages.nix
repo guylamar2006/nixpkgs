@@ -2647,8 +2647,6 @@ with pkgs;
     lua = lua5_2_compat;
   };
 
-  kristall = libsForQt5.callPackage ../applications/networking/browsers/kristall { };
-
   lagrange-tui = lagrange.override { enableTUI = true; };
 
   kzipmix = pkgsi686Linux.callPackage ../tools/compression/kzipmix { };

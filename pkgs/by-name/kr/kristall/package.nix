@@ -2,9 +2,7 @@
   lib,
   stdenv,
   fetchFromGitHub,
-  wrapQtAppsHook,
-  qmake,
-  qtmultimedia,
+  libsForQt5,
 }:
 
 stdenv.mkDerivation rec {
@@ -23,11 +21,11 @@ stdenv.mkDerivation rec {
   '';
 
   nativeBuildInputs = [
-    wrapQtAppsHook
-    qmake
+    libsForQt5.wrapQtAppsHook
+    libsForQt5.qmake
   ];
 
-  buildInputs = [ qtmultimedia ];
+  buildInputs = [ libsForQt5.qtmultimedia ];
 
   qmakeFlags = [ "src/kristall.pro" ];
 
@@ -52,6 +50,6 @@ stdenv.mkDerivation rec {
     mainProgram = "kristall";
     homepage = "https://random-projects.net/projects/kristall.gemini";
     license = lib.licenses.gpl3Only;
-    inherit (qtmultimedia.meta) platforms;
+    inherit (libsForQt5.qtmultimedia.meta) platforms;
   };
 }
