@@ -3298,8 +3298,6 @@ with pkgs;
     pythonPackages = python3Packages;
   };
 
-  tiled = libsForQt5.callPackage ../applications/editors/tiled { };
-
   tinc = callPackage ../tools/networking/tinc { };
 
   tinc_pre = callPackage ../tools/networking/tinc/pre.nix { };
