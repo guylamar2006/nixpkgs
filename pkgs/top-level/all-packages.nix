@@ -2628,8 +2628,6 @@ with pkgs;
     inherit (darwin) sigtool;
   };
 
-  ksmoothdock = libsForQt5.callPackage ../applications/misc/ksmoothdock { };
-
   limine-full = limine.override { enableAll = true; };
 
   loganalyzer = libsForQt5.callPackage ../development/tools/loganalyzer { };

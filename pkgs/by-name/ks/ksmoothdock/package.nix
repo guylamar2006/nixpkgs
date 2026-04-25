@@ -4,9 +4,7 @@
   fetchFromGitHub,
   cmake,
   extra-cmake-modules,
-  wrapQtAppsHook,
-  kactivities,
-  qtbase,
+  libsForQt5,
 }:
 
 stdenv.mkDerivation rec {
@@ -29,12 +27,12 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [
     cmake
     extra-cmake-modules
-    wrapQtAppsHook
+    libsForQt5.wrapQtAppsHook
   ];
 
   buildInputs = [
-    kactivities
-    qtbase
+    libsForQt5.kactivities
+    libsForQt5.qtbase
   ];
 
   cmakeDir = "../src";
