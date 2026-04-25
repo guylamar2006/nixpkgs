@@ -4,11 +4,7 @@
   fetchpatch,
   lib,
   extra-cmake-modules,
-  kdoctools,
-  wrapQtAppsHook,
-  kconfig,
-  kcrash,
-  kinit,
+  libsForQt5,
 }:
 
 stdenv.mkDerivation rec {
@@ -36,12 +32,12 @@ stdenv.mkDerivation rec {
   };
   nativeBuildInputs = [
     extra-cmake-modules
-    kdoctools
-    wrapQtAppsHook
+    libsForQt5.kdoctools
+    libsForQt5.wrapQtAppsHook
   ];
   propagatedBuildInputs = [
-    kconfig
-    kcrash
-    kinit
+    libsForQt5.kconfig
+    libsForQt5.kcrash
+    libsForQt5.kinit
   ];
 }
