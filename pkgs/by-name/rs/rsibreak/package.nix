@@ -3,13 +3,7 @@
   lib,
   stdenv,
   extra-cmake-modules,
-  kdoctools,
-  wrapQtAppsHook,
-  knotifyconfig,
-  kidletime,
-  kwindowsystem,
-  ktextwidgets,
-  kcrash,
+  libsForQt5,
 }:
 
 stdenv.mkDerivation rec {
@@ -23,15 +17,15 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [
     extra-cmake-modules
-    kdoctools
-    wrapQtAppsHook
+    libsForQt5.kdoctools
+    libsForQt5.wrapQtAppsHook
   ];
   propagatedBuildInputs = [
-    knotifyconfig
-    kidletime
-    kwindowsystem
-    ktextwidgets
-    kcrash
+    libsForQt5.knotifyconfig
+    libsForQt5.kidletime
+    libsForQt5.kwindowsystem
+    libsForQt5.ktextwidgets
+    libsForQt5.kcrash
   ];
 
   meta = {
