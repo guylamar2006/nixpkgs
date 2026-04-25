@@ -15,14 +15,11 @@
   python3 ? null,
   cmake,
   pkg-config,
-  wrapQtAppsHook,
   xdg-utils,
-  qtbase,
-  qtsvg,
-  qtmacextras,
+  libsForQt5,
   fetchpatch,
   ghostscriptX ? null,
-  extraFonts ? false,
+  extraFonts ? true,
   chineseFonts ? false,
   japaneseFonts ? false,
   koreanFonts ? false,
@@ -57,15 +54,15 @@ stdenv.mkDerivation {
   nativeBuildInputs = [
     guile_1_8
     pkg-config
-    wrapQtAppsHook
+    libsForQt5.wrapQtAppsHook
     xdg-utils
     cmake
   ];
 
   buildInputs = [
     guile_1_8
-    qtbase
-    qtsvg
+    libsForQt5.qtbase
+    libsForQt5.qtsvg
     ghostscriptX
     freetype
     libjpeg
@@ -74,7 +71,7 @@ stdenv.mkDerivation {
     python3
   ]
   ++ lib.optionals stdenv.hostPlatform.isDarwin [
-    qtmacextras
+    libsForQt5.qtmacextras
   ];
 
   patches = [
