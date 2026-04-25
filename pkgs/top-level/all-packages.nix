@@ -2207,8 +2207,6 @@ with pkgs;
 
   emborg = python3Packages.callPackage ../development/python-modules/emborg { };
 
-  evtest-qt = libsForQt5.callPackage ../applications/misc/evtest-qt { };
-
   executor = with python3Packages; toPythonApplication executor;
 
   exiftool = perlPackages.ImageExifTool;

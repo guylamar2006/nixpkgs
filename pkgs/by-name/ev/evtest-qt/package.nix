@@ -1,9 +1,8 @@
 {
   lib,
   stdenv,
-  qtbase,
   cmake,
-  wrapQtAppsHook,
+  libsForQt5,
   fetchFromGitHub,
   fetchpatch,
   unstableGitUpdater,
@@ -33,10 +32,10 @@ stdenv.mkDerivation {
 
   nativeBuildInputs = [
     cmake
-    wrapQtAppsHook
+    libsForQt5.wrapQtAppsHook
   ];
 
-  buildInputs = [ qtbase ];
+  buildInputs = [ libsForQt5.qtbase ];
 
   passthru.updateScript = unstableGitUpdater { };
 
