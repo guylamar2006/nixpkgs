@@ -2142,8 +2142,6 @@ with pkgs;
 
   diffutils = callPackage ../tools/text/diffutils { };
 
-  dsview = libsForQt5.callPackage ../applications/science/electronics/dsview { };
-
   inherit (import ../build-support/dlang/dub-support.nix { inherit callPackage; })
     dub-to-nix
     importDubLock

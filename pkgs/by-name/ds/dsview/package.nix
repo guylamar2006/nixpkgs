@@ -4,14 +4,11 @@
   fetchFromGitHub,
   pkg-config,
   cmake,
-  wrapQtAppsHook,
+  libsForQt5,
   libzip,
   boost,
   fftw,
   libusb1,
-  qtbase,
-  qtsvg,
-  qtwayland,
   python3,
   desktopToDarwinBundle,
 }:
@@ -40,20 +37,20 @@ stdenv.mkDerivation (finalAttrs: {
   nativeBuildInputs = [
     cmake
     pkg-config
-    wrapQtAppsHook
+    libsForQt5.wrapQtAppsHook
   ]
   ++ lib.optional stdenv.hostPlatform.isDarwin desktopToDarwinBundle;
 
   buildInputs = [
     boost
     fftw
-    qtbase
-    qtsvg
+    libsForQt5.qtbase
+    libsForQt5.qtsvg
     libusb1
     libzip
     python3
   ]
-  ++ lib.optional stdenv.hostPlatform.isLinux qtwayland;
+  ++ lib.optional stdenv.hostPlatform.isLinux libsForQt5.qtwayland;
 
   doInstallCheck = true;
 
