@@ -8,15 +8,11 @@
   libchewing,
   libpinyin,
   maliit-framework,
-  qtfeedback,
-  qtmultimedia,
-  qtquickcontrols2,
-  qtgraphicaleffects,
+  libsForQt5,
 
   cmake,
   pkg-config,
   wrapGAppsHook3,
-  wrapQtAppsHook,
 }:
 
 stdenv.mkDerivation {
@@ -41,10 +37,10 @@ stdenv.mkDerivation {
     libchewing
     libpinyin
     maliit-framework
-    qtfeedback
-    qtmultimedia
-    qtquickcontrols2
-    qtgraphicaleffects
+    libsForQt5.qtfeedback
+    libsForQt5.qtmultimedia
+    libsForQt5.qtquickcontrols2
+    libsForQt5.qtgraphicaleffects
   ];
 
   cmakeFlags = [
@@ -56,7 +52,7 @@ stdenv.mkDerivation {
     cmake
     pkg-config
     wrapGAppsHook3
-    wrapQtAppsHook
+    libsForQt5.wrapQtAppsHook
   ];
 
   postInstall = ''

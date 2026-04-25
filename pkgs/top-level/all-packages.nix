@@ -1808,8 +1808,6 @@ with pkgs;
 
   kaggle = with python3Packages; toPythonApplication kaggle;
 
-  maliit-keyboard = libsForQt5.callPackage ../applications/misc/maliit-keyboard { };
-
   materialx = with python3Packages; toPythonApplication materialx;
 
   # while building documentation meson may want to run binaries for host
