@@ -2,8 +2,7 @@
   python3Packages,
   fetchFromGitHub,
   lib,
-  wrapQtAppsHook,
-  qtbase,
+  libsForQt5,
 }:
 
 python3Packages.buildPythonApplication {
@@ -18,9 +17,9 @@ python3Packages.buildPythonApplication {
     sha256 = "sha256-dDIJXhB3rmKnawOYJHE7WK38b0M5722zA+yLgpEjDyI=";
   };
 
-  buildInputs = [ qtbase ];
+  buildInputs = [ libsForQt5.qtbase ];
 
-  nativeBuildInputs = [ wrapQtAppsHook ];
+  nativeBuildInputs = [ libsForQt5.wrapQtAppsHook ];
 
   propagatedBuildInputs = with python3Packages; [
     pyserial

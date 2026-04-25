@@ -2513,8 +2513,6 @@ with pkgs;
 
   httpie = with python3Packages; toPythonApplication httpie;
 
-  hue-plus = libsForQt5.callPackage ../applications/misc/hue-plus { };
-
   humanfriendly = with python3Packages; toPythonApplication humanfriendly;
 
   hw-probe = perlPackages.callPackage ../tools/system/hw-probe { };
