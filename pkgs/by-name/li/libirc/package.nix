@@ -3,7 +3,7 @@
   stdenv,
   fetchFromGitHub,
   cmake,
-  qtbase,
+  libsForQt5,
 }:
 
 stdenv.mkDerivation {
@@ -25,8 +25,8 @@ stdenv.mkDerivation {
 
   cmakeFlags = [
     "-DQT5_BUILD=1"
-    "-DQt5Core_DIR=${qtbase.dev}/lib/cmake/Qt5Core"
-    "-DQt5Network_DIR=${qtbase.dev}/lib/cmake/Qt5Network"
+    "-DQt5Core_DIR=${libsForQt5.qtbase.dev}/lib/cmake/Qt5Core"
+    "-DQt5Network_DIR=${libsForQt5.qtbase.dev}/lib/cmake/Qt5Network"
   ];
 
   preFixup = ''
