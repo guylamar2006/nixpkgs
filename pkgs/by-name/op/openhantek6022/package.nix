@@ -4,9 +4,7 @@
   fetchFromGitHub,
   makeWrapper,
   cmake,
-  wrapQtAppsHook,
-  qtbase,
-  qttools,
+  libsForQt5,
   fftw,
   libusb1,
   libglvnd,
@@ -26,14 +24,14 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [
     cmake
     makeWrapper
-    wrapQtAppsHook
+    libsForQt5.wrapQtAppsHook
   ];
   buildInputs = [
     fftw
     libusb1
     libglvnd
-    qtbase
-    qttools
+    libsForQt5.qtbase
+    libsForQt5.qttools
   ];
 
   postPatch = ''
@@ -51,6 +49,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/OpenHantek/OpenHantek6022";
     license = lib.licenses.gpl3;
     maintainers = with lib.maintainers; [ baracoder ];
-    platforms = qtbase.meta.platforms;
+    platforms = libsForQt5.qtbase.meta.platforms;
   };
 }

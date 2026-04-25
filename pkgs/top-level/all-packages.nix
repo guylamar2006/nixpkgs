@@ -2952,8 +2952,6 @@ with pkgs;
 
   open-interpreter = with python3Packages; toPythonApplication open-interpreter;
 
-  openhantek6022 = libsForQt5.callPackage ../applications/science/electronics/openhantek6022 { };
-
   openmvs = callPackage ../applications/science/misc/openmvs {
     inherit (llvmPackages) openmp;
   };
