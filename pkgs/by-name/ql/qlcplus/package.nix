@@ -2,15 +2,10 @@
   lib,
   stdenv,
   fetchFromGitHub,
-  qmake,
   pkg-config,
   udevCheckHook,
-  wrapQtAppsHook,
   udev,
-  qtmultimedia,
-  qtscript,
-  qtserialport,
-  qtwebsockets,
+  libsForQt5,
   alsa-lib,
   ola,
   libftdi1,
@@ -31,17 +26,17 @@ stdenv.mkDerivation rec {
   };
 
   nativeBuildInputs = [
-    qmake
+    libsForQt5.qmake
     pkg-config
     udevCheckHook
-    wrapQtAppsHook
+    libsForQt5.wrapQtAppsHook
   ];
   buildInputs = [
     udev
-    qtmultimedia
-    qtscript
-    qtserialport
-    qtwebsockets
+    libsForQt5.qtmultimedia
+    libsForQt5.qtscript
+    libsForQt5.qtserialport
+    libsForQt5.qtwebsockets
     alsa-lib
     ola
     libftdi1
