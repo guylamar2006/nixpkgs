@@ -2,9 +2,7 @@
   lib,
   stdenv,
   fetchFromGitHub,
-  qmake,
-  qtbase,
-  qttools,
+  libsForQt5,
   subversion,
   apr,
 }:
@@ -24,13 +22,13 @@ stdenv.mkDerivation {
   };
 
   nativeBuildInputs = [
-    qmake
-    qttools
+    libsForQt5.qmake
+    libsForQt5.qttools
   ];
   buildInputs = [
     apr.dev
     subversion.dev
-    qtbase
+    libsForQt5.qtbase
   ];
 
   qmakeFlags = [

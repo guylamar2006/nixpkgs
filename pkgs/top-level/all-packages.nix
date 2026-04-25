@@ -1190,10 +1190,6 @@ with pkgs;
 
   gitRepo = git-repo;
 
-  svn-all-fast-export =
-    libsForQt5.callPackage ../applications/version-management/svn-all-fast-export
-      { };
-
   svn2git = callPackage ../applications/version-management/svn2git {
     git = gitSVN;
   };
