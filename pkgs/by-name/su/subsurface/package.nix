@@ -5,9 +5,7 @@
   autoreconfHook,
   writeShellScriptBin,
   cmake,
-  wrapQtAppsHook,
   pkg-config,
-  qmake,
   curl,
   grantlee,
   hidapi,
@@ -18,12 +16,7 @@
   libxslt,
   libzip,
   zlib,
-  qtbase,
-  qtconnectivity,
-  qtlocation,
-  qtsvg,
-  qttools,
-  qtpositioning,
+  libsForQt5,
   libxcomposite,
   bluez,
   writeScript,
@@ -84,17 +77,17 @@ let
       hash = "sha256-PfSLFQeCeVNcCVDCZehxyNLQGT6gff5jNxMW8lAaP8c=";
     };
 
-    nativeBuildInputs = [ qmake ];
+    nativeBuildInputs = [ libsForQt5.qmake ];
 
     buildInputs = [
-      qtbase
-      qtlocation
+      libsForQt5.qtbase
+      libsForQt5.qtlocation
       libxcomposite
     ];
 
     dontWrapQtApps = true;
 
-    pluginsSubdir = "lib/qt-${qtbase.qtCompatVersion}/plugins";
+    pluginsSubdir = "lib/qt-${libsForQt5.qtbase.qtCompatVersion}/plugins";
 
     installPhase = ''
       mkdir -p $out $(dirname ${pluginsSubdir}/geoservices)
@@ -138,16 +131,16 @@ stdenv.mkDerivation {
     libxml2
     libxslt
     libzip
-    qtbase
-    qtconnectivity
-    qtsvg
-    qttools
-    qtpositioning
+    libsForQt5.qtbase
+    libsForQt5.qtconnectivity
+    libsForQt5.qtsvg
+    libsForQt5.qttools
+    libsForQt5.qtpositioning
   ];
 
   nativeBuildInputs = [
     cmake
-    wrapQtAppsHook
+    libsForQt5.wrapQtAppsHook
     pkg-config
   ];
 

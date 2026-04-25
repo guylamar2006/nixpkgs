@@ -3254,8 +3254,6 @@ with pkgs;
 
   strip-nondeterminism = perlPackages.strip-nondeterminism;
 
-  subsurface = libsForQt5.callPackage ../applications/misc/subsurface { };
-
   sumorobot-manager =
     python3Packages.callPackage ../applications/science/robotics/sumorobot-manager
       { };
