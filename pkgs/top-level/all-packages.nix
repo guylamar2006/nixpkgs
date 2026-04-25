@@ -1754,8 +1754,6 @@ with pkgs;
 
   futhark = haskell.lib.compose.justStaticExecutables haskellPackages.futhark;
 
-  g2o = libsForQt5.callPackage ../development/libraries/g2o { };
-
   inherit (go-containerregistry) crane gcrane;
 
   geekbench_4 = callPackage ../tools/misc/geekbench/4.nix { };

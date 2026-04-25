@@ -3,14 +3,12 @@
   stdenv,
   fetchFromGitHub,
   cmake,
-  wrapQtAppsHook,
   eigen,
   suitesparse,
   blas,
   lapack,
   libGLU,
-  qtbase,
-  libqglviewer,
+  libsForQt5,
   spdlog,
 }:
 
@@ -36,7 +34,7 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [
     cmake
-    wrapQtAppsHook
+    libsForQt5.wrapQtAppsHook
   ];
   buildInputs = [
     eigen
@@ -44,8 +42,8 @@ stdenv.mkDerivation rec {
     blas
     lapack
     libGLU
-    qtbase
-    libqglviewer
+    libsForQt5.qtbase
+    libsForQt5.libqglviewer
   ];
   propagatedBuildInputs = [ spdlog ];
 
@@ -53,7 +51,7 @@ stdenv.mkDerivation rec {
 
   cmakeFlags = [
     # Detection script is broken
-    "-DQGLVIEWER_INCLUDE_DIR=${libqglviewer}/include/QGLViewer"
+    "-DQGLVIEWER_INCLUDE_DIR=${libsForQt5.libqglviewer}/include/QGLViewer"
     "-DG2O_BUILD_EXAMPLES=OFF"
   ]
   ++ lib.optionals stdenv.hostPlatform.isx86_64 [
