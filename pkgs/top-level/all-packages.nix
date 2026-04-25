@@ -3123,8 +3123,6 @@ with pkgs;
 
   po4a = perlPackages.Po4a;
 
-  proxmark3 = libsForQt5.callPackage ../tools/security/proxmark3/default.nix { };
-
   pycflow2dot = with python3.pkgs; toPythonApplication pycflow2dot;
 
   pyinfra = with python3Packages; toPythonApplication pyinfra;

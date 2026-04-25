@@ -15,8 +15,7 @@
   udevCheckHook,
   nix-update-script,
   withGui ? true,
-  wrapQtAppsHook,
-  qtbase,
+  libsForQt5,
   withPython ? true,
   python3,
   withBlueshark ? false,
@@ -57,7 +56,7 @@ stdenv.mkDerivation (finalAttrs: {
     gcc-arm-embedded
     udevCheckHook
   ]
-  ++ lib.optional withGui wrapQtAppsHook;
+  ++ lib.optional withGui libsForQt5.wrapQtAppsHook;
   buildInputs = [
     readline
     bzip2
@@ -68,7 +67,7 @@ stdenv.mkDerivation (finalAttrs: {
     whereami
     lua
   ]
-  ++ lib.optional withGui qtbase
+  ++ lib.optional withGui libsForQt5.qtbase
   ++ lib.optional withPython python3
   ++ lib.optional withBlueshark bluez5;
 
