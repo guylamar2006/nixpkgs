@@ -2,8 +2,7 @@
   lib,
   stdenv,
   fetchFromGitHub,
-  qmake,
-  wrapQtAppsHook,
+  libsForQt5,
   boost,
 }:
 
@@ -24,8 +23,8 @@ stdenv.mkDerivation rec {
   '';
 
   nativeBuildInputs = [
-    qmake
-    wrapQtAppsHook
+    libsForQt5.qmake
+    libsForQt5.wrapQtAppsHook
   ];
   buildInputs = [ boost ];
 
