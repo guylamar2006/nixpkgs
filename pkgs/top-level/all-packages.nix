@@ -3221,9 +3221,6 @@ with pkgs;
 
   slither-analyzer = with python3Packages; toPythonApplication slither-analyzer;
 
-  # aka., pgp-tools
-  simplescreenrecorder = libsForQt5.callPackage ../applications/video/simplescreenrecorder { };
-
   snapcast = callPackage ../applications/audio/snapcast {
     pulseaudioSupport = config.pulseaudio or stdenv.hostPlatform.isLinux;
   };

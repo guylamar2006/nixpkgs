@@ -8,7 +8,6 @@
   libx11,
   libxext,
   libxinerama,
-  qtx11extras,
   libxfixes,
   libGLU,
   libGL,
@@ -16,9 +15,7 @@
   libpulseaudio,
   libv4l,
   pipewire,
-  qtbase,
-  qttools,
-  wrapQtAppsHook,
+  libsForQt5,
   cmake,
   ninja,
   unstableGitUpdater,
@@ -53,7 +50,7 @@ stdenv.mkDerivation {
     pkg-config
     cmake
     ninja
-    wrapQtAppsHook
+    libsForQt5.wrapQtAppsHook
   ];
 
   buildInputs = [
@@ -69,9 +66,9 @@ stdenv.mkDerivation {
     libpulseaudio
     libv4l
     pipewire
-    qtbase
-    qttools
-    qtx11extras
+    libsForQt5.qtbase
+    libsForQt5.qttools
+    libsForQt5.qtx11extras
   ];
 
   passthru.updateScript = unstableGitUpdater { };
