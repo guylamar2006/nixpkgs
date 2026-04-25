@@ -2,10 +2,7 @@
   lib,
   stdenv,
   fetchFromGitHub,
-  qmake,
-  wrapQtAppsHook,
-  qtbase,
-  qtcharts,
+  libsForQt5,
   libxrandr,
   libdrm,
 }:
@@ -16,12 +13,12 @@ stdenv.mkDerivation rec {
   version = "20200824";
 
   nativeBuildInputs = [
-    qmake
-    wrapQtAppsHook
+    libsForQt5.qmake
+    libsForQt5.wrapQtAppsHook
   ];
   buildInputs = [
-    qtbase
-    qtcharts
+    libsForQt5.qtbase
+    libsForQt5.qtcharts
     libxrandr
     libdrm
   ];
