@@ -3172,8 +3172,6 @@ with pkgs;
     opensslSupport = false;
   };
 
-  recoll = libsForQt5.callPackage ../applications/search/recoll { };
-
   recoll-nox = recoll.override { withGui = false; };
 
   remote-exec = python3Packages.callPackage ../tools/misc/remote-exec { };

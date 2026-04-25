@@ -29,9 +29,7 @@
   pkg-config,
   poppler-utils,
   python3Packages,
-  qtbase,
-  qttools,
-  wrapQtAppsHook,
+  libsForQt5,
   unrtf,
   untex,
   unzip,
@@ -120,11 +118,11 @@ stdenv.mkDerivation rec {
     ninja
     pkg-config
     which
-    wrapQtAppsHook
+    libsForQt5.wrapQtAppsHook
   ]
   ++ lib.optionals withGui [
-    qtbase
-    qttools
+    libsForQt5.qtbase
+    libsForQt5.qttools
   ]
   ++ lib.optionals withPython [
     python3Packages.setuptools
@@ -145,7 +143,7 @@ stdenv.mkDerivation rec {
     file
   ]
   ++ lib.optionals withGui [
-    qtbase
+    libsForQt5.qtbase
   ]
   ++ lib.optionals stdenv.hostPlatform.isDarwin [
     libiconv
