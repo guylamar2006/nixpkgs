@@ -3146,8 +3146,6 @@ with pkgs;
   mpi = openmpi; # this attribute should used to build MPI applications
   openmodelica = recurseIntoAttrs (callPackage ../applications/science/misc/openmodelica { });
 
-  qarte = libsForQt5.callPackage ../applications/video/qarte { };
-
   qlcplus = libsForQt5.callPackage ../applications/misc/qlcplus { };
 
   qjoypad = libsForQt5.callPackage ../tools/misc/qjoypad { };

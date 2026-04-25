@@ -2,7 +2,7 @@
   lib,
   stdenv,
   fetchbzr,
-  wrapQtAppsHook,
+  libsForQt5,
   python3,
   rtmpdump,
 }:
@@ -25,7 +25,7 @@ stdenv.mkDerivation {
     sha256 = "sha256-+Ixe4bWKubH/XBESwmP2NWS8bH0jq611c3MZn7W87Jw=";
   };
 
-  nativeBuildInputs = [ wrapQtAppsHook ];
+  nativeBuildInputs = [ libsForQt5.wrapQtAppsHook ];
 
   buildInputs = [ pythonEnv ];
 
