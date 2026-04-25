@@ -4,9 +4,7 @@
   fetchFromGitHub,
   cmake,
   pkg-config,
-  wrapQtAppsHook,
-  qtbase,
-  qttools,
+  libsForQt5,
   ddcutil,
 }:
 
@@ -26,12 +24,12 @@ stdenv.mkDerivation rec {
     # file is not currently written to support PREFIX installations.
     cmake
     pkg-config
-    wrapQtAppsHook
+    libsForQt5.wrapQtAppsHook
   ];
 
   buildInputs = [
-    qtbase
-    qttools
+    libsForQt5.qtbase
+    libsForQt5.qttools
     ddcutil
   ];
 
