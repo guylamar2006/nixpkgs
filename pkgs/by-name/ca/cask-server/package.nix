@@ -4,7 +4,7 @@
   fetchFromGitHub,
   cmake,
   extra-cmake-modules,
-  wrapQtAppsHook,
+  libsForQt5,
 }:
 
 stdenv.mkDerivation (finalAttrs: {
@@ -21,7 +21,7 @@ stdenv.mkDerivation (finalAttrs: {
   nativeBuildInputs = [
     cmake
     extra-cmake-modules
-    wrapQtAppsHook
+    libsForQt5.wrapQtAppsHook
   ];
 
   meta = {

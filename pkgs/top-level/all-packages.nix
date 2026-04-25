@@ -2050,8 +2050,6 @@ with pkgs;
     provider = "calyx";
   };
 
-  cask-server = libsForQt5.callPackage ../applications/misc/cask-server { };
-
   cffconvert = python3Packages.toPythonApplication python3Packages.cffconvert;
 
   clickhouse-lts = callPackage ../by-name/cl/clickhouse/lts.nix { };
