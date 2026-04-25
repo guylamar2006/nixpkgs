@@ -2,12 +2,8 @@
   lib,
   stdenv,
   fetchFromGitHub,
-  qmake,
-  wrapQtAppsHook,
   boost,
-  qtbase,
-  qtwebkit,
-  poppler,
+  libsForQt5,
   hunspell,
   html-tidy,
 }:
@@ -24,15 +20,15 @@ stdenv.mkDerivation rec {
   };
 
   nativeBuildInputs = [
-    qmake
-    wrapQtAppsHook
+    libsForQt5.qmake
+    libsForQt5.wrapQtAppsHook
   ];
 
   buildInputs = [
     boost
-    qtbase
-    qtwebkit
-    poppler
+    libsForQt5.qtbase
+    libsForQt5.qtwebkit
+    libsForQt5.poppler
     hunspell
   ];
 
