@@ -2,7 +2,7 @@
   lib,
   stdenv,
   fetchFromGitHub,
-  qmake,
+  libsForQt5,
 }:
 
 stdenv.mkDerivation {
@@ -16,7 +16,7 @@ stdenv.mkDerivation {
     hash = "sha256-EYBX2SJa8o4R/zEjSFbmFxhLI726WY21XmCkWIqPeFc=";
   };
 
-  nativeBuildInputs = [ qmake ];
+  nativeBuildInputs = [ libsForQt5.qmake ];
 
   dontWrapQtApps = true;
 

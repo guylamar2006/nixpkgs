@@ -3146,8 +3146,6 @@ with pkgs;
   mpi = openmpi; # this attribute should used to build MPI applications
   openmodelica = recurseIntoAttrs (callPackage ../applications/science/misc/openmodelica { });
 
-  qmarkdowntextedit = libsForQt5.callPackage ../development/libraries/qmarkdowntextedit { };
-
   qtspim = libsForQt5.callPackage ../development/tools/misc/qtspim { };
 
   quota = if stdenv.hostPlatform.isLinux then linuxquota else unixtools.quota;
