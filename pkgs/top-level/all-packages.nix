@@ -3141,8 +3141,6 @@ with pkgs;
     provider = "riseup";
   };
 
-  rocket = libsForQt5.callPackage ../tools/graphics/rocket { };
-
   rtaudio = rtaudio_5;
 
   mpi = openmpi; # this attribute should used to build MPI applications
