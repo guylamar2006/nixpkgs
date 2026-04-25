@@ -7,11 +7,8 @@
   libvlc,
   libv4l,
   libx11,
-  kidletime,
-  kdelibs4support,
   libxscrnsaver,
-  wrapQtAppsHook,
-  qtx11extras,
+  libsForQt5,
 }:
 
 stdenv.mkDerivation rec {
@@ -29,16 +26,16 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [
     cmake
     extra-cmake-modules
-    wrapQtAppsHook
+    libsForQt5.wrapQtAppsHook
   ];
 
   buildInputs = [
     libvlc
     libv4l
     libx11
-    kidletime
-    qtx11extras
-    kdelibs4support
+    libsForQt5.kidletime
+    libsForQt5.qtx11extras
+    libsForQt5.kdelibs4support
     libxscrnsaver
   ];
 
