@@ -10618,22 +10618,6 @@ with pkgs;
 
   weechatScripts = recurseIntoAttrs (callPackage ../applications/networking/irc/weechat/scripts { });
 
-  westonLite = weston.override {
-    demoSupport = false;
-    jpegSupport = false;
-    lcmsSupport = false;
-    luaSupport = false;
-    pangoSupport = false;
-    pipewireSupport = false;
-    rdpSupport = false;
-    remotingSupport = false;
-    vaapiSupport = false;
-    vncSupport = false;
-    vulkanSupport = false;
-    webpSupport = false;
-    xwaylandSupport = false;
-  };
-
   dockapps = recurseIntoAttrs windowmaker.dockapps;
 
   wofi-pass = callPackage ../../pkgs/tools/security/pass/wofi-pass.nix { };
