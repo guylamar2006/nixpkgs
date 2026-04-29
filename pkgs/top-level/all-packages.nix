@@ -10369,10 +10369,6 @@ with pkgs;
     timeshift-minimal
     ;
 
-  tlp = callPackage ../tools/misc/tlp {
-    inherit (linuxPackages) x86_energy_perf_policy;
-  };
-
   trustedqsl = tqsl; # Alias added 2019-02-10
 
   transmission_4 = callPackage ../applications/networking/p2p/transmission/4.nix {

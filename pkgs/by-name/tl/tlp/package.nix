@@ -22,12 +22,17 @@
   usbutils,
   util-linux,
   glib,
-  x86_energy_perf_policy,
+  linuxPackages,
   # RDW only works with NetworkManager, and thus is optional with default off
   enableRDW ? false,
   networkmanager,
   tlp-pd,
 }:
+
+let
+  inherit (linuxPackages) x86_energy_perf_policy;
+in
+
 stdenv.mkDerivation rec {
   pname = "tlp";
   version = "1.9.1";
