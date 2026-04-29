@@ -1564,10 +1564,6 @@ with pkgs;
 
   apprise = with python3Packages; toPythonApplication apprise;
 
-  avahi-compat = callPackage ../by-name/av/avahi/package.nix {
-    withLibdnssdCompat = true;
-  };
-
   babelfish = callPackage ../shells/fish/babelfish.nix { };
 
   bat-extras = recurseIntoAttrs (lib.makeScope newScope (import ../tools/misc/bat-extras));
