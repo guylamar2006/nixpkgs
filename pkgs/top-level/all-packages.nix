@@ -1564,8 +1564,6 @@ with pkgs;
 
   apprise = with python3Packages; toPythonApplication apprise;
 
-  babelfish = callPackage ../shells/fish/babelfish.nix { };
-
   bat-extras = recurseIntoAttrs (lib.makeScope newScope (import ../tools/misc/bat-extras));
 
   beautysh = with python3.pkgs; toPythonApplication beautysh;
