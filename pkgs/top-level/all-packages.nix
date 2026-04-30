@@ -3385,11 +3385,6 @@ with pkgs;
     python3Packages.callPackage ../applications/misc/twitch-chat-downloader
       { };
 
-  uftraceFull = uftrace.override {
-    withLuaJIT = true;
-    withPython = true;
-  };
-
   unrpa = with python3Packages; toPythonApplication unrpa;
 
   usort = with python3Packages; toPythonApplication usort;
