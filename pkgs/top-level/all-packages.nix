@@ -10684,8 +10684,6 @@ with pkgs;
     desktopSupport = "xfce4";
   };
 
-  libxpdf = callPackage ../applications/misc/xpdf/libxpdf.nix { };
-
   inherit (callPackage ../applications/misc/xppen { })
     xppen_3
     xppen_4
