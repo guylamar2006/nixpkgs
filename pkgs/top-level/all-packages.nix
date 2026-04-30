@@ -3329,10 +3329,6 @@ with pkgs;
     w3m = w3m-batch;
   };
 
-  tartube-yt-dlp = callPackage ../applications/video/tartube {
-    youtube-dl = yt-dlp;
-  };
-
   buildTeleport = callPackage ../build-support/teleport { };
 
   telepresence = callPackage ../tools/networking/telepresence {
