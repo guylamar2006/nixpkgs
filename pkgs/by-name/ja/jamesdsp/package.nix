@@ -2,8 +2,10 @@
   copyDesktopItems,
   fetchFromGitHub,
   fetchpatch,
+  git,
   glibmm,
   gst_all_1,
+  kdePackages,
   lib,
   libarchive,
   makeDesktopItem,
@@ -13,7 +15,6 @@
   stdenv,
   usePipewire ? true,
   usePulseaudio ? false,
-  kdePackages,
 }:
 
 assert lib.asserts.assertMsg (
@@ -32,11 +33,15 @@ stdenv.mkDerivation (finalAttrs: {
     hash = "sha256-eVndqIqJ3DRceuFMT++g2riXq0CL5r+TWbvzvaYIfZ8=";
   };
 
+  strictDeps = true;
+  __structuredAttrs = true;
+
   nativeBuildInputs = [
     kdePackages.qmake
     pkg-config
     copyDesktopItems
     kdePackages.wrapQtAppsHook
+    git
   ];
 
   patches = [
@@ -65,11 +70,33 @@ stdenv.mkDerivation (finalAttrs: {
     gst_all_1.gstreamer
   ];
 
+  preConfigure = ''
+    mkdir -p mkspecs/modules
+    ln -sf "$(qmake -query QMAKE_MKSPECS)/modules"/*.pri mkspecs/modules/ 2>/dev/null || true
+
+    for pkg in \
+      ${kdePackages.qtbase} ${kdePackages.qtbase.dev} \
+      ${kdePackages.qtsvg} ${kdePackages.qtsvg.dev} \
+      ${kdePackages.qtwayland} ${kdePackages.qtwayland.dev}; do
+      if [ -d "$pkg" ]; then
+        find "$pkg" -name "qt_*.pri" -exec ln -sf {} mkspecs/modules/ \;
+      fi
+    done
+
+    export QMAKEMODULES="$PWD/mkspecs/modules"
+    qmakeFlags+=("QMAKEMODULES=$PWD/mkspecs/modules")
+  '';
+
+  qmakeFlags = [
+    "-r"
+  ]
+  ++ lib.optionals usePulseaudio [
+    "CONFIG+=USE_PULSEAUDIO"
+  ];
+
   preFixup = lib.optionalString usePulseaudio ''
     qtWrapperArgs+=(--prefix GST_PLUGIN_SYSTEM_PATH_1_0 : "$GST_PLUGIN_SYSTEM_PATH_1_0")
   '';
-
-  qmakeFlags = lib.optionals usePulseaudio [ "CONFIG+=USE_PULSEAUDIO" ];
 
   # https://github.com/Audio4Linux/JDSP4Linux/issues/228
   env.NIX_CFLAGS_COMPILE = toString [
