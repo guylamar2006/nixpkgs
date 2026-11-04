@@ -4,18 +4,24 @@
   pkgs,
   ...
 }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 let
 
   enabled = lib.elem "displaylink" config.services.xserver.videoDrivers;
 
   evdi = config.boot.kernelPackages.evdi;
 
+  # FIX: Replace inherit evdi; with the active linuxPackages set
   displaylink = pkgs.displaylink.override {
-    inherit evdi;
+    linuxPackages = config.boot.kernelPackages;
   };
 
 in
-
 {
 
   config = lib.mkIf enabled {
